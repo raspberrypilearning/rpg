@@ -1,17 +1,25 @@
-title: rpg
+---
 hero_image: images/banner.png
-description: rpg description
-original_url: https://codeclubprojects.org/en-GB/scratch/rock-band
-theme: red # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
-duration: 1 # possible values: 1, 2 or 3
+theme: red
+duration: 1
 listed: false
 ingredient: false
 copyedit: false
 curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
-interests: "jokes/pranks, space, photography, music/sound, physical computing, games, robots"
-technologies: "electronics, physical computing, html/css, scratch, python"
-site_areas:
+title: RPG
+description: Design and code your own RPG maze game.
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: ''
+technologies: python
+site_areas: codeclub, python
 steps:
-  - title: Introduction
-  - title: What you will need
-  - title: Step title
+- title: 'Introduction: '
+- title: Adding new rooms
+- title: 'Challenge: Add new rooms'
+- title: Adding items to collect
+- title: 'Challenge: Add new items'
+- title: Adding enemies
+- title: 'Challenge: Adding more monsters'
+- title: Winning the game
+- title: 'Challenge: Develop your own game'
+
