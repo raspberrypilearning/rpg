@@ -10,7 +10,7 @@ In this project, you’ll design and code your own RPG maze game. The aim of the
 
 ### Additional information for club leaders
 
-If you need to print this project, please use the [Printer friendly version](./print).
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberry-pi.org/en/projects/rpg/print).
 
 
 --- collapse ---
