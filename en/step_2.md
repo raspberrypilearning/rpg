@@ -58,3 +58,4 @@ Try out the game with your new dining room:
  If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
 
 --- /task ---
+

@@ -27,3 +27,4 @@ Test out your code by going into the kitchen, which now contains a monster.
  ![screenshot](images/rpg-monster-test.png)
 
 --- /task ---
+

@@ -64,3 +64,4 @@ Test your game and you should see your new instructions.
  ![screenshot](images/rpg-instructions-test.png)
 
 --- /task ---
+
