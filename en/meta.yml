@@ -5,14 +5,18 @@ duration: 2
 listed: false
 ingredient: false
 copyedit: false
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
 description: Design and code your own RPG maze game.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
-interests: ''
+interests: games
 technologies: python
-site_areas: codeclub, python
-steps:
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps: 
 - title: 'Introduction: '
 - title: Adding new rooms
 - title: 'Challenge: Add new rooms'
@@ -22,4 +26,3 @@ steps:
 - title: 'Challenge: Adding more monsters'
 - title: Winning the game
 - title: 'Challenge: Develop your own game'
-
