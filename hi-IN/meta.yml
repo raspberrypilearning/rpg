@@ -1,0 +1,24 @@
+hero_image: images/rpg.png
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+title: RPG
+description: अपनी स्वयं की RPG भूल-भूलैया गेम को डिज़ाइन और कोड करें।
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: ''
+technologies: python
+site_areas: codeclub, python
+steps:
+- title: 'भूमिका'
+- title: नए कमरे जोड़ना
+- title: 'चुनौती: नए कमरे जोड़ें'
+- title: एकत्र करने के लिए आइटम्स जोड़ना
+- title: 'चुनौती: नए आइटम्स जोड़ें'
+- title: दुश्मन जोड़ना
+- title: 'चुनौती: और दैत्य जोड़ना'
+- title: गेम जीतना
+- title: 'चुनौती: अपनी स्वयं की गेम बनाएँ'
+
