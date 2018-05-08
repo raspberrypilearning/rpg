@@ -100,7 +100,7 @@ while True:
     print('A monster has got you... GAME OVER!')
     break
 
-  # player wins if they get to the garden with a key and a shield
+  # player wins if they get to the garden with a key and a potion
   if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
     print('You escaped the house... YOU WIN!')
     break
