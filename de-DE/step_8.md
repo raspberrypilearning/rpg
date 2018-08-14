@@ -1,37 +1,37 @@
-## Winning the game
+## Das Spiel gewinnen
 
-Let’s give your player a mission, which needs to completed to win the game.
+Geben wir dem Spieler eine Mission die ausgeführt werden muss um das Spiel zu gewinnen.
 
-+ In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
++ In diesem Spiel gewinnt der Spieler, wenn er aus dem Haus fliehen kann und in den Garten gelangt. Dazu muss er/sie auch den Schlüssel und den Zaubertrank dabei haben. Hier ist ein Plan des Spiels.
     
     ![screenshot](images/rpg-final-map.png)
 
-+ First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
++ Dazu musst du erst einmal einen Garten im Süden des Esszimmers hinzufügen. Denke daran, Türen hinzuzufügen um ihn mit anderen Zimmern im Haus zu verbinden.
     
-    ![screenshot](images/rpg-garden.png)
+    ![Screenshot](images/rpg-garden.png)
 
-+ Add a potion to the dining room (or another room in your house).
++ Stelle einen Zaubertrank in das Esszimmer (oder in ein anderes Zimmer im Haus).
     
     ![screenshot](images/rpg-potion.png)
 
-+ Add this code to allow the player to win the game when they get to the garden with the key and the potion:
++ Füge diesen Code hinzu damit der Spieler das Spiel gewinnt wenn er den Garten mit dem Schlüssel und dem Zaubertrank erreicht:
     
     ![screenshot](images/rpg-win-code.png)
     
-    Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+    Vergewissere dich, dass der Code genauso weit wie der darüberstehende Code eingerückt ist. Dieser Code bedeutet, dass die Nachricht `Du bist aus dem Haus entkommen... DU HAST GEWONNEN!` angezeigt wird, wenn der Spieler im 4. Zimmer (dem Garten) ist und sich der Schlüssel und der Zaubertrank in seinem Inventar befinden.
     
-    If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
+    Wenn du mehr als 4 Zimmer hast, musst du vielleicht eine andere Raumnummerierung für den Garten im obenstehenden Code verwenden.
 
-+ Test your game to make sure the player can win!
++ Prüfe dein Spiel und vergewissere dich, dass der Spieler auch gewinnen kann!
     
     ![screenshot](images/rpg-win-test.png)
 
-+ Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
++ Lass uns zum Schluss ein paar Anweisungen hinzufügen, damit der Spieler auch weiß, was er tun muss. Bearbeite die Funktion `zeigeAnweisungen()` damit ausführlichere Information angezeigt wird.
     
     ![screenshot](images/rpg-instructions-code.png)
     
-    You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+    Du musst Anleitungen hinzufügen um dem Spieler zu sagen, welche Gegenstände er nehmen muss und wem er ausweichen sollte!
 
-+ Test your game and you should see your new instructions.
++ Prüfe dein Spiel und du solltest die neuen Anweisungen sehen.
     
     ![screenshot](images/rpg-instructions-test.png)
