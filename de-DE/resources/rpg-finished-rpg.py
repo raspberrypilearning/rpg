@@ -100,7 +100,7 @@ while True:
     print('Du wurdest von einem hungrigen Monster gefressen... DAS SPIEL IST AUS!')
     break
 
-  # player wins if they get to the garden with a key and a potion
+  #Der Spieler gewinnt, wenn er mit dem Schlüssel und dem Zaubertrank den Garten erreicht
   if aktuellesZimmer == 'Garten' and 'Schlüssel' in inventar and 'Zaubertrank' in inventar:
     print('Du bist aus dem Haus entkommen... DU HAST GEWONNEN!')
     break
