@@ -1,6 +1,6 @@
 ## Adicionando novos quartos
 
-+ Algum código para este jogo foi fornecido para você. caneta este trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ Algum código para este jogo foi fornecido para você. Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
 + Este é um jogo de RPG muito básico que só tem 2 quartos. Aqui está um mapa do jogo:
     
