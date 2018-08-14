@@ -7,3 +7,9 @@ Verwende das Gelernte um dein eigenes Spiel zu entwickeln. Füge viele Zimmer, M
 Du kannst deinem Plan sogar Treppen hinzufügen und so mehr als eine Etage für deine Zimmer verwenden, indem du `gehenach oben` und `gehenach unten` eintippst.
 
 --- /challenge ---
+***
+### Von der Community übersetzt 
+
+Dieses Projekt wurde von **Helmut Schlimper** übersetzt und von **Karl Schuh** überprüft.
+
+Unsere großartigen Freiwilligen helfen uns, Kindern auf der ganzen Welt die Möglichkeit zu geben, coden zu lernen. Sie können uns helfen, mehr Kinder zu erreichen, indem Sie unsere Projekte übersetzen - lesen Sie mehr unter [rpf.io/translators](https://rpf.io/translators).

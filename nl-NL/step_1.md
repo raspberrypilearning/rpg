@@ -1,4 +1,4 @@
-## Inleiding:
+## Inleiding
 
 In dit project ontwerp en programmeer je je eigen RPG doolhofspel. Het doel van het spel is om voorwerpen te verzamelen en uit het huis te ontsnappen terwijl je monsters probeert te ontwijken!
 
