@@ -1,6 +1,6 @@
 ## Neue Zimmer hinzufügen
 
-+ Ein Teil des Codes dieses Spieles steht für dich bereit. Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ Ein Teil des Codes dieses Spieles steht für dich bereit. Öffne diesen Trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
 + Dies ist ein sehr einfaches RPG-Spiel mit nur zwei Zimmern. Hier ist ein Plan des Spiels:
     
