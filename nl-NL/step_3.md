@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Add new rooms
+## Uitdaging: voeg meer kamers toe
 
-Can you add more rooms to your game? For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
+Kun je meer kamers aan je spel toevoegen? Je zou bijvoorbeeld een huiskamer kunnen maken, ten zuiden van de eetkamer. Vergeet niet om een deur van en naar andere kamers te maken!
 
 \--- /challenge \---
