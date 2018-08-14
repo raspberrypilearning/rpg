@@ -1,86 +1,86 @@
 #!/bin/python3
 
-# Replace RPG starter project with this code when new instructions are live
+# Ersetze das RPG Startprojekt mit diesem Code, sobald die neuen Funktionen verfügbar sind
 
-def showInstructions():
-  #print a main menu and the commands
+def zeigeAnweisungen():
+  #Zeige ein Hauptmenü und die möglichen Befehle
   print('''
-RPG Game
-========
-Commands:
-  go [direction]
-  get [item]
+RPG Spiel (Labyrinth)
+=================
+Befehle:
+  gehenach [Richtung]
+  nimm [Gegenstand]
 ''')
 
-def showStatus():
-  #print the player's current status
+def zeigeZustand():
+  #Zeige den aktuellen Zustand des Spielers
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('Du bist im Zimmer: ' + aktuellesZimmer)
+  #Zeige das aktuelle Inventar
+  print('Inventar : ' + str(inventar))
+  #Zeige einen Gegenstand an, wenn einer im Zimmer vorhanden ist
+  if "Gegenstand" in zimmer[aktuellesZimmer]:
+    print('Du siehst einen ' + zimmer[aktuellesZimmer]['Gegenstand'])
   print("---------------------------")
 
-#an inventory, which is initially empty
-inventory = []
+#Das Inventar ist beim Start leer
+inventar = []
 
-#a dictionary linking a room to other rooms
-rooms = {
+#Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
+zimmer = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen'
+            'Diele' : { 
+                  'süden' : 'Küche'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall'
+            'Küche' : {
+                  'norden' : 'Diele'
                 }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#Beim Start ist der Spieler in der Diele
+aktuellesZimmer = 'Diele'
 
-showInstructions()
+zeigeAnweisungen()
 
-#loop forever
+#Ewige Schleife
 while True:
 
-  showStatus()
+  zeigeZustand()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':  
-    move = input('>')
+  #Warte auf den 'nächsten Spielzug (die nächste Bewegung)' des Spielers
+  #.split() teilt ihn in ein Array auf
+  #Wenn du z.B. 'gehenach osten' eintippst, erhältst du folgende Liste:
+  #['gehenach','osten']
+  spielzug = ''
+  while spielzug == '':  
+    spielzug = input('>')
     
-  move = move.lower().split()
+  spielzug = spielzug.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #Wenn das Eingetippte mit 'gehenach' beginnt
+  if spielzug[0] == 'gehenach':
+    #Prüfe, ob der Spieler auch dorthin gehen kann, wo er hin will
+    if spielzug[1] in zimmer[aktuellesZimmer]:
+      #Mache das neue Zimmer zum aktuellen Zimmer
+      aktuellesZimmer = zimmer[aktuellesZimmer][spielzug[1]]
+    #Es gibt keine Tür (Verbindung) zum neuen Zimmer
     else:
-        print('You can\'t go that way!')
+        print('Du kannst nicht in diese Richtung gehen!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #Wenn das Eingetippte mit 'nimm' beginnt
+  if spielzug[0] == 'nimm' :
+    #Wenn das Zimmer einen Gegenstand enthält, und du genau diesen Gegenstand nehmen willst
+    if "Gegenstand" in zimmer[aktuellesZimmer] and spielzug[1] in zimmer[aktuellesZimmer]['Gegenstand']:
+      #Füge den Gegenstand dem Inventar hinzu
+      inventar += [spielzug[1]]
+      #Zeige eine hilfreiche Mitteilung
+      print(spielzug[1] + ' wurde genommen!')
+      #Lösche den Gegenstand vom Zimmer
+      del zimmer[aktuellesZimmer]['Gegenstand']
+    #Andernfalls ist der Gegenstand nicht vorhanden und kann auch nicht genommen werden
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #Sage dem Spieler, dass er diesen Gegenstand nicht nehmen kann
+      print('Du kannst ' + spielzug[1] + ' nicht nehmen!')
 

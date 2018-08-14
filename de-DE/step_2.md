@@ -1,36 +1,35 @@
 ## Neue Zimmer hinzufügen
 
-+ Ein Teil des Codes für dieses Spiel wurde dir hier schon bereit gestellt. Schreibe dieses Trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>. 
++ Ein Teil des Codes dieses Spieles steht für dich bereit. Open this trinket: <a href="https://trinket.io/python/cb40c456c0" target="_blank">trinket.io/python/cb40c456c0</a>.
 
-+ Dies ist ein sehr vereinfachtes Rollenspiel-Spiel, das nur 2 Zimmer hat. Hier ist eine Übersichtskarte des Spiels:
++ Dies ist ein sehr einfaches RPG-Spiel mit nur zwei Zimmern. Hier ist ein Plan des Spiels:
+    
+    ![screenshot](images/rpg-map1.png)
+    
+    Du kannst `gehenach süden` eintippen, um von der Diele in die Küche zu gehen, und dann mit `gehenach norden` wieder zurück in die Diele gehen!
+    
+    ![screenshot](images/rpg-controls.png)
 
-  ![screenshot](images/rpg-map1.png)
++ Was passiert, wenn du eine Richtung eintippst, in die du nicht gehen kannst? Tippe `gehenach westen` wenn du in der Diele bist, und du erhältst eine freundliche Fehlermeldung.
+    
+    ![screenshot](images/rpg-error.png)
 
-  Du kannst `go south` (nach Süden gehen) tippen, um von der Eingangshalle zur Küche zu gehen und dann `go north` (nach Norden gehen) tippen, um wieder zurück zur Eingangshalle zu gelangen!
++ Wenn du die Variable `zimmer` findest, kannst du sehen, dass der Plan mit einem Wörterbuch (dictionary) von Zimmern programmiert ist:
+    
+    ![screenshot](images/rpg-rooms.png)
+    
+    Jedes Zimmer ist ein Wörterbuch und die Zimmer sind über Richtungen miteinander verbunden.
 
-  ![screenshot](images/rpg-controls.png)
++ Fügen wir ein Esszimmer, das sich östlich von der Diele befindet, zum Plan hinzu.
+    
+    ![screenshot](images/rpg-dining.png)
+    
+    Du musst ein drittes Zimmer, das `Esszimmer` genannt wird, hinzufügen. Du musst es auch mit der Diele im Westen verbinden. Du musst auch Daten zur Diele hinzufügen, damit du in das Esszimmer im Osten gehen kannst.
+    
+    ![screenshot](images/rpg-dining-code.png)
 
-+ Was passiert, wenn du eine Richtung eingibst, in die du gar nicht gehen kannst? Tippe `go west` (nach Westen gehen) in die Eingangshalle, du wirst dann eine freundliche Fehlermeldung erhalten.
-
-  ![screenshot](images/rpg-error.png)
-
- + Wenn du die `rooms` (Zimmer) Variable findest, kannst du sehen, dass die Karte als ein Wörterbuch der Zimmer kodiert worden ist:
-
-  ![screenshot](images/rpg-rooms.png)
-
-  Jedes Zimmer ist ein Wörterbuch und die Zimmer sind mit Hilfe der Richtungsanweisungen miteinander verknüpft.  
-  
-
-+ Lass uns deiner Karte ein Eßzimmer hinzufügen, das östlich von der Eingangshalle liegt.
-
-  ![screenshot](images/rpg-dining.png)
-
-  Du musst ein 3. Zimmer mit dem Namen `dining room` (Eßzimmer) hinzufügen. Du musst es auch mit der Eingangshalle, westlich gelegen, verknüpfen. Du musst der Eingangshalle auch Daten hinzufügen, damit du dich zum Eßzimmer im Osten bewegen kannst.
-  
-  ![screenshot](images/rpg-dining-code.png)
-
-+ Probiere das Spiel mit deinem neuen Eßzimmer aus:
-
-  ![screenshot](images/rpg-dining-test.png)
-
-  Wenn du nicht in das Eßzimmer ein- und ausgehen kannst, prüfe bitte, dass du den kompletten o.g. Code eingefügt hast (inklusive der zusätzlichen Kommata in den o.g. Zeilen).
++ Probiere das Spiel mit deinem neuen Esszimmer aus:
+    
+    ![screenshot](images/rpg-dining-test.png)
+    
+    Wenn du nicht in das Esszimmer hinein- oder herausgehen kannst, dann prüfe, ob du den ganzen oben aufgeführten Code eingegeben hast (inklusive der zusätzlichen Kommas im Programm).

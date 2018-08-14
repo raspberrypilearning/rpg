@@ -1,65 +1,88 @@
-## Einführung
+## Einleitung:
 
-In diesem Projekt wirst du dein eigenes Rollenspiel (RPG) Labyrinth-Spiel konzipieren und programmieren. Der Ziel des Spiels ist es, Gegenstände einzusammeln und damit dann aus einem Haus zu entkommen, du musst jedoch darauf achten, dass dir dabei kein Monster in die Quere kommt!
+In diesem Projekt konzipierst und programmierst du dein eigenes RPG-Labyrinth-Spiel. Das Ziel dieses Spieles ist, Gegenstände einzusammeln und aus einem Haus zu fliehen, ohne dabei von den Monstern gefressen zu werden!
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/92372176ea?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
 
+### Zusätzliche Information für Clubleiter
+
+Falls Sie dieses Projekt ausdrucken müssen, verwenden Sie bitte die [druckfreundliche Version](https://projects.raspberrypi.org/de-DE/projects/rpg/print).
 
 --- collapse ---
 ---
-title: Notizen für den Club-Leiter
+title: Anmerkungen für Clubleiter
 ---
+## Einleitung:
 
+Dieses Projekt lehrt, anhand eines RPG-Labyrinth-Spieles, wie man Spiele entwickelt. In diesem Spiel muss der Spieler Gegenstände in einem Haus nehmen und zu einem festgelegten Raum gelangen, ohne den Monstern zu begegnen, die in manchen Räumen lauern. Dieses Spiel behandelt die Anwendung der Datenstrukturen dictionary (Wörterbuch) und list (Liste).
 
-## Einführung:
-Dieses Projekt lehrt das Spiele-Design durch durch Entwicklung eines Rollenspiel (RPG) Labyrinth-Spiels. In diesem Spiel muss der Spieler Objekte in einem Haus einsammeln und in ein spezifisches Zimmer gelangen ohne dabei von den Monstern gefunden zu werden, welche sich in manchen der Zimmer versteckt halten. Dieses Spiel wird durch die Manipulation von Wörterbüchern und Listen erstellt.
+## Online-Ressourcen
 
-## Online Ressourcen
+**Dieses Projekt verwendet Python 3.** Wir empfehlen die Verwendung von [trinket](https://trinket.io/) um Python-Programme online zu schreiben. Dieses Projekt enthält folgende Trinkets:
 
-__Dieses Projekt benutzt Python 3.__ Wir empfehlen die Nutzung von [trinket](https://trinket.io/), um Python online zu schreiben. Dieses Projekt enthält die folgenden Trinkets:
++ ['RPG' Start -- trinket.io/python/cb40c456c0](https://trinket.io/python/cb40c456c0)
 
-+ ['RPG' starting point -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
+Es gibt auch ein Trinket mit dem fertigen Projekt:
 
-Es gibt auch ein Trinket, welches das fertig gestellte Projekt enthält:
++ [‘RPG’ abgeschlossen -- trinket.io/python/92372176ea](https://trinket.io/python/92372176ea)
 
-+ [â€˜RPGâ€™ Finished -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
+## Offline-Ressourcen
 
-## Offline Ressourcen
-Dieses Projekt kann [offline beendet werden](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/), falls gewünscht. Zugang zu den Projekt-Ressourcen ist durch das Klicken auf den „Projekt-Materialien“ Link für dieses Projekt möglich. Dieser Link enthält einen Abschnitt über „Projekt-Ressourcen“, die u.a. auch Ressourcen beinhalten, welche die Kinder benötigen, um dieses Projekt offline beenden zu können. Achten Sie darauf, dass jedes Kind Zugang zu einer Kopie dieser Ressourcen hat. Dieser Abschnitt enthält die folgenden Dateien:
+Falls es erwünscht sein sollte, kann dieses Projekt auch [offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) durchgeführt werden. Sie können auf die Projektressourcen zugreifen, indem Sie auf den Link "Projektmaterial" klicken. Dieser Link enthält einen Abschnitt "Projektressourcen", der Ressourcen enthält, die von den Kindern benötigt werden, um dieses Projekt offline abzuschließen. Stellen Sie sicher, dass jedes Kind Zugriff auf eine Kopie dieser Ressourcen hat. Dieser Abschnitt enthält die folgenden Dateien:
 
 + rpg/rpg.py
 
-Sie finden ein fertig gestelltes Projekt in dem Abschnitt 'Volunteer Resources' (Helfer-Ressourcen), der u.a. auch Folgendes enthält:
+Eine vollständige Version dieses Projekts finden Sie auch im Abschnitt "Ressourcen für Freiwillige". Diese enthält:
 
 + rpg-finished/rpg.py
 
-(Alle der o.g. Ressourcen können auch als Projekt und Helfer `.zip` Dateien heruntergeladen werden.)
+(Alle oben genannten Ressourcen können auch als `.zip`-Dateien für Projekte und Freiwillige heruntergeladen werden.)
 
 ## Lernziele
-+ Spiel-Design;
-+ Bearbeitung:
-	+ Listen;
-	+ Wörterbücher.
+
++ Spieledesign;
++ Bearbeiten: 
+    + Listen (lists);
+    + Wörterbücher (dictionaries).
 + Boolesche Ausdrücke.
 
-Dieses Projekt deckt Elemente aus den folgenden Bereichen des [Raspberry Pi Lehrplans zur digitalen Produktion](http://rpf.io/curriculum):
+Dieses Projekt umfasst Elemente aus den folgenden Zweigen des [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Kombiniere die Programmierungskonstrukte, um ein Problem zu lösen.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Verschiedene Programmierkonstrukte kombinieren um ein Problem zu lösen.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Aufgaben
+## Herausforderungen
+
 + Neue Zimmer hinzufügen;
 + Gegenstände zum Einsammeln hinzufügen;
-+ Feinde (Monster), die es zu vermeiden gilt, hinzufügen;
-+ Entwickele dein eigenes Spiel.
++ Feinde hinzufügen, denen aus dem Weg gegangen werden muss;
++ Dein eigenes Spiel entwickeln.
 
-## Häufig gestellte Fragen (FAQ)
-+ Die Kinder müssen evtl. daran erinnert werden, dass die Elemente in einem Wörterbuch, bzw. in einer Liste durch ein Komma getrennt werden. Zum Beispiel: Wenn ein neues Zimmer zum 'rooms' (Zimmer) Wörterbuch hinzugefügt wird, muss ein Komma zwischen dem neu hinzugefügten Zimmer und dem bereits vorhandenen Zimmer gesetzt werden.
-+ Wenn ein neues Zimmer hinzugefügt wird, könnten die Kinder u. U. vergessen, einen Link zwischen einem vorhandenen Zimmer und einem neu geschaffenen Zimmer hinzuzufügen. Das würde bedeuten, dass die Kinder zwar ein Zimmer verlassen, es aber nicht betreten können!
-+ Der Code zur Überprüfung, ob der Spieler das Spiel gewonnen oder verloren hat, muss eingerückt werden, um zu gewährleisten, dass diese Überprüfung bei Betreten eines jeden neuen Zimmers ausgeführt wird. Wenn der Code nicht eingerückt ist, dann liegt er außerhalb der Hauptspielschlaufe und läuft niemals.
+## Häufig gestellte Fragen
 
++ Kinder müssen möglicherweise daran erinnert werden, dass Elemente eines Wörterbuchs / einer Liste durch ein Komma getrennt werden. Wenn man zum Beispiel ein neues Zimmer zum 'zimmer'-Wörterbuch hinzufügen will, muss ein Komma zwischen dem neu hinzugefügten Zimmer und dem vorhergehenden Zimmer gesetzt werden.
++ Wenn ein neues Zimmer hinzugefügt wird, vergessen Kinder möglicherweise, eine Verbindung zwischen dem neuen Zimmer und einem bereits existierenden Zimmer hinzuzufügen. Das würde bedeuten, dass ein Spieler den Raum zwar verlassen, aber nicht in ihn hineingehen kann!
++ Der Code zum Prüfen, ob der Spieler gewonnen oder verloren hat, muss eingerückt werden, damit sichergestellt wird, dass er beim Betreten jedes neuen Zimmers ausgeführt wird. Wenn der Code nicht eingerückt wird, befindet er sich außerhalb der Hauptschleife des Spiels und wird nie ausgeführt.
+
+--- /collapse ---
+
+--- collapse ---
+---
+title: Projektmaterialien
+---
+## Projektressourcen
+
++ [.zip-Datei mit allen Projektressourcen](resources/rpg-project-resources.zip)
++ [Online Trinket mit allen Ressourcen des 'RPG'-Projekts](https://trinket.io/python/cb40c456c0)
++ [rpg/rpg.py](resources/rpg-rpg.py)
+
+## Ressourcen für Clubleiter
+
++ [.zip-Datei mit allen fertig gestellten Projektressourcen](resources/rpg-volunteer-resources.zip)
++ [Vollständiges Trinket-Projekt (online)](https://trinket.io/python/92372176ea)
++ [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
 
 --- /collapse ---

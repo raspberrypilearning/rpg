@@ -1,3 +1,4 @@
+---
 hero_image: images/rpg.png
 theme: navy
 duration: 2
@@ -6,7 +7,7 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Konzipiere und programmiere dein eigenes Rollenspiel (RPG) Labyrinth-Spiel.
+description: Konzipiere und programmiere dein eigenes RPG-Labyrinth - Spiel.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -15,13 +16,13 @@ hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
-steps: 
-- title: 'Einführung'
-- title: Neue Zimmer hinzufügen
-- title: 'Aufgabe: Neue Zimmer hinzufügen'
-- title: Gegenstände zum Einsammeln hinzufügen
-- title: 'Aufgabe: Neue Gegenstände hinzufügen'
-- title: Feinde (Monster) hinzufügen
-- title: 'Aufgabe: Noch mehr Monster hinzufügen'
-- title: Das Spiel gewinnen
-- title: 'Aufgabe: Entwickele dein eigenes Spiel'
+steps:
+  - title: 'Einleitung'
+  - title: Neue Zimmer hinzufügen
+  - title: 'Herausforderung: Neue Zimmer hinzufügen'
+  - title: Gegenstände zum Einsammeln hinzufügen
+  - title: 'Herausforderung: Neue Gegenstände hinzufügen'
+  - title: Feinde (Monster) hinzufügen
+  - title: 'Herausforderung: Noch mehr Monster hinzufügen'
+  - title: Das Spiel gewinnen
+  - title: 'Herausforderung: Entwickle dein eigenes Spiel'
