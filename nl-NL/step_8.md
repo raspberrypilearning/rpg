@@ -1,37 +1,37 @@
-## Winning the game
+## Het spel winnen
 
-Let’s give your player a mission, which needs to completed to win the game.
+We gaan de speler een doel geven wat gehaald moet worden om het spel te kunnen winnen.
 
-+ In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
++ In dit spel wint de speler als die in de tuin komt en zo uit het huis ontsnapt. De sleutel en de toverdrank moet ook zijn gepakt. Hier is een kaart van het spel.
     
     ![screenshot](images/rpg-final-map.png)
 
-+ First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
++ Ten eerste moet er een tuin worden gemaakt, ten zuiden van de eetkamer. Vergeet niet om deuren toe te voegen voor de verbinding met andere kamers in het huis.
     
     ![screenshot](images/rpg-garden.png)
 
-+ Add a potion to the dining room (or another room in your house).
++ Plaats een toverdrank in de eetkamer (of een andere kamer in je huis).
     
     ![screenshot](images/rpg-potion.png)
 
-+ Add this code to allow the player to win the game when they get to the garden with the key and the potion:
++ Voeg deze code toe om ervoor te zorgen dat de speler wint als die in de tuin aankomt met sleutel en toverdrank:
     
     ![screenshot](images/rpg-win-code.png)
     
-    Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+    Zorg ervoor dat de code inspringt zodat het gelijk staat met de code erboven. Deze code zorgt ervoor dat het bericht `Je bent ontsnapt...JIJ WINT!` wordt getoond als de speler in kamer 4 is (de tuin) en de sleutel en de toverdrank in de inventaris zit.
     
-    If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
+    Als je meer dan 4 kamers hebt kan het zijn dat je in de code hierboven een ander kamernummer moet gebruiken voor de tuin.
 
-+ Test your game to make sure the player can win!
++ Test het spel en zorg ervoor dat de speler kan winnen!
     
     ![screenshot](images/rpg-win-test.png)
 
-+ Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
++ Tot slot voegen we wat instructies toe aan het spel zodat de speler weet wat die moet doen. Bewerk de functie `toonInstructies()` om meer informatie te geven.
     
     ![screenshot](images/rpg-instructions-code.png)
     
-    You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+    Je moet instructies toevoegen om de speler te vertellen welke voorwerpen ze moeten verzamelen en wat ze moeten zien te vermijden!
 
-+ Test your game and you should see your new instructions.
++ Test het spel en kijk of de instructies zichtbaar zijn.
     
     ![screenshot](images/rpg-instructions-test.png)
