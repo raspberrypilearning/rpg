@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Develop your own game
+## Uitdaging: ontwikkel je eigen spel
 
-Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
+Maak een eigen spel met de kennis die je hier hebt opgedaan. Voeg een hoop kamers, te vermijden monsters en te verzamelen voorwerpen toe. Vergeet niet om de code zo aan te passen dat de speler wint als die in een bepaalde kamer komt met een paar voorwerpen in de inventaris. Het kan helpen om eerst een kaartje te tekenen voordat je begint met programmeren!
 
-You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+Je zou zelfse trappen aan de kaart kunnen toevoegen om meer dan één niveau van kamers te krijgen, met de instructies `ga omhoog` en `ga omlaag`.
 
 \--- /challenge \---
