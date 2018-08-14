@@ -1,0 +1,37 @@
+---
+hero_image: images / rpg.png
+theme: 海軍
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1、design-0、programming-1、phys-comp-0、製造-0、コミュニティ-0
+title: RPG
+description: 独自のRPG迷路ゲームを設計し、コード化します。
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: ゲーム
+technologies: パイソン
+site_areas: プロジェクト
+hardware: ''
+software: パイソン
+version: 3
+last_tested: 2017-01-01
+steps:
+  - 
+    title: '前書き： '
+  - 
+    title: 新しい部屋を追加する
+  - 
+    title: '課題：新しい部屋を追加'
+  - 
+    title: 収集するアイテムを追加する
+  - 
+    title: '課題：新しいアイテムを追加する'
+  - 
+    title: 敵を追加する
+  - 
+    title: '課題：モンスターを追加する'
+  - 
+    title: ゲームに勝つ
+  - 
+    title: '課題：自分のゲームを開発する'
