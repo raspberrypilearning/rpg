@@ -1,107 +1,107 @@
 #!/bin/python3
 
-def showInstructions():
-    #print a main menu and the commands
+def toonInstructies():
+    #laat een hoofdmenu en de commando's zien
     print('''
-RPG Game
+RPG Spel
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+Ga naar de tuin met een sleutel en een toverdrank
+Vermijd de monsters!
 
-Commands:
-  go [direction]
-  get [item]
+Commando‘s:
+  ga [richting]
+  pak [voorwerp]
 ''')
 
-def showStatus():
-  #print the player's current status
+def toonStatus():
+  #laat de huidige status van de speler zien
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('Je bent in de ' + dezeKamer)
+  #laat de huidige inventaris zien
+  print("inventaris : " + str(inventaris))
+  #laat een voorwerp zien als er een is
+  if "voorwerp" in kamers[dezeKamer]:
+    print('Je ziet een ' + kamers[dezeKamer]['voorwerp'])
   print("---------------------------")
 
-#an inventory, which is initially empty
-inventory = []
+#een lege inventaris
+inventaris = []
 
-#a dictionary linking a room to other room positions
-rooms = {
+#een woordenboek die een kamer verbindt met andere kamers
+kamers = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            'Hal' : { 'zuid' : 'Keuken',
+                  'oost'  : 'Eetkamer',
+                  'voorwerp'  : 'sleutel'
                 },        
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            'Keuken' : { 'noord' : 'Hal',
+                  'voorwerp'  : 'monster'
                 },
                 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            'Eetkamer' : { 'west'  : 'Hal',
+                  'zuid' : 'Tuin',
+                  'voorwerp'  : 'toverdrank'
               
                 },
                 
-            'Garden' : { 'north' : 'Dining Room' }
+            'Tuin' : { 'noord' : 'Eetkamer' }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#laat de speler in de hal beginnen
+dezeKamer = 'Hal'
 
-showInstructions()
+toonInstructies()
 
-#loop forever
+#Voor altijd herhalen
 while True:
 
-  showStatus()
+  toonStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':  
-    move = input('>')
+  #vraag de volgende stap van de speler op
+  #.split() splitst het op in een gerangschikte lijst
+  #zo zal 'ga oost' deze lijst geven:
+  #['ga','oost']
+  beweeg = ''
+  while beweeg == '':  
+    beweeg = input('>')
     
-  move = move.lower().split()
+  beweeg = beweeg.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #als eerst 'ga' wordt getypt
+  if beweeg[0] == 'ga':
+    #kijk dan of alle richtingen beschikbaar zijn
+    if beweeg[1] in kamers[dezeKamer]:
+      #de huidige kamer wordt de nieuwe kamer
+      dezeKamer = kamers[dezeKamer][beweeg[1]]
+    #er is geen deur (verbinding) naar de nieuwe kamer
     else:
-      print('You can\'t go that way!')
+      print('Je kunt zo niet gaan!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #als eerst 'pak' wordt getypt
+  if beweeg[0] == 'pak' :
+    #als de kamer een voorwerp bevat en het je wilt het hebben
+    if 'voorwerp' in kamers[dezeKamer] and beweeg[1] in kamers[dezeKamer]['voorwerp']:
+      #voeg het voorwerp toe aan de inventaris
+      inventaris += [beweeg[1]]
+      #laat een verklarend berichtje zien
+      print(beweeg[1] + ' hebbes!')
+      #haal het voorwerp uit de kamer
+      del kamers[dezeKamer]['voorwerp']
+    #of, als er geen voorwerp is
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #geef aan dat er niks te pakken is
+      print('Kan' + beweeg[1] + 'niet pakken!')
 
-  # player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  #de speler verliest als er een monster in de kamer is
+  if 'voorwerp' in kamers[dezeKamer] and 'monster' in kamers[dezeKamer]['voorwerp']:
+    print('Een monster heeft je te pakken... GAME OVER!')
     break
 
-  # player wins if they get to the garden with a key and a shield
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  # player wins if they get to the garden with a key and a potion
+  if dezeKamer == 'Tuin' and 'sleutel' in inventaris and 'toverdrank' in inventaris:
+    print('Je bent ontsnapt... JIJ WINT!')
     break
   
