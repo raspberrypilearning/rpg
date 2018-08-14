@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Develop your own game
+## Sfida: Sviluppa il tuo gioco personalizzato
 
-Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
+Usa quello che hai imparato per creare il tuo gioco personalizzato. Aggiungi un sacco di stanze, mostri da evitare e oggetti da collezionare. Ricorda di modificare il codice in modo che il giocatore vinca quando arriva a una certa stanza con alcuni oggetti nel suo inventario. Disegnare una mappa, potrebbe aiutarti prima di iniziare a scrivere il codice!
 
-You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+Puoi persino aggiungere scale alla tua mappa e avere più di un livello di stanze, digitando `vai su` e `vai giù`.
 
 \--- /challenge \---
