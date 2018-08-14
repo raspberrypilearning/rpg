@@ -1,6 +1,6 @@
 ## Dodawanie nowych pokoi
 
-+ Dostarczono kod do tej gry. pióra tego bibelotu: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ Dostarczono kod do tej gry. Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
 + Jest to bardzo prosta gra RPG, która ma tylko 2 pokoje. Oto mapa gry:
     
