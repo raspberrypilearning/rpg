@@ -1,0 +1,37 @@
+---
+hero_image: images/rpg.png
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
+title: Jeu de rôle
+description: Dessiner et coder ton propre jeu de rôle et de labyrinthe.
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: games
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - 
+    title: 'Introduction'
+  - 
+    title: Ajouter de nouvelles pièces
+  - 
+    title: 'Défi : Ajoute de nouvelles pièces'
+  - 
+    title: Ajoute des articles à ramasser
+  - 
+    title: 'Défi : Ajoute des nouveaux articles'
+  - 
+    title: Ajoute des adversaires
+  - 
+    title: 'Défi : Ajoute plus de monstres'
+  - 
+    title: Pour gagner le jeu
+  - 
+    title: 'Défi : Développer ton propre jeu'
