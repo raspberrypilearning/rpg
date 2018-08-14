@@ -1,11 +1,9 @@
 --- challenge ---
-## Aufgabe: Entwickele dein eigenes Spiel 
 
-Benutze das, was du gelernt hast, um dein eigenes Spiel zu erstellen. Füge jede Menge Zimmer hinzu und Monster, die es zu vermeiden gilt, sowie Gegenstände, die eingesammelt werden müssen. Denke daran, den Code zu modifizieren, damit der Spieler auch gewinnen kann, wenn er/sie einen bestimmten Raum mit manchen der Gegenstände auf seiner/ihrer Sammelliste betritt. Es ist vielleicht hilfreich, eine Skizze des Spielplans anzufertigen, ehe du mit dem Programmieren beginnst! 
+## Herausforderung: Entwickle dein eigenes Spiel
 
-Du könntest auch Treppen zu deiner Karte hinzufügen und Zimmer auf mehreren Etagen haben, indem du `go up` (nach oben gehen) und `go down` (nach unten gehen) eintippst.
+Verwende das Gelernte um dein eigenes Spiel zu entwickeln. Füge viele Zimmer, Monster - denen man ausweichen muss -, und Gegenstände - die man einsammeln muss -, hinzu. Denke daran, den Code so zu verändern, dass der Spieler nur dann gewinnt, wenn er ein bestimmtes Zimmer mit bestimmten Gegenständen im Inventar erreicht. Es ist hilfreich, wenn du einen Plan skizzierst, bevor du mit dem Codieren anfängst!
 
-
-
+Du kannst deinem Plan sogar Treppen hinzufügen und so mehr als eine Etage für deine Zimmer verwenden, indem du `gehenach oben` und `gehenach unten` eintippst.
 
 --- /challenge ---
