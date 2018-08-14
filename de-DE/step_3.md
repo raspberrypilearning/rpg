@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Add new rooms
+## Herausforderung: Neue Zimmer hinzufügen
 
-Can you add more rooms to your game? For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
+Kannst du deinem Spiel weitere Zimmer hinzufügen? Du könntest zum Beispiel ein Wohnzimmer im Süden des Esszimmers hinzufügen. Vergiss nicht, eine Tür zu/von einem der anderen Zimmer hinzuzufügen!
 
 \--- /challenge \---
