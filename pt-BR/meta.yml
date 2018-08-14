@@ -7,7 +7,7 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Projetar e codificar seu próprio jogo de labirinto de RPG.
+description: Neste desafio, você vai desenvolver e programar seu próprio jogo de labirinto no estilo RPG.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -18,7 +18,7 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introduction: '
+    title: 'RPG'
   - 
     title: Adicionando novos quartos
   - 
