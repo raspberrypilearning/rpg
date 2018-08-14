@@ -1,6 +1,6 @@
 ## Додавання нових номерів
 
-+ Деякий код для цієї гри був наданий для вас. ручка ця дрібничка: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ Деякий код для цієї гри був наданий для вас. Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
 + Це дуже проста RPG гра, яка має тільки 2 кімнати. Ось карта гри:
     
