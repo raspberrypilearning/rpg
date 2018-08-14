@@ -1,86 +1,86 @@
 #!/bin/python3
 
-# Replace RPG starter project with this code when new instructions are live
+# Sostituisci il file RPG-iniziale con questo codice quando nuove istruzioni sono state inserite
 
-def showInstructions():
-  #print a main menu and the commands
+def mostraIstruzioni():
+  #stampa un menu principale e i comandi
   print('''
-RPG Game
+Gioco RPG
 ========
-Commands:
-  go [direction]
-  get [item]
+Comandi:
+  vai [direzione]
+  prendi [oggetto]
 ''')
 
-def showStatus():
-  #print the player's current status
+def mostraPosizione():
+  #stampa la posizione corrente del giocatore
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
-  print("---------------------------")
+  print('Sei in ' + stanzaCorrente)
+  #stampa il contenuto dell'inventario
+  print('inventario : ' + str(inventario))
+  #stampa un oggetto se presente nell'inventario
+  if 'oggetto' in stanze[stanzaCorrente]:
+    print('Vedi quest\'oggetto: ' + stanze[stanzaCorrente]['oggetto'])
+  print('---------------------------')
 
-#an inventory, which is initially empty
-inventory = []
+#un inventario inizialmente vuoto
+inventario = []
 
-#a dictionary linking a room to other rooms
-rooms = {
+#un dizionario collega una stanza alle altre
+stanze = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen'
+            'Ingresso' : { 
+                  'sud' : 'Cucina'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall'
+            'Cucina' : {
+                  'nord' : 'Ingresso'
                 }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#all'inizio il giocatore si trova nell'ingresso
+stanzaCorrente = 'Ingresso'
 
-showInstructions()
+mostraIstruzioni()
 
-#loop forever
+#ciclo infinito
 while True:
 
-  showStatus()
+  mostraPosizione()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':  
-    move = input('>')
+  #prende la prossima 'istruzione' del giocatore
+  #e .split() la divide in una lista
+  #per esempio digitando 'vai est' si ottiene la seguente lista:
+  #['vai','est']
+  istruzione = ''
+  while istruzione == '':  
+    istruzione = input('>')
     
-  move = move.lower().split()
+  istruzione = istruzione.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #se la prima parola digitata è 'vai'
+  if istruzione[0] == 'vai':
+    #verifica se la direzione inserita è consentita
+    if istruzione[1] in stanze[stanzaCorrente]:
+      #imposta la stanza corrente alla nuova inserita
+      stanzaCorrente = stanze[stanzaCorrente][istruzione[1]]
+    #non c'è nessuna porta (collegamento) in quella direzione
     else:
-        print('You can\'t go that way!')
+        print('Non puoi andare da quella parte!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #se la prima parola digitata è 'prendi'
+  if istruzione[0] == 'prendi' :
+    #se la stanza contiene un oggetto ed è quello che si vuole raccogliere
+    if 'oggetto' in stanze[stanzaCorrente] and istruzione[1] in stanze[stanzaCorrente]['oggetto']:
+      #aggiungi l'oggetto all'inventario
+      inventario += [istruzione[1]]
+      #visualizza un messaggio di conferma
+      print('Ho raccolto: ' + istruzione[1])
+      #cancella l'oggetto dalla stanza
+      del stanze[stanzaCorrente]['oggetto']
+    #altrimenti se non c'è nessun oggetto da prendere
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #informa che non si può prendere
+      print('Impossibile prendere ' + istruzione[1] + '!')
 
