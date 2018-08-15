@@ -68,7 +68,7 @@ while True:
   while spielzug == '':  
     spielzug = input('>')
     
-  spielzug = spielzug.split
+  spielzug = spielzug.split()
 #please do not change - in German the object names start with uppercase letter
 
   #Wenn das Eingetippte mit 'gehenach' beginnt
