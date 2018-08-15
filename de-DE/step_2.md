@@ -1,6 +1,6 @@
 ## Neue Zimmer hinzufügen
 
-+ Ein Teil des Codes dieses Spieles steht für dich bereit. Open this trinket: <a href="https://trinket.io/python/cb40c456c0" target="_blank">trinket.io/python/cb40c456c0</a>.
++ Ein Teil des Codes dieses Spieles steht für dich bereit. Öffne diesen Trinket: <a href="https://trinket.io/python/cb40c456c0" target="_blank">trinket.io/python/cb40c456c0</a>.
 
 + Dies ist ein sehr einfaches RPG-Spiel mit nur zwei Zimmern. Hier ist ein Plan des Spiels:
     
