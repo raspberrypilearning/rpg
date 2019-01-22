@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Add new rooms
+## Izazov: Dodaj nove prostorije
 
-Can you add more rooms to your game? For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
+Možeš li dodati još prostorija svojoj igri? Možeš, na primjer, dodadti dnevni boravak južno od blagovaonice. Ne zaboravi dodati i vrata do/iz neke od ostalih prostorija!
 
 \--- /challenge \---
