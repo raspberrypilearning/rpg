@@ -7,7 +7,7 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: U ovom projektu dizajnirat ćeš i napraviti vlastitu RPG igru labirinta.
+description: Dizajniraj i napravi vlastitu RPG igru labirinta.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -18,20 +18,20 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'RPG'
+    title: 'Uvod: '
   - 
-    title: Adding new rooms
+    title: Dodavanje novih prostorija
   - 
-    title: 'Challenge: Add new rooms'
+    title: 'Izazov: Dodaj nove prostorije'
   - 
-    title: Adding items to collect
+    title: Dodavanje predmeta za sakupljanje
   - 
-    title: 'Challenge: Add new items'
+    title: 'Izazov: Dodaj nove predmete'
   - 
-    title: Adding enemies
+    title: Dodavanje neprijatelja
   - 
-    title: 'Challenge: Adding more monsters'
+    title: 'Izazov: Dodaj još čudovišta'
   - 
-    title: Winning the game
+    title: Pobjeda u igri
   - 
-    title: 'Challenge: Develop your own game'
+    title: 'Izazov: Osmisli vlastitu igru'
