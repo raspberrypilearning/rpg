@@ -1,6 +1,6 @@
-## Introduction:
+## Uvod:
 
-In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
+U ovom projektu dizajnirat ćeš i napraviti vlastitu RPG igru labirinta. Cilj igre je skupiti sve objekte i pobjeći iz kuće, izbjegavajući pri tome sva čudovišta!
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,81 +8,81 @@ In this project, you’ll design and code your own RPG maze game. The aim of the
   <img src="images/rpg-finished.png">
 </div>
 
-### Additional information for club leaders
+### Dodatne informacije za voditelje kluba
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Ako želite ispisati ovaj projekt, molimo Vas da koristite [verziju koja je prilagođena za ispis](https://projects.raspberrypi.org/en/projects/rpg/print).
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title: Bilješke za voditelja kluba
 
-## Introduction:
+## Uvod:
 
-This project teaches game design through the development of an RPG maze game. In this game, the player has to pick up objects within a house and get to a specific room, while avoiding monsters lurking in some of the rooms. This game will be achieved by manipulating dictionaries and lists.
+U ovom projektu djeca uče o dizajnu igara kroz izradu RPG igre labirinta. U ovoj igri igrač mora sakupiti objekte unutar kuće i doći do određene prostorije, a pritom izbjegavati čudovišta koja vrebaju u nekim prostorijama. Igra će biti napravljena manipuliranjem rječnicima i listama.
 
-## Online Resources
+## Online izvori
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**U ovom projektu koristi se Python 3.** Predlažemo korištenje [trinketa](https://trinket.io/) za online pisanje u Pythonu. Ovaj projekt sadrži sljedeće Trinkete:
 
-+ ['RPG' starting point -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
++ ['RPG' početni materijal -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
 
-There is also a trinket containing the finished project:
+Također je uključen i trinket koji sadrži dovršeni projekt:
 
-+ [‘RPG’ Finished -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
++ [‘RPG’ dovršeni projekt -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
 
-## Offline Resources
+## Offline izvori
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+Ako želite, ovaj projekt možete izraditi [offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Materijalima projekta možete pristupiti klikom na poveznicu 'Materijali projekta'. Poveznica sadrži odjeljak 'Resursi projekta' u kojem se nalaze materijali koji će djeci biti potrebni za izradu projekta offline. Pobrinite se da svako dijete ima pristup kopiji ovih materijala. U odjeljku se nalaze sljedeće datoteke:
 
 + rpg/rpg.py
 
-You can also find the completed project project in the 'Volunteer Resources' section, which contains:
+Dovršenu verziju projekta možete pronaći i u odjeljku 'Resursi za volontere' koji sadrži:
 
 + rpg-finished/rpg.py
 
-(All of the resources above are also downloadable as project and volunteer `.zip` files.)
+(Svi spomenuti materijali nalaze se u materijalima projekta i materijalima za volontere, koje je moguće preuzeti kao `.zip` datoteke.)
 
-## Learning Objectives
+## Ishodi učenja
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ Dizajn igre;
++ Uređivanje: 
+    + Lista;
+    + Rječnika.
++ Booleovi izrazi.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Ovaj projekt obuhvaća elemente iz sljedećih dijelova [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) nastavnog plana i programa:
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Uporaba različitih programskih struktura za rješavanje problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## Izazovi
 
-+ Adding new rooms;
-+ Adding items to collect;
-+ Adding enemies to avoid;
-+ Develop your own game.
++ Dodavanje novih prostorija;
++ Dodavanje predmeta za sakupljanje;
++ Dodavanje neprijatelja za izbjegavanje;
++ Osmisli vlastitu igru.
 
-## Frequently Asked Questions
+## Često postavljana pitanja
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding a new room to the 'rooms' dictionary, a comma needs to be added between the new room being added and the previous room.
-+ When adding a new room, children may forget to add a link to an existing room to the newly created room. This will mean that children can leave a room, but not enter it!
-+ The code for checking whether the player has won or lost the game needs to be indented, to ensure that this check is performed upon entering each new room. If the code isn't indented, then it sits outside of the main game loop and is never run.
++ Djecu će možda biti potrebno podsjetiti da se elementi unutar rječnika/liste odvajaju zarezom. Primjerice, kada dodajemo novu prostoriju u rječnik 'prostorije', između nove prostorije i zadnje prostorije koja se nalazi u rječniku moramo dodati zarez.
++ Pri dodavanju nove prostorije, djeca će možda zaboraviti u novoj prostoriji dodati poveznicu na već postojeću prostoriju. Tada će moći izaći iz prostorije, ali ne i ući u nju!
++ Dio kôda koji provjerava je li igrač pobijedio ili izgubio u igri mora biti uvučen kako bi se osiguralo da se ta provjera obavlja prilikom svakog ulaska u novu prostoriju. Ukoliko kôd nije uvučen, onda će se nalaziti izvan glavne petlje igre i neće se nikada pokrenuti.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: Materijali projekta
 
-## Project resources
+## Resursi projekta
 
-+ [.zip file containing all project resources](resources/rpg-project-resources.zip)
-+ [Online Trinket containing all 'RPG' project resources](http://jumpto.cc/rpg-go)
++ [.zip datoteka koja sadrži sve materijale projekta](resources/rpg-project-resources.zip)
++ [Online Trinket koji sadrži sve resurse projekta 'RPG'](http://jumpto.cc/rpg-go)
 + [rpg/rpg.py](resources/rpg-rpg.py)
 
-## Club leader resources
+## Resursi za voditelja kluba
 
-+ [.zip file containing all completed project resources](resources/rpg-volunteer-resources.zip)
-+ [Online completed Trinket project](https://trinket.io/python/d06adeb527)
++ [.zip datoteka koja sadrži sve dovršene materijale projekta](resources/rpg-volunteer-resources.zip)
++ [Dovršeni Online Trinket projekt](https://trinket.io/python/d06adeb527)
 + [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
 
 \--- /collapse \---
