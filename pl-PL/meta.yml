@@ -1,5 +1,5 @@
 ---
-hero_image: images / rpg.png
+hero_image: images/rpg.png
 theme: marynarka wojenna
 duration: 2
 listed: true
@@ -10,15 +10,15 @@ title: RPG
 description: Zaprojektuj i zakoduj swoją własną grę labiryntową RPG.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
-technologies: pyton
-site_areas: projects
+technologies: python
+site_areas: projekty
 hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introduction: '
+    title: 'Wprowadzenie: '
   - 
     title: Dodawanie nowych pokoi
   - 
