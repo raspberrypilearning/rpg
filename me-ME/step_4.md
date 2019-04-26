@@ -1,13 +1,13 @@
-## Adding items to collect
+## Dodavanje predmeta za sakupljanje
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+U prostorije ćemo postaviti predmete koje će igrač sakupljati dok se bude kretao kroz lavirint.
 
-+ Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
++ Dodavanje predmeta u prostoriju je lako - jednostavno ga dodaj u rječnik prostorije. Postavimo ključ u hodnik.
     
     ![screenshot](images/rpg-key.png)
     
-    Remember to put a comma after the line above the new item, or your program won’t run!
+    Ne zaboravi da staviš zarez na kraju reda iznad novog unosa ili tvoj program neće raditi!
 
-+ If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
++ Ako sada, nakon dodavanja prethodnog kôda, pokreneš svoju igru, u hodniku ćeš vidjeti ključ koji možeš čak i pokupiti (upisivanjem `uzmi ključ`) i tako ga dodati u svoj inventar!
     
     ![screenshot](images/rpg-key-test.png)
