@@ -1,17 +1,17 @@
-## Adding enemies
+## Dodavanje neprijatelja
 
-This game is too easy! Let’s add enemies to some rooms that the player must avoid.
+Ova igra je previše laka! Dodajmo u neke od prostorija neprijatelje koje će igrač morati da izbjegava.
 
-+ Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
++ Dodavanje neprijatelja u prostoriju jednostavno je kao i dodavanje bilo kojeg drugog predmeta. Dodajmo gladno čudovište u kuhinju:
     
     ![screenshot](images/rpg-monster-dict.png)
 
-+ You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
++ Takođe treba da obezbijediš da se igra završi ako igrač uđe u prostoriju u kojoj se nalazi čudovište. To možeš da uradiš koristeći sljedeći kôd koji treba da dodaš na kraju igre:
     
     ![screenshot](images/rpg-monster-code.png)
     
-    This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
+    Ovaj kôd provjerava da li se neki predmet nalazi u prostoriji i, ako se nalazi, da li je taj predmet čudovište. Imaj u vidu da je ovaj kôd uvučen, tako da je poravnat sa kôdom iznad njega. To znači da će igra provjeravati postoji li čudovište u prostoriji svaki put kada igrač uđe u novu prostoriju.
 
-+ Test out your code by going into the kitchen, which now contains a monster.
++ Isprobaj svoj kôd tako što ćeš ući u kuhinju u kojoj se sada nalazi čudovište.
     
     ![screenshot](images/rpg-monster-test.png)
