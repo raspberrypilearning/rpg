@@ -1,6 +1,6 @@
 ## Voeg nieuwe kamers toe
 
-+ Er is al wat code voor je klaargezet. Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ Er is al wat code voor je klaargezet. Open deze trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
 + Dit is een erg eenvoudig RPG spel met maar 2 kamers. Hier is een kaart van het spel:
     
