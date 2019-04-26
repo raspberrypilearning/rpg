@@ -1,0 +1,37 @@
+---
+hero_image: 圖片/ rpg.png
+theme: 海軍
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1，design-0，programming-1，phys-comp-0，manufacture-0，community-0
+title: RPG
+description: 設計和編碼自己的RPG迷宮遊戲。
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: 遊戲
+technologies: 蟒蛇
+site_areas: 項目
+hardware: ''
+software: 蟒蛇
+version: 3
+last_tested: 2017年1月1日
+steps:
+  - 
+    title: '介紹： '
+  - 
+    title: 添加新房間
+  - 
+    title: '挑戰：添加新房間'
+  - 
+    title: 添加要收集的項目
+  - 
+    title: '挑戰：添加新項目'
+  - 
+    title: 添加敵人
+  - 
+    title: '挑戰：添加更多怪物'
+  - 
+    title: 贏得比賽
+  - 
+    title: '挑戰：開發自己的遊戲'
