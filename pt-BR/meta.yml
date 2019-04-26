@@ -1,6 +1,6 @@
 ---
-hero_image: images / rpg.png
-theme: marinha
+hero_image: images/rpg.png
+theme: navy
 duration: 2
 listed: true
 ingredient: false
@@ -15,10 +15,10 @@ site_areas: projects
 hardware: ''
 software: python
 version: 3
-last_tested: 2017-01-01
+last_tested: 01/01/2017
 steps:
   - 
-    title: 'RPG'
+    title: 'Introdução: '
   - 
     title: Adicionando novos quartos
   - 
