@@ -4,7 +4,7 @@ Vamos dar ao seu jogador uma missão, que precisa ser concluída para ganhar o j
 
 + Neste jogo, o jogador ganha chegando ao jardim e escapando da casa. Eles também precisam ter a chave e a poção mágica. Aqui está um mapa do jogo.
     
-    ![captura de tela](images/rpg-final-map.png)
+    ![screenshot](images/rpg-final-map.png)
 
 + Primeiro, você precisa adicionar um jardim ao sul da sala de jantar. Lembre-se de adicionar portas, para ligar a outros cômodos da casa.
     
@@ -24,14 +24,14 @@ Vamos dar ao seu jogador uma missão, que precisa ser concluída para ganhar o j
 
 + Teste o seu jogo para se certificar de que o jogador pode ganhar!
     
-    ![captura de tela](images/rpg-win-test.png)
+    ![captura](images/rpg-win-test.png)
 
 + Finalmente, vamos adicionar algumas instruções ao seu jogo, para que o jogador saiba o que deve fazer. Edite a função `showInstructions ()` para incluir mais informações.
     
-    ![captura de tela](images/rpg-instructions-code.png)
+    ![screenshot](images/rpg-instructions-code.png)
     
     Você precisará adicionar instruções para informar ao usuário quais itens eles precisam coletar e o que precisam evitar!
 
 + Teste seu jogo e você verá suas novas instruções.
     
-    ![captura de tela](images/rpg-instructions-test.png)
+    ![screenshot](images/rpg-instructions-test.png)
