@@ -1,107 +1,107 @@
 #!/bin/python3
 
 def showInstructions():
-    #print a main menu and the commands
+    #Imprime un menu principal y los comandos
     print('''
-RPG Game
+Juego RPG
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+Ve al Jardin con una llave y una pocion
+¡Evita los monstruos!
 
-Commands:
-  go [direction]
-  get [item]
+Comandos:
+  ir [direction]
+  coger [item]
 ''')
 
 def showStatus():
-  #print the player's current status
+  #Imprime el estado actual del jugador
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
+  print("Estas en " + currentRoom)
+  #Imprime el inventario actual
+  print("Inventario: " + str(inventory))
+  #imprime un objeto si hay uno
   if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+    print('Puedes ver ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-#an inventory, which is initially empty
+#un inventario, que esta vacio al principio
 inventory = []
 
-#a dictionary linking a room to other room positions
+#un diccionario que une una habitacion a las posiciones de las otras habitaciones
 rooms = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            'Sala' : {'sur' : 'Cocina',
+                  'este' : 'Comedor',
+                  'item' : 'llave'
                 },        
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            'Cocina' : {'norte' : 'Sala',
+                  'item' : 'monstruo'
                 },
                 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            'Comedor' : { 'oeste' : 'Sala',
+                  'sur' : 'Jardin',
+                  'item' : 'pocion'
               
                 },
                 
-            'Garden' : { 'north' : 'Dining Room' }
+            'Jardin' : { 'north' : 'Dining Room' }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#comienza con el jugador en la Sala
+currentRoom = 'Sala'
 
 showInstructions()
 
-#loop forever
+#Repetir indefinidamente
 while True:
 
   showStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
+  #obtiene el siguiente movimiento del jugador
+  #.split() lo separa en una lista
+  #por ejemplo escribir 'ir este' va a dar la lista:
+  #['ir','este']
   move = ''
   while move == '':  
     move = input('>')
     
   move = move.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
+  #si escriben 'ir' primero
+  if move[0] == 'ir':
+    #verifica que esta permitido ir a donde quieren ir
     if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
+      #haz que la habitacion en la que esta el jugador sea la nueva habitacion
       currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+    #si no hay una puerta (conectando) hacia donde quieren ir
     else:
-      print('You can\'t go that way!')
+      print('¡No puedes ir en esa direccion!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
+  #si escriben 'coger' primero
+  if move[0] == 'coger' :
+    #si la habitacion contiene un objeto y ese objeto es el que el jugador quiere coger
     if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
+      #añade el objeto al inventario
       inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
+      #muestra un mensaje de ayuda
+      print('¡Ahora tienes un/una ' + move[1] + '!')
+      #borra el objeto de la habitacion
       del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+    #si el objeto que se quiere no esta en la habitacion
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #diles que no pueden cogerlo
+      print('¡No puedes coger el/la ' + move[1] + '!')
 
-  # player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  # el jugador pierde si entra a una habitacion con un monstruo
+  if 'item' in rooms[currentRoom] and 'monstruo' in rooms[currentRoom]['item']:
+    print('Un monstruo te atrapo... ¡FIN!')
     break
 
-  # player wins if they get to the garden with a key and a potion
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  # el jugador gana si llega al jardin con una llave y una pocion
+  if currentRoom == 'Jardin' and 'llave' in inventory and 'pocion' in inventory:
+    print('Te escapaste de la casa... ¡GANASTE!')
     break
   
