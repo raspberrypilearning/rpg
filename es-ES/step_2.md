@@ -1,35 +1,35 @@
-## Adding new rooms
+## Añadir nuevas habitaciones
 
-+ Some code for this game has been provided for you. Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ Parte del código ya ha sido escrita para ti. Abre este Trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
-+ This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
++ Este es un juego RPG muy básico que sólo tiene 2 habitaciones. Aquí hay un mapa del juego:
     
-    ![screenshot](images/rpg-map1.png)
+    ![captura de pantalla](images/rpg-map1.png)
     
-    You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+    ¡Puedes escribir `ir sur` para moverte de la sala a la cocina, y luego `ir norte` para regresar a la sala!
     
-    ![screenshot](images/rpg-controls.png)
+    ![captura de pantalla](images/rpg-controls.png)
 
-+ What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
++ ¿Qué pasa cuando escribes una dirección en la cual no puedes ir? Escribe `ir oeste` en la sala y obtendrás un mensaje de error.
     
-    ![screenshot](images/rpg-error.png)
+    ![captura de pantalla](images/rpg-error.png)
 
-+ If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
++ Si te fijas en la variable `rooms`, verás que el mapa está codificado como un diccionario de habitaciones:
     
-    ![screenshot](images/rpg-rooms.png)
+    ![captura de pantalla](images/rpg-rooms.png)
     
-    Each room is a dictionary and rooms are linked together using directions.
+    Cada habitación es un diccionario y las habitaciones están ligadas entre ellas usando direcciones.
 
-+ Let’s add a dining room to your map, to the east of the hall.
++ Agreguemos un comedor a tu mapa, al este de la sala.
     
-    ![screenshot](images/rpg-dining.png)
+    ![captura de pantalla](images/rpg-dining.png)
     
-    You need to add a 3rd room, called the `dining room`. You also need to link it to the hall to the west. You also need to add data to the hall, so that you can move to the dining room to the east.
+    Necesitas agregar una tercera habitación, llamada el `comedor`. También necesitas unirlo con la sala al oeste. También necesitas agregar datos a la sala, así puedes moverte hacia el comedor al este.
     
-    ![screenshot](images/rpg-dining-code.png)
+    ![captura de pantalla](images/rpg-dining-code.png)
 
-+ Try out the game with your new dining room:
++ Prueba el juego con tu nuevo comedor:
     
-    ![screenshot](images/rpg-dining-test.png)
+    ![captura de pantalla](images/rpg-dining-test.png)
     
-    If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+    Si no puedes entrar y salir del comedor, verifica que agregaste todo el código de arriba (incluyendo las comas extra).
