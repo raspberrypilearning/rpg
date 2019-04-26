@@ -2,85 +2,85 @@
 
 # Replace RPG starter project with this code when new instructions are live
 
-def showInstructions():
-  #print a main menu and the commands
+def prikaziUputstva():
+  #ispiši glavni meni i naredbe
   print('''
-RPG Game
+RPG igra
 ========
-Commands:
-  go [direction]
-  get [item]
+Naredbe:
+  idi [smjer]
+  uzmi [predmet]
 ''')
 
-def showStatus():
-  #print the player's current status
+def prikaziStatus():
+  #ispiši igračev trenutni status
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('Prostorija u kojoj se nalaziš je ' + trenutnaProstorija)
+  #ispiši trenutno stanje inventara
+  print('Inventar : ' + str(inventar))
+  #ispiši predmet ako postoji
+  if "predmet" in prostorije[trenutnaProstorija]:
+    print('Vidiš ' + prostorije[trenutnaProstorija]['predmet'])
   print("---------------------------")
 
-#an inventory, which is initially empty
-inventory = []
+#inventar koji je na početku prazan
+inventar = []
 
-#a dictionary linking a room to other rooms
-rooms = {
+#rječnik koji povezuje prostorije jednu sa drugom
+prostorije = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen'
+            'Hodnik' : { 
+                  'jug' : 'Kuhinja'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall'
+            'Kuhinja' : {
+                  'sjever' : 'Hodnik'
                 }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#igrač započinje igru u Hodniku
+trenutnaProstorija = 'Hodnik'
 
-showInstructions()
+prikaziUputstva()
 
-#loop forever
+#ponavljaj neprestano
 while True:
 
-  showStatus()
+  prikaziStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':  
-    move = input('>')
+  #igračev sljedeći 'potez'
+  #.split() ga razdvaja u listu
+  #na primjer, upisivanjem 'idi istok' dobićemo listu:
+  #['idi','istok']
+  potez = ''
+  while potez == '':  
+    potez = input('>')
     
-  move = move.lower().split()
+  potez = potez.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #ako se prvo upiše 'idi'
+  if potez[0] == 'idi':
+    #provjeri da li može da ide gdje želi
+    if potez[1] in prostorije[trenutnaProstorija]:
+      #postavi trenutnu prostoriju na novu prostoriju
+      trenutnaProstorija = prostorije[trenutnaProstorija][potez[1]]
+    #ne postoje vrata (veza) za novu prostoriju
     else:
-        print('You can\'t go that way!')
+        print('Ne možeš ići tuda!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #ako se prvo upiše 'uzmi'
+  if potez[0] == 'uzmi' :
+    #ako se u prostoriji nalazi predmet i igrač ga želi uzeti
+    if 'predmet' in prostorije[trenutnaProstorija] and potez[1] in prostorije[trenutnaProstorija]['predmet']:
+      #dodaj predmet u inventar
+      inventar += [potez[1]]
+      #prikaži potvrdnu poruku
+      print(potez[1] + ' uzet!')
+      #obriši predmet iz prostorije
+      del prostorije[trenutnaProstorija]['predmet']
+    #inače, ako ne postoji predmet koji igrač želi uzeti
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #reci igraču da ne može uzeti predmet
+      print('Ne možeš uzeti ' + potez[1] + '!')
 
