@@ -6,4 +6,4 @@ Wykorzystaj to, czego się nauczyłeś, aby stworzyć własną grę. Dodaj dużo
 
 Możesz nawet dodać schody do mapy i mieć więcej niż jeden poziom pokoi, wpisując `w górę` i `w dół`.
 
-\--- / wyzwanie \---
+\--- /challenge \---
