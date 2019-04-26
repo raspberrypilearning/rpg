@@ -1,6 +1,6 @@
 ## Dodawanie nowych pokoi
 
-+ Dostarczono kod do tej gry. Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ Dostarczono kod do tej gry. Otwórz ten szablon: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
 + Jest to bardzo prosta gra RPG, która ma tylko 2 pokoje. Oto mapa gry:
     
@@ -16,13 +16,13 @@
 
 + Jeśli znajdziesz zmienną `pokoje` , możesz zobaczyć, że mapa jest zakodowana jako słownik pokoi:
     
-    ![zrzut ekranu](images/rpg-rooms.png)
+    ![screenshot](images/rpg-rooms.png)
     
     Każdy pokój jest słownikiem, a pokoje są ze sobą połączone za pomocą wskazówek.
 
 + Dodajmy jadalnię do mapy, na wschód od hali.
     
-    ![zrzut ekranu](images/rpg-dining.png)
+    ![screenshot](images/rpg-dining.png)
     
     Musisz dodać trzeci pokój o nazwie `jadalnia`. Musisz również połączyć go z halą na zachodzie. Musisz również dodać dane do hali, abyś mógł przenieść się do jadalni na wschód.
     
