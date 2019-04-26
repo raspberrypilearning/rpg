@@ -6,4 +6,4 @@ Use o que você aprendeu para criar seu próprio jogo. Adicione muitos quartos, 
 
 Você pode até adicionar escadas ao seu mapa e ter mais de um nível de salas, digitando `subindo` e `descendo`.
 
-\--- / desafio \---
+\--- /challenge \---
