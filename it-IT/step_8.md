@@ -1,12 +1,12 @@
 ## Vincere il gioco
 
-Diamo al tuo giocatore una missione, che deve essere completata per vincere la partita.
+Diamo al tuo giocatore una missione che deve essere completata per vincere la partita.
 
-+ In questo gioco, il giocatore vince arrivando in giardino e fuggendo dalla casa. Deve anche avere con sè la chiave e la pozione magica. Ecco la mappa del gioco.
++ In questo gioco il giocatore vince arrivando in giardino e fuggendo dalla casa. Deve anche avere con sè la chiave e la pozione magica. Ecco la mappa del gioco.
     
     ![screenshot](images/rpg-final-map.png)
 
-+ Per cominciare, devi aggiungere un giardino a sud della sala da pranzo. Ricorda di aggiungere porte, per collegarti ad altre stanze della casa.
++ Per cominciare aggiungi un giardino a sud della sala da pranzo. Ricorda di aggiungere porte per collegarti ad altre stanze della casa.
     
     ![screenshot](images/rpg-garden.png)
 
@@ -18,15 +18,15 @@ Diamo al tuo giocatore una missione, che deve essere completata per vincere la p
     
     ![screenshot](images/rpg-win-code.png)
     
-    Assicurati che il codice abbia i giusti rientri (indentazione), sia cioè allineato con il codice sopra di esso. Questo codice significa che il messaggio `Sei fuggito dalla casa.. HAI VINTO!` VERRÀ visualizzato se il giocatore si trova nella stanza 4 (il giardino) e se la chiave e la pozione sono nell'inventario.
+    Assicurati che il codice sia indentato, allineato col codice che lo precede. Questo codice significa che il messaggio `Sei fuggito dalla casa... HAI VINTO!` VERRÀ visualizzato se il giocatore si trova nella stanza 4 (il giardino) e se la chiave e la pozione sono nell'inventario.
     
-    Se hai più di 4 camere, potresti dover utilizzare un numero di camera diverso per il tuo giardino, nel codice qui sopra.
+    Se hai più di 4 camere, potresti dover utilizzare un numero di stanza diverso per il tuo giardino nel codice qui sopra.
 
 + Prova il tuo gioco per assicurarti che il giocatore possa vincere!
     
     ![screenshot](images/rpg-win-test.png)
 
-+ Infine, aggiungi alcune istruzioni al gioco, in modo che il giocatore sappia cosa devono fare. Modifica la funzione `mostraIstruzioni()` per includere più informazioni.
++ Infine aggiungi alcune istruzioni al gioco, in modo che il giocatore sappia cosa deve fare. Modifica la funzione `mostraIstruzioni()` per includere più informazioni.
     
     ![screenshot](images/rpg-instructions-code.png)
     
