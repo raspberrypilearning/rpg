@@ -4,7 +4,7 @@ Vamos deixar itens nos quartos para o jogador coletar enquanto eles se movem pel
 
 + Adicionar um item a uma sala é fácil, basta adicioná-lo ao dicionário da sala. Vamos colocar uma chave no corredor.
     
-    ![captura de tela](images/rpg-key.png)
+    ![screenshot](images/rpg-key.png)
     
     Lembre-se de colocar uma vírgula após a linha acima do novo item, ou seu programa não será executado!
 
