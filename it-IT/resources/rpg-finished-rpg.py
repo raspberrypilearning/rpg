@@ -31,7 +31,7 @@ inventario = []
 #un dizionario collega una stanza alle altre
 stanze = {
 
-            Ingresso' : { 'sud' : 'Cucina',
+            'Ingresso' : { 'sud' : 'Cucina',
                   'est'  : 'Sala da pranzo',
                   'oggetto'  : 'chiave'
                 },        
@@ -76,7 +76,7 @@ while True:
     if istruzione[1] in stanze[stanzaCorrente]:
       #imposta la stanza corrente alla nuova inserita
       stanzaCorrente = stanze[stanzaCorrente][istruzione[1]]
-    #non c'è nessuna porta (collegamento) in quella direzione
+    #altrimenti, se non c'è nessuna porta (collegamento) in quella direzione
     else:
       print('Non puoi andare da quella parte!')
 
@@ -90,7 +90,7 @@ while True:
       print('Ho raccolto: ' + istruzione[1])
       #cancella l'oggetto dalla stanza
       del stanze[stanzaCorrente]['oggetto']
-    #altrimenti se non c'è nessun oggetto da prendere
+    #altrimenti, se non c'è nessun oggetto da prendere
     else:
       #informa che non si può prendere
       print('Impossibile prendere ' + istruzione[1] + '!')
@@ -100,7 +100,7 @@ while True:
     print('Una creatura mostruosa ti ha catturato... GAME OVER!')
     break
 
-  # player wins if they get to the garden with a key and a potion
+  #il giocatore vince se raggiunge il giardino con una chiave e uno scudo
   if stanzaCorrente == 'Giardino' and 'chiave' in inventario and 'pozione' in inventario:
     print('Sei scappato dalla casa... HAI VINTO!')
     break
