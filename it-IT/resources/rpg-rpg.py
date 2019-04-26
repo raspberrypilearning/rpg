@@ -65,7 +65,7 @@ while True:
     if istruzione[1] in stanze[stanzaCorrente]:
       #imposta la stanza corrente alla nuova inserita
       stanzaCorrente = stanze[stanzaCorrente][istruzione[1]]
-    #non c'è nessuna porta (collegamento) in quella direzione
+    #altrimenti, se non c'è nessuna porta (collegamento) in quella direzione
     else:
         print('Non puoi andare da quella parte!')
 
@@ -79,7 +79,7 @@ while True:
       print('Ho raccolto: ' + istruzione[1])
       #cancella l'oggetto dalla stanza
       del stanze[stanzaCorrente]['oggetto']
-    #altrimenti se non c'è nessun oggetto da prendere
+    #altrimenti, se non c'è nessun oggetto da prendere
     else:
       #informa che non si può prendere
       print('Impossibile prendere ' + istruzione[1] + '!')
