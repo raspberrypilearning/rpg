@@ -16,7 +16,7 @@ Dajmy graczowi misję, która musi zostać ukończona, aby wygrać mecz.
 
 + Dodaj ten kod, aby pozwolić graczowi wygrać grę, gdy dostaną się do ogrodu za pomocą klucza i mikstury:
     
-    ![zrzut ekranu](images/rpg-win-code.png)
+    ![screenshot](images/rpg-win-code.png)
     
     Upewnij się, że ten kod jest wcięty, zgodnie z kodem znajdującym się nad nim. Ten kod oznacza, że ​​wiadomość `Uciekłeś z domu ... WYGRAJ!` jest wyświetlany, jeśli gracz znajduje się w pokoju 4 (ogród) i jeśli klucz i mikstura znajdują się w ekwipunku.
     
@@ -24,7 +24,7 @@ Dajmy graczowi misję, która musi zostać ukończona, aby wygrać mecz.
 
 + Sprawdź swoją grę, aby upewnić się, że gracz może wygrać!
     
-    ![zrzut ekranu](images/rpg-win-test.png)
+    ![screenshot](images/rpg-win-test.png)
 
 + Na koniec dodajmy kilka instrukcji do twojej gry, aby gracz wiedział, co mają robić. Edytuj funkcję `showInstructions ()` , aby dodać więcej informacji.
     
