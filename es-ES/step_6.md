@@ -1,17 +1,17 @@
-## Adding enemies
+## Añadir enemigos
 
-This game is too easy! Let’s add enemies to some rooms that the player must avoid.
+¡Este juego es muy fácil! Agreguemos enemigos a algunas habitaciones, que el jugador deberá evitar.
 
-+ Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
++ Añadir un enemigo a una habitación es tan fácil como agregar cualquier otro objeto. Añadamos un monstruo hambriento a la cocina:
     
-    ![screenshot](images/rpg-monster-dict.png)
+    ![captura de pantalla](images/rpg-monster-dict.png)
 
-+ You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
++ También quieres asegurarte de que el juego termine si el jugador entra a una habitación que contiene un monstruo. Puedes hacerlo con el siguiente código, que debes añadir al final del juego:
     
-    ![screenshot](images/rpg-monster-code.png)
+    ![captura de pantalla](images/rpg-monster-code.png)
     
-    This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
+    Este código verifica si hay un objeto en la habitación, y en caso afirmativo, si ese objeto es un monstruo. Date cuenta que el código tiene sangría, poniéndolo en línea con el código encima de él. Esto significa que el juego va a verificar si hay un monstruo cada vez que el jugador entra a una nueva habitación.
 
-+ Test out your code by going into the kitchen, which now contains a monster.
++ Prueba tu código yendo a la cocina, que ahora contiene un monstruo.
     
-    ![screenshot](images/rpg-monster-test.png)
+    ![captura de pantalla](images/rpg-monster-test.png)
