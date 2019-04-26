@@ -1,37 +1,37 @@
-## Winning the game
+## Pobjeda u igri
 
-Let’s give your player a mission, which needs to completed to win the game.
+Dajmo tvom igraču zadatak koji mora da izvrši da bi pobijedio u igri.
 
-+ In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
++ U ovoj igri igrač će pobijediti ako stigne do vrta i pobjegne iz kuće. Takođe mora imati ključ i čarobni napitak. Ovo je nacrt igre.
     
     ![screenshot](images/rpg-final-map.png)
 
-+ First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
++ Prvo moraš da dodaš vrt južno od trpezarije. Ne zaboravi da dodaš vrata kako bi vrt bio povezan sa ostalim prostorijama u kući.
     
     ![screenshot](images/rpg-garden.png)
 
-+ Add a potion to the dining room (or another room in your house).
++ Dodaj čarobni napitak u trpezariju (ili u neku drugu prostoriju u kući).
     
     ![screenshot](images/rpg-potion.png)
 
-+ Add this code to allow the player to win the game when they get to the garden with the key and the potion:
++ Dodaj sljedeći kôd kojim ćeš omogućiti da igrač pobijedi ako dođe do vrta sa ključem i čarobnim napitkom:
     
     ![screenshot](images/rpg-win-code.png)
     
-    Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+    Pobrini se da kôd bude uvučen i poravnat sa kôdom iznad njega. Ovaj kôd znači da će poruka `Pobjegao/pobjegla si iz kuće...POBIJEDIO/POBIJEDILA SI!` biti prikazana ako se igrač nalazi u vrtu (prostoriji 4) i u svom inventaru ima ključ i čarobni napitak.
     
-    If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
+    Ako imaš više od četiri prostorije, možda ćeš u kôdu iznad morati da koristiš drugi broj prostorije za svoj vrt.
 
-+ Test your game to make sure the player can win!
++ Isprobaj svoju igru i provjeri može li igrač da pobijedi!
     
     ![screenshot](images/rpg-win-test.png)
 
-+ Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
++ Na kraju, dodajmo uputstva u tvoju igru kako bi igrač znao šta treba da radi. Izmijeni funkciju `prikaziUputstva()` tako da sadrži više informacija.
     
     ![screenshot](images/rpg-instructions-code.png)
     
-    You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+    Treba da dodaš uputstva koja govore igraču koje predmete treba da sakupi i šta treba da izbjegava!
 
-+ Test your game and you should see your new instructions.
++ Isprobaj svoju igru. Trebalo bi da vidiš svoja nova uputstva.
     
     ![screenshot](images/rpg-instructions-test.png)
