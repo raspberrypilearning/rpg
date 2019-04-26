@@ -1,0 +1,37 @@
+---
+hero_image: Изображения / rpg.png
+theme: флот
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-0, programming-1, phys-comp-0, production-0, community-0
+title: RPG
+description: Создайте и создайте собственную игру для лабиринта RPG.
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: игры
+technologies: питон
+site_areas: проектов
+hardware: ''
+software: питон
+version: 3
+last_tested: 2017-01-01
+steps:
+  - 
+    title: 'Введение: '
+  - 
+    title: Добавление новых комнат
+  - 
+    title: 'Задача: Добавить новые комнаты'
+  - 
+    title: Добавление элементов для сбора
+  - 
+    title: 'Задача: Добавить новые предметы'
+  - 
+    title: Добавление врагов
+  - 
+    title: 'Задача: добавить больше монстров'
+  - 
+    title: Победа в игре
+  - 
+    title: 'Задача: разработать свою собственную игру'
