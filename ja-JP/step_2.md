@@ -1,6 +1,6 @@
 ## 新しい部屋を追加する
 
-+ このゲームのいくつかのコードはあなたのために提供されています。 Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ このゲームのいくつかのコードはあなたのために提供されています。 Trinketをひらく: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
 + これは2つの部屋しか持たない非常に基本的なRPGゲームです。 ゲームの地図はここにあります：
     
