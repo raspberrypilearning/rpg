@@ -1,6 +1,6 @@
-## Introduction:
+## Introducción:
 
-In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
+En este proyecto vas a diseñar y programar tu propio juego de laberinto RPG. El objetivo del juego será recoger objetos y escapar de una casa, ¡asegurándote de evitar todos los monstruos!
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -8,81 +8,81 @@ In this project, you’ll design and code your own RPG maze game. The aim of the
   <img src="images/rpg-finished.png">
 </div>
 
-### Additional information for club leaders
+### Información adicional para líderes de club
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/rpg/print).
 
 ## \--- collapse \---
 
-## title: Club leader notes
+## title: Notas del líder del club
 
-## Introduction:
+## Introducción:
 
-This project teaches game design through the development of an RPG maze game. In this game, the player has to pick up objects within a house and get to a specific room, while avoiding monsters lurking in some of the rooms. This game will be achieved by manipulating dictionaries and lists.
+Este proyecto enseña diseño de juegos mediante el desarrollo de un juego de laberinto RPG. En este juego, el jugador tiene que recoger objetos en una casa e ir a una habitación específica mientras evita a los monstruos escondidos en algunas de las habitaciones. Para conseguir hacer este juego, vamos a manipular diccionarios y listas.
 
-## Online Resources
+## Recursos en línea
 
-**This project uses Python 3.** We recommend using [trinket](https://trinket.io/) to write Python online. This project contains the following Trinkets:
+**Este proyecto usa Python 3.** Recomendamos el uso de [trinket](https://trinket.io/) para escribir Python en línea. Este proyecto contiene los siguientes Trinkets:
 
-+ ['RPG' starting point -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
++ [Punto de partida 'RPG' - jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
 
-There is also a trinket containing the finished project:
+También hay un Trinket con el proyecto acabado:
 
-+ [‘RPG’ Finished -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
++ [‘RPG’ acabado -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
 
-## Offline Resources
+## Recursos sin conexión
 
-This project can be [completed offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) if preferred. You can access the project resources by clicking the 'Project Materials' link for this project. This link contains a 'Project Resources' section, which includes resources that children will need to complete this project offline. Make sure that each child has access to a copy of these resources. This section includes the following files:
+Este proyecto se puede [completar sin conexión](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) si se prefiere. Se puede acceder a los recursos del proyecto haciendo clic en el enlace 'Materiales del proyecto' para este proyecto. Este enlace contiene una sección de 'Recursos del proyecto', que incluye los recursos que los niños necesitarán para completar este proyecto sin conexión. Asegúrese de que cada niño tenga acceso a una copia de estos recursos. Esta sección incluye los siguientes archivos:
 
 + rpg/rpg.py
 
-You can also find the completed project project in the 'Volunteer Resources' section, which contains:
+También se puede encontrar una versión completa de este proyecto en la sección 'Recursos para voluntarios', que contiene:
 
 + rpg-finished/rpg.py
 
-(All of the resources above are also downloadable as project and volunteer `.zip` files.)
+(Todos los recursos anteriores también se pueden descargar como archivos `.zip` de proyectos y voluntarios.)
 
-## Learning Objectives
+## Objetivos de aprendizaje
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ Diseño de Juegos;
++ Edición: 
+    + Listas;
+    + Diccionarios.
++ Expresiones booleanas.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Este proyecto incluye elementos de los siguientes aspectos del [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combinar estructuras de programación para resolver un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Challenges
+## Desafíos
 
-+ Adding new rooms;
-+ Adding items to collect;
-+ Adding enemies to avoid;
-+ Develop your own game.
++ Añadir nuevas habitaciones;
++ Agregar objetos para recoger;
++ Agregar enemigos para evitar;
++ Desarrolla tu propio juego.
 
-## Frequently Asked Questions
+## Preguntas frecuentes
 
-+ Children may need reminding that elements of a dictionary/list are separated by a comma. For example, when adding a new room to the 'rooms' dictionary, a comma needs to be added between the new room being added and the previous room.
-+ When adding a new room, children may forget to add a link to an existing room to the newly created room. This will mean that children can leave a room, but not enter it!
-+ The code for checking whether the player has won or lost the game needs to be indented, to ensure that this check is performed upon entering each new room. If the code isn't indented, then it sits outside of the main game loop and is never run.
++ Es posible que se necesite recordar a los niños que los elementos de un diccionario / lista están separados por una coma. Por ejemplo, al agregar una habitación al diccionario 'rooms', hay que agregar una coma entre la nueva y la anterior.
++ Al agregar una nueva habitación, los niños pueden olvidar que deben unirla con al menos una de las habitaciones que ya tenían. ¡Esto quiere decir que los niños pueden salir de una habitación pero no pueden entrar en ella!
++ El código para verificar si el jugador ha ganado o perdido tiene que tener sangría, para asegurarse de que se verifica cada vez que se entra a una habitación. Si el código no tiene sangría, queda fuera del bucle principal del juego y nunca se ejecutará.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: Materiales del proyecto
 
-## Project resources
+## Recursos del proyecto
 
-+ [.zip file containing all project resources](resources/rpg-project-resources.zip)
-+ [Online Trinket containing all 'RPG' project resources](http://jumpto.cc/rpg-go)
++ [archivo .zip que contiene todos los recursos del proyecto](resources/rpg-project-resources.zip)
++ [Trinket en línea que contiene todos los recursos del proyecto 'RPG'](http://jumpto.cc/rpg-go)
 + [rpg/rpg.py](resources/rpg-rpg.py)
 
-## Club leader resources
+## Recursos para el líder del club
 
-+ [.zip file containing all completed project resources](resources/rpg-volunteer-resources.zip)
-+ [Online completed Trinket project](https://trinket.io/python/d06adeb527)
++ [archivo .zip que contiene todos los recursos del proyecto](resources/rpg-volunteer-resources.zip)
++ [Proyecto Trinket completado en línea](https://trinket.io/python/d06adeb527)
 + [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
 
 \--- /collapse \---
