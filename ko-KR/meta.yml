@@ -1,0 +1,37 @@
+---
+hero_image: images/rpg.png
+theme: 해군
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, 디자인 -0, 프로그래밍 -1, phys-comp-0, 제조 -0, 커뮤니티 -0
+title: RPG
+description: Design and code your own RPG maze game.
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: 게임
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - 
+    title: '들어가며: '
+  - 
+    title: Adding new rooms
+  - 
+    title: 'Challenge: Add new rooms'
+  - 
+    title: Adding items to collect
+  - 
+    title: 'Challenge: Add new items'
+  - 
+    title: Adding enemies
+  - 
+    title: 'Challenge: Adding more monsters'
+  - 
+    title: Winning the game
+  - 
+    title: 'Challenge: Develop your own game'
