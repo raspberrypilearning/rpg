@@ -1,6 +1,6 @@
 ## Introduzione:
 
-In quest'attività, progetterai e programmerai il tuo gioco di labirinti RPG (gioco di ruolo). Lo scopo del gioco sarà quello di raccogliere oggetti e fuggire da una casa, assicurandosi di evitare tutti i mostri!
+In quest'attività, progetterai e programmerai il tuo RPG (gioco di ruolo) a labirinti. Lo scopo del gioco sarà quello di raccogliere oggetti e fuggire da una casa, assicurandosi di evitare tutti i mostri!
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -18,7 +18,7 @@ Se intendete stampare questo progetto, cliccate su [Versione stampabile](https:/
 
 ## Introduzione:
 
-Questo progetto insegna come progettare un gioco attraverso lo sviluppo di un gioco di ruolo a labirinti in stile RPG (gioco di ruolo). In questo gioco, il giocatore deve raccogliere oggetti all'interno di una casa e raggiungere una stanza specifica, evitando i mostri in agguato presenti in alcune stanze. Questo gioco sarà realizzato impiegando i dizionari e liste del linguaggio Python.
+Questo progetto insegna come progettare un gioco attraverso lo sviluppo di un RPG (gioco di ruolo) a labirinti. In questo gioco, il giocatore deve raccogliere oggetti all'interno di una casa e raggiungere una stanza specifica, evitando i mostri in agguato presenti in alcune stanze. Questo gioco sarà realizzato impiegando dizionari e liste del linguaggio Python.
 
 ## Risorse online
 
@@ -45,7 +45,7 @@ Potete anche trovare una versione completa di questo progetto nella sezione 'Ris
 ## Obiettivi di apprendimento
 
 + Progettazione di un gioco;
-+ Creazione: 
++ Sviluppo: 
     + Liste;
     + Dizionari.
 + Espressioni booleane.
@@ -82,7 +82,7 @@ Questo progetto include elementi tratti dalle seguenti componenti del [Raspberry
 ## Risorse per gli organizzatori del club
 
 + [File .zip con tutte le risorse del progetto](resources/rpg-volunteer-resources.zip)
-+ [Progetto Trinket completato online](https://trinket.io/python/d06adeb527)
++ [Progetto Trinket completo online](https://trinket.io/python/d06adeb527)
 + [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
 
 \--- /collapse \---
