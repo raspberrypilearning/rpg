@@ -2,25 +2,25 @@
 
 + 我们已经为你提供了这个游戏的部分代码。 请打开这个Trinket：<a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
-+ This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
++ 这是个仅包含2个房间的基本的RPG游戏。 以下是游戏的地图：
     
     ![screenshot](images/rpg-map1.png)
     
-    You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+    你可以输入`go south`指令从大厅走到厨房，然后输入`go north`指令再返回大厅！
     
     ![screenshot](images/rpg-controls.png)
 
-+ What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
++ 当你输入一个无法到达的方向时将会发生什么？ 当你在大厅时，输入`go west`指令，你将得到一个友善的错误消息。
     
     ![screenshot](images/rpg-error.png)
 
-+ If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
++ 当你在代码中找到`rooms`变量时，你会发现游戏地图实际上是用一个包含房间信息的数据字典来实现的。
     
     ![screenshot](images/rpg-rooms.png)
     
-    Each room is a dictionary and rooms are linked together using directions.
+    每个房间是字典中的一项数据，然后用方向来将房间与房间关联起来。
 
-+ Let’s add a dining room to your map, to the east of the hall.
++ 让我们在地图上添加一个餐厅，将其放在大厅的东面。
     
     ![screenshot](images/rpg-dining.png)
     
