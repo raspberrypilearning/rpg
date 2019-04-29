@@ -1,6 +1,6 @@
-## Adding new rooms
+## 添加新房间
 
-+ Some code for this game has been provided for you. Open this trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
++ 我们已经为你提供了这个游戏的部分代码。 请打开这个Trinket：<a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
 
 + This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
     
