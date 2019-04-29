@@ -71,18 +71,18 @@
 
 ## \--- collapse \---
 
-## title: Project materials
+## title: 项目资源
 
-## Project resources
+## 项目资源
 
-+ [.zip file containing all project resources](resources/rpg-project-resources.zip)
-+ [Online Trinket containing all 'RPG' project resources](http://jumpto.cc/rpg-go)
++ [包含所有项目资源的.zip文件](resources/rpg-project-resources.zip)
++ [包含所有的“RPG"项目资源的在线Trinket代码](http://jumpto.cc/rpg-go)
 + [rpg/rpg.py](resources/rpg-rpg.py)
 
-## Club leader resources
+## 俱乐部导师资源
 
-+ [.zip file containing all completed project resources](resources/rpg-volunteer-resources.zip)
-+ [Online completed Trinket project](https://trinket.io/python/d06adeb527)
++ [包含所有完成项目资源的.zip文件](resources/rpg-volunteer-resources.zip)
++ [已完成的在线Trinket项目](https://trinket.io/python/d06adeb527)
 + [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
 
 \--- /collapse \---
