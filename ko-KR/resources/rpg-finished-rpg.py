@@ -70,7 +70,7 @@ while True:
     
   move = move.lower().split()
 
-  #만약에 'go'가 입려되면
+  #만약에 'go'가 입력되면
   if move[0] == 'go':
     #go 다음에 입력된 문자열이 올바른 방인지를 체크
     if move[1] in rooms[currentRoom]:
