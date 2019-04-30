@@ -1,7 +1,7 @@
-\--- 도전 \---
+\--- challenge \---
 
-## Challenge: Add new items
+## 도전: 더 많은 아이템 추가
 
-Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
+방 안에 여러 아이템을 추가해 보세요. 집을 탈출하는 데 도움이 될 만한 물건을 추가해 봅시다. 예를 들면, shield, magic potion 등을 추가할 수 있을 것입니다.
 
 \--- /challenge \---
