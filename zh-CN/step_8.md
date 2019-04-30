@@ -2,31 +2,31 @@
 
 让我们给予玩家一项任务，使他们必须完成这项任务才能获得游戏的胜利。
 
-+ 在这个游戏中，玩家如果逃离房子并到达花园时，就赢得了胜利。 They also need to have the key with them, and the magic potion. Here’s a map of the game.
++ 在这个游戏中，玩家如果逃离房子并到达花园时，就赢得了胜利。 他们还需要拿到钥匙和魔法药水。 以下是游戏的地图。
     
     ![screenshot](images/rpg-final-map.png)
 
-+ First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
++ 首先，你需要在餐厅的南面添加一个花园。 记住要添加“门”来将其关联到另外一个房间。
     
     ![screenshot](images/rpg-garden.png)
 
-+ Add a potion to the dining room (or another room in your house).
++ 在餐厅中添加一瓶魔法药水（或任何其他一个房间）。
     
     ![screenshot](images/rpg-potion.png)
 
-+ Add this code to allow the player to win the game when they get to the garden with the key and the potion:
++ 添加以下代码，可以让玩家在得到钥匙和魔法药水，并到达花园时赢得胜利。
     
     ![screenshot](images/rpg-win-code.png)
     
-    Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+    注意这段代码也是缩进的，应当与上面的代码对齐。 这段代码表示当玩家在第4个房间（花园）中，并且在他们的物品袋中有钥匙和魔法药水时，就显示“你已逃离房子...你赢了！”的消息。
     
-    If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
+    如果你已经有了4个或更多的房间了，你可能需要在你的代码中给花园一个不同的房间号。
 
-+ Test your game to make sure the player can win!
++ 测试你的游戏，确保玩家有可能获得胜利！
     
     ![screenshot](images/rpg-win-test.png)
 
-+ Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
++ 最后，让我们在游戏中添加一些说明来让玩家知道怎样来操作。 Edit the `showInstructions()` function to include more information.
     
     ![screenshot](images/rpg-instructions-code.png)
     
