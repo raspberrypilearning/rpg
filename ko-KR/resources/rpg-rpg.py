@@ -3,30 +3,30 @@
 # Replace RPG starter project with this code when new instructions are live
 
 def showInstructions():
-  #print a main menu and the commands
+  #메인메뉴와 명령어 출력
   print('''
-RPG Game
+RPG 게임
 ========
-Commands:
-  go [direction]
-  get [item]
+명령어:
+  go [방향]
+  get [아이템]
 ''')
 
 def showStatus():
-  #print the player's current status
+  #플레이어의 현재 상태 출력
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
+  print('이곳은 ' + currentRoom + '입니다')
+  #플레이어의 현재 인벤토리 출력
+  print("인벤토리: " + str(inventory))
+  #아이템이 있다면 출력
   if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+    print(rooms[currentRoom]['item'] + '를 발견했습니다.')
   print("---------------------------")
 
-#an inventory, which is initially empty
+#인벤토리 리스트 자료형
 inventory = []
 
-#a dictionary linking a room to other rooms
+#room 딕셔너리
 rooms = {
 
             'Hall' : { 
@@ -39,12 +39,12 @@ rooms = {
 
          }
 
-#start the player in the Hall
+#플레이어는 Hall에서 시작함
 currentRoom = 'Hall'
 
 showInstructions()
 
-#loop forever
+#무한 반복
 while True:
 
   showStatus()
