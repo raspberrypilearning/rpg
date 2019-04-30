@@ -1,12 +1,12 @@
-## Adding enemies
+## 添加敌人
 
-This game is too easy! Let’s add enemies to some rooms that the player must avoid.
+这个游戏太简单了！ 让我们在，某些房间里添加一些玩家必须要躲避的敌人。
 
-+ Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
++ 在一个房间中添加一个敌人和添加一个物品一样简单。 让我们在厨房中添加一只饥饿的怪物：
     
     ![screenshot](images/rpg-monster-dict.png)
 
-+ You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
++ 你还要确保当玩家进入一个有怪物的房间时，游戏就以失败而结束。 你可以在游戏的末尾添加如下的代码：
     
     ![screenshot](images/rpg-monster-code.png)
     
