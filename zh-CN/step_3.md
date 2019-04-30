@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Add new rooms
+## 挑战：添加新房间
 
-Can you add more rooms to your game? For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
+你可以再添加更多的房间吗？ 比如，你可以在餐厅的南面再添加一个客厅。 记得要添加一扇能从另外一个房间出入其中的”门"！
 
 \--- /challenge \---
