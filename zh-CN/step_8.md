@@ -1,8 +1,8 @@
-## Winning the game
+## 赢得胜利
 
-Let’s give your player a mission, which needs to completed to win the game.
+让我们给予玩家一项任务，使他们必须完成这项任务才能获得游戏的胜利。
 
-+ In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
++ 在这个游戏中，玩家如果逃离房子并到达花园时，就赢得了胜利。 They also need to have the key with them, and the magic potion. Here’s a map of the game.
     
     ![screenshot](images/rpg-final-map.png)
 
