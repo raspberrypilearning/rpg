@@ -1,13 +1,13 @@
-## Adding items to collect
+## 添加可收集的物品
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+让我们在房间中添置一些物品，让玩家在穿越迷宫的时候收集。
 
-+ Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
++ 在房间中添加一个物品很简单，你只需要交其添加到该房间的数据字典中即可。 让我们在大厅中添加一把钥匙。
     
-    ![screenshot](images/rpg-key.png)
+    ![截图](images/rpg-key.png)
     
-    Remember to put a comma after the line above the new item, or your program won’t run!
+    在添加新一行时记住要在前一行的末尾添加一个逗号，否则你的程序将不能运行！
 
-+ If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
++ 在添加好上述代码之后，当你再次运行你的游戏时，你可以在大厅中看到一把钥匙，并且可以拾起它（通过输入`get key`指令）并将其加入你的物品袋中。
     
-    ![screenshot](images/rpg-key-test.png)
+    ![截图](images/rpg-key-test.png)
