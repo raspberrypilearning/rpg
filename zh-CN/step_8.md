@@ -4,19 +4,19 @@
 
 + 在这个游戏中，玩家如果逃离房子并到达花园时，就赢得了胜利。 他们还需要拿到钥匙和魔法药水。 以下是游戏的地图。
     
-    ![screenshot](images/rpg-final-map.png)
+    ![截图](images/rpg-final-map.png)
 
 + 首先，你需要在餐厅的南面添加一个花园。 记住要添加“门”来将其关联到另外一个房间。
     
-    ![screenshot](images/rpg-garden.png)
+    ![截图](images/rpg-garden.png)
 
 + 在餐厅中添加一瓶魔法药水（或任何其他一个房间）。
     
-    ![screenshot](images/rpg-potion.png)
+    ![截图](images/rpg-potion.png)
 
 + 添加以下代码，可以让玩家在得到钥匙和魔法药水，并到达花园时赢得胜利。
     
-    ![screenshot](images/rpg-win-code.png)
+    ![截图](images/rpg-win-code.png)
     
     注意这段代码也是缩进的，应当与上面的代码对齐。 这段代码表示当玩家在第4个房间（花园）中，并且在他们的物品袋中有钥匙和魔法药水时，就显示“你已逃离房子...你赢了！”的消息。
     
@@ -24,14 +24,14 @@
 
 + 测试你的游戏，确保玩家有可能获得胜利！
     
-    ![screenshot](images/rpg-win-test.png)
+    ![截图](images/rpg-win-test.png)
 
-+ 最后，让我们在游戏中添加一些说明来让玩家知道怎样来操作。 Edit the `showInstructions()` function to include more information.
++ 最后，让我们在游戏中添加一些说明来让玩家知道怎样来操作。 修改`showInstructions()`函数来添加更多的说明信息。
     
-    ![screenshot](images/rpg-instructions-code.png)
+    ![截图](images/rpg-instructions-code.png)
     
-    You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+    你需要添加说明来告诉玩家他们需要收集哪些物品，并需要避开什么！
 
-+ Test your game and you should see your new instructions.
++ 测试你的游戏，你应该能够看到你新加的游戏说明。
     
-    ![screenshot](images/rpg-instructions-test.png)
+    ![截图](images/rpg-instructions-test.png)
