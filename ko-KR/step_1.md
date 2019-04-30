@@ -18,17 +18,17 @@
 
 ## 소개
 
-이 프로젝트는 RPG 미로 게임을 통하여 게임 개발 및 디자인에 대해 학습할 수 있도록 합니다. In this game, the player has to pick up objects within a house and get to a specific room, while avoiding monsters lurking in some of the rooms. This game will be achieved by manipulating dictionaries and lists.
+이 프로젝트는 RPG 미로 게임을 통하여 게임 개발 및 디자인에 대해 학습할 수 있도록 합니다. 이 게임에는 플레이어가 집에서 괴물에게 잡히지 않고 탈출에 필요한 아이템을 획득하는 과정이 포함됩니다. 이 게임에는 딕셔너리, 리스트 자료형이 포함됩니다.
 
 ## 온라인 자료들
 
 **이 프로젝트는 파이썬3를 사용합니다.** 파이썬 코드를 온라인에서 작성하기 위해 [Trinket](https://trinket.io/)을 사용하는것을 추천합니다. 이 프로젝트에 포함된 Trinket은 다음과 같습니다:
 
-+ ['RPG' starting point -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
++ ['RPG' 프로젝트 파일 -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
 
 완성된 프로젝트를 포함한 Trinket도 있습니다:
 
-+ [‘RPG’ Finished -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
++ ['RPG' 완료 버전 -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
 
 ## 오프라인 자료들
 
@@ -36,7 +36,7 @@
 
 + rpg/rpg.py
 
-You can also find the completed project project in the 'Volunteer Resources' section, which contains:
+완성된 프로젝트는 '자원 봉사자 자원' 섹션에서 찾을 수 있으며, 다음의 파일들을 포함합니다.
 
 + rpg-finished/rpg.py
 
@@ -44,11 +44,11 @@ You can also find the completed project project in the 'Volunteer Resources' sec
 
 ## 학습 목표
 
-+ Game design;
++ 게임 디자인;
 + 코드 편집: 
     + Python 리스트;
     + 딕셔너리.
-+ Boolean expressions.
++ 부울 식.
 
 이 프로젝트는 [라즈베리파이 디지털 메이킹 커리큘럼](http://rpf.io/curriculum) 중 아래의 과정에 있는 요소들을 다룹니다.
 
@@ -56,16 +56,16 @@ You can also find the completed project project in the 'Volunteer Resources' sec
 
 ## 도전과제
 
-+ Adding new rooms;
-+ Adding items to collect;
-+ Adding enemies to avoid;
-+ Develop your own game.
++ 새로운 방 추가하기;
++ 획득할 아이템 추가;
++ 몬스터(적) 추가;
++ 자신만의 게임 개발.
 
 ## 자주 물어보는 질문
 
-+ 학생들에게 딕셔너리/리스트 목록의 요소가 쉼표로 구분된다는 것을 알려 주십시오. For example, when adding a new room to the 'rooms' dictionary, a comma needs to be added between the new room being added and the previous room.
-+ When adding a new room, children may forget to add a link to an existing room to the newly created room. This will mean that children can leave a room, but not enter it!
-+ The code for checking whether the player has won or lost the game needs to be indented, to ensure that this check is performed upon entering each new room. If the code isn't indented, then it sits outside of the main game loop and is never run.
++ 학생들에게 딕셔너리/리스트 목록의 요소가 쉼표로 구분된다는 것을 알려 주십시오. 예를 들어, 'rooms' 딕셔너리에 새로운 방을 추가하려면 추가 할 새로운 객실과 전 객실 사이에 콤마(',')를 추가해야합니다.
++ 새로운 방을 추가할 때, 학생들은 기존 방에 새로운 방에 대한 링크를 깜빡할 수 있습니다. 이 말은 즉슨 학생들은 방을 나갈 수는 있지만, 들어가진 못한다는 뜻입니다!
++ 게임에서 이겼는지, 졌는지에 대한 여부를 확인하기 위한 코드는 새로운 방에 들어갈 때마다 검사가 이루어 지도록 해야 합니다. 만약, 이 코드가 없다면 게임은 무한반복될 것입니다.
 
 \--- / collapse \---
 
@@ -76,7 +76,7 @@ You can also find the completed project project in the 'Volunteer Resources' sec
 ## Project resources
 
 + [프로젝트의 모든 리소스가 들어있는 .zip 파일](resources/rpg-project-resources.zip)
-+ [Online Trinket containing all 'RPG' project resources](http://jumpto.cc/rpg-go)
++ [RPG 프로젝트 자료가 포함된 온라인 Trinket](http://jumpto.cc/rpg-go)
 + [rpg/rpg.py](resources/rpg-rpg.py)
 
 ## 교육자를 위한 자료
