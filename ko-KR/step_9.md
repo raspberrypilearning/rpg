@@ -2,8 +2,8 @@
 
 ## 도전 과제: 나만의 게임 만들기
 
-지금까지 배운 지식으로 새로운 게임을 만들어 봅시다. 여러 방을 추가해 보고, 여러 아이템과 몬스터를 추가해 봅시다. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
+지금까지 배운 지식으로 새로운 게임을 만들어 봅시다. 여러 방을 추가해 보고, 여러 아이템과 몬스터를 추가해 봅시다. 플레이어가 게임을 클리어하기 위해서는 일정한 아이템을 획득하여야 합니다. 프로그래밍 전에 스케치를 해 두면 도움이 될 수 있습니다.
 
-You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+`go up` 과 `go down` 명령어를 입력하여 층도 추가 가능합니다.
 
-\--- /도전 \---
+\--- /challenge \---
