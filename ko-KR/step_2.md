@@ -32,4 +32,4 @@
     
     ![스크린샷](images/rpg-dining-test.png)
     
-    If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+    만약 dining room으로 들어가거나 나갈 수 없다면, 추가한 코드를 다시 한번 살펴보세요.
