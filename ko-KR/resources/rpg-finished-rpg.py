@@ -1,12 +1,12 @@
 #!/bin/python3
 
 def showInstructions():
-    #print a main menu and the commands
+    #메인메뉴와 명령어 출력
     print('''
-RPG Game
+RPG 게임
 ========
 
-Get to the Garden with a key and a potion
+괴물에게 잡히지 말고, 
 Avoid the monsters!
 
 Commands:
