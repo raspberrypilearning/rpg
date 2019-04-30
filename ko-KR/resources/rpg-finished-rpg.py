@@ -7,12 +7,12 @@ RPG 게임
 ========
 
 괴물에게 잡히지 말고, 
-Avoid the monsters!
+key와 potion을 가지고 Garden으로 탈출하십시오!
 
-Commands:
-  go [direction]
-  get [item]
-''')
+명령어:
+  go [방향]
+  get [아이템]
+")
 
 def showStatus():
   #print the player's current status
