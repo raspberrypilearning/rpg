@@ -1,7 +1,7 @@
-\--- 도전 \---
+\--- challenge \---
 
-## Challenge: Adding more monsters
+## 과제: 더 많은 몬스터 추가
 
-Add more monsters to your game, to make it harder to escape the house!
+몬스터를 더 많이 추가하여 집 탈출이 어렵도록 제작해 보세요!
 
 \--- /challenge \---
