@@ -1,6 +1,6 @@
 ## 소개
 
-In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
+이 프로젝트에서는 자신만의 RPG 미로 게임을 디자인하고 프로그래밍하게 됩니다. 이 게임의 목적은 필요한 아이템을 집에서 획득하고, 괴물에게 잡히지 않고 집을 탈출하는 것입니다.
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -18,7 +18,7 @@ In this project, you’ll design and code your own RPG maze game. The aim of the
 
 ## 소개
 
-This project teaches game design through the development of an RPG maze game. In this game, the player has to pick up objects within a house and get to a specific room, while avoiding monsters lurking in some of the rooms. This game will be achieved by manipulating dictionaries and lists.
+이 프로젝트는 RPG 미로 게임을 통하여 게임 개발 및 디자인에 대해 학습할 수 있도록 합니다. In this game, the player has to pick up objects within a house and get to a specific room, while avoiding monsters lurking in some of the rooms. This game will be achieved by manipulating dictionaries and lists.
 
 ## 온라인 자료들
 
