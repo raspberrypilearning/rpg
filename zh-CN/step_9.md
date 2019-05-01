@@ -2,8 +2,8 @@
 
 ## 挑战：开发你自己的游戏
 
-应用你已学到的知识来创建你自己的游戏。 添加更多的房间，需要收集的物品和避开的怪物。 记得修改你的代码，以使玩家在收集到特定的物品后并到达特定的房间时能够赢得胜利。 It may help you to sketch a map before you start coding!
+应用你已学到的知识来创建你自己的游戏。 添加更多的房间，需要收集的物品和避开的怪物。 记得修改你的代码，以使玩家在收集到特定的物品后并到达特定的房间时能够赢得胜利。 在编写代码之前，绘制一份草图可能会对你写代码有所帮助！
 
-You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+你还可以添加楼梯，使你的房子变成多层的，可以通过使用`go up`和`go down`来上下楼梯。
 
 \--- /challenge \---
