@@ -7,80 +7,80 @@ def showInstructions():
   print('''
 RPG游戏
 ========
-Commands:
-  go [direction]
-  get [item]
+命令：
+  go [方向]
+  get [物品]
 ''')
 
 def showStatus():
-  #print the player's current status
+  # 显示玩家的当前状态
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
+  print('你现在在 ' + currentRoom)
+  # 显示当前已获得物品
+  print('物品 ： ' + str(inventory))
+  # 显示物品（如果存在）
   if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+    print('你看见一个 ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-#an inventory, which is initially empty
+# 已获得物品清单，初始为空
 inventory = []
 
-#a dictionary linking a room to other rooms
+# 连接房间与房间的数据字典
 rooms = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen'
+            '大厅' : { 
+                  'south' : '厨房'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall'
+            '厨房' : {
+                  'north' : '大厅'
                 }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+# 玩家从大厅开始游戏
+currentRoom = '大厅'
 
 showInstructions()
 
-#loop forever
+# 永久循环
 while True:
 
   showStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
+  # 取得玩家的下一个行动
+  # .split()方法将字符串在空格处分割，并将结果以阵列输出
+  # 例如：输入"go east“将产生如下阵列
+  # ['go','east']
   move = ''
   while move == '':  
     move = input('>')
     
   move = move.lower().split()
 
-  #if they type 'go' first
+  # 如果玩家输入'go'指令
   if move[0] == 'go':
-    #check that they are allowed wherever they want to go
+    # 检查玩家是否被允许走入他们所输入的方向
     if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
+      # 将当前房间换成新进入的房间
       currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+    # 那里没有通向另一房间的门（连接）
     else:
-        print('You can\'t go that way!')
+        print('你不能往那里走！')
 
-  #if they type 'get' first
+  # 如果玩家输入'get'指令
   if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
+    # 如果房间里有一件物品，那这件物品是玩家想要拿到的
     if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
+      # 将物品加入玩家的物品清单
       inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
+      # 显示一条有用的消息
+      print('拿到了 ' + move[1] + '！')
+      # 将物品从房间里去除
       del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+    # 否则，如果没有可拿的物品
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      # 告诉玩家不能拿到物品
+      print('无法拿到 ' + move[1] + '！')
 
