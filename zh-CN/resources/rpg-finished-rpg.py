@@ -1,39 +1,39 @@
 #!/bin/python3
 
 def showInstructions():
-    #print a main menu and the commands
+    # 显示主菜单和可用命令
     print('''
-RPG Game
+RPG游戏
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+找到一把钥匙和一瓶魔法药水并到达花园
+同时躲避怪物！
 
-Commands:
-  go [direction]
-  get [item]
+命令：
+  go [方向]
+  get [物品]
 ''')
 
 def showStatus():
-  #print the player's current status
+  # 显示玩家的当前状态
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
+  print('你现在在 ' + currentRoom)
+  # 显示当前已获得物品
+  print('物品 ： ' + str(inventory))
+  # 显示物品（如果存在）
   if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+    print('你看见一个 ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-#an inventory, which is initially empty
+# 已获得物品清单，初始为空
 inventory = []
 
-#a dictionary linking a room to other room positions
+# 连接房间与房间的数据字典
 rooms = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            '大厅' : { 'south' : '厨房',
+                  'east'  : '餐厅',
+                  'item'  : '钥匙'
                 },        
 
             'Kitchen' : { 'north' : 'Hall',
