@@ -1,11 +1,11 @@
 #!/bin/python3
 
-# Replace RPG starter project with this code when new instructions are live
+# 当指示说明出来时，用此代码替换RPG初始项目
 
 def showInstructions():
-  #print a main menu and the commands
+  # 显示主菜单和可用命令
   print('''
-RPG Game
+RPG游戏
 ========
 Commands:
   go [direction]
