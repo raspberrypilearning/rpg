@@ -45,7 +45,7 @@ rooms = {
 }
 --- /code ---
 
-Each room is a dictionary and rooms are linked together using directions.  
+Each room is a dictionary, and rooms are linked together using directions.  
 --- /task ---
 
 --- task ---
