@@ -15,8 +15,8 @@ hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
-steps: 
-- title: 'Introduction: '
+steps:
+- title: 'Introduction'
 - title: Adding new rooms
 - title: 'Challenge: Add new rooms'
 - title: Adding items to collect

@@ -34,18 +34,18 @@ rooms = {
             'Hall' : { 'south' : 'Kitchen',
                   'east'  : 'Dining Room',
                   'item'  : 'key'
-                },        
+                },
 
             'Kitchen' : { 'north' : 'Hall',
                   'item'  : 'monster'
                 },
-                
+
             'Dining Room' : { 'west'  : 'Hall',
                   'south' : 'Garden',
                   'item'  : 'potion'
-              
+
                 },
-                
+
             'Garden' : { 'north' : 'Dining Room' }
 
          }
@@ -65,9 +65,9 @@ while True:
   #eg typing 'go east' would give the list:
   #['go','east']
   move = ''
-  while move == '':  
+  while move == '':
     move = input('>')
-    
+
   move = move.lower().split()
 
   #if they type 'go' first
@@ -95,13 +95,12 @@ while True:
       #tell them they can't get it
       print('Can\'t get ' + move[1] + '!')
 
-  # player loses if they enter a room with a monster
+  #player loses if they enter a room with a monster
   if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
     print('A monster has got you... GAME OVER!')
     break
 
-  # player wins if they get to the garden with a key and a potion
+  #player wins if they get to the garden with a key and a potion
   if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
     print('You escaped the house... YOU WIN!')
     break
-  
