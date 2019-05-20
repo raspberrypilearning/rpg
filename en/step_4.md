@@ -7,35 +7,35 @@ Adding an item into a room is easy, you can just add it to a room's dictionary. 
 
 Remember to put a comma after the line above the new item, or your program won’t run!
 
-    --- code ---
-    ---
-    language: python
-    line_highlights: 7
-    ---
-    #a dictionary linking a room to other rooms
-    rooms = {
+--- code ---
+---
+language: python
+line_highlights: 7
+---
+#a dictionary linking a room to other rooms
+rooms = {
 
-      'Hall' : {
-          'south' : 'Kitchen',
-          'east' : 'Dining Room',
-          'item' : 'key'
-      },
+    'Hall' : {
+        'south' : 'Kitchen',
+        'east' : 'Dining Room',
+        'item' : 'key'
+    },
 
-      'Kitchen' : {
-          'north' : 'Hall'
-      },
+    'Kitchen' : {
+        'north' : 'Hall'
+    },
 
-      'Dining Room' : {
-          'west' : 'Hall'
-      }
-
+    'Dining Room' : {
+        'west' : 'Hall'
     }
-    --- /code ---
+
+}
+--- /code ---
 
 --- /task ---
 
 --- task ---
 If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
 
-  ![screenshot](images/rpg-key-test.png)
+![screenshot](images/rpg-key-test.png)
 --- /task ---
