@@ -2,16 +2,61 @@
 
 這個遊戲太簡單了！ 讓我們為玩家必須避免的一些房間添加敵人。
 
-+ 將敵人添加到房間就像添加任何其他項目一樣簡單。 讓我們在廚房裡添加一個飢餓的怪物：
-    
-    ![截圖](images/rpg-monster-dict.png)
+\--- task \--- Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
 
-+ 如果玩家進入有怪物的房間，你還要確保遊戲結束。 您可以使用以下代碼執行此操作，您應該將其添加到遊戲結尾：
-    
-    ![截圖](images/rpg-monster-code.png)
-    
-    此代碼檢查房間中是否有物品，如果是，則該物品是否為怪物。 請注意，此代碼是縮進的，使其與上面的代碼保持一致。 這意味著每次玩家進入新房間時遊戲都會檢查怪物。
+## \--- code \---
 
-+ 進入廚房，現在包含一個怪物，測試你的代碼。
+language: python
+
+## line_highlights: 11-12
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![截圖](images/rpg-monster-test.png)
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-9
+
+        #otherwise, if the item isn't there to get
+        else:
+            #tell them they can't get it
+            print('Can\'t get' + move[1] + '!')
+    
+    #player loses if they enter a room with a monster
+    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+        print('A monster has got you... GAME OVER!')
+        break
+    
+
+\--- /code \---
+
+This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room. \--- /task \---
+
+\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+
+![screenshot](images/rpg-monster-test.png) \--- /task \---
