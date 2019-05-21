@@ -2,16 +2,61 @@
 
 Ця гра дуже легко! Додамо ворогів до деяких кімнат, які гравець повинен уникати.
 
-+ Додавання ворога до кімнати настільки ж просто, як додавання будь-якого іншого елемента. Додамо голодного монстра на кухню:
-    
-    ![скріншот](images/rpg-monster-dict.png)
+\--- task \--- Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
 
-+ Ви також хочете переконатися, що гра закінчується, якщо гравець входить у кімнату з монстром. Ви можете зробити це за допомогою наступного коду, який слід додати до кінця гри:
-    
-    ![знімок екрану](images/rpg-monster-code.png)
-    
-    Цей код перевіряє, чи є в кімнаті елемент, і якщо так, то чи є цей предмет монстром. Зверніть увагу, що цей код відступив, поставивши його у відповідність з кодом над ним. Це означає, що гра перевірятиме монстра кожного разу, коли гравець переміститься у нову кімнату.
+## \--- code \---
 
-+ Випробуйте свій код, зайшовши на кухню, яка зараз містить монстра.
+language: python
+
+## line_highlights: 11-12
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![скріншот](images/rpg-monster-test.png)
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-9
+
+        #otherwise, if the item isn't there to get
+        else:
+            #tell them they can't get it
+            print('Can\'t get' + move[1] + '!')
+    
+    #player loses if they enter a room with a monster
+    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+        print('A monster has got you... GAME OVER!')
+        break
+    
+
+\--- /code \---
+
+This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room. \--- /task \---
+
+\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+
+![screenshot](images/rpg-monster-test.png) \--- /task \---
