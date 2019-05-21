@@ -2,9 +2,9 @@
 
 Ας αφήσουμε μερικά αντικείμενα στα δωμάτια για να τα μαζέψει ο παίκτης καθώς κινείται μέσα στον λαβύρινθο.
 
-\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Ας βάλουμε ένα κλειδί στο χωλ.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+Θυμήσου να βάλεις ένα κόμμα μετά τη γραμμή πάνω από το νέο αντικείμενο αλλιώς το πρόγραμμά σου δεν θα τρέξει!
 
 ## \--- code \---
 
@@ -12,7 +12,7 @@ language: python
 
 ## line_highlights: 6-7
 
-# a dictionary linking a room to other rooms
+# ένα λεξικό που συνδέει ένα δωμάτιο με τα άλλα
 
 rooms = {
 
