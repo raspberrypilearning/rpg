@@ -1,35 +1,87 @@
 ## Dodavanje novih prostorija
 
-+ Dio kôda za ovu igru već smo pripremili za tebe. Otvori sljedeći trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
+\--- task \--- Open the Python starter project.
 
-+ Ovo je vrlo jednostavna RPG igra koja ima samo dvije prostorije. Ovo je nacrt igre:
-    
-    ![screenshot](images/rpg-map1.png)
-    
-    Možeš da upišeš `idi jug` za prelazak iz hodnika u kuhinju, a zatim `idi sjever` za povratak u hodnik!
-    
-    ![screenshot](images/rpg-controls.png)
+**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-+ Šta se dešava kada upišeš smjer u kojem ne možeš ići? Upiši `idi zapad` dok si u hodniku i dobićeš ljubaznu poruku o grešci.
-    
-    ![screenshot](images/rpg-error.png)
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor. \--- /task \---
 
-+ Pronađi promjenljivu `prostorije` i vidjećeš da je nacrt kodiran kao rječnik prostorija:
-    
-    ![screenshot](images/rpg-rooms.png)
-    
-    Svaka prostorija je jedan rječnik, a prostorije su međusobno povezane smjerovima.
+\--- task \--- This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
-+ Dodajmo u nacrt trpezariju, istočno od hodnika.
-    
-    ![screenshot](images/rpg-dining.png)
-    
-    Moraš dodati treću prostoriju koju ćeš nazvati `trpezarija`. Takođe je moraš povezati sa hodnikom na zapadu. Treba i hodniku da dodaš podatke kako bi mogao/mogla preći u trpezariju na istoku.
-    
-    ![screenshot](images/rpg-dining-code.png)
+![screenshot](images/rpg-map1.png)
 
-+ Isprobaj igru sada kada je dodata trpezarija:
+You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+
+![screenshot](images/rpg-controls.png) \--- /task \---
+
+\--- task \--- What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+
+![screenshot](images/rpg-error.png) \--- /task \---
+
+\--- task \--- If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+
+## \--- code \---
+
+## language: python
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen'
+            },
     
-    ![screenshot](images/rpg-dining-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            }
     
-    Ako ne možeš da pređeš u trpezariju i izađeš iz nje, provjeri da li si dodao/dodala cijeli kôd koji se nalazi iznad (uključujući i dodatne zareze u redovima).
+        }
+    
+
+\--- /code \---
+
+Each room is a dictionary, and rooms are linked together using directions.  
+\--- /task \---
+
+\--- task \--- Let’s add a dining room to your map, to the east of the hall.
+
+![screenshot](images/rpg-dining.png)
+
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+
+**Don't forget that you'll also need to add commas to lines before your new code.**
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 5-6,11-15
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room'
+            },
+    
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- Try out the game with your new dining room:
+
+![screenshot](images/rpg-dining-test.png)
+
+If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above). \--- /task \---
