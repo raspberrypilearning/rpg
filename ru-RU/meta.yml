@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Введение: '
+    title: 'Introduction'
   - 
     title: Добавление новых комнат
   - 
     title: 'Задача: Добавить новые комнаты'
+    challenge: true
   - 
     title: Добавление элементов для сбора
   - 
     title: 'Задача: Добавить новые предметы'
+    challenge: true
   - 
     title: Добавление врагов
   - 
     title: 'Задача: добавить больше монстров'
+    challenge: true
   - 
     title: Победа в игре
   - 
     title: 'Задача: разработать свою собственную игру'
+    challenge: true
