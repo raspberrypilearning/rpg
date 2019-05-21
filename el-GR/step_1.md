@@ -2,87 +2,74 @@
 
 Σε αυτό το έργο, θα σχεδιάσεις και θα προγραμματίσεις το δικό σου παιχνίδι λαβύρινθου RPG. Ο στόχος του παιχνιδιού είναι να συλλέξεις αντικείμενα και να ξεφύγεις από ένα σπίτι, φροντίζοντας να αποφύγεις όλα τα τέρατα!
 
+## What you will make
+
+\--- no-print \---
+
+Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+
+Type `get` to pick up any items that you see (e.g. `get key`).
+
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
 
-### Πρόσθετες πληροφορίες για τους συντονιστές των ομάδων
+\--- /no-print \---
 
-Αν χρειαστεί να εκτυπώσεις αυτό το έργο, χρησιμοποίησε την [εκτυπώσιμη έκδοση](https://projects.raspberrypi.org/en/projects/rpg/print).
+\--- print-only \---
 
-## \--- collapse \---
+![complete project](images/rpg-finished.png)
 
-## title: Σημειώσεις συντονιστή ομάδας
+\--- /print-only \---
 
-## Εισαγωγή:
+\--- collapse \---
 
-Αυτό το έργο διδάσκει σχεδιασμό παιχνιδιών μέσω της ανάπτυξης ενός παιχνιδιού λαβύρινθου RPG. Σε αυτό το παιχνίδι, ο παίκτης πρέπει να συλλέξει αντικείμενα μέσα σε ένα σπίτι και να φτάσει σε ένα συγκεκριμένο δωμάτιο, αποφεύγοντας τα τέρατα που κρύβονται σε κάποια από τα δωμάτια. Αυτό το παιχνίδι θα ολοκληρωθεί χρησιμοποιώντας λεξικά και λίστες της Python.
+* * *
 
-## Online Πόροι
+## title: What you will need
 
-**Αυτό το έργο χρησιμοποιεί Python 3.** Συνιστούμε να χρησιμοποιήσετε το [trinket](https://trinket.io/) για να γράψετε Python online. Το έργο αυτό περιλαμβάνει τα ακόλουθα Trinkets:
+### Hardware
 
-+ ['RPG' αρχικό -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
++ A computer capable of running Python
 
-Υπάρχει επίσης ένα trinket που περιέχει το τελικό έργο:
+### Software
 
-+ ['RPG' ολοκληρωμένο -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
++ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-## Offline Πόροι
+### Downloads
 
-Το έργο αυτό μπορεί να [ολοκληρωθεί χωρίς σύνδεση](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) αν προτιμάς. Μπορείς να αποκτήσεις πρόσβαση στους πόρους του έργου κάνοντας κλικ στο σύνδεσμο «Υλικό έργου» για αυτό το έργο. Αυτός ο σύνδεσμος περιέχει μια ενότητα "Πόροι έργου", η οποία περιλαμβάνει υλικό που τα παιδιά θα χρειαστούν για να ολοκληρώσουν αυτό το έργο εκτός σύνδεσης. Βεβαιώσου ότι κάθε παιδί έχει πρόσβαση σε ένα αντίγραφο αυτών των πόρων. Αυτή η ενότητα περιλαμβάνει τα ακόλουθα αρχεία:
-
-+ rpg/rpg.py
-
-Μπορείς να βρεις το ολοκληρωμένο έργο στο τμήμα «Πόροι εθελοντών», το οποίο περιέχει:
-
-+ rpg-finished/rpg.py
-
-(Όλοι οι παραπάνω πόροι μπορούν επίσης να κατέβουν ως συμπιεσμένα `.zip` αρχεία.)
-
-## Στόχοι μάθησης
-
-+ Σχεδιασμός παιχνιδιών.
-+ Επεξεργασία: 
-    + Λίστες
-    + Λεξικά.
-+ Εκφράσεις τύπου Boolean.
-
-Αυτό το έργο καλύπτει στοιχεία από τις ακόλουθες πτυχές του [Προγράμματος Μαθημάτων Ψηφιακής Δημιουργίας του Raspberry Pi](http://rpf.io/curriculum):
-
-+ [Συνδύασε δομές προγραμματισμού για να λύσεις ένα πρόβλημα.](https://www.raspberrypi.org/curriculum/programming/builder)
-
-## Προκλήσεις
-
-+ Προσθήκη νέων δωματίων.
-+ Προσθήκη αντικειμένων για συλλογή.
-+ Προσθήκη εχθρών προς αποφυγή.
-+ Ανάπτυξε το δικό σου παιχνίδι.
-
-## Συχνές Ερωτήσεις
-
-+ Ίσως χρειαστεί να υπενθυμίσετε στα παιδιά ότι τα στοιχεία ενός λεξικού ή μιας λίστας διαχωρίζονται με κόμμα. Για παράδειγμα, όταν προσθέτεις ένα νέο δωμάτιο στο λεξικό 'δωμάτια', πρέπει να προστεθεί ένα κόμμα μεταξύ του νέου δωματίου που προστέθηκε και του προηγούμενου δωματίου.
-+ Όταν προστίθεται ένα νέο δωμάτιο, τα παιδιά ενδέχεται να ξεχάσουν να προσθέσουν ένα σύνδεσμο προς ένα υπάρχον δωμάτιο στο νεοδημιουργημένο δωμάτιο. Αυτό σημαίνει ότι τα παιδιά μπορεί να φύγουν από ένα δωμάτιο, αλλά να μην μπορούν να ξαναμπούν!
-+ Ο κώδικας που ελέγχει το εάν ο παίκτης έχει κερδίσει ή χάσει το παιχνίδι πρέπει να είναι σε εσοχή, ώστε να διασφαλίζεται ότι αυτός ο έλεγχος γίνεται κατά την είσοδο σε κάθε νέο δωμάτιο. Εάν ο κώδικας δεν είναι σε εσοχή, τότε βρίσκεται έξω από τον κύριο βρόχο του παιχνιδιού και δεν τρέχει ποτέ.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-## \--- collapse \---
+\--- collapse \---
 
-## title: Υλικό έργου
+* * *
 
-## Πόροι έργου
+## title: What you will learn
 
-+ [αρχείο .zip που περιέχει όλους τους πόρους του έργου](resources/rpg-project-resources.zip)
-+ [Online Trinket που περιέχει όλους τους πόρους του έργου 'RPG'](http://jumpto.cc/rpg-go)
-+ [rpg/rpg.py](resources/rpg-rpg.py)
++ Game design;
++ Editing: 
+    + Lists;
+    + Dictionaries.
++ Boolean expressions.
 
-## Πόροι συντονιστή ομάδας
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Αρχείο .zip που περιέχει όλους τους ολοκληρωμένους πόρους του έργου](resources/rpg-volunteer-resources.zip)
-+ [Online ολοκληρωμένο έργο Trinket](https://trinket.io/python/d06adeb527)
-+ [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+\--- collapse \---
+
+* * *
+
+## title: Additional information for educators
+
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
