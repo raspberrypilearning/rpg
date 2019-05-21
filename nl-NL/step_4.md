@@ -2,12 +2,41 @@
 
 We gaan voorwerpen in de kamers achterlaten die de speler kan verzamelen terwijl die door het doolhof zwerft.
 
-+ Het is makkelijk om een voorwerp in een kamer toe te voegen, je kunt het in het woordenboek van de kamer zetten. Laten we een sleutel in de hal leggen.
-    
-    ![screenshot](images/rpg-key.png)
-    
-    Vergeet niet om een komma achter de regel erboven te zetten, anders werkt je programma niet!
+\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
 
-+ Als je het spel uitvoert na het toevoegen van bovenstaande code zie je een sleutel in de hal die je kunt oppakken (met `pak sleutel`) en aan de inventaris laten toevoegen!
+Remember to put a comma after the line above the new item, or your program won’t run!
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-7
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![screenshot](images/rpg-key-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \---
+
+\--- /task \---
+
+\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png) \--- /task \---
