@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Inleiding: '
+    title: 'Introduction'
   - 
     title: Voeg nieuwe kamers toe
   - 
     title: 'Uitdaging: voeg meer kamers toe'
+    challenge: true
   - 
     title: Voorwerpen toevoegen om te verzamelen
   - 
     title: 'Uitdaging: voeg nieuwe voorwerpen toe'
+    challenge: true
   - 
     title: Vijanden toevoegen
   - 
     title: 'Uitdaging: meer monsters toevoegen'
+    challenge: true
   - 
     title: Het spel winnen
   - 
     title: 'Uitdaging: ontwikkel je eigen spel'
+    challenge: true
