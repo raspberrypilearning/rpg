@@ -2,87 +2,74 @@
 
 في هذا المشروع ، ستقوم بتصميم وبرمجة لعبة متاهة الـ RPG (لعبة تقمُّص الأدوار Role-Play Game) الخاصة بك. سيكون الهدف من اللعبة جمع الأشياء والهروب من المنزل ، مع التأكد من تجنب جميع الوحوش!
 
+## What you will make
+
+\--- no-print \---
+
+Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+
+Type `get` to pick up any items that you see (e.g. `get key`).
+
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
 
-### معلومات إضافية لقادة النادي
+\--- /no-print \---
 
-إذا كنت بحاجة إلى طباعة هذا المشروع ، فيُرجى استخدام [النسخة القابلة للطباعة](https://projects.raspberrypi.org/en/projects/rpg/print).
+\--- print-only \---
 
-## \--- collapse \---
+![complete project](images/rpg-finished.png)
 
-## title: ملاحظات قائد النادي
+\--- /print-only \---
 
-## المقدمة:
+\--- collapse \---
 
-هذا المشروع يعلم تصميم اللعبة من خلال تطوير لعبة متاهة RPG. في هذه اللعبة ، يتعين على اللاعب التقاط الأشياء داخل المنزل والوصول إلى غرفة معينة ، مع تجنب الوحوش الكامنة في بعض الغرف. سيتم تحقيق هذه اللعبة عن طريق التلاعب بالقواميس (dictionaries) والقوائم (lists).
+* * *
 
-## الموارد المتوفرة على الإنترنت
+## title: What you will need
 
-**يستخدم هذا المشروع Python 3.** نوصي باستخدام [trinket](https://trinket.io/) لكتابة لغة Python على الانترنت. يحتوي هذا المشروع على Trinket التالية:
+### Hardware
 
-+ ['RPG' نقطة البداية -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
++ A computer capable of running Python
 
-هناك أيضًا trinket تحتوي على المشروع المكتمل:
+### Software
 
-+ ['RPG' مكتمل -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
++ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-## الموارد المتوفرة دون اتصال بالإنترنت
+### Downloads
 
-هذا المشروع يمكن أن [يكتمل دون اتصال بالإنترنت](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) إذا كنت تفضل ذلك. يمكنك الوصول إلى موارد المشروع من خلال النقر فوق رابط 'مواد المشروع' الخاص بهذا المشروع. يحتوي هذا الرابط على قسم "موارد المشروع"، و الذي يتضمن الموارد التي يحتاج إليها الأطفال لإكمال هذا المشروع من دون اتصال بالإنترنت. تأكد من أن كل طفل لديه إمكانية الوصول إلى نسخة من هذه الموارد. يتضمن هذا القسم الملفات التالية:
-
-+ rpg/rpg.py
-
-يمكنك أيضًا العثور على نسخة مكتملة من هذا المشروع في قسم "موارد المتطوعين"، و الذي يحتوي على:
-
-+ rpg-finished/rpg.py
-
-(جميع الموارد المذكورة بالأعلى قابلة للتنزيل أيضًا "كملفات`.zip`" للمشروع و المتطوع)
-
-## أغراض التعلم
-
-+ تصميم الألعاب؛
-+ تعديل و تحرير: 
-    + القوائم;
-    + القواميس.
-+ التعبيرات المنطقية.
-
-يتناول هذا المشروع عناصر من معايير [المنهج الرقمي الخاص بـ Raspberry Pi ](http://rpf.io/curriculum):
-
-+ [إنشاءات برمجية مدمجة لحل مشكلة.](https://www.raspberrypi.org/curriculum/programming/builder)
-
-## التحديات
-
-+ إضافة غرف جديدة;
-+ إضافة عناصر لجمعها;
-+ إضافة أعداء لتجنبهم;
-+ طوِّر لعبتك الخاصة.
-
-## الأسئلة الشائعة
-
-+ قد يحتاج الأطفال إلى التذكير باستخدام الفاصلة للفصل بين عناصر القاموس/القائمة. على سبيل المثال ، عند إضافة غرفة جديدة إلى قاموس 'rooms' ، يلزم إضافة فاصلة بين الغرفة الجديدة التي يتم إضافتها والغرفة السابقة.
-+ عند إضافة غرفة جديدة، قد ينسى الأطفال إضافة رابط إلى غرفة حالية للربط بالغرفة الجديدة التي تم إنشاؤها. هذا يعني أن الأطفال سيمكنهم الخروج من غرفة، لكن لا يمكنهم دخولها!
-+ يجب أن يكون الكود المسؤول عن التحقق من ما إذا كان اللاعب قد ربح او خسر اللعبة أن يكون مسبوقاً بمسافة بادئة ، لضمان تنفيذ عملية التحقق عند دخول كل غرفة جديدة. وإذا لم تتم إضافة مسافة بادئة قبل الكود، فسيكون الكود خارج حلقة اللعبة الأساسية ولن يتم تنفيذها نهائيًا.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-## \--- collapse \---
+\--- collapse \---
 
-## title: مواد المشروع
+* * *
 
-## موارد المشروع
+## title: What you will learn
 
-+ [ملف.zip يحتوي على كل موارد المشروع](resources/rpg-project-resources.zip)
-+ [ملف Trinket عبر الإنترنت يحتوي على كل موارد مشروع 'RPG'](http://jumpto.cc/rpg-go)
-+ [rpg/rpg.py](resources/rpg-rpg.py)
++ Game design;
++ Editing: 
+    + Lists;
+    + Dictionaries.
++ Boolean expressions.
 
-## موارد قائد النادي
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [ملف.zip يحتوي على جميع موارد المشروع المكتملة](resources/rpg-volunteer-resources.zip)
-+ [مشروع Trinket المكتمل على الإنترنت](https://trinket.io/python/d06adeb527)
-+ [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+\--- collapse \---
+
+* * *
+
+## title: Additional information for educators
+
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
