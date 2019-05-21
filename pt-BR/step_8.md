@@ -49,7 +49,7 @@ rooms = {
 
 language: python
 
-## line_highlights: 4
+## line_highlights: 3-4
 
             'Dining Room' : {
                 'west' : 'Hall',
