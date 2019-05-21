@@ -2,12 +2,41 @@
 
 Давайте залишмо предмети в кімнатах для гравця, щоб збирати, коли вони рухаються через лабіринт.
 
-+ Додавання елемента в кімнату легко, просто додати його до словника кімнати. Давайте поставимо ключ у залі.
-    
-    ![скріншот](images/rpg-key.png)
-    
-    Не забудьте поставити комою біля рядка над новим елементом або ваша програма не буде працювати!
+\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
 
-+ Якщо ви запустили свою гру після додавання наведеного вище коду, тепер ви можете побачити ключ у залі, і ви навіть можете забрати його (набравши `get key`), який додає його до вашого рекламного ресурсу!
+Remember to put a comma after the line above the new item, or your program won’t run!
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-7
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![знімок екрану](images/rpg-key-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \---
+
+\--- /task \---
+
+\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png) \--- /task \---
