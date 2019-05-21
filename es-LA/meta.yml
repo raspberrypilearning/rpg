@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introducción: '
+    title: 'Introduction'
   - 
     title: Adding new rooms
   - 
     title: 'Challenge: Add new rooms'
+    challenge: true
   - 
     title: Adding items to collect
   - 
     title: 'Challenge: Add new items'
+    challenge: true
   - 
     title: Adding enemies
   - 
     title: 'Challenge: Adding more monsters'
+    challenge: true
   - 
     title: Winning the game
   - 
     title: 'Challenge: Develop your own game'
+    challenge: true
