@@ -2,16 +2,61 @@
 
 هذه اللعبة سهلة للغاية! لنقم بإضافة بعض الأعداء لبعض الغرف التي يجب على اللاعب تجنبها.
 
-+ إضافة عدو لغرفة سهل كإضافة أي عنصر آخر. لنقم بإضافة وحش جائع إلى المطبخ:
-    
-    ![لقطة الشاشة](images/rpg-monster-dict.png)
+\--- task \--- Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
 
-+ تحتاج أيضاً التأكد من أن اللعبة تنتهي إذا دخل اللاعب غرفةً بها وحش. يمكنك فعل هذا بالكود التالي، الذي يجب عليك إضافته في آخر اللعبة:
-    
-    ![لقطة الشاشة](images/rpg-monster-code.png)
-    
-    هذا الكود يتحقق ما إذا كان هنالك عنصر في الغرفة، وإذا كان كذلك، يتحقق ما إذا كان وحشاً. لاحظ أن هذا الكود مسبق بمسافة بادئة، بإضافتها في السطر مع الكود أعلاه. هذا يعني أن اللعبة ستتحقق من وجود وحش في كل مرة يقوم اللاعب بالتحرك إلى غرفة جديدة.
+## \--- code \---
 
-+ قم بتجربة الكود الخاص بك عن طريق الذهاب إلى المطبخ، و الذي يحتوي الآن على وحش.
+language: python
+
+## line_highlights: 11-12
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![لقطة الشاشة](images/rpg-monster-test.png)
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-9
+
+        #otherwise, if the item isn't there to get
+        else:
+            #tell them they can't get it
+            print('Can\'t get' + move[1] + '!')
+    
+    #player loses if they enter a room with a monster
+    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+        print('A monster has got you... GAME OVER!')
+        break
+    
+
+\--- /code \---
+
+This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room. \--- /task \---
+
+\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+
+![screenshot](images/rpg-monster-test.png) \--- /task \---
