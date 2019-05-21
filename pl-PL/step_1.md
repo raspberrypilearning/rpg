@@ -2,87 +2,74 @@
 
 W tym projekcie zaprojektujesz i zakodujesz własną grę labiryntową RPG. Celem gry będzie zbieranie przedmiotów i ucieczka z domu, unikając wszystkich potworów!
 
+## What you will make
+
+\--- no-print \---
+
+Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+
+Type `get` to pick up any items that you see (e.g. `get key`).
+
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
 
-### Dodatkowe informacje dla prowadzących klub
+\--- /no-print \---
 
-Jeśli chcesz wydrukować ten projekt, użyj [wersji do druku](https://projects.raspberrypi.org/en/projects/rpg/print).
+\--- print-only \---
 
-## \--- collapse \---
+![complete project](images/rpg-finished.png)
 
-## title: Notatki dla liderów klubów
+\--- /print-only \---
 
-## Wprowadzenie:
+\--- collapse \---
 
-Ten projekt uczy projektowania gier poprzez tworzenie gry labiryntowej RPG. W tej grze gracz musi zbierać przedmioty w domu i docierać do konkretnego pomieszczenia, unikając potworów czających się w niektórych pokojach. Ta gra zostanie osiągnięta poprzez manipulowanie słownikami i listami.
+* * *
 
-## Zasoby Online
+## title: What you will need
 
-**Ten projekt używa języka Python 3.** Do pisania kodu w Pythonie zalecamy użycie edytora [trinket](https://trinket.io/). Ten projekt zawiera następujące szablony:
+### Hardware
 
-+ [Punkt startowy "RPG" - jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
++ A computer capable of running Python
 
-Dostępny jest też szablon zawierający ukończony projekt:
+### Software
 
-+ ["RPG" Finished - trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
++ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-## Zasoby Offline
+### Downloads
 
-Ten projekt można także [wykonać offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/). Materiały potrzebne do wykonania projektu dostępne są po kliknięciu linku "Materiały do projektu". Można znaleźć tam sekcję "Źródła", która zawiera zasoby, potrzebne dzieciom do wykonania projektu w wersji offline. Upewnij się, że każde dziecko ma dostęp do tych zasobów. Ta sekcja zawiera następujące pliki:
-
-+ rpg / rpg.py
-
-Możesz również znaleźć ukończony projekt projektu w sekcji "Zasoby dla wolontariuszy", która zawiera:
-
-+ rpg-finished / rpg.py
-
-(Wszystkie powyższe zasoby można również pobrać jako pliki `.zip`.)
-
-## Cele dydaktyczne
-
-+ Design gry;
-+ Użycie: 
-    + Listy;
-    + słowników.
-+ Wyrażenia logiczne.
-
-Ten projekt obejmuje elementy z następujących wątków z [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Połącz konstrukcje programistyczne, aby rozwiązać problem.](https://www.raspberrypi.org/curriculum/programming/builder)
-
-## Zadania
-
-+ Dodawanie nowych pokoi;
-+ Dodawanie przedmiotów do zebrania;
-+ Dodawanie wrogów, aby uniknąć;
-+ Stwórz własną grę.
-
-## Najczęściej Zadawane Pytania
-
-+ Warto dzieciom przypominać, że elementy list i słowników należy oddzielać przecinkami, Na przykład, dodając nowy pokój do słownika "pokoje", należy dodać przecinek między dodawanym nowym pokojem a poprzednim pokojem.
-+ Dodając nowy pokój, dzieci mogą zapomnieć o dodaniu linku do istniejącego pokoju do nowo utworzonego pokoju. Oznacza to, że dzieci mogą opuścić pomieszczenie, ale nie mogą wejść!
-+ Kod sprawdzający, czy gracz wygrał lub przegrał grę, musi być wcięty, aby upewnić się, że ta kontrola jest przeprowadzana po wejściu do każdego nowego pokoju. Jeśli kod nie jest wcięty, to znajduje się poza główną pętlą gry i nigdy nie jest uruchamiany.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-## \--- collapse \---
+\--- collapse \---
 
-## title: Materiały do projektu
+* * *
 
-## Zasoby
+## title: What you will learn
 
-+ [Plik .zip zawierający wszystkie zasoby potrzebne do wykonania projektu](resources/rpg-project-resources.zip)
-+ [Online Trinket zawierający wszystkie zasoby projektu RPG](http://jumpto.cc/rpg-go)
-+ [rpg / rpg.py](resources/rpg-rpg.py)
++ Game design;
++ Editing: 
+    + Lists;
+    + Dictionaries.
++ Boolean expressions.
 
-## Zasoby dla lidera klubu
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Plik .zip zawierający zasoby z ukończonym projektem](resources/rpg-volunteer-resources.zip)
-+ [Ukończony projekt "Kolorowe Kreacje"](https://trinket.io/python/d06adeb527)
-+ [rpg-finished / rpg.py](resources/rpg-finished-rpg.py)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+\--- collapse \---
+
+* * *
+
+## title: Additional information for educators
+
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
