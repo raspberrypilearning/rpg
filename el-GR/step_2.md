@@ -6,15 +6,15 @@
 
 **Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor. \--- /task \---
 
-\--- task \--- This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
+\--- task \--- This is a very basic RPG game that only has 2 rooms. Εδώ είναι ένας χάρτης του παιχνιδιού:
 
 ![screenshot](images/rpg-map1.png)
 
-You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+Μπορείς να πληκτρολογήσεις `πήγαινε νότια` για να μετακινηθείς από το χωλ στην κουζίνα, και στη συνέχεια `πήγαινε βόρεια` για να επιστρέψεις ξανά στο χωλ!
 
 ![screenshot](images/rpg-controls.png) \--- /task \---
 
-\--- task \--- What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+\--- task \--- What happens when you type in a direction that you cannot go? Πληκτρολόγησε `πήγαινε δυτικά` ενώ είσαι στο χωλ και θα εμφανιστεί ένα μήνυμα λάθους.
 
 ![screenshot](images/rpg-error.png) \--- /task \---
 
@@ -24,7 +24,7 @@ You can type `go south` to move from the hall to the kitchen, and then `go north
 
 ## language: python
 
-# a dictionary linking a room to other rooms
+# ένα λεξικό που συνδέει ένα δωμάτιο με τα άλλα
 
 rooms = {
 
@@ -48,7 +48,7 @@ Each room is a dictionary, and rooms are linked together using directions.
 
 ![screenshot](images/rpg-dining.png)
 
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). Πρέπει επίσης να προσθέσεις δεδομένα στο χωλ, ώστε να μπορείς να μετακινηθείς ανατολικά προς την τραπεζαρία.
 
 **Don't forget that you'll also need to add commas to lines before your new code.**
 
@@ -58,7 +58,7 @@ language: python
 
 ## line_highlights: 5-6,11-15
 
-# a dictionary linking a room to other rooms
+# ένα λεξικό που συνδέει ένα δωμάτιο με τα άλλα
 
 rooms = {
 
@@ -84,4 +84,4 @@ rooms = {
 
 ![screenshot](images/rpg-dining-test.png)
 
-If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above). \--- /task \---
+Εάν δεν μπορείς να μετακινηθείς προς και από την τραπεζαρία, έλεγξε ότι έχεις προσθέσει όλο τον παραπάνω κώδικα (μαζί με τα επιπλέον κόμματα στις παραπάνω γραμμές). \--- /task \---
