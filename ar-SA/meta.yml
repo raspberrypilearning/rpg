@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'المقدمة: '
+    title: 'Introduction'
   - 
     title: إضافة غرف جديدة
   - 
     title: 'التحدي: أضف غرف جديدة'
+    challenge: true
   - 
     title: إضافة عناصر لجمعها
   - 
     title: 'التحدي: أضف عناصر جديدة'
+    challenge: true
   - 
     title: إضافة أعداء
   - 
     title: 'التحدي: إضافة المزيد من الوحوش'
+    challenge: true
   - 
     title: الفوز في اللعبة
   - 
     title: 'التحدي: طوِّر لعبتك الخاصة'
+    challenge: true
