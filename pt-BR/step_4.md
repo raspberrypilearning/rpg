@@ -2,12 +2,41 @@
 
 Vamos deixar itens nos quartos para o jogador coletar enquanto eles se movem pelo labirinto.
 
-+ Adicionar um item a uma sala é fácil, basta adicioná-lo ao dicionário da sala. Vamos colocar uma chave no corredor.
-    
-    ![screenshot](images/rpg-key.png)
-    
-    Lembre-se de colocar uma vírgula após a linha acima do novo item, ou seu programa não será executado!
+\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
 
-+ Se você executar o seu jogo depois de adicionar o código acima, agora você pode ver uma chave no salão, e você pode até mesmo pegá-lo (digitando `obter a chave`), que o adiciona ao seu inventário!
+Remember to put a comma after the line above the new item, or your program won’t run!
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-7
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![captura de tela](images/rpg-key-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \---
+
+\--- /task \---
+
+\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png) \--- /task \---
