@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017年1月1日
 steps:
   - 
-    title: '介紹： '
+    title: 'Introduction'
   - 
     title: 添加新房間
   - 
     title: '挑戰：添加新房間'
+    challenge: true
   - 
     title: 添加要收集的項目
   - 
     title: '挑戰：添加新項目'
+    challenge: true
   - 
     title: 添加敵人
   - 
     title: '挑戰：添加更多怪物'
+    challenge: true
   - 
     title: 贏得比賽
   - 
     title: '挑戰：開發自己的遊戲'
+    challenge: true
