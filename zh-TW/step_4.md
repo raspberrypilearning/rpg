@@ -2,12 +2,41 @@
 
 讓我們把物品留在房間裡供玩家在迷宮中移動時收集。
 
-+ 將項目添加到房間很容易，您只需將其添加到房間的字典中即可。 我們把鑰匙放在大廳裡。
-    
-    ![截圖](images/rpg-key.png)
-    
-    記得在新項目上方的行後面加上逗號，否則您的程序將無法運行！
+\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
 
-+ 如果你在添加上面的代碼後運行你的遊戲，你現在可以在大廳看到一個鍵，你甚至可以拿起它（通過鍵入 `獲取鍵`）將其添加到你的庫存中！
+Remember to put a comma after the line above the new item, or your program won’t run!
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-7
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![截圖](images/rpg-key-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \---
+
+\--- /task \---
+
+\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png) \--- /task \---
