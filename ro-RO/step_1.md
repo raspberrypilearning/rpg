@@ -2,87 +2,74 @@
 
 În acest proiect, veți proiecta și implementa propriul joc RPG labirint. Scopul jocului este de a colecta obiecte și de a scăpa dintr-o casă, asigurându-vă că evitați toți monștrii!
 
+## What you will make
+
+\--- no-print \---
+
+Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+
+Type `get` to pick up any items that you see (e.g. `get key`).
+
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
 
-### Informații suplimentare pentru conducătorii de club
+\--- /no-print \---
 
-Dacă doriți să imprimați acest proiect, vă rugăm să folosiți [Versiunea pentru imprimare](https://projects.raspberrypi.org/en/projects/rpg/print).
+\--- print-only \---
 
-## \--- collapse \---
+![complete project](images/rpg-finished.png)
 
-## title: Notele liderului de club
+\--- /print-only \---
 
-## Introducere:
+\--- collapse \---
 
-Acest proiect vă învață designul jocurilor prin implementarea unui joc de labirint RPG. În acest joc, jucătorul trebuie să colecteze obiecte dintr-o casă și să ajungă într-o anume cameră, evitând în același timp monștrii care se ascund în unele dintre camere. Acest joc va fi implementat prin manipularea dicționarelor și a listelor.
+* * *
 
-## Resurse online
+## title: What you will need
 
-**Acest proiect utilizează Python 3.** Vă recomandăm să utilizați [trinket](https://trinket.io/) pentru a scrie Python online. Proiectul conține următoarele Trinkets:
+### Hardware
 
-+ ['RPG' punct de pornire -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
++ A computer capable of running Python
 
-Există, de asemenea, un trinket care conține proiectul finalizat:
+### Software
 
-+ [‘RPG’ Finalizat -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
++ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-## Resurse offline
+### Downloads
 
-Acest proiect poate fi [completat offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) dacă preferați. Puteți accesa resursele proiectului făcând clic pe linkul "Materiale de proiect" pentru acest proiect. Acest link conține o secțiune "Resurse de proiect", care include resursele de care copiii vor avea nevoie pentru a finaliza acest proiect offline. Asigurați-vă că fiecare copil are acces la o copie a acestor resurse. Această secțiune include următoarele fișiere:
-
-+ rpg/rpg.py
-
-De asemenea, puteți găsi proiectul finalizat în secțiunea "Resurse pentru voluntari", care conține:
-
-+ rpg-finished/rpg.py
-
-(Toate resursele de mai sus pot fi descărcate ca proiect sau fișiere `.zip` în secțiunea pentru voluntari.)
-
-## Obiectivele exercitiului
-
-+ Designul jocului;
-+ Manipulare sau editare de: 
-    + Liste;
-    + Dicționare.
-+ Expresii booleene (adevărat sau fals).
-
-Acest proiect acoperă elemente din următoarele domenii ale [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Combinați elemente de programare pentru a rezolva o problemă.](https://www.raspberrypi.org/curriculum/programming/builder)
-
-## Provocări
-
-+ Adăugarea de camere noi;
-+ Adăugarea de elemente de colectat;
-+ Adăugarea de dușmani de evitat;
-+ Dezvoltarea propriilor jocuri.
-
-## Întrebări frecvente
-
-+ Este posibil ca copiii să aibă nevoie să li se reamintească faptul că elementele unui dicționar/listă sunt separate printr-o virgulă. De exemplu, când adăugați o cameră nouă în dicționarul "camere", trebuie adăugată o virgulă între camera nou adăugată și camera anterioară.
-+ Când adaugă o cameră nouă, copiii pot uita să adauge o legătură între o încăpere existentă și camera nou creată. Asta însemna că copiii pot părăsi o cameră, dar nu pot intra în ea!
-+ Codul pentru a testa dacă jucătorul a câștigat sau a pierdut jocul trebuie să fie indentat, pentru a se asigura că verificarea este efectuată la intrarea în fiecare cameră nouă. Dacă codul de verificare nu este indentat, acesta se află în afara buclei principale a jocului și nu este executat niciodată.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-## \--- /collapse \---
+\--- collapse \---
 
-## title: Materiale pentru proiect
+* * *
 
-## Resursele proiectului
+## title: What you will learn
 
-+ [fişier .zip care conține toate resursele proiectului](resources/rpg-project-resources.zip)
-+ [Trinket online care conține toate resursele proiectului "RPG"](http://jumpto.cc/rpg-go)
-+ [rpg/rpg.py](resources/rpg-rpg.py)
++ Game design;
++ Editing: 
+    + Lists;
+    + Dictionaries.
++ Boolean expressions.
 
-## Resursele liderului de club
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [fişier .zip care conține toate resursele proiectului completate](resources/rpg-volunteer-resources.zip)
-+ [Trinket online proiect completat](https://trinket.io/python/d06adeb527)
-+ [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+\--- collapse \---
+
+* * *
+
+## title: Additional information for educators
+
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
