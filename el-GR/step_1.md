@@ -2,7 +2,7 @@
 
 Σε αυτό το έργο, θα σχεδιάσεις και θα προγραμματίσεις το δικό σου παιχνίδι λαβύρινθου RPG. Ο στόχος του παιχνιδιού είναι να συλλέξεις αντικείμενα και να ξεφύγεις από ένα σπίτι, φροντίζοντας να αποφύγεις όλα τα τέρατα!
 
-## What you will make
+## Τι θα φτιάξεις
 
 \--- no-print \---
 
@@ -28,17 +28,17 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: Τι θα χρειαστείτε
 
-### Hardware
+### Υλικό
 
 + A computer capable of running Python
 
-### Software
+### Λογισμικό
 
 + Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### Λήψεις
 
 The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
@@ -48,17 +48,17 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 * * *
 
-## title: What you will learn
+## title: Τι θα μάθεις
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ Σχεδιασμός παιχνιδιών.
++ Επεξεργασία: 
+    + Λίστες
+    + Λεξικά.
++ Εκφράσεις τύπου Boolean.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Αυτό το έργο καλύπτει στοιχεία από τις ακόλουθες πτυχές του [Προγράμματος Μαθημάτων Ψηφιακής Δημιουργίας του Raspberry Pi](http://rpf.io/curriculum):
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Συνδύασε δομές προγραμματισμού για να λύσεις ένα πρόβλημα.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
@@ -66,9 +66,9 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 * * *
 
-## title: Additional information for educators
+## Πρόσθετες πληροφορίες για εκπαιδευτικούς
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Αν χρειαστεί να εκτυπώσεις αυτό το έργο, χρησιμοποίησε την [εκτυπώσιμη έκδοση](https://projects.raspberrypi.org/en/projects/rpg/print).
 
 You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
