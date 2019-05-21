@@ -1,35 +1,87 @@
 ## Добавление новых комнат
 
-+ Для вас определен код для этой игры. Откройте эту побрякушку: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
+\--- task \--- Open the Python starter project.
 
-+ Это очень простая RPG игра, в которой есть только 2 комнаты. Вот карта игры:
-    
-    ![Скриншот](images/rpg-map1.png)
-    
-    Вы можете ввести `идите на юг` чтобы переместиться из зала на кухню, а затем `идите на север` чтобы снова вернуться в зал!
-    
-    ![Скриншот](images/rpg-controls.png)
+**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-+ Что происходит, когда вы вводите направление, в которое вы не можете пойти? Тип `идет на запад` в зале, и вы получите приветственное сообщение об ошибке.
-    
-    ![Скриншот](images/rpg-error.png)
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor. \--- /task \---
 
-+ Если вы найдете переменную `номеров` , вы увидите, что карта кодируется как словарь номеров:
-    
-    ![Скриншот](images/rpg-rooms.png)
-    
-    В каждом номере есть словарь, а номера связаны друг с другом с помощью инструкций.
+\--- task \--- This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
-+ Давайте добавим столовую на вашу карту, к востоку от зала.
-    
-    ![Скриншот](images/rpg-dining.png)
-    
-    Вам нужно добавить 3-ю комнату, названную `столовой`. Вам также нужно связать его с залом на запад. Вам также нужно добавить данные в зал, чтобы вы могли перейти в столовую на восток.
-    
-    ![Скриншот](images/rpg-dining-code.png)
+![screenshot](images/rpg-map1.png)
 
-+ Попробуйте игру в новой столовой:
+You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+
+![screenshot](images/rpg-controls.png) \--- /task \---
+
+\--- task \--- What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+
+![screenshot](images/rpg-error.png) \--- /task \---
+
+\--- task \--- If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+
+## \--- code \---
+
+## language: python
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen'
+            },
     
-    ![Скриншот](images/rpg-dining-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            }
     
-    Если вы не можете перемещаться в столовой и выходить из нее, просто проверьте, что вы добавили весь код выше (включая дополнительные запятые к строкам выше).
+        }
+    
+
+\--- /code \---
+
+Each room is a dictionary, and rooms are linked together using directions.  
+\--- /task \---
+
+\--- task \--- Let’s add a dining room to your map, to the east of the hall.
+
+![screenshot](images/rpg-dining.png)
+
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+
+**Don't forget that you'll also need to add commas to lines before your new code.**
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 5-6,11-15
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room'
+            },
+    
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- Try out the game with your new dining room:
+
+![screenshot](images/rpg-dining-test.png)
+
+If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above). \--- /task \---
