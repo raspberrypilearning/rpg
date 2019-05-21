@@ -2,12 +2,41 @@
 
 Ας αφήσουμε μερικά αντικείμενα στα δωμάτια για να τα μαζέψει ο παίκτης καθώς κινείται μέσα στον λαβύρινθο.
 
-+ Η προσθήκη ενός αντικείμενου σε ένα δωμάτιο είναι εύκολη, μπορείς απλά να το προσθέσεις στο λεξικό ενός δωματίου. Ας βάλουμε ένα κλειδί στο χωλ.
-    
-    ![screenshot](images/rpg-key.png)
-    
-    Θυμήσου να βάλεις ένα κόμμα μετά τη γραμμή πάνω από το νέο αντικείμενο αλλιώς το πρόγραμμά σου δεν θα τρέξει!
+\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
 
-+ Αν εκτελέσεις το παιχνίδι σου μετά την προσθήκη του παραπάνω κώδικα, μπορείς πλέον να δεις ένα κλειδί στην αίθουσα και μπορείς ακόμη και να το πάρεις (πληκτρολογώντας `πάρε κλειδί`) για να το προσθέσεις στο απόθεμά σου!
+Remember to put a comma after the line above the new item, or your program won’t run!
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-7
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![screenshot](images/rpg-key-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \---
+
+\--- /task \---
+
+\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png) \--- /task \---
