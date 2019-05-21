@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: '소개:'
+    title: 'Introduction'
   - 
     title: 새로운 방 추가하기
   - 
     title: '도전 과제: 더 많은 방 추가'
+    challenge: true
   - 
     title: 획득할 아이템 추가
   - 
     title: '도전 과제: 더 많은 아이템 추가'
+    challenge: true
   - 
     title: 적 만들기
   - 
     title: '도전 과제: 더 많은 몬스터 추가'
+    challenge: true
   - 
     title: 게임 클리어하기
   - 
     title: '도전 과제: 나만의 게임 만들기'
+    challenge: true
