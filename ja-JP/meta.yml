@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: '前書き: '
+    title: 'Introduction'
   - 
     title: 新しい部屋を追加する
   - 
     title: '課題：新しい部屋を追加'
+    challenge: true
   - 
     title: 収集するアイテムを追加する
   - 
     title: '課題：新しいアイテムを追加する'
+    challenge: true
   - 
     title: 敵を追加する
   - 
     title: '課題：モンスターを追加する'
+    challenge: true
   - 
     title: ゲームに勝つ
   - 
     title: '課題：自分のゲームを開発する'
+    challenge: true
