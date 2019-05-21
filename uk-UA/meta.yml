@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'З днем народження: '
+    title: 'Introduction'
   - 
     title: Додавання нових номерів
   - 
     title: 'Виклик: Додати нові номери'
+    challenge: true
   - 
     title: Додавання елементів для збирання
   - 
     title: 'Виклик: додавання нових елементів'
+    challenge: true
   - 
     title: Додавання ворогів
   - 
     title: 'Виклик: додати більше монстрів'
+    challenge: true
   - 
     title: Перемога в грі
   - 
     title: 'Виклик: розробка власної гри'
+    challenge: true
