@@ -23,15 +23,19 @@ steps:
     title: Ajouter de nouvelles pièces
   - 
     title: 'Défi : Ajoute de nouvelles pièces'
+    challenge: true
   - 
     title: Ajoute des articles à ramasser
   - 
     title: 'Défi : Ajoute des nouveaux articles'
+    challenge: true
   - 
     title: Ajoute des adversaires
   - 
     title: 'Défi : Ajoute plus de monstres'
+    challenge: true
   - 
     title: Pour gagner le jeu
   - 
     title: 'Défi : Développer ton propre jeu'
+    challenge: true
