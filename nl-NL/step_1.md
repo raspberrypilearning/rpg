@@ -2,87 +2,74 @@
 
 In dit project ontwerp en programmeer je je eigen RPG doolhofspel. Het doel van het spel is om voorwerpen te verzamelen en uit het huis te ontsnappen terwijl je monsters probeert te ontwijken!
 
+## What you will make
+
+\--- no-print \---
+
+Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+
+Type `get` to pick up any items that you see (e.g. `get key`).
+
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
 
-### Aanvullende informatie voor clubleiders
+\--- /no-print \---
 
-Als je dit project wilt afdrukken, gebruik dan de [ printvriendelijke versie ](https://projects.raspberrypi.org/en/projects/rpg/print).
+\--- print-only \---
 
-## \--- collapse \---
+![complete project](images/rpg-finished.png)
 
-## title: Opmerkingen voor clubleiders
+\--- /print-only \---
 
-## Inleiding:
+\--- collapse \---
 
-Dit project gaat om spelontwerp door middel van het ontwikkelen van een RPG doolhofspel. In dit spel moet de speler in een huis voorwerpen oppakken en naar een bepaalde kamer gaan, onderweg monsters vermijdend die in sommige kamers op de loer liggen. Dit spel wordt tot stand gebracht door gebruik te maken van woordenboeken (dictionaries) en lijsten.
+* * *
 
-## Online bronnen
+## title: What you will need
 
-**Dit project maakt gebruik van Python 3.** We raden aan om [trinket](https://trinket.io/) te gebruiken om Python online te schrijven. Dit project bevat de volgende Trinkets:
+### Hardware
 
-+ ['RPG' startpunt -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
++ A computer capable of running Python
 
-Er is ook een trinket met het voltooide project:
+### Software
 
-+ [‘RPG’ Gereed -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
++ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-## Offline bronnen
+### Downloads
 
-Dit project kan [offline worden voltooid](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) als dit de voorkeur heeft. Je kunt toegang krijgen tot de projectbronnen door op de koppeling 'Projectmaterialen' voor dit project te klikken. Deze link bevat een 'Projectbronnen'-sectie, met bronnen die kinderen nodig hebben om dit project offline kunnen voltooien. Zorg ervoor dat elk kind toegang heeft tot een kopie van deze bestanden. Dit gedeelte bevat de volgende bestanden:
-
-+ rpg/rpg.py
-
-Je kunt een voltooide versie van dit project vinden in de sectie 'Vrijwilligersbronnen', die het volgende bevat:
-
-+ rpg-finished/rpg.py
-
-(Alle bovenstaande bronnen kunnen ook worden gedownload als project en als vrijwilliger `.zip` bestanden.)
-
-## Leerdoelen
-
-+ Spelontwerp;
-+ Bewerken: 
-    + Lijsten (Engels: lists);
-    + Woordenboeken (Engels: dictionaries).
-+ Booleaanse expressies.
-
-Dit project behandelt elementen uit de volgende onderdelen van het [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Combineer programmeerconstructies om een ​​probleem op te lossen.](https://www.raspberrypi.org/curriculum/programming/builder)
-
-## Uitdagingen
-
-+ Voeg nieuwe kamers toe;
-+ Voorwerpen toevoegen om te verzamelen;
-+ Te vermijden vijanden toevoegen;
-+ Ontwikkel je eigen spel.
-
-## Veelgestelde vragen (faq)
-
-+ Kinderen moeten er mogelijk aan herinnerd worden dat elementen van een woordenboek/lijst moeten worden gescheiden door een komma. Bijvoorbeeld, bij het toevoegen van een kamer in het 'kamers' woordenboek moet er een komma worden toegevoegd tussen de nieuwe en een bestaande kamer.
-+ Bij het toevoegen van een kamer kunnen kinderen vergeten om een verbinding te maken tussen een bestaande en nieuw gemaakte kamer. Dat heeft tot gevolg dat een kamer wel kan worden verlaten maar niet kan worden binnengegaan!
-+ De code die controleert of een speler heeft gewonnen of verloren moet zijn ingesprongen, om er zeker van te zijn dat deze controle is gedaan voor er een nieuwe kamer wordt betreden. Als de code niet inspringt staat het buiten het bereik van de hoofdlus en wordt het nooit uitgevoerd.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-## \--- collapse \---
+\--- collapse \---
 
-## title: Projectmaterialen
+* * *
 
-## Projectbronnen
+## title: What you will learn
 
-+ [.zip-bestand met alle projectbronnen](resources/rpg-project-resources.zip)
-+ [Online Trinket met alle 'RPG' projectbronnen](http://jumpto.cc/rpg-go)
-+ [rpg/rpg.py](resources/rpg-rpg.py)
++ Game design;
++ Editing: 
+    + Lists;
+    + Dictionaries.
++ Boolean expressions.
 
-## Clubleider bronnen
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [.zip-bestand met alle voltooide projectbronnen](resources/rpg-volunteer-resources.zip)
-+ [Online voltooid Trinket-project](https://trinket.io/python/d06adeb527)
-+ [rpg-finished/rpg.py](resources/rpg-finished-rpg.py)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+\--- collapse \---
+
+* * *
+
+## title: Additional information for educators
+
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
