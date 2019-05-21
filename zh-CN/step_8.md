@@ -2,36 +2,106 @@
 
 让我们给予玩家一项任务，使他们必须完成这项任务才能获得游戏的胜利。
 
-+ 在这个游戏中，玩家如果逃离房子并到达花园时，就赢得了胜利。 他们还需要拿到钥匙和魔法药水。 以下是游戏的地图。
-    
-    ![截图](images/rpg-final-map.png)
+\--- task \--- In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
 
-+ 首先，你需要在餐厅的南面添加一个花园。 记住要添加“门”来将其关联到另外一个房间。
-    
-    ![截图](images/rpg-garden.png)
+![screenshot](images/rpg-final-map.png) \--- /task \---
 
-+ 在餐厅中添加一瓶魔法药水（或任何其他一个房间）。
-    
-    ![截图](images/rpg-potion.png)
+\--- task \--- First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
 
-+ 添加以下代码，可以让玩家在得到钥匙和魔法药水，并到达花园时赢得胜利。
-    
-    ![截图](images/rpg-win-code.png)
-    
-    注意这段代码也是缩进的，应当与上面的代码对齐。 这段代码表示当玩家在第4个房间（花园）中，并且在他们的物品袋中有钥匙和魔法药水时，就显示“你已逃离房子...你赢了！”的消息。
-    
-    如果你已经有了4个或更多的房间了，你可能需要在你的代码中给花园一个不同的房间号。
+## \--- code \---
 
-+ 测试你的游戏，确保玩家有可能获得胜利！
-    
-    ![截图](images/rpg-win-test.png)
+language: python
 
-+ 最后，让我们在游戏中添加一些说明来让玩家知道怎样来操作。 修改`showInstructions()`函数来添加更多的说明信息。
-    
-    ![截图](images/rpg-instructions-code.png)
-    
-    你需要添加说明来告诉玩家他们需要收集哪些物品，并需要避开什么！
+## line_highlights: 16-17,18-22
 
-+ 测试你的游戏，你应该能够看到你新加的游戏说明。
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![截图](images/rpg-instructions-test.png)
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden'
+            },
+    
+            'Garden' : {
+                'north' : 'Dining Room'
+            }
+    
+        }
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- Add a potion to the dining room (or another room in your house).
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 4
+
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
+            },
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-9
+
+# player loses if they enter a room with a monster
+
+if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+
+# player wins is they get to the garden with the key and potion
+
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
+
+Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+
+If you have more than 4 rooms, you may have to use a different room number for your garden in the code above. \--- /task \---
+
+\--- task \--- Test your game to make sure the player can win!
+
+![screenshot](images/rpg-win-test.png) \--- /task \---
+
+\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 7-8
+
+def showInstructions(): #print a main menu and the commands print('''
+
+# RPG Game
+
+Get to the Garden with a key and a potion Avoid the monsters!
+
+Commands: go [direction] get [item] ''') \--- /code \---
+
+You will need to add instructions to tell the user what items they need to collect, and what they need to avoid! \--- /task \---
+
+\--- task \--- Test your game and you should see your new instructions.
+
+![screenshot](images/rpg-instructions-test.png) \--- /task \---
