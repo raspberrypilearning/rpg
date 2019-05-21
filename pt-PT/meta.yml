@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introduction: '
+    title: 'Introduction'
   - 
     title: Adicionando novos quartos
   - 
     title: 'Desafio: adicionar novos quartos'
+    challenge: true
   - 
     title: Adicionando itens para coletar
   - 
     title: 'Desafio: adicionar novos itens'
+    challenge: true
   - 
     title: Adicionando inimigos
   - 
     title: 'Desafio: Adicionando mais monstros'
+    challenge: true
   - 
     title: Ganhando o jogo
   - 
     title: 'Desafio: desenvolva seu próprio jogo'
+    challenge: true
