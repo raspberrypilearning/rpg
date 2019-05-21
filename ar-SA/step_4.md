@@ -2,12 +2,41 @@
 
 لنترك بعض العناصر في الغرف للاعب حتى يقوم بجمعها أثناء تحركه خلال المتاهة.
 
-+ إضافة عنصر لغرفة هو أمر ٌسهل، يمكنك فقط إضافتها لقاموس الغرفة. لنضع مفتاحاً في الصالة.
-    
-    ![لقطة الشاشة](images/rpg-key.png)
-    
-    تذكر وضع فاصلة بعد السطر أعلى العنصر الجديد ، وإلا فلن يعمل برنامجك!
+\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
 
-+ إذا قمت بتشغيل لعبتك بعد إضافة الكود أعلاه، يمكنك الآن رؤية مفتاح في الصالة، حتى يمكنك إلتقاطه (عن طريق كتابة `احصل على مفتاح`) حيث ستقوم بإضافته إلى مخزونك!
+Remember to put a comma after the line above the new item, or your program won’t run!
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-7
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![لقطة الشاشة](images/rpg-key-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \---
+
+\--- /task \---
+
+\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png) \--- /task \---
