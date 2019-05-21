@@ -49,7 +49,7 @@ Add a potion to the dining room (or another room in your house).
 --- code ---
 ---
 language: python
-line_highlights: 4
+line_highlights: 3-4
 ---
             'Dining Room' : {
                 'west' : 'Hall',
