@@ -2,11 +2,11 @@
 
 Ας δώσουμε στον παίκτη σου μια αποστολή, η οποία πρέπει να ολοκληρωθεί για να κερδίσει το παιχνίδι.
 
-\--- task \--- In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+\--- task \--- In this game, the player wins by getting to the garden and escaping the house. Πρέπει επίσης να έχει το κλειδί μαζί του και το μαγικό φίλτρο. Εδώ είναι ένας χάρτης του παιχνιδιού.
 
 ![screenshot](images/rpg-final-map.png) \--- /task \---
 
-\--- task \--- First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+\--- task \--- First, you need to add a garden to the south of the dining room. Θυμήσου να προσθέσεις πόρτες, για να συνδεθεί με άλλα δωμάτια του σπιτιού.
 
 ## \--- code \---
 
@@ -14,7 +14,7 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# a dictionary linking a room to other rooms
+# ένα λεξικό που συνδέει ένα δωμάτιο με τα άλλα
 
 rooms = {
 
@@ -76,15 +76,15 @@ if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]:
 
 if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+Βεβαιώσου ότι ο κώδικας αυτός είναι σε εσοχή, σύμφωνα με τον παραπάνω κώδικα. Αυτός ο κώδικας σημαίνει ότι το μήνυμα `Βγήκες από το σπίτι ... ΚΕΡΔΙΣΕΣ!` εμφανίζεται αν ο παίκτης βρίσκεται στο δωμάτιο 4 (στον κήπο) και αν το κλειδί και το φίλτρο βρίσκονται στο απόθεμα.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above. \--- /task \---
+Αν έχεις περισσότερα από 4 δωμάτια, ίσως χρειαστεί να χρησιμοποιήσεις διαφορετικό αριθμό δωματίων για τον κήπο σου στον παραπάνω κώδικα. \--- /task \---
 
 \--- task \--- Test your game to make sure the player can win!
 
 ![screenshot](images/rpg-win-test.png) \--- /task \---
 
-\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Επεξεργάσου τη συνάρτηση `showInstructions()` για να συμπεριλάβεις περισσότερες πληροφορίες.
 
 ## \--- code \---
 
@@ -94,13 +94,13 @@ language: python
 
 def showInstructions(): #print a main menu and the commands print('''
 
-# RPG Game
+# Παιχνίδι RPG
 
 Get to the Garden with a key and a potion Avoid the monsters!
 
 Commands: go [direction] get [item] ''') \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid! \--- /task \---
+Θα χρειαστεί να προσθέσεις οδηγίες για να πεις στο χρήστη ποια αντικείμενα πρέπει να συλλέξει και τι χρειάζεται να αποφύγει! \--- /task \---
 
 \--- task \--- Test your game and you should see your new instructions.
 
