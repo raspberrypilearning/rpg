@@ -18,20 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introducción: '
+    title: 'Introduction'
   - 
     title: Añadir nuevas habitaciones
   - 
     title: 'Reto: Añadir nuevas habitaciones'
+    challenge: true
   - 
     title: Añadir objetos para recoger
   - 
     title: 'Reto: Añadir nuevos objetos'
+    challenge: true
   - 
     title: Añadir enemigos
   - 
     title: 'Reto: Añadir más monstruos'
+    challenge: true
   - 
     title: Ganar el juego
   - 
     title: 'Reto: Desarrolla tu propio juego'
+    challenge: true
