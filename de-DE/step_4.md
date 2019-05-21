@@ -2,12 +2,41 @@
 
 Lass uns Gegenstände in den Zimmern ablegen, damit der Spieler sie auf seinem Weg durch das Labyrinth einsammeln kann.
 
-+ Es ist einfach, einen Gegenstand zum Zimmer hinzuzufügen, du musst ihn nur dem Wörterbuch (dictionary) des Zimmers hinzufügen. Legen wir einen Schlüssel in die Diele.
-    
-    ![screenshot](images/rpg-key.png)
-    
-    Denke daran, ein Komma am Ende der Zeile über dem neuen Gegenstand zu setzen, sonst funktioniert dein Programm nicht!
+\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
 
-+ Wenn du den oben angegebenen Code hinzufügst und dann dein Spiel ausführst, siehst du einen Schlüssel in der Diele, und du kannst ihn (mit `nimm Schlüssel`) sogar einsammeln und deinem Inventar hinzufügen!
+Remember to put a comma after the line above the new item, or your program won’t run!
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-7
+
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![screenshot](images/rpg-key-test.png)
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+\--- /code \---
+
+\--- /task \---
+
+\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png) \--- /task \---
