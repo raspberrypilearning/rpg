@@ -14,32 +14,32 @@ First, you need to add a garden to the south of the dining room. Remember to add
 --- code ---
 ---
 language: python
-line_highlights: 17,20-22
+line_highlights: 16-17,18-22
 ---
 #a dictionary linking a room to other rooms
 rooms = {
 
-    'Hall' : {
-        'south' : 'Kitchen',
-        'east' : 'Dining Room',
-        'item' : 'key'
-    },
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
 
-    'Kitchen' : {
-        'north' : 'Hall',
-        'item' : 'monster'
-    },
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
 
-    'Dining Room' : {
-        'west' : 'Hall',
-        'south' : 'Garden'
-    },
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden'
+            },
 
-    'Garden' : {
-        'north' : 'Dining Room'
-    }
+            'Garden' : {
+                'north' : 'Dining Room'
+            }
 
-}
+        }
 --- /code ---
 --- /task ---
 
@@ -51,11 +51,11 @@ Add a potion to the dining room (or another room in your house).
 language: python
 line_highlights: 4
 ---
-    'Dining Room' : {
-        'west' : 'Hall',
-        'south' : 'Garden',
-        'item' : 'potion'
-    },
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
+            },
 --- /code ---
 --- /task ---
 

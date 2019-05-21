@@ -34,15 +34,15 @@ language: python
 #a dictionary linking a room to other rooms
 rooms = {
 
-    'Hall' : {
-        'south' : 'Kitchen'
-    },
+            'Hall' : {
+                'south' : 'Kitchen'
+            },
 
-    'Kitchen' : {
-        'north' : 'Hall'
-    }
+            'Kitchen' : {
+                'north' : 'Hall'
+            }
 
-}
+        }
 --- /code ---
 
 Each room is a dictionary, and rooms are linked together using directions.  
@@ -60,25 +60,25 @@ You need to add a 3rd room, called the `dining room`, and link it to the hall (t
 --- code ---
 ---
 language: python
-line_highlights: 6,13-15
+line_highlights: 5-6,11-15
 ---
 #a dictionary linking a room to other rooms
 rooms = {
 
-    'Hall' : {
-        'south' : 'Kitchen',
-        'east' : 'Dining Room'
-    },
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room'
+            },
 
-    'Kitchen' : {
-        'north' : 'Hall'
-    },
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
 
-    'Dining Room' : {
-        'west' : 'Hall'
-    }
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
 
-}
+        }
 --- /code ---
 --- /task ---
 

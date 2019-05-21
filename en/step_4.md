@@ -10,26 +10,26 @@ Remember to put a comma after the line above the new item, or your program wonâ€
 --- code ---
 ---
 language: python
-line_highlights: 7
+line_highlights: 6-7
 ---
 #a dictionary linking a room to other rooms
 rooms = {
 
-    'Hall' : {
-        'south' : 'Kitchen',
-        'east' : 'Dining Room',
-        'item' : 'key'
-    },
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
 
-    'Kitchen' : {
-        'north' : 'Hall'
-    },
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
 
-    'Dining Room' : {
-        'west' : 'Hall'
-    }
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
 
-}
+        }
 --- /code ---
 
 --- /task ---

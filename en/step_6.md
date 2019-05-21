@@ -8,27 +8,27 @@ Adding an enemy to a room is as easy as adding any other item. Let’s add a hun
 --- code ---
 ---
 language: python
-line_highlights: 12
+line_highlights: 11-12
 ---
 #a dictionary linking a room to other rooms
 rooms = {
 
-    'Hall' : {
-        'south' : 'Kitchen',
-        'east' : 'Dining Room',
-        'item' : 'key'
-    },
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
 
-    'Kitchen' : {
-        'north' : 'Hall',
-        'item' : 'monster'
-    },
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
 
-    'Dining Room' : {
-        'west' : 'Hall'
-    }
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
 
-}
+        }
 --- /code ---
 --- /task ---
 
