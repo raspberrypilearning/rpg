@@ -2,36 +2,106 @@
 
 ゲームに勝つために完了する必要があるミッションをプレイヤーに与えましょう。
 
-+ このゲームでは、プレイヤーは庭に出て家を逃れることで勝ちます。 彼らはまた、それらとキーと魔法の薬を持っている必要があります。 ここにゲームの地図があります。
-    
-    ![スクリーンショット](images/rpg-final-map.png)
+\--- task \--- In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
 
-+ まず、ダイニングルームの南に庭を追加する必要があります。 ドアを追加して、家の他の部屋にリンクすることを忘れないでください。
-    
-    ![スクリーンショット](images/rpg-garden.png)
+![screenshot](images/rpg-final-map.png) \--- /task \---
 
-+ ダイニングルーム（またはあなたの家の別の部屋）にポーションを追加します。
-    
-    ![スクリーンショット](images/rpg-potion.png)
+\--- task \--- First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
 
-+ このコードを追加すると、キーと薬で庭に行くときにプレイヤーがゲームに勝つことができます：
-    
-    ![スクリーンショット](images/rpg-win-code.png)
-    
-    上記のコードに沿って、このコードがインデントされていることを確認してください。 このコードは、メッセージ `あなたが家をエスケープしたことを意味します...あなたが勝つ！プレイヤーが部屋4（庭園）にいて、キーとポーションがインベントリにある場合は、` が表示されます。
-    
-    4つ以上の部屋がある場合は、上記のコードであなたの庭に異なる部屋番号を使用する必要があります。
+## \--- code \---
 
-+ あなたのゲームを試して、プレーヤーが勝つことができることを確認してください！
-    
-    ![スクリーンショット](images/rpg-win-test.png)
+language: python
 
-+ 最後に、あなたのゲームにいくつかの指示を加えて、プレイヤーが自分が何をしなければならないかを知りましょう。 `showInstructions（）` 関数を編集して、より多くの情報を追加します。
-    
-    ![スクリーンショット](images/rpg-instructions-code.png)
-    
-    収集する必要があるアイテムと回避する必要があるものをユーザーに伝えるための指示を追加する必要があります。
+## line_highlights: 16-17,18-22
 
-+ ゲームを試してみると、新しい指示が表示されます。
+# a dictionary linking a room to other rooms
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
     
-    ![スクリーンショット](images/rpg-instructions-test.png)
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden'
+            },
+    
+            'Garden' : {
+                'north' : 'Dining Room'
+            }
+    
+        }
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- Add a potion to the dining room (or another room in your house).
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 4
+
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
+            },
+    
+
+\--- /code \--- \--- /task \---
+
+\--- task \--- Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 6-9
+
+# player loses if they enter a room with a monster
+
+if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+
+# player wins is they get to the garden with the key and potion
+
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
+
+Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+
+If you have more than 4 rooms, you may have to use a different room number for your garden in the code above. \--- /task \---
+
+\--- task \--- Test your game to make sure the player can win!
+
+![screenshot](images/rpg-win-test.png) \--- /task \---
+
+\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+
+## \--- code \---
+
+language: python
+
+## line_highlights: 7-8
+
+def showInstructions(): #print a main menu and the commands print('''
+
+# RPG Game
+
+Get to the Garden with a key and a potion Avoid the monsters!
+
+Commands: go [direction] get [item] ''') \--- /code \---
+
+You will need to add instructions to tell the user what items they need to collect, and what they need to avoid! \--- /task \---
+
+\--- task \--- Test your game and you should see your new instructions.
+
+![screenshot](images/rpg-instructions-test.png) \--- /task \---
