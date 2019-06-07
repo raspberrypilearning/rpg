@@ -18,7 +18,7 @@ version: 3
 last_tested: 01/01/2017
 steps:
   - 
-    title: 'Introduction'
+    title: 'RPG'
   - 
     title: Adicionando novos quartos
   - 
