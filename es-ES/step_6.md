@@ -2,7 +2,7 @@
 
 ¡Este juego es muy fácil! Agreguemos enemigos a algunas habitaciones, que el jugador deberá evitar.
 
-\--- task \--- Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+\--- task \--- Adding an enemy to a room is as easy as adding any other item. Añadamos un monstruo hambriento a la cocina:
 
 ## \--- code \---
 
@@ -10,7 +10,7 @@ language: python
 
 ## line_highlights: 11-12
 
-# a dictionary linking a room to other rooms
+# un diccionario que une una habitacion a las posiciones de las otras habitaciones
 
 rooms = {
 
@@ -34,7 +34,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. Puedes hacerlo con el siguiente código, que debes añadir al final del juego:
 
 ## \--- code \---
 
@@ -55,8 +55,8 @@ language: python
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room. \--- /task \---
+Este código verifica si hay un objeto en la habitación, y en caso afirmativo, si ese objeto es un monstruo. Date cuenta que el código tiene sangría, poniéndolo en línea con el código encima de él. Esto significa que el juego va a verificar si hay un monstruo cada vez que el jugador entra a una nueva habitación. \--- /task \---
 
 \--- task \--- Test out your code by going into the kitchen, which now contains a monster.
 
-![screenshot](images/rpg-monster-test.png) \--- /task \---
+![captura de pantalla](images/rpg-monster-test.png) \--- /task \---
