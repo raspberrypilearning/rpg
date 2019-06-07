@@ -2,7 +2,7 @@
 
 En este proyecto vas a diseñar y programar tu propio juego de laberinto RPG. El objetivo del juego será recoger objetos y escapar de una casa, ¡asegurándote de evitar todos los monstruos!
 
-## What you will make
+## Lo que harás
 
 \--- no-print \---
 
@@ -28,7 +28,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: Lo que necesitarás
 
 ### Hardware
 
@@ -38,7 +38,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 + Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### Descargas
 
 The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
@@ -48,17 +48,17 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 * * *
 
-## title: What you will learn
+## title: Lo que vas a aprender
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ Diseño de Juegos;
++ Edición: 
+    + Listas;
+    + Diccionarios.
++ Expresiones booleanas.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Este proyecto incluye elementos desde los siguientes aspectos del [curríulo de digitalización de Raspberry Pi](http://rpf.io/curriculum):
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combina construcciones de programación para resolver un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
@@ -66,10 +66,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 * * *
 
-## title: Additional information for educators
+## title: Información adicional para educadores
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Puedes [encontrar la solución para este proyecto aquí](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
