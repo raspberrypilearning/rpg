@@ -18,7 +18,7 @@ version: 3
 last_tested: 2017年1月1日
 steps:
   - 
-    title: 'Introduction'
+    title: '介绍'
   - 
     title: 添加新房间
   - 
