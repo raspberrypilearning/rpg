@@ -13,12 +13,12 @@ interests: 게임
 technologies: python
 site_areas: projects
 hardware: ''
-software: python
+software: 파이썬 (Python)
 version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introduction'
+    title: '소개'
   - 
     title: 새로운 방 추가하기
   - 
