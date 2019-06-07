@@ -2,7 +2,7 @@
 
 이 프로젝트에서는 자신만의 RPG 미로 게임을 디자인하고 프로그래밍하게 됩니다. 이 게임의 목적은 필요한 아이템을 집에서 획득하고, 괴물에게 잡히지 않고 집을 탈출하는 것입니다.
 
-## What you will make
+## 만들 작품
 
 \--- no-print \---
 
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![완료 된 프로젝트](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,17 +28,17 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: 준비물
 
-### Hardware
+### 하드웨어
 
 + A computer capable of running Python
 
-### Software
+### 소프트웨어
 
 + Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### 다운로드
 
 The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
@@ -48,28 +48,28 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 * * *
 
-## title: What you will learn
+## title: 배우게 될 것
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ 게임 디자인;
++ 코드 편집: 
+    + Python 리스트;
+    + 딕셔너리.
++ 부울 식.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+이 프로젝트는 [라즈베리파이 디지털 메이킹 커리큘럼](http://rpf.io/curriculum) 중 다음 과정에 대한 내용을 다룹니다:
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [프로그래밍 구조를 결합하여 문제 해결하기](https://www.raspberrypi.org/curriculum/programming/builder)
 
-\--- /collapse \---
+-- /collapse \---
 
 \--- collapse \---
 
 * * *
 
-## title: Additional information for educators
+## title: 교육자를 위한 추가 정보
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+이 프로젝트를 인쇄하려면 [프린트용 문서](https://projects.raspberrypi.org/en/projects/rpg/print)를 사용하십시오.
 
 You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
-\--- /collapse \---
+\--- / collapse \---
