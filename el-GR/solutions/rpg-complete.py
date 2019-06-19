@@ -1,106 +1,106 @@
 #!/bin/python3
 
 def showInstructions():
-    #print a main menu and the commands
+    #εμφάνισε ένα κύριο μενού και τις εντολές
     print('''
-RPG Game
+Παιχνίδι RPG
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+Βγες στον κήπο με ένα κλειδί κι ένα μαγικό φίλτρο
+Απόφυγε τα τέρατα!
 
-Commands:
-  go [direction]
-  get [item]
+Εντολές:
+  πήγαινε [κατεύθυνση]
+  πάρε [αντικείμενο]
 ''')
 
 def showStatus():
-  #print the player's current status
+  #εμφάνισε την κατάσταση του παίκτη
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('Βρίσκεσαι στο/στη ' + currentRoom)
+  #εμφάνισε το απόθεμα
+  print("Απόθεμα : " + str(inventory))
+  #εμφάνισε ένα αντικείμενο αν υπάρχει
+  if "αντικείμενο" in rooms[currentRoom]:
+    print('Βλέπεις ένα ' + rooms[currentRoom]['αντικείμενο'])
   print("---------------------------")
 
-#an inventory, which is initially empty
+#ένα απόθεμα, το οποίο είναι αρχικά άδειο
 inventory = []
 
-#a dictionary linking a room to other room positions
+#ένα λεξικό που συνδέει ένα δωμάτιο με άλλα δωμάτια
 rooms = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            'Χωλ' : { 'νότια' : 'Κουζίνα',
+                  'ανατολικά'  : 'Τραπεζαρία',
+                  'αντικείμενο'  : 'κλειδί'
                 },
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            'Κουζίνα' : { 'βόρεια' : 'Χωλ',
+                  'αντικείμενο'  : 'τέρας'
                 },
 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            'Τραπεζαρία' : { 'δυτικά'  : 'Χωλ',
+                  'νότια' : 'Κήπος',
+                  'αντικείμενο'  : 'φίλτρο'
 
                 },
 
-            'Garden' : { 'north' : 'Dining Room' }
+            'Κήπος' : { 'βόρεια' : 'Τραπεζαρία' }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#ο παίκτης ξεκινάει στο Χωλ
+currentRoom = 'Χωλ'
 
 showInstructions()
 
-#loop forever
+#επανέλαβε για πάντα
 while True:
 
   showStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
+  #παίρνουμε την επόμενη κίνηση του παίκτη
+  #το .split() χωρίζει την απάντηση σε μία λίστα
+  #για παράδειγμα το "πήγαινε ανατολικά" δίνει τη λίστα
+  #['πήγαινε','ανατολικά']
   move = ''
   while move == '':
     move = input('>')
 
   move = move.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
+  #αν πληκτρολογίσει "πήγαινε" στην αρχή
+  if move[0] == 'πήγαινε':
+    #έλεγξε ότι επιτρέπεται να πάει εκεί που θέλει
     if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
+      #δώσε στη μεταβλητή του τρέχοντος δωματίου την τιμή του νέου δωματίου
       currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+    #δεν υπάρχει πόρτα (σύνδεσμος) για το νέο δωμάτιο
     else:
-      print('You can\'t go that way!')
+      print('Δεν μπορείς να πας προς τα εκεί!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
+  #αν πληκτρολογίσει "πάρε" στην αρχή
+  if move[0] == 'πάρε' :
+    #αν το δωμάτιο περιέχει ένα αντικείμενο και το αντικείμενο είναι αυτό που θέλει να πάρει
+    if 'αντικείμενο' in rooms[currentRoom] and move[1] in rooms[currentRoom]['αντικείμενο']:
+      #πρόσθεσε το αντικείμενο στο απόθεμά του
       inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+      #εμφάνισε ένα επεξηγηματικό μήνυμα
+      print(move[1] + ' ελήφθη!')
+      #σβήσε το αντικείμενο από το δωμάτιο
+      del rooms[currentRoom]['αντικείμενο']
+    #αλλιώς, αν δεν υπάρχει το αντικείμενο
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #πες του ότι δεν μπορεί να το πάρει
+      print('Δεν μπορείς να πάρεις το ' + move[1] + '!')
 
-  #player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  #ο παίκτης χάνει αν μπει σε ένα δωμάτιο με τέρας
+  if 'αντικείμενο' in rooms[currentRoom] and 'τέρας' in rooms[currentRoom]['αντικείμενο']:
+    print('Ένας τέρας σε έπιασε... ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ!')
     break
 
-  #player wins if they get to the garden with a key and a potion
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  #ο παίκτης κερδίζει αν βγει στον κήπο με ένα κλειδί και ένα φίλτρο
+  if currentRoom == 'Κήπος' and 'κλειδί' in inventory and 'φίλτρο' in inventory:
+    print('Βγήκες από το σπίτι... ΝΙΚΗΣΕΣ!')
     break
