@@ -6,9 +6,9 @@
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Γράψε `προχώρα` και μετά μία κατεύθυνση (βόρεια, ανατολικά, νότια ή δυτικά) για να περιπλανηθείς (πχ `προχώρα βόρεια`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Γράψε `πάρε` για να πάρεις ένα αντικείμενο που βλέπεις (πχ `πάρε κλειδί`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![ολοκληρωμένο έργο](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,19 +28,19 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: Τι θα χρειαστείτε
+## title: Τι θα χρειαστείς
 
 ### Υλικό
 
-+ A computer capable of running Python
++ Ένας υπολογιστής ικανός να τρέχει το Scratch 3
 
 ### Λογισμικό
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 (είτε [online](https://trinket.io/){:target="_blank"} είτε [offline](https://www.python.org/downloads/){:target="_blank"})
 
 ### Λήψεις
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+Το αρχικό project μπορεί να βρεθεί [εδώ](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -70,6 +70,6 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 Αν χρειαστεί να εκτυπώσεις αυτό το έργο, χρησιμοποίησε την [εκτυπώσιμη έκδοση](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
