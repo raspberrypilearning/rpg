@@ -2,7 +2,7 @@
 
 Αυτό το παιχνίδι παρά είναι εύκολο! Ας προσθέσουμε εχθρούς σε κάποια δωμάτια που ο παίκτης πρέπει να αποφύγει.
 
-\--- task \--- Adding an enemy to a room is as easy as adding any other item. Ας προσθέσουμε ένα πεινασμένο τέρας στην κουζίνα:
+\--- task \--- Η προσθήκη ενός εχθρού σε ένα δωμάτιο είναι τόσο απλή όσο η προσθήκη οποιουδήποτε άλλου αντικειμένου. Ας προσθέσουμε ένα πεινασμένο τέρας στην κουζίνα:
 
 ## \--- code \---
 
@@ -14,19 +14,19 @@ language: python
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Χωλ' : {
+                'νότια' : 'Κουζίνα',
+                'ανατολικά' : 'Τραπεζαρία',
+                'αντικείμενο' : 'κλειδί'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            'Κουζίνα' : {
+                'βόρεια' : 'Χωλ',
+                'αντικείμενο' : 'τέρας'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Τραπεζαρία' : {
+                'δυτικά' : 'Χωλ'
             }
     
         }
@@ -34,7 +34,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. Μπορείς να το κάνεις με τον παρακάτω κώδικα, τον οποίο πρέπει να προσθέσεις στο τέλος του παιχνιδιού:
+\--- task \--- Επίσης, θα πρέπει να βεβαιωθείς ότι το παιχνίδι τελειώνει εάν ο παίκτης εισέλθει σε ένα δωμάτιο με ένα τέρας. Μπορείς να το κάνεις με τον παρακάτω κώδικα, τον οποίο πρέπει να προσθέσεις στο τέλος του παιχνιδιού:
 
 ## \--- code \---
 
@@ -42,14 +42,14 @@ language: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        #αλλιώς, αν το αντικείμενο δεν υπάρχει εκεί
         else:
-            #tell them they can't get it
-            print('Can\'t get' + move[1] + '!')
+            #πες ότι δεν μπορεί να το πάρει
+            print('Δεν μπορώ να πάρω το' + move[1] + '!')
     
-    #player loses if they enter a room with a monster
-    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('A monster has got you... GAME OVER!')
+    #ο παίκτης χάνει αν μπει σε δωμάτιο με τέρας 
+    if 'αντικείμενο' in rooms[currentRoom] and 'τέρας' in rooms[currentRoom]['αντικείμενο']:
+        print('Ένα τέρας σε έπιασε... ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ!')
         break
     
 
@@ -57,6 +57,6 @@ language: python
 
 Αυτός ο κώδικας ελέγχει εάν υπάρχει ένα αντικείμενο στο δωμάτιο και αν ναι, αν το αντικείμενο είναι ένα τέρας. Παρατήρησε ότι ο κώδικας αυτός είναι σε εσοχή, ευθυγραμμισμένος με τον κώδικα από πάνω του. Αυτό σημαίνει ότι το παιχνίδι θα ελέγξει αν υπάρχει τέρας κάθε φορά που ο παίκτης μετακινείται σε ένα νέο δωμάτιο. \--- /task \---
 
-\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+\--- task \--- Δοκίμασε τον κώδικά σου πηγαίνοντας στην κουζίνα, η οποία τώρα περιέχει ένα τέρας.
 
 ![screenshot](images/rpg-monster-test.png) \--- /task \---
