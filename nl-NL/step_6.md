@@ -2,7 +2,7 @@
 
 Dit spel is te makkelijk! We gaan vijanden in een paar kamers toevoegen die de speler moet zien te vermijden.
 
-\--- task \--- Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+\--- task \--- Het toevoegen van een vijand in een kamer is net zo makkelijk als het toevoegen van een voorwerp. We voegen een hongerig monster toe aan de keuken:
 
 ## \--- code \---
 
@@ -10,23 +10,23 @@ language: python
 
 ## line_highlights: 11-12
 
-# a dictionary linking a room to other rooms
+# een woordenboek die een kamer verbindt met andere kamers
 
-rooms = {
+kamers = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Hal' : {
+                'zuid' : 'Keuken',
+                'oost' : 'Eetkamer',
+                'voorwerp' : 'sleutel'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            'Keuken' : {
+                'noord' : 'Hal',
+                'voorwerp' : 'monster'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Eetkamer' : {
+                'west' : 'Hal'
             }
     
         }
@@ -34,7 +34,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+\--- task \--- Je wilt ook zeker weten dat het spel eindigt als de speler een kamer met een monster binnenkomt. Dit kun je doen door de volgende code aan het einde van je spel te zetten:
 
 ## \--- code \---
 
@@ -42,21 +42,21 @@ language: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        #anders, als het voorwerp er niet is om te pakken
         else:
-            #tell them they can't get it
-            print('Can\'t get' + move[1] + '!')
+            #vertel ze dat ze het niet kunnen pakken
+            print('Kan ' + move[1] + ' niet pakken!')
     
-    #player loses if they enter a room with a monster
-    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('A monster has got you... GAME OVER!')
+    #speler verliest als ze een kamer met een monster ingaan
+    if 'voorwerp' in kamers[dezeKamer] and 'monster' in kamers[dezeKamer]['voorwerp']:
+        print('Een monster heeft je te pakken... GAME OVER!')
         break
     
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room. \--- /task \---
+Deze code bekijkt of er een voorwerp in de kamer is en zo ja, of het een monster is. Let er op dat de code inspringt zodat het gelijk staat met de code erboven. Elke keer dat de speler naar een andere kamer gaat, controleert het spel of er een monster is. \--- /task \---
 
-\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+\--- task \--- Probeer het uit door naar de keuken te gaan, waar nu een monster zit.
 
 ![screenshot](images/rpg-monster-test.png) \--- /task \---
