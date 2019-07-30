@@ -1,106 +1,106 @@
 #!/bin/python3
 
 def showInstructions():
-    #print a main menu and the commands
+    # اطبع القائمة الرئيسية والأوامر
     print('''
-RPG Game
+لعبة RPG (لعبة تقمُّص الأدوار Role-Play Game)
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+إذهب إلى الحديقة مع مفتاح و جرعة
+تجنب الوحوش!
 
-Commands:
-  go [direction]
-  get [item]
+الأوامر:
+  اذهب [الاتجاهات]
+  احصل على [جرعة]
 ''')
 
 def showStatus():
-  #print the player's current status
+  # اطبع حالة اللاعب الحالية
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('أنت في ' + currentRoom)
+  # اطبع المخزون الحالي
+  print("المخزون : " + str(inventory))
+  # اطبع عنصر إذا كان هناك واحد
+  if "عنصر" in rooms[currentRoom]:
+    print('أنت ترى ' + rooms[currentRoom]['عنصر'])
   print("---------------------------")
 
-#an inventory, which is initially empty
+# المخزون ، والذي يكون فارغ في البداية
 inventory = []
 
-#a dictionary linking a room to other room positions
+# قاموس يربط بين غرفة وأماكن الغرف الأخرى
 rooms = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            'الصالة' : { 'جنوب' : 'المطبخ',
+                  'شرق'  : 'غرفة الطعام',
+                  'عنصر'  : 'مفتاح'
                 },
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            'المطبخ' : { 'شمال' : 'الصالة',
+                  'عنصر'  : 'وحش'
                 },
 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            'غرفة الطعام' : { 'غرب'  : 'الصالة',
+                  'جنوب' : 'الحديقة',
+                  'عنصر'  : 'جرعة'
 
                 },
 
-            'Garden' : { 'north' : 'Dining Room' }
+            'الحديقة' : { 'شمال' : 'غرفة الطعام' }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+# يبدأ اللاعب في الصالة
+currentRoom = 'الصالة'
 
 showInstructions()
 
-#loop forever
+# حَلَقَة تتكرر للأبد
 while True:
 
   showStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
+  # احصل على 'حركة' اللاعب التالية
+  #()split. تقسمها إلى قائمة مجموعة
+  # مثلاً: كتابة 'اذهب شرق' ستعطي القائمة:
+  # ['اذهب','شرق']
   move = ''
   while move == '':
     move = input('>')
 
   move = move.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
+  # اذا كتبوا 'اذهب' أولاً
+  if move[0] == 'اذهب':
+    # تأكد أنه مسموحٌ لهم الذهاب أينما يريدون
     if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
+      # تعيين الغرفة الحالية للغرفة الجديدة
       currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+    # لا يوجد باب (رابط) بالغرفة الجديدة
     else:
-      print('You can\'t go that way!')
+      print('لا يمكنك الذهاب من هذا الطريق!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
+  # إذا كتبوا 'احصل على' أولاً
+  if move[0] == 'احصل على' :
+    # إذا كانت الغرفة تحتوي على عنصر ، وكان العنصر هو الذي يريدون الحصول عليه
+    if 'عنصر' in rooms[currentRoom] and move[1] in rooms[currentRoom]['عنصر']:
+      # أضف العنصر إلى مخزونهم
       inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+      # اعرض رسالة مساعدة
+      print(move[1] + 'تم التحصيل!')
+      # قم بإزالة العنصر من الغرفة
+      del rooms[currentRoom]['عنصر']
+    # وإلا ، إذا لم يكن العنصر هناك للحصول عليه
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      # أخبرهم أنهم لا يستطيعون الحصول عليه
+      print('لا يمكنك الحصول على ' + move[1] + '!')
 
-  #player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  #اللاعب يخسر إذا دخل غرفةً بها وحش
+  if 'عنصر' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['عنصر']:
+    print('الوحش قد أمسك بك... انتهت اللعبة!')
     break
 
-  #player wins if they get to the garden with a key and a potion
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  #يربح اللاعب إذا وصل إلى الحديقة مع مفتاح وجرعة
+  if currentRoom == 'الحديقة' and 'مفتاح' in inventory and 'جرعة' in inventory:
+    print('لقد هربت من المنزل... لقد ربحت!')
     break
