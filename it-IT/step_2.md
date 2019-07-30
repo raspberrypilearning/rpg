@@ -6,17 +6,17 @@
 
 **Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor. \--- /task \---
 
-\--- task \--- This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
+\--- task \--- This is a very basic RPG game that only has 2 rooms. Ecco la mappa del gioco:
 
-![screenshot](images/rpg-map1.png)
+![schermata](images/rpg-map1.png)
 
-You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+Puoi digitare `vai sud`per spostarti dalla sala alla cucina, e poi `vai nord` per tornare di nuovo all'ingresso!
 
-![screenshot](images/rpg-controls.png) \--- /task \---
+![schermata](images/rpg-controls.png) \--- /task \---
 
-\--- task \--- What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+\--- task \--- What happens when you type in a direction that you cannot go? Digita `vai ovest`nell'ingresso e riceverai un messaggio di errore.
 
-![screenshot](images/rpg-error.png) \--- /task \---
+![schermata](images/rpg-error.png) \--- /task \---
 
 \--- task \--- If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
 
@@ -24,9 +24,9 @@ You can type `go south` to move from the hall to the kitchen, and then `go north
 
 ## language: python
 
-# a dictionary linking a room to other rooms
+# un dizionario collega una stanza alle altre
 
-rooms = {
+stanze = {
 
             'Hall' : {
                 'south' : 'Kitchen'
@@ -46,9 +46,9 @@ Each room is a dictionary, and rooms are linked together using directions.
 
 \--- task \--- Let’s add a dining room to your map, to the east of the hall.
 
-![screenshot](images/rpg-dining.png)
+![schermata](images/rpg-dining.png)
 
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). Devi anche aggiungere dati all'ingresso, in modo da poterti spostare nella sala da pranzo ad est.
 
 **Don't forget that you'll also need to add commas to lines before your new code.**
 
@@ -58,9 +58,9 @@ language: python
 
 ## line_highlights: 5-6,11-15
 
-# a dictionary linking a room to other rooms
+# un dizionario collega una stanza alle altre
 
-rooms = {
+stanze = {
 
             'Hall' : {
                 'south' : 'Kitchen',
@@ -82,6 +82,6 @@ rooms = {
 
 \--- task \--- Try out the game with your new dining room:
 
-![screenshot](images/rpg-dining-test.png)
+![schermata](images/rpg-dining-test.png)
 
-If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above). \--- /task \---
+Se non riesci ad entrare e uscire dalla sala da pranzo, controlla di aver aggiunto tutto il codice sopra riportato (comprese le virgole extra alle righe sopra). \--- /task \---
