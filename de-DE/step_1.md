@@ -2,13 +2,13 @@
 
 In diesem Projekt konzipierst und programmierst du dein eigenes RPG-Labyrinth-Spiel. Das Ziel dieses Spieles ist, Gegenstände einzusammeln und aus einem Haus zu fliehen, ohne dabei von den Monstern gefressen zu werden!
 
-## What you will make
+## Was du machen wirst
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Tippe `gehenach` und dann eine Richtung (norden, osten, süden oder westen) ein um dich in der Welt zu bewegen (z.B. `gehenach norden`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Tippe `nimm` um einen Gegenstand aufzunehmen den du siehst (z.B. `nimm Schlüssel`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![fertiges Projekt](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,19 +28,19 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: Was du brauchen wirst
 
 ### Hardware
 
-+ A computer capable of running Python
++ Ein Computer, auf dem Python ausgeführt werden kann
 
 ### Software
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 (entweder [online](https://trinket.io/){:target="_blank"} oder [offline](https://www.python.org/downloads/){:target="_blank"})
 
 ### Downloads
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+Das Start-Projekt findest du [hier](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -48,17 +48,17 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 * * *
 
-## title: What you will learn
+## title: Was du lernen wirst
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ Spieledesign;
++ Bearbeiten von: 
+    + Listen (lists);
+    + Wörterbücher (dictionaries).
++ Boolesche Ausdrücke.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Dieses Projekt umfasst Elemente aus den folgenden Teilen des [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Problemlösung durch Kombination von Programmierstrukturen.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
@@ -66,10 +66,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 * * *
 
-## title: Additional information for educators
+## title: Zusatzinformationen für Lehrerinnen und Lehrer
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Falls Sie dieses Projekt ausdrucken müssen, verwenden Sie bitte die [druckfreundliche Version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Hier finden Sie die [Lösung für dieses Projekt](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
