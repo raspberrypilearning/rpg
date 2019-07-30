@@ -1,6 +1,6 @@
-## Introduction:
+## Introduction :
 
-In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
+Dans ce projet, tu vas designer et coder ton propre jeu RPG. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
 
 ## What you will make
 
