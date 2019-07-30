@@ -1,14 +1,14 @@
-## Inleiding:
+## Inleiding
 
 In dit project ontwerp en programmeer je je eigen RPG doolhofspel. Het doel van het spel is om voorwerpen te verzamelen en uit het huis te ontsnappen terwijl je monsters probeert te ontwijken!
 
-## What you will make
+## Wat ga je maken
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Typ `ga` en dan een richting (noord, oost, zuid of west) om door de wereld te bewegen (bijv. `ga noord`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Typ `pak` om voorwerpen die je ziet op te pakken (bijv. `pak sleutel`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![voltooid project](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,19 +28,19 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: Wat heb je nodig
 
 ### Hardware
 
-+ A computer capable of running Python
++ Een computer die Python kan uitvoeren
 
 ### Software
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python ([online](https://trinket.io/){:target="_ blank"} of [offline](https://www.python.org/downloads/){:target="_ blank"})
 
 ### Downloads
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+Het starterproject kan [hier](http://rpf.io/p/en/rpg-go){:target="_blank"} gevonden worden.
 
 \--- /collapse \---
 
@@ -48,17 +48,17 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 * * *
 
-## title: What you will learn
+## title: Wat ga je leren
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ Spelontwerp;
++ Bewerken: 
+    + Lijsten (Engels: lists);
+    + Woordenboeken (Engels: dictionaries).
++ Booleaanse expressies.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Dit project behandelt elementen uit de volgende onderdelen van het [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combineer programmeerconstructies om een ​​probleem op te lossen.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
@@ -66,10 +66,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 * * *
 
-## title: Additional information for educators
+## title: Aanvullende informatie voor docenten
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Als je dit project wilt afdrukken, gebruik dan de [printervriendelijke versie](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Hier is een link [naar de oplossing](http://rpf.io/p/en/rpg-get){:target="_blank"} voor dit project.
 
 \--- /collapse \---
