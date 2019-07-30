@@ -6,9 +6,9 @@
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+`go south` 명령어를 입력하여 hall에서 kitchen으로 이동할 수 있고, `go north` 명령어를 입력하여 다시 hall로 이동할 수 있습니다.
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+`get` 명령어로 아이템을 획득할 수 있습니다. (e.g. `get key`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -32,7 +32,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 ### 하드웨어
 
-+ A computer capable of running Python
++ 파이썬 을 실행할 수 있는 컴퓨터
 
 ### 소프트웨어
 
@@ -40,7 +40,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 ### 다운로드
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+스타터 프로젝트는 [여기](http://rpf.io/p/en/rpg-go){:target="_blank"}를 클릭하면 열 수 있습니다.
 
 \--- /collapse \---
 
@@ -70,6 +70,6 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 이 프로젝트를 인쇄하려면 [프린트용 문서](https://projects.raspberrypi.org/en/projects/rpg/print)를 사용하십시오.
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+프로젝트의 [솔루션은 여기를 클릭하면 됩니다.](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- / collapse \---
