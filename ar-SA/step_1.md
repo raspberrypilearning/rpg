@@ -2,7 +2,7 @@
 
 في هذا المشروع ، ستقوم بتصميم وبرمجة لعبة متاهة الـ RPG (لعبة تقمُّص الأدوار Role-Play Game) الخاصة بك. سيكون الهدف من اللعبة جمع الأشياء والهروب من المنزل ، مع التأكد من تجنب جميع الوحوش!
 
-## What you will make
+## ما الذي ستصنعه
 
 \--- no-print \---
 
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![المشروع كامل](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,17 +28,17 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: ما الذي ستحتاجه
 
-### Hardware
+### الأجهزة
 
 + A computer capable of running Python
 
-### Software
+### البرمجيات
 
 + Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### للتحميل
 
 The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
@@ -48,17 +48,17 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 * * *
 
-## title: What you will learn
+## title: ما الذي ستتعلمه
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ تصميم الألعاب؛
++ تحرير: 
+    + القوائم;
+    + القواميس.
++ التعبيرات المنطقية.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+يتناول هذا المشروع عناصر من معايير المناهج الرقمية الخاصة بـ [Raspberry Pi](http://rpf.io/curriculum):
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [دمج الإنشاءات البرمجية لحل مشكلة.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
@@ -66,10 +66,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 * * *
 
-## title: Additional information for educators
+## title: معلومات إضافية للمعلمين
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+إذا كنت بحاجة إلى طباعة هذا المشروع ، فيُرجى استخدام [النسخة القابلة للطباعة](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+يمكنك [الحصول على المشروع كاملاً من هنا](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
