@@ -2,11 +2,11 @@
 
 لنعطي لاعبك مهمة، حيث تحتاج أن تتم للفوز باللعبة.
 
-\--- task \--- In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+\--- task \--- In this game, the player wins by getting to the garden and escaping the house. يجب عليهم أيضاً الحصول على المفتاح معهم، والجرعة السحرية. ها ذي خريطة اللعبة.
 
-![screenshot](images/rpg-final-map.png) \--- /task \---
+![لقطة الشاشة](images/rpg-final-map.png) \---/task--
 
-\--- task \--- First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+\--- task \--- First, you need to add a garden to the south of the dining room. تذكر أن تضيف أبواباً ، لتربط بقية الغرف في المنزل.
 
 ## \--- code \---
 
@@ -68,7 +68,7 @@ language: python
 
 ## line_highlights: 6-9
 
-# player loses if they enter a room with a monster
+# اللاعب يخسر إذا دخل غرفةً بها وحش
 
 if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
@@ -76,15 +76,15 @@ if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]:
 
 if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+تأكد من أن الكود مسبق بمسافة بادئة، في السطر مع الكود أعلاه. هذا الكود يعني أن رسالة `لقد هربت من المنزل .. لقد ربحت!` قد عُرِضَت إذا كان اللاعب في الغرفة 4 (الحديقة) و إذا كان المفتاح و الجرعة في المخزون.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above. \--- /task \---
+إذا كان لديك أكثر من ٤ غرف، قد تضطر لاستخدام رقم غرفة مختلف لحديقتك في الكود أعلاه. \--- /task \---
 
 \--- task \--- Test your game to make sure the player can win!
 
-![screenshot](images/rpg-win-test.png) \--- /task \---
+![لقطة الشاشة](images/rpg-win-test.png) \--- /task \---
 
-\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. حرَِر الدالَّة `showInstructions()` لإضافة المزيد من المعلومات.
 
 ## \--- code \---
 
@@ -94,14 +94,14 @@ language: python
 
 def showInstructions(): #print a main menu and the commands print('''
 
-# RPG Game
+# لعبة RPG (لعبة تقمُّص الأدوار Role-Play Game)
 
 Get to the Garden with a key and a potion Avoid the monsters!
 
 Commands: go [direction] get [item] ''') \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid! \--- /task \---
+ستحتاج لإضافة التعليمات لتخبر المستخدم ما العناصر التي يحتاج لجمعها، وماذا يتجنب! \--- /task \---
 
 \--- task \--- Test your game and you should see your new instructions.
 
-![screenshot](images/rpg-instructions-test.png) \--- /task \---
+![لقطة الشاشة](images/rpg-instructions-test.png) \--- /task \---
