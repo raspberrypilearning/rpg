@@ -1,106 +1,107 @@
 #!/bin/python3
 
-def showInstructions():
-    #print a main menu and the commands
+def zeigeAnweisungen():
+    #Zeige ein Hauptmenü und die möglichen Befehle
     print('''
-RPG Game
+RPG Spiel (Labyrinth)
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+Suche den Schlüssel und den Zaubertrank und versuche dann, in den Garten zu entkommen.
+Lass dich nicht von den Monstern fressen!
 
-Commands:
-  go [direction]
-  get [item]
+Befehle:
+  gehenach [Richtung]
+  nimm [Gegenstand]
 ''')
 
-def showStatus():
-  #print the player's current status
+def zeigeZustand():
+  #Zeige den aktuellen Zustand des Spielers
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('Du bist im Zimmer: ' + aktuellesZimmer)
+  #Zeige das aktuelle Inventar
+  print('Inventar : ' + str(inventar))
+  #Zeige einen Gegenstand an, wenn einer im Zimmer vorhanden ist
+  if "Gegenstand" in zimmer[aktuellesZimmer]:
+    print('Du siehst einen ' + zimmer[aktuellesZimmer]['Gegenstand'])
   print("---------------------------")
 
-#an inventory, which is initially empty
-inventory = []
+#Das Inventar ist beim Start leer
+inventar = []
 
-#a dictionary linking a room to other room positions
-rooms = {
+#Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
+zimmer = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            'Diele' : { 'süden' : 'Küche',
+                  'osten'  : 'Esszimmer',
+                  'Gegenstand' : 'Schlüssel'
                 },
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            'Küche' : { 'norden' : 'Diele',
+                  'Gegenstand'  : 'Monster'
                 },
 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            'Esszimmer' : { 'westen'  : 'Diele',
+                  'süden' : 'Garten',
+                  'Gegenstand'  : 'Zaubertrank'
 
                 },
 
-            'Garden' : { 'north' : 'Dining Room' }
+            'Garten' : { 'norden' : 'Esszimmer' }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#Beim Start ist der Spieler in der Diele
+aktuellesZimmer = 'Diele'
 
-showInstructions()
+zeigeAnweisungen()
 
-#loop forever
+#Ewige Schleife
 while True:
 
-  showStatus()
+  zeigeZustand()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':
-    move = input('>')
+  #Warte auf den 'nächsten Spielzug (die nächste Bewegung)' des Spielers
+  #.split() teilt ihn in ein Array auf
+  #Wenn du z.B. 'gehenach osten' eintippst, erhältst du folgende Liste:
+  #['gehenach','osten']
+  spielzug = ''
+  while spielzug == '':
+    spielzug = input('>')
 
-  move = move.lower().split()
+  spielzug = spielzug.split()
+#please do not change - in German the object names start with uppercase letter
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #Wenn das Eingetippte mit 'gehenach' beginnt
+  if spielzug[0] == 'gehenach':
+    #Prüfe, ob der Spieler auch dorthin gehen kann, wo er hin will
+    if spielzug[1] in zimmer[aktuellesZimmer]:
+      #Mache das neue Zimmer zum aktuellen Zimmer
+      aktuellesZimmer = zimmer[aktuellesZimmer][spielzug[1]]
+    #Es gibt keine Tür (Verbindung) zum neuen Zimmer
     else:
-      print('You can\'t go that way!')
+      print('Du kannst nicht in diese Richtung gehen!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #Wenn das Eingetippte mit 'nimm' beginnt
+  if spielzug[0] == 'nimm' :
+    #Wenn das Zimmer einen Gegenstand enthält, und du genau diesen Gegenstand nehmen willst
+    if "Gegenstand" in zimmer[aktuellesZimmer] and spielzug[1] in zimmer[aktuellesZimmer]['Gegenstand']:
+      #Füge den Gegenstand dem Inventar des Spielers hinzu
+      inventar += [spielzug[1]]
+      #Zeige eine hilfreiche Mitteilung
+      print(spielzug[1] + ' wurde genommen!')
+      #Lösche den Gegenstand vom Zimmer
+      del zimmer[aktuellesZimmer]['Gegenstand']
+    #Andernfalls ist der Gegenstand nicht vorhanden und kann auch nicht genommen werden
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #Sage dem Spieler, dass er diesen Gegenstand nicht nehmen kann
+      print('Du kannst ' + spielzug[1] + ' nicht nehmen!')
 
-  #player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  #Der Spieler verliert, wenn er ein Zimmer mit einem Monster betritt
+  if "Gegenstand" in zimmer[aktuellesZimmer] and 'Monster' in zimmer[aktuellesZimmer]['Gegenstand']:
+    print('Du wurdest von einem hungrigen Monster gefressen... DAS SPIEL IST AUS!')
     break
 
-  #player wins if they get to the garden with a key and a potion
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  #Der Spieler gewinnt, wenn er mit dem Schlüssel und dem Zaubertrank den Garten erreicht
+  if aktuellesZimmer == 'Garten' and 'Schlüssel' in inventar and 'Zaubertrank' in inventar:
+    print('Du bist aus dem Haus entkommen... DU HAST GEWONNEN!')
     break
