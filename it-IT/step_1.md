@@ -2,7 +2,7 @@
 
 In quest'attività, progetterai e programmerai il tuo RPG (gioco di ruolo) a labirinti. Lo scopo del gioco sarà quello di raccogliere oggetti e fuggire da una casa, assicurandosi di evitare tutti i mostri!
 
-## What you will make
+## Che cosa creerai
 
 \--- no-print \---
 
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![progetto completo](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,7 +28,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: Di cosa avrete bisogno?
 
 ### Hardware
 
@@ -48,28 +48,28 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 * * *
 
-## title: What you will learn
+## title: Cosa imparerai
 
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
++ Progettazione di un gioco;
++ Sviluppo: 
+    + Liste;
+    + Dizionari.
++ Espressioni booleane.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Questo progetto include elementi tratti dalle seguenti componenti del [Digital Making Curriculum di Raspberry Pi](http://rpf.io/curriculum):
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combinare i costrutti base di un linguaggio di programmazione per risolvere un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-\--- /collapse \---
+\--- / chiudi \---
 
 \--- collapse \---
 
 * * *
 
-## title: Additional information for educators
+## title: Informazioni aggiuntive per gli insegnanti
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Se intendete stampare questo progetto, cliccate su [Versione stampabile](https://projects.raspberrypi.org/en/projects/rpg/print).
 
 You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
-\--- /collapse \---
+\--- / chiudi \---
