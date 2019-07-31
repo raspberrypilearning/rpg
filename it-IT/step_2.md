@@ -8,17 +8,17 @@
 
 \--- task \--- Questo è un gioco RPG molto semplice che ha solo 2 stanze. Ecco la mappa del gioco:
 
-![schermata](images/rpg-map1.png)
+![screenshot](images/rpg-map1.png)
 
-Puoi digitare `vai sud`per spostarti dalla sala alla cucina, e poi `vai nord` per tornare di nuovo all'ingresso!
+Puoi digitare `go south`per spostarti dalla sala alla cucina, e poi `go north` per tornare di nuovo all'ingresso!
 
-![schermata](images/rpg-controls.png) \--- /task \---
+![screenshot](images/rpg-controls.png) \--- /task \---
 
-\--- task \--- What happens when you type in a direction that you cannot go? Digita `vai ovest`nell'ingresso e riceverai un messaggio di errore.
+\--- task \--- Cosa succede quando digiti una direzione che non puoi seguire? Digita `go west`nell'ingresso e riceverai un messaggio di errore.
 
-![schermata](images/rpg-error.png) \--- /task \---
+![screenshot](images/rpg-error.png) \--- /task \---
 
-\--- task \--- If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+\--- task \--- Se cerchi la variabile `stanze`, puoi vedere che la mappa è codificata come un dizionario di stanze:
 
 ## \--- code \---
 
@@ -28,12 +28,12 @@ Puoi digitare `vai sud`per spostarti dalla sala alla cucina, e poi `vai nord` pe
 
 stanze = {
 
-            'Hall' : {
-                'south' : 'Kitchen'
+            'Ingresso' : {
+                'south' : 'Cucina'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Cucina' : {
+                'north' : 'Ingresso'
             }
     
         }
@@ -41,16 +41,16 @@ stanze = {
 
 \--- /code \---
 
-Each room is a dictionary, and rooms are linked together using directions.  
+Ogni stanza è un dizionario e le stanze sono collegate tra loro usando le direzioni   
 \--- /task \---
 
-\--- task \--- Let’s add a dining room to your map, to the east of the hall.
+\--- task \--- Aggiungiamo una sala da pranzo alla tua mappa, ad est dell'ingresso.
 
-![schermata](images/rpg-dining.png)
+![screenshot](images/rpg-dining.png)
 
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). Devi anche aggiungere dati all'ingresso, in modo da poterti spostare nella sala da pranzo ad est.
+Devi aggiungere una terza stanza, chiamata `sala da pranzo`, e collegarla alla sala (west). Devi anche aggiungere dati all'ingresso, in modo da poterti spostare nella sala da pranzo ad est.
 
-**Don't forget that you'll also need to add commas to lines before your new code.**
+**Non dimenticare che dovrai anche aggiungere delle virgole prima del tuo nuovo codice.**
 
 ## \--- code \---
 
@@ -63,16 +63,16 @@ language: python
 stanze = {
 
             'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room'
+                'south' : 'Cucina',
+                'east' : 'Sala da Pranzo'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Cucina' : {
+                'north' : 'Ingresso'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Sala da Pranzo' : {
+                'west' : 'Ingresso'
             }
     
         }
@@ -80,8 +80,8 @@ stanze = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Try out the game with your new dining room:
+\--- task \--- Prova il gioco con la tua nuova sala da pranzo:
 
-![schermata](images/rpg-dining-test.png)
+![screenshot](images/rpg-dining-test.png)
 
-Se non riesci ad entrare e uscire dalla sala da pranzo, controlla di aver aggiunto tutto il codice sopra riportato (comprese le virgole extra alle righe sopra). \--- /task \---
+Se non riesci ad entrare e uscire dalla sala da pranzo, controlla di aver aggiunto tutto il codice sopra riportato (comprese le virgole in più). \--- /task \---
