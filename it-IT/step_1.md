@@ -6,9 +6,9 @@ In quest'attività, progetterai e programmerai il tuo RPG (gioco di ruolo) a lab
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Digita ` go ` e quindi una direzione (north, east, south or west) per spostarti nel mondo (ad es. `go north`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Digita ` get ` per raccogliere tutti gli elementi che vedi (esempio ` get key `).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -32,15 +32,15 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 ### Hardware
 
-+ A computer capable of running Python
++ Un computer in grado di eseguire Python
 
 ### Software
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 ([online](https://trinket.io/){:target="_blank"} o [offline](https://www.python.org/downloads/){:target="_blank"}"})
 
 ### Downloads
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+Il progetto iniziale può essere trovato [ qui ](http://rpf.io/p/en/rpg-go) {: target = "_ blank"}.
 
 \--- /collapse \---
 
@@ -60,16 +60,16 @@ Questo progetto include elementi tratti dalle seguenti componenti del [Digital M
 
 + [Combinare i costrutti base di un linguaggio di programmazione per risolvere un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-\--- / chiudi \---
+\--- /collapse \---
 
 \--- collapse \---
 
 * * *
 
-## title: Informazioni aggiuntive per gli insegnanti
+## title: Informazioni aggiuntive per gli educatori
 
 Se intendete stampare questo progetto, cliccate su [Versione stampabile](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Potete trovare qui la [soluzione per questo progetto](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
-\--- / chiudi \---
+\--- /collapse \---
