@@ -95,12 +95,12 @@ while True:
       #informa che non si può prendere
       print('Impossibile prendere ' + istruzione[1] + '!')
 
-  #player loses if they enter a room with a monster
+  #il giocatore perde se nella stanza c'è un mostro
   if 'oggetto' in stanze[stanzaCorrente] and 'mostro' in stanze[stanzaCorrente]['oggetto']:
     print('Una creatura mostruosa ti ha catturato... GAME OVER!')
     break
 
-  #player wins if they get to the garden with a key and a potion
+  #il giocatore vince se raggiunge il giardino con una chiave e un pozione
   if stanzaCorrente == 'Giardino' and 'chiave' in inventario and 'pozione' in inventario:
     print('Sei scappato dalla casa... HAI VINTO!')
     break
