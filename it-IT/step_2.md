@@ -1,12 +1,12 @@
 ## Aggiungere nuove stanze
 
-\--- task \--- Open the Python starter project.
+\--- task \--- Apri il progetto iniziale.
 
-**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**Online:** apri il progetto iniziale su [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor. \--- /task \---
+**Offline:** apri il [progetto iniziale ](http://rpf.io/p/en/rpg-go){:target="_blank"} nell'editor offline. \--- /task \---
 
-\--- task \--- This is a very basic RPG game that only has 2 rooms. Ecco la mappa del gioco:
+\--- task \--- Questo è un gioco RPG molto semplice che ha solo 2 stanze. Ecco la mappa del gioco:
 
 ![schermata](images/rpg-map1.png)
 
