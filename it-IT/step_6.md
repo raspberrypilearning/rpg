@@ -55,6 +55,6 @@ language: python
 
 Questo codice controlla se c'è un oggetto nella stanza, e in tal caso, se quell'oggetto è un mostro. Nota che questo codice è indentato in modo da allinearlo con la linea di codice precedente. Di conseguenza il gioco controllerà la presenza di un mostro ogni volta che il giocatore si trasferisce in una nuova stanza. \--- /task \---
 
-\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+\--- task \--- Prova il tuo codice andando in cucina, che ora contiene un mostro.
 
-![schermata](images/rpg-monster-test.png) \--- /task \---
+![screenshot](images/rpg-monster-test.png) \--- /task \---
