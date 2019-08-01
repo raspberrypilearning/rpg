@@ -2,7 +2,7 @@
 
 Il gioco è troppo semplice! Aggiungiamo in alcune stanze nemici da evitare.
 
-\--- task \--- Adding an enemy to a room is as easy as adding any other item. Aggiungi un mostro affamato in cucina:
+\--- task \--- Aggiungere un nemico a una stanza è facile come aggiungere qualsiasi altro oggetto. Aggiungi un mostro affamato in cucina:
 
 ## \--- code \---
 
@@ -14,19 +14,17 @@ language: python
 
 stanze = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Ingresso' : {
+                'south' : 'Cucina',
+                'east' : 'Sala da Pranzo'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            'Cucina' : {
+                'north' : 'Ingresso'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Sala da Pranzo' : {
+                'west' : 'Ingresso'
             }
     
         }
@@ -34,7 +32,7 @@ stanze = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. Puoi farlo con il seguente codice, che dovresti aggiungere alla fine del gioco:
+\--- task \--- Devi anche assicurarti che il gioco finisca se il giocatore entra in una stanza con un mostro. Puoi farlo con il seguente codice, che dovresti aggiungere alla fine del gioco:
 
 ## \--- code \---
 
@@ -42,14 +40,14 @@ language: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        #altrimenti, se l'oggetto non c'è
         else:
-            #tell them they can't get it
+            #informa che non possono prenderlo
             print('Can\'t get' + move[1] + '!')
     
-    #player loses if they enter a room with a monster
+    #il giocatore perde se entra in una stanza con un mostro
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('A monster has got you... GAME OVER!')
+        print('Un mostro ti ha catturato... HAI PERSO!')
         break
     
 
