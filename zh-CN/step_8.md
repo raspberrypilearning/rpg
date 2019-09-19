@@ -89,12 +89,12 @@ line_highlights: 7-8
 ---
 
 def showInstructions(): 
-  #print a main menu and the commands 
+  # 显示主菜单和可用命令 
   print('''
 RPG游戏
 
-拿着钥匙和魔法药水进入花园 
-躲开怪兽!
+找到一把钥匙和一瓶魔法药水并到达花园
+同时躲避怪物！
 
 命令： 
 go [direction] 
