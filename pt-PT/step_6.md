@@ -1,8 +1,8 @@
-## Adicionando inimigos
+## Adicionar inimigos
 
-Este jogo é muito fácil! Vamos adicionar inimigos a algumas salas que o jogador deve evitar.
+Este jogo está demasiado fácil! Vamos adicionar inimigos que o jogador deve evitar a algumas das divisões.
 
-\--- task \--- Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+\--- task \--- Adicionar um inimigo a uma divisāo é tāo fácil como adicionar outro item. Vamos adicionar um monstro esfomeado à cozinha:
 
 ## \--- code \---
 
@@ -10,23 +10,23 @@ language: python
 
 ## line_highlights: 11-12
 
-# a dictionary linking a room to other rooms
+# um dicionário a ligar uma divisāo a outras divisões
 
-rooms = {
+divisoes = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Entrada' : {
+                'sul' : 'Cozinha',
+                'este' : 'Sala Jantar',
+                'item' : 'chave'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            'Cozinha' : {
+                'norte' : 'Entrada',
+               'item' : 'monstro'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Sala Jantar' : {
+                'oeste' : 'Entrada'
             }
     
         }
@@ -34,7 +34,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+\--- task \--- Também vais querer ter a certeza de que o jogo acaba se o jogador entrar numa divisāo com um monstro. Podes fazer isso com o código seguinte, que deves adicionar ao fim do jogo:
 
 ## \--- code \---
 
@@ -42,21 +42,21 @@ language: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        #senāo, se nāo houver item para apanhar
         else:
-            #tell them they can't get it
-            print('Can\'t get' + move[1] + '!')
+            #diz ao jogador que nāo pode apanhar o item
+            print('Nāo podes apanhar uma ' + jogada[1] + '!')
     
-    #player loses if they enter a room with a monster
-    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('A monster has got you... GAME OVER!')
+    #o jogador perde se entrar numa divisāo com um monstro
+    if "item" in divisoes[divAtual] and 'monstro' in divisoes[divAtual]['item']:
+        print('O monstro apanhou-te... PERDESTE!')
         break
     
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room. \--- /task \---
+Este código verifica se há um item na divisāo, e se houver, se o item é um monstro. Toma nota de que o código está indentado, em linha com o código acima. Isso significa que o jogo vai verificar se há um monstro de cada vez que o jogador entrar numa nova divisāo. \--- /task \---
 
-\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+\--- task \--- Testa o teu código indo para a cozinha, que agora tem um monstro.
 
-![screenshot](images/rpg-monster-test.png) \--- /task \---
+![captura de ecrã](images/rpg-monster-test.png) \--- /task \---
