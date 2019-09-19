@@ -2,7 +2,7 @@
 
 --- task --- 打开Python初始项目.
 
-**在线：** 在 [trinket.io/python/51d8aeeed8](https://trinket.io/python/51d8aeeed8){target="_ blank"}打开初始项目。
+**在线：** 在 [trinket.io/python/51d8aeeed8](https://trinket.io/python/51d8aeeed8){:target="_blank"}打开初始项目。
 
 在离线编辑器中**离线**: 打开 [初始项目](http://rpf.io/p/zh-CN/rpg-go){:target="_blank"}. --- /task---
 
