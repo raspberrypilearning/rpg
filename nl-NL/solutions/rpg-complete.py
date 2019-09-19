@@ -9,6 +9,8 @@ RPG Spel
 Ga naar de Tuin met een sleutel en een toverdrank
 Vermijd de monsters!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 Commando's:
   ga [richting]
   pak [voorwerp]
@@ -17,7 +19,8 @@ Commando's:
 def toonStatus():
   #laat de huidige status van de speler zien
   print('---------------------------')
-  print('Je bent in de ' + dezeKamer)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   #laat de huidige inventaris zien
   print("inventaris : " + str(inventaris))
   #laat een voorwerp zien als er een is
@@ -25,8 +28,14 @@ def toonStatus():
     print('Je ziet een ' + kamers[dezeKamer]['voorwerp'])
   print("---------------------------")
 
-#een lege inventaris
-inventaris = []
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
+inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 #een woordenboek die een kamer verbindt met andere kamers
 kamers = {
@@ -50,10 +59,10 @@ kamers = {
 
          }
 
-#laat de speler in de hal beginnen
-dezeKamer = 'Hal'
-
-toonInstructies()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  toonInstructies()
 
 #Voor altijd herhalen
 while True:
@@ -72,6 +81,7 @@ while True:
 
   #als eerst 'ga' wordt getypt
   if beweeg[0] == 'ga':
+    health = health - 1
     #kijk dan of alle richtingen beschikbaar zijn
     if beweeg[1] in kamers[dezeKamer]:
       #de huidige kamer wordt de nieuwe kamer
@@ -100,7 +110,13 @@ while True:
     print('Een monster heeft je te pakken... GAME OVER!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #de speler wint als die in de tuin komt met een sleutel en een toverdrank
   if dezeKamer == 'Tuin' and 'sleutel' in inventaris and 'toverdrank' in inventaris:
     print('Je bent ontsnapt... JIJ WINT!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
