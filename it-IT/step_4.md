@@ -17,16 +17,16 @@ language: python
 stanze = {
 
             'Ingresso' : {
-                'south' : 'Cucina',
-                'east' : 'Sala da Pranzo'
+                'sud' : 'Cucina',
+                'est' : 'Sala da Pranzo'
             },
     
             'Cucina' : {
-                'north' : 'Ingresso'
+                'nord' : 'Ingresso'
             },
     
             'Sala da Pranzo' : {
-                'west' : 'Ingresso'
+                'ovest' : 'Ingresso'
             }
     
         }
@@ -36,6 +36,6 @@ stanze = {
 
 \--- /task \---
 
-\--- task \--- Se esegui il gioco dopo aver aggiunto il codice sopra, ora puoi vedere una chiave nell'ingresso e puoi persino raccoglierla (digitando `get key`), aggiungendola al tuo inventario!
+\--- task \--- Se esegui il gioco dopo aver aggiunto il codice sopra, ora puoi vedere una chiave nell'ingresso e puoi persino raccoglierla (digitando `prendi chiave`) e aggiungendola così al tuo inventario!
 
 ![screenshot](images/rpg-key-test.png) \--- /task \---
