@@ -9,6 +9,8 @@ Jeu RPG
 Atteint le Jardin avec une clé et la potion
 Évite les montres!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 Commandes:
   aller [direction]
   prendre [objet]
@@ -17,7 +19,8 @@ Commandes:
 def showStatus():
   #affiche l'état actuel du joueur
   print('---------------------------')
-  print('Tu es dans le/la ' + currentRoom)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   #affiche l'inventaire actuel
   print("Inventaire : " + str(inventaire))
   #affiche un objet s'il y en a un
@@ -25,8 +28,14 @@ def showStatus():
     print('Tu vois un/une ' + rooms[currentRoom]['objet'])
   print("---------------------------")
 
-#un inventaire, qui est initialement vide
-inventaire = []
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
+inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 #un dictionnaire liant une pièce d'autres positions de pièces
 rooms = {
@@ -50,10 +59,10 @@ rooms = {
 
          }
 
-#démarre le joueur dans le Hall
-currentRoom = 'Hall'
-
-showInstructions()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  showInstructions()
 
 #loop forever
 while True:
@@ -72,6 +81,7 @@ while True:
 
   #s'ils tapent 'aller' en premier
   if move[0] == 'aller':
+    health = health - 1
     #vérifie qu'ils soient autorisé peu importe où ils souhaitent aller
     if move[1] in rooms[currentRoom]:
       #définit la pièce actuel à une autre pièce
@@ -100,7 +110,13 @@ while True:
     print('Un monstre t a eu... GAME OVER!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #le joueur gagne s'il atteint le jardin avec la clé et la potion
   if currentRoom == 'Jardin' and 'clé' in inventaire and 'potion' in inventaire:
     print('Tu t es échappé de la maison... TU GAGNES!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
