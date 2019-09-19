@@ -39,4 +39,4 @@ zimmer = {
 
 \--- task \--- Wenn du den oben angegebenen Code hinzufügst und dann dein Spiel ausführst, siehst du einen Schlüssel in der Diele, und du kannst ihn (mit `nimm Schlüssel`) sogar einsammeln und deinem Inventar hinzufügen!
 
-![screenshot](images/rpg-key-test.png) \--- /task \---
+![Bildschirmfoto](images/rpg-key-test.png) \--- /task \---
