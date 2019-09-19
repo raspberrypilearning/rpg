@@ -9,6 +9,8 @@ RPG 게임
 괴물에게 잡히지 말고, 
 key와 potion을 가지고 Garden으로 탈출하십시오!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 명령어:
   go [direction]
   get [item]
@@ -17,7 +19,8 @@ key와 potion을 가지고 Garden으로 탈출하십시오!
 def showStatus():
   #플레이어의 현재 상태 출력
   print('---------------------------')
-  print('이곳은 ' + currentRoom + '입니다')
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   #플레이어의 현재 인벤토리 출력
   print("인벤토리: " + str(inventory))
   #아이템이 있다면 출력
@@ -25,8 +28,14 @@ def showStatus():
     print(rooms[currentRoom]['item'] + '를 발견했습니다.')
   print("---------------------------")
 
-#인벤토리 리스트 자료형
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
 inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 #room 딕셔너리
 rooms = {
@@ -50,10 +59,10 @@ rooms = {
 
          }
 
-#플레이어는 Hall에서 시작함
-currentRoom = 'Hall'
-
-showInstructions()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  showInstructions()
 
 #무한 반복
 while True:
@@ -72,6 +81,7 @@ while True:
 
   #만약에 'go'가 입력되면
   if move[0] == 'go':
+    health = health - 1
     #go 다음에 입력된 문자열이 올바른 방인지를 체크
     if move[1] in rooms[currentRoom]:
       #현재 방을 새로운 방으로 옮김
@@ -100,7 +110,13 @@ while True:
     print('괴물에게 잡혔습니다... GAME OVER!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #키와 포션을 가지고 Garden으로 가면 탈출 성공
   if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
     print('괴물의 집에서 탈출하셨습니다! YOU WIN!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
