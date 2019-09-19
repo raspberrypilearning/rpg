@@ -9,6 +9,8 @@ RPG Spiel (Labyrinth)
 Suche den Schlüssel und den Zaubertrank und versuche dann, in den Garten zu entkommen.
 Lass dich nicht von den Monstern fressen!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 Befehle:
   gehenach [Richtung]
   nimm [Gegenstand]
@@ -17,7 +19,8 @@ Befehle:
 def zeigeZustand():
   #Zeige den aktuellen Zustand des Spielers
   print('---------------------------')
-  print('Du bist im Zimmer: ' + aktuellesZimmer)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   #Zeige das aktuelle Inventar
   print('Inventar : ' + str(inventar))
   #Zeige einen Gegenstand an, wenn einer im Zimmer vorhanden ist
@@ -25,8 +28,14 @@ def zeigeZustand():
     print('Du siehst einen ' + zimmer[aktuellesZimmer]['Gegenstand'])
   print("---------------------------")
 
-#Das Inventar ist beim Start leer
-inventar = []
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
+inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 #Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 zimmer = {
@@ -50,10 +59,10 @@ zimmer = {
 
          }
 
-#Beim Start ist der Spieler in der Diele
-aktuellesZimmer = 'Diele'
-
-zeigeAnweisungen()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  zeigeAnweisungen()
 
 #Ewige Schleife
 while True:
@@ -73,6 +82,7 @@ while True:
 
   #Wenn das Eingetippte mit 'gehenach' beginnt
   if spielzug[0] == 'gehenach':
+    health = health - 1
     #Prüfe, ob der Spieler auch dorthin gehen kann, wo er hin will
     if spielzug[1] in zimmer[aktuellesZimmer]:
       #Mache das neue Zimmer zum aktuellen Zimmer
@@ -101,7 +111,13 @@ while True:
     print('Du wurdest von einem hungrigen Monster gefressen... DAS SPIEL IST AUS!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #Der Spieler gewinnt, wenn er mit dem Schlüssel und dem Zaubertrank den Garten erreicht
   if aktuellesZimmer == 'Garten' and 'Schlüssel' in inventar and 'Zaubertrank' in inventar:
     print('Du bist aus dem Haus entkommen... DU HAST GEWONNEN!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
