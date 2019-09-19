@@ -32,7 +32,7 @@ Tippe `nimm` um einen Gegenstand aufzunehmen den du siehst (z.B. `nimm Schlüsse
 
 ### Hardware
 
-+ Ein Computer, auf dem Python ausgeführt werden kann
++ Einen Computer, auf dem Python ausgeführt werden kann
 
 ### Software
 
@@ -54,7 +54,7 @@ Das Start-Projekt findest du [hier](http://rpf.io/p/en/rpg-go){:target="_blank"}
 + Bearbeiten von: 
     + Listen (lists);
     + Wörterbücher (dictionaries).
-+ Boolesche Ausdrücke.
++ Booleschen Ausdrücken.
 
 Dieses Projekt umfasst Elemente aus den folgenden Teilen des [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
@@ -66,9 +66,9 @@ Dieses Projekt umfasst Elemente aus den folgenden Teilen des [Raspberry Pi Digit
 
 * * *
 
-## title: Zusatzinformationen für Lehrerinnen und Lehrer
+## title: Zusatzinformationen für Pädagogen
 
-Falls Sie dieses Projekt ausdrucken müssen, verwenden Sie bitte die [druckfreundliche Version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Falls Sie dieses Projekt ausdrucken müssen, verwenden Sie bitte die [Druckversion](https://projects.raspberrypi.org/en/projects/rpg/print).
 
 Hier finden Sie die [Lösung für dieses Projekt](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
