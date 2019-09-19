@@ -11,7 +11,7 @@
 输入`get`拿到你看到的物品(例如`get key`).
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/382766e156?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
