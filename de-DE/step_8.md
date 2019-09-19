@@ -4,7 +4,7 @@ Geben wir dem Spieler eine Mission die erfüllt werden muss um das Spiel zu gewi
 
 \--- task \--- In diesem Spiel gewinnt der Spieler, wenn er aus dem Haus fliehen kann und in den Garten gelangt. Dazu muss er/sie auch den Schlüssel und den Zaubertrank dabei haben. Hier ist eine Karte des Spiels.
 
-![screenshot](images/rpg-final-map.png) \--- /task \---
+![Bildschirmfoto](images/rpg-final-map.png) \--- /task \---
 
 \--- task \--- Dazu musst du erst einmal einen Garten im Süden des Esszimmers hinzufügen. Denke daran, Türen hinzuzufügen um ihn mit anderen Zimmern im Haus zu verbinden.
 
@@ -36,6 +36,7 @@ zimmer = {
     
            'Garten' : {
                'norden' : 'Esszimmer'
+        }
     
         }
     
@@ -81,7 +82,7 @@ Wenn du mehr als 4 Zimmer hast, musst du vielleicht eine andere Raumnummerierung
 
 \--- task \--- Prüfe dein Spiel und vergewissere dich, dass der Spieler auch gewinnen kann!
 
-![screenshot](images/rpg-win-test.png) \--- /task \---
+![Bildschirmfoto](images/rpg-win-test.png) \--- /task \---
 
 \--- task \--- Lass uns zum Schluss ein paar Anweisungen hinzufügen, damit der Spieler auch weiß, was er tun muss. Bearbeite die Funktion `zeigeAnweisungen()` damit ausführlichere Information angezeigt wird.
 
