@@ -1,10 +1,10 @@
-## Adicionando itens para coletar
+## Adicionar itens para apanhar
 
-Vamos deixar itens nos quartos para o jogador coletar enquanto eles se movem pelo labirinto.
+Vamos deixar itens nas divisões para o jogador apanhar enquanto se move pelo labirinto.
 
-\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+\--- task \--- Adicionar um item a uma divisāo é fácil, basta adicioná-lo ao dicionário da divisāo. Vamos colocar uma chave na entrada.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+Lembra-te de colocar uma vírgula depois da linha acima do novo item, ou o teu programa nāo vai correr!
 
 ## \--- code \---
 
@@ -12,22 +12,22 @@ language: python
 
 ## line_highlights: 6-7
 
-# a dictionary linking a room to other rooms
+# um dicionário a ligar uma divisāo a outras divisões
 
-rooms = {
+divisoes = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Entrada' : {
+                'sul' : 'Cozinha',
+                'este' : 'Sala Jantar',
+                'item' : 'chave'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Cozinha' : {
+                'norte' : 'Entrada'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Sala Jantar' : {
+                'oeste' : 'Entrada'
             }
     
         }
@@ -37,6 +37,6 @@ rooms = {
 
 \--- /task \---
 
-\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+\--- task \--- Se correres o teu jogo depois de adicionar o código acima, podes ver agora uma chave na entrada, e podes até apanhá-la (escrevendo `apanha chave`) o que a adiciona ao teu inventário!
 
-![screenshot](images/rpg-key-test.png) \--- /task \---
+![captura de ecrã](images/rpg-key-test.png) \--- /task \---
