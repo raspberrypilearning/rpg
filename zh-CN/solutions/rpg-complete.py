@@ -9,6 +9,8 @@ RPG游戏
 找到一把钥匙和一瓶魔法药水并到达花园
 同时躲避怪物！
 
+You are getting tired, each time you move you loose 1 health point. 
+
 命令：
   go [direction]
   get [item]
@@ -17,7 +19,8 @@ RPG游戏
 def showStatus():
   # 显示玩家的当前状态
   print('---------------------------')
-  print('你现在在 ' + currentRoom)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   # 显示当前已获得物品
   print('物品 ： ' + str(inventory))
   # 显示物品（如果存在）
@@ -25,8 +28,14 @@ def showStatus():
     print('你看见一个 ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-# 已获得物品清单，初始为空
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
 inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 # 连接房间与房间的数据字典
 rooms = {
@@ -50,10 +59,10 @@ rooms = {
 
          }
 
-# 玩家从大厅开始游戏
-currentRoom = 'Hall'
-
-showInstructions()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  showInstructions()
 
 # 永久循环
 while True:
@@ -72,6 +81,7 @@ while True:
 
   # 如果玩家输入'go'指令
   if move[0] == 'go':
+    health = health - 1
     # 检查玩家是否被允许走入他们所输入的方向
     if move[1] in rooms[currentRoom]:
       # 将当前房间换成新进入的房间
@@ -100,7 +110,13 @@ while True:
     print('一个怪物抓住你了... 游戏结束！')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #如果玩家得到钥匙和魔法药水并到达花园，就赢了
   if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
     print('你成功逃离房子... 你赢了！')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
