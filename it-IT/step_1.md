@@ -6,9 +6,9 @@ In quest'attività, progetterai e programmerai il tuo RPG (gioco di ruolo) a lab
 
 \--- no-print \---
 
-Digita ` go ` e quindi una direzione (north, east, south or west) per spostarti nel mondo (ad es. `go north`).
+Digita `vai` e quindi una direzione (nord, esst, sud o ovest) per spostarti nel mondo (ad es. `vai nord`).
 
-Digita ` get ` per raccogliere tutti gli elementi che vedi (esempio ` get key `).
+Digita `prendi` per raccogliere tutti gli elementi che vedi (esempio `prendi chiave`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
