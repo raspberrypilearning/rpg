@@ -9,6 +9,8 @@ Gioco RPG
 Raggiungi il giardino con una chiave e una pozione
 Evita i mostri!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 Comandi:
   vai [direzione]
   prendi [oggetto]
@@ -17,7 +19,8 @@ Comandi:
 def mostraPosizione():
   #stampa la posizione corrente del giocatore
   print('---------------------------')
-  print('Sei in ' + stanzaCorrente)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   #stampa il contenuto dell'inventario
   print('inventario : ' + str(inventario))
   #stampa un oggetto se presente nell'inventario
@@ -25,8 +28,14 @@ def mostraPosizione():
     print('Vedi quest\'oggetto: ' + stanze[stanzaCorrente]['oggetto'])
   print('---------------------------')
 
-#un inventario inizialmente vuoto
-inventario = []
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
+inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 #un dizionario collega una stanza alle altre
 stanze = {
@@ -50,10 +59,10 @@ stanze = {
 
          }
 
-#all'inizio il giocatore si trova nell'ingresso
-stanzaCorrente = 'Ingresso'
-
-mostraIstruzioni()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  mostraIstruzioni()
 
 #ciclo infinito
 while True:
@@ -72,6 +81,7 @@ while True:
 
   #se la prima parola digitata è 'vai'
   if istruzione[0] == 'vai':
+    health = health - 1
     #verifica se la direzione inserita è consentita
     if istruzione[1] in stanze[stanzaCorrente]:
       #imposta la stanza corrente alla nuova inserita
@@ -100,7 +110,13 @@ while True:
     print('Una creatura mostruosa ti ha catturato... GAME OVER!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #il giocatore vince se raggiunge il giardino con una chiave e un pozione
   if stanzaCorrente == 'Giardino' and 'chiave' in inventario and 'pozione' in inventario:
     print('Sei scappato dalla casa... HAI VINTO!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
