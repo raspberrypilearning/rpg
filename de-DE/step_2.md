@@ -2,21 +2,21 @@
 
 \--- task \--- Öffne das Python Start-Projekt.
 
-**Online**: Öffne das Start-Projekt: [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**Online**: Öffne das Basisprojekt: [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-**Offline**: Öffne das [Start-Projekt](http://rpf.io/p/en/rpg-go){:target="_blank"} im Offline-Editor. \--- /task \---
+**Offline**: Öffne das [Basisprojekt](http://rpf.io/p/en/rpg-go){:target="_blank"} im Offline-Editor. \--- /task \---
 
 \--- task \--- Dies ist ein sehr einfaches RPG-Spiel mit nur zwei Zimmern. Hier ist eine Karte des Spiels:
 
-![screenshot](images/rpg-map1.png)
+![Bildschirmfoto](images/rpg-map1.png)
 
 Du kannst `gehenach süden` eintippen, um von der Diele in die Küche zu gehen, und dann mit `gehenach norden` wieder zurück in die Diele gehen!
 
-![screenshot](images/rpg-controls.png) \--- /task \---
+![Bildschirmfoto](images/rpg-controls.png) \--- /task \---
 
 \--- task \--- Was passiert, wenn du eine Richtung eintippst, in die du nicht gehen kannst? Tippe `gehenach westen` wenn du in der Diele bist, und du erhältst eine freundliche Fehlermeldung.
 
-![screenshot](images/rpg-error.png) \--- /task \---
+![Bildschirmfoto](images/rpg-error.png) \--- /task \---
 
 \--- task \--- Wenn du die Variable `zimmer` findest, kannst du sehen, dass die Karte als ein Wörterbuch (dictionary) von Zimmern programmiert ist:
 
@@ -46,7 +46,7 @@ Jedes Zimmer ist ein Wörterbuch und die Zimmer sind über Richtungen miteinande
 
 \--- task \--- Fügen wir ein Esszimmer zu deiner Karte hinzu, das sich östlich von der Diele befindet.
 
-![screenshot](images/rpg-dining.png)
+![Bildschirmfoto](images/rpg-dining.png)
 
 Du musst einen dritten Raum hinzufügen, der `Esszimmer` heißt, und ihn mit der Diele (nach westen) verbinden. Du musst auch Daten zur Diele hinzufügen, damit du in das Esszimmer im Osten gehen kannst.
 
@@ -82,6 +82,6 @@ zimmer = {
 
 \--- task \--- Probiere das Spiel mit deinem neuen Esszimmer aus:
 
-![screenshot](images/rpg-dining-test.png)
+![Bildschirmfoto](images/rpg-dining-test.png)
 
 Wenn du nicht in das Esszimmer hinein- oder herausgehen kannst, dann prüfe, ob du den ganzen oben aufgeführten Code eingegeben hast (inklusive der zusätzlichen Kommas im Programm). \--- /task \---
