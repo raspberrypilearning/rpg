@@ -9,6 +9,8 @@ RPG Game
 Get to the Garden with a key and a potion
 Avoid the monsters!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 Commands:
   go [direction]
   get [item]
@@ -17,7 +19,8 @@ Commands:
 def showStatus():
   #print the player's current status
   print('---------------------------')
-  print('You are in the ' + currentRoom)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   #print the current inventory
   print("Inventory : " + str(inventory))
   #print an item if there is one
@@ -25,8 +28,14 @@ def showStatus():
     print('You see a ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-#an inventory, which is initially empty
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
 inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 #a dictionary linking a room to other room positions
 rooms = {
@@ -50,10 +59,10 @@ rooms = {
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
-
-showInstructions()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  showInstructions()
 
 #loop forever
 while True:
@@ -72,6 +81,7 @@ while True:
 
   #if they type 'go' first
   if move[0] == 'go':
+    health = health - 1
     #check that they are allowed wherever they want to go
     if move[1] in rooms[currentRoom]:
       #set the current room to the new room
@@ -100,7 +110,13 @@ while True:
     print('A monster has got you... GAME OVER!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #player wins if they get to the garden with a key and a potion
   if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
     print('You escaped the house... YOU WIN!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
