@@ -5,29 +5,29 @@ duration: 2
 listed: true
 ingredient: false
 copyedit: false
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: 设计你自己的 RPG 迷宫游戏并编写相关代码。
+description: 设计并编写你自己的RPG迷宫游戏。
 original_url: https://codeclubprojects.org/zh-CN/python/rpg
-interests: 游戏
+interests: games
 technologies: python
-site_areas: codeclub, python
+site_areas: projects
 hardware: ''
 software: python
 version: 3
-last_tested: 2017年1月1日
+last_tested: 2017-01-01
 steps:
   - 
     title: '介绍'
   - 
-    title: 添加新房间
+    title: 添加新的房间
   - 
     title: '挑战：添加新房间'
     challenge: true
   - 
-    title: 添加需要收集的物品
+    title: 添加可收集的物品
   - 
-    title: '挑战：添加新物品'
+    title: '挑战：添加新的物品'
     challenge: true
   - 
     title: 添加敌人
@@ -35,7 +35,7 @@ steps:
     title: '挑战：添加更多怪物'
     challenge: true
   - 
-    title: 赢得胜利
+    title: 赢得游戏
   - 
     title: '挑战：开发你自己的游戏'
     challenge: true
