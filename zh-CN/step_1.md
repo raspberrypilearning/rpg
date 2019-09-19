@@ -2,13 +2,13 @@
 
 在本项目中，你将设计并编写你自己的RPG（角色扮演游戏）迷宫游戏。 这个游戏的目标是收集物品并逃离房子，同时还要确保避开所有的怪物。
 
-## What you will make
+## 你将制作：
 
-\--- no-print \---
+--无打印--
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+输入`go`然后输入一个方向(north,east,south或west)围绕世界移动(例如`go norht`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+输入`get`拿到你看到的物品(例如`get key`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -16,60 +16,60 @@ Type `get` to pick up any items that you see (e.g. `get key`).
   <img src="images/rpg-finished.png">
 </div>
 
-\--- /no-print \---
+\--- /无打印\---
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![完成项目](images/rpg-finished.png)
 
 \--- /print-only \---
 
-\--- collapse \---
+\--- 折叠 \---
 
 * * *
 
-## title: What you will need
+## 题目: 你需要准备什么
 
-### Hardware
+### 硬件
 
-+ A computer capable of running Python
++ 能够运行Python的电脑
 
-### Software
+### 软件
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3（[在线版本](https://trinket.io/){:target="_blank"}或[离线版本](https://www.python.org/downloads/){:target="_blank"}）
 
-### Downloads
+### 下载
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+初始项目在[这里](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
-\--- /collapse \---
+\--- /折叠 \---
 
-\--- collapse \---
-
-* * *
-
-## title: What you will learn
-
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
-
-\--- /collapse \---
-
-\--- collapse \---
+\--- 折叠 \---
 
 * * *
 
-## title: Additional information for educators
+## 标题: 你将学到什么
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
++ 游戏设计;
++ 编辑： 
+    + 列表；
+    + 字典
++ 布尔表达式。
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+本项目涵盖[树莓派数字制作课程](http://rpf.io/curriculum)如下几方面内容：
 
-\--- /collapse \---
++ [综合利用编程结构解决问题。](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /折叠 \---
+
+\--- 折叠 \---
+
+* * *
+
+## 标题: 教师附加信息
+
+如果您需要打印此项目，请使用[适合打印版本](https://projects.raspberrypi.org/en/projects/rpg/print) 。
+
+你可以 [在这里找到已完成的项目](http://rpf.io/p/en/rpg-get){:target="_blank"}
+
+\--- /折叠 \---
