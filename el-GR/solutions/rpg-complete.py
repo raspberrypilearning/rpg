@@ -9,6 +9,8 @@ def showInstructions():
 Βγες στον κήπο με ένα κλειδί κι ένα μαγικό φίλτρο
 Απέφυγε τα τέρατα!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 Εντολές:
   πήγαινε [κατεύθυνση]
   πάρε [αντικείμενο]
@@ -17,7 +19,8 @@ def showInstructions():
 def showStatus():
   #εμφάνισε την κατάσταση του παίκτη
   print('---------------------------')
-  print('Βρίσκεσαι στο/στη ' + currentRoom)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   #εμφάνισε το απόθεμα
   print("Απόθεμα : " + str(inventory))
   #εμφάνισε ένα αντικείμενο, αν υπάρχει
@@ -25,8 +28,14 @@ def showStatus():
     print('Βλέπεις ένα ' + rooms[currentRoom]['αντικείμενο'])
   print("---------------------------")
 
-#ένα απόθεμα, το οποίο είναι αρχικά άδειο
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
 inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 #ένα λεξικό που συνδέει ένα δωμάτιο με άλλα δωμάτια
 rooms = {
@@ -50,10 +59,10 @@ rooms = {
 
          }
 
-#ο παίκτης ξεκινάει στο Χωλ
-currentRoom = 'Χωλ'
-
-showInstructions()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  showInstructions()
 
 #επανέλαβε για πάντα
 while True:
@@ -72,6 +81,7 @@ while True:
 
   #αν πληκτρολογήσει "πήγαινε" στην αρχή
   if move[0] == 'πήγαινε':
+    health = health - 1
     #έλεγξε ότι επιτρέπεται να πάει εκεί που θέλει
     if move[1] in rooms[currentRoom]:
       #δώσε στη μεταβλητή του τρέχοντος δωματίου την τιμή του νέου δωματίου
@@ -100,7 +110,13 @@ while True:
     print('Ένας τέρας σε έπιασε... ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #ο παίκτης κερδίζει αν βγει στον κήπο με ένα κλειδί και ένα φίλτρο
   if currentRoom == 'Κήπος' and 'κλειδί' in inventory and 'φίλτρο' in inventory:
     print('Βγήκες από το σπίτι... ΝΙΚΗΣΕΣ!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
