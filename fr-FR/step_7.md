@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Adding more monsters
+## Défi : Ajoute plus de monstres
 
-Add more monsters to your game, to make it harder to escape the house!
+Ajoute plus de monstres à ton jeu, pour que ce soit plus difficile de s'échapper de la maison!
 
 \--- /challenge \---
