@@ -44,14 +44,14 @@ currentRoom = '大厅'
 
 showInstructions()
 
-# 永久循环
+#一直执行循环
 while True:
 
   showStatus()
 
   # 取得玩家的下一个行动
-  # .split()方法将字符串在空格处分割，并将结果以阵列输出
-  # 例如：输入"go east“将产生如下阵列
+  #.split()方法分隔对象到列表中
+  # 例如：输入"go east“将产生如下列表:
   # ['go','east']
   move = ''
   while move == '':  
