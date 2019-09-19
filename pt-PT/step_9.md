@@ -1,9 +1,9 @@
-\--- desafio \---
+\--- challenge \---
 
-## Desafio: desenvolva seu próprio jogo
+## Desafio: desenvolve o teu próprio jogo
 
-Use o que você aprendeu para criar seu próprio jogo. Adicione muitos quartos, monstros para evitar e itens para coletar. Lembre-se de modificar o código para que o jogador ganhe quando chegar a uma determinada sala com alguns dos objetos em seu inventário. Pode ajudá-lo a esboçar um mapa antes de começar a codificar!
+Usa o que aprendeste para criar o teu próprio jogo. Adiciona muitas divisões, monstros para evitar e itens para apanhar. Lembra-te de modificar o código para que o jogador ganhe quando chegar a uma determinada sala com alguns dos objetos no seu inventário. Esboçar um mapa antes de começar a codificar pode ajudar-te!
 
-Você pode até adicionar escadas ao seu mapa e ter mais de um nível de salas, digitando `subindo` e `descendo`.
+Podes até adicionar escadas ao teu mapa e ter mais de um nível de salas, digitando `subir` e `descer`.
 
-\--- / desafio \---
+\--- /challenge \---
