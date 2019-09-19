@@ -15,16 +15,16 @@ language: python
 stanze = {
 
             'Ingresso' : {
-                'south' : 'Cucina',
-                'east' : 'Sala da Pranzo'
+                'sud' : 'Cucina',
+                'est' : 'Sala da Pranzo'
             },
     
             'Cucina' : {
-                'north' : 'Ingresso'
+                'nord' : 'Ingresso'
             },
     
             'Sala da Pranzo' : {
-                'west' : 'Ingresso'
+                'ovest' : 'Ingresso'
             }
     
         }
@@ -43,7 +43,7 @@ language: python
         #altrimenti, se l'oggetto non c'è
         else:
             #informa che non possono prenderlo
-            print('Can\'t get' + move[1] + '!')
+            print('Impossibile prendere ' + istruzione[1] + '!')
     
     #il giocatore perde se entra in una stanza con un mostro
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
