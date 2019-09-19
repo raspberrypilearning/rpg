@@ -12,9 +12,7 @@
 language: python 
 line_highlights: 6-7
 ---
-
 # 连接房间与房间的数据字典
-
 rooms = {
 
             'Hall' : {
