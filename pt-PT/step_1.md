@@ -1,14 +1,14 @@
 ## Introdução:
 
-Neste projeto, você projetará e codificará seu próprio jogo de labirinto de RPG. O objetivo do jogo será coletar objetos e escapar de uma casa, evitando todos os monstros!
+Neste projeto, vais projetar e programar o teu próprio jogo de labirinto RPG. O objetivo do jogo vai ser apanhar objetos e escapar de uma casa, evitando todos os monstros!
 
-## What you will make
+## O que vais fazer
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Escreve `vai` e uma direçāo (norte, este, sul ou oeste) para te moveres à volta do mundo (e.g. `vai norte`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Escreve `apanha` para apanhar qualquer item que estejas a ver (e.g. `apanha chave`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![projeto concluído](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,37 +28,19 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: O que vais precisar
 
 ### Hardware
 
-+ A computer capable of running Python
++ Um computador com capacidade para executar Python
 
 ### Software
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 (ou [online](https://trinket.io/){:target="_ blank"} ou [offline](https://www.python.org/downloads/){:target="_ blank"})
 
 ### Downloads
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
-
-\--- / colapso \---
-
-\--- collapse \---
-
-* * *
-
-## title: What you will learn
-
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+O projeto inicial pode ser encontrado [aqui](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -66,10 +48,28 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 * * *
 
-## title: Additional information for educators
+## title: O que vais aprender
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
++ Desenho de jogos;
++ Ediçāo de: 
+    + Listas;
+    + Dicionários.
++ Expressões booleanas.
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Este projeto abrange elementos das seguintes áreas do [ Curriculo Raspberry Pi Digital Making ](http://rpf.io/curriculum):
+
++ [Combinar construções de programação para resolver um problema.](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+\--- collapse \---
+
+* * *
+
+## title: Informações adicionais para educadores
+
+Se precisar imprimir este projeto, por favor, use a [versão para impressão](https://projects.raspberrypi.org/en/projects/rpg/print).
+
+Pode encontrar o [projeto concluído aqui](http://rpf.io/p/en/rpg-get){:target="_ blank"}.
 
 \--- /collapse \---
