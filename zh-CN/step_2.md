@@ -60,9 +60,8 @@ rooms = {
 --- code ---
 ---
 language: python
+line_highlights: 5-6,11-15
 ---
-## line_highlights: 5-6,11-15
-
 # 连接房间与房间的数据字典
 
 rooms = {
