@@ -1,42 +1,102 @@
 ## 赢得胜利
 
-让我们赋予玩家一项任务，玩家需要完成该任务来赢得游戏胜利。
+让我们给予玩家一项任务，使他们必须完成这项任务才能获得游戏的胜利。
 
+--- task --- 在这个游戏中，玩家如果逃离房子并到达花园时，就赢得了胜利。 他们还需要拿到钥匙和魔法药水。 以下是游戏的地图。
 
+![screenshot](images/rpg-final-map.png) --- /task ---
 
-+ 在此游戏中，玩家通过到达花园和逃离房子来取得胜利。他们还需要携带钥匙和魔法药水。以下是游戏的地图。
+--- task --- 首先，你需要在餐厅的南面添加一个花园。 记住要添加“门”来将其关联到另外一个房间。
 
-  ![screenshot](images/rpg-final-map.png)
+--- code ---
+---
+language: python line_highlights: 16-17,18-22
+---
+# 连接房间与房间的数据字典
 
-+ 首先，你需要在餐厅的南部添加一个花园。请记得添加房门，来连接房子内的其他房间。
-  
-  ![screenshot](images/rpg-garden.png)
+rooms = {
 
-+ 向餐厅（或房子内的另一个房间）添加一瓶药水。
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
+    
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden'
+            },
+    
+            'Garden' : {
+                'north' : 'Dining Room'
+            }
+    
+        }
+    
 
-  ![screenshot](images/rpg-potion.png)
-  
-+ 添加此代码来让玩家在携带钥匙和药水到达花园时赢得游戏胜利：
+--- /code --- --- /task ---
 
-  ![screenshot](images/rpg-win-code.png)
+--- task --- 在餐厅中添加一瓶魔法药水（或任何其他一个房间）。
 
-  请确保此代码被缩进，与上文的代码对齐。此代码意味着如果玩家位于房间 4（花园）且库存中有钥匙和药水，则播放 `You escaped the house...YOU WIN!`（你逃离了房子...你赢了！）这条信息。​
-  
-  如果你有 4 个以上房间，你可能需要在上文代码中对花园使用不同的房间编号。
+--- code ---
+---
+language: python line_highlights: 3-4
+---
 
-+ 测试你的游戏来确保玩家能赢！
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
+            },
+    
 
-  ![screenshot](images/rpg-win-test.png)
+--- /code --- --- /task ---
 
-+ 最后，让我们向你的游戏添加一些说明，使得玩家知道他们必须做什么。编辑 `showInstructions()` 函数来添加更多信息。
+--- task --- 添加以下代码，可以让玩家在得到钥匙和魔法药水，并到达花园时赢得胜利。
 
-  ![screenshot](images/rpg-instructions-code.png)
+--- code ---
+---
+language: python line_highlights: 6-9
+---
 
-  你将需要添加说明来告诉用户他们需要收集哪些物品，以及他们需要避开什么！
+# 玩家如果进入一个有怪物的房间，则游戏失败
 
-+ 测试你的游戏，你会看到你的新说明。
-  
-  ![screenshot](images/rpg-instructions-test.png)
+if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
+# 如果玩家得到钥匙和魔法药水并到达花园，就赢了
 
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break --- /code ---
 
+注意这段代码也是缩进的，应当与上面的代码对齐。 这段代码表示当玩家在第4个房间（花园）中，并且在他们的物品袋中有钥匙和魔法药水时，就显示“你已逃离房子...你赢了！”的消息。
+
+如果你已经有了4个或更多的房间了，你可能需要在你的代码中给花园一个不同的房间号。 --- /task ---
+
+--- task --- 测试你的游戏，确保玩家有可能获得胜利！
+
+![screenshot](images/rpg-win-test.png) --- /task ---
+
+--- task --- 最后，让我们在游戏中添加一些说明来让玩家知道怎样来操作。 修改`showInstructions()`函数来添加更多的说明信息。
+
+--- code ---
+---
+language: python line_highlights: 7-8
+---
+
+def showInstructions(): #print a main menu and the commands print('''
+
+# RPG游戏
+
+拿着钥匙和魔法药水进入花园 躲开怪兽!
+
+Commands: go [direction] get [item] ''') --- /code ---
+
+你需要添加说明来告诉玩家他们需要收集哪些物品，并需要避开什么！ --- /task ---
+
+--- task --- 测试你的游戏，你应该能够看到你新加的游戏说明。
+
+![screenshot](images/rpg-instructions-test.png) --- /task ---

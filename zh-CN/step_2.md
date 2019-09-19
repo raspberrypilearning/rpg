@@ -1,41 +1,92 @@
 ## 添加新房间
 
+--- task --- 打开Python初始项目.
 
+**在线：** 在 [rpf.io/rpgon](http://rpf.io/rpgon){target="_ blank"}打开初始项目。
 
-+ 已为你提供了此游戏的某些代码。打开这个 trinket：<a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>。 
+在离线编辑器中**离线**: 打开 [初始项目](http://rpf.io/p/zh-CN/rpg-go){:target="_blank"}. --- /task---
 
-+ 这是一个非常基本的 RPG 游戏，仅有 2 个房间。以下是游戏的地图：
+--- task ---
 
-  ![screenshot](images/rpg-map1.png)
+这是个仅包含2个房间的基本的RPG游戏。 以下是游戏的地图：
 
-  你可以输入 `go south` 从客厅移向厨房，然后输入 `go north` 再次返回客厅！
+![截屏](images/rpg-map1.png)
 
-  ![screenshot](images/rpg-controls.png)
+你可以输入`go south`指令从大厅走到厨房，然后输入`go north`指令再返回大厅！
 
-+ 当你输入了一个你无法到达的方向时会发生什么？在客厅中输入 `go west`，你会收到一条友好的错误消息。
+![截屏](images/rpg-controls.png) --- /task---
 
-  ![screenshot](images/rpg-error.png)
+--- task ---
 
-+ 如果你找到 `rooms` 变量，你会看到地图被编码为房间的字典：
+当你输入一个无法到达的方向时将会发生什么？ 当你在大厅时，输入`go west`指令，你将得到一个友善的错误消息。
 
-  ![screenshot](images/rpg-rooms.png)
+![截屏](images/rpg-error.png) --- /task---
 
-  每个房间都是一个字典，多个房间使用方向连接在一起。  
-  
+--- task ---
 
-+ 让我们向你的地图添加一个餐厅，位于客厅的东部。
+当你在代码中找到`rooms`变量时，你会发现游戏地图实际上是用一个包含房间信息的数据字典来实现的。
 
-  ![screenshot](images/rpg-dining.png)
+--- code ---
+---
+language: python
+---
+# 连接房间与房间的数据字典
 
-  你需要添加第 3 个房间，名为 `dining room`。你还需要将其与西边的客厅连接起来。你还需要向客厅添加数据，以便你能向东移动到餐厅。
-  
-  ![screenshot](images/rpg-dining-code.png)
+rooms = {
 
-+ 试试带有新餐厅的游戏：
+            'Hall' : {
+                'south' : 'Kitchen'
+            },
+    
+            'Kitchen' : {
+                'north' : 'Hall'
+            }
+    
+        }
+    
 
-  ![screenshot](images/rpg-dining-test.png)
+--- /code ---
 
-  如果你无法进出餐厅，只需检查你是否添加了上文的全部代码（包括上方行末附加的逗号）。
+每个房间是字典中的一项数据，然后用方向来将房间与房间关联起来。 --- /task ---
 
+--- task --- 让我们在地图上添加一个餐厅，将其放在大厅的东面。
 
+![截屏](images/rpg-dining.png)
 
+你需要添加第三个房间, 叫做 `餐厅`, 把它和大厅连接起来 (在西面). 你还需要向大厅添加数据，以使你可以从那里向东走到餐厅。
+
+**不要忘记, 你需要在新代码前添加逗号.**
+
+--- code ---
+---
+language: python
+---
+## line_highlights: 5-6,11-15
+
+# 连接房间与房间的数据字典
+
+rooms = {
+
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room'
+            },
+    
+            'Kitchen' : {
+                'north' : 'Hall'
+            },
+    
+            'Dining Room' : {
+                'west' : 'Hall'
+            }
+    
+        }
+    
+
+--- /code --- --- /task ---
+
+--- task --- 加完新的餐厅后，试着运行一下游戏。
+
+![截屏](images/rpg-dining-test.png)
+
+如果你不能走进或走出餐厅，检查你是否已经添加了如上所示的所有代码（包括在上一行已有代码行末尾添加额外的逗号）。 --- /task ---

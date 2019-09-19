@@ -1,15 +1,17 @@
 #!/bin/python3
 
-# 当指示说明出来时，用此代码替换RPG初始项目
-
 def showInstructions():
-  # 显示主菜单和可用命令
-  print('''
+    # 显示主菜单和可用命令
+    print('''
 RPG游戏
 ========
+
+找到一把钥匙和一瓶魔法药水并到达花园
+同时躲避怪物！
+
 命令：
-  go [方向]
-  get [物品]
+  go [direction]
+  get [item]
 ''')
 
 def showStatus():
@@ -29,18 +31,27 @@ inventory = []
 # 连接房间与房间的数据字典
 rooms = {
 
-            '大厅' : { 
-                  'south' : '厨房'
+            'Hall' : { 'south' : 'Kitchen',
+                  'east'  : 'Dining Room',
+                  'item'  : 'key'
                 },
 
-            '厨房' : {
-                  'north' : '大厅'
-                }
+            'Kitchen' : { 'north' : 'Hall',
+                  'item'  : 'monster'
+                },
+
+            'Dining Room' : { 'west'  : 'Hall',
+                  'south' : 'Garden',
+                  'item'  : 'potion'
+
+                },
+
+            'Garden' : { 'north' : 'Dining Room' }
 
          }
 
 # 玩家从大厅开始游戏
-currentRoom = '大厅'
+currentRoom = 'Hall'
 
 showInstructions()
 
@@ -50,13 +61,13 @@ while True:
   showStatus()
 
   # 取得玩家的下一个行动
-  # .split()方法将字符串在空格处分割，并将结果以阵列输出
-  # 例如：输入"go east“将产生如下阵列
+  #.split()方法分隔对象到列表中
+  # 例如：输入"go east“将产生如下列表:
   # ['go','east']
   move = ''
-  while move == '':  
+  while move == '':
     move = input('>')
-    
+
   move = move.lower().split()
 
   # 如果玩家输入'go'指令
@@ -67,12 +78,12 @@ while True:
       currentRoom = rooms[currentRoom][move[1]]
     # 那里没有通向另一房间的门（连接）
     else:
-        print('你不能往那里走！')
+      print('你不能往那里走！')
 
   # 如果玩家输入'get'指令
   if move[0] == 'get' :
     # 如果房间里有一件物品，那这件物品是玩家想要拿到的
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
+    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
       # 将物品加入玩家的物品清单
       inventory += [move[1]]
       # 显示一条有用的消息
@@ -84,3 +95,12 @@ while True:
       # 告诉玩家不能拿到物品
       print('无法拿到 ' + move[1] + '！')
 
+  #玩家如果进入一个有怪物的房间，则游戏失败
+  if 'item' in rooms[currentRoom] and '怪物' in rooms[currentRoom]['item']:
+    print('一个怪物抓住你了... 游戏结束！')
+    break
+
+  #如果玩家得到钥匙和魔法药水并到达花园，就赢了
+  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
+    print('你成功逃离房子... 你赢了！')
+    break
