@@ -4,7 +4,7 @@
 
 ## 你将制作：
 
---无打印--
+\--- no-print \---
 
 输入`go`然后输入一个方向(north,east,south或west)围绕世界移动(例如`go norht`).
 
