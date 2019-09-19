@@ -6,7 +6,7 @@ Diamo al tuo giocatore una missione che deve essere completata per vincere la pa
 
 ![screenshot](images/rpg-final-map.png) \--- /task \---
 
-\--- task \--- Per cominciare aggiungi un giardino a sud della sala da pranzo. Ricorda di aggiungere porte per collegarti ad altre stanze della casa.
+\--- task \--- Per cominciare aggiungi un giardino a sud della sala da pranzo. Ricorda di aggiungere porte per collegare le varie stanze della casa.
 
 ## \--- code \---
 
@@ -19,21 +19,21 @@ language: python
 stanze = {
 
             'Ingresso' : {
-                'south' : 'Cucina',
-                'east' : 'Sala da Pranzo'
+                'sud' : 'Cucina',
+                'est' : 'Sala da Pranzo'
             },
     
             'Cucina' : {
-                'north' : 'Ingresso'
+                'nord' : 'Ingresso'
             },
     
             'Sala da Pranzo' : {
-                'west' : 'Ingresso'
-                'south' : 'Giardino'
+                'ovest' : 'Ingresso'
+                'sud' : 'Giardino'
             },
     
             'Giardino' : {
-                'north' : 'Sala da Pranzo'
+                'nord' : 'Sala da Pranzo'
             }
     
         }
@@ -50,9 +50,9 @@ language: python
 ## line_highlights: 3-4
 
             'Sala da Pranzo' : {
-                'west' : 'Ingresso',
-                'south' : 'Giardino',
-                'item' : 'pozione'
+                'ovest' : 'Ingresso',
+                'sud' : 'Giardino',
+                'oggetto' : 'pozione'
             },
     
 
@@ -74,7 +74,7 @@ if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]:
 
 if currentRoom == 'Giardino' and 'chiave' in inventory and 'pozione' in inventory: print('Sei fuggito dalla casa... HAI VINTO!') break \--- /code \---
 
-Assicurati che il codice sia indentato, allineato col codice che lo precede. Questo codice significa che il messaggio `Sei fuggito dalla casa... HAI VINTO!` VERRÀ visualizzato se il giocatore si trova nella stanza 4 (il giardino) e se la chiave e la pozione sono nell'inventario.
+Assicurati che il codice sia indentato, cioè allineato col codice che lo precede. Questo codice significa che il messaggio `Sei fuggito dalla casa... HAI VINTO!` Verrà visualizzato se il giocatore si trova nella stanza 4 (il giardino) e se la chiave e la pozione sono nell'inventario.
 
 Se hai più di 4 camere, potresti dover utilizzare un numero di stanza diverso per il tuo giardino nel codice qui sopra. \--- /task \---
 
@@ -96,10 +96,10 @@ def showInstructions(): #mostra un meni e i comandi print('''
 
 Raggiungi il giardino con una chiave e una pozione Evita i mostri!
 
-Comandi: go [direction] get [item] ''') \--- /code \---
+Comandi: vai [direzione] prendi [oggetto] ''') \--- /code \---
 
-Dovrai aggiungere istruzioni per dire all'utente quali oggetti devono raccogliere e cosa devono evitare! \--- /task \---
+Dovrai aggiungere istruzioni per dire all'utente quali oggetti deve raccogliere e cosa deve evitare! \--- /task \---
 
-\--- task \--- Prova il tuo gioco e dovresti vedere le tue nuove istruzioni.
+\--- task \--- Provando il gioco, dovresti vedere le nuove istruzioni.
 
 ![screenshot](images/rpg-instructions-test.png) \--- /task \---
