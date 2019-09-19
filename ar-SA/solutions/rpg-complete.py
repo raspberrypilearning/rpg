@@ -9,6 +9,8 @@ def showInstructions():
 إذهب إلى الحديقة مع مفتاح و جرعة
 تجنب الوحوش!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 الأوامر:
   اذهب [الاتجاهات]
   احصل على [جرعة]
@@ -17,7 +19,8 @@ def showInstructions():
 def showStatus():
   # اطبع حالة اللاعب الحالية
   print('---------------------------')
-  print('أنت في ' + currentRoom)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   # اطبع المخزون الحالي
   print("المخزون : " + str(inventory))
   # اطبع عنصر إذا كان هناك واحد
@@ -25,8 +28,14 @@ def showStatus():
     print('أنت ترى ' + rooms[currentRoom]['عنصر'])
   print("---------------------------")
 
-# المخزون ، والذي يكون فارغ في البداية
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
 inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 # قاموس يربط بين غرفة وأماكن الغرف الأخرى
 rooms = {
@@ -50,10 +59,10 @@ rooms = {
 
          }
 
-# يبدأ اللاعب في الصالة
-currentRoom = 'الصالة'
-
-showInstructions()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  showInstructions()
 
 # حَلَقَة تتكرر للأبد
 while True:
@@ -72,6 +81,7 @@ while True:
 
   # اذا كتبوا 'اذهب' أولاً
   if move[0] == 'اذهب':
+    health = health - 1
     # تأكد أنه مسموحٌ لهم الذهاب أينما يريدون
     if move[1] in rooms[currentRoom]:
       # تعيين الغرفة الحالية للغرفة الجديدة
@@ -100,7 +110,13 @@ while True:
     print('الوحش قد أمسك بك... انتهت اللعبة!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #يربح اللاعب إذا وصل إلى الحديقة مع مفتاح وجرعة
   if currentRoom == 'الحديقة' and 'مفتاح' in inventory and 'جرعة' in inventory:
     print('لقد هربت من المنزل... لقد ربحت!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
