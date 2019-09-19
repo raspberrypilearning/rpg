@@ -10,11 +10,11 @@
 
 ![screenshot](images/rpg-map1.png)
 
-Puoi digitare `go south`per spostarti dalla sala alla cucina, e poi `go north` per tornare di nuovo all'ingresso!
+Puoi digitare `vai sud`per spostarti dalla sala alla cucina, e poi `vai nord` per tornare di nuovo all'ingresso!
 
 ![screenshot](images/rpg-controls.png) \--- /task \---
 
-\--- task \--- Cosa succede quando digiti una direzione che non puoi seguire? Digita `go west`nell'ingresso e riceverai un messaggio di errore.
+\--- task \--- Cosa succede quando digiti una direzione che non puoi seguire? Digita `vai ovest`nell'ingresso e riceverai un messaggio di errore.
 
 ![screenshot](images/rpg-error.png) \--- /task \---
 
@@ -29,11 +29,11 @@ Puoi digitare `go south`per spostarti dalla sala alla cucina, e poi `go north` p
 stanze = {
 
             'Ingresso' : {
-                'south' : 'Cucina'
+                'sud' : 'Cucina'
             },
     
             'Cucina' : {
-                'north' : 'Ingresso'
+                'nord' : 'Ingresso'
             }
     
         }
@@ -48,7 +48,7 @@ Ogni stanza è un dizionario e le stanze sono collegate tra loro usando le direz
 
 ![screenshot](images/rpg-dining.png)
 
-Devi aggiungere una terza stanza, chiamata `sala da pranzo`, e collegarla alla sala (west). Devi anche aggiungere dati all'ingresso, in modo da poterti spostare nella sala da pranzo ad est.
+Devi aggiungere una terza stanza, chiamata `sala da pranzo`, e collegarla alla sala (ovest). Devi anche aggiungere dati all'ingresso, in modo da poterti spostare nella sala da pranzo ad est.
 
 **Non dimenticare che dovrai anche aggiungere delle virgole prima del tuo nuovo codice.**
 
@@ -63,16 +63,16 @@ language: python
 stanze = {
 
             'Hall' : {
-                'south' : 'Cucina',
-                'east' : 'Sala da Pranzo'
+                'sud' : 'Cucina',
+                'est' : 'Sala da Pranzo'
             },
     
             'Cucina' : {
-                'north' : 'Ingresso'
+                'nord' : 'Ingresso'
             },
     
             'Sala da Pranzo' : {
-                'west' : 'Ingresso'
+                'ovest' : 'Ingresso'
             }
     
         }
