@@ -50,7 +50,7 @@ while True:
   zeigeZustand()
 
   #Warte auf den 'nächsten Spielzug (die nächste Bewegung)' des Spielers
-  #.split() teilt ihn in ein Array auf
+  #.split() teilt ihn in eine Liste (Array) auf
   #Wenn du z.B. 'gehenach osten' eintippst, erhältst du folgende Liste:
   #['gehenach','osten']
   spielzug = ''
