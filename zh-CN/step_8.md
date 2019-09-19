@@ -14,7 +14,6 @@ language: python
 line_highlights: 16-17,18-22
 ---
 # 连接房间与房间的数据字典
-
 rooms = {
 
             'Hall' : {
@@ -68,11 +67,9 @@ line_highlights: 6-9
 ---
 
 # 玩家如果进入一个有怪物的房间，则游戏失败
-
 if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
 # 如果玩家得到钥匙和魔法药水并到达花园，就赢了
-
 if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break --- /code ---
 
 注意这段代码也是缩进的，应当与上面的代码对齐。 这段代码表示当玩家在第4个房间（花园）中，并且在他们的物品袋中有钥匙和魔法药水时，就显示“你已逃离房子...你赢了！”的消息。
@@ -91,13 +88,19 @@ language: python
 line_highlights: 7-8
 ---
 
-def showInstructions(): #print a main menu and the commands print('''
+def showInstructions(): 
+  #print a main menu and the commands 
+  print('''
+RPG游戏
 
-# RPG游戏
+拿着钥匙和魔法药水进入花园 
+躲开怪兽!
 
-拿着钥匙和魔法药水进入花园 躲开怪兽!
-
-Commands: go [direction] get [item] ''') --- /code ---
+命令： 
+go [direction] 
+get [item] 
+''') 
+--- /code ---
 
 你需要添加说明来告诉玩家他们需要收集哪些物品，并需要避开什么！ --- /task ---
 
