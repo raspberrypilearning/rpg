@@ -6,7 +6,8 @@
 
 --- code ---
 ---
-language: python line_highlights: 11-12
+language: python 
+line_highlights: 11-12
 ---
 # 连接房间与房间的数据字典
 
@@ -36,7 +37,8 @@ rooms = {
 
 --- code ---
 ---
-language: python line_highlights: 6-9
+language: python 
+line_highlights: 6-9
 ---
 
         #otherwise, if the item isn't there to get

@@ -10,7 +10,8 @@
 
 --- code ---
 ---
-language: python line_highlights: 16-17,18-22
+language: python 
+line_highlights: 16-17,18-22
 ---
 # 连接房间与房间的数据字典
 
@@ -45,7 +46,8 @@ rooms = {
 
 --- code ---
 ---
-language: python line_highlights: 3-4
+language: python 
+line_highlights: 3-4
 ---
 
             'Dining Room' : {
@@ -61,7 +63,8 @@ language: python line_highlights: 3-4
 
 --- code ---
 ---
-language: python line_highlights: 6-9
+language: python 
+line_highlights: 6-9
 ---
 
 # 玩家如果进入一个有怪物的房间，则游戏失败
@@ -84,7 +87,8 @@ if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: pri
 
 --- code ---
 ---
-language: python line_highlights: 7-8
+language: python 
+line_highlights: 7-8
 ---
 
 def showInstructions(): #print a main menu and the commands print('''
