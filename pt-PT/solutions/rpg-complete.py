@@ -9,6 +9,8 @@ Jogo RPG
 Chega ao jardim com uma chave e uma garrafa de poçāo
 Evita os monstros!
 
+You are getting tired, each time you move you loose 1 health point. 
+
 Comandos:
   vai [direçāo]
   apanha [item]
@@ -17,7 +19,8 @@ Comandos:
 def mostraEstado():
   #imprime o estado corrente do jogador
   print('---------------------------')
-  print('Estás na ' + divAtual)
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
   #Imprime o inventário currente
   print("Inventário : " + str(inventario))
   #imprime um item se houver um
@@ -25,8 +28,14 @@ def mostraEstado():
     print('Estás a ver uma ' + divisoes[divAtual]['item'])
   print("---------------------------")
 
-#um inventário, que inicialmente está vazio
-inventario = []
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
+inventory = []
+
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
 #um dicionário a ligar uma divisāo a outras divisões
 divisoes = {
@@ -50,10 +59,10 @@ divisoes = {
 
          }
 
-#começa com o jogador na Entrada
-divAtual = 'Entrada'
-
-mostraInstrucoes()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  mostraInstrucoes()
 
 #ciclo perpétuo
 while True:
@@ -72,6 +81,7 @@ while True:
 
   #se digitarem 'vai' primeiro
   if jogada[0] == 'vai':
+    health = health - 1
     #verifica que o jogador pode ir na direcāo que está a pedir
     se jogada[1] in divisoes[divAtual]:
       #altera a divisāo actual para a nova divisāo
@@ -100,7 +110,13 @@ while True:
     print('O monstro apanhou-te... PERDESTE!')
     break
 
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
+
   #o jogador ganha se entrar no jardim com a chave e a garrafa de poçāo
   if divAtual == 'Jardim' and 'chave' in inventario and 'garrafa' in inventario:
     print('Fugiste da casa... GANHASTE!')
     break
+
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
