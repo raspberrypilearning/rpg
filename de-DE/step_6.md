@@ -48,7 +48,7 @@ language: python
             print('Du kannst ' + spielzug[1] + ' nicht nehmen!')
     
     #Der Spieler verliert, wenn er ein Zimmer mit einem Monster betritt
-    if 'Gegenstand' in zimmer[aktuellesZimmer] 'Monster' in zimmer[aktuellesZimmer]['Gegenstand']:
+    if 'Gegenstand' in zimmer[aktuellesZimmer] and 'Monster' in zimmer[aktuellesZimmer]['Gegenstand']:
         print('Du wurdest von einem hungrigen Monster gefressen... DAS SPIEL IST AUS!')
         break
     
@@ -59,4 +59,4 @@ Dieser Code prüft, ob sich ein Gegenstand im Zimmer befindet; und wenn ja, ob d
 
 \--- task \--- Teste dein Spiel indem du in die Küche gehst, wo sich jetzt ein Monster befindet.
 
-![screenshot](images/rpg-monster-test.png) \--- /task \---
+![Bildschirmfoto](images/rpg-monster-test.png) \--- /task \---
