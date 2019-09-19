@@ -65,12 +65,16 @@ line_highlights: 3-4
 language: python 
 line_highlights: 6-9
 ---
-
 # 玩家如果进入一个有怪物的房间，则游戏失败
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: 
+  print('A monster has got you... GAME OVER!') 
+  break
 
 # 如果玩家得到钥匙和魔法药水并到达花园，就赢了
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break --- /code ---
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: 
+  print('You escaped the house... YOU WIN!') 
+  break 
+--- /code ---
 
 注意这段代码也是缩进的，应当与上面的代码对齐。 这段代码表示当玩家在第4个房间（花园）中，并且在他们的物品袋中有钥匙和魔法药水时，就显示“你已逃离房子...你赢了！”的消息。
 
