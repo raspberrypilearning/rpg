@@ -111,7 +111,7 @@ while True:
     break
 
   if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+    print('You collapse from exhaustion... 游戏结束!')
 
   #如果玩家得到钥匙和魔法药水并到达花园，就赢了
   if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
