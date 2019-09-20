@@ -50,7 +50,7 @@ language: python
     #ο παίκτης χάνει, αν μπει σε δωμάτιο με τέρας 
     if 'αντικείμενο' in rooms[currentRoom] and 'τέρας' in rooms[currentRoom]['αντικείμενο']:
         print('Ένα τέρας σε έπιασε... ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ!')
-        break
+    break
     
 
 \--- /code \---
