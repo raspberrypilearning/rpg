@@ -9,7 +9,7 @@ RPG游戏
 找到一把钥匙和一瓶魔法药水并到达花园
 同时躲避怪物！
 
-You are getting tired, each time you move you loose 1 health point. 
+你正变得疲惫，你每移动一次你的生命值将减少一分。 
 
 命令：
   go [direction]
@@ -19,8 +19,8 @@ You are getting tired, each time you move you loose 1 health point.
 def showStatus():
   # 显示玩家的当前状态
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
+  print(name + ' 正在 ' + currentRoom)
+  print("生命值：" + str(health))
   # 显示当前已获得物品
   print('物品 ： ' + str(inventory))
   # 显示物品（如果存在）
@@ -28,14 +28,14 @@ def showStatus():
     print('你看见一个 ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-# setup the game
+# 初始化游戏设置
 name = None
 health = 5
-currentRoom = 'Hall'
+currentRoom = '大厅'
 inventory = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# 这里放入你的代码 #-#
+# 从文件中加载数据
 
 # 连接房间与房间的数据字典
 rooms = {
