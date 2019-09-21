@@ -59,9 +59,9 @@ rooms = {
 
          }
 
-# ask the player their name
+# 询问玩家名字
 if name is None:
-  name = input("What is your name Adventurer? ")
+  name = input("冒险家，你叫什么名字？ ")
   showInstructions()
 
 # 永久循环
@@ -111,12 +111,12 @@ while True:
     break
 
   if health == 0:
-    print('You collapse from exhaustion... 游戏结束!')
+    print('你力竭而死... 游戏结束!')
 
   #如果玩家得到钥匙和魔法药水并到达花园，就赢了
   if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
     print('你成功逃离房子... 你赢了！')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# 这里放入你的代码 #-#
+  # 将游戏数据存入文件
