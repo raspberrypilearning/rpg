@@ -8,7 +8,7 @@
 
 ## \--- code \---
 
-语言: python
+language: python
 
 ## line_highlights: 6-7
 
