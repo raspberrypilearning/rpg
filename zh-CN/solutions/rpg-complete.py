@@ -12,8 +12,8 @@ RPG游戏
 你正变得疲惫，你每移动一次你的生命值将减少一分。 
 
 命令：
-  go [direction]
-  get [item]
+  go [方向]
+  get [物品]
 ''')
 
 def showStatus():
