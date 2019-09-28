@@ -41,17 +41,17 @@ inventory = []
 rooms = {
 
             'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+                  'east'  : '餐厅',
+                  'item'  : '钥匙'
                 },
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            '厨房' : { 'north' : '大厅',
+                  'item'  : '怪物'
                 },
 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            '餐厅' : { 'west'  : '大厅',
+                  'south' : '花园',
+                  'item'  : '魔法药水'
 
                 },
 
@@ -106,7 +106,7 @@ while True:
       print('无法拿到 ' + move[1] + '！')
 
   #玩家如果进入一个有怪物的房间，则游戏失败
-  if 'item' in rooms[currentRoom] and '怪物' in rooms[currentRoom]['item']:
+  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
     print('一个怪物抓住你了... 游戏结束！')
     break
 
