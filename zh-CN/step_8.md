@@ -92,13 +92,13 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def showInstructions(): #输出主菜单和命令 print('''
 
 # RPG游戏
 
-拿着钥匙和魔法药水进入花园 躲开怪兽!
+找到一把钥匙和一瓶魔法药水并到达花园 同时躲避怪物!
 
-Commands: go [direction] get [item] ''') \--- /code \---
+Commands: go [方向] get [物品] ''') \--- /code \---
 
 你需要添加说明来告诉玩家他们需要收集哪些物品，并需要避开什么！ \--- /task \---
 
