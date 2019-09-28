@@ -16,7 +16,7 @@
   <img src="images/rpg-finished.png">
 </div>
 
-\--- /无打印\---
+\--- /no-print \---
 
 \--- print-only \---
 
@@ -24,7 +24,7 @@
 
 \--- /print-only \---
 
-\--- 折叠 \---
+\--- collapse \---
 
 * * *
 
@@ -42,9 +42,9 @@
 
 初始项目在[这里](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
-\--- /折叠 \---
+\--- /collapse \---
 
-\--- 折叠 \---
+\--- collapse \---
 
 * * *
 
@@ -60,9 +60,9 @@
 
 + [综合利用编程结构解决问题。](https://www.raspberrypi.org/curriculum/programming/builder)
 
-\--- /折叠 \---
+\--- /collapse \---
 
-\--- 折叠 \---
+\--- collapse \---
 
 * * *
 
@@ -72,4 +72,4 @@
 
 你可以 [在这里找到已完成的项目](http://rpf.io/p/en/rpg-get){:target="_blank"}
 
-\--- /折叠 \---
+\--- /collapse \---
