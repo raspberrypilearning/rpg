@@ -6,7 +6,7 @@
 
 ## \--- code \---
 
-语言: python
+language: python
 
 ## line_highlights: 11-12
 
@@ -45,11 +45,11 @@ language: python
         #otherwise, if the item isn't there to get
         else:
             #tell them they can't get it
-            print('Can\'t get' + move[1] + '!')
+            print('不能' + move[1] + '!')
     
     #player loses if they enter a room with a monster
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('A monster has got you... GAME OVER!')
+        print('怪物抓到你... 游戏结束!')
         break
     
 
