@@ -9,7 +9,7 @@ Gioco RPG
 Raggiungi il giardino con una chiave e una pozione
 Evita i mostri!
 
-You are getting tired, each time you move you loose 1 health point. 
+Ti stai stancando, poichè ogni volta che ti muovi perdi 1 punto salute. 
 
 Comandi:
   vai [direzione]
@@ -19,8 +19,8 @@ Comandi:
 def mostraPosizione():
   #stampa la posizione corrente del giocatore
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
+  print(nome + ' è in ' + stanzaCorrente)
+  print("Salute : " + str(salute))
   #stampa il contenuto dell'inventario
   print('inventario : ' + str(inventario))
   #stampa un oggetto se presente nell'inventario
@@ -28,14 +28,14 @@ def mostraPosizione():
     print('Vedi quest\'oggetto: ' + stanze[stanzaCorrente]['oggetto'])
   print('---------------------------')
 
-# setup the game
-name = None
-health = 5
-currentRoom = 'Hall'
-inventory = []
+# imposta il gioco
+nome = Nessuno
+salute = 5
+stanzaCorrente = 'Sala da Pranzo'
+inventario = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# IL TUO PROGRAMMA VA QUI #-#
+# Carica i dati da un file
 
 #un dizionario collega una stanza alle altre
 stanze = {
@@ -59,9 +59,9 @@ stanze = {
 
          }
 
-# ask the player their name
-if name is None:
-  name = input("What is your name Adventurer? ")
+# chiedi al giocatore il suo nome
+if nome is Nessuno:
+  nome = input("Qual è il tuo nome, avventuriero? ")
   mostraIstruzioni()
 
 #ciclo infinito
@@ -81,7 +81,7 @@ while True:
 
   #se la prima parola digitata è 'vai'
   if istruzione[0] == 'vai':
-    health = health - 1
+    salute = salute - 1
     #verifica se la direzione inserita è consentita
     if istruzione[1] in stanze[stanzaCorrente]:
       #imposta la stanza corrente alla nuova inserita
@@ -110,13 +110,13 @@ while True:
     print('Una creatura mostruosa ti ha catturato... GAME OVER!')
     break
 
-  if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+  if salute == 0:
+    print('Sei svenuto per sfinimento... GIOCO TERMINATO!')
 
   #il giocatore vince se raggiunge il giardino con una chiave e un pozione
   if stanzaCorrente == 'Giardino' and 'chiave' in inventario and 'pozione' in inventario:
     print('Sei scappato dalla casa... HAI VINTO!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# IL TUO PROGRAMMA VA QUI #-#
+  # Salva i dati del gioco su un file
