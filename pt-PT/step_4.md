@@ -4,7 +4,7 @@ Vamos deixar itens nas divisões para o jogador apanhar enquanto se move pelo la
 
 \--- task \--- Adicionar um item a uma divisāo é fácil, basta adicioná-lo ao dicionário da divisāo. Vamos colocar uma chave na entrada.
 
-Lembra-te de colocar uma vírgula depois da linha acima do novo item, ou o teu programa nāo vai correr!
+Lembra-te de colocar uma vírgula depois da linha acima do novo item, ou o teu programa nāo vai funcionar!
 
 ## \--- code \---
 
