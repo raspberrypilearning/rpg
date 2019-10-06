@@ -14,7 +14,7 @@ Podes digitar `vai sul` para ir da entrada para a cozinha, e depois `vai norte` 
 
 ![captura de ecrã](images/rpg-controls.png) \--- /task \---
 
-\--- task \--- O que acontece quando digitas uma direcāo para a qual nāo podes ir? Digita `vai oeste` no hall e vais receber uma simpática mensagem de erro.
+\--- task \--- O que acontece quando digitas uma direcāo para a qual nāo podes ir? Digita `vai oeste` na entrada e vais receber uma simpática mensagem de erro.
 
 ![captura de ecrã](images/rpg-error.png) \--- /task \---
 
@@ -44,7 +44,7 @@ rooms = {
 Cada divisāo é um dicionário, e as divisões sāo ligadas umas às outras usando direções.  
 \--- /task \---
 
-\--- task \--- Vamos adicionar uma sala de jantar ao teu mapa, para este do hall.
+\--- task \--- Vamos adicionar uma sala de jantar ao teu mapa, para este da entrada.
 
 ![captura de ecrã](images/rpg-dining.png)
 
