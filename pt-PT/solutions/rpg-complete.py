@@ -9,7 +9,7 @@ Jogo RPG
 Chega ao jardim com uma chave e uma garrafa de poçāo
 Evita os monstros!
 
-You are getting tired, each time you move you loose 1 health point. 
+Estás a ficar cansado, cada vez que te moves perdes 1 ponto de vida. 
 
 Comandos:
   vai [direçāo]
@@ -19,16 +19,16 @@ Comandos:
 def mostraEstado():
   #imprime o estado corrente do jogador
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
-  #Imprime o inventário currente
+  print(nome + ' está na ' + divAtual)
+  print("Saúde : " + str(saude))
+  #Imprime o inventário atual
   print("Inventário : " + str(inventario))
   #imprime um item se houver um
   if "item" in divisoes[divAtual]:
     print('Estás a ver uma ' + divisoes[divAtual]['item'])
   print("---------------------------")
 
-# setup the game
+# configurar o jogo
 name = None
 health = 5
 currentRoom = 'Hall'
