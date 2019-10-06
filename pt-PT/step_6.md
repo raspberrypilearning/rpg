@@ -1,6 +1,6 @@
 ## Adicionar inimigos
 
-Este jogo está demasiado fácil! Vamos adicionar inimigos que o jogador deve evitar a algumas das divisões.
+Este jogo está demasiado fácil! Vamos adicionar a algumas das divisões inimigos que o jogador deve evitar.
 
 \--- task \--- Adicionar um inimigo a uma divisāo é tāo fácil como adicionar outro item. Vamos adicionar um monstro esfomeado à cozinha:
 
