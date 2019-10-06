@@ -29,13 +29,13 @@ def mostraEstado():
   print("---------------------------")
 
 # configurar o jogo
-name = None
-health = 5
-currentRoom = 'Hall'
-inventory = []
+nome = None
+saude = 5
+divAtual = 'Entrada'
+inventario = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# O TEU CÓDIGO FICA AQUI #-#
+# Carregar os dados do jogo para o arquivo
 
 #um dicionário a ligar uma divisāo a outras divisões
 divisoes = {
@@ -59,9 +59,9 @@ divisoes = {
 
          }
 
-# ask the player their name
-if name is None:
-  name = input("What is your name Adventurer? ")
+# perguntar ao jogador o seu nome
+if nome is None:
+  nome = input("Qual é o teu nome Aventureiro? ")
   mostraInstrucoes()
 
 #ciclo perpétuo
@@ -81,7 +81,7 @@ while True:
 
   #se digitarem 'vai' primeiro
   if jogada[0] == 'vai':
-    health = health - 1
+    saude = saude -1
     #verifica que o jogador pode ir na direcāo que está a pedir
     se jogada[1] in divisoes[divAtual]:
       #altera a divisāo actual para a nova divisāo
@@ -110,13 +110,13 @@ while True:
     print('O monstro apanhou-te... PERDESTE!')
     break
 
-  if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+  if saude == 0:
+    print('Desmaias-te de exaustão... FIM DO JOGO!')
 
   #o jogador ganha se entrar no jardim com a chave e a garrafa de poçāo
   if divAtual == 'Jardim' and 'chave' in inventario and 'garrafa' in inventario:
     print('Fugiste da casa... GANHASTE!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# O TEU CÓDIGO FICA AQUI #-#
+  # Carregar os dados do jogo para o arquivo
