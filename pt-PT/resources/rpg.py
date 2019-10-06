@@ -1,6 +1,6 @@
 #!/bin/python3
 
-# Replace RPG starter project with this code when new instructions are live
+# Substitua o projeto inicial de RPG por este código quando novas instruções estiverem ativas
 
 def mostraInstrucoes():
   #imprime um menu principal e os comandos
