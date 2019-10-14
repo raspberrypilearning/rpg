@@ -6,7 +6,7 @@ Neste projeto, vais projetar e programar o teu próprio jogo de labirinto RPG. O
 
 \--- no-print \---
 
-Escreve `vai` e uma direçāo (norte, este, sul ou oeste) para te moveres à volta do mundo (e.g. `vai norte`).
+Escreve `vai` e uma direção (norte, este, sul ou oeste) para te moveres à volta do mundo (e.g. `vai norte`).
 
 Escreve `apanha` para apanhar qualquer item que estejas a ver (e.g. `apanha chave`).
 
@@ -51,12 +51,12 @@ O projeto inicial pode ser encontrado [aqui](http://rpf.io/p/en/rpg-go){:target=
 ## title: O que vais aprender
 
 + Desenho de jogos;
-+ Ediçāo de: 
++ Edição de: 
     + Listas;
     + Dicionários.
 + Expressões booleanas.
 
-Este projeto abrange elementos das seguintes áreas do [ Curriculo Raspberry Pi Digital Making ](http://rpf.io/curriculum):
+Este projeto abrange elementos das seguintes áreas do [ Currículo Raspberry Pi Digital Making ](http://rpf.io/curriculum):
 
 + [Combinar construções de programação para resolver um problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
