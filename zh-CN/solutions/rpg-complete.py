@@ -40,7 +40,7 @@ inventory = []
 # 连接房间与房间的数据字典
 rooms = {
 
-            'Hall' : { 'south' : 'Kitchen',
+            '大厅' : { 'south' : '厨房',
                   'east'  : '餐厅',
                   'item'  : '钥匙'
                 },
@@ -55,7 +55,7 @@ rooms = {
 
                 },
 
-            'Garden' : { 'north' : 'Dining Room' }
+            '花园' : { 'north' : '餐厅' }
 
          }
 
