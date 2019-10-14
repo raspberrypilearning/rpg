@@ -4,7 +4,7 @@
 
 **在线：** 在 [rpf.io/rpgon](http://rpf.io/rpgon){：target =“_ blank”}打开初始项目。
 
-在离线编辑器中**离线**: 打开 [初始项目](http://rpf.io/p/en/rpg-go){:target="_blank"}. \--- /任务\---
+在离线编辑器中**离线**: 打开 [初始项目](http://rpf.io/p/en/rpg-go){:target="_blank"}. \--- /task \---
 
 这是个仅包含2个房间的基本的RPG游戏。 以下是游戏的地图：
 
@@ -28,12 +28,12 @@
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen'
+            '大厅' : {
+                'south' : '厨房'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            '厨房' : {
+                'north' : '大厅'
             }
     
         }
@@ -53,7 +53,7 @@ rooms = {
 
 ## \--- code \---
 
-语言: python
+language: python
 
 ## line_highlights: 5-6,11-15
 
@@ -61,17 +61,17 @@ rooms = {
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room'
+            '大厅' : {
+                'south' : '厨房',
+                'east' : '餐厅'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            '厨房' : {
+                'north' : '大厅'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            '餐厅' : {
+                'west' : '大厅'
             }
     
         }
