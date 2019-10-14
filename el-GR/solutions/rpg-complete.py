@@ -9,7 +9,7 @@ def showInstructions():
 Βγες στον κήπο με ένα κλειδί κι ένα μαγικό φίλτρο
 Απέφυγε τα τέρατα!
 
-You are getting tired, each time you move you loose 1 health point. 
+Σταδιακά κουράζεσαι, κάθε φορά που κινείσαι χάνεις ένας πόντο υγείας. 
 
 Εντολές:
   πήγαινε [κατεύθυνση]
@@ -19,8 +19,8 @@ You are getting tired, each time you move you loose 1 health point.
 def showStatus():
   #εμφάνισε την κατάσταση του παίκτη
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
+  print('Ο/Η' + name + 'βρίσκεται στο/στη ' + currentRoom)
+  print("Υγεία: " + str(health))
   #εμφάνισε το απόθεμα
   print("Απόθεμα : " + str(inventory))
   #εμφάνισε ένα αντικείμενο, αν υπάρχει
@@ -28,14 +28,14 @@ def showStatus():
     print('Βλέπεις ένα ' + rooms[currentRoom]['αντικείμενο'])
   print("---------------------------")
 
-# setup the game
+#παραμετροποίηση του παιχνιδιού
 name = None
 health = 5
-currentRoom = 'Hall'
+currentRoom = 'Χωλ'
 inventory = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# Ο ΚΩΔΙΚΑΣ ΣΟΥ ΜΠΑΙΝΕΙ ΕΔΩ #-#
+# Φόρτωσε δεδομένα από το αρχείο
 
 #ένα λεξικό που συνδέει ένα δωμάτιο με άλλα δωμάτια
 rooms = {
@@ -59,9 +59,9 @@ rooms = {
 
          }
 
-# ask the player their name
+# ρωτάει τον παίκτη το όνομά του
 if name is None:
-  name = input("What is your name Adventurer? ")
+  name = input("Πώς σε λένε ταξιδιώτη; ")
   showInstructions()
 
 #επανέλαβε για πάντα
@@ -111,12 +111,12 @@ while True:
     break
 
   if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+    print('Καταρρέεις από εξάντληση... ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ!')
 
   #ο παίκτης κερδίζει αν βγει στον κήπο με ένα κλειδί και ένα φίλτρο
   if currentRoom == 'Κήπος' and 'κλειδί' in inventory and 'φίλτρο' in inventory:
     print('Βγήκες από το σπίτι... ΝΙΚΗΣΕΣ!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# Ο ΚΩΔΙΚΑΣ ΣΟΥ ΜΠΑΙΝΕΙ ΕΔΩ #-#
+  # Σώσε τα δεδομένα του παιχνιδιού στο αρχείο
