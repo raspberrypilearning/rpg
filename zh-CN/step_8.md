@@ -18,24 +18,24 @@ language: python
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            '大厅' : {
+                'south' : '厨房',
+                'east' : '餐厅',
+                'item' : '钥匙'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            '厨房' : {
+                'north' : '大厅',
+                'item' : '怪物'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden'
+            '餐厅' : {
+                'west' : '大厅',
+                'south' : '花园'
             },
     
-            'Garden' : {
-                'north' : 'Dining Room'
+            '花园' : {
+                'north' : '餐厅'
             }
     
         }
@@ -51,10 +51,10 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden',
-                'item' : 'potion'
+            '餐厅' : {
+                'west' : '大厅',
+                'south' : '花园',
+                'item' : '魔法药水'
             },
     
 
