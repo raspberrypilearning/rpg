@@ -16,18 +16,18 @@ language: python
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            '大厅' : {
+                'south' : '厨房',
+                'east' : '餐厅',
+                'item' : '钥匙'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            '厨房' : {
+                'north' : '大厅'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            '餐厅' : {
+                'west' : '大厅'
             }
     
         }
