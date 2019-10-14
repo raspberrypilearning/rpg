@@ -26,7 +26,7 @@ def mostraEstado():
 #um inventário, que inicialmente está vazio
 inventario = []
 
-#um dicionário a ligar uma divisāo a outras divisões
+#um dicionário a ligar uma divisão a outras divisões
 divisoes = {
 
             'Entrada' : { 
@@ -61,11 +61,11 @@ while True:
 
   #se digitarem 'vai' primeiro
   if jogada[0] == 'vai':
-    #verifica que o jogador pode ir na direcāo que está a pedir
+    #verifica que o jogador pode ir na direção que está a pedir
     se jogada[1] in divisoes[divAtual]:
-      #altera a divisāo actual para a nova divisāo
+      #altera a divisão actual para a nova divisāo
       divAtual = divisoes[divActua][jogada[1]]
-    #nāo há porta (ligaçāo) para a nova divisāo
+    #nāo há porta (ligaçāo) para a nova divisão
     else:
         print('Nāo podes ir nessa direçāo!')
 
@@ -77,10 +77,10 @@ while True:
       inventario += [jogada[1]]
       #mostra uma mensagem informativa
       print('Apanhaste uma ' + jogada[1] + '!')
-      #apaga o item da divisāo
+      #apaga o item da divisão
       del divisoes[divAtual]['item']
-    #senāo, se nāo houver item para apanhar
+    #senāo, se não houver item para apanhar
     else:
-      #diz ao jogador que nāo pode apanhar o item
+      #diz ao jogador que não pode apanhar o item
       print('Nāo podes apanhar uma ' + jogada[1] + '!')
 
