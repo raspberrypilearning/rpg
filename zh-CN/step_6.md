@@ -14,19 +14,19 @@ language: python
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            '大厅' : {
+                'south' : '厨房',
+                'east' : '餐厅',
+                'item' : '钥匙'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            '厨房' : {
+                'north' : '大厅',
+                'item' : '怪物'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            '餐厅' : {
+                'west' : '大厅'
             }
     
         }
@@ -42,14 +42,14 @@ language: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        #否则，如果没有可拿的物品
         else:
-            #tell them they can't get it
+            # 告诉玩家不能拿到物品
             print('不能' + move[1] + '!')
     
-    #player loses if they enter a room with a monster
+    #玩家如果进入一个有怪物的房间，则游戏失败
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('怪物抓到你... 游戏结束!')
+        print('一个怪物抓住你了... 游戏结束!')
         break
     
 
