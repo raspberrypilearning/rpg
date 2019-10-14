@@ -29,9 +29,9 @@ def mostraPosizione():
   print('---------------------------')
 
 # imposta il gioco
-nome = Nessuno
+nome = None
 salute = 5
-stanzaCorrente = 'Sala da Pranzo'
+stanzaCorrente = 'Sala da pranzo'
 inventario = []
 
 #-# IL TUO PROGRAMMA VA QUI #-#
@@ -60,7 +60,7 @@ stanze = {
          }
 
 # chiedi al giocatore il suo nome
-if nome is Nessuno:
+if nome is None:
   nome = input("Qual è il tuo nome, avventuriero? ")
   mostraIstruzioni()
 
