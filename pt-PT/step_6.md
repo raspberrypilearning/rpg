@@ -2,7 +2,7 @@
 
 Este jogo está demasiado fácil! Vamos adicionar a algumas das divisões inimigos que o jogador deve evitar.
 
-\--- task \--- Adicionar um inimigo a uma divisāo é tāo fácil como adicionar outro item. Vamos adicionar um monstro esfomeado à cozinha:
+\--- task \--- Adicionar um inimigo a uma divisão é tão fácil como adicionar outro item. Vamos adicionar um monstro esfomeado à cozinha:
 
 ## \--- code \---
 
@@ -10,7 +10,7 @@ language: python
 
 ## line_highlights: 11-12
 
-# um dicionário a ligar uma divisāo a outras divisões
+# um dicionário a ligar uma divisão a outras divisões
 
 divisoes = {
 
@@ -34,7 +34,7 @@ divisoes = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Também vais querer ter a certeza de que o jogo acaba se o jogador entrar numa divisāo com um monstro. Podes fazer isso com o código seguinte, que deves adicionar ao fim do jogo:
+\--- task \--- Também vais querer ter a certeza de que o jogo acaba se o jogador entrar numa divisão com um monstro. Podes fazer isso com o código seguinte, que deves adicionar ao fim do jogo:
 
 ## \--- code \---
 
@@ -55,7 +55,7 @@ language: python
 
 \--- /code \---
 
-Este código verifica se há um item na divisāo, e se houver, se o item é um monstro. Toma nota de que o código está indentado, em linha com o código acima. Isso significa que o jogo vai verificar se há um monstro de cada vez que o jogador entrar numa nova divisāo. \--- /task \---
+Este código verifica se há um item na divisão, e se houver, se o item é um monstro. Toma nota de que o código está indentado, em linha com o código acima. Isso significa que o jogo vai verificar se há um monstro de cada vez que o jogador entrar numa nova divisāo. \--- /task \---
 
 \--- task \--- Testa o teu código indo para a cozinha, que agora tem um monstro.
 
