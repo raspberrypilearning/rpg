@@ -6,9 +6,9 @@ En este proyecto vas a diseñar y programar tu propio juego de laberinto RPG. El
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Escribe `go` y después una dirección (north, east, south or west) para moverte en el mundo (por ejemplo `go north`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Escribe `get` para coger los objetos que puedes ver (por ejemplo `get key`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -32,15 +32,15 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 ### Hardware
 
-+ A computer capable of running Python
++ Un ordenador capaz de ejecutar Python
 
 ### Software
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 ([online](https://trinket.io/){:target="_blank"} o [offline](https://www.python.org/downloads/){:target="_blank"})
 
 ### Descargas
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+El proyecto de iniciación puede encontrarse [aquí](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
