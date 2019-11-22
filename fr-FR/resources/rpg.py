@@ -61,9 +61,9 @@ while True:
 
   #si il tape 'aller' en premier
   if move[0] == 'aller':
-    #vérifie qu'ils sont autorisé peu importe où ils souhaitent aller
+    #vérifie qu'ils sont autorisés peu importe où ils souhaitent aller
     if move[1] in rooms[currentRoom]:
-      #définit la pièce actuelle à une autre pièce
+      #définis la pièce actuelle à une autre pièce
       currentRoom = rooms[currentRoom][move[1]]
     #il n'y a pas de porte (lier) à une autre pièce
     else:
@@ -75,11 +75,11 @@ while True:
     if "objet" in rooms[currentRoom] and move[1] in rooms[currentRoom]['objet']:
       #ajoute l'objet à leur inventaire
       inventaire += [move[1]]
-      #affiche un message d'aide
+      #affiche un message utile
       print(move[1] + ' obtenue!')
       #supprime l'objet de la pièce
       del rooms[currentRoom]['objet']
-    #au sinon, si l'objet n'est pas là
+    #sinon, si l'objet n'est pas là
     else:
       #leur indiquer qu'ils ne peuvent pas l'avoir
       print('Vous\ne pouvez pas l avoir ' + move[1] + '!')
