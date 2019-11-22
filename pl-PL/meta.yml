@@ -7,18 +7,18 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Zaprojektuj i zakoduj swoją własną grę labiryntową RPG.
+description: Zaprojektuj i zakoduj swoją własną labiryntową grę RPG.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
-site_areas: projekty
+site_areas: projects
 hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introduction'
+    title: 'Wprowadzenie'
   - 
     title: Dodawanie nowych pokoi
   - 
@@ -35,7 +35,7 @@ steps:
     title: 'Wyzwanie: dodawanie kolejnych potworów'
     challenge: true
   - 
-    title: Wygrywając grę
+    title: Wygranie gry
   - 
-    title: 'Wyzwanie: Stwórz własną grę'
+    title: 'Wyzwanie: Napisz swoją własną grę'
     challenge: true
