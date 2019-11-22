@@ -6,7 +6,7 @@
 
 **Offline**: open the [početni projekt](http://rpf.io/p/hr-HR/rpg-go){:target="_blank"} u offline editoru. --- /task ---
 
---- task --- --- Ovo je vrlo jednostavna RPG igra koja se sastoji od samo dvije prostorije. Ispod se nalazi nacrt igre:
+--- task --- Ovo je vrlo jednostavna RPG igra koja se sastoji od samo dvije prostorije. Ispod se nalazi nacrt igre:
 
 ![screenshot](images/rpg-map1.png)
 
@@ -14,11 +14,11 @@ Upiši `idi jug` za pomicanje iz hodnika u kuhinju, a zatim `idi sjever` za povr
 
 ![screenshot](images/rpg-controls.png) --- /task ---
 
---- task --- --- Što se dogodi kada upišeš smjer u kojem ne možeš ići? Upiši `idi zapad` dok si u hodniku i dobit ćeš simpatičnu poruku o grešci.
+--- task --- Što se dogodi kada upišeš smjer u kojem ne možeš ići? Upiši `idi zapad` dok si u hodniku i dobit ćeš simpatičnu poruku o grešci.
 
 ![screenshot](images/rpg-error.png) --- /task ---
 
---- task --- --- Pronađi varijablu `prostorije` i vidjet ćeš da je nacrt kodiran u obliku rječnika prostorija:
+--- task --- Pronađi varijablu `prostorije` i vidjet ćeš da je nacrt kodiran u obliku rječnika prostorija:
 
 --- code ---
 ---
@@ -44,7 +44,7 @@ prostorije = {
 Svaka prostorija je jedan rječnik, a prostorije su međusobno povezane smjerovima.  
 --- /task ---
 
---- task --- --- Dodajmo istočno od hodnika blagovaonicu.
+--- task --- Dodajmo istočno od hodnika blagovaonicu.
 
 ![screenshot](images/rpg-dining.png)
 
@@ -80,7 +80,7 @@ prostorije = {
 
 --- /code --- --- /task ---
 
---- task --- --- Isprobaj igru sad kad si dodao blagovaonicu:
+--- task --- Isprobaj igru sad kad si dodao blagovaonicu:
 
 ![snimka zaslona](images/rpg-dining-test.png)
 
