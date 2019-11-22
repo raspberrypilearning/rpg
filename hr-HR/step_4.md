@@ -9,8 +9,8 @@ Ne zaboravi staviti zarez nakon linije iznad novogpredmeta, ili program neće ra
 --- code ---
 ---
 language: python
+line_highlights: 6-7
 ---
-## line_highlights: 6-7
 
 # rječnik koji povezuje prostorije jednu s drugom
 

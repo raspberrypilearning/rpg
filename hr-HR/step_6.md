@@ -39,8 +39,8 @@ prostorije = {
 --- code ---
 ---
 language: python
+line_highlights: 6-9
 ---
-## line_highlights: 6-9
 
         #u suprotnom, ako predmet nije tu za nabaviti
         else:

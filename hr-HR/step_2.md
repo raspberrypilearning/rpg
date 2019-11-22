@@ -55,8 +55,8 @@ Trebate dodati treću prostoriju, naziva `blagovaonica`, i vezu na hodnik (na za
 --- code ---
 ---
 language: python
+line_highlights: 5-6,11-15
 ---
-## line_highlights: 5-6,11-15
 
 # rječnik koji povezuje prostorije jednu s drugom
 

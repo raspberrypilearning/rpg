@@ -11,8 +11,8 @@ Dajmo tvom igraču nekakvu misiju koju mora izvršiti kako bi pobijedio u igri.
 --- code ---
 ---
 language: python
+line_highlights: 16-17,18-22
 ---
-## line_highlights: 16-17,18-22
 
 # rječnik koji povezuje prostorije jednu s drugom
 
@@ -48,8 +48,8 @@ prostorije = {
 --- code ---
 ---
 language: python
+line_highlights: 3-4
 ---
-## line_highlights: 3-4
 
             'Dining Room' : {
                 'west' : 'Hall',
@@ -65,8 +65,8 @@ language: python
 --- code ---
 ---
 language: python
+line_highlights: 6-9
 ---
-## line_highlights: 6-9
 
 # igrač gubi igru ako uđe u prostoriju sa čudovištem
 
@@ -89,8 +89,8 @@ Ako tvoja kuća ima više od četiri prostorije, možda ćeš, u kôdu iznad, mo
 --- code ---
 ---
 language: python
+line_highlights: 7-8
 ---
-## line_highlights: 7-8
 
 def prikaziUpute(): #ispiši glavni izbornik i naredbe print('''
 
