@@ -22,7 +22,7 @@ Upiši `idi jug` za pomicanje iz hodnika u kuhinju, a zatim `idi sjever` za povr
 
 --- code ---
 ---
-## language: python
+language: python
 ---
 # rječnik koji povezuje prostorije jednu s drugom
 
@@ -78,7 +78,8 @@ prostorije = {
         }
     
 
---- /code --- --- /task ---
+--- /code --- 
+--- /task ---
 
 --- task --- Isprobaj igru sad kad si dodao blagovaonicu:
 
