@@ -1,6 +1,6 @@
 ## Ajoute des objets à collecter
 
-Laissons les objets dans les pièces pour que le joueur collecte au fur et à mesure qu'il avance dans le labyrinthe.
+Laissons les objets dans les pièces pour que le joueur les collecte au fur et à mesure qu'il avance dans le labyrinthe.
 
 \--- task \--- Ajouter un objet dans une pièce est facile, tu peux simplement l'ajouter au dictionnaire de pièce. Mettons une clé dans le hall.
 
@@ -37,6 +37,6 @@ rooms = {
 
 \--- /task \---
 
-\--- task \--- si tu exécutes ton jeu après avoir ajouté le code du dessus, tu peux maintenant voir une clé dans le hall, et tu peux même le ramasser (en tapant `prendre clé`) qui l'ajoute à ton inventaire!
+\--- task \--- si tu exécutes ton jeu après avoir ajouté le code du dessus, tu peux maintenant voir une clé dans le hall, et tu peux même la ramasser (en tapant `prendre clé`) qui l'ajoute à ton inventaire!
 
 ![capture d'écran](images/rpg-key-test.png) \--- /task \---
