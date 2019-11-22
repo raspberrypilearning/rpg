@@ -1,122 +1,122 @@
 #!/bin/python3
 
-def showInstructions():
-    #print a main menu and the commands
+def prikaziUpute():
+    #ispis glavnog izbornika i naredbi
     print('''
-RPG Game
+RPG Igra
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+Otiđi do vrta s ključem i napitkom
+Izbjegni čudovišta!
 
-You are getting tired, each time you move you loose 1 health point. 
+Postaješ umoran, svaki put kad se pomakneš izgubiš 1 točku zdravlja. 
 
-Commands:
+Naredbe:
   go [direction]
   get [item]
 ''')
 
-def showStatus():
-  #print the player's current status
+def prikaziStatus():
+  #ispis igračevog trenutnog statusa
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print(name + ' je u ' + currentRoom)
+  print("Zdravlje : " + str(health))
+  #ispis trenutnog stanja inventara
+  print('Inventar : ' + str(inventar))
+  #ispis predmeta ako postoji
+  if "predmet" in prostorije[currentRoom]:
+    print('Vidiš ' + rooms[currentRoom]['predmet'])
   print("---------------------------")
 
-# setup the game
-name = None
-health = 5
+# podešavanje igre
+name = Prazno
+zdravlje = 5
 currentRoom = 'Hall'
 inventory = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# VAŠ KOD DOLAZI OVDJE #-#
+# Učitaj podatke iz datoteke
 
-#a dictionary linking a room to other room positions
-rooms = {
+#rječnik koji povezuje lokaciju prostorije jednu s drugom
+prostorije = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            'Hodnik' : { 'jug' : 'Kuhinja',
+                  'istok'  : 'Blagovaonica',
+                  'predmet'  : 'ključ'
                 },
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            'Kuhinja' : { 'sjever' : 'Hodnik',
+                  'predmet'  : 'čudovište'
                 },
 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            'Blagovaonica' : { 'zapad'  : 'Hodnik',
+                  'jug' : 'Vrt',
+                  'predmet'  : 'napitak'
 
                 },
 
-            'Garden' : { 'north' : 'Dining Room' }
+            'Vrt' : { 'north' : 'Dining Room' }
 
          }
 
-# ask the player their name
-if name is None:
-  name = input("What is your name Adventurer? ")
-  showInstructions()
+# pitaj igrača njegovo ime
+ako je ime None:
+  name = input("Koja je tvoja avantura? ")
+  prikaziUpute()
 
-#loop forever
+#petlja se neprestano ponavlja
 while True:
 
-  showStatus()
+  prikaziStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':
-    move = input('>')
+  #igračev sljedeći 'potez'
+  #.split() razdvaja u listu tipa array
+  #na primjer, upisivanjem 'idi istok' dobit ćemo listu:
+  #['idi','istok']
+  pomakni = ''
+  while pomakni == '':
+    pomakni = input('>')
 
-  move = move.lower().split()
+  pomakni = pomakni.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    health = health - 1
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #ako se prvo upiše 'idi'
+  if pomakni[0] == 'idi':
+    zdravlje = zdravlje - 1
+    #provjeri da smije ići gdje želi
+    if pomakni[1] in prostorije[currentRoom]:
+      #postavi trenutnu prostoriju na novu prostoriju
+      trenutnaProstorija = prostorije[currentRoom][pomakni[1]]
+    #ne postoje vrata (link) koja vode u novu prostoriju
     else:
-      print('You can\'t go that way!')
+      print('Ne možeš ići tuda!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #ako se prvo upiše 'uzmi'
+  if pomakni[0] == 'uzmi' :
+    #ako se u prostoriji nalazi predmet i igrač ga želi uzeti
+    if "predmet" in prostorije[currentRoom] and pomakni[1] in prostorije[currentRoom]['predmet']:
+      #dodaj predmet u inventar
+      inventar += [pomakni[1]]
+      #prikaži poruku za pomoć igraču
+      print(pomakni[1] + ' dohvaćen!')
+      #obriši predmet iz prostorije
+      del prostorije[currentRoom]['predmet']
+    #inače, ako ne postoji predmet koji igrač želi uzeti
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #reci igraču da ne može uzeti predmet
+      print('Ne možeš uzeti ' + pomakni[1] + '!')
 
-  #player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  #igrač gubi igru ako uđe u prostoriju sa čudovištem
+  if 'predmet' in prostorije[currentRoom] and 'čudovište' in prostorije[currentRoom]['predmet']:
+    print('Čudovište te uhvatilo... IGRA JE GOTOVA!')
     break
 
-  if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+  if zdravlje == 0:
+    print('Srušili ste se od umora... GAME OVER!')
 
-  #player wins if they get to the garden with a key and a potion
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  #igrač pobjeđuje ako dođe do vrta s ključem i čarobnim napitkom
+  if trenutnaProstorija == 'Vrt' and 'ključ' in inventar and 'napitak' in inventar:
+    print('Pobjegao/la si iz kuće... POBIJEDIO/LA SI!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# VAŠ KOD DOLAZI OVDJE #-#
+  # Spremite podatke u datoteku
