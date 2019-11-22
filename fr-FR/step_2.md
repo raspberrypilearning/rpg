@@ -18,7 +18,7 @@ Tu peux taper `aller sud` pour te déplacer du hall à la cuisine, et ensuite `a
 
 ![capture d'écran](images/rpg-error.png) \--- /task \---
 
-\--- task \--- si tu trouves la variable `rooms` , tu peux voir que le plan est codée en tant que dictionnaire des pièces:
+\--- task \--- si tu trouves la variable `rooms` , tu peux voir que le plan est codé en tant que dictionnaire des pièces:
 
 ## \--- code \---
 
@@ -48,9 +48,9 @@ Chaque pièce est un dictionnaire, et les pièces sont liées ensemble utilisant
 
 ![capture d'écran](images/rpg-dining.png)
 
-Tu dois ajouter une troisième pièce, appelée la `salle a manger`, et la lier au hall (à l'ouest). Tu as besoin également d'ajouter des données au hall, de sorte que tu puisse te déplacer vers la salle à manger à l'est.
+Tu dois ajouter une troisième pièce, appelée la `salle a manger`, et la lier au hall (à l'ouest). Tu as besoin également d'ajouter des données au hall, de sorte que tu puisses te déplacer vers la salle à manger à l'est.
 
-**N'oublies pas que tu auras besoin également d'ajouter des virgules aux lignes devant ton nouveau code.**
+**N'oublie pas que tu auras besoin également d'ajouter des virgules aux lignes devant ton nouveau code.**
 
 ## \--- code \---
 
