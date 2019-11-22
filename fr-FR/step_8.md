@@ -76,7 +76,7 @@ if 'objet' in rooms\[currentRoom] and 'monstre' in rooms[currentRoom\]\['objet'\
 
 if currentRoom == 'Jardin' and 'clé' in inventaire and 'potion' in inventaire: print('Tu t es échappé de la maison... TU GAGNES!') break \--- /code \---
 
-Note que ce code est indenté, met le dans une ligne avec le code ci-dessus. Ce code signifie que le message `Tu t es échappé de la maison...TU GAGNES!` est affiché si le joueur est dans la pièce 4 (le jardin) et si la clé et la potion sont dans l'inventaire.
+Note que ce code est indenté, mets le dans une ligne avec le code ci-dessus. Ce code signifie que le message `Tu t es échappé de la maison...TU GAGNES!` est affiché si le joueur est dans la pièce 4 (le jardin) et si la clé et la potion sont dans l'inventaire.
 
 Si tu as plus de 4 pièces, tu devras utiliser un numéro de pièce différent pour ton jardin dans le code ci-dessus. \--- /task \---
 
@@ -96,7 +96,7 @@ def showInstructions(): #affiche un menu principal et les commandes print('''
 
 # Jeu RPG
 
-Atteint le jardin avec une clé et une potion Évite les monstres!
+Atteins le jardin avec une clé et une potion Évite les monstres!
 
 Commandes: aller [direction] prendre [objet] ''') \--- /code \---
 
