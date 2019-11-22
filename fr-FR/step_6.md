@@ -1,6 +1,6 @@
 ## Ajoute des adversaires
 
-Ce jeu est trop facile! Ajoutons des adversaires à quelques une des pièces que le joueur doit éviter.
+Ce jeu est trop facile! Ajoutons des adversaires à quelques unes des pièces que le joueur doit éviter.
 
 \--- task \--- Ajouter un adversaire à une pièce est aussi facile que d'ajouter tout autre objet. Ajoutons un monstre en colère à la cuisine:
 
@@ -34,7 +34,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Tu dois t'assurer que le jeu se termine si le joueur entre dans une pièce avec un monstre à l'intérieur. Tu peux faire çà avec le code suivant, dont tu devras ajouter à la fin du jeu:
+\--- task \--- Tu dois t'assurer que le jeu se termine si le joueur entre dans une pièce avec un monstre à l'intérieur. Tu peux faire çà avec le code suivant, que tu devras ajouter à la fin du jeu:
 
 ## \--- code \---
 
@@ -42,9 +42,9 @@ language: python
 
 ## line_highlights: 6-9
 
-        #au sinon, si l'objet n'est pas là à obtenir
+        #sinon, si l'objet n'est pas là à obtenir
         else:
-            #dit leur qu'ils ne peuvent pas l'obtenir
+            #dis leur qu'ils ne peuvent pas l'obtenir
             print('Tu ne peux pas l avoir' + move[1] + '!')
     
     #le joueur perd s'ils entrent dans une pièce avec un monstre
@@ -55,7 +55,7 @@ language: python
 
 \--- /code \---
 
-Ce code vérifie s'il y a un objet dans la pièce, et si l'objet est un monstre. Note que ce code est indenté, met le dans une ligne avec le code ci-dessus. Cela signifie que le jeu vérifiera le monstre à chaque fois que le joueur se déplace dans une nouvelle pièce. \--- /task \---
+Ce code vérifie s'il y a un objet dans la pièce, et si l'objet est un monstre. Note que ce code est indenté, mets le dans une ligne avec le code ci-dessus. Cela signifie que le jeu vérifiera le monstre à chaque fois que le joueur se déplace dans une nouvelle pièce. \--- /task \---
 
 \--- task \--- Teste ton code en allant à la cuisine, qui contient maintenant un monstre.
 
