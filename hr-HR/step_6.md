@@ -7,11 +7,10 @@ Ova igra je prejednostavna! Dodajmo u neke od prostorija neprijatelje koje će i
 --- code ---
 ---
 language: python
+line_highlights: 11-12
 ---
-## line_highlights: 11-12
 
 # rječnik koji povezuje prostorije jednu s drugom
-
 prostorije = {
 
             'Hall' : {

@@ -59,7 +59,6 @@ line_highlights: 5-6,11-15
 ---
 
 # rječnik koji povezuje prostorije jednu s drugom
-
 prostorije = {
 
             'Hall' : {

@@ -15,7 +15,6 @@ line_highlights: 16-17,18-22
 ---
 
 # rječnik koji povezuje prostorije jednu s drugom
-
 prostorije = {
 
             'Hall' : {
@@ -69,12 +68,13 @@ line_highlights: 6-9
 ---
 
 # igrač gubi igru ako uđe u prostoriju sa čudovištem
-
-if 'predmet' in rooms\[currentRoom] and 'čudovište' in rooms[currentRoom\]\['predmet'\]: print('Čudovište te uhvatilo... IGRA JE GOTOVA!') break
+if 'predmet' in rooms\[currentRoom] and 'čudovište' in rooms[currentRoom\]\['predmet'\]: 
+    print('Čudovište te uhvatilo... IGRA JE GOTOVA!') break
 
 # igrač pobjeđuje ako dođe do vrta s ključem i čarobnim napitkom
-
-if currentRoom == 'Vrt' i 'ključ' u inventaru i 'napitak' u inventaru: print('Pobjegao si iz kuće... POBJEDIO/LA SI!') break --- /code ---
+if currentRoom == 'Vrt' i 'ključ' u inventaru i 'napitak' u inventaru: 
+    print('Pobjegao si iz kuće... POBJEDIO/LA SI!') 
+    break --- /code ---
 
 Pobrini se da je kôd uvučen, odnosno u razini sa kôdom iznad njega. Ovaj kôd ispisat će poruku `Pobjegao/la si iz kuće...POBIJEDIO/LA SI!` ako se igrač nalazi prostoriji 4 (vrt) i u svom inventaru ima ključ i čarobni napitak.
 
@@ -92,13 +92,20 @@ language: python
 line_highlights: 7-8
 ---
 
-def prikaziUpute(): #ispiši glavni izbornik i naredbe print('''
+def prikaziUpute(): 
+    # ispiši glavni izbornik i naredbe 
+    print('''
 
-# RPG Igra
+RPG igra labirinta
+========
 
-Doši do Vrta sa ključem i čudotvornim napitkom Izbjegavajte čudovišta!
+Otiđi do vrta s ključem i čarobnim napitkom
+Izbjegni čudovišta!
 
-Commands: go [direction] get [item] ''') --- /code ---
+Naredbe:
+idi [smjer]
+uzmi [predmet] 
+''') --- /code ---
 
 Dodaj upute koje govore igraču koje predmete treba sakupiti i što treba izbjegavati! --- /task ---
 
