@@ -2,19 +2,19 @@
 
 U prostorije ćemo postaviti predmete koje će igrač sakupljati dok se bude kretao labirintom.
 
-\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+\--- task \--- Dodavanje predmeta u prostoriju je lako - jednostavno ga dodaj u rječnik prostorije u kojoj želiš da se pojavi. Pokušajmo staviti ključ u hodnik.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+Ne zaboravi staviti zarez nakon linije iznad novogpredmeta, ili program neće raditi!
 
 ## \--- code \---
 
-language: python
+jezik: python
 
 ## line_highlights: 6-7
 
-# a dictionary linking a room to other rooms
+# rječnik koji povezuje prostorije jednu s drugom
 
-rooms = {
+prostorije = {
 
             'Hall' : {
                 'south' : 'Kitchen',
@@ -37,6 +37,6 @@ rooms = {
 
 \--- /task \---
 
-\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+\--- task \--- Pokreneš li sada igru, vidjet ćeš ključ u hodniku kojeg možeš čak i pokupiti (upisivanjem `uzmi ključ`). Tako ćeš ga dodati u svoj inventar!
 
 ![screenshot](images/rpg-key-test.png) \--- /task \---
