@@ -17,7 +17,7 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: 'RPG'
+  - title: Uvod
   - title: Dodavanje novih prostorija
   - title: 'Izazov: Dodaj nove prostorije'
     challenge: true
