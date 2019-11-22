@@ -6,10 +6,10 @@ def showInstructions():
 Jeu RPG
 ========
 
-Atteint le Jardin avec une clé et la potion
+Atteins le Jardin avec une clé et la potion
 Évite les montres!
 
-You are getting tired, each time you move you loose 1 health point. 
+Tu es fatigué, chaque fois que tu te déplaces, tu perds 1 point de santé. 
 
 Commandes:
   aller [direction]
@@ -19,8 +19,8 @@ Commandes:
 def showStatus():
   #affiche l'état actuel du joueur
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
+  print(name + ' est dans le/la ' + currentRoom)
+  print("Santé : " + str(health))
   #affiche l'inventaire actuel
   print("Inventaire : " + str(inventaire))
   #affiche un objet s'il y en a un
@@ -28,16 +28,16 @@ def showStatus():
     print('Tu vois un/une ' + rooms[currentRoom]['objet'])
   print("---------------------------")
 
-# setup the game
+#configure le jeu
 name = None
 health = 5
 currentRoom = 'Hall'
 inventory = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# TON CODE VIENT ICI #-#
+#Charge les donnée du fichier
 
-#un dictionnaire liant une pièce d'autres positions de pièces
+#un dictionnaire liant une pièce aux autres positions de pièces
 rooms = {
 
             'Hall' : { 'sud' : 'Cuisine',
@@ -59,9 +59,9 @@ rooms = {
 
          }
 
-# ask the player their name
+#demande au joueur leur nom
 if name is None:
-  name = input("What is your name Adventurer? ")
+  name = input("Quel est ton nom d'Adventurier? ")
   showInstructions()
 
 #loop forever
@@ -70,7 +70,7 @@ while True:
   showStatus()
 
   #obtenir la prochaine action du joueur
-  #.split() le diviste dans un tableau de liste
+  #.split() le divise dans un tableau de liste
   #ex en tapant 'aller est' donnerais la liste:
   #['aller','est']
   move = ''
@@ -82,11 +82,11 @@ while True:
   #s'ils tapent 'aller' en premier
   if move[0] == 'aller':
     health = health - 1
-    #vérifie qu'ils soient autorisé peu importe où ils souhaitent aller
+    #vérifie qu'ils soient autorisés peu importe où ils souhaitent aller
     if move[1] in rooms[currentRoom]:
-      #définit la pièce actuel à une autre pièce
+      #définis la pièce actuel à une autre pièce
       currentRoom = rooms[currentRoom][move[1]]
-    #il n'y a pas d'autre porte (lier) à une autre pièce
+    #il n'y a pas de porte (lier) vers une autre pièce
     else:
       print('Tu ne peux pas aller par là!')
 
@@ -96,11 +96,11 @@ while True:
     if 'objet' in rooms[currentRoom] and move[1] in rooms[currentRoom]['objet']:
       #ajoute l'objet à leur inventaire
       inventaire += [move[1]]
-      #affiche un message d'aide
+      #affiche un message utile
       print(move[1] + ' obtenue!')
       #supprime l'objet de la pièce
       del rooms[currentRoom]['objet']
-    #au sinon, si l'objet n'est pas là
+    #sinon, si l'objet n'est pas là
     else:
       #leur indiquer qu'ils ne peuvent pas l'avoir
       print('Vous\ne pouvez pas l avoir ' + move[1] + '!')
@@ -111,12 +111,12 @@ while True:
     break
 
   if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+    print('Tu t effondres d'épuisement... GAME OVER!')
 
   #le joueur gagne s'il atteint le jardin avec la clé et la potion
   if currentRoom == 'Jardin' and 'clé' in inventaire and 'potion' in inventaire:
     print('Tu t es échappé de la maison... TU GAGNES!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# TON CODE SE PLACE ICI #-#
+  #sauve les données du jeu dans le fichier
