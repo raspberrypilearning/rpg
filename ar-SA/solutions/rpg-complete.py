@@ -6,21 +6,21 @@ def showInstructions():
 لعبة RPG (لعبة تقمُّص الأدوار Role-Play Game)
 ========
 
-إذهب إلى الحديقة مع مفتاح و جرعة
+إذهب إلى الحديقة ومعك مفتاح و جرعة
 تجنب الوحوش!
 
-You are getting tired, each time you move you loose 1 health point. 
+بدأت تصاب بالتعب، في كل مرة تتحرك ستفقد نقطة واحدة من الصحة. 
 
 الأوامر:
   اذهب [الاتجاهات]
   احصل على [جرعة]
 ''')
 
-def showStatus():
+showStatus():
   # اطبع حالة اللاعب الحالية
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
+  print(name + ' موجود في ' + currentRoom)
+  print("الصحة: " + str(health))
   # اطبع المخزون الحالي
   print("المخزون : " + str(inventory))
   # اطبع عنصر إذا كان هناك واحد
@@ -28,14 +28,14 @@ def showStatus():
     print('أنت ترى ' + rooms[currentRoom]['عنصر'])
   print("---------------------------")
 
-# setup the game
+# إعدادات اللعبة
 name = None
 health = 5
-currentRoom = 'Hall'
+currentRoom = 'الصالة'
 inventory = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# ضع أوامرك البرمجية هنا #-#
+# تحميل البيانات من الملف
 
 # قاموس يربط بين غرفة وأماكن الغرف الأخرى
 rooms = {
@@ -59,9 +59,9 @@ rooms = {
 
          }
 
-# ask the player their name
+# اسأل الاعب عن إسمة
 if name is None:
-  name = input("What is your name Adventurer? ")
+  name = input("ماهو اسمك أيها المغامر؟ ")
   showInstructions()
 
 # حَلَقَة تتكرر للأبد
@@ -86,13 +86,13 @@ while True:
     if move[1] in rooms[currentRoom]:
       # تعيين الغرفة الحالية للغرفة الجديدة
       currentRoom = rooms[currentRoom][move[1]]
-    # لا يوجد باب (رابط) بالغرفة الجديدة
+    # لا يوجد باب (رابط) للغرفة الجديدة
     else:
       print('لا يمكنك الذهاب من هذا الطريق!')
 
   # إذا كتبوا 'احصل على' أولاً
   if move[0] == 'احصل على' :
-    # إذا كانت الغرفة تحتوي على عنصر ، وكان العنصر هو الذي يريدون الحصول عليه
+    # إذا كانت الغرفة تحتوي على عنصر ، وكان هذا هو العنصر الذي يريدون الحصول عليه
     if 'عنصر' in rooms[currentRoom] and move[1] in rooms[currentRoom]['عنصر']:
       # أضف العنصر إلى مخزونهم
       inventory += [move[1]]
@@ -100,7 +100,7 @@ while True:
       print(move[1] + 'تم التحصيل!')
       # قم بإزالة العنصر من الغرفة
       del rooms[currentRoom]['عنصر']
-    # وإلا ، إذا لم يكن العنصر هناك للحصول عليه
+    # وإلا ، إذا لم يكن العنصر موجود للحصول عليه
     else:
       # أخبرهم أنهم لا يستطيعون الحصول عليه
       print('لا يمكنك الحصول على ' + move[1] + '!')
@@ -111,12 +111,12 @@ while True:
     break
 
   if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+    print('لقد انهرت من الانهاك... انتهت اللعبة!')
 
   #يربح اللاعب إذا وصل إلى الحديقة مع مفتاح وجرعة
   if currentRoom == 'الحديقة' and 'مفتاح' in inventory and 'جرعة' in inventory:
     print('لقد هربت من المنزل... لقد ربحت!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# ضع أوامرك البرمجية هنا #-#
+  # الآن قم بإضافة بيانات اللعبة إلى الملف
