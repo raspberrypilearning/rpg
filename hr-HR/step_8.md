@@ -2,21 +2,21 @@
 
 Dajmo tvom igraču nekakvu misiju koju mora izvršiti kako bi pobijedio u igri.
 
-\--- task \--- In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+\--- task \--- U ovoj će igri igrač pobijediti ako dođe do vrta i pobjegne iz kuće. Također sa sobom mora imati ključ, i čarobni napitak. Ispod se nalazi nacrt igre.
 
 ![screenshot](images/rpg-final-map.png) \--- /task \---
 
-\--- task \--- First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+\--- task \--- Prvo moraš dodati vrt južno od blagovaonice. Ne zaboravi dodati i vrata kako bi vrt bio povezan s drugim prostorijama u kući.
 
 ## \--- code \---
 
-language: python
+jezik: python
 
 ## line_highlights: 16-17,18-22
 
-# a dictionary linking a room to other rooms
+# rječnik koji povezuje prostorije jednu s drugom
 
-rooms = {
+prostorije = {
 
             'Hall' : {
                 'south' : 'Kitchen',
@@ -43,11 +43,11 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Add a potion to the dining room (or another room in your house).
+\--- task \--- Dodaj čarobni napitak u blagovaonicu (ili bilo koju drugu prostoriju u kući).
 
 ## \--- code \---
 
-language: python
+jezik: python
 
 ## line_highlights: 3-4
 
@@ -60,48 +60,48 @@ language: python
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+\--- task \--- Dodaj sljedeći kôd kojim ćeš omogućiti igraču da bude pobjednik ako dođe do vrta sa ključem i čarobnim napitkom:
 
 ## \--- code \---
 
-language: python
+jezik: python
 
 ## line_highlights: 6-9
 
-# player loses if they enter a room with a monster
+# igrač gubi igru ako uđe u prostoriju sa čudovištem
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'predmet' in rooms\[currentRoom] and 'čudovište' in rooms[currentRoom\]\['predmet'\]: print('Čudovište te uhvatilo... IGRA JE GOTOVA!') break
 
-# player wins is they get to the garden with the key and potion
+# igrač pobjeđuje ako dođe do vrta s ključem i čarobnim napitkom
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
+if currentRoom == 'Vrt' i 'ključ' u inventaru i 'napitak' u inventaru: print('Pobjegao si iz kuće... POBJEDIO/LA SI!') break \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+Pobrini se da je kôd uvučen, odnosno u razini sa kôdom iznad njega. Ovaj kôd ispisat će poruku `Pobjegao/la si iz kuće...POBIJEDIO/LA SI!` ako se igrač nalazi prostoriji 4 (vrt) i u svom inventaru ima ključ i čarobni napitak.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above. \--- /task \---
+Ako tvoja kuća ima više od četiri prostorije, možda ćeš, u kôdu iznad, morati upisati drugi naziv prostorije. \--- /task \---
 
-\--- task \--- Test your game to make sure the player can win!
+\--- task \--- Testiraj igru i provjeri može li tvoj igrač pobijediti!
 
 ![screenshot](images/rpg-win-test.png) \--- /task \---
 
-\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+\--- task \--- Konačno, dodajmo upute za igru kako bi igrač znao što treba raditi. Izmijeni funkciju `prikaziUpute()` tako da sadrži više informacija.
 
 ## \--- code \---
 
-language: python
+jezik: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def prikaziUpute(): #ispiši glavni izbornik i naredbe print('''
 
-# RPG Game
+# RPG Igra
 
-Get to the Garden with a key and a potion Avoid the monsters!
+Doši do Vrta sa ključem i čudotvornim napitkom Izbjegavajte čudovišta!
 
 Commands: go [direction] get [item] ''') \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid! \--- /task \---
+Dodaj upute koje govore igraču koje predmete treba sakupiti i što treba izbjegavati! \--- /task \---
 
-\--- task \--- Test your game and you should see your new instructions.
+\--- task \--- Testiraj igru i tvoje nove upute bi se trebale prikazati.
 
 ![screenshot](images/rpg-instructions-test.png) \--- /task \---
