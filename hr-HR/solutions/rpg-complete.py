@@ -3,57 +3,66 @@
 def prikaziUpute():
     #ispis glavnog izbornika i naredbi
     print('''
-RPG igra labirinta
+RPG Igra
 ========
 
-Otiđi do vrta s ključem i čarobnim napitkom
+Otiđi do vrta s ključem i napitkom
 Izbjegni čudovišta!
 
+Postaješ umoran, svaki put kad se pomakneš izgubiš 1 točku zdravlja. 
+
 Naredbe:
-  idi [smjer]
-  uzmi [predmet]
+  go [direction]
+  get [item]
 ''')
 
 def prikaziStatus():
   #ispis igračevog trenutnog statusa
   print('---------------------------')
-  print('Prostorija u kojoj se nalaziš je ' + trenutnaProstorija)
+  print(name + ' je u ' + currentRoom)
+  print("Zdravlje : " + str(health))
   #ispis trenutnog stanja inventara
-  print('Stanje inventara: ' + str(inventar))
-  #ispis predmeta (ako postoji)
-  if "predmet" in prostorije[trenutnaProstorija]:
-    print('Vidiš ' + prostorije[trenutnaProstorija]['predmet'])
+  print('Inventar : ' + str(inventar))
+  #ispis predmeta ako postoji
+  if "predmet" in prostorije[currentRoom]:
+    print('Vidiš ' + rooms[currentRoom]['predmet'])
   print("---------------------------")
 
-#inventar koji je na početku prazan
-inventar = []
+# podešavanje igre
+name = Prazno
+zdravlje = 5
+currentRoom = 'Hall'
+inventory = []
 
-#rječnik koji povezuje prostorije jednu s drugom
+#-# VAŠ KOD DOLAZI OVDJE #-#
+# Učitaj podatke iz datoteke
+
+#rječnik koji povezuje lokaciju prostorije jednu s drugom
 prostorije = {
 
             'Hodnik' : { 'jug' : 'Kuhinja',
                   'istok'  : 'Blagovaonica',
                   'predmet'  : 'ključ'
-                },        
+                },
 
             'Kuhinja' : { 'sjever' : 'Hodnik',
                   'predmet'  : 'čudovište'
                 },
-                
+
             'Blagovaonica' : { 'zapad'  : 'Hodnik',
                   'jug' : 'Vrt',
                   'predmet'  : 'napitak'
-              
+
                 },
-                
-            'Vrt' : { 'sjever' : 'Blagovaonica' }
+
+            'Vrt' : { 'north' : 'Dining Room' }
 
          }
 
-#igrač započinje igru u Hodniku
-trenutnaProstorija = 'Hodnik'
-
-prikaziUpute()
+# pitaj igrača njegovo ime
+ako je ime None:
+  name = input("Koja je tvoja avantura? ")
+  prikaziUpute()
 
 #petlja se neprestano ponavlja
 while True:
@@ -61,47 +70,53 @@ while True:
   prikaziStatus()
 
   #igračev sljedeći 'potez'
-  #naredba .split() razdvaja u listu tipa array
+  #.split() razdvaja u listu tipa array
   #na primjer, upisivanjem 'idi istok' dobit ćemo listu:
   #['idi','istok']
   pomakni = ''
-  while pomakni == '':  
+  while pomakni == '':
     pomakni = input('>')
-    
+
   pomakni = pomakni.lower().split()
 
   #ako se prvo upiše 'idi'
   if pomakni[0] == 'idi':
+    zdravlje = zdravlje - 1
     #provjeri da smije ići gdje želi
-    if pomakni[1] in prostorije[trenutnaProstorija]:
+    if pomakni[1] in prostorije[currentRoom]:
       #postavi trenutnu prostoriju na novu prostoriju
-      trenutnaProstorija = prostorije[trenutnaProstorija][pomakni[1]]
-    #ne postoje vrata koja vode u novu prostoriju
+      trenutnaProstorija = prostorije[currentRoom][pomakni[1]]
+    #ne postoje vrata (link) koja vode u novu prostoriju
     else:
       print('Ne možeš ići tuda!')
 
   #ako se prvo upiše 'uzmi'
   if pomakni[0] == 'uzmi' :
     #ako se u prostoriji nalazi predmet i igrač ga želi uzeti
-    if "predmet" in prostorije[trenutnaProstorija] and pomakni[1] in prostorije[trenutnaProstorija]['predmet']:
+    if "predmet" in prostorije[currentRoom] and pomakni[1] in prostorije[currentRoom]['predmet']:
       #dodaj predmet u inventar
       inventar += [pomakni[1]]
       #prikaži poruku za pomoć igraču
       print(pomakni[1] + ' dohvaćen!')
       #obriši predmet iz prostorije
-      del prostorije[trenutnaProstorija]['predmet']
+      del prostorije[currentRoom]['predmet']
     #inače, ako ne postoji predmet koji igrač želi uzeti
     else:
       #reci igraču da ne može uzeti predmet
       print('Ne možeš uzeti ' + pomakni[1] + '!')
 
   #igrač gubi igru ako uđe u prostoriju sa čudovištem
-  if 'predmet' in prostorije[trenutnaProstorija] and 'čudovište' in prostorije[trenutnaProstorija]['predmet']:
+  if 'predmet' in prostorije[currentRoom] and 'čudovište' in prostorije[currentRoom]['predmet']:
     print('Čudovište te uhvatilo... IGRA JE GOTOVA!')
     break
+
+  if zdravlje == 0:
+    print('Srušili ste se od umora... GAME OVER!')
 
   #igrač pobjeđuje ako dođe do vrta s ključem i čarobnim napitkom
   if trenutnaProstorija == 'Vrt' and 'ključ' in inventar and 'napitak' in inventar:
     print('Pobjegao/la si iz kuće... POBIJEDIO/LA SI!')
     break
-  
+
+  #-# VAŠ KOD DOLAZI OVDJE #-#
+  # Spremite podatke u datoteku
