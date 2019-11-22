@@ -2,11 +2,11 @@
 
 لنعطي لاعبك مهمة، حيث تحتاج أن تتم للفوز باللعبة.
 
-\--- task \--- In this game, the player wins by getting to the garden and escaping the house. يجب عليهم أيضاً الحصول على المفتاح معهم، والجرعة السحرية. ها ذي خريطة اللعبة.
+\--- task \--- في هذه اللعبة، يفوز اللاعب عن طريق الوصول إلى الحديقة والهروب من المنزل. يجب عليهم أيضاً الحصول على المفتاح معهم، والجرعة السحرية. ها ذي خريطة اللعبة.
 
 ![لقطة الشاشة](images/rpg-final-map.png) \---/task--
 
-\--- task \--- First, you need to add a garden to the south of the dining room. تذكر أن تضيف أبواباً ، لتربط بقية الغرف في المنزل.
+\--- task \--- أولاً: تحتاج أن تضيف حديقة إلى الجنوب من غرفة الطعام. تذكر أن تضيف أبواباً ، لتربط بقية الغرف في المنزل.
 
 ## \--- code \---
 
@@ -14,7 +14,7 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# a dictionary linking a room to other rooms
+# قاموس يربط بين غرفة والغرف الأخرى
 
 rooms = {
 
@@ -43,7 +43,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Add a potion to the dining room (or another room in your house).
+\--- task \--- أضف جرعة إلى غرفة الطعام (أو أي غرفة أخرى في منزلك).
 
 ## \--- code \---
 
@@ -60,7 +60,7 @@ language: python
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+\--- task \--- أضف هذا الكود لتسمح للاعب بالفوز في اللعبة عندما يصل إلى الحديقة مع المفتاح والجرعة:
 
 ## \--- code \---
 
@@ -70,21 +70,21 @@ language: python
 
 # اللاعب يخسر إذا دخل غرفةً بها وحش
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('الوحش قضي عليك... إنتهت اللعبة!') break
 
-# player wins is they get to the garden with the key and potion
+# يربح اللاعب إذا وصل إلى الحديقة مع المفتاح وجرعة
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('لقد تمكنت من الهروب من المنزل... لقد ربحت!') break \--- /code \---
 
 تأكد من أن الكود مسبق بمسافة بادئة، في السطر مع الكود أعلاه. هذا الكود يعني أن رسالة `لقد هربت من المنزل .. لقد ربحت!` قد عُرِضَت إذا كان اللاعب في الغرفة 4 (الحديقة) و إذا كان المفتاح و الجرعة في المخزون.
 
 إذا كان لديك أكثر من ٤ غرف، قد تضطر لاستخدام رقم غرفة مختلف لحديقتك في الكود أعلاه. \--- /task \---
 
-\--- task \--- Test your game to make sure the player can win!
+\--- task \--- قم بتجربة لعبتك للتأكد من أن اللاعب يستطيع الفوز!
 
 ![لقطة الشاشة](images/rpg-win-test.png) \--- /task \---
 
-\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. حرَِر الدالَّة `showInstructions()` لإضافة المزيد من المعلومات.
+\--- task \--- أخيراً، لنقم بإضافة بعض التعليمات للعبتك، حتى يتمكن اللاعب من معرفة ما يجب فعله. حرَِر الدالَّة `showInstructions()` لإضافة المزيد من المعلومات.
 
 ## \--- code \---
 
@@ -92,16 +92,16 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def showInstructions(): #طباعة القائمة الرئيسية والأوامر print('''
 
 # لعبة RPG (لعبة تقمُّص الأدوار Role-Play Game)
 
-Get to the Garden with a key and a potion Avoid the monsters!
+إذهب للحديقة مع المفتاح وجرعة تفادى الوحوش!
 
 Commands: go [direction] get [item] ''') \--- /code \---
 
 ستحتاج لإضافة التعليمات لتخبر المستخدم ما العناصر التي يحتاج لجمعها، وماذا يتجنب! \--- /task \---
 
-\--- task \--- Test your game and you should see your new instructions.
+\--- task \--- قم بتجربة لعبتك حيث يجب أن ترى تعليماتك الجديدة.
 
 ![لقطة الشاشة](images/rpg-instructions-test.png) \--- /task \---
