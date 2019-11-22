@@ -69,7 +69,8 @@ line_highlights: 6-9
 
 # igrač gubi igru ako uđe u prostoriju sa čudovištem
 if 'predmet' in rooms\[currentRoom] and 'čudovište' in rooms[currentRoom\]\['predmet'\]: 
-    print('Čudovište te uhvatilo... IGRA JE GOTOVA!') break
+    print('Čudovište te uhvatilo... IGRA JE GOTOVA!') 
+    break
 
 # igrač pobjeđuje ako dođe do vrta s ključem i čarobnim napitkom
 if currentRoom == 'Vrt' i 'ključ' u inventaru i 'napitak' u inventaru: 
@@ -95,7 +96,6 @@ line_highlights: 7-8
 def prikaziUpute(): 
     # ispiši glavni izbornik i naredbe 
     print('''
-
 RPG igra labirinta
 ========
 
