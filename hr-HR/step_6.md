@@ -2,17 +2,17 @@
 
 Ova igra je prejednostavna! Dodajmo u neke od prostorija neprijatelje koje će igrač izbjegavati.
 
-\--- task \--- Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+\--- task \--- Dodavanje neprijatelja u prostoriju je jednostavno kao i dodavanje bilo kojeg drugog predmeta. Dodajmo gladno čudovište u kuhinju:
 
 ## \--- code \---
 
-language: python
+jezik: python
 
 ## line_highlights: 11-12
 
-# a dictionary linking a room to other rooms
+# rječnik koji povezuje prostorije jednu s drugom
 
-rooms = {
+prostorije = {
 
             'Hall' : {
                 'south' : 'Kitchen',
@@ -34,29 +34,29 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+\--- task \--- Također se želiš pobrinuti da se igra završi ako igrač uđe u prostoriju u kojoj se nalazi čudovište. To možeš napraviti dodavanjem sljedećeg kôda na kraju igre:
 
 ## \--- code \---
 
-language: python
+jezik: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        #u suprotnom, ako predmet nije tu za nabaviti
         else:
             #tell them they can't get it
             print('Can\'t get' + move[1] + '!')
     
-    #player loses if they enter a room with a monster
+    #igrač gubi ako uđe u sobu s čudovištem
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('A monster has got you... GAME OVER!')
+        print('Čudovište te uhvatilo... IGRA JE GOTOVA!')
         break
     
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room. \--- /task \---
+Ovaj kôd provjerava postoji li neki predmet u prostoirji i ako postoji je li taj predmet čudovište. Primijeti da je kôd uvučen pa je na istoj razini kao i kôd iznad njega. To znači da će igra provjeravati postoji li čudovište u prostoriji svaki put kada igrač uđe u novu prostoriju. \--- /task \---
 
-\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+\--- task \--- Testiraj svoj kôd tako da uđeš u kuhinju u kojoj se sada nalazi čudovište.
 
 ![screenshot](images/rpg-monster-test.png) \--- /task \---
