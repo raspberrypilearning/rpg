@@ -37,9 +37,9 @@ prostorije = {
 --- task --- Također se želiš pobrinuti da se igra završi ako igrač uđe u prostoriju u kojoj se nalazi čudovište. To možeš napraviti dodavanjem sljedećeg kôda na kraju igre:
 
 --- code ---
-
-jezik: python
-
+---
+language: python
+---
 ## line_highlights: 6-9
 
         #u suprotnom, ako predmet nije tu za nabaviti
