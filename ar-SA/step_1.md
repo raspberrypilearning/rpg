@@ -2,13 +2,13 @@
 
 في هذا المشروع ، ستقوم بتصميم وبرمجة لعبة متاهة الـ RPG (لعبة تقمُّص الأدوار Role-Play Game) الخاصة بك. سيكون الهدف من اللعبة جمع الأشياء والهروب من المنزل ، مع التأكد من تجنب جميع الوحوش!
 
-## ما الذي ستصنعه
+## ماذا يجب ان تفعل
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+أطبع` أذهب` ثم الإتجاة (شمال, شرق, جنوب أو غرب) للتجول حول العالم (مثلاً `أذهب شمال`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+اطبع `أحصل` لتأخذ أي غرض تراه (مثلاً `احصل علي المفتاح`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -32,15 +32,15 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 ### الأجهزة
 
-+ A computer capable of running Python
++ جهاز كمبيوتر يدعم تشغيل لغة بايثون
 
 ### البرمجيات
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ برنامج بايثون 3 (سواء أكان [عبر الإنترنت](https://trinket.io/){:target="_blank"} أو [دون اتصال بالإنترنت](https://www.python.org/downloads/){:target="_blank"})
 
 ### للتحميل
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+برنامج البداية ستجدة [هنا ](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -51,12 +51,12 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 ## title: ما الذي ستتعلمه
 
 + تصميم الألعاب؛
-+ تحرير: 
++ التحرير: 
     + القوائم;
     + القواميس.
 + التعبيرات المنطقية.
 
-يتناول هذا المشروع عناصر من معايير المناهج الرقمية الخاصة بـ [Raspberry Pi](http://rpf.io/curriculum):
+يتناول هذا المشروع عناصر من معايير المناهج الرقمية الخاصة بـ [راسبيري باي](http://rpf.io/curriculum):
 
 + [دمج الإنشاءات البرمجية لحل مشكلة.](https://www.raspberrypi.org/curriculum/programming/builder)
 
