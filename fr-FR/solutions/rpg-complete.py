@@ -29,10 +29,10 @@ def showStatus():
   print("---------------------------")
 
 #configure le jeu
-name = None
-health = 5
-currentRoom = 'Hall'
-inventory = []
+nom = Aucun
+sante = 5
+salleactuelle = "Hall"
+inventaire =[]
 
 #-# TON CODE VIENT ICI #-#
 #Charge les donnée du fichier
@@ -60,8 +60,8 @@ rooms = {
          }
 
 #demande au joueur leur nom
-if name is None:
-  name = input("Quel est ton nom d'Adventurier? ")
+if nom is Aucun:
+  nom = input("Quel est ton nom d'Adventurier? ")
   showInstructions()
 
 #loop forever
@@ -81,7 +81,7 @@ while True:
 
   #s'ils tapent 'aller' en premier
   if move[0] == 'aller':
-    health = health - 1
+    sante = sante - 1
     #vérifie qu'ils soient autorisés peu importe où ils souhaitent aller
     if move[1] in rooms[currentRoom]:
       #définis la pièce actuel à une autre pièce
@@ -110,8 +110,8 @@ while True:
     print('Un monstre t a eu... GAME OVER!')
     break
 
-  if health == 0:
-    print('Tu t effondres d'épuisement... GAME OVER!')
+  if sante == 0:
+    print('Tu t effondres d'épuisement... FIN DE PARTIE !")
 
   #le joueur gagne s'il atteint le jardin avec la clé et la potion
   if currentRoom == 'Jardin' and 'clé' in inventaire and 'potion' in inventaire:
