@@ -8,8 +8,8 @@ def mostrarInstrucoes():
 Jogo RPG
 ========
 Comandos:
-  va[direcao]
-  pegar[item]
+  va [direção]
+  pegar [item]
 ''')
 
 def mostrarEstado():
@@ -17,30 +17,30 @@ def mostrarEstado():
   print('---------------------------')
   print('Você esta no ' + quartoAtual)
   #exibe o inventário atual
-  print('Inventario: '+str(inventario))
+  print('Inventário: '+str(inventario))
   #exibe um item se houver um
-  if "item" in quartos[quartoAtual]:
-    print('Você vê um(a) ' + quartos[quartoAtual]['item'])
+  if "item" in comodos[comodoAtual]:
+    print('Você vê um(a) ' + comodos[comodoAtual]['item'])
   print("---------------------------")
 
 #um inventário que está inicialmente vazio
 inventario = []
 
-#um dicionario ligando um quarto aos outros quarto
-quartos = {
+#um dicionario ligando um cômodo aos demais cômodos
+comodos= {
 
-            'Salao' : { 
+            'Saguão' : { 
                   'sul' : 'Cozinha'
                 },
 
             'Cozinha' : {
-                  'norte' : 'Salao'
+                  'norte' : 'Saguão'
                 }
 
          }
 
-#começa o jogador no Salao
-quartoAtual = 'Salao'
+#começa com o jogador no saguão
+comodoAtual = 'Saguão'
 
 mostrarInstrucoes()
 
