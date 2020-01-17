@@ -62,9 +62,9 @@ while True:
   #se eles digitarem primeiro 'va'
   if movimento[0] == 'va':
     #verifica se eles podem ir onde pretendem
-    if movimento[1] in quartos[quartoAtual]:
-      #torna o novo quarto o quarto atual
-      quartoAtual = quartos[quartoAtual][movimento[1]]
+    if movimento[1] in comodos[comodoAtual]:
+      #define o novo comodo como o atual
+      comodoAtual = comodos[comodoAtual][movimento[1]]
     #não há porta (conexão) para um novo quarto
     else:
         print('Você não pode ir para esse lado')
@@ -72,15 +72,15 @@ while True:
   #se eles digitarem 'pegar' primeiro
   if movimento[0] == 'pegar':
     #se o quarto contém um item, e o item é o qual eles desejam pegar
-    if "item" in quartos[quartoAtual] and movimento[1] in quartos[quartoAtual]['item']:
+    if "item" in comodos[comodoAtual] and movimento[1] in comodos[comodoAtual]['item']:
       #adicionar o item ao inventário
       inventario += [movimento[1]]
       #exiba uma mensagem útil
-      print(movimento[1] + ' pego!')
-      #deletar o item do quarto
-      del quartos[quartoAtual]['item']
+      print(movimento[1] + ' Pego!')
+      #deletar o item do cômodo
+      del comodos[comodoAtual]['item']
     #caso contrário, se o item não estiver lá
     else:
       #fale para eles que não podem pegar
-      print('Não pode pegar' + movimento[1] + '!')
+      print('Não pode pegar o(a)' + movimento[1] + '!')
 
