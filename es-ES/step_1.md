@@ -6,9 +6,9 @@ En este proyecto vas a diseñar y programar tu propio juego de laberinto RPG. El
 
 \--- no-print \---
 
-Escribe `go` y después una dirección (north, east, south or west) para moverte en el mundo (por ejemplo `go north`).
+Escribe `ir` y después una dirección (norte, este, sur, oeste) para moverte en el mundo (por ejemplo `ir norte`).
 
-Escribe `get` para coger los objetos que puedes ver (por ejemplo `get key`).
+Escribe `coger` para coger los objetos que puedes ver (por ejemplo `coger llave`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,7 +20,7 @@ Escribe `get` para coger los objetos que puedes ver (por ejemplo `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![proyecto completo](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -36,7 +36,7 @@ Escribe `get` para coger los objetos que puedes ver (por ejemplo `get key`).
 
 ### Software
 
-+ Python 3 ([online](https://trinket.io/){:target="_blank"} o [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 (tanto [online](https://trinket.io/){:target="_blank"} como [offline](https://www.python.org/downloads/){:target="_blank"}){:target="_blank"}{:target="_blank"}
 
 ### Descargas
 
