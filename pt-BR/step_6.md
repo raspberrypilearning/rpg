@@ -1,8 +1,8 @@
 ## Adicionando inimigos
 
-Este jogo é muito fácil! Vamos adicionar inimigos a algumas salas que o jogador deve evitar.
+Este jogo é muito fácil! Vamos adicionar inimigos em alguns cômodos que o jogador deve evitar.
 
-\--- task \--- Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+\--- task \--- Adicionar um inimigo em um cômodo é tão fácil como adicionar outro item. Vamos adicionar um monstro faminto à cozinha:
 
 ## \--- code \---
 
@@ -10,23 +10,23 @@ language: python
 
 ## line_highlights: 11-12
 
-# a dictionary linking a room to other rooms
+# um dicionário ligando um cômodo aos demais cômodos
 
-rooms = {
+comodos= {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Saguao' : {
+                'sul' : 'Cozinha',
+                'leste' : 'Sala Jantar',
+                'item' : 'chave'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            'Cozinha' : {
+                'norte' : 'Saguão',
+                'item' : 'monstro'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Sala Jantar' : {
+                'oeste' : 'Saguão'
             }
     
         }
@@ -34,7 +34,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+\--- task \--- Você também quer ter a certeza de que o jogo acaba se o jogador entrar numa divisão com um monstro. Você pode fazer isso com o seguinte código, que você deve adicionar ao final do jogo:
 
 ## \--- code \---
 
@@ -42,21 +42,21 @@ language: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        #senāo, se nāo houver item para coletar
         else:
-            #tell them they can't get it
-            print('Can\'t get' + move[1] + '!')
+            #diz ao jogador que nāo pode pegar item
+            print('Nāo pode apanhar uma ' + move[1] + '!')
     
-    #player loses if they enter a room with a monster
-    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('A monster has got you... GAME OVER!')
+    #o jogador perde se entrar numa divisāo com um monstro
+    if "item" in comodos[divAtual] and 'monstro' in comodos[divAtual]['item']:
+        print('O monstro te pegou... Fim de jogo!')
         break
     
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room. \--- /task \---
+Este código verifica se há um item no cômodo e, se houver, se o item é um monstro. Observe que esse código é recuado, colocando-o de acordo com o código acima dele. Isso significa que o jogo vai verificar se há um monstro de cada vez que o jogador entrar em um novo cômodo. \--- /task \---
 
-\--- task \--- Test out your code by going into the kitchen, which now contains a monster.
+\--- task \--- Testa seu código indo até a cozinha, que agora contém um monstro.
 
 ![screenshot](images/rpg-monster-test.png) \--- /task \---
