@@ -1,86 +1,86 @@
 #!/bin/python3
 
-# Replace RPG starter project with this code when new instructions are live
+# Inlocuieste proiectul initial RPG cu acest cod cand noile instructiuni apar online
 
-def showInstructions():
-  #print a main menu and the commands
+def afiseazaInstructiuni():
+  #afiseaza meniul principal si comenzile
   print('''
-RPG Game
+Jocul RPG
 ========
-Commands:
-  go [direction]
-  get [item]
+Comenzile:
+  misca [directie]
+  ia [item]
 ''')
 
-def showStatus():
-  #print the player's current status
+def afiseazaStatus():
+  #afiseaza statusul actual al jucatorului
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('Te afli in ' + cameraCurenta)
+  #afiseaza inventarul curent
+  print('Inventar : ' + str(inventar))
+  #afiseaza un item daca exista
+  if "item" in camere[cameraCurenta]:
+    print('Vezi un ' + camere[cameraCurenta]['item'])
   print("---------------------------")
 
-#an inventory, which is initially empty
-inventory = []
+#un inventar initial vid
+inventar = []
 
-#a dictionary linking a room to other rooms
-rooms = {
+#un dictionar asociind o camera cu alte camere
+camere = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen'
+            'Hol' 
+                  'sud' : 'Bucatarie'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall'
+            'Bucatarie'
+                  'nord' : 'Hol'
                 }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#incepe cu jucatorul in Hol
+cameraCurenta = 'Hol'
 
-showInstructions()
+afiseazaInstructiuni()
 
-#loop forever
+#repeta de un numar infinit de ori
 while True:
 
-  showStatus()
+  afiseazaStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':  
-    move = input('>')
+  #obtine urmatoare 'miscare' a jucatorului
+  #.split() o imparte intr-un list array
+  #de exemplu, daca tastezi 'misca est', vei obtine lista:
+  #['misca','est']
+  miscare = ''
+  while miscare == '':  
+    miscare = input('>')
     
-  move = move.lower().split()
+  miscare = miscare.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #daca utilizatorul tasteaza intai 'misca'
+  if miscare[0] == 'misca':
+    #verifica daca au voie sa mearga unde au cerut
+    if miscare[1] in camere[cameraCurenta]:
+      #seteaza camera curenta la noua camera
+      cameraCurenta = camere[cameraCurenta][miscare[1]]
+    #nu este nici o usa (legatura) catre noua camera
     else:
-        print('You can\'t go that way!')
+        print('Nu poti sa o iei pe acolo!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #daca utilizatorul tasteaza intai 'ia'
+  if miscare[0] == 'ia' :
+    #daca exista un item in camera si itemul este cel pe care utilizatorul il vrea
+    if "item" in camere[cameraCurenta] and miscare[1] in camere[cameraCurenta]['item']:
+      #adauga itemul la inventarul sau
+      inventar += [miscare[1]]
+      #afiseaza un mesaj util
+      print(miscare[1] + 'luat!')
+      #sterge acest item din camera
+      del camere[cameraCurenta]['item']
+    #altfel, daca itemul nu este acolo si nu poate fi luat
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #spune-i ca nu il poate lua
+      print('Nu poti lua ' + miscare[1] + '!')
 
