@@ -15,10 +15,10 @@ site_areas: projects
 hardware: ''
 software: python
 version: 3
-last_tested: 01/01/2017
+last_tested: 2017-01-01
 steps:
   - 
-    title: 'RPG'
+    title: 'Introdução'
   - 
     title: Adicionando novos quartos
   - 
@@ -37,5 +37,5 @@ steps:
   - 
     title: Ganhando o jogo
   - 
-    title: 'Desafio: desenvolva seu próprio jogo'
+    title: 'Desafio: Desenvolva seu próprio jogo'
     challenge: true
