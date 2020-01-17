@@ -4,7 +4,7 @@ Let’s give your player a mission, which needs to completed to win the game.
 
 \--- task \--- In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
 
-![screenshot](images/rpg-final-map.png) \--- /task \---
+![ekran görüntüsü](images/rpg-final-map.png) \--- /task \---
 
 \--- task \--- First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
 
@@ -82,7 +82,7 @@ If you have more than 4 rooms, you may have to use a different room number for y
 
 \--- task \--- Test your game to make sure the player can win!
 
-![screenshot](images/rpg-win-test.png) \--- /task \---
+![ekran görüntüsü](images/rpg-win-test.png) \--- /task \---
 
 \--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
 
@@ -104,4 +104,4 @@ You will need to add instructions to tell the user what items they need to colle
 
 \--- task \--- Test your game and you should see your new instructions.
 
-![screenshot](images/rpg-instructions-test.png) \--- /task \---
+![ekran görüntüsü](images/rpg-instructions-test.png) \--- /task \---
