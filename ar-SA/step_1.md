@@ -2,16 +2,16 @@
 
 في هذا المشروع ، ستقوم بتصميم وبرمجة لعبة متاهة الـ RPG (لعبة تقمُّص الأدوار Role-Play Game) الخاصة بك. سيكون الهدف من اللعبة جمع الأشياء والهروب من المنزل ، مع التأكد من تجنب جميع الوحوش!
 
-## ماذا يجب ان تفعل
+## ما الذي ستصنعه
 
 \--- no-print \---
 
-أطبع` أذهب` ثم الإتجاة (شمال, شرق, جنوب أو غرب) للتجول حول العالم (مثلاً `أذهب شمال`).
+أطبع` أذهب` ثم الإتجاة (شمال, شرق, جنوب أو غرب) للتجول حول العالم (مثلاً `أذهب شمالاً`).
 
 اطبع `أحصل` لتأخذ أي غرض تراه (مثلاً `احصل علي المفتاح`).
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/8cf3d320d9?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
