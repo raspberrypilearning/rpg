@@ -1,8 +1,8 @@
-## Introduction:
+## Giriş:
 
 In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
 
-## What you will make
+## Ne yapacaksınız
 
 \--- no-print \---
 
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![tamamlanmış proje](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,17 +28,17 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: Nelere ihtiyacınız var
 
-### Hardware
+### Donanım
 
 + A computer capable of running Python
 
-### Software
+### Yazılım
 
 + Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### İndirilenler
 
 The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
@@ -48,17 +48,17 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 * * *
 
-## title: What you will learn
+## title: Ne öğreneceksiniz
 
 + Game design;
 + Editing: 
-    + Lists;
+    + Listeler;
     + Dictionaries.
 + Boolean expressions.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un aşağıdaki bölümlerinden unsurları kapsamaktadır:
 
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Bir problemi çözmek için programlama yapılarını birleştirin.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
@@ -66,9 +66,9 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 * * *
 
-## title: Additional information for educators
+## title: Eğitimciler için ek bilgiler
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Bu projeyi yazdırmanız gerekiyorsa, lütfen [Yazıcı dostu sürüm](https://projects.raspberrypi.org/en/projects/rpg/print)ü kullanın.
 
 You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
