@@ -9,7 +9,7 @@ RPG Spiel (Labyrinth)
 Suche den Schlüssel und den Zaubertrank und versuche dann, in den Garten zu entkommen.
 Lass dich nicht von den Monstern fressen!
 
-You are getting tired, each time you move you loose 1 health point. 
+Du wirst müde, jedesmal, wenn du einen Schritt machst, verlierst du 1 Gesundheitspunkt. 
 
 Befehle:
   gehenach [Richtung]
@@ -19,8 +19,8 @@ Befehle:
 def zeigeZustand():
   #Zeige den aktuellen Zustand des Spielers
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
+  print(name + ' ist im Zimmer: ' + aktuellesZimmer)
+  print("Gesundheit : " + str(gesundheit))
   #Zeige das aktuelle Inventar
   print('Inventar : ' + str(inventar))
   #Zeige einen Gegenstand an, wenn einer im Zimmer vorhanden ist
@@ -28,14 +28,13 @@ def zeigeZustand():
     print('Du siehst einen ' + zimmer[aktuellesZimmer]['Gegenstand'])
   print("---------------------------")
 
-# setup the game
+# bereite das Spiel vor
 name = None
-health = 5
-currentRoom = 'Hall'
-inventory = []
+gesundheit = 5
+aktuellesZimmer = 'Diele'
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# HIER KOMMT DEIN CODE #-#
+# Lade Daten aus der Datei
 
 #Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 zimmer = {
@@ -59,9 +58,9 @@ zimmer = {
 
          }
 
-# ask the player their name
+# frag den Spieler nach seinem Namen
 if name is None:
-  name = input("What is your name Adventurer? ")
+  name = input("Wie ist dein Name, Abenteurer? ")
   zeigeAnweisungen()
 
 #Ewige Schleife
@@ -82,7 +81,7 @@ while True:
 
   #Wenn das Eingetippte mit 'gehenach' beginnt
   if spielzug[0] == 'gehenach':
-    health = health - 1
+    gesundheit = gesundheit - 1
     #Prüfe, ob der Spieler auch dorthin gehen kann, wo er hin will
     if spielzug[1] in zimmer[aktuellesZimmer]:
       #Mache das neue Zimmer zum aktuellen Zimmer
@@ -111,13 +110,13 @@ while True:
     print('Du wurdest von einem hungrigen Monster gefressen... DAS SPIEL IST AUS!')
     break
 
-  if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+  if gesundheit == 0:
+    print('Du brichst vor Erschöpfung zusammen... DAS SPIEL IST AUS!')
 
   #Der Spieler gewinnt, wenn er mit dem Schlüssel und dem Zaubertrank den Garten erreicht
   if aktuellesZimmer == 'Garten' and 'Schlüssel' in inventar and 'Zaubertrank' in inventar:
     print('Du bist aus dem Haus entkommen... DU HAST GEWONNEN!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# HIER KOMMT DEIN CODE #-#
+  # speichere die Spiel-Daten in die Datei
