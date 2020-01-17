@@ -1,7 +1,7 @@
-\--- desafio \---
+\--- challenge \---
 
-## Desafio: adicionar novos quartos
+## Desafio: Adicione novos cômodos
 
-Você pode adicionar mais salas ao seu jogo? Por exemplo, você pode criar uma sala de estar no sul da sala de jantar. Lembre-se de adicionar uma porta de / para um dos outros quartos!
+Você pode adicionar mais cômodos ao seu jogo? Por exemplo, você pode criar uma sala de estar ao sul da sala de jantar. Lembre-se de adicionar uma porta de/para um dos outros cômodos!
 
 \--- /challenge \---
