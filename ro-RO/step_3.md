@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Add new rooms
+## Provocare: Adaugă camere noi
 
-Can you add more rooms to your game? For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
+Poți adăuga mai multe camere la jocul tău? Spre exemplu, ai putea sa creezi o cameră de zi la sud de sufragerie. Amintește-ți să adaugi o ușă dinspre/înspre una dintre celelalte camere!
 
 \--- /challenge \---
