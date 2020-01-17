@@ -1,7 +1,7 @@
 #!/bin/python3
 
 def showInstructions():
-    #메인메뉴와 명령어 출력
+    #메인 메뉴와 명령어 출력
     print('''
 RPG 게임
 ========
