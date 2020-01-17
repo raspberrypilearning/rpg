@@ -1,12 +1,12 @@
-## Winning the game
+## Cum să câștigi jocul
 
-Let’s give your player a mission, which needs to completed to win the game.
+Hai să-i dăm jucătorului o misiune pe care va trebui să o îndeplinească pentru a câștiga jocul.
 
-\--- task \--- In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+\--- task \--- În acest joc, jucătorul câștigă ajungând în grădină și scăpând din casă. Va avea de asemenea nevoie să aibă cheia și poțiunea magică la el. Iată o hartă a jocului.
 
-![screenshot](images/rpg-final-map.png) \--- /task \---
+![captură de ecran](images/rpg-final-map.png) \--- /task \---
 
-\--- task \--- First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+\--- task \--- Mai întâi, va trebui să adaugi o grădină la sud de sufragerie. Amintește-ți să adaugi uși pentru a lega alte camere din casă.
 
 ## \--- code \---
 
@@ -14,36 +14,36 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# a dictionary linking a room to other rooms
+# un dicționar asociind o cameră cu alte camere
 
-rooms = {
+camere = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Hol' : {
+                'sud' : 'Bucatarie',
+                'est' : 'Sufragerie',
+                'item' : 'cheie'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            'Bucatarie' : {
+                'nord' : 'Hol',
+               'item' : 'monstru'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden'
+            'Sufragerie' : {
+                'vest' : 'Hol',
+                'sud' : 'Gradina'
             },
-    
-            'Garden' : {
-                'north' : 'Dining Room'
+            'Gradina' : {
+                'nord' : 'Sufragerie'
             }
+    
     
         }
     
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Add a potion to the dining room (or another room in your house).
+\--- task \--- Adaugă o poțiune în sufragerie (sau în altă cameră din casă).
 
 ## \--- code \---
 
@@ -51,16 +51,16 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden',
-                'item' : 'potion'
+            'Sufragerie' : {
+                'vest' : 'Hol',
+                'sud' : 'Gradina',
+                'item' : 'potiune'
             },
     
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+\--- task \--- Adaugă acest cod pentru a-i permite jucătorului să caștige când se duce în gradină cu cheia și poțiunea:
 
 ## \--- code \---
 
@@ -68,23 +68,23 @@ language: python
 
 ## line_highlights: 6-9
 
-# player loses if they enter a room with a monster
+# jucătorul pierde dacă intră într-o cameră cu un monstru
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'item' in camere\[cameraCurenta] and 'monstru' in camere[cameraCurenta\] \['item'\]: print('Un monstru te-a prins... STOP JOC!') break
 
-# player wins is they get to the garden with the key and potion
+# jucătorul câștigă dacă ajunge în grădină cu cheia si poțiunea
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
+if cameraCurenta== 'Gradina' and 'cheie' in inventar and 'potiune' in inventar: print('Ai scapat din casa... AI CASTIGAT!') break \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+Asigură-te că acest cod este indentat, asemenea codului de deasupra sa. Acest cod înseamnă că mesajul `Ai scapat din casa...AI CASTIGAT!` este afișat dacă jucătorul este în camera 4 (grădină) și dacă cheia și poțiunea sunt în inventar.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above. \--- /task \---
+Dacă ai peste 4 camere, s-ar putea să ai nevoie sa folosești un alt număr pentru grădina ta în codul de mai sus. \--- /task \---
 
-\--- task \--- Test your game to make sure the player can win!
+\--- task \--- Testează-ți jocul pentru a te asigura că jucătorul poate câștiga!
 
-![screenshot](images/rpg-win-test.png) \--- /task \---
+![captură de ecran](images/rpg-win-test.png) \--- /task \---
 
-\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+\--- task \--- In sfârșit, hai să-i adaugăm niște instrucțiuni jocului astfel incât jucătorul să știe ce are de facut. Editează funcția `afiseazaInstructiuni()` pentru a include mai multe informații.
 
 ## \--- code \---
 
@@ -92,16 +92,16 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def afiseazaInstructiuni(): #afiseaza meniul principal si comenzile print('''
 
-# RPG Game
+# Jocul RPG
 
-Get to the Garden with a key and a potion Avoid the monsters!
+Du-te în grădină cu o cheie si o poțiune Evită monștrii!
 
-Commands: go [direction] get [item] ''') \--- /code \---
+Comenzi: misca [directie] ia [item] ''') \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid! \--- /task \---
+Va trebui să adaugi instrucțiuni ca să-i spui utilizatorului ce obiecte trebuie să colecteze și de care să se ferească! \--- /task \---
 
-\--- task \--- Test your game and you should see your new instructions.
+\--- task \--- Testează-ți jocul și ar trebui să vezi noile instrucțiuni.
 
-![screenshot](images/rpg-instructions-test.png) \--- /task \---
+![captură de ecran](images/rpg-instructions-test.png) \--- /task \---
