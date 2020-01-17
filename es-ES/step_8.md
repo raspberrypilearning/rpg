@@ -2,11 +2,11 @@
 
 Demos a tu jugador una misión que necesita completar para ganar el juego.
 
-\--- task \--- In this game, the player wins by getting to the garden and escaping the house. También van a necesitar tener una llave y una poción mágica con ellos. Aquí hay un mapa del juego.
+\--- task \--- En este juego, el jugador gana al llegar al jardín y escapar de la casa. También van a necesitar tener una llave y una poción mágica con ellos. Aquí hay un mapa del juego.
 
 ![captura de pantalla](images/rpg-final-map.png) \--- /task \---
 
-\--- task \--- First, you need to add a garden to the south of the dining room. Recuerda añadir puertas, para unirlo a otras habitaciones de la casa.
+\--- task \--- Primero, necesitas agregar un jardín al sur del comedor. Recuerda añadir puertas, para unirlo a otras habitaciones de la casa.
 
 ## \--- code \---
 
@@ -18,32 +18,32 @@ language: python
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
-            },
+            'Sala': {
+            'sur': 'Cocina',
+            'este': 'Comedor',
+            'objeto': 'llave'
+        },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
-            },
+        'Cocina': {
+            'norte': 'Sala',
+            'objeto': 'monstruo'
+        },
     
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden'
-            },
+        'Comedor': {
+            'oeste': 'Sala',
+            'sur': 'Jardin'
+        },
     
-            'Garden' : {
-                'north' : 'Dining Room'
-            }
-    
+        'Jardin':{
+            'norte': 'Comedor'
         }
+    
+    }
     
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Add a potion to the dining room (or another room in your house).
+\--- task \--- Agrega una poción al comedor (u otra habitación de tu casa).
 
 ## \--- code \---
 
@@ -51,16 +51,16 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden',
-                'item' : 'potion'
+            'Comedor' : {
+                'oeste' : 'Sala',
+                'sur' : 'Jardin',
+                'objeto' : 'pocion'
             },
     
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+\--- task \--- Agrega este código para permitir que el jugador gane cuando llegue al jardín con la llave y la poción:
 
 ## \--- code \---
 
@@ -70,21 +70,21 @@ language: python
 
 # el jugador pierde si entra a una habitacion con un monstruo
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'objeto' in habitaciones\[habitacionActual] and 'monstruo' in habitaciones[habitacionActual\]\['objeto'\]: print('Te ha pillado el monstruo... JUEGO TERMINADO!') break
 
-# player wins is they get to the garden with the key and potion
+# el jugador gana si llega al jardín con una llave y una poción
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
+if habitacionActual == 'Jardin' and 'llave' in inventario and 'pocion' in inventario: print('Has escapado de la casa... GANASTE!') break \--- /code \---
 
 Asegúrate de que el código tiene sangría, estando en línea con el código de arriba. Este código quiere decir que el mensaje `Te escapaste de la casa... ¡GANASTE!` si el jugador está en la habitación 4 (el jardín) y si la llave y la poción están en su inventario.
 
 Si tienes más de 4 habitaciones, puedes utilizar un número diferente para tu jardín en el código de arriba. \--- /task \---
 
-\--- task \--- Test your game to make sure the player can win!
+\--- task \--- ¡Prueba tu juego para asegurarte de que el jugador puede ganar!
 
 ![captura de pantalla](images/rpg-win-test.png) \--- /task \---
 
-\--- task \--- Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edita la función `showInstructions()` para incluir más información.
+\--- task \--- Finalmente, agreguemos instrucciones al juego, así el jugador sabe qué tiene que hacer. Edita la función `mostrarInstrucciones()` para incluir más información.
 
 ## \--- code \---
 
@@ -92,16 +92,16 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def mostrarInstrucciones(): #imprime un menu principal y los comandos print('''
 
 # Juego RPG
 
-Get to the Garden with a key and a potion Avoid the monsters!
+Llega la jardín con una llave y una poción. ¡Evita a los monstruos!
 
-Commands: go [direction] get [item] ''') \--- /code \---
+Comandos: ir [direccion] coger [objeto] ''') \--- /code \---
 
 ¡Vas a necesitar añadir instrucciones para decirle al usuario qué objetos necesitan recoger y qué necesitan evitar! \--- /task \---
 
-\--- task \--- Test your game and you should see your new instructions.
+\--- task \--- Prueba tu juego y deberías ver tus nuevas instrucciones.
 
 ![captura de pantalla](images/rpg-instructions-test.png) \--- /task \---
