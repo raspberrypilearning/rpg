@@ -1,6 +1,6 @@
-\--- desafio \---
+\--- challenge \---
 
-## Desafio: Adicionando mais monstros
+## Desafio: Adicionar mais monstros
 
 Adicione mais monstros ao seu jogo, para dificultar a fuga da casa!
 
