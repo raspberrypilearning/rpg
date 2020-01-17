@@ -1,12 +1,12 @@
 ## Añadir nuevas habitaciones
 
-\--- task \--- Open the Python starter project.
+\--- task \--- Abre el proyecto de inicio para Python.
 
-**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**En línea**: abre el proyecto de inicio en [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
 **Offline**: abre el [proyecto de inicio](http://rpf.io/p/en/rpg-go){:target=_blank"} en el editor offline. \--- /task \---
 
-\--- task \--- This is a very basic RPG game that only has 2 rooms. Aquí hay un mapa del juego:
+\--- task \--- Este es un juego RPG muy básico que solo tiene 2 habitaciones. Aquí hay un mapa del juego:
 
 ![screenshot](images/rpg-map1.png)
 
@@ -14,11 +14,11 @@
 
 ![captura de pantalla](images/rpg-controls.png) \--- /task \---
 
-\--- task \--- What happens when you type in a direction that you cannot go? Escribe `ir oeste` en la sala y obtendrás un mensaje de error.
+\--- task \--- ¿Qué pasa cuando escribes una dirección a la cual no puedes ir? Escribe `ir oeste` en la sala y obtendrás un mensaje de error.
 
 ![captura de pantalla](images/rpg-error.png) \--- /task \---
 
-\--- task \--- If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+\--- task \--- Si te fijas en la variable `habitaciones`, verás que el mapa está codificado como un diccionario de habitaciones:
 
 ## \--- code \---
 
@@ -28,12 +28,12 @@
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen'
+            'Sala' : {
+                'sur' : 'Cocina'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Cocina' : {
+                'norte' : 'Sala'
             }
     
         }
@@ -41,16 +41,16 @@ rooms = {
 
 \--- /code \---
 
-Each room is a dictionary, and rooms are linked together using directions.  
+Cada habitación es un diccionario, y las habitaciones están ligadas entre ellas usando direcciones.  
 \--- /task \---
 
-\--- task \--- Let’s add a dining room to your map, to the east of the hall.
+\--- task \--- Agreguemos un comedor a tu mapa, al este de la sala.
 
 ![captura de pantalla](images/rpg-dining.png)
 
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). También necesitas agregar datos a la sala, así puedes moverte hacia el comedor al este.
+Necesitas añadir una 3ra habitación, llamada `Comedor` y vincularlo a la sala (al oeste). También necesitas agregar datos a la sala, así puedes moverte hacia el comedor al este.
 
-**Don't forget that you'll also need to add commas to lines before your new code.**
+**No olvides que también necesitas añadir comas a las líneas antes de tu nuevo código.**
 
 ## \--- code \---
 
@@ -62,17 +62,17 @@ language: python
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room'
+            'Sala' : {
+                'sur' : 'Cocina',
+                'este' : 'Comedor'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Cocina' : {
+                'norte' : 'Sala'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Comedor' : {
+                'oeste' : 'Sala'
             }
     
         }
@@ -80,7 +80,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Try out the game with your new dining room:
+\--- task \--- Prueba el juego con tu nuevo comedor:
 
 ![captura de pantalla](images/rpg-dining-test.png)
 
