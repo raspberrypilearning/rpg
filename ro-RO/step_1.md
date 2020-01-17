@@ -1,14 +1,14 @@
 ## Introducere:
 
-În acest proiect, veți proiecta și implementa propriul joc RPG labirint. Scopul jocului este de a colecta obiecte și de a scăpa dintr-o casă, asigurându-vă că evitați toți monștrii!
+În acest proiect, vei proiecta și implementa propriul joc RPG labirint. Scopul jocului este de a colecta obiecte și de a scăpa dintr-o casă, asigurându-te că eviți toți monștrii!
 
-## What you will make
+## Ce vei face
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Tastează `misca` și apoi o direcție (nord, est, sud sau vest) pentru a te mișca prin lume (de exemplu, `misca nord`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Tastează `ia` pentru a obține obiectele pe care le vezi (de exemplu, `ia cheie`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![proiectul finalizat](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,37 +28,19 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 * * *
 
-## title: What you will need
+## title: De ce vei avea nevoie
 
 ### Hardware
 
-+ A computer capable of running Python
++ Un computer capabil să ruleze Python
 
 ### Software
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 (fie [online](https://trinket.io/){:target="_blank"} fie [offline](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### Fișiere descărcabile
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
-
-\--- /collapse \---
-
-\--- collapse \---
-
-* * *
-
-## title: What you will learn
-
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+Proiectul inițial poate fi găsit [aici](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -66,10 +48,28 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 * * *
 
-## title: Additional information for educators
+## title: Ce vei învăța
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
++ Designul jocului;
++ Editare de: 
+    + Liste;
+    + Dicționare.
++ Expresii booleene.
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Acest proiect acoperă elemente din următoarele domenii ale [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+
++ [Combinați elemente de programare pentru a rezolva o problemă.](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+\--- collapse \---
+
+* * *
+
+## title: Informații suplimentare pentru profesori
+
+Dacă vrei să listezi acest proiect, folosește [Versiunea pentru imprimare](https://projects.raspberrypi.org/en/projects/rpg/print).
+
+Poți [găsi soluția acestui proiect aici](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
