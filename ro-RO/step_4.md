@@ -1,10 +1,10 @@
-## Adding items to collect
+## Adăugarea de obiecte de colectat
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+Hai să lăsăm în camere obiecte de colectat pentru jucător pe măsură ce se mișcă prin labirint.
 
-\--- task \--- Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+\--- task \--- Adăugarea unui obiect într-o cameră este simplă, trebuie doar adăugat în dicționarul unei camere. Hai să lăsăm o cheie în hol.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+Amintește-ți să pui o virgulă după linia de deasupra noului obiect, altfel programul tău nu va merge!
 
 ## \--- code \---
 
@@ -12,22 +12,22 @@ language: python
 
 ## line_highlights: 6-7
 
-# a dictionary linking a room to other rooms
+# un dicționar asociind o cameră cu alte camere
 
-rooms = {
+camere = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Hol' : {
+                'sud' : 'Bucatarie',
+                'est' : 'Sufragerie',
+                'item' : 'cheie'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Bucatarie' : {
+                'nord' : 'Hol'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Sufragerie' : {
+                'vest' : 'Hol'
             }
     
         }
@@ -37,6 +37,6 @@ rooms = {
 
 \--- /task \---
 
-\--- task \--- If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+\--- task \--- Dacă pornești jocul după ce ai adăugat codul de mai sus, poți vedea acuma o cheie în hol si o poți chiar lua (tastând `ia cheie`), ceea ce o va adăuga în inventarul tău!
 
-![screenshot](images/rpg-key-test.png) \--- /task \---
+![captură de ecran](images/rpg-key-test.png) \--- /task \---
