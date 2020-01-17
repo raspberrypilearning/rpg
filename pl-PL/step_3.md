@@ -1,4 +1,4 @@
-\--- wyzwanie \---
+\--- challenge \---
 
 ## Wyzwanie: Dodaj nowe pokoje
 
