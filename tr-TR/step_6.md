@@ -59,4 +59,4 @@ This code checks whether there is an item in the room, and if so, whether that i
 
 \--- task \--- Test out your code by going into the kitchen, which now contains a monster.
 
-![screenshot](images/rpg-monster-test.png) \--- /task \---
+![ekran görüntüsü](images/rpg-monster-test.png) \--- /task \---
