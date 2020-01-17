@@ -11,9 +11,9 @@ def showInstructions():
 
 بدأت تصاب بالتعب، في كل مرة تتحرك ستفقد نقطة واحدة من الصحة. 
 
-الأوامر:
-  اذهب [الاتجاهات]
-  احصل على [جرعة]
+Commands:
+  go [direction]
+  get [item]
 ''')
 
 showStatus():
@@ -22,7 +22,7 @@ showStatus():
   print(name + ' موجود في ' + currentRoom)
   print("الصحة: " + str(health))
   # اطبع المخزون الحالي
-  print("المخزون : " + str(inventory))
+  print("المخزن : " + str(inventory))
   # اطبع عنصر إذا كان هناك واحد
   if "عنصر" in rooms[currentRoom]:
     print('أنت ترى ' + rooms[currentRoom]['عنصر'])
@@ -40,7 +40,7 @@ inventory = []
 # قاموس يربط بين غرفة وأماكن الغرف الأخرى
 rooms = {
 
-            'الصالة' : { 'جنوب' : 'المطبخ',
+            'الصالة' : { 'حنوب' : 'المطبخ',
                   'شرق'  : 'غرفة الطعام',
                   'عنصر'  : 'مفتاح'
                 },
@@ -59,7 +59,7 @@ rooms = {
 
          }
 
-# اسأل الاعب عن إسمة
+# اسأل اللاعب عن إسمة
 if name is None:
   name = input("ماهو اسمك أيها المغامر؟ ")
   showInstructions()
@@ -80,7 +80,7 @@ while True:
   move = move.lower().split()
 
   # اذا كتبوا 'اذهب' أولاً
-  if move[0] == 'اذهب':
+  if move[0] == 'go':
     health = health - 1
     # تأكد أنه مسموحٌ لهم الذهاب أينما يريدون
     if move[1] in rooms[currentRoom]:
@@ -90,14 +90,14 @@ while True:
     else:
       print('لا يمكنك الذهاب من هذا الطريق!')
 
-  # إذا كتبوا 'احصل على' أولاً
-  if move[0] == 'احصل على' :
+  # إذا كتبوا 'احصل' أولاً
+  if move[0] == 'get' :
     # إذا كانت الغرفة تحتوي على عنصر ، وكان هذا هو العنصر الذي يريدون الحصول عليه
     if 'عنصر' in rooms[currentRoom] and move[1] in rooms[currentRoom]['عنصر']:
       # أضف العنصر إلى مخزونهم
       inventory += [move[1]]
       # اعرض رسالة مساعدة
-      print(move[1] + 'تم التحصيل!')
+      print(move[1] + ' got!')
       # قم بإزالة العنصر من الغرفة
       del rooms[currentRoom]['عنصر']
     # وإلا ، إذا لم يكن العنصر موجود للحصول عليه
@@ -106,8 +106,8 @@ while True:
       print('لا يمكنك الحصول على ' + move[1] + '!')
 
   #اللاعب يخسر إذا دخل غرفةً بها وحش
-  if 'عنصر' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['عنصر']:
-    print('الوحش قد أمسك بك... انتهت اللعبة!')
+  if 'عنصر' in rooms[currentRoom] and 'وحش' in rooms[currentRoom]['عنصر']:
+    print('لقد أمسك بك الوحش... انتهت اللعبة!')
     break
 
   if health == 0:
