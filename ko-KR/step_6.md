@@ -42,12 +42,12 @@ language: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        # 만약에 아이템이 없다면
         else:
-            #tell them they can't get it
+            # 아이템이 없다라고 메시지 출력 
             print(move[1] + '아이템을 획득할 수 없습니다!')
     
-    #player loses if they enter a room with a monster
+    # 플레이어가 몬스터가 있는 방에 진입하면 게임 종료 
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
         print('괴물에게 잡혔습니다... GAME OVER!')
         break
