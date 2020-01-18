@@ -6,7 +6,7 @@
 
 \--- no-print \---
 
-`go south` 명령어를 입력하여 hall에서 kitchen으로 이동할 수 있고, `go north` 명령어를 입력하여 다시 hall로 이동할 수 있습니다.
+`go` 명령어와 방향 (north, east, south, west )을 입력하여 hall에서 kitchen으로 이동할 수 있고, `go north` 명령어를 입력하여 다시 hall로 이동할 수 있습니다.
 
 `get` 명령어로 아이템을 획득할 수 있습니다. (e.g. `get key`).
 
