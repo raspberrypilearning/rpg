@@ -28,14 +28,14 @@ def showStatus():
     print(rooms[currentRoom]['item'] + '를 발견했습니다.')
   print("---------------------------")
 
-# setup the game
+# 게임 설정
 name = None
 health = 5
 currentRoom = 'Hall'
 inventory = []
 
 #-# YOUR CODE GOES HERE #-#
-# Load data from the file
+# 파일에서 데이터 가져오기
 
 #room 딕셔너리
 rooms = {
@@ -59,7 +59,7 @@ rooms = {
 
          }
 
-# ask the player their name
+# 플레이어에게 이름 물어보기
 if name is None:
   name = input("What is your name Adventurer? ")
   showInstructions()
@@ -119,4 +119,4 @@ while True:
     break
 
   #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  # 파일에 게임 정보 저장하기
