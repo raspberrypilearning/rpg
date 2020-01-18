@@ -6,7 +6,7 @@
 
 \--- no-print \---
 
-`go` 명령어와 방향 (north, east, south, west )을 입력하여 hall에서 kitchen으로 이동할 수 있고, `go north` 명령어를 입력하여 다시 hall로 이동할 수 있습니다.
+`go` 명령어와 방향 (north, east, south, west )을 함께 입력하여 맵 안을 돌아다닐 수 있습니다. ( e.g. <0go north</code> )
 
 `get` 명령어로 아이템을 획득할 수 있습니다. (e.g. `get key`).
 
@@ -32,7 +32,7 @@
 
 ### 하드웨어
 
-+ 파이썬 을 실행할 수 있는 컴퓨터
++ 파이썬을 실행할 수 있는 컴퓨터
 
 ### 소프트웨어
 
@@ -70,6 +70,6 @@
 
 이 프로젝트를 인쇄하려면 [프린트용 문서](https://projects.raspberrypi.org/en/projects/rpg/print)를 사용하십시오.
 
-프로젝트의 [솔루션은 여기를 클릭하면 됩니다.](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+프로젝트의 솔루션은 [여기](http://rpf.io/p/en/rpg-get){:target="_blank"}를 클릭하면 됩니다.
 
 \--- / collapse \---
