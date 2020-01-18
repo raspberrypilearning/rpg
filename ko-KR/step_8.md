@@ -6,7 +6,7 @@
 
 ![스크린샷](images/rpg-final-map.png) \--- /task \---
 
-\--- task \--- 먼저, dining room 남쪽에 garden을 추가해야 합니다. 꼭 두 방을 서로 링크하는 것 잊지 마세요.
+\--- task \--- 먼저, dining room의 남쪽에 garden을 추가해야 합니다. 꼭 두 방을 서로 링크하는 것 잊지 마세요.
 
 ## \--- code \---
 
@@ -43,7 +43,7 @@ rooms = {
 
 \--- /code \--- \--- /task \---
 
-\--- task \--- Potion을 dining room에 추가합니다. (다른 방에 추가해도 괜찮습니다.)
+\--- task \--- potion을 dining room에 추가합니다. (다른 방에 추가해도 괜찮습니다.)
 
 ## \--- code \---
 
