@@ -69,7 +69,7 @@ while True:
 
   showStatus()
 
-  #플레이어를 'move'로 이동함
+  #플레이어를 다음으로 움직이기
   #.split() 함수는 문자열을 구분함
   #e.g. 'go east'는 아래와 같이 리스트에 삽입됨:
   #['go','east']
@@ -90,13 +90,13 @@ while True:
     else:
       print('이곳으로 갈 수 없습니다!')
 
-  #만약에 'get'이 입력되면
+  #만약에 'get'이 먼저 입력되면
   if move[0] == 'get' :
-    #만약 방 안에 아이템이 있고, 플레이어가 입력한 아이템이 존재한다면
+    #만약 방 안에 아이템이 있고, 플레이어가 입력한 아이템이 존재할 때
     if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #아이템을 인벤토리에 추가함
+      #그 아이템을 인벤토리에 추가함
       inventory += [move[1]]
-      #플레이어에게 메시지 출력
+      #플레이어에게 도움되는 메시지 출력
       print(move[1] + '를 받았습니다!')
       #아이템을 방에서 제거
       del rooms[currentRoom]['item']
@@ -113,7 +113,7 @@ while True:
   if health == 0:
     print('You collapse from exhaustion... GAME OVER!')
 
-  #키와 포션을 가지고 Garden으로 가면 탈출 성공
+  #열쇠와 포션을 가지고 정원으로 가면 탈출 성공
   if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
     print('괴물의 집에서 탈출하셨습니다! YOU WIN!')
     break
