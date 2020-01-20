@@ -2,7 +2,9 @@
 
 Acest joc este prea ușor! Hai să-i adăugăm dușmani pe care jucătorul trebuie să îi evite în câteva camere.
 
-\--- task \--- Adăugarea unui dușman într-o cameră e la fel de simplă ca adăugarea unui item. Hai să adăugăm un monstru flămând în bucătărie:
+\--- task \---
+
+Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
 
 ## \--- code \---
 
@@ -12,7 +14,7 @@ language: python
 
 # un dicționar asociind o cameră cu alte camere
 
-camere = {
+rooms = {
 
             'Hol' : {
                 'sud' : 'Bucatarie',
@@ -32,9 +34,13 @@ camere = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Vrei de asemenea să te asiguri că jocul se termină dacă jucătorul intră într-o cameră cu un monstru inăuntru. Poți face asta cu următorul cod, pe care ar trebui să îl adaugi la sfârșitul jocului:
+\--- /task \---
+
+\--- task \---
+
+You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
 
 ## \--- code \---
 
@@ -55,8 +61,14 @@ language: python
 
 \--- /code \---
 
-Acest cod verifică dacă există un item în cameră, și dacă da, dacă acel item este un monstru. De remarcat că acest cod este indentat, pentru a se potrivi cu codul de deasupra lui. Aceasta înseamnă că jocul va testa existența monstrului de fiecare dată când jucătorul se mută într-o cameră nouă. \--- /task \---
+This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
 
-\--- task \--- Testează-ți codul ducându-te în bucătărie, care conține acuma un monstru.
+\--- /task \---
 
-![captură de ecran](images/rpg-monster-test.png) \--- /task \---
+\--- task \---
+
+Test out your code by going into the kitchen, which now contains a monster.
+
+![screenshot](images/rpg-monster-test.png)
+
+\--- /task \---
