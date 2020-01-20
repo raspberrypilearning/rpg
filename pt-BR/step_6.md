@@ -2,7 +2,9 @@
 
 Este jogo é muito fácil! Vamos adicionar inimigos em alguns cômodos que o jogador deve evitar.
 
-\--- task \--- Adicionar um inimigo em um cômodo é tão fácil como adicionar outro item. Vamos adicionar um monstro faminto à cozinha:
+\--- task \---
+
+Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
 
 ## \--- code \---
 
@@ -12,7 +14,7 @@ language: python
 
 # um dicionário ligando um cômodo aos demais cômodos
 
-comodos= {
+rooms = {
 
             'Saguao' : {
                 'sul' : 'Cozinha',
@@ -32,9 +34,13 @@ comodos= {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Você também quer ter a certeza de que o jogo acaba se o jogador entrar numa divisão com um monstro. Você pode fazer isso com o seguinte código, que você deve adicionar ao final do jogo:
+\--- /task \---
+
+\--- task \---
+
+You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
 
 ## \--- code \---
 
@@ -55,8 +61,14 @@ language: python
 
 \--- /code \---
 
-Este código verifica se há um item no cômodo e, se houver, se o item é um monstro. Observe que esse código é recuado, colocando-o de acordo com o código acima dele. Isso significa que o jogo vai verificar se há um monstro de cada vez que o jogador entrar em um novo cômodo. \--- /task \---
+This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
 
-\--- task \--- Testa seu código indo até a cozinha, que agora contém um monstro.
+\--- /task \---
 
-![screenshot](images/rpg-monster-test.png) \--- /task \---
+\--- task \---
+
+Test out your code by going into the kitchen, which now contains a monster.
+
+![screenshot](images/rpg-monster-test.png)
+
+\--- /task \---
