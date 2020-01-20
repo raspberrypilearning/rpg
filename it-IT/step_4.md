@@ -2,9 +2,11 @@
 
 Lascia degli oggetti nelle stanze in modo che il giocatore possa raccoglierli mentre si sposta attraverso il labirinto.
 
-\--- task \--- Aggiungere un oggetto in una stanza è facile, basta aggiungerlo al dizionario di una stanza. Mettiamo una chiave nell'ingresso.
+\--- task \---
 
-Ricorda di mettere una virgola dopo la riga sopra il nuovo oggetto, altrimenti il tuo programma non funzionerà!
+Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+
+Remember to put a comma after the line above the new item, or your program won’t run!
 
 ## \--- code \---
 
@@ -14,7 +16,7 @@ language: python
 
 # un dizionario collega una stanza alle altre
 
-stanze = {
+rooms = {
 
             'Ingresso' : {
                 'sud' : 'Cucina',
@@ -36,6 +38,10 @@ stanze = {
 
 \--- /task \---
 
-\--- task \--- Se esegui il gioco dopo aver aggiunto il codice sopra, ora puoi vedere una chiave nell'ingresso e puoi persino raccoglierla (digitando `prendi chiave`) e aggiungendola così al tuo inventario!
+\--- task \---
 
-![screenshot](images/rpg-key-test.png) \--- /task \---
+If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png)
+
+\--- /task \---
