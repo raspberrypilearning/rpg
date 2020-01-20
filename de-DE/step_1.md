@@ -24,11 +24,9 @@ Tippe `nimm` um einen Gegenstand aufzunehmen den du siehst (z.B. `nimm Schlüsse
 
 \--- /print-only \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Was du brauchen wirst
+## title: What you will need
 
 ### Hardware
 
@@ -40,15 +38,13 @@ Tippe `nimm` um einen Gegenstand aufzunehmen den du siehst (z.B. `nimm Schlüsse
 
 ### Downloads
 
-Das Start-Projekt findest du [hier](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Was du lernen wirst
+## title: What you will learn
 
 + Spieledesign;
 + Bearbeiten von: 
@@ -56,20 +52,18 @@ Das Start-Projekt findest du [hier](http://rpf.io/p/en/rpg-go){:target="_blank"}
     + Wörterbücher (dictionaries).
 + Booleschen Ausdrücken.
 
-Dieses Projekt umfasst Elemente aus den folgenden Teilen des [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Problemlösung durch Kombination von Programmierstrukturen.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
+## title: Additional information for educators
 
-## title: Zusatzinformationen für Pädagogen
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Falls Sie dieses Projekt ausdrucken müssen, verwenden Sie bitte die [Druckversion](https://projects.raspberrypi.org/en/projects/rpg/print).
-
-Hier finden Sie die [Lösung für dieses Projekt](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
