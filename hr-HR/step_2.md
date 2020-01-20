@@ -1,24 +1,38 @@
 ## Dodavanje novih prostorija
 
-\--- task \--- Otvorite Python startni projekt.
+\--- task \---
 
-**Online:** otvori početni projekt s [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+Open the Python starter project.
 
-**Offline**: open the [početni projekt](http://rpf.io/p/en/rpg-go){:target="_blank"} u offline editoru. \--- /task \---
+**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-\--- task \--- \--- Ovo je vrlo jednostavna RPG igra koja se sastoji od samo dvije prostorije. Ispod se nalazi nacrt igre:
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+
+\--- /task \---
+
+\--- task \---
+
+This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
 ![screenshot](images/rpg-map1.png)
 
-Upiši `idi jug` za pomicanje iz hodnika u kuhinju, a zatim `idi sjever` za povratak u hodnik!
+You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
 
-![screenshot](images/rpg-controls.png) \--- /task \---
+![screenshot](images/rpg-controls.png)
 
-\--- task \--- \--- Što se dogodi kada upišeš smjer u kojem ne možeš ići? Upiši `idi zapad` dok si u hodniku i dobit ćeš simpatičnu poruku o grešci.
+\--- /task \---
 
-![screenshot](images/rpg-error.png) \--- /task \---
+\--- task \---
 
-\--- task \--- \--- Pronađi varijablu `prostorije` i vidjet ćeš da je nacrt kodiran u obliku rječnika prostorija:
+What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+
+![screenshot](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
 
 ## \--- code \---
 
@@ -26,7 +40,7 @@ Upiši `idi jug` za pomicanje iz hodnika u kuhinju, a zatim `idi sjever` za povr
 
 # rječnik koji povezuje prostorije jednu s drugom
 
-prostorije = {
+rooms = {
 
             'Hall' : {
                 'south' : 'Kitchen'
@@ -41,26 +55,29 @@ prostorije = {
 
 \--- /code \---
 
-Svaka prostorija je jedan rječnik, a prostorije su međusobno povezane smjerovima.  
+Each room is a dictionary, and rooms are linked together using directions.
+
 \--- /task \---
 
-\--- task \--- \--- Dodajmo istočno od hodnika blagovaonicu.
+\--- task \---
+
+Let’s add a dining room to your map, to the east of the hall.
 
 ![screenshot](images/rpg-dining.png)
 
-Trebate dodati treću prostoriju, naziva `blagovaonica`, i vezu na hodnik (na zapad). Moraš dodati i podatke prostoriji hodnik u rječniku kako bi bilo moguće pomicati se u blagovaonicu na istoku.
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
 
-**Ne zaboravite da morate dodati zareze na linije prije vašeg novog koda.**
+**Don't forget that you'll also need to add commas to lines before your new code.**
 
 ## \--- code \---
 
-jezik: python
+language: python
 
 ## line_highlights: 5-6,11-15
 
 # rječnik koji povezuje prostorije jednu s drugom
 
-prostorije = {
+rooms = {
 
             'Hall' : {
                 'south' : 'Kitchen',
@@ -78,10 +95,16 @@ prostorije = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- \--- Isprobaj igru sad kad si dodao blagovaonicu:
+\--- /task \---
 
-![snimka zaslona](images/rpg-dining-test.png)
+\--- task \---
 
-Ako se ne možeš pomicati u blagovaonicu i iz nje, provjeri jesi li dodao sav kôd koji se nalazi iznad (uključujući i dodatne zareze u linijama). \--- /task \---
+Try out the game with your new dining room:
+
+![screenshot](images/rpg-dining-test.png)
+
+If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+
+\--- /task \---
