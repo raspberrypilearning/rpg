@@ -24,11 +24,9 @@ Typ `pak` om voorwerpen die je ziet op te pakken (bijv. `pak sleutel`).
 
 \--- /print-only \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Wat heb je nodig
+## title: What you will need
 
 ### Hardware
 
@@ -40,15 +38,13 @@ Typ `pak` om voorwerpen die je ziet op te pakken (bijv. `pak sleutel`).
 
 ### Downloads
 
-Het starterproject kan [hier](http://rpf.io/p/en/rpg-go){:target="_blank"} gevonden worden.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Wat ga je leren
+## title: What you will learn
 
 + Spelontwerp;
 + Bewerken: 
@@ -56,20 +52,18 @@ Het starterproject kan [hier](http://rpf.io/p/en/rpg-go){:target="_blank"} gevon
     + Woordenboeken (Engels: dictionaries).
 + Booleaanse expressies.
 
-Dit project behandelt elementen uit de volgende onderdelen van het [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Combineer programmeerconstructies om een ​​probleem op te lossen.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
+## title: Additional information for educators
 
-## title: Aanvullende informatie voor docenten
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Als je dit project wilt afdrukken, gebruik dan de [printervriendelijke versie](https://projects.raspberrypi.org/en/projects/rpg/print).
-
-Hier is een link [naar de oplossing](http://rpf.io/p/en/rpg-get){:target="_blank"} voor dit project.
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
