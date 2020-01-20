@@ -2,11 +2,17 @@
 
 We gaan de speler een doel geven wat gehaald moet worden om het spel te kunnen winnen.
 
-\--- task \--- In dit spel wint de speler als die in de tuin komt en zo uit het huis ontsnapt. De sleutel en de toverdrank moet ook zijn gepakt. Hier is een kaart van het spel.
+\--- task \---
 
-![screenshot](images/rpg-final-map.png) \--- /task \---
+In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
 
-\--- task \--- Ten eerste moet er een tuin worden gemaakt, ten zuiden van de eetkamer. Vergeet niet om deuren toe te voegen voor de verbinding met andere kamers in het huis.
+![screenshot](images/rpg-final-map.png)
+
+\--- /task \---
+
+\--- task \---
+
+First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
 
 ## \--- code \---
 
@@ -16,7 +22,7 @@ language: python
 
 # een woordenboek die een kamer verbindt met andere kamers
 
-kamers = {
+rooms = {
 
             'Hal' : {
                 'zuid' : 'Keuken',
@@ -41,9 +47,13 @@ kamers = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Plaats een toverdrank in de eetkamer (of een andere kamer in je huis).
+\--- /task \---
+
+\--- task \---
+
+Add a potion to the dining room (or another room in your house).
 
 ## \--- code \---
 
@@ -58,9 +68,13 @@ language: python
             },
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Voeg deze code toe om ervoor te zorgen dat de speler wint als die in de tuin aankomt met sleutel en toverdrank:
+\--- /task \---
+
+\--- task \---
+
+Add this code to allow the player to win the game when they get to the garden with the key and the potion:
 
 ## \--- code \---
 
@@ -70,21 +84,29 @@ language: python
 
 # de speler verliest als er een monster in de kamer is
 
-if 'voorwerp' in kamers\[dezeKamer] and 'monster' in kamers[dezeKamer\]\['voorwerp'\]: print('Een monster heeft je te pakken... GAME OVER!') break
+if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
 # speler wint als ze in the tuin komen met de sleutel en de toverdrank
 
-if currentRoom == 'Tuin' and 'sleutel' in inventaris and 'toverdrank' in inventaris: print('Je bent uit het huis ontsnapt... JE WINT!') break \--- /code \---
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
 
-Zorg ervoor dat de code inspringt zodat het gelijk staat met de code erboven. Deze code zorgt ervoor dat het bericht `Je bent ontsnapt...JIJ WINT!` wordt getoond als de speler in kamer 4 is (de tuin) en de sleutel en de toverdrank in de inventaris zit.
+Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
 
-Als je meer dan 4 kamers hebt kan het zijn dat je in de code hierboven een ander kamernummer moet gebruiken voor de tuin. \--- /task \---
+If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
 
-\--- task \--- Test het spel en zorg ervoor dat de speler kan winnen!
+\--- /task \---
 
-![screenshot](images/rpg-win-test.png) \--- /task \---
+\--- task \---
 
-\--- task \--- Tot slot voegen we wat instructies toe aan het spel zodat de speler weet wat die moet doen. Bewerk de functie `toonInstructies()` om meer informatie te geven.
+Test your game to make sure the player can win!
+
+![screenshot](images/rpg-win-test.png)
+
+\--- /task \---
+
+\--- task \---
+
+Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
 
 ## \--- code \---
 
@@ -92,16 +114,22 @@ language: python
 
 ## line_highlights: 7-8
 
-def toonInstracties(): #print een hoofdmenu en de commando's print('''
+def showInstructions(): #print a main menu and the commands print('''
 
 # RPG Spel
 
-Ga naar de Tuin met een speutel en een toverdrank Vermijd de monsters!
+Get to the Garden with a key and a potion Avoid the monsters!
 
-Commando's: ga [richting] pak [item] ''') \--- /code \---
+Commands: go [direction] get [item] ''') \--- /code \---
 
-Je moet instructies toevoegen om de speler te vertellen welke voorwerpen ze moeten verzamelen en wat ze moeten zien te vermijden! \--- /task \---
+You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
 
-\--- task \--- Test het spel en kijk of de instructies zichtbaar zijn.
+\--- /task \---
 
-![screenshot](images/rpg-instructions-test.png) \--- /task \---
+\--- task \---
+
+Test your game and you should see your new instructions.
+
+![screenshot](images/rpg-instructions-test.png)
+
+\--- /task \---
