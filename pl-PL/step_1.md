@@ -24,11 +24,9 @@ Wpisz `bierz` i nazwę przedmiotu, który widzisz (np. `bierz klucz`).
 
 \--- /print-only \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Czego będziesz potrzebować
+## title: What you will need
 
 ### Sprzęt
 
@@ -40,15 +38,13 @@ Wpisz `bierz` i nazwę przedmiotu, który widzisz (np. `bierz klucz`).
 
 ### Pliki do pobrania
 
-Projekt początkowy można znaleźć [tutaj](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Czego się nauczysz
+## title: What you will learn
 
 + Projekt gry;
 + Edycja: 
@@ -56,20 +52,18 @@ Projekt początkowy można znaleźć [tutaj](http://rpf.io/p/en/rpg-go){:target=
     + Słowniki.
 + Wyrażenia logiczne.
 
-Ten projekt obejmuje elementy z następujących wątków z [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Połącz konstrukcje programistyczne, aby rozwiązać problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
+## title: Additional information for educators
 
-## title: Dodatkowe informacje dla nauczycieli
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Jeśli chcesz wydrukować ten projekt, skorzystaj z [wersji do druku](https://projects.raspberrypi.org/en/projects/rpg/print).
-
-Możesz znaleźć [kompletną wersję projektu tutaj](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
