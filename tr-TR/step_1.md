@@ -24,11 +24,9 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- /print-only \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Nelere ihtiyacınız var
+## title: What you will need
 
 ### Donanım
 
@@ -44,11 +42,9 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Ne öğreneceksiniz
+## title: What you will learn
 
 + Game design;
 + Editing: 
@@ -56,19 +52,17 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
     + Dictionaries.
 + Boolean expressions.
 
-Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un aşağıdaki bölümlerinden unsurları kapsamaktadır:
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Bir problemi çözmek için programlama yapılarını birleştirin.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
+## title: Additional information for educators
 
-## title: Eğitimciler için ek bilgiler
-
-Bu projeyi yazdırmanız gerekiyorsa, lütfen [Yazıcı dostu sürüm](https://projects.raspberrypi.org/en/projects/rpg/print)ü kullanın.
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
 You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
