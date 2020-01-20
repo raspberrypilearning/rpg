@@ -2,7 +2,9 @@
 
 Este jogo está demasiado fácil! Vamos adicionar a algumas das divisões inimigos que o jogador deve evitar.
 
-\--- task \--- Adicionar um inimigo a uma divisão é tão fácil como adicionar outro item. Vamos adicionar um monstro esfomeado à cozinha:
+\--- task \---
+
+Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
 
 ## \--- code \---
 
@@ -12,7 +14,7 @@ language: python
 
 # um dicionário a ligar uma divisão a outras divisões
 
-divisoes = {
+rooms = {
 
             'Entrada' : {
                 'sul' : 'Cozinha',
@@ -32,9 +34,13 @@ divisoes = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Também vais querer ter a certeza de que o jogo acaba se o jogador entrar numa divisão com um monstro. Podes fazer isso com o código seguinte, que deves adicionar ao fim do jogo:
+\--- /task \---
+
+\--- task \---
+
+You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
 
 ## \--- code \---
 
@@ -55,8 +61,14 @@ language: python
 
 \--- /code \---
 
-Este código verifica se há um item na divisão, e se houver, se o item é um monstro. Toma nota de que o código está indentado, em linha com o código acima. Isso significa que o jogo vai verificar se há um monstro de cada vez que o jogador entrar numa nova divisāo. \--- /task \---
+This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
 
-\--- task \--- Testa o teu código indo para a cozinha, que agora tem um monstro.
+\--- /task \---
 
-![captura de ecrã](images/rpg-monster-test.png) \--- /task \---
+\--- task \---
+
+Test out your code by going into the kitchen, which now contains a monster.
+
+![screenshot](images/rpg-monster-test.png)
+
+\--- /task \---
