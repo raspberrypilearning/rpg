@@ -2,9 +2,11 @@
 
 Hai să lăsăm în camere obiecte de colectat pentru jucător pe măsură ce se mișcă prin labirint.
 
-\--- task \--- Adăugarea unui obiect într-o cameră este simplă, trebuie doar adăugat în dicționarul unei camere. Hai să lăsăm o cheie în hol.
+\--- task \---
 
-Amintește-ți să pui o virgulă după linia de deasupra noului obiect, altfel programul tău nu va merge!
+Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+
+Remember to put a comma after the line above the new item, or your program won’t run!
 
 ## \--- code \---
 
@@ -14,7 +16,7 @@ language: python
 
 # un dicționar asociind o cameră cu alte camere
 
-camere = {
+rooms = {
 
             'Hol' : {
                 'sud' : 'Bucatarie',
@@ -37,6 +39,10 @@ camere = {
 
 \--- /task \---
 
-\--- task \--- Dacă pornești jocul după ce ai adăugat codul de mai sus, poți vedea acuma o cheie în hol si o poți chiar lua (tastând `ia cheie`), ceea ce o va adăuga în inventarul tău!
+\--- task \---
 
-![captură de ecran](images/rpg-key-test.png) \--- /task \---
+If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png)
+
+\--- /task \---
