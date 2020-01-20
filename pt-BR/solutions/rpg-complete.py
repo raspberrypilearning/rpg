@@ -13,71 +13,71 @@ Você está ficando cansado, você perderá 1 ponto de vida a cada movimento.
 
 Comandos:
   va [direção]
-  get [item]
+  pegar [item]
 ''')
 
-def showStatus():
-  #print the player's current status
+def mostrarEstado():
+  #exibe o estado atual do jogador
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print(nome + ' está na ' + comodoAtual)
+  print("Saúde : " + str(saude))
+  #exibe o inventário atual
+  print("Inventário :" + str(inventario))
+  #exibe um item se houver um
+  if "item" in comodos[comodoAtual]:
+    print('Você vê um(a) ' + comodos[comodoAtual]['item'])
   print("---------------------------")
 
-# setup the game
-name = None
-health = 5
-currentRoom = 'Hall'
-inventory = []
+# configurar o jogo
+nome = None
+saude = 5
+comodoAtual = 'Saguão'
+inventario = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# O TEU CÓDIGO FICA AQUI #-#
+# Carregar os dados do jogo para o arquivo
 
-#a dictionary linking a room to other room positions
-rooms = {
+#um dicionário ligando um cômodo aos demais cômodos
+comodos= {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            'Saguão' : {'sul' : 'Cozinha',
+                  'leste' : 'Sala de Jantar',
+                  'item' : 'Chave'
                 },
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            'Cozinha': {'norte' : 'Saguão',
+                  'item' : 'Monstro'
                 },
 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            'Sala de Jantar' : { 'oeste' : 'Saguão',
+                  'sul' : 'Jardim',
+                  'item' : 'Poção'
 
                 },
 
-            'Garden' : { 'north' : 'Dining Room' }
+            'Jardim' : {'norte' : 'Sala de Jantar' }
 
          }
 
-# ask the player their name
-if name is None:
-  name = input("What is your name Adventurer? ")
-  showInstructions()
+# perguntar ao jogador o nome dele
+if nome is None:
+  nome = input("Qual é o teu nome Aventureiro? ")
+  mostrarInstrucoes()
 
-#loop forever
+#repita infinitamente
 while True:
 
-  showStatus()
+  mostrarEstado()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':
-    move = input('>')
+  #pega o próximo 'movimento' do jogador
+  #.split() quebra a entrada em uma lista vetor
+  #ex. digitar 'va leste' resultaria na lista:
+  #['va','leste']
+  movimento = ''
+  while movimento == '':
+    movimento = input('>')
 
-  move = move.lower().split()
+  movimento = movimento.lower().split()
 
   #if they type 'go' first
   if move[0] == 'go':
