@@ -1,24 +1,38 @@
 ## إضافة غرف جديدة
 
-\--- task \--- افتح مشروع البداية في لغة بايثون.
+\--- task \---
 
-**متصل بالانترنت**: افتح مشروع البدء من هنا [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+Open the Python starter project.
 
-**دون اتصال بالانترنت**: افتح [مشروع البدء](http://rpf.io/p/en/rpg-go){:target="_blank"} عبر المحرر الموجود على جهازك. \--- /task \---
+**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-\--- task \--- هذه لعبة متاهة RPG بسيطة جداً حيث تحتوي على غرفتين فقط. ها هي خريطة اللعبة:
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
 
-![لقطة الشاشة](images/rpg-map1.png)
+\--- /task \---
 
-يمكنك كتابة `اذهب جنوباً` للتحرك من الصالة إلى المطبخ، ومن ثم `اذهب شمال` للعودة إلى الصالة مجدداً!
+\--- task \---
 
-![لقطة الشاشة](images/rpg-controls.png) \--- /task \---
+This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
-\--- task \--- ماذا يحدث عندما تكتب إتجاه لا يمكنك الذهاب إليه؟ اكتب `اذهب غرب` من الصالة وستحصل على رسالة خطأ.
+![screenshot](images/rpg-map1.png)
 
-![لقطة الشاشة](images/rpg-error.png) \--- /task \---
+You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
 
-\--- task \--- إذا عثرت على المتغيِّر `rooms` يمكنك ملاحظة أن الخريطة مبرمجة على هيئة قاموس من الغرف:
+![screenshot](images/rpg-controls.png)
+
+\--- /task \---
+
+\--- task \---
+
+What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+
+![screenshot](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
 
 ## \--- code \---
 
@@ -41,16 +55,19 @@ rooms = {
 
 \--- /code \---
 
-كل غرفة عبارة عن قاموس، والغرف مرتبطة ببعضها البعض باستخدام الاتجاهات.  
+Each room is a dictionary, and rooms are linked together using directions.
+
 \--- /task \---
 
-\--- task \--- لنقم بإضافة غرفة الطعام لخريطتك، شرق الصالة.
+\--- task \---
 
-![لقطة الشاشة](images/rpg-dining.png)
+Let’s add a dining room to your map, to the east of the hall.
 
-تحتاج لغرفة ثالثة, تسمي `غرفة الطعام`, وربطها بالصالة (في الشرق). ستحتاج أيضاً لإضافة بعض البيانات للصالة، حتى تستطيع التحرك إلى غرفة الطعام من الشرق.
+![screenshot](images/rpg-dining.png)
 
-**لا تنسي انك ايضاً تحتاج لإضافة فاصلة للسطر قبل أوامر برنامجك الجديد.**
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+
+**Don't forget that you'll also need to add commas to lines before your new code.**
 
 ## \--- code \---
 
@@ -78,10 +95,16 @@ rooms = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- جرب اللعبة مع غرفة الطعام الجديدة:
+\--- /task \---
 
-![لقطة الشاشة](images/rpg-dining-test.png)
+\--- task \---
 
-إذا لم تتمكن من الدخول و الخروج من غرفة الطعام ، فقط تحقق من أنك أضفت جميع الأكواد الواردة أعلاه (بما في ذلك الفواصل الإضافية إلى الأسطر أعلاه). \--- /task \---
+Try out the game with your new dining room:
+
+![screenshot](images/rpg-dining-test.png)
+
+If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+
+\--- /task \---
