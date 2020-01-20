@@ -86,7 +86,9 @@ if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]:
 
 # il giocatore vince se raggiunge il giardino con una chiave e un pozione
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
+
+\--- /code \---
 
 Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
 
@@ -118,7 +120,9 @@ def showInstructions(): #print a main menu and the commands print('''
 
 Get to the Garden with a key and a potion Avoid the monsters!
 
-Commands: go [direction] get [item] ''') \--- /code \---
+Commands: go [direction] get [item] ''')
+
+\--- /code \---
 
 You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
 
