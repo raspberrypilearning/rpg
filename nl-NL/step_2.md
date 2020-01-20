@@ -1,24 +1,38 @@
 ## Voeg nieuwe kamers toe
 
-\--- task \--- Open het Python startersproject.
+\--- task \---
 
-**Online**: open het start project op [rpf.io/rpgon](http://rpf.io/rpgon){:target="_ blank"}.
+Open the Python starter project.
 
-**Offline**: open het [start project](http://rpf.io/p/en/rpg-go){:target="_ blank"} in de offline editor. \--- /task \---
+**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-\--- task \--- Dit is een erg eenvoudig RPG spel met maar 2 kamers. Hier is een kaart van het spel:
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+
+\--- /task \---
+
+\--- task \---
+
+This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
 ![screenshot](images/rpg-map1.png)
 
-Je kunt `ga zuid` typen om van de hal naar de keuken te lopen, en dan `ga noord` om weer terug naar de hal te gaan!
+You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
 
-![screenshot](images/rpg-controls.png) \--- /task \---
+![screenshot](images/rpg-controls.png)
 
-\--- task \--- Wat gebeurt er als je een richting intypt waar je niet heen kan gaan? Typ `ga west` in de hal en je krijgt een aardig foutberichtje.
+\--- /task \---
 
-![screenshot](images/rpg-error.png) \--- /task \---
+\--- task \---
 
-\--- task \--- Als je de `kamers` variabele opzoekt zie je dat de kaart is geprogrammeerd met een woordenboek van kamers:
+What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+
+![screenshot](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
 
 ## \--- code \---
 
@@ -26,7 +40,7 @@ Je kunt `ga zuid` typen om van de hal naar de keuken te lopen, en dan `ga noord`
 
 # een woordenboek die een kamer verbindt met andere kamers
 
-kamers = {
+rooms = {
 
             'Hal' : {
                 'zuid' : 'Keuken'
@@ -41,16 +55,19 @@ kamers = {
 
 \--- /code \---
 
-Elke kamer is een woordenboek en de kamers zijn met elkaar verbonden met behulp van richtingen.  
+Each room is a dictionary, and rooms are linked together using directions.
+
 \--- /task \---
 
-\--- task \--- Laten we een eetkamer toevoegen aan de kaart, ten oosten van de hal.
+\--- task \---
+
+Let’s add a dining room to your map, to the east of the hall.
 
 ![screenshot](images/rpg-dining.png)
 
-Je zult een derde kamer moeten toevoegen, genaamd `eetkamer`, en die verbinden met de hal (in het westen). Je moet ook nog gegevens toevoegen aan de hal, om naar de eetkamer in het oosten te kunnen gaan.
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
 
-**Denk eraan dat je ook komma's moet toevoegen aan de regels voor je nieuwe code.**
+**Don't forget that you'll also need to add commas to lines before your new code.**
 
 ## \--- code \---
 
@@ -60,7 +77,7 @@ language: python
 
 # een woordenboek die een kamer verbindt met andere kamers
 
-kamers = {
+rooms = {
 
             'Hal' : {
                 'zuid' : 'Keuken',
@@ -78,10 +95,16 @@ kamers = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Probeer het spel uit met de nieuwe eetkamer:
+\--- /task \---
+
+\--- task \---
+
+Try out the game with your new dining room:
 
 ![screenshot](images/rpg-dining-test.png)
 
-Als je niet in of uit de eetkamer kunt komen moet je de code hierboven nog eens goed bekijken (ook de extra komma's in de regels hierboven). \--- /task \---
+If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+
+\--- /task \---
