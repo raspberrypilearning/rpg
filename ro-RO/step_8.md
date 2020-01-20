@@ -2,11 +2,17 @@
 
 Hai să-i dăm jucătorului o misiune pe care va trebui să o îndeplinească pentru a câștiga jocul.
 
-\--- task \--- În acest joc, jucătorul câștigă ajungând în grădină și scăpând din casă. Va avea de asemenea nevoie să aibă cheia și poțiunea magică la el. Iată o hartă a jocului.
+\--- task \---
 
-![captură de ecran](images/rpg-final-map.png) \--- /task \---
+In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
 
-\--- task \--- Mai întâi, va trebui să adaugi o grădină la sud de sufragerie. Amintește-ți să adaugi uși pentru a lega alte camere din casă.
+![screenshot](images/rpg-final-map.png)
+
+\--- /task \---
+
+\--- task \---
+
+First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
 
 ## \--- code \---
 
@@ -16,7 +22,7 @@ language: python
 
 # un dicționar asociind o cameră cu alte camere
 
-camere = {
+rooms = {
 
             'Hol' : {
                 'sud' : 'Bucatarie',
@@ -41,9 +47,13 @@ camere = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Adaugă o poțiune în sufragerie (sau în altă cameră din casă).
+\--- /task \---
+
+\--- task \---
+
+Add a potion to the dining room (or another room in your house).
 
 ## \--- code \---
 
@@ -58,9 +68,13 @@ language: python
             },
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Adaugă acest cod pentru a-i permite jucătorului să caștige când se duce în gradină cu cheia și poțiunea:
+\--- /task \---
+
+\--- task \---
+
+Add this code to allow the player to win the game when they get to the garden with the key and the potion:
 
 ## \--- code \---
 
@@ -70,21 +84,29 @@ language: python
 
 # jucătorul pierde dacă intră într-o cameră cu un monstru
 
-if 'item' in camere\[cameraCurenta] and 'monstru' in camere[cameraCurenta\] \['item'\]: print('Un monstru te-a prins... STOP JOC!') break
+if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
 # jucătorul câștigă dacă ajunge în grădină cu cheia si poțiunea
 
-if cameraCurenta== 'Gradina' and 'cheie' in inventar and 'potiune' in inventar: print('Ai scapat din casa... AI CASTIGAT!') break \--- /code \---
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break \--- /code \---
 
-Asigură-te că acest cod este indentat, asemenea codului de deasupra sa. Acest cod înseamnă că mesajul `Ai scapat din casa...AI CASTIGAT!` este afișat dacă jucătorul este în camera 4 (grădină) și dacă cheia și poțiunea sunt în inventar.
+Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
 
-Dacă ai peste 4 camere, s-ar putea să ai nevoie sa folosești un alt număr pentru grădina ta în codul de mai sus. \--- /task \---
+If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
 
-\--- task \--- Testează-ți jocul pentru a te asigura că jucătorul poate câștiga!
+\--- /task \---
 
-![captură de ecran](images/rpg-win-test.png) \--- /task \---
+\--- task \---
 
-\--- task \--- In sfârșit, hai să-i adaugăm niște instrucțiuni jocului astfel incât jucătorul să știe ce are de facut. Editează funcția `afiseazaInstructiuni()` pentru a include mai multe informații.
+Test your game to make sure the player can win!
+
+![screenshot](images/rpg-win-test.png)
+
+\--- /task \---
+
+\--- task \---
+
+Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
 
 ## \--- code \---
 
@@ -92,16 +114,22 @@ language: python
 
 ## line_highlights: 7-8
 
-def afiseazaInstructiuni(): #afiseaza meniul principal si comenzile print('''
+def showInstructions(): #print a main menu and the commands print('''
 
 # Jocul RPG
 
-Du-te în grădină cu o cheie si o poțiune Evită monștrii!
+Get to the Garden with a key and a potion Avoid the monsters!
 
-Comenzi: misca [directie] ia [item] ''') \--- /code \---
+Commands: go [direction] get [item] ''') \--- /code \---
 
-Va trebui să adaugi instrucțiuni ca să-i spui utilizatorului ce obiecte trebuie să colecteze și de care să se ferească! \--- /task \---
+You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
 
-\--- task \--- Testează-ți jocul și ar trebui să vezi noile instrucțiuni.
+\--- /task \---
 
-![captură de ecran](images/rpg-instructions-test.png) \--- /task \---
+\--- task \---
+
+Test your game and you should see your new instructions.
+
+![screenshot](images/rpg-instructions-test.png)
+
+\--- /task \---
