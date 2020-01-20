@@ -1,24 +1,38 @@
 ## Προσθήκη νέων δωματίων
 
-\--- task \--- Άνοιξε το αρχικό έργο Python.
+\--- task \---
 
-**Online:** άνοιξε το αρχικό έργο στο [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+Open the Python starter project.
 
-**Offline**: άνοιξε το [αρχικό έργο](http://rpf.io/p/en/rpg-go){:target="_blank"} στον επεξεργαστή εκτός σύνδεσης. \--- /task \---
+**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-\--- Αυτό είναι ένα πολύ βασικό παιχνίδι ρόλων (RPG) που έχει μόνο 2 δωμάτια. Εδώ είναι ένας χάρτης του παιχνιδιού:
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+
+\--- /task \---
+
+\--- task \---
+
+This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
 ![screenshot](images/rpg-map1.png)
 
-Μπορείς να πληκτρολογήσεις `πήγαινε νότια` για να μετακινηθείς από το χωλ στην κουζίνα, και στη συνέχεια `πήγαινε βόρεια` για να επιστρέψεις ξανά στο χωλ!
+You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
 
-![screenshot](images/rpg-controls.png) \--- /task \---
+![screenshot](images/rpg-controls.png)
 
-\--- task \--- Τι συμβαίνει όταν πληκτρολογείς προς μια κατεύθυνση που δεν μπορείς να πας; Πληκτρολόγησε `πήγαινε δυτικά` ενώ είσαι στο χωλ και θα εμφανιστεί ένα μήνυμα λάθους.
+\--- /task \---
 
-![screenshot](images/rpg-error.png) \--- /task \---
+\--- task \---
 
-\--- task \--- Αν κοιτάξεις στη μεταβλητή `rooms` (δωμάτια), θα δεις ότι ο χάρτης έχει μοντελοποιηθεί ως λεξικό δωματίων:
+What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+
+![screenshot](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
 
 ## \--- code \---
 
@@ -41,15 +55,19 @@ rooms = {
 
 \--- /code \---
 
-Κάθε δωμάτιο είναι ένα λεξικό και τα δωμάτια συνδέονται μεταξύ τους με κατευθύνσεις \---
+Each room is a dictionary, and rooms are linked together using directions.
 
-\--- task \--- Ας προσθέσουμε μια τραπεζαρία στο χάρτη σου, στα ανατολικά του χωλ.
+\--- /task \---
+
+\--- task \---
+
+Let’s add a dining room to your map, to the east of the hall.
 
 ![screenshot](images/rpg-dining.png)
 
-Χρειάζεται να προσθέσεις ένα τρίτο δωμάτιο, που ονομάζεται `τραπεζαρία`, και να το συνδέσεις με το χωλ (προς τα δυτικά). Πρέπει επίσης να προσθέσεις δεδομένα στο χωλ, ώστε να μπορείς να μετακινηθείς ανατολικά προς την τραπεζαρία.
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
 
-**Μην ξεχάσεις ότι χρειάζεται να προσθέσεις κόμματα στις γραμμές πριν τον καινούριο σου κώδικα.**
+**Don't forget that you'll also need to add commas to lines before your new code.**
 
 ## \--- code \---
 
@@ -77,10 +95,16 @@ rooms = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Δοκίμασε το παιχνίδι με τη νέα σου τραπεζαρία:
+\--- /task \---
+
+\--- task \---
+
+Try out the game with your new dining room:
 
 ![screenshot](images/rpg-dining-test.png)
 
-Εάν δεν μπορείς να μετακινηθείς προς και από την τραπεζαρία, έλεγξε ότι έχεις προσθέσει όλο τον παραπάνω κώδικα (μαζί με τα επιπλέον κόμματα στις παραπάνω γραμμές). \--- /task \---
+If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+
+\--- /task \---
