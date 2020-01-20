@@ -24,11 +24,9 @@
 
 \--- /print-only \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: ما الذي ستحتاجه
+## title: What you will need
 
 ### الأجهزة
 
@@ -40,15 +38,13 @@
 
 ### للتحميل
 
-برنامج البداية ستجدة [هنا ](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: ما الذي ستتعلمه
+## title: What you will learn
 
 + تصميم الألعاب؛
 + التحرير: 
@@ -56,20 +52,18 @@
     + القواميس.
 + التعبيرات المنطقية.
 
-يتناول هذا المشروع عناصر من معايير المناهج الرقمية الخاصة بـ [راسبيري باي](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [دمج الإنشاءات البرمجية لحل مشكلة.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
+## title: Additional information for educators
 
-## title: معلومات إضافية للمعلمين
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-إذا كنت بحاجة إلى طباعة هذا المشروع ، فيُرجى استخدام [النسخة القابلة للطباعة](https://projects.raspberrypi.org/en/projects/rpg/print).
-
-يمكنك [الحصول على المشروع كاملاً من هنا](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
