@@ -2,9 +2,11 @@
 
 Vamos deixar itens nos cômodos para o jogador coletar enquanto eles se movem pelo labirinto.
 
-\--- task \--- Adicionar um item a um cômodo é fácil, basta adicioná-lo ao dicionário do respectivo cômodo. Vamos colocar uma chave no saguão.
+\--- task \---
 
-Lembre-se de colocar uma vírgula ao final da linha anterior, ou seu programa não será executado!
+Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+
+Remember to put a comma after the line above the new item, or your program won’t run!
 
 ## \--- code \---
 
@@ -14,7 +16,7 @@ language: python
 
 # um dicionário ligando um cômodo aos demais cômodos
 
-comodos= {
+rooms = {
 
             'Saguao' : {
                 'sul' : 'Cozinha',
@@ -37,6 +39,10 @@ comodos= {
 
 \--- /task \---
 
-\--- task \--- Se você executar o seu jogo depois de adicionar o código acima, você verá uma chave no saguão e poderá pegá-la (digitando `pegar chave`), que a adiciona ao seu inventário!
+\--- task \---
 
-![screenshot](images/rpg-key-test.png) \--- /task \---
+If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png)
+
+\--- /task \---
