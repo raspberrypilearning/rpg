@@ -25,24 +25,25 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 --- /print-only ---
 
 --- collapse ---
-
 ---
 title: What you will need
 ---
 
 ### Hardware
+
 + A computer capable of running Python
 
 ### Software
+
 + Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
 ### Downloads
+
 The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
 --- collapse ---
-
 ---
 title: What you will learn
 ---
@@ -59,9 +60,7 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 --- /collapse ---
 
-
 --- collapse ---
-
 ---
 title: Additional information for educators
 ---
