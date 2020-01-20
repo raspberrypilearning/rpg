@@ -1,18 +1,18 @@
 #!/bin/python3
 
-def showInstructions():
-    #print a main menu and the commands
+def mostrarInstrucoes():
+    #exibe um menu principal e os comandos possiveis
     print('''
-RPG Game
+Jogo RPG
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+Vá para o Jardim com uma chave e uma poção
+Evite os monstros!
 
-You are getting tired, each time you move you loose 1 health point. 
+Você está ficando cansado, você perderá 1 ponto de vida a cada movimento. 
 
-Commands:
-  go [direction]
+Comandos:
+  va [direção]
   get [item]
 ''')
 
