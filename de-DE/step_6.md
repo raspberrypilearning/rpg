@@ -2,7 +2,9 @@
 
 Dieses Spiel ist zu einfach! Lass uns Monster in einige Zimmer setzen, denen der Spieler ausweichen muss.
 
-\--- task \--- Ein Monster in ein Zimmer zu setzen ist genauso einfach wie einen neuen Gegenstand hineinzulegen. Setzen wir ein hungriges Monster in die Küche:
+\--- task \---
+
+Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
 
 ## \--- code \---
 
@@ -12,7 +14,7 @@ language: python
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 
-zimmer = {
+rooms = {
 
             'Diele' : {
                 'süden' : 'Küche',
@@ -32,9 +34,13 @@ zimmer = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Du willst sicherstellen, dass das Spiel zu Ende ist, wenn der Spieler ein Zimmer betritt, in dem sich ein Monster aufhält. Du kannst das mit folgendem Code bewerkstelligen, der am Ende des Spiels hinzugefügt wird:
+\--- /task \---
+
+\--- task \---
+
+You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
 
 ## \--- code \---
 
@@ -55,8 +61,14 @@ language: python
 
 \--- /code \---
 
-Dieser Code prüft, ob sich ein Gegenstand im Zimmer befindet; und wenn ja, ob dieser Gegenstand ein Monster ist. Beachte, dass dieser Code eingerückt ist und er auf gleicher Höhe sein muss wie der Code darüber. Das heißt, jedes Mal wenn der Spieler einen neues Zimmer betritt, prüft das Spiel ob sich dort ein Monster befindet. \--- /task \---
+This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
 
-\--- task \--- Teste dein Spiel indem du in die Küche gehst, wo sich jetzt ein Monster befindet.
+\--- /task \---
 
-![Bildschirmfoto](images/rpg-monster-test.png) \--- /task \---
+\--- task \---
+
+Test out your code by going into the kitchen, which now contains a monster.
+
+![screenshot](images/rpg-monster-test.png)
+
+\--- /task \---
