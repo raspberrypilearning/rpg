@@ -1,24 +1,38 @@
 ## 添加新房间
 
-\--- task \--- 打开Python初始项目.
+\--- task \---
 
-**在线：** 在 [rpf.io/rpgon](http://rpf.io/rpgon){：target =“_ blank”}打开初始项目。
+Open the Python starter project.
 
-在离线编辑器中**离线**: 打开 [初始项目](http://rpf.io/p/en/rpg-go){:target="_blank"}. \--- /task \---
+**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-这是个仅包含2个房间的基本的RPG游戏。 以下是游戏的地图：
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+
+\--- /task \---
+
+\--- task \---
+
+This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
 ![screenshot](images/rpg-map1.png)
 
-你可以输入`go south`指令从大厅走到厨房，然后输入`go north`指令再返回大厅！
+You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
 
-![screenshot](images/rpg-controls.png) \--- /task \---
+![screenshot](images/rpg-controls.png)
 
-当你输入一个无法到达的方向时将会发生什么？ 当你在大厅时，输入`go west`指令，你将得到一个友善的错误消息。
+\--- /task \---
 
-![screenshot](images/rpg-error.png) \--- /task \---
+\--- task \---
 
-当你在代码中找到`rooms`变量时，你会发现游戏地图实际上是用一个包含房间信息的数据字典来实现的。
+What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+
+![screenshot](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
 
 ## \--- code \---
 
@@ -41,15 +55,19 @@ rooms = {
 
 \--- /code \---
 
-每个房间是字典中的一项数据，然后用方向来将房间与房间关联起来。 \--- /task \---
+Each room is a dictionary, and rooms are linked together using directions.
 
-\---task\--- 让我们在地图上添加一个餐厅，将其放在大厅的东面。
+\--- /task \---
+
+\--- task \---
+
+Let’s add a dining room to your map, to the east of the hall.
 
 ![screenshot](images/rpg-dining.png)
 
-你需要添加第三个房间, 叫做 `餐厅`, 把它和大厅连接起来 (在西面). 你还需要向大厅添加数据，以使你可以从那里向东走到餐厅。
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
 
-**不要忘记, 你需要在新代码前添加逗号.**
+**Don't forget that you'll also need to add commas to lines before your new code.**
 
 ## \--- code \---
 
@@ -77,10 +95,16 @@ rooms = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- 加完新的餐厅后，试着运行一下游戏。
+\--- /task \---
+
+\--- task \---
+
+Try out the game with your new dining room:
 
 ![screenshot](images/rpg-dining-test.png)
 
-如果你不能走进或走出餐厅，检查你是否已经添加了如上所示的所有代码（包括在上一行已有代码行末尾添加额外的逗号）。 \--- /task \---
+If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+
+\--- /task \---
