@@ -1,24 +1,38 @@
 ## Adăugarea de camere noi
 
-\--- task \--- Deschide proiectul de bază Python.
+\--- task \---
 
-**Online**: deschide proiectul de bază de la [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+Open the Python starter project.
 
-**Offline**: deschide [proiectul de bază](http://rpf.io/p/en/rpg-go){:target="_blank"} în editorul offline. \--- /task \---
+**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-\--- task \--- Acesta este un joc RPG foarte simplu, care are numai 2 camere. Iată aici o hartă a jocului:
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
 
-![captură de ecran](images/rpg-map1.png)
+\--- /task \---
 
-Poți tasta `misca sud` pentru a te mișca din hol înspre bucătărie și apoi `misca nord` pentru a reveni în hol!
+\--- task \---
 
-![captură de ecran](images/rpg-controls.png) \--- /task \---
+This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
-\--- task \--- Ce se intamplă când tastezi o direcție în care nu poți merge? Tastează `misca vest` în hol și vei primi un mesaj de eroare prietenos.
+![screenshot](images/rpg-map1.png)
 
-![captură de ecran](images/rpg-error.png) \--- /task \---
+You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
 
-\--- task \--- Dacă găsești variabila `camere`, poți vedea că harta este implementată ca un dicționar de camere:
+![screenshot](images/rpg-controls.png)
+
+\--- /task \---
+
+\--- task \---
+
+What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+
+![screenshot](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
 
 ## \--- code \---
 
@@ -26,7 +40,7 @@ Poți tasta `misca sud` pentru a te mișca din hol înspre bucătărie și apoi 
 
 # un dicționar asociind o cameră cu alte camere
 
-camere = {
+rooms = {
 
             'Hol' : {
                 'sud' : 'Bucatarie'
@@ -41,16 +55,19 @@ camere = {
 
 \--- /code \---
 
-Fiecare cameră este un dicționar și camerele sunt legate una de alta folosind direcțiile.  
+Each room is a dictionary, and rooms are linked together using directions.
+
 \--- /task \---
 
-\--- task \--- Hai sa adăugam o sufragerie pe hartă, la est de hol.
+\--- task \---
 
-![captură de ecran](images/rpg-dining.png)
+Let’s add a dining room to your map, to the east of the hall.
 
-Trebuie să adaugi o a treia cameră, numită `Sufragerie` și să o asociezi cu Hol (către vest). Va trebui de asemenea să adaugi date holului astfel încât să te poți mișca din sufragerie către est.
+![screenshot](images/rpg-dining.png)
 
-**Nu uita că va trebui să adaugi virgule liniilor aflate înainte de noul tău cod.**
+You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+
+**Don't forget that you'll also need to add commas to lines before your new code.**
 
 ## \--- code \---
 
@@ -60,7 +77,7 @@ language: python
 
 # un dicționar asociind o camerî cu alte camere
 
-camere = {
+rooms = {
 
             'Hol' : {
                 'sud' : 'Bucatarie',
@@ -78,10 +95,16 @@ camere = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Incearcă jocul cu noua ta sufragerie:
+\--- /task \---
 
-![captură de ecran](images/rpg-dining-test.png)
+\--- task \---
 
-Dacă nu poți să te miști în sau din sufragerie, verifică dacă ai adăugat tot codul de mai sus (inclusiv noile virgule pe liniile de mai sus). \--- /task \---
+Try out the game with your new dining room:
+
+![screenshot](images/rpg-dining-test.png)
+
+If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+
+\--- /task \---
