@@ -24,11 +24,9 @@ Natipkajte `get` da pokupite bilo koji predmet koji vidite (e.g. `get ključ`).
 
 \--- /print-only \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Trebat ćeš
+## title: What you will need
 
 ### Hardver
 
@@ -40,15 +38,13 @@ Natipkajte `get` da pokupite bilo koji predmet koji vidite (e.g. `get ključ`).
 
 ### Preuzimanja
 
-Početni projekt možete pronaći [ovdje](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Naučit ćeš
+## title: What you will learn
 
 + Dizajn igre;
 + Uređivanje: 
@@ -56,20 +52,18 @@ Početni projekt možete pronaći [ovdje](http://rpf.io/p/en/rpg-go){:target="_b
     + Rječnici.
 + Boolean izrazi.
 
-Ovaj projekt obuhvaća elemente iz sljedećih dijelova [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) nastavnog plana i programa:
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Koristi različite programske strukture za rješavanje problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
+## title: Additional information for educators
 
-## title: Dodatne informacije za edukatore
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Ako želite ispisati ovaj projekt, molimo Vas da koristite [verziju koja je prilagođena za ispis](https://projects.raspberrypi.org/en/projects/rpg/print).
-
-Dovršen projekt možete pronaći [ovdje](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
