@@ -24,11 +24,9 @@ Tastează `ia` pentru a obține obiectele pe care le vezi (de exemplu, `ia cheie
 
 \--- /print-only \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: De ce vei avea nevoie
+## title: What you will need
 
 ### Hardware
 
@@ -40,15 +38,13 @@ Tastează `ia` pentru a obține obiectele pe care le vezi (de exemplu, `ia cheie
 
 ### Fișiere descărcabile
 
-Proiectul inițial poate fi găsit [aici](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
-
-## title: Ce vei învăța
+## title: What you will learn
 
 + Designul jocului;
 + Editare de: 
@@ -56,20 +52,18 @@ Proiectul inițial poate fi găsit [aici](http://rpf.io/p/en/rpg-go){:target="_b
     + Dicționare.
 + Expresii booleene.
 
-Acest proiect acoperă elemente din următoarele domenii ale [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
 + [Combinați elemente de programare pentru a rezolva o problemă.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
-\--- collapse \---
+## \--- collapse \---
 
-* * *
+## title: Additional information for educators
 
-## title: Informații suplimentare pentru profesori
+If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Dacă vrei să listezi acest proiect, folosește [Versiunea pentru imprimare](https://projects.raspberrypi.org/en/projects/rpg/print).
-
-Poți [găsi soluția acestui proiect aici](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
