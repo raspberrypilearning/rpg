@@ -2,9 +2,11 @@
 
 لنترك بعض العناصر في الغرف للاعب حتى يقوم بجمعها أثناء تحركه خلال المتاهة.
 
-\--- task \--- إضافة عنصر لغرفة هو أمر ٌسهل، يمكنك فقط إضافتها لقاموس الغرفة. لنضع مفتاحاً في الصالة.
+\--- task \---
 
-تذكر وضع فاصلة بعد السطر أعلى العنصر الجديد ، وإلا فلن يعمل برنامجك!
+Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+
+Remember to put a comma after the line above the new item, or your program won’t run!
 
 ## \--- code \---
 
@@ -37,6 +39,10 @@ rooms = {
 
 \--- /task \---
 
-\--- task \--- إذا قمت بتشغيل لعبتك بعد إضافة الكود أعلاه، يمكنك الآن رؤية مفتاح في الصالة، يمكنك حتى إلتقاطه (عن طريق كتابة `احصل مفتاح`) حيث ستقوم بإضافته إلى مخزونك!
+\--- task \---
 
-![لقطة الشاشة](images/rpg-key-test.png) \--- /task \---
+If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png)
+
+\--- /task \---
