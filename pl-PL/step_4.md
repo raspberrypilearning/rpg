@@ -2,9 +2,11 @@
 
 Zostawmy przedmioty w pokojach, aby gracz mógł je zbierać, gdy przechodzi przez "labirynt".
 
-\--- task \--- Dodanie przedmiotu do pokoju jest proste, wystarczy dodać go do słownika pokoju. Pozostawmy klucz w korytarzu.
+\--- task \---
 
-Pamiętaj, aby dodać przecinek za linia ponad nowym przedmiotem, bo inaczej Twój program się nie uruchomi!
+Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+
+Remember to put a comma after the line above the new item, or your program won’t run!
 
 ## \--- code \---
 
@@ -36,6 +38,10 @@ rooms = {
 
 \--- /task \---
 
-\--- task \--- Kiedy uruchomisz grę po dodaniu powyższego kodu, będziesz mógł zobaczyć klucz w korytarzu i możesz go nawet wziąć (pisząc `bierz klucz`), co doda go do ekwipunku gracza!
+\--- task \---
 
-![zrzut ekranu](images/rpg-key-test.png) \--- /task \---
+If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+
+![screenshot](images/rpg-key-test.png)
+
+\--- /task \---
