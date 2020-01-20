@@ -2,7 +2,9 @@
 
 Ta gra jest zbyt łatwa! Dodajmy wrogów do niektórych pomieszczeń, których gracz musi unikać.
 
-\--- task \--- Dodanie przeciwnika do pokoju jest tak samo łatwe jak dodawanie przedmiotu. Dodajmy głodnego potwora do kuchni:
+\--- task \---
+
+Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
 
 ## \--- code \---
 
@@ -31,9 +33,13 @@ rooms = {
         }
     
 
-\--- /code \--- \--- /task \---
+\--- /code \---
 
-\--- task \--- Chcemy również być pewni, że gra się skończy przegraną jeśli gracz wejdzie do pokoju, w którym jest potwór. Aby to osiągnąć, dodaj taki kod na końcu swojej gry:
+\--- /task \---
+
+\--- task \---
+
+You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
 
 ## \--- code \---
 
@@ -54,8 +60,14 @@ language: python
 
 \--- /code \---
 
-Ten kod sprawdza, czy w pokoju jest jakaś rzecz, a jeśli tak, to czy jest to potwór. Zauważ, że ten kod ma wcięcie, dzięki czemu pasuje do kodu nad nim. Oznacza to, że gra będzie sprawdzać obecność potwora za każdym razem, gdy gracz przejdzie do nowego pokoju. \--- /task \---
+This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
 
-\--- task \--- Przetestuj swój program, wchodząc do kuchni, która zawiera teraz potwora.
+\--- /task \---
 
-![zrzut ekranu](images/rpg-monster-test.png) \--- /task \---
+\--- task \---
+
+Test out your code by going into the kitchen, which now contains a monster.
+
+![screenshot](images/rpg-monster-test.png)
+
+\--- /task \---
