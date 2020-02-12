@@ -1,14 +1,14 @@
-## Introducere:
+## Introduction:
 
-În acest proiect, vei proiecta și implementa propriul joc RPG labirint. Scopul jocului este de a colecta obiecte și de a scăpa dintr-o casă, asigurându-te că eviți toți monștrii!
+In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
 
-## Ce vei face
+## What you will make
 
 \--- no-print \---
 
-Tastează `misca` și apoi o direcție (nord, est, sud sau vest) pentru a te mișca prin lume (de exemplu, `misca nord`).
+Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
 
-Tastează `ia` pentru a obține obiectele pe care le vezi (de exemplu, `ia cheie`).
+Type `get` to pick up any items that you see (e.g. `get key`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,7 +20,7 @@ Tastează `ia` pentru a obține obiectele pe care le vezi (de exemplu, `ia cheie
 
 \--- print-only \---
 
-![proiectul finalizat](images/rpg-finished.png)
+![complete project](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -30,13 +30,13 @@ Tastează `ia` pentru a obține obiectele pe care le vezi (de exemplu, `ia cheie
 
 ### Hardware
 
-+ Un computer capabil să ruleze Python
++ A computer capable of running Python
 
 ### Software
 
-+ Python 3 (fie [online](https://trinket.io/){:target="_blank"} fie [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-### Fișiere descărcabile
+### Downloads
 
 The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
@@ -46,15 +46,15 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 ## title: What you will learn
 
-+ Designul jocului;
-+ Editare de: 
-    + Liste;
-    + Dicționare.
-+ Expresii booleene.
++ Game design;
++ Editing: 
+    + Lists;
+    + Dictionaries.
++ Boolean expressions.
 
 This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Combinați elemente de programare pentru a rezolva o problemă.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
