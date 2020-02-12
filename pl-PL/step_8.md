@@ -1,6 +1,6 @@
-## Wygranie gry
+## Winning the game
 
-Dajmy graczowi misję, która musi zostać ukończona, aby wygrać grę.
+Let’s give your player a mission, which needs to completed to win the game.
 
 \--- task \---
 
@@ -20,27 +20,28 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# słownik łączący pokój z innymi pokojami
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Korytarz' : {
-                'południe' : 'Kuchnia',
-                'wschód' : 'Jadalnia',
-                'item' : 'klucz'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Kuchnia' : {
-                'północ' : 'Korytarz',
-                'item' : 'potwór'        },
-    
-            'Jadalnia' : {
-                'zachód' : 'Korytarz',
-                'południe' : 'Ogród'
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
             },
     
-            'Ogród' : {
-                'północ' : 'Jadalnia'
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden'
+            },
+    
+            'Garden' : {
+                'north' : 'Dining Room'
             }
     
         }
@@ -60,10 +61,10 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Jadalnia' : {
-                'zachód' : 'Korytarz',
-                'południe' : 'Ogród',
-                'item' : 'mikstura'
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
             },
     
 
@@ -81,11 +82,11 @@ language: python
 
 ## line_highlights: 6-9
 
-# gracz przegrywa jeśli wejdzie do pokoju z potworem
+# player loses if they enter a room with a monster
 
 if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
-# gracz wygrywa jeśli dostanie się do ogrodu z kluczem i miksturą
+# player wins is they get to the garden with the key and potion
 
 if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
 
@@ -117,7 +118,7 @@ language: python
 
 def showInstructions(): #print a main menu and the commands print('''
 
-# Gra RPG
+# RPG Game
 
 Get to the Garden with a key and a potion Avoid the monsters!
 
