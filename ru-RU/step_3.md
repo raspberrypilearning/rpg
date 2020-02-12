@@ -1,7 +1,7 @@
-\--- вызов \---
+\--- challenge \---
 
-## Задача: Добавить новые комнаты
+## Challenge: Add new rooms
 
-Можете ли вы добавить больше комнат в свою игру? Например, вы могли бы создать гостиную к югу от столовой. Не забудьте добавить дверь в / из одной из комнат!
+Can you add more rooms to your game? For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
 
-\--- /вызов \---
+\--- /challenge \---
