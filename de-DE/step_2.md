@@ -2,37 +2,37 @@
 
 \--- task \---
 
-Open the Python starter project.
+Öffne das Python Start-Projekt.
 
-**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**Online**: Öffne das Basisprojekt: [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
-
-\--- /task \---
-
-\--- task \---
-
-This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
-
-![screenshot](images/rpg-map1.png)
-
-You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
-
-![screenshot](images/rpg-controls.png)
+**Offline**: Öffne das [Basisprojekt](http://rpf.io/p/en/rpg-go){:target="_blank"} im Offline-Editor.
 
 \--- /task \---
 
 \--- task \---
 
-What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+Dies ist ein sehr einfaches RPG-Spiel mit nur zwei Zimmern. Hier ist eine Karte des Spiels:
 
-![screenshot](images/rpg-error.png)
+![Screenshot](images/rpg-map1.png)
+
+Du kannst `gehenach süden` eintippen, um von der Diele in die Küche zu gehen, und dann mit `gehenach norden` wieder zurück in die Diele gehen!
+
+![Screenshot](images/rpg-controls.png)
 
 \--- /task \---
 
 \--- task \---
 
-If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+Was passiert, wenn du eine Richtung eintippst, in die du nicht gehen kannst? Tippe `gehenach westen` wenn du in der Diele bist, und du erhältst eine freundliche Fehlermeldung.
+
+![Screenshot](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+Wenn du die Variable `zimmer` findest, kannst du sehen, dass der Plan mit einem Wörterbuch (dictionary) von Zimmern programmiert ist:
 
 ## \--- code \---
 
@@ -40,7 +40,7 @@ If you find the `rooms` variable, you can see that the map is coded as a diction
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 
-rooms = {
+zimmer = {
 
             'Diele' : {
                 'süden' : 'Küche'
@@ -55,19 +55,19 @@ rooms = {
 
 \--- /code \---
 
-Each room is a dictionary, and rooms are linked together using directions.
+Jedes Zimmer ist ein Wörterbuch und die Zimmer sind über Richtungen miteinander verbunden.
 
 \--- /task \---
 
 \--- task \---
 
-Let’s add a dining room to your map, to the east of the hall.
+Fügen wir ein Esszimmer, das sich östlich von der Diele befindet, zum Plan hinzu.
 
-![screenshot](images/rpg-dining.png)
+![Screenshot](images/rpg-dining.png)
 
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+Du musst einen dritten Raum hinzufügen, der `Esszimmer` heißt, und ihn mit der Diele (nach westen) verbinden. Du musst auch Daten zur Diele hinzufügen, damit du in das Esszimmer im Osten gehen kannst.
 
-**Don't forget that you'll also need to add commas to lines before your new code.**
+**Vergiss nicht, dass du auch Kommas in den Zeilen vor deinem neuen Code hinzufügen musst.**
 
 ## \--- code \---
 
@@ -77,7 +77,7 @@ language: python
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 
-rooms = {
+zimmer = {
 
             'Diele' : {
                 'süden' : 'Küche',
@@ -101,10 +101,10 @@ rooms = {
 
 \--- task \---
 
-Try out the game with your new dining room:
+Probiere das Spiel mit deinem neuen Esszimmer aus:
 
-![screenshot](images/rpg-dining-test.png)
+![Screenshot](images/rpg-dining-test.png)
 
-If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+Wenn du nicht in das Esszimmer hinein- oder herausgehen kannst, dann prüfe, ob du den ganzen oben aufgeführten Code eingegeben hast (inklusive der zusätzlichen Kommas im Programm).
 
 \--- /task \---
