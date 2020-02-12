@@ -4,9 +4,9 @@ Laissons les objets dans les pièces pour que le joueur les collecte au fur et �
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+Ajouter un objet dans une pièce est facile, tu peux simplement l'ajouter au dictionnaire de pièce. Mettons une clé dans le hall.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+N'oublie pas d'ajouter une virgule après la ligne au dessus du nouvel objet, ou alors ton programme ne fonctionnera pas !
 
 ## \--- code \---
 
@@ -41,8 +41,8 @@ rooms = {
 
 \--- task \---
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+Si tu exécutes ton jeu après avoir ajouté le code du dessus, tu peux maintenant voir une clé dans le hall, et tu peux même la ramasser (en tapant `prendre clé`) qui l'ajoute à ton inventaire !
 
-![screenshot](images/rpg-key-test.png)
+![capture d'écran](images/rpg-key-test.png)
 
 \--- /task \---
