@@ -1,4 +1,4 @@
-## Adăugarea de camere noi
+## Adding new rooms
 
 \--- task \---
 
@@ -38,16 +38,16 @@ If you find the `rooms` variable, you can see that the map is coded as a diction
 
 ## language: python
 
-# un dicționar asociind o cameră cu alte camere
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Hol' : {
-                'sud' : 'Bucatarie'
+            'Hall' : {
+                'south' : 'Kitchen'
             },
     
-            'Bucatarie' : {
-                'nord' : 'Hol'
+            'Kitchen' : {
+                'north' : 'Hall'
             }
     
         }
@@ -75,21 +75,21 @@ language: python
 
 ## line_highlights: 5-6,11-15
 
-# un dicționar asociind o camerî cu alte camere
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Hol' : {
-                'sud' : 'Bucatarie',
-                'est' : 'Sufragerie'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room'
             },
     
-            'Bucatarie' : {
-                'nord' : 'Hol'
+            'Kitchen' : {
+                'north' : 'Hall'
             },
     
-            'Sufragerie' : {
-                'vest' : 'Hol'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
