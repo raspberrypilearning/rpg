@@ -4,7 +4,7 @@ Ce jeu est trop facile! Ajoutons des adversaires à quelques unes des pièces qu
 
 \--- task \---
 
-Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+Ajouter un adversaire à une pièce est aussi facile que d'ajouter tout autre objet. Ajoutons un monstre en colère à la cuisine :
 
 ## \--- code \---
 
@@ -40,7 +40,7 @@ rooms = {
 
 \--- task \---
 
-You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+Tu dois t'assurer que le jeu se termine si le joueur entre dans une pièce avec un monstre à l'intérieur. Tu peux faire çà avec le code suivant, que tu devras ajouter à la fin du jeu :
 
 ## \--- code \---
 
@@ -61,14 +61,14 @@ language: python
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
+Ce code vérifie s'il y a un objet dans la pièce, et si l'objet est un monstre. Note que ce code est indenté, mets le dans une ligne avec le code ci-dessus. Cela signifie que le jeu vérifiera le monstre à chaque fois que le joueur se déplace dans une nouvelle pièce.
 
 \--- /task \---
 
 \--- task \---
 
-Test out your code by going into the kitchen, which now contains a monster.
+Teste ton code en allant à la cuisine, qui contient maintenant un monstre.
 
-![screenshot](images/rpg-monster-test.png)
+![capture d'écran](images/rpg-monster-test.png)
 
 \--- /task \---
