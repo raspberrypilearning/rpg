@@ -4,9 +4,9 @@ Vamos deixar itens nas divisões para o jogador apanhar enquanto se move pelo la
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+Adding an item into a room is easy, you can just add it to a room's dictionary. Vamos colocar uma chave na entrada.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+Lembra-te de colocar uma vírgula depois da linha acima do novo item, ou o teu programa nāo vai funcionar!
 
 ## \--- code \---
 
@@ -16,7 +16,7 @@ language: python
 
 # um dicionário a ligar uma divisão a outras divisões
 
-rooms = {
+divisoes = {
 
             'Entrada' : {
                 'sul' : 'Cozinha',
@@ -43,6 +43,6 @@ rooms = {
 
 If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
 
-![screenshot](images/rpg-key-test.png)
+![captura de ecrã](images/rpg-key-test.png)
 
 \--- /task \---
