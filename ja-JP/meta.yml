@@ -1,13 +1,13 @@
 ---
 hero_image: images/rpg.png
-theme: 海軍
+theme: navy
 duration: 2
 listed: true
 ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: 独自のRPG迷路ゲームを設計し、コード化します。
+description: Design and code your own RPG maze game.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -20,22 +20,22 @@ steps:
   - 
     title: 'Introduction'
   - 
-    title: 新しい部屋を追加する
+    title: Adding new rooms
   - 
-    title: '課題：新しい部屋を追加'
+    title: 'Challenge: Add new rooms'
     challenge: true
   - 
-    title: 収集するアイテムを追加する
+    title: Adding items to collect
   - 
-    title: '課題：新しいアイテムを追加する'
+    title: 'Challenge: Add new items'
     challenge: true
   - 
-    title: 敵を追加する
+    title: Adding enemies
   - 
-    title: '課題：モンスターを追加する'
+    title: 'Challenge: Adding more monsters'
     challenge: true
   - 
-    title: ゲームに勝つ
+    title: Winning the game
   - 
-    title: '課題：自分のゲームを開発する'
+    title: 'Challenge: Develop your own game'
     challenge: true
