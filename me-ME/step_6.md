@@ -1,6 +1,6 @@
-## Dodavanje neprijatelja
+## Adding enemies
 
-Ova igra je previše laka! Dodajmo u neke od prostorija neprijatelje koje će igrač morati da izbjegava.
+This game is too easy! Let’s add enemies to some rooms that the player must avoid.
 
 \--- task \---
 
