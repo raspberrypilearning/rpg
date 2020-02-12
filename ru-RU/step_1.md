@@ -1,6 +1,6 @@
-## Введение:
+## Introduction:
 
-В этом проекте вы будете создавать и кодировать свою собственную игру лабиринта RPG. Цель игры - собирать предметы и спасаться от дома, избегая всех монстров!
+In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
 
 ## What you will make
 
