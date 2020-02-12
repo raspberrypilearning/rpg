@@ -7,9 +7,9 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Розробіть і закріпіть власну гру в лабіринті RPG.
+description: Design and code your own RPG maze game.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
-interests: ігри
+interests: games
 technologies: python
 site_areas: projects
 hardware: ''
@@ -20,22 +20,22 @@ steps:
   - 
     title: 'Introduction'
   - 
-    title: Додавання нових номерів
+    title: Adding new rooms
   - 
-    title: 'Виклик: Додати нові номери'
+    title: 'Challenge: Add new rooms'
     challenge: true
   - 
-    title: Додавання елементів для збирання
+    title: Adding items to collect
   - 
-    title: 'Виклик: додавання нових елементів'
+    title: 'Challenge: Add new items'
     challenge: true
   - 
-    title: Додавання ворогів
+    title: Adding enemies
   - 
-    title: 'Виклик: додати більше монстрів'
+    title: 'Challenge: Adding more monsters'
     challenge: true
   - 
-    title: Перемога в грі
+    title: Winning the game
   - 
-    title: 'Виклик: розробка власної гри'
+    title: 'Challenge: Develop your own game'
     challenge: true
