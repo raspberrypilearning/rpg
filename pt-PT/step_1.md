@@ -26,7 +26,7 @@ Escreve `apanha` para apanhar qualquer item que estejas a ver (e.g. `apanha chav
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: O que vais precisar
 
 ### Hardware
 
@@ -38,13 +38,13 @@ Escreve `apanha` para apanhar qualquer item que estejas a ver (e.g. `apanha chav
 
 ### Downloads
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+O projeto inicial pode ser encontrado [aqui](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: O que vais aprender
 
 + Desenho de jogos;
 + Edição de: 
@@ -52,7 +52,7 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
     + Dicionários.
 + Expressões booleanas.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Este projeto abrange elementos das seguintes áreas do [ Currículo Raspberry Pi Digital Making ](http://rpf.io/curriculum):
 
 + [Combinar construções de programação para resolver um problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -60,10 +60,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: Informações adicionais para educadores
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Se precisar imprimir este projeto, por favor, use a [versão para impressão](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Pode encontrar o [projeto concluído aqui](http://rpf.io/p/en/rpg-get){:target="_ blank"}.
 
 \--- /collapse \---
