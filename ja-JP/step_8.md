@@ -1,6 +1,6 @@
-## ゲームに勝つ
+## Winning the game
 
-ゲームに勝つために完了する必要があるミッションをプレイヤーに与えましょう。
+Let’s give your player a mission, which needs to completed to win the game.
 
 \--- task \---
 
