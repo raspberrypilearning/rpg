@@ -1,6 +1,6 @@
-## Cum să câștigi jocul
+## Winning the game
 
-Hai să-i dăm jucătorului o misiune pe care va trebui să o îndeplinească pentru a câștiga jocul.
+Let’s give your player a mission, which needs to completed to win the game.
 
 \--- task \---
 
@@ -20,29 +20,29 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# un dicționar asociind o cameră cu alte camere
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Hol' : {
-                'sud' : 'Bucatarie',
-                'est' : 'Sufragerie',
-                'item' : 'cheie'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Bucatarie' : {
-                'nord' : 'Hol',
-               'item' : 'monstru'
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
             },
     
-            'Sufragerie' : {
-                'vest' : 'Hol',
-                'sud' : 'Gradina'
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden'
             },
-            'Gradina' : {
-                'nord' : 'Sufragerie'
+    
+            'Garden' : {
+                'north' : 'Dining Room'
             }
-    
     
         }
     
@@ -61,10 +61,10 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Sufragerie' : {
-                'vest' : 'Hol',
-                'sud' : 'Gradina',
-                'item' : 'potiune'
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
             },
     
 
@@ -82,11 +82,11 @@ language: python
 
 ## line_highlights: 6-9
 
-# jucătorul pierde dacă intră într-o cameră cu un monstru
+# player loses if they enter a room with a monster
 
 if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
-# jucătorul câștigă dacă ajunge în grădină cu cheia si poțiunea
+# player wins is they get to the garden with the key and potion
 
 if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
 
@@ -118,7 +118,7 @@ language: python
 
 def showInstructions(): #print a main menu and the commands print('''
 
-# Jocul RPG
+# RPG Game
 
 Get to the Garden with a key and a potion Avoid the monsters!
 
