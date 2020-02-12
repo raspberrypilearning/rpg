@@ -1,6 +1,6 @@
-## Adăugarea oponenților
+## Adding enemies
 
-Acest joc este prea ușor! Hai să-i adăugăm dușmani pe care jucătorul trebuie să îi evite în câteva camere.
+This game is too easy! Let’s add enemies to some rooms that the player must avoid.
 
 \--- task \---
 
@@ -12,23 +12,23 @@ language: python
 
 ## line_highlights: 11-12
 
-# un dicționar asociind o cameră cu alte camere
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Hol' : {
-                'sud' : 'Bucatarie',
-                'est' : 'Sufragerie',
-                'item' : 'cheie'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Bucatarie' : {
-                'nord' : 'Hol',
-               'item' : 'monstru'
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
             },
     
-            'Sufragerie' : {
-                'vest' : 'Hol'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
@@ -48,14 +48,14 @@ language: python
 
 ## line_highlights: 6-9
 
-        #altfel, daca itemul nu este acolo si nu poate fi luat
+        #otherwise, if the item isn't there to get
         else:
-          #spune-i ca nu il poate lua
-          print('Nu poti lua ' + miscare[1] + '!')
+            #tell them they can't get it
+            print('Can\'t get' + move[1] + '!')
     
-    #jucatorul pierde daca intra intr-o camera cu un monstru
-    if 'item' in camere[cameraCurenta] and 'monstru' in camere[cameraCurenta]['item']:
-        print('Un monstru te-a prins... STOP JOC!')
+    #player loses if they enter a room with a monster
+    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+        print('A monster has got you... GAME OVER!')
         break
     
 
