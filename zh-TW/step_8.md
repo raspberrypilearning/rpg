@@ -1,6 +1,6 @@
-## 贏得比賽
+## Winning the game
 
-讓我們給你的玩家一個任務，這需要完成以贏得比賽。
+Let’s give your player a mission, which needs to completed to win the game.
 
 \--- task \---
 
