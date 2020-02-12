@@ -1,7 +1,7 @@
-\---挑戰\---
+\--- challenge \---
 
-## 挑戰：添加新房間
+## Challenge: Add new rooms
 
-你能為遊戲添加更多房間嗎？ 例如，您可以在餐廳的南邊創建一個起居室。 記得在其他房間之間添加一扇門！
+Can you add more rooms to your game? For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
 
-\--- /挑戰\---
+\--- /challenge \---
