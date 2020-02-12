@@ -6,9 +6,9 @@ Neste projeto, você irá desenvolver e codificar o seu próprio jogo de labirin
 
 \--- no-print \---
 
-Digite`vai` e uma direção (norte, este, sul ou oeste) para se mover à volta do mundo (ex. `vai norte`).
+Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
 
-Digite`pegar` para pegarqualquer item que você encontrar (e.g. `pegarchave`).
+Type `get` to pick up any items that you see (e.g. `get key`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
