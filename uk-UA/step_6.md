@@ -1,6 +1,6 @@
-## Додавання ворогів
+## Adding enemies
 
-Ця гра дуже легко! Додамо ворогів до деяких кімнат, які гравець повинен уникати.
+This game is too easy! Let’s add enemies to some rooms that the player must avoid.
 
 \--- task \---
 
