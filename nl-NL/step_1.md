@@ -6,9 +6,9 @@ In dit project ontwerp en programmeer je je eigen RPG doolhofspel. Het doel van 
 
 \--- no-print \---
 
-Typ `ga` en dan een richting (noord, oost, zuid of west) om door de wereld te bewegen (bijv. `ga noord`).
+Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
 
-Typ `pak` om voorwerpen die je ziet op te pakken (bijv. `pak sleutel`).
+Type `get` to pick up any items that you see (e.g. `get key`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -30,11 +30,11 @@ Typ `pak` om voorwerpen die je ziet op te pakken (bijv. `pak sleutel`).
 
 ### Hardware
 
-+ Een computer die Python kan uitvoeren
++ A computer capable of running Python
 
 ### Software
 
-+ Python ([online](https://trinket.io/){:target="_ blank"} of [offline](https://www.python.org/downloads/){:target="_ blank"})
++ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
 ### Downloads
 
