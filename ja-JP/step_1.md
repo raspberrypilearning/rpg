@@ -1,6 +1,6 @@
-## はじめに
+## Introduction:
 
-このプロジェクトでは、独自のRPG迷路ゲームをデザインしてコーディングします。 ゲームの目的は、オブジェクトを収集し、すべての怪物を避けるために、家から脱出することです！
+In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
 
 ## What you will make
 
