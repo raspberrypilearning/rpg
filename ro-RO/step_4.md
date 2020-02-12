@@ -1,6 +1,6 @@
-## Adăugarea de obiecte de colectat
+## Adding items to collect
 
-Hai să lăsăm în camere obiecte de colectat pentru jucător pe măsură ce se mișcă prin labirint.
+Let’s leave items in the rooms for the player to collect as they move through the maze.
 
 \--- task \---
 
@@ -14,22 +14,22 @@ language: python
 
 ## line_highlights: 6-7
 
-# un dicționar asociind o cameră cu alte camere
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Hol' : {
-                'sud' : 'Bucatarie',
-                'est' : 'Sufragerie',
-                'item' : 'cheie'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Bucatarie' : {
-                'nord' : 'Hol'
+            'Kitchen' : {
+                'north' : 'Hall'
             },
     
-            'Sufragerie' : {
-                'vest' : 'Hol'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
