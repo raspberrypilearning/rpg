@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Provocare: Programează-ți propriul joc
+## Challenge: Develop your own game
 
-Folosește ce ai învățat pentru a-ți crea propriul joc. Adaugă multe camere, monștri de evitat și obiecte de adunat. Amintește-ți să modifici codul astfel încât jucătorul să câștige când ajunge într-o anume cameră cu unele din obiectele din inventarul lui. Te-ar putea ajuta să schițezi o hartă înainte să te apuci de programat!
+Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
 
-Ai putea chiar să adaugi scări pe hartă și să ai mai mult de un etaj pentru camere, tastând `misca sus` și `misca jos`.
+You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
 
 \--- /challenge \---
