@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Izazov: Osmisli sopstvenu igru
+## Challenge: Develop your own game
 
-Primijeni naučeno i kreiraj sopstvenu igru. Dodaj puno prostorija, čudovišta koje je potrebno izbjeći i predmeta za sakupljanje. Ne zaboravi da izmijeniš kôd tako da igrač pobijedi kada dođe u određenu prostoriju sa određenim predmetima u svom inventaru. Možeš sebi olakšati posao ako napraviš nacrt prije nego što počneš da pišeš kôd!
+Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
 
-Možeš da dodaš i stepenice u svoj nacrt, pa ćeš imati prostorije na više nivoa tako što ćeš upisati `idi gore` i `idi dolje`.
+You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
 
 \--- /challenge \---
