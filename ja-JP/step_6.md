@@ -1,6 +1,6 @@
-## 敵を追加する
+## Adding enemies
 
-このゲームはあまりにも簡単です！ プレイヤーが避けなければならない部屋に敵を追加しましょう。
+This game is too easy! Let’s add enemies to some rooms that the player must avoid.
 
 \--- task \---
 
