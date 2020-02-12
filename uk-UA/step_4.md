@@ -1,6 +1,6 @@
-## Додавання елементів для збирання
+## Adding items to collect
 
-Давайте залишмо предмети в кімнатах для гравця, щоб збирати, коли вони рухаються через лабіринт.
+Let’s leave items in the rooms for the player to collect as they move through the maze.
 
 \--- task \---
 
