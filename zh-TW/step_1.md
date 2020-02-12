@@ -1,6 +1,6 @@
-## 介紹：
+## Introduction:
 
-在這個項目中，您將設計和編寫自己的RPG迷宮遊戲。 遊戲的目的是收集物品並逃離房屋，確保避開所有的怪物！
+In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
 
 ## What you will make
 
