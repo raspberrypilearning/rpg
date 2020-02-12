@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## 課題：新しいアイテムを追加する
+## Challenge: Add new items
 
-あなたのゲームのいくつかの部屋にアイテムを追加します。 あなたは、家をエスケープしようとして役立つと思うものを追加することができます！ 例えば、盾や魔法のようなものです。
+Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
 
 \--- /challenge \---
