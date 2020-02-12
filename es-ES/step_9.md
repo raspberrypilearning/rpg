@@ -6,7 +6,7 @@ Utiliza lo que has aprendido para crear tu propio juego. Agrega muchas habitacio
 
 Incluso puedes agregar escaleras a tu mapa y tener más de un nivel de habitaciones, escribiendo `ir arriba` e `ir abajo`.
 
---- challenge ---
+--- /challenge ---
 
 
 ***

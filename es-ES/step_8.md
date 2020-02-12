@@ -15,8 +15,9 @@ En este juego, el jugador gana al llegar al jardín y escapar de la casa. Tambi�
 Primero, necesitas agregar un jardín al sur del comedor. Recuerda añadir puertas, para unirlo a otras habitaciones de la casa.
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 16-17,18-22
 
@@ -56,8 +57,9 @@ habitaciones = {
 Agrega una poción al comedor (u otra habitación de tu casa).
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 3-4
 
@@ -77,8 +79,9 @@ language: python
 Agrega este código para permitir que el jugador gane cuando llegue al jardín con la llave y la poción:
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 6-9
 
@@ -111,8 +114,9 @@ Si tienes más de 4 habitaciones, puedes utilizar un número diferente para tu j
 Finalmente, agreguemos instrucciones al juego, así el jugador sabe qué tiene que hacer. Edita la función `mostrarInstrucciones()` para incluir más información.
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 7-8
 

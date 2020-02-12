@@ -7,8 +7,9 @@ Dieses Spiel ist zu einfach! Lass uns Monster in einige Zimmer setzen, denen der
 Ein Monster in ein Zimmer zu setzen ist genauso einfach wie einen neuen Gegenstand hineinzulegen. Setzen wir ein hungriges Monster in die Küche:
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 11-12
 
@@ -43,8 +44,9 @@ zimmer = {
 Du willst auch, dass das Spiel zu Ende ist, wenn der Spieler ein Zimmer betritt, in dem sich ein Monster aufhält. Du kannst das mit folgendem Code bewerkstelligen, der am Ende des Spiels hinzugefügt wird:
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 6-9
 

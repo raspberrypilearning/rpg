@@ -9,8 +9,9 @@ Es ist einfach, einen Gegenstand zum Zimmer hinzuzufügen, du musst ihn nur dem 
 Denke daran, ein Komma am Ende der Zeile über dem neuen Gegenstand zu setzen, sonst funktioniert dein Programm nicht!
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 6-7
 

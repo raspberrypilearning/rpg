@@ -35,8 +35,9 @@ Este es un juego RPG muy básico que sólo tiene 2 habitaciones. Aquí hay un ma
 Si te fijas en la variable `habitaciones`, verás que el mapa está codificado como un diccionario de habitaciones:
 
 --- code ---
-
-## language: python
+---
+language: python
+---
 
 # un diccionario que une una habitacion a las posiciones de las otras habitaciones
 
@@ -70,8 +71,9 @@ Necesitas añadir una 3ra habitación, llamada `Comedor` y vincularlo a la sala 
 **No olvides que también necesitas añadir comas a las líneas antes de tu nuevo código.**
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 5-6,11-15
 

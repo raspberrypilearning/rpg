@@ -35,8 +35,9 @@ Was passiert, wenn du eine Richtung eintippst, in die du nicht gehen kannst? Tip
 Wenn du die Variable `zimmer` findest, kannst du sehen, dass der Plan mit einem Wörterbuch (dictionary) von Zimmern programmiert ist:
 
 --- code ---
-
-## language: python
+---
+language: python
+---
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 
@@ -70,8 +71,9 @@ Du musst einen dritten Raum hinzufügen, der `Esszimmer` heißt, und ihn mit der
 **Vergiss nicht, dass du auch Kommas in den Zeilen vor deinem neuen Code hinzufügen musst.**
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 5-6,11-15
 

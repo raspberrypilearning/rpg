@@ -7,8 +7,9 @@
 Añadir un enemigo a una habitación es tan fácil como agregar cualquier otro objeto. Añadamos un monstruo hambriento a la cocina:
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 11-12
 
@@ -44,8 +45,9 @@ habitaciones = {
 También quieres asegurarte de que el juego termine si el jugador entra a una habitación que contiene un monstruo. Puedes hacerlo con el siguiente código, que debes añadir al final del juego:
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 6-9
 

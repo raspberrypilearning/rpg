@@ -15,8 +15,9 @@ In diesem Spiel gewinnt der Spieler, wenn er aus dem Haus fliehen kann und in de
 Dazu musst du erst einmal einen Garten im Süden des Esszimmers hinzufügen. Denke daran, Türen hinzuzufügen um ihn mit anderen Zimmern im Haus zu verbinden.
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 16-17,18-22
 
@@ -56,8 +57,9 @@ zimmer = {
 Stelle einen Zaubertrank in das Esszimmer (oder in ein anderes Zimmer im Haus).
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 3-4
 
@@ -77,8 +79,9 @@ language: python
 Füge diesen Code hinzu damit der Spieler das Spiel gewinnt wenn er den Garten mit dem Schlüssel und dem Zaubertrank erreicht:
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 6-9
 
@@ -111,8 +114,9 @@ Prüfe dein Spiel und vergewissere dich, dass der Spieler auch gewinnen kann!
 Lass uns zum Schluss ein paar Anweisungen hinzufügen, damit der Spieler auch weiß, was er tun muss. Bearbeite die Funktion `zeigeAnweisungen()` damit ausführlichere Information angezeigt wird.
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 7-8
 

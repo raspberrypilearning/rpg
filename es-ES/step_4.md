@@ -9,8 +9,9 @@ Agregar un objeto a una habitación es fácil, simplemente agrégalo al dicciona
 ¡Recuerda poner una coma después de la línea de objeto nuevo, o tu programa no va a funcionar!
 
 --- code ---
-
+---
 language: python
+---
 
 ## line_highlights: 6-7
 
