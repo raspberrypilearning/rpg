@@ -26,7 +26,7 @@
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: 你需要准备什么
 
 ### 硬件
 
@@ -38,13 +38,13 @@
 
 ### 下载
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+初始项目在[这里](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: 你将学到什么
 
 + 游戏设计;
 + 编辑： 
@@ -52,7 +52,7 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
     + 字典
 + 布尔表达式。
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+本项目涵盖[树莓派数字制作课程](http://rpf.io/curriculum)如下几方面内容：
 
 + [综合利用编程结构解决问题。](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -60,10 +60,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: 教师附加信息
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+如果您需要打印此项目，请使用[适合打印版本](https://projects.raspberrypi.org/en/projects/rpg/print) 。
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+你可以 [在这里找到已完成的项目](http://rpf.io/p/en/rpg-get){:target="_blank"}
 
 \--- /collapse \---
