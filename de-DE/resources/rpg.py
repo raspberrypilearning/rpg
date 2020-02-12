@@ -1,14 +1,12 @@
 #!/bin/python3
 
+# Ersetze das RPG Startprojekt mit diesem Code, sobald die neuen Funktionen verfügbar sind
+
 def zeigeAnweisungen():
-    #Zeige ein Hauptmenü und die möglichen Befehle
-    print('''
+  #Zeige ein Hauptmenü und die möglichen Befehle
+  print('''
 RPG Spiel (Labyrinth)
 ========
-
-Suche den Schlüssel und den Zaubertrank und versuche dann, in den Garten zu entkommen.
-Lass dich nicht von den Monstern fressen!
-
 Befehle:
   gehenach [Richtung]
   nimm [Gegenstand]
@@ -31,22 +29,13 @@ inventar = []
 #Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 zimmer = {
 
-            'Diele' : { 'süden' : 'Küche',
-                  'osten'  : 'Esszimmer',
-                  'Gegenstand'  : 'Schlüssel'
-                },        
+            'Diele' : { 
+                  'süden' : 'Küche'
+                },
 
-            'Küche' : { 'norden' : 'Diele',
-                  'Gegenstand'  : 'Monster'
-                },
-                
-            'Esszimmer' : { 'westen'  : 'Diele',
-                  'süden' : 'Garten',
-                  'Gegenstand'  : 'Zaubertrank'
-              
-                },
-                
-            'Garten' : { 'norden' : 'Esszimmer' }
+            'Küche' : {
+                  'norden' : 'Diele'
+                }
 
          }
 
@@ -61,7 +50,7 @@ while True:
   zeigeZustand()
 
   #Warte auf den 'nächsten Spielzug (die nächste Bewegung)' des Spielers
-  #.split() teilt ihn in ein Array auf
+  #.split() teilt ihn in eine Liste (Array) auf
   #Wenn du z.B. 'gehenach osten' eintippst, erhältst du folgende Liste:
   #['gehenach','osten']
   spielzug = ''
@@ -79,13 +68,13 @@ while True:
       aktuellesZimmer = zimmer[aktuellesZimmer][spielzug[1]]
     #Es gibt keine Tür (Verbindung) zum neuen Zimmer
     else:
-      print('Du kannst nicht in diese Richtung gehen!')
+        print('Du kannst nicht in diese Richtung gehen!')
 
   #Wenn das Eingetippte mit 'nimm' beginnt
   if spielzug[0] == 'nimm' :
     #Wenn das Zimmer einen Gegenstand enthält, und du genau diesen Gegenstand nehmen willst
     if "Gegenstand" in zimmer[aktuellesZimmer] and spielzug[1] in zimmer[aktuellesZimmer]['Gegenstand']:
-      #Füge den Gegenstand dem Inventar des Spielers hinzu
+      #Füge den Gegenstand dem Inventar hinzu
       inventar += [spielzug[1]]
       #Zeige eine hilfreiche Mitteilung
       print(spielzug[1] + ' wurde genommen!')
@@ -96,13 +85,3 @@ while True:
       #Sage dem Spieler, dass er diesen Gegenstand nicht nehmen kann
       print('Du kannst ' + spielzug[1] + ' nicht nehmen!')
 
-  #Der Spieler verliert, wenn er ein Zimmer mit einem Monster betritt
-  if "Gegenstand" in zimmer[aktuellesZimmer] and 'Monster' in zimmer[aktuellesZimmer]['Gegenstand']:
-    print('Du wurdest von einem hungrigen Monster gefressen... DAS SPIEL IST AUS!')
-    break
-
-  #Der Spieler gewinnt, wenn er mit dem Schlüssel und dem Zaubertrank den Garten erreicht
-  if aktuellesZimmer == 'Garten' and 'Schlüssel' in inventar and 'Zaubertrank' in inventar:
-    print('Du bist aus dem Haus entkommen... DU HAST GEWONNEN!')
-    break
-  
