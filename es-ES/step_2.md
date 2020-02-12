@@ -1,36 +1,110 @@
 ## Añadir nuevas habitaciones
 
-+ Parte de los códigos de este juego son proporcionados. Escribe este trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>. 
+--- task ---
 
-+ Este juego RPG es muy básico y solamente posee 2 habitaciones. Aquí tienes un mapa del juego:
+Abre el proyecto inicial de Python.
 
-  ![screenshot](images/rpg-map1.png)
+**En línea**: abre el proyecto de inicio en [trinket.io/python/e4186c55a3](https://trinket.io/python/e4186c55a3){:target="_blank"}.
 
-  ¡Puedes escribir `go south` para moverte desde el pasillo a la cocina y, a continuación, `go north` para regresar al pasillo!
+**Offline**: abre el [proyecto de inicio](http://rpf.io/p/es-ES/rpg-go){:target=_blank"} en el editor offline.
 
-  ![screenshot](images/rpg-controls.png)
+--- /task ---
 
-+ ¿Qué ocurre cuando anotas una dirección a la que no puedes dirigirte? Escribe `go west` en el pasillo y obtendrás un mensaje amistoso de error.
+--- task ---
 
-  ![screenshot](images/rpg-error.png)
+Este es un juego RPG muy básico que sólo tiene 2 habitaciones. Aquí hay un mapa del juego:
 
-+ Si encuentras la variable `rooms`, podrás ver que el mapa está codificado como un diccionario de habitaciones:
+![captura de pantalla](images/rpg-map1.png)
 
-  ![screenshot](images/rpg-rooms.png)
+¡Puedes escribir `ir sur` para moverte de la sala a la cocina, y luego `ir norte` para regresar a la sala!
 
-  Cada habitación es un diccionario y las habitaciones están interconectadas mediante direcciones.  
-  
+![captura de pantalla](images/rpg-controls.png)
 
-+ Añadamos un comedor a tu mapa al este del pasillo.
+--- /task ---
 
-  ![screenshot](images/rpg-dining.png)
+--- task ---
 
-  Necesitarás añadir una 3.ª habitación denominada `dining room`. También necesitarás enlazarla con el pasillo hacia el oeste. También necesitarás añadir datos al pasillo de modo que puedas moverte al comedor hacia el este.
-  
-  ![screenshot](images/rpg-dining-code.png)
+¿Qué pasa cuando escribes una dirección en la cual no puedes ir? Escribe `ir oeste` en la sala y obtendrás un mensaje de error.
 
-+ Prueba el juego con tu nuevo comedor:
+![captura de pantalla](images/rpg-error.png)
 
-  ![screenshot](images/rpg-dining-test.png)
+--- /task ---
 
-  Si no puedes entrar ni salir del comedor, comprueba si has añadido todo el código anterior (incluyendo las comas adicionales en las líneas anteriores).
+--- task ---
+
+Si te fijas en la variable `habitaciones`, verás que el mapa está codificado como un diccionario de habitaciones:
+
+--- code ---
+
+## language: python
+
+# un diccionario que une una habitacion a las posiciones de las otras habitaciones
+
+habitaciones = {
+
+            'Sala' : {
+                'sur' : 'Cocina'
+            },
+    
+            'Cocina' : {
+                'norte' : 'Sala'
+            }
+    
+        }
+    
+
+--- /code ---
+
+Cada habitación es un diccionario y las habitaciones están ligadas entre ellas usando direcciones.
+
+--- /task ---
+
+--- task ---
+
+Agreguemos un comedor a tu mapa, al este de la sala.
+
+![captura de pantalla](images/rpg-dining.png)
+
+Necesitas añadir una 3ra habitación, llamada `Comedor` y vincularlo a la sala (al oeste). También necesitas agregar datos a la sala, así puedes moverte hacia el comedor al este.
+
+**No olvides que también necesitas añadir comas a las líneas antes de tu nuevo código.**
+
+--- code ---
+
+language: python
+
+## line_highlights: 5-6,11-15
+
+# un diccionario que une una habitacion a las posiciones de las otras habitaciones
+
+habitaciones = {
+
+            'Sala' : {
+                'sur' : 'Cocina',
+                'este' : 'Comedor'
+            },
+    
+            'Cocina' : {
+                'norte' : 'Sala'
+            },
+    
+            'Comedor' : {
+                'oeste' : 'Sala'
+            }
+    
+        }
+    
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Prueba el juego con tu nuevo comedor:
+
+![captura de pantalla](images/rpg-dining-test.png)
+
+Si no puedes entrar y salir del comedor, verifica que agregaste todo el código de arriba (incluyendo las comas extra).
+
+--- /task ---

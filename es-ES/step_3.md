@@ -1,9 +1,7 @@
 --- challenge ---
-## Reto: Añadir nuevas habitaciones
 
-¿Puedes añadir más habitaciones al juego? Por ejemplo, puedes crear un salón al sur del comedor. ¡Recuerda añadir una puerta a/desde las otras habitaciones!
+## Desafío: añadir más habitaciones
 
-
-
+¿Puedes añadir más habitaciones a tu juego? Por ejemplo, puedes crear un salón al sur del comedor. ¡Recuerda agregar una puerta de/hacia una de las otras habitaciones!
 
 --- /challenge ---

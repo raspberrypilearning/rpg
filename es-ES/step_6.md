@@ -1,17 +1,75 @@
 ## Añadir enemigos
 
-¡Este juego es demasiado sencillo! Añade enemigos a algunas de las habitaciones para que el jugador los evite.
+¡Este juego es muy fácil! Agreguemos enemigos a algunas habitaciones, que el jugador deberá evitar.
 
-+ Añadir un enemigo a una habitación es tan sencillo como añadir un elemento. Añadamos un monstruo hambriento a la cocina:
+--- task ---
 
-  ![screenshot](images/rpg-monster-dict.png)
+Añadir un enemigo a una habitación es tan fácil como agregar cualquier otro objeto. Añadamos un monstruo hambriento a la cocina:
 
-+ También debes asegurarte de que el juego finalice si el jugador entra en una habitación que tenga un monstruo en su interior. Podrás lograrlo con el siguiente código que deberás añadir al final del juego:
+--- code ---
 
-  ![screenshot](images/rpg-monster-code.png)
+language: python
 
-  Este código comprueba si hay un elemento en una habitación y, en dicho caso, si el elemento es un monstruo. Ten en cuenta que este código debe estar sangrado colocándolo en línea con el código anterior. Esto quiere decir que el juego comprobará se hay un monstruo cada vez que el jugador entra en una nueva habitación.
+## line_highlights: 11-12
 
-+ Probemos el código entrando en la cocina, en la cual hemos puesto un monstruo.
+# un diccionario que une una habitacion a las posiciones de las otras habitaciones
 
-  ![screenshot](images/rpg-monster-test.png)
+habitaciones = {
+
+            'Sala': {
+            'sur': 'Cocina',
+            'este': 'Comedor',
+            'objeto': 'llave'
+        },
+    
+        'Cocina': {
+            'norte': 'Sala',
+            'objeto': 'monstruo'
+        },
+    
+        'Comedor': {
+            'oeste': 'Sala'
+        }
+    
+    
+    }
+    
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+También quieres asegurarte de que el juego termine si el jugador entra a una habitación que contiene un monstruo. Puedes hacerlo con el siguiente código, que debes añadir al final del juego:
+
+--- code ---
+
+language: python
+
+## line_highlights: 6-9
+
+        #Por el contrario, si el objeto que se quiere no esta en la habitación
+        else:
+        #diles que no pueden cogerlo
+        print('¡No puedes coger el/la ' + movimiento[1] + '!')
+    
+    #el jugador pierde si entra en una habitación con un monstruo
+    if 'objeto' in habitaciones[habitacionActual] and 'monstruo' in habitaciones[habitacionActual]['objeto']:
+        print('Te ha pillado el monstruo... JUEGO TERMINADO!')
+        break
+    
+
+--- /code ---
+
+Este código verifica si hay un objeto en la habitación, y en caso afirmativo, si ese objeto es un monstruo. Date cuenta que el código tiene sangría, poniéndolo en línea con el código encima de él. Esto significa que el juego va a verificar si hay un monstruo cada vez que el jugador entra a una nueva habitación.
+
+--- /task ---
+
+--- task ---
+
+Prueba tu código yendo a la cocina, que ahora contiene un monstruo.
+
+![captura de pantalla](images/rpg-monster-test.png)
+
+--- /task ---

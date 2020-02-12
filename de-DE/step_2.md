@@ -1,35 +1,110 @@
 ## Neue Zimmer hinzufügen
 
-+ Ein Teil des Codes dieses Spieles steht für dich bereit. Öffne diesen Trinket: <a href="https://trinket.io/python/cb40c456c0" target="_blank">trinket.io/python/cb40c456c0</a>.
+--- task ---
 
-+ Dies ist ein sehr einfaches RPG-Spiel mit nur zwei Zimmern. Hier ist ein Plan des Spiels:
-    
-    ![screenshot](images/rpg-map1.png)
-    
-    Du kannst `gehenach süden` eintippen, um von der Diele in die Küche zu gehen, und dann mit `gehenach norden` wieder zurück in die Diele gehen!
-    
-    ![screenshot](images/rpg-controls.png)
+Öffne das Python Start-Projekt.
 
-+ Was passiert, wenn du eine Richtung eintippst, in die du nicht gehen kannst? Tippe `gehenach westen` wenn du in der Diele bist, und du erhältst eine freundliche Fehlermeldung.
-    
-    ![screenshot](images/rpg-error.png)
+**Online**: Öffne das Basisprojekt: [trinket.io/python/cb40c456c0](https://trinket.io/python/cb40c456c0){:target="_blank"}.
 
-+ Wenn du die Variable `zimmer` findest, kannst du sehen, dass der Plan mit einem Wörterbuch (dictionary) von Zimmern programmiert ist:
-    
-    ![screenshot](images/rpg-rooms.png)
-    
-    Jedes Zimmer ist ein Wörterbuch und die Zimmer sind über Richtungen miteinander verbunden.
+**Offline**: Öffne das [Basisprojekt](http://rpf.io/p/de-DE/rpg-go){:target="_blank"} im Offline-Editor.
 
-+ Fügen wir ein Esszimmer, das sich östlich von der Diele befindet, zum Plan hinzu.
-    
-    ![screenshot](images/rpg-dining.png)
-    
-    Du musst ein drittes Zimmer, das `Esszimmer` genannt wird, hinzufügen. Du musst es auch mit der Diele im Westen verbinden. Du musst auch Daten zur Diele hinzufügen, damit du in das Esszimmer im Osten gehen kannst.
-    
-    ![screenshot](images/rpg-dining-code.png)
+--- /task ---
 
-+ Probiere das Spiel mit deinem neuen Esszimmer aus:
+--- task ---
+
+Dies ist ein sehr einfaches RPG-Spiel mit nur zwei Zimmern. Hier ist eine Karte des Spiels:
+
+![Screenshot](images/rpg-map1.png)
+
+Du kannst `gehenach süden` eintippen, um von der Diele in die Küche zu gehen, und dann mit `gehenach norden` wieder zurück in die Diele gehen!
+
+![Screenshot](images/rpg-controls.png)
+
+--- /task ---
+
+--- task ---
+
+Was passiert, wenn du eine Richtung eintippst, in die du nicht gehen kannst? Tippe `gehenach westen` wenn du in der Diele bist, und du erhältst eine freundliche Fehlermeldung.
+
+![Screenshot](images/rpg-error.png)
+
+--- /task ---
+
+--- task ---
+
+Wenn du die Variable `zimmer` findest, kannst du sehen, dass der Plan mit einem Wörterbuch (dictionary) von Zimmern programmiert ist:
+
+--- code ---
+
+## language: python
+
+# Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
+
+zimmer = {
+
+            'Diele' : {
+                'süden' : 'Küche'
+            },
     
-    ![screenshot](images/rpg-dining-test.png)
+            'Küche' : {
+                'norden' : 'Diele'
+            }
     
-    Wenn du nicht in das Esszimmer hinein- oder herausgehen kannst, dann prüfe, ob du den ganzen oben aufgeführten Code eingegeben hast (inklusive der zusätzlichen Kommas im Programm).
+        }
+    
+
+--- /code ---
+
+Jedes Zimmer ist ein Wörterbuch und die Zimmer sind über Richtungen miteinander verbunden.
+
+--- /task ---
+
+--- task ---
+
+Fügen wir ein Esszimmer, das sich östlich von der Diele befindet, zum Plan hinzu.
+
+![Screenshot](images/rpg-dining.png)
+
+Du musst einen dritten Raum hinzufügen, der `Esszimmer` heißt, und ihn mit der Diele (nach westen) verbinden. Du musst auch Daten zur Diele hinzufügen, damit du in das Esszimmer im Osten gehen kannst.
+
+**Vergiss nicht, dass du auch Kommas in den Zeilen vor deinem neuen Code hinzufügen musst.**
+
+--- code ---
+
+language: python
+
+## line_highlights: 5-6,11-15
+
+# Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
+
+zimmer = {
+
+            'Diele' : {
+                'süden' : 'Küche',
+                'osten' : 'Esszimmer'
+            },
+    
+            'Küche' : {
+                'norden' : 'Diele'
+            },
+    
+            'Esszimmer' : {
+                'westen' : 'Diele'
+            }
+    
+        }
+    
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Probiere das Spiel mit deinem neuen Esszimmer aus:
+
+![Screenshot](images/rpg-dining-test.png)
+
+Wenn du nicht in das Esszimmer hinein- oder herausgehen kannst, dann prüfe, ob du den ganzen oben aufgeführten Code eingegeben hast (inklusive der zusätzlichen Kommas im Programm).
+
+--- /task ---
