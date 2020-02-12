@@ -1,7 +1,7 @@
-\--- завдання \---
+\--- challenge \---
 
-## Виклик: додавання нових елементів
+## Challenge: Add new items
 
-Додайте елемент до деяких кімнат у вашу гру. Ви можете додати все те, що, на вашу думку, буде корисним, коли ви спробуєте втекти від будинку! Наприклад, щит або чарівний зілля.
+Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
 
 \--- /challenge \---
