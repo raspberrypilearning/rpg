@@ -1,4 +1,4 @@
-## 新しい部屋を追加する
+## Adding new rooms
 
 \--- task \---
 
