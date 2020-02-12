@@ -1,7 +1,7 @@
-\--- вызов \---
+\--- challenge \---
 
-## Задача: Добавить новые предметы
+## Challenge: Add new items
 
-Добавьте элемент в некоторые комнаты в вашей игре. Вы можете добавить все, что, по вашему мнению, было бы полезно в попытке избежать дома! Например, щит или волшебное зелье.
+Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
 
-\--- /вызов \---
+\--- /challenge \---
