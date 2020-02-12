@@ -7,7 +7,7 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Neste desafio, você vai desenvolver e programar seu próprio jogo de labirinto no estilo RPG.
+description: Design and code your own RPG maze game.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -20,9 +20,9 @@ steps:
   - 
     title: 'Introdução'
   - 
-    title: Adicionando novos quartos
+    title: Adding new rooms
   - 
-    title: 'Desafio: adicionar novos quartos'
+    title: 'Challenge: Add new rooms'
     challenge: true
   - 
     title: Adicionando itens para coletar
@@ -35,7 +35,7 @@ steps:
     title: 'Desafio: Adicionando mais monstros'
     challenge: true
   - 
-    title: Ganhando o jogo
+    title: Winning the game
   - 
     title: 'Desafio: Desenvolva seu próprio jogo'
     challenge: true
