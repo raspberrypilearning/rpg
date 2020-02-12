@@ -2,7 +2,7 @@
 
 \--- task \---
 
-Open the Python starter project.
+打开Python初始项目.
 
 **Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
@@ -55,7 +55,7 @@ rooms = {
 
 \--- /code \---
 
-Each room is a dictionary, and rooms are linked together using directions.
+每个房间是字典中的一项数据 然后用方向来将房间与房间关联起来。
 
 \--- /task \---
 
