@@ -26,7 +26,7 @@
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Τι θα χρειαστείς
 
 ### Υλικό
 
@@ -38,13 +38,13 @@
 
 ### Λήψεις
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+Το αρχικό project μπορεί να βρεθεί [εδώ](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Τι θα μάθεις
 
 + Σχεδιασμός παιχνιδιών.
 + Επεξεργασία: 
@@ -52,7 +52,7 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
     + Λεξικά.
 + Εκφράσεις τύπου Boolean.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Αυτό το έργο καλύπτει στοιχεία από τις ακόλουθες πτυχές του [Raspberry Pi Digital Curriculum Making](http://rpf.io/curriculum):
 
 + [Συνδύασε δομές προγραμματισμού για να λύσεις ένα πρόβλημα.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -60,10 +60,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## Πρόσθετες πληροφορίες για εκπαιδευτικούς
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Αν χρειαστεί να εκτυπώσεις αυτό το έργο, χρησιμοποίησε την [εκτυπώσιμη έκδοση](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
