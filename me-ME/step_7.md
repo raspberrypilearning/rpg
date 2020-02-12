@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Izazov: Dodaj još čudovišta
+## Challenge: Adding more monsters
 
-Dodaj još čudovišta u svoju igru kako bi igraču bilo teže da pobjegne iz kuće!
+Add more monsters to your game, to make it harder to escape the house!
 
 \--- /challenge \---
