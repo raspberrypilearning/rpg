@@ -1,7 +1,7 @@
-\--- вызов \---
+\--- challenge \---
 
-## Задача: добавить больше монстров
+## Challenge: Adding more monsters
 
-Добавьте больше монстров в свою игру, чтобы сделать ее сложнее покинуть дом!
+Add more monsters to your game, to make it harder to escape the house!
 
-\--- /вызов \---
+\--- /challenge \---
