@@ -2,11 +2,11 @@
 
 W tym projekcie zaprojektujesz i zaprogramujesz własną labiryntową grę RPG. Celem gry będzie zbieranie przedmiotów i ucieczka z domu, unikając wszystkich potworów!
 
-## Co będziesz robił
+## Co zrobisz
 
 \--- no-print \---
 
-Wpisz `ruszaj.na` a następnie nazwę kierunku (północ, wschód, południe lub zachód) aby poruszać się po świecie (np. `ruszaj.na północ`).
+Wpisz `ruszaj-na` a następnie nazwę kierunku (północ, wschód, południe lub zachód) aby poruszać się po świecie (np. `ruszaj-na północ`).
 
 Wpisz `bierz` i nazwę przedmiotu, który widzisz (np. `bierz klucz`).
 
@@ -26,7 +26,7 @@ Wpisz `bierz` i nazwę przedmiotu, który widzisz (np. `bierz klucz`).
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Czego będziesz potrzebować
 
 ### Sprzęt
 
@@ -38,13 +38,13 @@ Wpisz `bierz` i nazwę przedmiotu, który widzisz (np. `bierz klucz`).
 
 ### Pliki do pobrania
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+Projekt początkowy można znaleźć [tutaj](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Czego się nauczysz
 
 + Projekt gry;
 + Edycja: 
@@ -52,7 +52,7 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
     + Słowniki.
 + Wyrażenia logiczne.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Ten projekt obejmuje elementy z następujących wątków [Programu nauczania Raspberry Pi Digital Making](http://rpf.io/curriculum):
 
 + [Połącz konstrukcje programistyczne, aby rozwiązać problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -60,10 +60,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: Dodatkowe informacje dla nauczycieli
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Jeśli chcesz wydrukować ten projekt, skorzystaj z [wersji do druku](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Możesz znaleźć [kompletną wersję projektu tutaj](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
