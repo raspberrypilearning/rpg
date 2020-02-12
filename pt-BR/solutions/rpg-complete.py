@@ -1,122 +1,122 @@
 #!/bin/python3
 
 def mostrarInstrucoes():
-    #exibe um menu principal e os comandos possiveis
+    #print a main menu and the commands
     print('''
 Jogo RPG
 ========
 
 Vá para o Jardim com uma chave e uma poção
-Evite os monstros!
+Avoid the monsters!
 
 Você está ficando cansado, você perderá 1 ponto de vida a cada movimento. 
 
 Comandos:
-  va [direção]
-  pegar [item]
+  go [direction]
+  get [item]
 ''')
 
-def mostrarEstado():
-  #exibe o estado atual do jogador
+def showStatus():
+  #print the player's current status
   print('---------------------------')
-  print(nome + ' está na ' + comodoAtual)
-  print("Saúde : " + str(saude))
-  #exibe o inventário atual
-  print("Inventário :" + str(inventario))
-  #exibe um item se houver um
-  if "item" in comodos[comodoAtual]:
-    print('Você vê um(a) ' + comodos[comodoAtual]['item'])
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
+  #print the current inventory
+  print("Inventory : " + str(inventory))
+  #print an item if there is one
+  if "item" in rooms[currentRoom]:
+    print('You see a ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-# configurar o jogo
-nome = None
-saude = 5
-comodoAtual = 'Saguão'
-inventario = []
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
+inventory = []
 
-#-# O TEU CÓDIGO FICA AQUI #-#
-# Carregar os dados do jogo para o arquivo
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
-#um dicionário ligando um cômodo aos demais cômodos
-comodos= {
+#a dictionary linking a room to other room positions
+rooms = {
 
-            'Saguão' : {'sul' : 'Cozinha',
-                  'leste' : 'Sala de Jantar',
-                  'item' : 'Chave'
+            'Hall' : { 'south' : 'Kitchen',
+                  'east'  : 'Dining Room',
+                  'item'  : 'key'
                 },
 
-            'Cozinha': {'norte' : 'Saguão',
-                  'item' : 'Monstro'
+            'Kitchen' : { 'north' : 'Hall',
+                  'item'  : 'monster'
                 },
 
-            'Sala de Jantar' : { 'oeste' : 'Saguão',
-                  'sul' : 'Jardim',
-                  'item' : 'Poção'
+            'Dining Room' : { 'west'  : 'Hall',
+                  'south' : 'Garden',
+                  'item'  : 'potion'
 
                 },
 
-            'Jardim' : {'norte' : 'Sala de Jantar' }
+            'Garden' : { 'north' : 'Dining Room' }
 
          }
 
-# perguntar ao jogador o nome dele
-if nome is None:
-  nome = input("Qual é o teu nome Aventureiro? ")
-  mostrarInstrucoes()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  showInstructions()
 
-#repita infinitamente
+#loop forever
 while True:
 
-  mostrarEstado()
+  showStatus()
 
-  #pega o próximo 'movimento' do jogador
-  #.split() quebra a entrada em uma lista vetor
-  #ex. digitar 'va leste' resultaria na lista:
-  #['va','leste']
-  movimento = ''
-  while movimento == '':
-    movimento = input('>')
+  #get the player's next 'move'
+  #.split() breaks it up into an list array
+  #eg typing 'go east' would give the list:
+  #['go','east']
+  move = ''
+  while move == '':
+    move = input('>')
 
-  movimento = movimento.lower().split()
+  move = move.lower().split()
 
-  #se eles digitarem primeiro 'va'
-  if movimento[0] == 'va':
-    saude = saude -1
-    #verifica se eles podem ir onde pretendem
-    if movimento[1] in comodos[comodoAtual]:
-      #define o novo cômodo como o atual
-      comodoAtual = comodos[comodoAtual][movimento[1]]
-    #não há porta (conexão) para o novo cômodo
+  #if they type 'go' first
+  if move[0] == 'go':
+    health = health - 1
+    #check that they are allowed wherever they want to go
+    if move[1] in rooms[currentRoom]:
+      #set the current room to the new room
+      currentRoom = rooms[currentRoom][move[1]]
+    #there is no door (link) to the new room
     else:
-      print('Você não pode ir para esse lado')
+      print('You can\'t go that way!')
 
-  #se eles digitarem 'pegar' primeiro
-  if movimento[0] == 'pegar':
-    #se o quarto tiver um item, e o item é o qual eles desejam pegar
-    if "item" in comodos[comodoAtual] and movimento[1] in comodos[comodoAtual]['item']:
-      #adicionar o item ao inventário
-      inventario += [movimento[1]]
-      #exiba uma mensagem útil
-      print('Pegou' + movimento[1] + '!')
-      #deletar o item do cômodo
-      del comodos[comodoAtual]['item']
-    #caso contrário, se o item não estiver lá
+  #if they type 'get' first
+  if move[0] == 'get' :
+    #if the room contains an item, and the item is the one they want to get
+    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
+      #add the item to their inventory
+      inventory += [move[1]]
+      #display a helpful message
+      print(move[1] + ' got!')
+      #delete the item from the room
+      del rooms[currentRoom]['item']
+    #otherwise, if the item isn't there to get
     else:
-      #fale para o jogador que ele não pode pegar
-      print('Não pode pegar o(a)' + movimento[1] + '!')
+      #tell them they can't get it
+      print('Can\'t get ' + move[1] + '!')
 
-  #o jogador perde se entrar em um cômodo com um monstro
-  if "item" in comodos[comodoAtual] and 'monstro' in comodos[comodoAtual]['item']:
-    print('Um monstro pegou você... FIM DE JOGO!')
+  #player loses if they enter a room with a monster
+  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+    print('A monster has got you... GAME OVER!')
     break
 
-  if saude == 0:
-    print('Você ficou exausto... FIM DE JOGO!')
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
 
-  #o jogador ganha se entrar no jardim com a chave e a poçāo
-  if comodoAtual == 'Jardim' and 'Chave' in inventario and 'Poção' in inventario:
-    print('Você conseguiu escapar... VOCÊ VENCEU!')
+  #player wins if they get to the garden with a key and a potion
+  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
+    print('You escaped the house... YOU WIN!')
     break
 
-  #-# O TEU CÓDIGO FICA AQUI #-#
-  # Carregar os dados do jogo para o arquivo
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
