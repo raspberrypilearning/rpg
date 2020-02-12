@@ -4,15 +4,15 @@ Geben wir dem Spieler eine Mission die erfüllt werden muss um das Spiel zu gewi
 
 \--- task \---
 
-In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+In diesem Spiel gewinnt der Spieler, wenn er aus dem Haus fliehen kann und in den Garten gelangt. Dazu muss er/sie auch den Schlüssel und den Zaubertrank dabei haben. Hier ist eine Karte des Spiels.
 
-![screenshot](images/rpg-final-map.png)
+![Screenshot](images/rpg-final-map.png)
 
 \--- /task \---
 
 \--- task \---
 
-First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+Dazu musst du erst einmal einen Garten im Süden des Esszimmers hinzufügen. Denke daran, Türen hinzuzufügen um ihn mit anderen Zimmern im Haus zu verbinden.
 
 ## \--- code \---
 
@@ -22,7 +22,7 @@ language: python
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 
-rooms = {
+zimmer = {
 
             'Diele' : {
                 'süden' : 'Küche',
@@ -53,7 +53,7 @@ rooms = {
 
 \--- task \---
 
-Add a potion to the dining room (or another room in your house).
+Stelle einen Zaubertrank in das Esszimmer (oder in ein anderes Zimmer im Haus).
 
 ## \--- code \---
 
@@ -74,7 +74,7 @@ language: python
 
 \--- task \---
 
-Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+Füge diesen Code hinzu damit der Spieler das Spiel gewinnt wenn er den Garten mit dem Schlüssel und dem Zaubertrank erreicht:
 
 ## \--- code \---
 
@@ -84,31 +84,31 @@ language: python
 
 # Der Spieler verliert, wenn er ein Zimmer mit einem Monster betritt
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'Gegenstand' in zimmer\[aktuellesZimmer] and 'Monster' in zimmer[aktuellesZimmer\]\['Gegenstand'\]: print('Du wurdest von einem hungrigen Monster gefressen... DAS SPIEL IST AUS!') break
 
 # Der Spieler gewinnt, wenn er mit dem Schlüssel und dem Zaubertrank den Garten erreicht
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
+if aktuellesZimmer == 'Garten' and 'Schlüssel' in inventar and 'Zaubertrank' in inventar: print('Du bist aus dem Haus entkommen... DU HAST GEWONNEN!') break
 
 \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+Vergewissere dich, dass der Code genauso weit wie der darüberstehende Code eingerückt ist. Dieser Code bedeutet, dass die Nachricht `Du bist aus dem Haus entkommen... DU HAST GEWONNEN!` angezeigt wird, wenn der Spieler im 4. Zimmer (dem Garten) ist und sich der Schlüssel und der Zaubertrank in seinem Inventar befinden.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
-
-\--- /task \---
-
-\--- task \---
-
-Test your game to make sure the player can win!
-
-![screenshot](images/rpg-win-test.png)
+Wenn du mehr als 4 Zimmer hast, musst du vielleicht eine andere Raumnummerierung für den Garten im obenstehenden Code verwenden.
 
 \--- /task \---
 
 \--- task \---
 
-Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+Prüfe dein Spiel und vergewissere dich, dass der Spieler auch gewinnen kann!
+
+![Screenshot](images/rpg-win-test.png)
+
+\--- /task \---
+
+\--- task \---
+
+Lass uns zum Schluss ein paar Anweisungen hinzufügen, damit der Spieler auch weiß, was er tun muss. Bearbeite die Funktion `zeigeAnweisungen()` damit ausführlichere Information angezeigt wird.
 
 ## \--- code \---
 
@@ -116,24 +116,24 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def zeigeAnweisungen(): #Zeige ein Hauptmenü und die möglichen Befehle print('''
 
 # RPG Spiel (Labyrinth)
 
-Get to the Garden with a key and a potion Avoid the monsters!
+Suche den Schlüssel und den Zaubertrank und versuche dann, in den Garten zu entkommen. Lass dich nicht von den Monstern fressen!
 
-Commands: go [direction] get [item] ''')
+Befehle: gehenach [Richtung] nimm [Gegenstand] ''')
 
 \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+Du musst Anleitungen hinzufügen um dem Spieler zu sagen, welche Gegenstände er nehmen muss und wem er ausweichen sollte!
 
 \--- /task \---
 
 \--- task \---
 
-Test your game and you should see your new instructions.
+Prüfe dein Spiel und du solltest die neuen Anweisungen sehen.
 
-![screenshot](images/rpg-instructions-test.png)
+![Screenshot](images/rpg-instructions-test.png)
 
 \--- /task \---
