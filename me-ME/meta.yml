@@ -7,7 +7,7 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Dizajniraj i kodiraj sopstvenu RPG igru lavirinta.
+description: Design and code your own RPG maze game.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -20,22 +20,22 @@ steps:
   - 
     title: 'Introduction'
   - 
-    title: Dodavanje novih prostorija
+    title: Adding new rooms
   - 
-    title: 'Izazov: Dodaj nove prostorije'
+    title: 'Challenge: Add new rooms'
     challenge: true
   - 
-    title: Dodavanje predmeta za sakupljanje
+    title: Adding items to collect
   - 
-    title: 'Izazov: Dodaj nove predmete'
+    title: 'Challenge: Add new items'
     challenge: true
   - 
-    title: Dodavanje neprijatelja
+    title: Adding enemies
   - 
-    title: 'Izazov: Dodaj još čudovišta'
+    title: 'Challenge: Adding more monsters'
     challenge: true
   - 
-    title: Pobjeda u igri
+    title: Winning the game
   - 
-    title: 'Izazov: Osmisli sopstvenu igru'
+    title: 'Challenge: Develop your own game'
     challenge: true
