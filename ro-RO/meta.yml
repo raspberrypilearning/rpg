@@ -7,9 +7,9 @@ ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Proiectează-ți si programează-ți propriul joc labirint RPG.
+description: Design and code your own RPG maze game.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
-interests: jocuri
+interests: games
 technologies: python
 site_areas: projects
 hardware: ''
@@ -18,24 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introducere'
+    title: 'Introduction'
   - 
-    title: Adăugarea de camere noi
+    title: Adding new rooms
   - 
-    title: 'Provocare: Adaugă camere noi'
+    title: 'Challenge: Add new rooms'
     challenge: true
   - 
-    title: Adăugarea de itemi de colectat
+    title: Adding items to collect
   - 
-    title: 'Provocare: Adaugă noi itemi'
+    title: 'Challenge: Add new items'
     challenge: true
   - 
-    title: Adăugarea oponenților
+    title: Adding enemies
   - 
-    title: 'Provocare: Adăugarea mai multor monștri'
+    title: 'Challenge: Adding more monsters'
     challenge: true
   - 
-    title: Cum să câștigi jocul
+    title: Winning the game
   - 
-    title: 'Provocare: Programează-ți propriul joc'
+    title: 'Challenge: Develop your own game'
     challenge: true
