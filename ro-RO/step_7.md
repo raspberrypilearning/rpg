@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Provocare: Adăugarea mai multor monștri
+## Challenge: Adding more monsters
 
-Adaugă mai mulți monștri în jocul tău, pentru a face mai dificilă scăparea din casă!
+Add more monsters to your game, to make it harder to escape the house!
 
 \--- /challenge \---
