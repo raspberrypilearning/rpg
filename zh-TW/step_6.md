@@ -1,6 +1,6 @@
-## 添加敵人
+## Adding enemies
 
-這個遊戲太簡單了！ 讓我們為玩家必須避免的一些房間添加敵人。
+This game is too easy! Let’s add enemies to some rooms that the player must avoid.
 
 \--- task \---
 
