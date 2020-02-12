@@ -1,6 +1,6 @@
-## Pobjeda u igri
+## Winning the game
 
-Dajmo tvom igraču zadatak koji mora da izvrši da bi pobijedio u igri.
+Let’s give your player a mission, which needs to completed to win the game.
 
 \--- task \---
 
