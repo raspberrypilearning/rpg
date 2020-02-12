@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Wyzwanie: dodawanie kolejnych potworów
+## Challenge: Adding more monsters
 
-Dodaj więcej potworów do swojej gry, aby utrudnić ucieczkę z domu!
+Add more monsters to your game, to make it harder to escape the house!
 
 \--- /challenge \---
