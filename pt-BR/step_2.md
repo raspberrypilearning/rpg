@@ -1,4 +1,4 @@
-## Adicionar novos cômodos
+## Adding new rooms
 
 \--- task \---
 
