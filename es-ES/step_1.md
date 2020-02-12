@@ -26,7 +26,7 @@ Escribe `coger` para coger los objetos que puedes ver (por ejemplo `coger llave`
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Lo que vas a necesitar
 
 ### Hardware
 
@@ -38,13 +38,13 @@ Escribe `coger` para coger los objetos que puedes ver (por ejemplo `coger llave`
 
 ### Descargas
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+El proyecto de iniciación puede encontrarse [aquí](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: Lo que vas a aprender
 
 + Diseño de Juegos;
 + Edición: 
@@ -52,7 +52,7 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
     + Diccionarios.
 + Expresiones booleanas.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Este proyecto incluye los siguientes aspectos del [Curríulo de Creación Digital de Raspberry Pi](http://rpf.io/curriculum):
 
 + [Combina construcciones de programación para resolver un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -60,10 +60,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: Información adicional para educadores
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Puedes [encontrar la solución para este proyecto aquí](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
