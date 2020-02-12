@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Provocare: Adaugă noi obiecte
+## Challenge: Add new items
 
-Adaugă un obiect în câteva din camerele din joc. Poți adăuga orice consideri că va fi de folos în a incerca să scapi din casă! De exemplu, un scut sau o poțiune magică.
+Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
 
 \--- /challenge \---
