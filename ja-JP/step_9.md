@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## 課題：自分のゲームを開発する
+## Challenge: Develop your own game
 
-自分のゲームを作成するために学んだことを使用してください。 たくさんの部屋、避けるべきモンスター、そして収集するアイテムを追加してください。 プレイヤーがインベントリ内のオブジェクトの一部で特定の部屋に移動したときに勝つように、コードを変更することを忘れないでください。 コーディングを開始する前にマップをスケッチするのに役立つかもしれません！
+Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
 
-あなたも入力することで、マップに階段を追加し、お部屋の複数のレベルを持っている可能性が `上がる` 及び `下る`。
+You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
 
 \--- /challenge \---
