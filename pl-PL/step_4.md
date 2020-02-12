@@ -1,6 +1,6 @@
-## Dodawanie przedmiotów do zebrania
+## Adding items to collect
 
-Zostawmy przedmioty w pokojach, aby gracz mógł je zbierać, gdy przechodzi przez "labirynt".
+Let’s leave items in the rooms for the player to collect as they move through the maze.
 
 \--- task \---
 
@@ -14,21 +14,22 @@ language: python
 
 ## line_highlights: 6-7
 
-# słownik łączący pokój z innymi pokojami
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Korytarz' : {
-                'południe' : 'Kuchnia',
-                'wschód' : 'Jadalnia'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Kuchnia' : {
-                'północ' : 'Korytarz'
+            'Kitchen' : {
+                'north' : 'Hall'
             },
     
-            'Jadalnia' : {
-                'zachód' : 'Korytarz'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
