@@ -1,9 +1,9 @@
-\--- вызов \---
+\--- challenge \---
 
-## Задача: разработать свою собственную игру
+## Challenge: Develop your own game
 
-Используйте то, что вы научились, чтобы создать свою собственную игру. Добавьте много комнат, монстров, которых нужно избегать, и предметов для сбора. Не забудьте изменить код, чтобы игрок выигрывал, когда он добирался до определенной комнаты с некоторыми предметами в инвентаре. Это может помочь вам набросать карту перед началом кодирования!
+Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
 
-Вы даже можете добавить лестницу на свою карту и иметь более одного уровня комнат, набрав `перейдите` и `вниз`.
+You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
 
-\--- /вызов \---
+\--- /challenge \---
