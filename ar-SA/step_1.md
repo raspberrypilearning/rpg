@@ -11,7 +11,7 @@
 اطبع `أحصل` لتأخذ أي غرض تراه (مثلاً `احصل علي المفتاح`).
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/8cf3d320d9?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
@@ -26,7 +26,7 @@
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: ما ستحتاج إليه
 
 ### الأجهزة
 
@@ -38,13 +38,13 @@
 
 ### للتحميل
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+برنامج البداية ستجدة [هنا ](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: ما الذي ستتعلمه
 
 + تصميم الألعاب؛
 + التحرير: 
@@ -52,18 +52,18 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
     + القواميس.
 + التعبيرات المنطقية.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+يتناول هذا المشروع عناصر من الصفوف التالية من المناهج الرقمية الخاصة بـ [Raspberry Pi](http://rpf.io/curriculum):
 
 + [دمج الإنشاءات البرمجية لحل مشكلة.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-\--- /collapse \---
+\--- collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: معلومات إضافية للمعلمين
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+إذا كنت بحاجة إلى طباعة هذا المشروع ، فيُرجى استخدام [النسخة القابلة للطباعة](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+يمكنك [الحصول على المشروع كاملاً من هنا](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
