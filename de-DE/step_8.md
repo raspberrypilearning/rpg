@@ -17,9 +17,8 @@ Dazu musst du erst einmal einen Garten im Süden des Esszimmers hinzufügen. Den
 --- code ---
 ---
 language: python
+line_highlights: 16-17,18-22
 ---
-
-## line_highlights: 16-17,18-22
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 
@@ -59,9 +58,8 @@ Stelle einen Zaubertrank in das Esszimmer (oder in ein anderes Zimmer im Haus).
 --- code ---
 ---
 language: python
+line_highlights: 3-4
 ---
-
-## line_highlights: 3-4
 
             'Esszimmer' : {
                 'westen' : 'Diele',
@@ -81,9 +79,8 @@ Füge diesen Code hinzu damit der Spieler das Spiel gewinnt wenn er den Garten m
 --- code ---
 ---
 language: python
+line_highlights: 6-9
 ---
-
-## line_highlights: 6-9
 
 # Der Spieler verliert, wenn er ein Zimmer mit einem Monster betritt
 
@@ -116,9 +113,8 @@ Lass uns zum Schluss ein paar Anweisungen hinzufügen, damit der Spieler auch we
 --- code ---
 ---
 language: python
+line_highlights: 7-8
 ---
-
-## line_highlights: 7-8
 
 def zeigeAnweisungen(): #Zeige ein Hauptmenü und die möglichen Befehle print('''
 

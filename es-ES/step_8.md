@@ -17,9 +17,8 @@ Primero, necesitas agregar un jardín al sur del comedor. Recuerda añadir puert
 --- code ---
 ---
 language: python
+line_highlights: 16-17,18-22
 ---
-
-## line_highlights: 16-17,18-22
 
 # un diccionario que une una habitacion a las posiciones de las otras habitaciones
 
@@ -59,9 +58,8 @@ Agrega una poción al comedor (u otra habitación de tu casa).
 --- code ---
 ---
 language: python
+line_highlights: 3-4
 ---
-
-## line_highlights: 3-4
 
             'Comedor' : {
                 'oeste' : 'Sala',
@@ -81,9 +79,8 @@ Agrega este código para permitir que el jugador gane cuando llegue al jardín c
 --- code ---
 ---
 language: python
+line_highlights: 6-9
 ---
-
-## line_highlights: 6-9
 
 # el jugador pierde si entra a una habitación con un monstruo
 
@@ -116,9 +113,8 @@ Finalmente, agreguemos instrucciones al juego, así el jugador sabe qué tiene q
 --- code ---
 ---
 language: python
+line_highlights: 7-8
 ---
-
-## line_highlights: 7-8
 
 def mostrarInstrucciones(): #imprime un menu principal y los comandos print('''
 

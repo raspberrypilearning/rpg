@@ -9,9 +9,8 @@ Añadir un enemigo a una habitación es tan fácil como agregar cualquier otro o
 --- code ---
 ---
 language: python
+line_highlights: 11-12
 ---
-
-## line_highlights: 11-12
 
 # un diccionario que une una habitacion a las posiciones de las otras habitaciones
 
@@ -47,9 +46,8 @@ También quieres asegurarte de que el juego termine si el jugador entra a una ha
 --- code ---
 ---
 language: python
+line_highlights: 6-9
 ---
-
-## line_highlights: 6-9
 
         #Por el contrario, si el objeto que se quiere no esta en la habitación
         else:

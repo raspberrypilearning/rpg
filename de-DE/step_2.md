@@ -73,9 +73,8 @@ Du musst einen dritten Raum hinzufügen, der `Esszimmer` heißt, und ihn mit der
 --- code ---
 ---
 language: python
+line_highlights: 5-6,11-15
 ---
-
-## line_highlights: 5-6,11-15
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 

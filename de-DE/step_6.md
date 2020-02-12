@@ -9,9 +9,8 @@ Ein Monster in ein Zimmer zu setzen ist genauso einfach wie einen neuen Gegensta
 --- code ---
 ---
 language: python
+line_highlights: 11-12
 ---
-
-## line_highlights: 11-12
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 
@@ -46,9 +45,8 @@ Du willst auch, dass das Spiel zu Ende ist, wenn der Spieler ein Zimmer betritt,
 --- code ---
 ---
 language: python
+line_highlights: 6-9
 ---
-
-## line_highlights: 6-9
 
         #Andernfalls ist der Gegenstand nicht vorhanden und kann auch nicht genommen werden
         else:

@@ -11,9 +11,8 @@ Agregar un objeto a una habitación es fácil, simplemente agrégalo al dicciona
 --- code ---
 ---
 language: python
+line_highlights: 6-7
 ---
-
-## line_highlights: 6-7
 
 # un diccionario que une una habitacion a las posiciones de las otras habitaciones
 

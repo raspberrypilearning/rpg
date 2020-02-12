@@ -73,9 +73,8 @@ Necesitas añadir una 3ra habitación, llamada `Comedor` y vincularlo a la sala 
 --- code ---
 ---
 language: python
+line_highlights: 5-6,11-15
 ---
-
-## line_highlights: 5-6,11-15
 
 # un diccionario que une una habitacion a las posiciones de las otras habitaciones
 

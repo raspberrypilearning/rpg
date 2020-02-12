@@ -11,9 +11,8 @@ Denke daran, ein Komma am Ende der Zeile über dem neuen Gegenstand zu setzen, s
 --- code ---
 ---
 language: python
+line_highlights: 6-7
 ---
-
-## line_highlights: 6-7
 
 # Ein Dictionary (Wörterbuch) verbindet ein Zimmer mit anderen Zimmern
 

@@ -35,7 +35,7 @@ title: Lo que vas a necesitar
 
 ### Software
 
-+ Python 3 (tanto [online](https://trinket.io/){:target="_blank"} como [offline](https://www.python.org/downloads/){:target="_blank"}){:target="_blank"}{:target="_blank"}
++ Python 3 (tanto [online](https://trinket.io/){:target="_blank"} como [offline](https://www.python.org/downloads/){:target="_blank"})
 
 ### Descargas
 
