@@ -24,24 +24,24 @@ language: python
 
 rooms = {
 
-            'Hal' : {
-                'zuid' : 'Keuken',
-                'oost' : 'Eetkamer',
-                'voorwerp' : 'sleutel'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Keuken' : {
-                'noord' : 'Hal',
-                'voorwerp' : 'monster'
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
             },
     
-            'Eetkamer' : {
-                'west' : 'Hal',
-                'zuid' : 'Tuin'
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden'
             },
     
-            'Tuin' : {
-                'noord' : 'Eetkamer'
+            'Garden' : {
+                'north' : 'Dining Room'
             }
     
         }
@@ -61,10 +61,10 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Eetkamer' : {
-                'west' : 'Hal',
-                'zuid' : 'Tuin',
-                'voorwerp' : 'toverdrank'
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
             },
     
 
@@ -86,7 +86,7 @@ language: python
 
 if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
-# speler wint als ze in the tuin komen met de sleutel en de toverdrank
+# player wins is they get to the garden with the key and potion
 
 if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
 
