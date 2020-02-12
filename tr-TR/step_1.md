@@ -1,8 +1,8 @@
-## Giriş:
+## Introduction:
 
 In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
 
-## Ne yapacaksınız
+## What you will make
 
 \--- no-print \---
 
@@ -20,7 +20,7 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![tamamlanmış proje](images/rpg-finished.png)
+![complete project](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -28,15 +28,15 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 ## title: What you will need
 
-### Donanım
+### Hardware
 
 + A computer capable of running Python
 
-### Yazılım
+### Software
 
 + Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
 
-### İndirilenler
+### Downloads
 
 The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
 
@@ -48,13 +48,13 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
 
 + Game design;
 + Editing: 
-    + Listeler;
+    + Lists;
     + Dictionaries.
 + Boolean expressions.
 
 This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
 
-+ [Bir problemi çözmek için programlama yapılarını birleştirin.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 \--- /collapse \---
 
