@@ -1,4 +1,4 @@
-## Dodawanie nowych pokoi
+## Adding new rooms
 
 \--- task \---
 
@@ -38,16 +38,16 @@ If you find the `rooms` variable, you can see that the map is coded as a diction
 
 ## language: python
 
-# słownik łączący pokój z innymi pokojami
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Korytarz' : {
-                'południe' : 'Kuchnia'
+            'Hall' : {
+                'south' : 'Kitchen'
             },
     
-            'Kuchnia' : {
-                'północ' : 'Korytarz'
+            'Kitchen' : {
+                'north' : 'Hall'
             }
     
         }
@@ -75,21 +75,21 @@ language: python
 
 ## line_highlights: 5-6,11-15
 
-# słownik łączący pokój z innymi pokojami
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Korytarz' : {
-                'południe' : 'Kuchnia',
-                'wschód' : 'Jadalnia'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room'
             },
     
-            'Kuchnia' : {
-                'północ' : 'Korytarz'
+            'Kitchen' : {
+                'north' : 'Hall'
             },
     
-            'Jadalnia' : {
-                'zachód' : 'Korytarz'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
