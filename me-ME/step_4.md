@@ -1,6 +1,6 @@
-## Dodavanje predmeta za sakupljanje
+## Adding items to collect
 
-U prostorije ćemo postaviti predmete koje će igrač sakupljati dok se bude kretao kroz lavirint.
+Let’s leave items in the rooms for the player to collect as they move through the maze.
 
 \--- task \---
 
