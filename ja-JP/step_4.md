@@ -1,6 +1,6 @@
-## 収集するアイテムを追加する
+## Adding items to collect
 
-プレイヤーが迷路を移動する際に収集するアイテムを部屋に残しましょう。
+Let’s leave items in the rooms for the player to collect as they move through the maze.
 
 \--- task \---
 
