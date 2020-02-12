@@ -1,9 +1,9 @@
-\--- завдання \---
+\--- challenge \---
 
-## Виклик: розробка власної гри
+## Challenge: Develop your own game
 
-Використовуйте те, що ви навчилися створювати свою власну гру. Додати багато кімнат, монстрів, щоб уникнути, і предмети, які потрібно збирати. Не забудьте змінити код так, щоб гравець виграв, коли вони потраплять у певну кімнату з деякими об'єктами, що знаходяться в їх інвентарі. Це може допомогти вам намалювати карту, перш ніж почати кодування!
+Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
 
-Ви навіть можете додати сходи на вашу карту та мати більше ніж один рівень номерів, набравши `вгору` і `знизитись`.
+You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
 
--- /challenge \---
+\--- /challenge \---
