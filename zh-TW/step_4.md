@@ -1,6 +1,6 @@
-## 添加要收集的項目
+## Adding items to collect
 
-讓我們把物品留在房間裡供玩家在迷宮中移動時收集。
+Let’s leave items in the rooms for the player to collect as they move through the maze.
 
 \--- task \---
 
