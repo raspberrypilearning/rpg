@@ -9,7 +9,7 @@ RPG Spiel (Labyrinth)
 Suche den Schlüssel und den Zaubertrank und versuche dann, in den Garten zu entkommen.
 Lass dich nicht von den Monstern fressen!
 
-Du wirst müde, jedesmal, wenn du einen Schritt machst, verlierst du 1 Gesundheitspunkt. 
+Du wirst müde, jedes mal, wenn du einen Schritt machst, verlierst du 1 Gesundheitspunkt. 
 
 Befehle:
   gehenach [Richtung]
@@ -32,6 +32,7 @@ def zeigeZustand():
 name = None
 gesundheit = 5
 aktuellesZimmer = 'Diele'
+inventar = []
 
 #-# HIER KOMMT DEIN CODE #-#
 # Lade Daten aus der Datei
