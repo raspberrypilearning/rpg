@@ -1,7 +1,7 @@
-\---挑戰\---
+\--- challenge \---
 
-## 挑戰：添加新項目
+## Challenge: Add new items
 
-將項目添加到遊戲中的某些房間。 你可以添加任何你認為有助於逃離房子的東西！ 例如，盾牌或魔法藥水。
+Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
 
-\--- /挑戰\---
+\--- /challenge \---
