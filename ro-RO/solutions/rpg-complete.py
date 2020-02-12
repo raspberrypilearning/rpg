@@ -1,122 +1,122 @@
 #!/bin/python3
 
-def afiseazaInstructiuni():
-    #afiseaza meniul principal si comenzile
+def showInstructions():
+    #print a main menu and the commands
     print('''
-Jocul RPG
+RPG Game
 ========
 
-Du-te in Gradina cu o cheie si o potiune
-Evita monstrii!
+Get to the Garden with a key and a potion
+Avoid the monsters!
 
-Te simti tot mai obosit, de fiecare data cand te misti, pierzi 1 punct de sanatate. 
+You are getting tired, each time you move you loose 1 health point. 
 
-Comenzile:
-  misca [directie]
-  ia [item]
+Commands:
+  go [direction]
+  get [item]
 ''')
 
-def afiseazaStatus():
-  #afiseaza statusul actual al jucatorului
+def showStatus():
+  #print the player's current status
   print('---------------------------')
-  print(nume + 'se afla in  ' + cameraCurenta)
-  print("Sanatate: " + str(sanatate))
-  #afiseaza inventarul curent
-  print('Inventar : ' + str(inventar))
-  #afiseaza un item daca exista
-  if "item" in camere[cameraCurenta]:
-    print('Vezi un item  ' + camere[cameraCurenta]['item'])
+  print(name + ' is in the ' + currentRoom)
+  print("Health : " + str(health))
+  #print the current inventory
+  print("Inventory : " + str(inventory))
+  #print an item if there is one
+  if "item" in rooms[currentRoom]:
+    print('You see a ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-# initializeaza jocul
-nume = None
-sanatate = 5
-cameraCurenta = 'Hol'
-inventar = []
+# setup the game
+name = None
+health = 5
+currentRoom = 'Hall'
+inventory = []
 
-#-# ADAUGA-TI AICI CODUL #-#
-# Incarca datele din fisier
+#-# YOUR CODE GOES HERE #-#
+# Load data from the file
 
-#un dictionar asociind o camera cu alte camere
-camere = {
+#a dictionary linking a room to other room positions
+rooms = {
 
-            'Hol' : { 'sud' : 'Bucatarie',
-                  'est'  : 'Sufragerie',
-                  'item'  : 'cheie'
+            'Hall' : { 'south' : 'Kitchen',
+                  'east'  : 'Dining Room',
+                  'item'  : 'key'
                 },
 
-            'Bucatarie' : { 'nord' : 'Hol',
-                  'item'  : 'monstru'
+            'Kitchen' : { 'north' : 'Hall',
+                  'item'  : 'monster'
                 },
 
-            'Sufragerie' : { 'vest'  : 'Hol',
-                  'sud' : 'Gradina',
-                  'item'  : 'potiune'
+            'Dining Room' : { 'west'  : 'Hall',
+                  'south' : 'Garden',
+                  'item'  : 'potion'
 
                 },
 
-            'Gradina' : { 'nord' : 'Sufragerie' }
+            'Garden' : { 'north' : 'Dining Room' }
 
          }
 
-# intreaba-l pe jucator cum se numeste
-if nume is None:
-  nume = input("Care este numele tau, aventurierule? ")
-  afiseazaInstructiuni()
+# ask the player their name
+if name is None:
+  name = input("What is your name Adventurer? ")
+  showInstructions()
 
-#repeta de un numar infinit de ori
+#loop forever
 while True:
 
-  afiseazaStatus()
+  showStatus()
 
-  #obtine urmatoare 'miscare' a jucatorului
-  #.split() o imparte intr-un list array
-  #de exemplu, daca tastezi 'misca est', vei obtine lista:
-  #['misca','est']
-  miscare = ''
-  while miscare == '':
-    miscare = input('>')
+  #get the player's next 'move'
+  #.split() breaks it up into an list array
+  #eg typing 'go east' would give the list:
+  #['go','east']
+  move = ''
+  while move == '':
+    move = input('>')
 
-  miscare = miscare.lower().split()
+  move = move.lower().split()
 
-  #daca utilizatorul tasteaza intai 'misca'
-  if miscare[0] == 'misca':
-    sanatate = sanatate - 1
-    #verifica daca au voie sa mearga unde au cerut
-    if miscare[1] in camere[cameraCurenta]:
-      #seteaza camera curenta la noua camera
-      cameraCurenta = camere[cameraCurenta][miscare[1]]
-    #nu este nici o usa (legatura) catre noua camera
+  #if they type 'go' first
+  if move[0] == 'go':
+    health = health - 1
+    #check that they are allowed wherever they want to go
+    if move[1] in rooms[currentRoom]:
+      #set the current room to the new room
+      currentRoom = rooms[currentRoom][move[1]]
+    #there is no door (link) to the new room
     else:
-      print('Nu poti sa o iei pe acolo!')
+      print('You can\'t go that way!')
 
-  #daca utilizatorul tasteaza intai 'ia'
-  if miscare[0] == 'ia' :
-    #daca exista un item in camera si itemul este cel pe care utilizatorul il vrea
-    if "item" in camere[cameraCurenta] and miscare[1] in camere[cameraCurenta]['item']:
-      #adauga itemul la inventarul sau
-      inventar += [miscare[1]]
-      #afiseaza un mesaj util
-      print(miscare[1] + ' luat!')
-      #sterge acest item din camera
-      del camere[cameraCurenta]['item']
-    #altfel, daca itemul nu este acolo si nu poate fi luat
+  #if they type 'get' first
+  if move[0] == 'get' :
+    #if the room contains an item, and the item is the one they want to get
+    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
+      #add the item to their inventory
+      inventory += [move[1]]
+      #display a helpful message
+      print(move[1] + ' got!')
+      #delete the item from the room
+      del rooms[currentRoom]['item']
+    #otherwise, if the item isn't there to get
     else:
-      #spune-i ca nu il poate lua
-      print('Nu poti lua ' + miscare[1] + '!')
+      #tell them they can't get it
+      print('Can\'t get ' + move[1] + '!')
 
-  #jucatorul pierde daca intra intr-o camera cu un monstru
-  if "item" in camere[cameraCurenta] and 'monstru' in camere[cameraCurenta]['item']:
-    print('Un monstru te-a prins... STOP JOC!')
+  #player loses if they enter a room with a monster
+  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+    print('A monster has got you... GAME OVER!')
     break
 
-  if sanatate == 0:
-    print('Te prabusesti de oboseala... STOP JOC!')
+  if health == 0:
+    print('You collapse from exhaustion... GAME OVER!')
 
-  #jucatorul castiga daca ajunge in gradina cu cheia si potiunea
-  if cameraCurenta == 'Gradina' and 'cheie' in inventar and 'potiune' in inventar:
-    print('Ai scapat din casa... AI CASTIGAT!')
+  #player wins if they get to the garden with a key and a potion
+  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
+    print('You escaped the house... YOU WIN!')
     break
 
-  #-# ADAUGA-TI AICI CODUL #-#
-  # Salveaza informatiile despre joc in fisier
+  #-# YOUR CODE GOES HERE #-#
+  # Save game data to the file
