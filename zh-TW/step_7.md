@@ -1,7 +1,7 @@
-\---挑戰\---
+\--- challenge \---
 
-## 挑戰：添加更多怪物
+## Challenge: Adding more monsters
 
-為你的遊戲添加更多怪物，讓它更難逃離家園！
+Add more monsters to your game, to make it harder to escape the house!
 
-\--- /挑戰\---
+\--- /challenge \---
