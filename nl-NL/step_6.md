@@ -16,19 +16,19 @@ language: python
 
 rooms = {
 
-            'Hal' : {
-                'zuid' : 'Keuken',
-                'oost' : 'Eetkamer',
-                'voorwerp' : 'sleutel'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Keuken' : {
-                'noord' : 'Hal',
-                'voorwerp' : 'monster'
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
             },
     
-            'Eetkamer' : {
-                'west' : 'Hal'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
@@ -48,14 +48,14 @@ language: python
 
 ## line_highlights: 6-9
 
-        #anders, als het voorwerp er niet is om te pakken
+        #otherwise, if the item isn't there to get
         else:
-            #vertel ze dat ze het niet kunnen pakken
-            print('Kan ' + move[1] + ' niet pakken!')
+            #tell them they can't get it
+            print('Can\'t get' + move[1] + '!')
     
-    #speler verliest als ze een kamer met een monster ingaan
-    if 'voorwerp' in kamers[dezeKamer] and 'monster' in kamers[dezeKamer]['voorwerp']:
-        print('Een monster heeft je te pakken... GAME OVER!')
+    #player loses if they enter a room with a monster
+    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+        print('A monster has got you... GAME OVER!')
         break
     
 
