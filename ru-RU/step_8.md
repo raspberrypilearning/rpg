@@ -1,6 +1,6 @@
-## Победа в игре
+## Winning the game
 
-Давайте дадим вашему игроку миссию, которую нужно завершить, чтобы выиграть игру.
+Let’s give your player a mission, which needs to completed to win the game.
 
 \--- task \---
 
