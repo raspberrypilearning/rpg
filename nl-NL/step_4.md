@@ -18,18 +18,18 @@ language: python
 
 rooms = {
 
-            'Hal' : {
-                'zuid' : 'Keuken',
-                'oost' : 'Eetkamer',
-                'voorwerp' : 'sleutel'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Keuken' : {
-                'noord' : 'Hal'
+            'Kitchen' : {
+                'north' : 'Hall'
             },
     
-            'Eetkamer' : {
-                'west' : 'Hal'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
