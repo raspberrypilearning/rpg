@@ -4,7 +4,7 @@
 
 \--- task \---
 
-In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+Σε αυτό το παιχνίδι, ο παίκτης κερδίζει φτάνοντας στον κήπο και βγαίνοντας από το σπίτι. Πρέπει επίσης να έχει το κλειδί μαζί του και το μαγικό φίλτρο. Εδώ είναι ένας χάρτης του παιχνιδιού.
 
 ![screenshot](images/rpg-final-map.png)
 
@@ -12,7 +12,7 @@ In this game, the player wins by getting to the garden and escaping the house. T
 
 \--- task \---
 
-First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+Πρώτα, θα πρέπει να προσθέσεις έναν κήπο στα νότια της τραπεζαρίας. Θυμήσου να προσθέσεις πόρτες, για να συνδεθεί με άλλα δωμάτια του σπιτιού.
 
 ## \--- code \---
 
@@ -53,7 +53,7 @@ rooms = {
 
 \--- task \---
 
-Add a potion to the dining room (or another room in your house).
+Πρόσθεσε ένα φίλτρο στην τραπεζαρία (ή σε άλλο δωμάτιο στο σπίτι σου).
 
 ## \--- code \---
 
@@ -74,7 +74,7 @@ language: python
 
 \--- task \---
 
-Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+Πρόσθεσε αυτόν τον κώδικα για να επιτρέψεις στον παίκτη να κερδίσει το παιχνίδι όταν φτάσει στον κήπο με το κλειδί και το φίλτρο:
 
 ## \--- code \---
 
@@ -84,23 +84,23 @@ language: python
 
 # ο παίκτης χάνει, αν μπει σε ένα δωμάτιο με τέρας
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'αντικείμενο' in rooms\[currentRoom] and 'τέρας' in rooms[currentRoom\]\['αντικείμενο'\]: print('Ένα τέρας σε έπιασε... ΤΕΛΟΣ ΠΑΙΧΝΙΔΙΟΥ!') break
 
 # ο παίκτης κερδίζει, αν βγει στον κήπο με ένα κλειδί και ένα φίλτρο
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
+if currentRoom == 'Κήπος' and 'κλειδί' in inventory and 'φίλτρο' in inventory: print('Βγήκες από το σπίτι... ΚΕΡΔΙΣΕΣ!') break
 
 \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+Βεβαιώσου ότι ο κώδικας αυτός είναι σε εσοχή, σύμφωνα με τον παραπάνω κώδικα. Αυτός ο κώδικας σημαίνει ότι το μήνυμα `Βγήκες από το σπίτι ... ΚΕΡΔΙΣΕΣ!` εμφανίζεται αν ο παίκτης βρίσκεται στο δωμάτιο 4 (στον κήπο) και αν το κλειδί και το φίλτρο βρίσκονται στο απόθεμα.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
+Αν έχεις περισσότερα από 4 δωμάτια, ίσως χρειαστεί να χρησιμοποιήσεις διαφορετικό αριθμό δωματίων για τον κήπο σου στον παραπάνω κώδικα.
 
 \--- /task \---
 
 \--- task \---
 
-Test your game to make sure the player can win!
+Δοκίμασε το παιχνίδι σου για να βεβαιωθείς ότι ο παίκτης μπορεί να κερδίσει!
 
 ![screenshot](images/rpg-win-test.png)
 
@@ -108,7 +108,7 @@ Test your game to make sure the player can win!
 
 \--- task \---
 
-Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+Τέλος, ας προσθέσουμε κάποιες οδηγίες στο παιχνίδι σου, έτσι ώστε ο παίκτης να ξέρει τι πρέπει να κάνει. Επεξεργάσου τη συνάρτηση `showInstructions()` για να συμπεριλάβεις περισσότερες πληροφορίες.
 
 ## \--- code \---
 
@@ -116,23 +116,23 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def showInstructions(): #εμφάνισε ένα κεντρικό μενού και τις εντολές print('''
 
 # Παιχνίδι RPG
 
-Get to the Garden with a key and a potion Avoid the monsters!
+Βγες στον Κήπο με ένα κλειδί κι ένα φίλτρο Απέφυγε τα τέρατα!
 
-Commands: go [direction] get [item] ''')
+Εντολές: πήγαινε [κατεύθυνση] πάρε [αντικείμενο] ''') \--- /code \---
 
 \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+Θα χρειαστεί να προσθέσεις οδηγίες για να πεις στο χρήστη ποια αντικείμενα πρέπει να συλλέξει και τι χρειάζεται να αποφύγει!
 
 \--- /task \---
 
 \--- task \---
 
-Test your game and you should see your new instructions.
+Δοκίμασε το παιχνίδι σου και έλεγξε αν εμφανίζονται οι νέες οδηγίες σου.
 
 ![screenshot](images/rpg-instructions-test.png)
 
