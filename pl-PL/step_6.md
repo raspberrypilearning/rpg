@@ -1,6 +1,6 @@
-## Dodawanie wrogów
+## Adding enemies
 
-Ta gra jest zbyt łatwa! Dodajmy wrogów do niektórych pomieszczeń, których gracz musi unikać.
+This game is too easy! Let’s add enemies to some rooms that the player must avoid.
 
 \--- task \---
 
@@ -12,22 +12,23 @@ language: python
 
 ## line_highlights: 11-12
 
-# słownik łączący pokój z innymi pokojami
+# a dictionary linking a room to other rooms
 
 rooms = {
 
-            'Korytarz' : {
-                'południe' : 'Kuchnia',
-                'wschód' : 'Jadalnia',
-                'item' : 'klucz'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
             },
     
-            'Kuchnia' : {
-                'północ' : 'Korytarz',
-                'item' : 'potwór'        },
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
     
-            'Jadalnia' : {
-                'zachód' : 'Korytarz'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
@@ -47,14 +48,14 @@ language: python
 
 ## line_highlights: 6-9
 
-        #w przeciwnym wypadku, jeśli przedmiotu nie można wziąć bo go nie ma
+        #otherwise, if the item isn't there to get
         else:
-            #powiedz, że nie da się tego wziąć
-            print('Tego nie możesz wziąć: ' + move[1] + '!')
+            #tell them they can't get it
+            print('Can\'t get' + move[1] + '!')
     
-    #gracz przegrywa jeśli wejdzie do pokoju z potworem
-    if 'item' in rooms[currentRoom] and 'potwór' in rooms[currentRoom]['item']:
-        print('Dorwał cię potwór... PRZEGRYWASZ!')
+    #player loses if they enter a room with a monster
+    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+        print('A monster has got you... GAME OVER!')
         break
     
 
