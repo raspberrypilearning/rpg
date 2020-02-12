@@ -42,12 +42,12 @@ If you find the `rooms` variable, you can see that the map is coded as a diction
 
 rooms = {
 
-            'Hal' : {
-                'zuid' : 'Keuken'
+            'Hall' : {
+                'south' : 'Kitchen'
             },
     
-            'Keuken' : {
-                'noord' : 'Hal'
+            'Kitchen' : {
+                'north' : 'Hall'
             }
     
         }
@@ -79,17 +79,17 @@ language: python
 
 rooms = {
 
-            'Hal' : {
-                'zuid' : 'Keuken',
-                'oost' : 'Eetkamer'
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room'
             },
     
-            'Keuken' : {
-                'noord' : 'Hal'
+            'Kitchen' : {
+                'north' : 'Hall'
             },
     
-            'Eetkamer' : {
-                'west' : 'Hal'
+            'Dining Room' : {
+                'west' : 'Hall'
             }
     
         }
