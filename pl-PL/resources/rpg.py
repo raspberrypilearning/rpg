@@ -1,86 +1,86 @@
 #!/bin/python3
 
-# Zamień projekt startowy RPG tym kodem, kiedy użyte będą nowe instrukcje
+# Replace RPG starter project with this code when new instructions are live
 
 def showInstructions():
-  #drukuj menu główne i polecenia
+  #print a main menu and the commands
   print('''
-Gra przygodowa (RPG)
+RPG Game
 ========
-Polecenia:
-  rusz.na [kierunek]
-  bierz [przedmiot]
+Commands:
+  go [direction]
+  get [item]
 ''')
 
 def showStatus():
-  #drukuj aktualny status gracza
+  #print the player's current status
   print('---------------------------')
-  print('Jesteś tu: ' + currentRoom)
-  #drukuj aktualny ekwipunek
-  print('Masz w ekwipunku: ' + str(inventory))
-  #drukuj przedmiot jeśli jakiś tam jest
+  print('You are in the ' + currentRoom)
+  #print the current inventory
+  print('Inventory : ' + str(inventory))
+  #print an item if there is one
   if "item" in rooms[currentRoom]:
-    print('Widzisz ' + rooms[currentRoom]['item'])
+    print('You see a ' + rooms[currentRoom]['item'])
   print("---------------------------")
 
-#ekwipunek, początkowo pusty
+#an inventory, which is initially empty
 inventory = []
 
-#słownik łączący pokój z innymi pokojami
+#a dictionary linking a room to other rooms
 rooms = {
 
-            'Korytarz' : { 
-                  'południe' : 'Kuchnia'
+            'Hall' : { 
+                  'south' : 'Kitchen'
                 },
 
-            'Kuchnia' : {
-                  'północ' : 'Korytarz'
+            'Kitchen' : {
+                  'north' : 'Hall'
                 }
 
          }
 
-#ustaw gracza na początku w korytarzu
-currentRoom = 'Korytarz'
+#start the player in the Hall
+currentRoom = 'Hall'
 
 showInstructions()
 
-#pętla nieskończona
+#loop forever
 while True:
 
   showStatus()
 
-  #sprawdź następny 'ruch' gracza
-  #.split() rozdziela ja na tablicę napisów
-  #np. wpisując 'rusz.na wschód' dałoby taką listę:
-  #['rusz.na','wschód']
+  #get the player's next 'move'
+  #.split() breaks it up into an list array
+  #eg typing 'go east' would give the list:
+  #['go','east']
   move = ''
   while move == '':  
     move = input('>')
     
   move = move.lower().split()
 
-  #jeśli wpisze najpierw 'ruszaj.na'
-  if move[0] == 'rusz.na':
-    #sprawdź, czy może iść tam gdzie zamierza
+  #if they type 'go' first
+  if move[0] == 'go':
+    #check that they are allowed wherever they want to go
     if move[1] in rooms[currentRoom]:
-      #ustaw bieżący pokój na nowy pokój
+      #set the current room to the new room
       currentRoom = rooms[currentRoom][move[1]]
-    #nie ma drzwi (połączenia) do nowego pokoju
+    #there is no door (link) to the new room
     else:
-        print('Nie możesz iść tędy!')
+        print('You can\'t go that way!')
 
-  #jeśli wpisze najpierw 'bierz'
-  if move[0] == 'bierz' :
-    #jeśli pomieszczenie zawiera przedmiot, i jeśli to jest ten sam, który zamierza wziąć
+  #if they type 'get' first
+  if move[0] == 'get' :
+    #if the room contains an item, and the item is the one they want to get
     if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #dodaj przedmiot do ekwipunku
+      #add the item to their inventory
       inventory += [move[1]]
-      #wyświetl komunikat pomocy
-      print('Wziąłeś ' + move[1] + '!')
-      #usuń przedmiot z pokoju
+      #display a helpful message
+      print(move[1] + ' got!')
+      #delete the item from the room
       del rooms[currentRoom]['item']
-    #w przeciwnym wypadku, jeśli przedmiotu nie można wziąć bo go nie ma
+    #otherwise, if the item isn't there to get
     else:
-      #powiedz, że nie da się tego wziąć
-      print('Tego nie możesz wziąć: ' + move[1] + '!')
+      #tell them they can't get it
+      print('Can\'t get ' + move[1] + '!')
 
