@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Develop your own game
+## Meydan Okuma: Kendi oyununu geliştir
 
-Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
+Kendi oyununu yaratmak için öğrendiklerini kullan. Bir sürü oda, canavar ve eşya ekle. Oyuncular bazı eşyaları envanterine aldıktan sonra belirli bir odaya gidince kazanmaları için kodunu düzenlemeyi unutma. Kodlamaya başlamadan önce bir harita taslağı çizmek yardımcı olabilir!
 
-You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+Haritana merdiven bile ekleyebilir ve `git yukarı` ve `git aşağı` yazarak birden fazla oda seviyesine sahip olabilirsin.
 
 \--- /challenge \---
