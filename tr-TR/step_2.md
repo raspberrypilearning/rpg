@@ -1,53 +1,53 @@
-## Adding new rooms
+## Yeni oda ekleme
 
 \--- task \---
 
-Open the Python starter project.
+Python başlangıç projesini açın.
 
-**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**Çevrimiçi**: başlangıç projesini [rpf.io/rpgon](http://rpf.io/rpgon){:target="_ blank"} linkinden açın.
 
-**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+**Çevrimdışı**: [başlangıç projesini](http://rpf.io/p/en/rpg-go) {:target="_blank"} Çevrimdışı düzenleyicide açın.
 
 \--- /task \---
 
 \--- task \---
 
-This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
+Bu sadece 2 odası olan çok basit RPG oyunu. Burada oyunun bir haritası var:
 
-![screenshot](images/rpg-map1.png)
+![ekran görüntüsü](images/rpg-map1.png)
 
-You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+Koridordan mutfağa gitmek için `git güney` yazabilir ve geri dönmek için `git kuzey` yazabilirsin!
 
-![screenshot](images/rpg-controls.png)
-
-\--- /task \---
-
-\--- task \---
-
-What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
-
-![screenshot](images/rpg-error.png)
+![ekran görüntüsü](images/rpg-controls.png)
 
 \--- /task \---
 
 \--- task \---
 
-If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+Gidemeyeceğin bir yön yazarsan ne olur? Koridordayken `git batı` yazınca dostça bir hata mesajıyla karşılaşacaksın.
+
+![ekran görüntüsü](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+Eğer `odalar` değişkenini bulursan, haritanın, odalar sözlüğü olarak kodlandığını göreceksin:
 
 ## \--- code \---
 
 ## language: python
 
-# a dictionary linking a room to other rooms
+# bir odayı başka odalara bağlayan bir sözlük
 
-rooms = {
+odalar = {
 
-            'Hall' : {
-                'south' : 'Kitchen'
+            'Koridor' : {
+                'güney' : 'Mutfak'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Mutfak' : {
+                'kuzey' : 'Oturma Odası'
             }
     
         }
@@ -55,19 +55,19 @@ rooms = {
 
 \--- /code \---
 
-Each room is a dictionary, and rooms are linked together using directions.
+Her oda bir sözlüktür ve odalar yönleri kullanarak birbirine bağlıdır.
 
 \--- /task \---
 
 \--- task \---
 
-Let’s add a dining room to your map, to the east of the hall.
+Haritaya bir oturma odası ekleyelim, koridorun doğusunda olsun.
 
-![screenshot](images/rpg-dining.png)
+![ekran görüntüsü](images/rpg-dining.png)
 
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+Üçüncü bir oda eklemen gerek, `oturma odası`, ve onu koridora bağla (batısına). Aynı zamanda koridora da veri eklemen gerekiyor, böylece doğudan oturma odasına gidebilirsin.
 
-**Don't forget that you'll also need to add commas to lines before your new code.**
+**Yeni kod eklemeden önce satırlara virgülleri de eklemen gerektiğini unutma.**
 
 ## \--- code \---
 
@@ -75,21 +75,21 @@ language: python
 
 ## line_highlights: 5-6,11-15
 
-# a dictionary linking a room to other rooms
+# bir odayı başka odalara bağlayan bir sözlük
 
-rooms = {
+odalar = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room'
+            'Koridor' : {
+                'güney' : 'Mutfak',
+                'doğu' : 'Oturma Odası'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Mutfak' : {
+                'kuzey' : 'Koridor'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Oturma Odası' : {
+                'batı' : 'Koridor'
             }
     
         }
@@ -101,10 +101,10 @@ rooms = {
 
 \--- task \---
 
-Try out the game with your new dining room:
+Oyunu yeni oturma odanla beraber dene:
 
-![screenshot](images/rpg-dining-test.png)
+![ekran görüntüsü](images/rpg-dining-test.png)
 
-If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+Oturma odasına giriş çıkış yapamıyorsan, yukarıda eklediğin kodu bir kontrol et (satırlarda fazladan eklenen virgülleri de içeren).
 
 \--- /task \---
