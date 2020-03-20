@@ -1,86 +1,86 @@
 #!/bin/python3
 
-# Replace RPG starter project with this code when new instructions are live
+# Talimatlar yayınlanınca RPG başlangıç projesini bu kodla değiştir
 
-def showInstructions():
-  #print a main menu and the commands
+def talimatlariGoster():
+  #ekrana ana menü ve komutları yazdır
   print('''
-RPG Game
+RPG Oyunu
 ========
-Commands:
-  go [direction]
-  get [item]
+Komutlar:
+  git [yön]
+  al [eşya]
 ''')
 
-def showStatus():
-  #print the player's current status
+def durumuGoster():
+  #ekrana oyuncunun durumunu yazdır
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('Şu anda buradasınız: ' + suankiOda)
+  #şu anki envanteri ekrana yazdır
+  print('Envanter : ' + str(envanter))
+  #Eğer varsa ekrana bir eşya yazdır
+  if "eşya" in odalar[suankiOda]:
+    print('Bir ' + odalar[suankiOda]['eşya'] + ' görüyorsunuz')
   print("---------------------------")
 
-#an inventory, which is initially empty
-inventory = []
+#ilk başta boş olan bir envanter
+envanter = []
 
-#a dictionary linking a room to other rooms
-rooms = {
+#bir odayı başka odalara bağlayan bir sözlük
+odalar = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen'
+            'Koridor' : { 
+                  'güney' : 'Mutfak'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall'
+            'Mutfak' : {
+                  'kuzey' : 'Koridor'
                 }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#oyuncuyu Koridorda başlat
+suankiOda = 'Koridor'
 
-showInstructions()
+talimatlariGoster()
 
-#loop forever
+#sonsuz döngü
 while True:
 
-  showStatus()
+  durumuGoster()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':  
-    move = input('>')
+  #oyuncunun sonraki 'hamle'sini al
+  #.split() dizgiyi diziye ayırır
+  #ör: 'git batı' yazarsanız şunu elde edersiniz:
+  #['git','batı']
+  hamle = ''
+  while hamle == '':  
+    hamle = input('>')
     
-  move = move.lower().split()
+  hamle = hamle.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #eğer ilk olarak git yazarlarsa
+  if hamle[0] == 'git':
+    #gitmek istedikleri yere izinleri var mı kontrol et
+    if hamle[1] in odalar[suankiOda]:
+      #şu anki odayı yeni oda yap
+      suankiOda = odalar[suankiOda][hamle[1]]
+    #yeni odaya gidebileceği bir kapı (bağlantı) yok
     else:
-        print('You can\'t go that way!')
+        print('Bu yoldan gidemezsiniz!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #eğer ilk olarak al yazarlarsa
+  if hamle[0] == 'al' :
+    #odada bir eşya varsa ve almak istedikleri eşya oysa
+    if "eşya" in odalar[suankiOda] and hamle[1] in odalar[suankiOda]['eşya']:
+      #o eşyayı envanterlerine ekle
+      envanter += [hamle[1]]
+      #yardımcı bir mesaj göster
+      print(hamle[1] + ' alındı!')
+      #odadan o eşyayı sil
+      del odalar[suankiOda]['eşya']
+    #aksi halde, eşya orada değilse
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #onlara alamayacaklarını söyle
+      print('Bunu alamazsınız: ' + hamle[1] + '!')
 
