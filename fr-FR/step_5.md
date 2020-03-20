@@ -1,9 +1,7 @@
 --- challenge ---
-## Défi : Ajoute des nouveaux articles 
 
-Ajoute un article dans certaines pièces de ton jeu. Tu peux ajouter n'importe quel objet que tu trouves utile pour arriver à sortir de la maison ! Par exemple, un bouclier ou une potion magique.
+## Défi : Ajoute de nouveaux objets
 
-
-
+Ajoute un objet à quelques unes des pièces dans ton jeu. Tu peux ajouter des choses que tu penses utiles pour tenter de s'échapper de la maison! Par exemple, un bouclier ou une potion magique.
 
 --- /challenge ---

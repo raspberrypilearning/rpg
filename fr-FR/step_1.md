@@ -1,64 +1,69 @@
-## Introduction 
+## Introduction :
 
-Dans ce projet, tu vas dessier et coder ton propre jeu de rôle et de labyrinthe. L'objectif du jeu sera de collectionner des objets et d'échapper de la masion, en tentant d'éviter tous le monstres !
+Dans ce projet, tu vas concevoir et coder ton propre jeu de labyrinthe RPG. Le but du jeu sera de collecter des objets et de s'échapper d'une maison, en s'assurant d'éviter tout les montres!
+
+## Ce que tu feras
+
+--- no-print ---
+
+Tape `aller` et ensuite une direction (nord, est, sud ou ouest) pour te déplacer dans le monde (ex: `aller nord`).
+
+Tape `prendre` pour ramasser des objets que tu vois (ex `prendre clé`).
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/1bea9bd489?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
 
+--- /no-print ---
+
+--- print-only ---
+
+![projet terminé](images/rpg-finished.png)
+
+--- /print-only ---
 
 --- collapse ---
 ---
-title: Notes pour le leader du club
+title: Ce que tu auras besoin
 ---
+### Matériel informatique
 
++ Un ordinateur capable d'exécuter Python
 
-## Introduction :
-Ce projet apprend comment dessiner un jeu à travers le développement d'un jeu de rôle et de labyrinthe. Dans ce jeu, je joueur doit ramasser des objets dans une maison et se retrouve dans une pièce en particulier, tout en évitant les monstres qui traînent dans certaines des pièces. Ce jeu sera réalisé grâce à la manipulation de dictionnaires et de listes.
+### Logiciel
 
-## Ressources en ligne
++ Python 3 (soit [en ligne](https://trinket.io/){:target="_blank"} ou [hors ligne](https://www.python.org/downloads/){:target="_blank"})
 
-__Ce projet utilise Python 3.__ Nous vous conseillons d'utiliser [trinket](https://trinket.io/) pour écrire du Python en ligne. Ce projet contient les Trinkets suivants :
+### Téléchargements
 
-+ ['Jeu de rôle' point de départ -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
+Le projet de démarrage peut être trouvé [ici](http://rpf.io/p/fr-FR/rpg-go){:target="_blank"}.
 
-Il y a également un trinket qui contient le projet fini :
+--- /collapse ---
 
-+ [‘Jeu de rôle’ finalisé -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
+--- collapse ---
+---
+title: Ce que tu vas apprendre
+---
++ Conception de jeux;
++ Édition: 
+    + Listes;
+    + Dictionnaires.
++ Expressions booléennes.
 
-## Ressources hors-ligne
-Ce projet peut être [complété hors-ligne](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) i préférable. Vous pouvez accéder aux ressources du projet en cliquant sur 'Matériaux du Projet'. Ce lien contient une section 'Ressources du projet', y compris vers des ressources dont les enfants auraient besoin pour compléter le projet hors-ligne. Vérifiez que chaque enfant a accès à une copie de ces ressources. Cette section comporte le fichier suivant :
+Ce projet couvre les éléments suivants du [Programme Raspberry Pi de Créativité Numérique](http://rpf.io/curriculum) :
 
-+ rpg/rpg.py
++ [Combine des constructions de programmation pour résoudre un problème.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-Vous pouvez aussi trouver une version finalisée des défis de ce projet dans la section 'Ressources du volontaire', qui contient :
+--- /collapse ---
 
-+ rpg-finished/rpg.py
+--- collapse ---
+---
+title: Informations supplémentaires pour les éducateurs
+---
+Si vous avez besoin d'imprimer ce projet, merci d'utiliser la [Version imprimable](https://projects.raspberrypi.org/fr-FR/projects/rpg/print).
 
-(Toutes les ressources ci-dessus sont également téléchargeables comme des fichiers `.zip` pour le projet et les volontaires.)
-
-## Objectifs pédagogiques
-+ Dessin de jeu ;
-+ Édition :
-	+ Listes ;
-	+ Dictionaires.
-+ Des expressions Booléenes.
-
-Ce projet couvre des élements des parcours suivants du [Programme de Créativité Numérique Raspberry Pi](http://rpf.io/curriculum) :
-
-+ [Combiner des structures de programmation afin de résoudre des problèmes.](https://www.raspberrypi.org/curriculum/programming/builder)
-
-## Défis
-+ Ajoute de nouvelles pièces ;
-+ Ajoute des nouveaux articles ;
-+ Ajoute des adversaires à éviter ;
-+ Développer ton propre jeu.
-
-## Foire à questions
-+ Peut-être les enfants auraient besoin d'être rappelés que les éléments d'un dictionnaire/liste sont séparés par des virgules. Par exemple, quand on ajoute une nouvelle pièce au dictionnaire 'rooms', une virgule doit être insérée entre la nouvelle pièce ajoutée et la précédente.
-+ Quand on ajoute une nouvelle pièce, les enfants pourraient oublier de relier la pièce existants et la nouvelle qui vient d'être créée. Ça pourrait dire que les enfants peuvent sortir de la pièce mais pas entrer !
-+ Le code pour vérifier si le joueur a gagné ou a perdu doit être décalé, afin de s'assure que la contrôle se fait à chaque entrée dans une nouvelle pièce. Si le code n'est pas décalé, cette partie reste à l'extérieur de la boucle principale du jeu et ne s'exécute jamais.
+Vous pouvez [trouver la solution pour ce projet ici](http://rpf.io/p/fr-FR/rpg-get){:target="_blank"}.
 
 --- /collapse ---

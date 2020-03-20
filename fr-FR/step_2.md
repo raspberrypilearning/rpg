@@ -1,36 +1,103 @@
 ## Ajouter de nouvelles pièces
 
-+ Une partie du code pour ce jeu a été déjà mis à ta disposition. Ouvre ce trinket : <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
+--- task ---
 
-+ Ceci est un jeu de rôle assez simple qui contient seulement 2 pièces. Il y a un plan du jeu :
+Ouvre le projet de démarrage Python.
 
-  ![capture d'écran](images/rpg-map1.png)
+**En ligne**: ouvre le projet de démarrage à [trinket.io/python/0a0b684a31](https://trinket.io/python/0a0b684a31){:target="_blank"}.
 
-  Tu peux taper `go south` pour te déplacer du couloir dans la cuisine, puis `go north` pour retourner dans le couloir !
+**Hors ligne**: ouvre le [projet de démarrage](http://rpf.io/p/fr-FR/rpg-go){:target="_blank"} dans l'éditeur hors ligne.
 
-  ![capture d'écran](images/rpg-controls.png)
+--- /task ---
 
-+ Que se passe-t-il quand tu tapes une direction dans laquelle tu ne peux pas te déplacer ? Tape `go west` dans le couloir et tu recevras un joli petit message d'erreur.
+--- task ---
 
-  ![capture d'écran](images/rpg-error.png)
+Ceci est une version basique du jeu RPG qui a seulement 2 pièces. Voici un plan du jeu :
 
-+ Si tu trouves la variable `rooms`, tu peux voir que le plan est codé comme un dictionnaire de pièces :
+![capture d'écran](images/rpg-map1.png)
 
-  ![capture d'écran](images/rpg-rooms.png)
+Tu peux taper `aller sud` pour te déplacer du hall à la cuisine, et ensuite `aller nord` pour revenir au hall !
 
-  Chaque pièce est un dictionnaire et les pièces se sont raccordées avec les directions.   
+![capture d'écran](images/rpg-controls.png)
 
+--- /task ---
 
-+ Ajoutons une salle à manger à notre plan, à l'est du couloir.
+--- task ---
 
-  ![capture d'écran](images/rpg-dining.png)
+Que ce passe t-il lorsque tu tapes dans une direction que tu ne peux pas aller ? Tape `aller ouest` dans le hall et tu auras un joli message d'erreur.
 
-  Tu as besoin d'ajouter une 3ème pièce, qui s'appelle `dining room` (salle à manger). Tu as également besoin de la relier au couloir à l'ouest. Tu dois aussi ajouter des données au couloir, pour pouvoir te déplacer dans la salle à manger vers l'est.
+![capture d'écran](images/rpg-error.png)
 
-  ![capture d'écran](images/rpg-dining-code.png)
+--- /task ---
 
-+ Essaie le jeu avec ta nouvelle salle à manger :
+--- task ---
 
-  ![capture d'écran](images/rpg-dining-test.png)
+Si tu trouves la variable `rooms` , tu peux voir que le plan est codé en tant que dictionnaire des pièces :
 
-  Si tu n'arrives pas à entrer et sortir de la salle à manger, vérifie simplement que tu as bien ajouté tout le code ci-dessus (y compris les virgules supplémentaires dans les lignes ci-dessus).
+--- code ---
+---
+language: python
+---
+# un dictionnaire liant une pièce à d'autres pièces
+rooms = {
+
+            'Hall' : {
+                'sud' : 'Cuisine'
+            },
+    
+            'Cuisine' : {
+                'nord' : 'Hall'
+            }
+    
+        }
+--- /code ---
+
+Chaque pièce est un dictionnaire, et les pièces sont liées ensemble utilisant les directions.
+
+--- /task ---
+
+--- task ---
+
+Ajoutons une salle à manger au plan, à l'est du hall.
+
+![capture d'écran](images/rpg-dining.png)
+
+Tu dois ajouter une troisième pièce, appelée la `salle a manger`, et la lier au hall (à l'ouest). Tu as besoin également d'ajouter des données au hall, de sorte que tu puisses te déplacer vers la salle à manger à l'est.
+
+**N'oublie pas que tu auras besoin également d'ajouter des virgules aux lignes devant ton nouveau code.**
+
+--- code ---
+---
+language: python
+line_highlights: 5-6,11-15
+---
+# un dictionnaire liant une pièce à d'autres pièces
+rooms = {
+
+            'Hall' : {
+                'sud' : 'Cuisine',
+                'est' : 'Salle a manger'
+            },
+    
+            'Cuisine' : {
+                'nord' : 'Hall'
+            },
+    
+            'Salle a manger' : {
+                'ouest' : 'Hall'
+            }
+    
+        }
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Essaie le jeu avec ta nouvelle salle à manger :
+
+![capture d'écran](images/rpg-dining-test.png)
+
+Si tu ne peux pas te déplacer à l'intérieur et à l'extérieur de la salle à manger, vérifie simplement que tu as ajouté tout le code du dessus (incluant les virgules supplémentaires aux lignes au dessus).
+
+--- /task ---
