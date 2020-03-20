@@ -1,13 +1,13 @@
 ---
 hero_image: images/rpg.png
-theme: navy
+theme: marynarka wojenna
 duration: 2
 listed: true
 ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Design and code your own RPG maze game.
+description: Zaprojektuj i zakoduj swoją własną labiryntową grę RPG.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -18,24 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introduction'
+    title: 'Wprowadzenie'
   - 
-    title: Adding new rooms
+    title: Dodawanie nowych pokoi
   - 
-    title: 'Challenge: Add new rooms'
+    title: 'Wyzwanie: Dodaj nowe pokoje'
     challenge: true
   - 
-    title: Adding items to collect
+    title: Dodawanie przedmiotów do zebrania
   - 
-    title: 'Challenge: Add new items'
+    title: 'Wyzwanie: Dodaj nowe przedmioty'
     challenge: true
   - 
-    title: Adding enemies
+    title: Dodawanie wrogów
   - 
-    title: 'Challenge: Adding more monsters'
+    title: 'Wyzwanie: dodawanie kolejnych potworów'
     challenge: true
   - 
-    title: Winning the game
+    title: Wygranie gry
   - 
-    title: 'Challenge: Develop your own game'
+    title: 'Wyzwanie: Napisz swoją własną grę'
     challenge: true
