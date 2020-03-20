@@ -1,9 +1,7 @@
 --- challenge ---
-## Défi : Ajoute plus de monstres 
 
-Ajoute d'autres monstres à ton jeu, pour rendre le challenge plus difficile pour sortir de la maison !
+## Défi : Ajoute plus de monstres
 
-
-
+Ajoute plus de monstres à ton jeu, pour que ce soit plus difficile de s'échapper de la maison!
 
 --- /challenge ---

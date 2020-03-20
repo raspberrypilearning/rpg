@@ -1,13 +1,44 @@
-## Ajoute des articles à ramasser
+## Ajoute des objets à collecter
 
-Laissons traîner des articles dans les pièces pour que le joueur puisse les collectionner au fer et à mèsure qu'il se déplace dans le labyrinthe.
+Laissons les objets dans les pièces pour que le joueur les collecte au fur et à mesure qu'il avance dans le labyrinthe.
 
-+ Pour ajouter des articles dans une pièce, c'est facile, il suffit de les ajouter dans le dictionnaire de la pièce. Mettons une clé dans le couloir.
+--- task ---
 
-  ![capture d'écran](images/rpg-key.png)
+Ajouter un objet dans une pièce est facile, tu peux simplement l'ajouter au dictionnaire de pièce. Mettons une clé dans le hall.
 
-  Pense à mettre une virgule après la ligne au-dessus du nouvel article, sinon ton code ne pourra pas s'exécuter !
+N'oublie pas d'ajouter une virgule après la ligne au dessus du nouvel objet, ou alors ton programme ne fonctionnera pas !
 
-+ Si tu exécutes ton jeu après avoir ajouté le code ci-dessus, tu verras désormais une clé dans le couloir, et tu pourras même la ramasser (en tapant `get key`), ce qui l'ajoute à ton inventaire !
+--- code ---
+---
+language: python
+line_highlights: 6-7
+---
+# un dictionnaire liant une pièce à d'autres pièces
+rooms = {
 
-  ![capture d'écran](images/rpg-key-test.png)  
+            'Hall' : {
+                'sud' : 'Cuisine',
+                'est' : 'Salle a manger',
+                'objet' : 'clé'
+            },
+    
+            'Cuisine' : {
+                'nord' : 'Hall'
+            },
+    
+            'Salle a manger' : {
+                'ouest' : 'Hall'
+            }
+    
+        }
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Si tu exécutes ton jeu après avoir ajouté le code du dessus, tu peux maintenant voir une clé dans le hall, et tu peux même la ramasser (en tapant `prendre clé`) qui l'ajoute à ton inventaire !
+
+![capture d'écran](images/rpg-key-test.png)
+
+--- /task ---

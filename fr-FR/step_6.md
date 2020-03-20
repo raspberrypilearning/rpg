@@ -1,19 +1,67 @@
 ## Ajoute des adversaires
 
-Ce jeu est trop facile ! Ajoutons des adversaires dans certaines des pièces que le joueur devrait éviter.
+Ce jeu est trop facile! Ajoutons des adversaires à quelques unes des pièces que le joueur doit éviter.
 
-+ Ajouter un adversaire dans une pièce est aussi simple qu'ajouter tout autre article. Ajoutons un monstre affamé dans la cuisine :
+--- task ---
 
-  ![capture d'écran](images/rpg-monster-dict.png)
+Ajouter un adversaire à une pièce est aussi facile que d'ajouter tout autre objet. Ajoutons un monstre en colère à la cuisine :
 
-+ Tu devrais aussi vérifier que le jeu se termine si le joueur entre dans une pièce qui contient un monstre. Tu peux faire ceci avec le code suivant, que tu devrais ajouter à la fin du jeu :
+--- code ---
+---
+language: python
+line_highlights: 11-12
+---
+# un dictionnaire liant une pièce à d'autres pièces
+rooms = {
 
-  ![capture d'écran](images/rpg-monster-code.png)
+            'Hall' : {
+                'sud' : 'Cuisine',
+                'est' : 'Salle a manger',
+                'objet' : 'clé'
+            },
+    
+            'Cuisine' : {
+                'nord' : 'Hall',
+                'objet' : 'monstre'
+            },
+    
+            'Salle a manger' : {
+                'ouest' : 'Hall'
+            }
+    
+        }
+--- /code ---
 
-  Ce code vérifie s'il y a un article dans la pièce, et si oui, si cet article s'agit d'un monstre. À noter que ce code est décalé, pour que ça s'aligne avec le code en-dessus. Ça veut dire que le jeu vérifie s'il y a un monstre chaque fois que le joueur se déplace dans une autre pièce.
+--- /task ---
 
-+ Teste ton code en passant dans la cuisine, qui contient désormais un monstre.
+--- task ---
 
-  ![capture d'écran](images/rpg-monster-test.png)
+Tu dois t'assurer que le jeu se termine si le joueur entre dans une pièce avec un monstre à l'intérieur. Tu peux faire çà avec le code suivant, que tu devras ajouter à la fin du jeu :
 
+--- code ---
+---
+language: python
+line_highlights: 6-9
+---
+        #sinon, si l'objet n'est pas là à obtenir
+        else:
+            #dis leur qu'ils ne peuvent pas l'obtenir
+            print('Tu ne peux pas l avoir' + move[1] + '!')
+    
+    #le joueur perd s'ils entrent dans une pièce avec un monstre
+    if 'objet' in rooms[currentRoom] and 'monstre' in rooms[currentRoom]['objet']:
+        print('Un monstre t a attrapé... GAME OVER!')
+        break
+--- /code ---
 
+Ce code vérifie s'il y a un objet dans la pièce, et si l'objet est un monstre. Note que ce code est indenté, mets le dans une ligne avec le code ci-dessus. Cela signifie que le jeu vérifiera le monstre à chaque fois que le joueur se déplace dans une nouvelle pièce.
+
+--- /task ---
+
+--- task ---
+
+Teste ton code en allant à la cuisine, qui contient maintenant un monstre.
+
+![capture d'écran](images/rpg-monster-test.png)
+
+--- /task ---
