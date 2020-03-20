@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Add new items
+## Meydan okuma: Yeni eşyalar ekle
 
-Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
+Oyunda bazı odalara eşya ekle. Evden kaçmaya yardımcı olabileceğini düşündüğün herhangi bir şeyi ekleyebilirsin! Örneğin, bir kalkan veya sihirli bir iksir.
 
 \--- /challenge \---
