@@ -18,7 +18,7 @@ En premier, tu dois ajouter un jardin au sud de la salle à manger. N'oublie pas
 ---
 language: python
 line_highlights: 16-17,18-22
---
+---
 # un dictionnaire liant une pièce à d'autres pièces
 rooms = {
 
