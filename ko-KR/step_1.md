@@ -26,7 +26,7 @@
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: 준비물
 
 ### 하드웨어
 
@@ -38,13 +38,13 @@
 
 ### 다운로드
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+스타터 프로젝트는 [여기](http://rpf.io/p/en/rpg-go){:target="_blank"}를 클릭하면 열 수 있습니다.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: What you will learn
+## title: 이런 것들을 배우게 됩니다.
 
 + 게임 디자인;
 + 코드 편집: 
@@ -52,7 +52,7 @@ The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_bla
     + 딕셔너리.
 + 부울 식.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+이 프로젝트는 [라즈베리파이 디지털 메이킹 커리큘럼](http://rpf.io/curriculum) 중 아래의 과정에 있는 요소들을 다룹니다.
 
 + [프로그래밍 구조를 결합하여 문제 해결하기](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -60,10 +60,10 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: 교육자를 위한 추가 정보
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+이 프로젝트를 인쇄하려면 [프린트용 문서](https://projects.raspberrypi.org/en/projects/rpg/print)를 사용하십시오.
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+프로젝트의 완성본은 [여기](http://rpf.io/p/en/rpg-get){:target="_blank"}를 클릭하면 됩니다.
 
 \--- /collapse \---
