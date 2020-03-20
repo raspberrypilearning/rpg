@@ -1,14 +1,14 @@
-## Introduction:
+## Giriş:
 
-In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
+Bu projede, kendi RPG labirent oyununu tasarlayıp kodlayacaksın. Oyunun amacı canavarlara yakalanmadan nesneleri toplayıp evden kaçmak olacak!
 
-## What you will make
+## Ne yapacaksınız
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Dünyada gezinmek için `git` ve yanına bir yön yazın (kuzey, doğu, güney ya da batı) (ör: `git kuzey`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Gördüğünüz eşyaları toplamak için `al` yazın. (ör: `al anahtar`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,50 +20,50 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![tamamlanmış proje](images/rpg-finished.png)
 
 \--- /print-only \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: Nelere ihtiyacınız var
 
-### Hardware
+### Donanım
 
-+ A computer capable of running Python
++ Python çalıştırabilen bir bilgisayar
 
-### Software
+### Yazılım
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 (ya [çevrimiçi](https://trinket.io/){:target="_blank"} ya da [çevrimdışı](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### İndirilenler
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
-
-\--- /collapse \---
-
-## \--- collapse \---
-
-## title: What you will learn
-
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+Başlangıç projesini [burada](http://rpf.io/p/en/rpg-go){:target="_blank"} bulabilirsiniz.
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: Ne öğreneceksiniz
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
++ Oyun tasarım;
++ Düzenleme: 
+    + Listeler;
+    + Sözlükler.
++ Boolean ifadeleri.
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un aşağıdaki bölümlerinden unsurları kapsamaktadır:
+
++ [Bir problemi çözmek için programlama yapılarını birleştirme.](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: Eğitimciler için ek bilgiler
+
+Bu projeyi yazdırmanız gerekiyorsa, lütfen [Yazıcı dostu sürüm](https://projects.raspberrypi.org/en/projects/rpg/print)ü kullanın.
+
+[Bu proje için çözümlere şuradan{:target="_blank"} ulaşabilirsiniz.](http://rpf.io/p/en/rpg-get).
 
 \--- /collapse \---
