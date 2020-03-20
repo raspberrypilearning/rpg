@@ -1,86 +1,86 @@
 #!/bin/python3
 
-# Replace RPG starter project with this code when new instructions are live
+# Zastąp projekt startowy RPG tym kodem, kiedy użyte będą nowe instrukcje
 
-def showInstructions():
-  #print a main menu and the commands
+def pokazInstrukcje():
+  #wyświetl menu główne i polecenia
   print('''
-RPG Game
+Gra przygodowa (RPG)
 ========
-Commands:
-  go [direction]
-  get [item]
+Polecenia:
+  rusz-na [kierunek]
+  bierz [przedmiot]
 ''')
 
-def showStatus():
-  #print the player's current status
+def pokazStatus():
+  #wyświetl aktualny status gracza
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print('Jesteś tu: ' + aktualnyPokoj)
+  #wyświetl aktualny ekwipunek
+  print('Masz w ekwipunku: ' + str(ekwipunek))
+  #wyświetl przedmiot jeśli jakiś tam jest
+  if "przedmiot" in pokoje[aktualnyPokoj]:
+    print('Widzisz: ' + pokoje[aktualnyPokoj]['przedmiot'])
   print("---------------------------")
 
-#an inventory, which is initially empty
-inventory = []
+#ekwipunek, początkowo pusty
+ekwipunek = []
 
-#a dictionary linking a room to other rooms
-rooms = {
+#słownik łączący pokój z innymi pokojami
+pokoje = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen'
+            'Korytarz' : { 
+                  'południe' : 'Kuchnia'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall'
+            'Kuchnia' : {
+                  'północ' : 'Korytarz'
                 }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#ustaw gracza na początku w korytarzu
+aktualnyPokoj = 'Korytarz'
 
-showInstructions()
+pokazInstrukcje()
 
-#loop forever
+#pętla nieskończona
 while True:
 
-  showStatus()
+  pokazStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':  
-    move = input('>')
+  #sprawdź następny „ruch” gracza
+  #.split() rozdziela ją na tablicę napisów
+  #np. wpisanie 'rusz-na wschód' dałoby taką listę:
+  #['rusz-na','wschód']
+  ruch = ''
+  while ruch == '':  
+    ruch = input('>')
     
-  move = move.lower().split()
+  ruch = ruch.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #jeśli gracz wpisze najpierw 'rusz-na'
+  if ruch[0] == 'rusz-na':
+    #sprawdź, czy może iść tam gdzie zamierza
+    if ruch[1] in pokoje[aktualnyPokoj]:
+      #ustaw aktualny pokój na nowy pokój
+      aktualnyPokoj = pokoje[aktualnyPokoj][ruch[1]]
+    #nie ma drzwi (połączenia) do nowego pokoju
     else:
-        print('You can\'t go that way!')
+        print('Nie możesz iść tędy!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #jeśli gracz wpisze najpierw 'bierz'
+  if ruch[0] == 'bierz' :
+    #jeśli pomieszczenie zawiera przedmiot i jest to ten sam przedmiot, który gracz zamierza wziąć
+    if "przedmiot" in pokoje[aktualnyPokoj] and ruch[1] in pokoje[aktualnyPokoj]['przedmiot']:
+      #dodaj przedmiot do ekwipunku
+      ekwipunek += [ruch[1]]
+      #wyświetl komunikat pomocniczy
+      print('Wziąłeś: ' + ruch[1] + '!')
+      #usuń przedmiot z pokoju
+      del pokoje[aktualnyPokoj]['przedmiot']
+    #w przeciwnym wypadku, jeśli przedmiotu nie można wziąć bo go nie ma
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #powiedz, że nie da się tego wziąć
+      print('Tego nie możesz wziąć: ' + ruch[1] + '!')
 
