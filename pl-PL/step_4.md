@@ -1,12 +1,12 @@
-## Adding items to collect
+## Dodawanie przedmiotów do zebrania
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+Zostawmy przedmioty w pokojach, aby gracz mógł je zbierać, gdy przechodzi przez labirynt.
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+Dodanie przedmiotu do pokoju jest łatwe, wystarczy dodać go do słownika pokoju. Pozostawmy klucz w korytarzu.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+Pamiętaj, aby dodać przecinek za linią ponad nowym przedmiotem, bo inaczej Twój program się nie uruchomi!
 
 ## \--- code \---
 
@@ -14,22 +14,22 @@ language: python
 
 ## line_highlights: 6-7
 
-# a dictionary linking a room to other rooms
+# słownik łączący pokój z innymi pokojami
 
-rooms = {
+pokoje = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Korytarz' : {
+                'południe' : 'Kuchnia',
+                'wschód' : 'Jadalnia',
+                'przedmiot' : 'klucz'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Kuchnia' : {
+                'północ' : 'Korytarz'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Jadalnia' : {
+                'zachód' : 'Korytarz'
             }
     
         }
@@ -41,8 +41,8 @@ rooms = {
 
 \--- task \---
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+Jeśli uruchomisz grę po dodaniu powyższego kodu, zobaczysz klucz w korytarzu, a nawet możesz go wziąć (wpisując `bierz klucz`), który dodaje go do Twojego ekwipunku!
 
-![screenshot](images/rpg-key-test.png)
+![zrzut ekranu](images/rpg-key-test.png)
 
 \--- /task \---
