@@ -4,9 +4,9 @@
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+방에 아이템을 추가하는 것은 쉽습니다. 그냥 방의 딕셔너리에 추가하면 됩니다. key를 hall에 한번 추가해 봅시다.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+새로운 아이템을 추가할 때, 사진과 같이 꼭 뒤에 콤마(',')를 삽입해 주세요. 삽입이 안되어 있으면 프로그램 실행이 되지 않습니다.
 
 ## \--- code \---
 
@@ -41,8 +41,8 @@ rooms = {
 
 \--- task \---
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+프로그램을 실행하면 key가 hall에 있다고 뜰 것입니다. 그리고 key를 주워 인벤토리에 추가할 수도 있습니다. (`get key` 명령어 입력)
 
-![screenshot](images/rpg-key-test.png)
+![스크린샷](images/rpg-key-test.png)
 
 \--- /task \---
