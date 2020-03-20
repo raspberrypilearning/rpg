@@ -1,18 +1,18 @@
-## Winning the game
+## Oyunu kazanma
 
-Let’s give your player a mission, which needs to completed to win the game.
+Oyuncuya bir görev ver, oyunu kazanması için tamamlaması gerekir.
 
 \--- task \---
 
-In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+Bu oyunda, oyuncu evden kaçıp bahçeye ulaşarak oyunu kazanır. Ayrıca anahtar ve sihirli iksire ihtiyaçları olacak. Burada oyunun bir haritası var.
 
-![screenshot](images/rpg-final-map.png)
+![ekran görüntüsü](images/rpg-final-map.png)
 
 \--- /task \---
 
 \--- task \---
 
-First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+Öncelikle, yemek odasının güneyine bir bahçe eklemen gerek. Evdeki odaları bağlamak için kapı eklemeyi unutma.
 
 ## \--- code \---
 
@@ -20,28 +20,28 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# a dictionary linking a room to other rooms
+# bir odayı başka odalara bağlayan bir sözlük
 
-rooms = {
+odalar = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Koridor' : {
+                'güney' : 'Mutfak',
+                'doğu' : 'Yemek Odası',
+                'eşya' : 'anahtar'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            'Mutfak' : {
+                'kuzey' : 'Koridor',
+                'eşya' : 'canavar'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden'
+            'Yemek Odası' : {
+                'batı' : 'Koridor',
+                'güney' : 'Bahçe'
             },
     
-            'Garden' : {
-                'north' : 'Dining Room'
+            'Bahçe' : {
+                 'kuzey' : 'Yemek Odası'
             }
     
         }
@@ -53,7 +53,7 @@ rooms = {
 
 \--- task \---
 
-Add a potion to the dining room (or another room in your house).
+Oturma odasına bir iksir ekle (veya başka bir odaya).
 
 ## \--- code \---
 
@@ -61,10 +61,10 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden',
-                'item' : 'potion'
+            'Yemek Odası' : {
+                'batı' : 'Koridor',
+                'güney' : 'Bahçe',
+                'eşya' : 'iksir'
             },
     
 
@@ -74,7 +74,7 @@ language: python
 
 \--- task \---
 
-Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+Bu kodu ekleyerek, oyuncunun anahtarı ve iksiri alıp bahçeye gelerek kazanmasına izin ver:
 
 ## \--- code \---
 
@@ -82,33 +82,33 @@ language: python
 
 ## line_highlights: 6-9
 
-# player loses if they enter a room with a monster
+# oyuncu canavar olan bir odaya girerse kaybeder
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'eşya' in odalar\[suankiOda] and 'canavar' in odalar[suankiOda\]\['eşya'\]: print('Bir canavar seni yakaladı... KAYBETTİN!') break
 
-# player wins is they get to the garden with the key and potion
+# oyuncu bahçeye bir anahtar ve iksirle ulaşırsa kazanır
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
+if suankiOda == 'Bahçe' and 'anahtar' in envanter and 'iksir' in envanter: print('Evden kaçtın... KAZANDIN!') break
 
 \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+Kodun yukarıdaki kodla aynı şekilde girintili olduğundan emin ol. Bu kod `Evden kaçtın...KAZANDIN!` mesajının görüntülendiğini gösterir, eğer oyuncu oda 4'te ise (bahçedeyse) ve envanterinde anahtar ve iksir varsa.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
-
-\--- /task \---
-
-\--- task \---
-
-Test your game to make sure the player can win!
-
-![screenshot](images/rpg-win-test.png)
+Eğer 4'ten fazla odan varsa, yukarıdaki kodda bahçe için farklı bir sayı kullanman gerekebilir.
 
 \--- /task \---
 
 \--- task \---
 
-Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+Oyuncunun kazanabildiğinden emin olmak için oyunu test et!
+
+![ekran görüntüsü](images/rpg-win-test.png)
+
+\--- /task \---
+
+\--- task \---
+
+Son olarak, oyuna birkaç talimat ekleyelim. Böylece oyuncu ne yapması gerektiğini bilir. `talimatlariGoster()` fonksiyonunu düzenleyerek daha fazla bilgi verebilirsin.
 
 ## \--- code \---
 
@@ -116,24 +116,24 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def talimatlariGoster(): #ana menü ve komutları ekrana yazdır print('''
 
-# RPG Game
+# RPG Oyunu
 
-Get to the Garden with a key and a potion Avoid the monsters!
+Bir anahtar ve iksirle bahçeye git Canavarlardan saklan!
 
-Commands: go [direction] get [item] ''')
+Komutlar: git [yön] al [eşya] ''')
 
 \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+Oyuncunun ne toplaması gerektiğini ve neyden saklanması gerektiğini söylemek için talimatlara ihtiyacın olacak!
 
 \--- /task \---
 
 \--- task \---
 
-Test your game and you should see your new instructions.
+Oyunu test et ve yeni talimatlarını gör.
 
-![screenshot](images/rpg-instructions-test.png)
+![ekran görüntüsü](images/rpg-instructions-test.png)
 
 \--- /task \---
