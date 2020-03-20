@@ -1,12 +1,12 @@
-## Adding items to collect
+## Toplamak için eşyalar ekleme
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+Hadi, odalara oyuncuların labirentte ilerledikçe toplayacakları eşyalar bırakalım.
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+Bir odaya eşya eklemek kolay; tek yapacağın şey, odanın sözlüğüne eklemek. Hadi koridora bir anahtar koyalım.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+Yeni eşyanın üstündeki satırın sonuna virgül eklemeyi unutma, yoksa programın çalışmaz!
 
 ## \--- code \---
 
@@ -14,22 +14,22 @@ language: python
 
 ## line_highlights: 6-7
 
-# a dictionary linking a room to other rooms
+# bir odayı başka odalara bağlayan bir sözlük
 
-rooms = {
+odalar = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Koridor' : {
+                'güney' : 'Mutfak',
+                'doğu' : 'Yemek Odası',
+                'eşya' : 'anahtar'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Mutfak' : {
+                'kuzey' : 'Koridor'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Yemek Odası' : {
+                'batı' : 'Koridor'
             }
     
         }
@@ -41,8 +41,8 @@ rooms = {
 
 \--- task \---
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+Yukarıdaki kodu ekledikten sonra oyunu başlatırsan, koridorda bir anahtar görebilirsin ve hatta envanterine alabilirsin (`al anahtar` yazarak)!
 
-![screenshot](images/rpg-key-test.png)
+![ekran görüntüsü](images/rpg-key-test.png)
 
 \--- /task \---
