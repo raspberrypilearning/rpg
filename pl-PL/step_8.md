@@ -1,18 +1,18 @@
-## Winning the game
+## Wygranie gry
 
-Let’s give your player a mission, which needs to completed to win the game.
+Dajmy graczowi misję, która musi zostać ukończona, aby wygrać grę.
 
 \--- task \---
 
-In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+W tej grze gracz wygrywa, wchodząc do ogrodu i uciekając z domu. Musi też mieć ze sobą klucz i magiczną miksturę. Oto mapa gry.
 
-![screenshot](images/rpg-final-map.png)
+![zrzut ekranu](images/rpg-final-map.png)
 
 \--- /task \---
 
 \--- task \---
 
-First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+Najpierw musisz dodać ogród na południe od jadalni. Pamiętaj, aby dodać drzwi, żeby połączyć go z innymi pokojami w domu.
 
 ## \--- code \---
 
@@ -20,28 +20,28 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# a dictionary linking a room to other rooms
+# słownik łączący pokój z innymi pokojami
 
-rooms = {
+pokoje = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Korytarz' : {
+                'południe' : 'Kuchnia',
+                'wschód' : 'Jadalnia',
+                'przedmiot' : 'klucz'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            'Kuchnia' : {
+                'północ' : 'Korytarz',
+                'przedmiot' : 'potwór'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden'
+            'Jadalnia' : {
+                'zachód' : 'Korytarz',
+                'południe' : 'Ogród'
             },
     
-            'Garden' : {
-                'north' : 'Dining Room'
+            'Ogród' : {
+                'północ' : 'Jadalnia'
             }
     
         }
@@ -53,7 +53,7 @@ rooms = {
 
 \--- task \---
 
-Add a potion to the dining room (or another room in your house).
+Dodaj miksturę do jadalni (lub innego pokoju w domu).
 
 ## \--- code \---
 
@@ -61,10 +61,10 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden',
-                'item' : 'potion'
+            'Jadalnia' : {
+                'zachód' : 'Korytarz',
+                'południe' : 'Ogród',
+                'przedmiot' : 'mikstura'
             },
     
 
@@ -74,7 +74,7 @@ language: python
 
 \--- task \---
 
-Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+Dodaj ten kod, aby gracz mógł wygrać grę, gdy dotrze do ogrodu z kluczem i miksturą:
 
 ## \--- code \---
 
@@ -82,33 +82,33 @@ language: python
 
 ## line_highlights: 6-9
 
-# player loses if they enter a room with a monster
+# gracz przegrywa jeśli wejdzie do pokoju z potworem
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'przedmiot' in pokoje\[aktualnyPokoj] and 'potwór' in pokoje[aktualnyPokoj\]\['przedmiot'\]: print('Dorwał cię potwór... PRZEGRYWASZ!') break
 
-# player wins is they get to the garden with the key and potion
+# gracz wygrywa jeśli dostanie się do ogrodu z kluczem i miksturą
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
+if aktualnyPokoj == 'Ogród' and 'klucz' in ekwipunek and 'mikstura' in ekwipunek: print('Wydostałeś się z domu... WYGRYWASZ!') break
 
 \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+Upewnij się, że ten kod został poprzedzony wcięciem. Ten kod oznacza, że wiadomość `Wydostałeś się z domu... WYGRYWASZ!` jest wyświetlana, jeśli gracz jest pokoju nr 4 (ogród) i jeśli klucz i mikstura są w ekwipunku.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
-
-\--- /task \---
-
-\--- task \---
-
-Test your game to make sure the player can win!
-
-![screenshot](images/rpg-win-test.png)
+Jeśli masz więcej niż 4 pomieszczenia, konieczne będzie użycie innego numeru pomieszczenia dla ogrodu w powyższym kodzie.
 
 \--- /task \---
 
 \--- task \---
 
-Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+Sprawdź swoją grę, aby upewnić się, że gracz może wygrać!
+
+![zrzut ekranu](images/rpg-win-test.png)
+
+\--- /task \---
+
+\--- task \---
+
+Na koniec dodajmy kilka instrukcji do gry, aby gracz wiedział, co musi zrobić. Uzupełnij funkcję `pokazInstrukcje()` o dodatkowe informacje.
 
 ## \--- code \---
 
@@ -116,24 +116,24 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def pokazInstrukcje(): #wyświetl menu główne i komendy print('''
 
-# RPG Game
+# Gra przygodowa (RPG)
 
-Get to the Garden with a key and a potion Avoid the monsters!
+Dostań się do ogrodu z kluczem i miksturą Unikaj potworów!
 
-Commands: go [direction] get [item] ''')
+Polecenia: rusz-na [kierunek] bierz [przedmiot] ''')
 
 \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+Musisz też dodać instrukcje aby powiedzieć graczowi jakie przedmioty musi zebrać i czego ma unikać!
 
 \--- /task \---
 
 \--- task \---
 
-Test your game and you should see your new instructions.
+Przetestuj swoją grę, a powinieneś zobaczyć nowe instrukcje.
 
-![screenshot](images/rpg-instructions-test.png)
+![zrzut ekranu](images/rpg-instructions-test.png)
 
 \--- /task \---
