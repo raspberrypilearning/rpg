@@ -1,122 +1,122 @@
 #!/bin/python3
 
-def showInstructions():
-    #print a main menu and the commands
+def talimatlariGoster():
+    #ekrana ana menü ve komutları yazdır
     print('''
-RPG Game
+RPG Oyunu
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+Bir anahtar ve iksirle bahçeye git
+Canavarlardan kaç!
 
-You are getting tired, each time you move you loose 1 health point. 
+Yoruluyorsun, her hamlende 1 canın gidecek. 
 
-Commands:
-  go [direction]
-  get [item]
+Komutlar:
+  git [yön]
+  al [eşya]
 ''')
 
-def showStatus():
-  #print the player's current status
+def durumuGoster():
+  #ekrana oyuncunun durumunu yazdır
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print(isim + ' şu anda burada: ' suankiOda)
+  print("Can: " + str(can))
+  #şu anki envanteri ekrana yazdır
+  print("Envanter : " + str(envanter))
+  #Eğer varsa ekrana bir eşya yazdır
+  if "eşya" in odalar[suankiOda]:
+    print('Bir ' + odalar[suankiOda]['eşya'] + ' görüyorsunuz')
   print("---------------------------")
 
-# setup the game
-name = None
-health = 5
-currentRoom = 'Hall'
-inventory = []
+# oyunu kur
+isim = None
+can = 5
+suankiOda = 'Koridor'
+envanter = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+#-# KODLARIN BURAYA GELİR #-#
+# Dosyadan veri yükle
 
-#a dictionary linking a room to other room positions
-rooms = {
+#bir odayı başka odalara bağlayan bir sözlük
+odalar = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            'Koridor' : { 'güney' : 'Mutfak',
+                  'doğu' : 'Oturma Odası',
+                  'eşya' : 'anahtar'
                 },
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            'Mutfak' : { 'kuzey' : 'Oturma Odası',
+                  'eşya' : 'canavar'
                 },
 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            'Oturma Odası' : { 'batı' : 'Koridor',
+                  'güney' : 'Bahçe',
+                  'eşya' : 'iksir'
 
                 },
 
-            'Garden' : { 'north' : 'Dining Room' }
+            'Bahçe' : { 'kuzey' : 'Oturma Odası' }
 
          }
 
-# ask the player their name
-if name is None:
-  name = input("What is your name Adventurer? ")
-  showInstructions()
+# oyuncuya adını sor
+if isim is None:
+  isim = input("Hey maceracı, adın ne? ")
+  talimatlariGoster()
 
-#loop forever
+#sonsuz döngü
 while True:
 
-  showStatus()
+  durumuGoster()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':
-    move = input('>')
+  #oyuncunun sonraki 'hamle'sini al
+  #.split() dizgiyi diziye ayırır
+  #ör: 'git batı' yazarsanız şunu elde edersiniz:
+  #['git','batı']
+  hamle = ''
+  while hamle == '':
+    hamle = input('>')
 
-  move = move.lower().split()
+  hamle = hamle.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    health = health - 1
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #eğer ilk olarak git yazarlarsa
+  if hamle[0] == 'git':
+    can = can - 1
+    #gitmek istedikleri yere izinleri var mı kontrol et
+    if hamle[1] in odalar[suankiOda]:
+      #şu anki odayı yeni oda yap
+      suankiOda = odalar[suankiOda][hamle[1]]
+    #yeni odaya gidebileceği bir kapı (bağlantı) yok
     else:
-      print('You can\'t go that way!')
+      print('Bu yoldan gidemezsiniz!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #eğer ilk olarak al yazarlarsa
+  if hamle[0] == 'al' :
+    #odada bir eşya varsa ve almak istedikleri eşya oysa
+    if 'eşya' in odalar[suankiOda] and hamle[1] in odalar[suankiOda]['eşya']:
+      #o eşyayı envanterlerine ekle
+      envanter += [hamle[1]]
+      #yardımcı bir mesaj göster
+      print(hamle[1] + ' alındı!')
+      #odadan o eşyayı sil
+      del odalar[suankiOda]['eşya']
+    #aksi halde, eşya orada değilse
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #onlara alamayacaklarını söyle
+      print('Bunu alamazsınız: ' + hamle[1] + '!')
 
-  #player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  #oyuncu canavar olan bir odaya girerse kaybeder
+  if 'eşya' in odalar[suankiOda] and 'canavar' in odalar[suankiOda]['eşya']:
+    print('Bir canavar seni yakaladı... OYUN BİTTİ!')
     break
 
-  if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+  if can == 0:
+    print('Bitkin düştün... OYUN BİTTİ!')
 
-  #player wins if they get to the garden with a key and a potion
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  #oyuncu bahçeye bir anahtar ve iksirle ulaşırsa kazanır
+  if suankiOda == 'Bahçe' and 'anahtar' in envanter ve 'iksir' in envanter:
+    print('Evden kaçtın... KAZANDIN!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# KODLARIN BURAYA GELİR #-#
+  # Oyun verisini dosyaya kaydet
