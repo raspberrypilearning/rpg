@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Adding more monsters
+## Meydan okuma: Daha fazla canavar ekle
 
-Add more monsters to your game, to make it harder to escape the house!
+Oyununa daha fazla canavar ekle, bu sayede evden kaçış zorlaşır!
 
 \--- /challenge \---
