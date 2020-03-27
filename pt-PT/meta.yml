@@ -25,7 +25,7 @@ steps:
   - title: 'Desafio: adicionar novos itens'
     challenge: true
   - title: Adicionar inimigos
-  - title: 'Desafio: Adicionar mais monstros'
+  - title: 'Desafio: adicionar mais monstros'
     challenge: true
   - title: Ganhar o jogo
   - title: 'Desafio: desenvolve o teu próprio jogo'
