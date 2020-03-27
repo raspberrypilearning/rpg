@@ -2,7 +2,7 @@
 
 \--- task \---
 
-Open the Python starter project.
+Abre o projeto inicial em Python.
 
 **Online:** abre o projeto Python inicial em [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
@@ -12,7 +12,7 @@ Open the Python starter project.
 
 \--- task \---
 
-This is a very basic RPG game that only has 2 rooms. Aqui está um mapa do jogo:
+Este é um jogo RPG muito básico com apenas 2 divisões. Aqui está um mapa do jogo:
 
 ![captura de ecrã](images/rpg-map1.png)
 
@@ -24,7 +24,7 @@ Podes digitar `vai sul` para ir da entrada para a cozinha, e depois `vai norte` 
 
 \--- task \---
 
-What happens when you type in a direction that you cannot go? Digita `vai oeste` na entrada e vais receber uma simpática mensagem de erro.
+O que acontece quando digitas uma direcão para a qual não podes ir? Digita `vai oeste` na entrada e vais receber uma simpática mensagem de erro.
 
 ![captura de ecrã](images/rpg-error.png)
 
@@ -32,7 +32,7 @@ What happens when you type in a direction that you cannot go? Digita `vai oeste`
 
 \--- task \---
 
-If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+Se olhares para a variável `divisões`, podes ver que o mapa é codificado como um dicionário de divisões:
 
 ## \--- code \---
 
@@ -55,13 +55,13 @@ divisoes = {
 
 \--- /code \---
 
-Each room is a dictionary, and rooms are linked together using directions.
+Cada divisāo é um dicionário, e as divisões sāo ligadas umas às outras usando direções.
 
 \--- /task \---
 
 \--- task \---
 
-Let’s add a dining room to your map, to the east of the hall.
+Vamos adicionar uma sala de jantar ao teu mapa, para este da entrada.
 
 ![captura de ecrã](images/rpg-dining.png)
 
@@ -101,7 +101,7 @@ rooms = {
 
 \--- task \---
 
-Try out the game with your new dining room:
+Experimenta o jogo com a tua nova sala de jantar:
 
 ![captura de ecrã](images/rpg-dining-test.png)
 
