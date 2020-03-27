@@ -4,7 +4,7 @@ Este jogo está demasiado fácil! Vamos adicionar a algumas das divisões inimig
 
 \--- task \---
 
-Adding an enemy to a room is as easy as adding any other item. Vamos adicionar um monstro esfomeado à cozinha:
+Adicionar um inimigo a uma divisão é tão fácil como adicionar outro item. Vamos adicionar um monstro esfomeado à cozinha:
 
 ## \--- code \---
 
@@ -40,7 +40,7 @@ divisoes = {
 
 \--- task \---
 
-You also want to make sure that the game ends if the player enters a room with a monster in. Podes fazer isso com o código seguinte, que deves adicionar ao fim do jogo:
+Também vais querer ter a certeza de que o jogo acaba se o jogador entrar numa divisão com um monstro. Podes fazer isso com o código seguinte, que deves adicionar ao fim do jogo:
 
 ## \--- code \---
 
@@ -67,7 +67,7 @@ Este código verifica se há um item na divisão, e se houver, se o item é um m
 
 \--- task \---
 
-Test out your code by going into the kitchen, which now contains a monster.
+Testa o teu código indo para a cozinha, que agora tem um monstro.
 
 ![captura de ecrã](images/rpg-monster-test.png)
 
