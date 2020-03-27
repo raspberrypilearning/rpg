@@ -4,7 +4,7 @@ Vamos deixar itens nas divisões para o jogador apanhar enquanto se move pelo la
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Vamos colocar uma chave na entrada.
+Adicionar um item a uma divisão é fácil, basta adicioná-lo ao dicionário da divisāo. Vamos colocar uma chave na entrada.
 
 Lembra-te de colocar uma vírgula depois da linha acima do novo item, ou o teu programa nāo vai funcionar!
 
@@ -41,7 +41,7 @@ divisoes = {
 
 \--- task \---
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+Se correres o teu jogo depois de adicionar o código acima, podes ver agora uma chave na entrada, e podes até apanhá-la (escrevendo `apanha chave`) o que a adiciona ao teu inventário!
 
 ![captura de ecrã](images/rpg-key-test.png)
 
