@@ -4,7 +4,7 @@ Vamos dar ao teu jogador uma missão, que precisa ser concluída para ganhar o j
 
 \--- task \---
 
-In this game, the player wins by getting to the garden and escaping the house. Também precisa de ter a chave e a garrafa de poçāo com ele. Aqui está um mapa do jogo.
+Neste jogo, o jogador ganha ao chegar ao jardim e fugir da casa. Também precisa de ter a chave e a garrafa de poçāo com ele. Aqui está um mapa do jogo.
 
 ![captura de ecrã](images/rpg-final-map.png)
 
@@ -12,7 +12,7 @@ In this game, the player wins by getting to the garden and escaping the house. T
 
 \--- task \---
 
-First, you need to add a garden to the south of the dining room. Lembra-te de adicionar portas, para ligar a outras divisões da casa.
+Primeiro, precisas de adicionar um jardim a sul da sala de jantar. Lembra-te de adicionar portas, para ligar a outras divisões da casa.
 
 ## \--- code \---
 
@@ -53,7 +53,7 @@ rooms = {
 
 \--- task \---
 
-Add a potion to the dining room (or another room in your house).
+Adiciona uma garrafa de poçāo à sala de jantar (ou a outra divisāo da tua casa).
 
 ## \--- code \---
 
@@ -74,7 +74,7 @@ language: python
 
 \--- task \---
 
-Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+Adiciona este código para o jogador ganhar o jogo quando chegar ao jardim com a chave e a garrafa de poçāo:
 
 ## \--- code \---
 
@@ -88,7 +88,7 @@ if 'item' in divisoes\[divAtual] and 'monstro' in divisoes[divAtual\]\['item'\]:
 
 # o jogador ganha se entrar no jardim com a chave e a garrafa de poçāo
 
-if divAtual == 'Jardim' and 'chave' in inventario and 'garrafa' in inventario: print('Fugiste da casa... YOU WIN!') break
+if divAtual == 'Jardim' and 'chave' in inventario and 'garrafa' in inventario: print('Fugiste da casa... GANHASTE!') break
 
 \--- /code \---
 
@@ -100,7 +100,7 @@ No código acima, se tiveres mais de quatro divisões, podes ter de usar um núm
 
 \--- task \---
 
-Test your game to make sure the player can win!
+Testa o teu jogo para ter a certeza de que o jogador pode ganhar!
 
 ![captura de ecrã](images/rpg-win-test.png)
 
@@ -108,7 +108,7 @@ Test your game to make sure the player can win!
 
 \--- task \---
 
-Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edita a funçāo `mostraInstrucoes()` para incluir mais informaçāo.
+Finalmente, vamos adicionar algumas instruções ao teu jogo, para que o jogador saiba o que tem de fazer. Edita a funçāo `mostraInstrucoes()` para incluir mais informaçāo.
 
 ## \--- code \---
 
@@ -122,7 +122,7 @@ def mostraInstrucoes(): #imprime um menu principal e os comandos print('''
 
 Chega ao jardim com uma chave e uma garrafa de poçāo Evita os monstros!
 
-Commands: go [direction] get [item] ''')
+Comandos: vai [direçāo] apanha [item] ''')
 
 \--- /code \---
 
@@ -132,7 +132,7 @@ Vais precisar de instruções para dizer ao jogador quais os itens que precisa d
 
 \--- task \---
 
-Test your game and you should see your new instructions.
+Testa o teu jogo e deves ver as tuas novas instruções.
 
 ![captura de ecrã](images/rpg-instructions-test.png)
 
