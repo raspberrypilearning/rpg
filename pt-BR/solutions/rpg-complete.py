@@ -59,64 +59,64 @@ comodos= {
 
          }
 
-# ask the player their name
-if name is None:
-  name = input("What is your name Adventurer? ")
-  showInstructions()
+# Pergunta ao jogador o nome dele
+if nome is None:
+  nome = input("Qual é o teu nome Aventureiro? ")
+  mostrarInstrucoes()
 
-#loop forever
+#repita infinitamente
 while True:
 
-  showStatus()
+  mostrarEstado()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':
-    move = input('>')
+  #pega o próximo 'movimento' do jogador
+  #.split() quebra a entrada em uma lista vetor
+  #ex. digitar 'va leste' resultaria na lista:
+  #['va','leste']
+  movimento = ''
+  while movimento == '':
+    movimento = input('>')
 
-  move = move.lower().split()
+  movimento = movimento.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    health = health - 1
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #se eles digitarem primeiro 'va'
+  if movimento[0] == 'va':
+    saude = saude -1
+    #verifica se eles podem ir onde pretendem
+    if movimento[1] in comodos[comodoAtual]:
+      #define o novo cômodo como o atual
+      comodoAtual = comodos[comodoAtual][movimento[1]]
+    #não há porta (conexão) para o novo cômodo
     else:
-      print('You can\'t go that way!')
+      print('Você não pode ir para esse lado')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #se eles digitarem 'pegar' primeiro
+  if movimento[0] == 'pegar':
+    #se o quarto tiver um item, e o item é o qual eles desejam pegar
+    if "item" in comodos[comodoAtual] and movimento[1] in comodos[comodoAtual]['item']:
+      #adicionar o item ao inventário
+      inventario += [movimento[1]]
+      #exiba uma mensagem útil
+      print('Pegou' + movimento[1] + '!')
+      #deletar o item do cômodo
+      del comodos[comodoAtual]['item']
+    #caso contrário, se o item não estiver lá
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #fale para o jogador que ele não pode pegar
+      print('Não pode pegar o(a)' + movimento[1] + '!')
 
-  #player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  #o jogador perde se entrar em um cômodo com um monstro
+  if "item" in comodos[comodoAtual] and 'monstro' in comodos[comodoAtual]['item']:
+    print('Um monstro pegou você... FIM DE JOGO!')
     break
 
-  if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+  if saude == 0:
+    print('Você ficou exausto... FIM DE JOGO!')
 
-  #player wins if they get to the garden with a key and a potion
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  #o jogador ganha se entrar no jardim com a chave e a poçāo
+  if comodoAtual == 'Jardim' and 'Chave' in inventario and 'Poção' in inventario:
+    print('Você conseguiu escapar... VOCÊ VENCEU!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  #-# O TEU CÓDIGO FICA AQUI #-#
+  # Carregar os dados do jogo para o arquivo
