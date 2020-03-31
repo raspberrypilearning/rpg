@@ -1,18 +1,18 @@
-## Adding new rooms
+## Adicionar novos cômodos
 
 \--- task \---
 
-Open the Python starter project.
+Abre o projeto inicial em Python.
 
-**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**Online**: Abra o projeto inicial em [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
 
-**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+**Off-line**: Abra o [projeto inicial](http://rpf.io/p/en/rpg-go){:target="_ blank"} no editor offline.
 
 \--- /task \---
 
 \--- task \---
 
-This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
+Este é um jogo de RPG muito básico que só tem 2 cômodos. Aqui está o mapa do jogo:
 
 ![screenshot](images/rpg-map1.png)
 
