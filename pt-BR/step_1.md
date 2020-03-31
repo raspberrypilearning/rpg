@@ -6,9 +6,9 @@ Neste projeto, você irá desenvolver e codificar o seu próprio jogo de labirin
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+Digite `va` e uma direção (norte, este, sul ou oeste) para se mover pelo mapa (Ex.: `va norte`).
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+Digite `pegar` para pegar qualquer item que você encontrar (Ex.: `pegar chave`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -62,8 +62,8 @@ Este projeto abrange elementos das seguintes vertentes do [Currículo de Criaç�
 
 ## informações adicionais para educadores
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Se você precisar imprimir este projeto, use a [versão para impressão](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+Você pode [encontrar as soluções para este projeto aqui](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
