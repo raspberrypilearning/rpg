@@ -16,7 +16,7 @@ Este é um jogo de RPG muito básico que só tem 2 cômodos. Aqui está o mapa d
 
 ![screenshot](images/rpg-map1.png)
 
-You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+Você pode digitar `para baixo` para ir do saguão até a cozinha e, em seguida, `para cima` para voltar ao saguão novamente!
 
 ![screenshot](images/rpg-controls.png)
 
@@ -24,7 +24,7 @@ You can type `go south` to move from the hall to the kitchen, and then `go north
 
 \--- task \---
 
-What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
+O que acontece quando você digita uma direção que você não pode ir? Digite `para esquerda` no saguãoe você receberá uma mensagem de erro amigável.
 
 ![screenshot](images/rpg-error.png)
 
@@ -32,7 +32,7 @@ What happens when you type in a direction that you cannot go? Type `go west` in 
 
 \--- task \---
 
-If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+Se você encontrar a variável `cômodos` , poderá ver que o mapa está estruturado como um dicionário de salas:
 
 ## \--- code \---
 
@@ -40,14 +40,14 @@ If you find the `rooms` variable, you can see that the map is coded as a diction
 
 # um dicionário ligando um cômodo aos outros cômodos
 
-rooms = {
+comodos= {
 
             'Saguão' : {
-                'sul' : 'Cozinha'
+                'baixo' : 'Cozinha'
             },
     
             'Cozinha' : {
-                'norte' : 'Saguão'
+                'cima' : 'Saguão'
             }
     
         }
@@ -55,19 +55,19 @@ rooms = {
 
 \--- /code \---
 
-Each room is a dictionary, and rooms are linked together using directions.
+Cada cômodo é um dicionário, e os cômodos sāo ligados uns aos outros usando as direções.
 
 \--- /task \---
 
 \--- task \---
 
-Let’s add a dining room to your map, to the east of the hall.
+Vamos adicionar uma sala de jantar ao seu mapa, a direita do saguão.
 
 ![screenshot](images/rpg-dining.png)
 
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+Você precisa adicionar um terceiro cômodo, chamado de `Sala de Jantar`, e ligá-lo ao saguão (esquerda). Você também precisa adicionar dados ao saguão, para que você possa ir para a sala de jantar a direta.
 
-**Don't forget that you'll also need to add commas to lines before your new code.**
+**Não esqueça que você também vai precisar adicionar vírgulas nas linhas anteriores ao novo código.**
 
 ## \--- code \---
 
@@ -77,7 +77,7 @@ language: python
 
 # um dicionário ligando um cômodo aos demais cômodos
 
-rooms = {
+comodos= {
 
             'Saguão' : {
                 'sul' : 'Cozinha',
@@ -101,10 +101,10 @@ rooms = {
 
 \--- task \---
 
-Try out the game with your new dining room:
+Teste o jogo com sua nova sala de jantar:
 
 ![screenshot](images/rpg-dining-test.png)
 
-If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+Se você não pode entrar e sair da sala de jantar, basta verificar se você adicionou todo o código acima (incluindo as vírgulas extras para as linhas acima).
 
 \--- /task \---
