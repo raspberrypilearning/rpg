@@ -92,29 +92,29 @@ while True:
 
   #se eles digitarem 'pegar' primeiro
   if movimento[0] == 'pegar':
-    #se o quarto tiver um item, e o item é o qual eles desejam pegar
+    #se o cômodo tiver um item, e o item é o qual eles desejam pegar
     if "item" in comodos[comodoAtual] and movimento[1] in comodos[comodoAtual]['item']:
-      #adicionar o item ao inventário
+      #adiciona o item ao inventário
       inventario += [movimento[1]]
       #exiba uma mensagem útil
-      print('Pegou' + movimento[1] + '!')
-      #deletar o item do cômodo
+      print('Pegou ' + movimento[1] + '!')
+      #deleta o item do cômodo
       del comodos[comodoAtual]['item']
     #caso contrário, se o item não estiver lá
     else:
       #fale para o jogador que ele não pode pegar
-      print('Não pode pegar o(a)' + movimento[1] + '!')
+      print('Não pode pegar o(a) ' + movimento[1] + '!')
 
   #o jogador perde se entrar em um cômodo com um monstro
   if "item" in comodos[comodoAtual] and 'monstro' in comodos[comodoAtual]['item']:
-    print('Um monstro pegou você... FIM DE JOGO!')
+    print('O monstro te pegou... FIM DE JOGO!')
     break
 
   if saude == 0:
     print('Você ficou exausto... FIM DE JOGO!')
 
   #o jogador ganha se entrar no jardim com a chave e a poçāo
-  if comodoAtual == 'Jardim' and 'Chave' in inventario and 'Poção' in inventario:
+  if comodoAtual == 'Jardim' and 'chave' in inventario and 'poção' in inventario:
     print('Você conseguiu escapar... VOCÊ VENCEU!')
     break
 
