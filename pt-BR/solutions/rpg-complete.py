@@ -1,7 +1,7 @@
 #!/bin/python3
 
 def mostrarInstrucoes():
-    #exibe um menu principal e os comandos possiveis
+    #exibe o menu principal e os possíveis comandos
     print('''
 Jogo RPG
 ========
@@ -12,7 +12,7 @@ Evite os monstros!
 Você está ficando cansado, você perderá 1 ponto de vida a cada movimento. 
 
 Comandos:
-  va [direção]
+  para [direção]
   pegar [item]
 ''')
 
@@ -22,13 +22,13 @@ def mostrarEstado():
   print(nome + ' está na ' + comodoAtual)
   print("Saúde : " + str(saude))
   #exibe o inventário atual
-  print("Inventário :" + str(inventario))
+  print("Inventário : " + str(inventario))
   #exibe um item se houver um
   if "item" in comodos[comodoAtual]:
     print('Você vê um(a) ' + comodos[comodoAtual]['item'])
   print("---------------------------")
 
-# configurar o jogo
+#configurar o jogo
 nome = None
 saude = 5
 comodoAtual = 'Saguão'
@@ -37,29 +37,29 @@ inventario = []
 #-# O TEU CÓDIGO FICA AQUI #-#
 # Carrega os dados do jogo para o arquivo
 
-#um dicionário ligando um cômodo aos demais cômodos
-comodos= {
+#dicionário ligando um cômodo aos demais cômodos
+comodos = {
 
-            'Saguão' : {'sul' : 'Cozinha',
-                  'leste' : 'Sala de Jantar',
-                  'item' : 'Chave'
+            'Saguão' : {'baixo' : 'Cozinha',
+                  'direita' : 'Sala de Jantar',
+                  'item' : 'chave'
                 },
 
-            'Cozinha': {'norte' : 'Saguão',
-                  'item' : 'Monstro'
+            'Cozinha': {'cima' : 'Saguão',
+                  'item' : 'monstro'
                 },
 
-            'Sala de Jantar' : { 'oeste' : 'Saguão',
-                  'sul' : 'Jardim',
-                  'item' : 'Poção'
+            'Sala de Jantar' : { 'esquerda' : 'Saguão',
+                  'baixo' : 'Jardim',
+                  'item' : 'poção'
 
                 },
 
-            'Jardim' : {'norte' : 'Sala de Jantar' }
+            'Jardim' : {'cima' : 'Sala de Jantar' }
 
          }
 
-# Pergunta ao jogador o nome dele
+#pergunta ao jogador qual é o nome dele
 if nome is None:
   nome = input("Qual é o teu nome Aventureiro? ")
   mostrarInstrucoes()
@@ -70,19 +70,19 @@ while True:
   mostrarEstado()
 
   #pega o próximo 'movimento' do jogador
-  #.split() quebra a entrada em uma lista vetor
-  #ex. digitar 'va leste' resultaria na lista:
-  #['va','leste']
+  #.split() quebra o texto em uma lista com cada palavra
+  #ex. digitar 'para direita' resultaria na lista:
+  #['para','direita']
   movimento = ''
   while movimento == '':
     movimento = input('>')
 
   movimento = movimento.lower().split()
 
-  #se eles digitarem primeiro 'va'
-  if movimento[0] == 'va':
+  #se o jogador digitar primeiro 'para'
+  if movimento[0] == 'para':
     saude = saude -1
-    #verifica se eles podem ir onde pretendem
+    #verifica se eles podem ir aonde querem
     if movimento[1] in comodos[comodoAtual]:
       #define o novo cômodo como o atual
       comodoAtual = comodos[comodoAtual][movimento[1]]
