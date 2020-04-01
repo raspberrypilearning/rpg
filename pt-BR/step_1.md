@@ -1,12 +1,12 @@
 ## Introdução:
 
-Neste projeto, você irá desenvolver e codificar o seu próprio jogo de labirinto de RPG. O objetivo do jogo será coletar objetos e escapar de uma casa, evitando todos os monstros!
+Neste projeto, você irá desenvolver e programar o seu próprio jogo de labirinto de RPG. O objetivo do jogo será coletar objetos e escapar de uma casa, evitando todos os monstros!
 
 ## O que você vai fazer
 
 \--- no-print \---
 
-Digite `va` e uma direção (norte, este, sul ou oeste) para se mover pelo mapa (Ex.: `va norte`).
+Digite `para` e uma direção (cima, direita, baiixo, esquerda) para se mover pelo mapa (Ex.: `para cima`).
 
 Digite `pegar` para pegar qualquer item que você encontrar (Ex.: `pegar chave`).
 
