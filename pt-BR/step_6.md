@@ -1,10 +1,10 @@
 ## Adicionando inimigos
 
-Este jogo é muito fácil! Vamos adicionar inimigos em alguns cômodos que o jogador deve evitar.
+Este jogo está muito fácil! Vamos adicionar inimigos em alguns cômodos que o jogador deve evitar.
 
 \--- task \---
 
-Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+Adicionar um inimigo a um cômodo é tão fácil quanto adicionar qualquer outro item. Vamos adicionar um monstro faminto à cozinha:
 
 ## \--- code \---
 
@@ -14,7 +14,7 @@ language: python
 
 # um dicionário ligando um cômodo aos demais cômodos
 
-rooms = {
+comodos= {
 
             'Saguao' : {
                 'sul' : 'Cozinha',
