@@ -117,17 +117,17 @@ def mostraInstrucoes(): #exibe o menu principal e os possíveis comandos print('
 
 Vá para o Jardim com uma chave e uma poção Evite os monstros!
 
-Commands: go [direction] get [item] ''')
+Comandos: para [direçāo] pegar [item] ''')
 
 \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+Você precisará adicionar instruções para informar ao usuário quais itens eles precisam coletar e o que deve evitar!
 
 \--- /task \---
 
 \--- task \---
 
-Test your game and you should see your new instructions.
+Teste seu jogo e você verá suas novas instruções.
 
 ![screenshot](images/rpg-instructions-test.png)
 
