@@ -17,18 +17,18 @@ language: python
 comodos= {
 
             'Saguao' : {
-                'sul' : 'Cozinha',
-                'leste' : 'Sala Jantar',
+                'baixo' : 'Cozinha',
+                'direita' : 'Sala de Jantar',
                 'item' : 'chave'
             },
     
             'Cozinha' : {
-                'norte' : 'Saguão',
+                'Cima' : 'Saguão',
                 'item' : 'monstro'
             },
     
-            'Sala Jantar' : {
-                'oeste' : 'Saguão'
+            'Sala de Jantar' : {
+                'esquerda' : 'Saguão'
             }
     
         }
@@ -40,7 +40,7 @@ comodos= {
 
 \--- task \---
 
-You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+Você também quer ter certeza de que o jogo vai acabar se o jogador entrar em uma sala com um monstro. Você pode fazer isso com o seguinte código, que você deve adicionar ao final do jogo:
 
 ## \--- code \---
 
