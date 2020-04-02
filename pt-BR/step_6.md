@@ -48,26 +48,26 @@ language: python
 
 ## line_highlights: 6-9
 
-        #senāo, se nāo houver item para coletar
+        #se nāo houver item para coletar
         else:
-            #diz ao jogador que nāo pode pegar item
-            print('Nāo pode apanhar uma ' + move[1] + '!')
+            #fale para o jogador que ele não pode pegar
+            print('Não pode pegar o(a) ' + movimento[1] + '!')
     
-    #o jogador perde se entrar numa divisāo com um monstro
-    if "item" in comodos[divAtual] and 'monstro' in comodos[divAtual]['item']:
-        print('O monstro te pegou... Fim de jogo!')
+    #o jogador perde se entrar em um cômodo com um monstro
+    if "item" in comodos[comodoAtual] and 'monstro' in comodos[comodoAtual]['item']:
+        print('O monstro te pegou... FIM DE JOGO!')
         break
     
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
+Este código verifica se existe um item na sala e, em caso afirmativo, se esse item é um monstro. Observe que esse código é recuado, colocando-o de acordo com o código acima dele. Isto significa que o jogo irá procurar por um monstro toda vez que o jogador se mudar para uma nova sala.
 
 \--- /task \---
 
 \--- task \---
 
-Test out your code by going into the kitchen, which now contains a monster.
+Teste seu código indo até a cozinha, que agora contém um monstro.
 
 ![screenshot](images/rpg-monster-test.png)
 
