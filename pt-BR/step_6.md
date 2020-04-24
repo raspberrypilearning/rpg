@@ -23,7 +23,7 @@ comodos= {
             },
     
             'Cozinha' : {
-                'Cima' : 'Saguão',
+                'cima' : 'Saguão',
                 'item' : 'monstro'
             },
     
