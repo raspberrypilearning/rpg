@@ -58,7 +58,7 @@ title: ما الذي ستتعلمه
 
 + [دمج الإنشاءات البرمجية لحل مشكلة.](https://www.raspberrypi.org/curriculum/programming/builder)
 
---- collapse ---
+--- /collapse ---
 
 --- collapse ---
 ---
