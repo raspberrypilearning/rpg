@@ -80,16 +80,16 @@ language: python
 comodos= {
 
             'Saguão' : {
-                'sul' : 'Cozinha',
-                'leste' : 'Sala de Jantar'
+                'baixo' : 'Cozinha',
+                'direita' : 'Sala de Jantar'
             },
     
             'Cozinha' : {
-                'norte' : 'Saguão'
+                'cima' : 'Saguão'
             },
     
             'Sala de Jantar' : {
-                'oeste' : 'Saguão'
+                'esquerda' : 'Saguão'
             }
     
         }
