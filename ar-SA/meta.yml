@@ -1,24 +1,32 @@
+---
 hero_image: images/rpg.png
 theme: navy
 duration: 2
 listed: true
 ingredient: false
 copyedit: false
-curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
-title: لعبة RPG
-description: صمِّم لعبة المتاهة RPG واكتب تعليماتها البرمجية.
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
+title: (لعبة تقمُّص الأدوار Role-Play Game)
+description: صمم وبرمج لعبة متاهة الـ RPG الخاصة بك.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
-interests: ''
+interests: games
 technologies: python
-site_areas: codeclub, python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
 steps:
-- title: 'المقدمة'
-- title: إضافة غرف جديدة
-- title: 'التحدي: أضف غرفًا جديدة'
-- title: إضافة أغراض لجمعها
-- title: 'التحدي: أضف أغراضًا جديدة'
-- title: إضافة أعداء
-- title: 'التحدي: أضف وحوشًا أخرى'
-- title: الفوز في اللعبة
-- title: 'التحدي: طوِّر لعبتك الخاصة'
-
+  - title: 'المقدمة'
+  - title: إضافة غرف جديدة
+  - title: 'التحدي: أضف غرف جديدة'
+    challenge: true
+  - title: إضافة عناصر لجمعها
+  - title: 'التحدي: أضف عناصر جديدة'
+    challenge: true
+  - title: إضافة أعداء
+  - title: 'التحدي: إضافة المزيد من الوحوش'
+    challenge: true
+  - title: الفوز في اللعبة
+  - title: 'التحدي: طوِّر لعبتك الخاصة'
+    challenge: true
