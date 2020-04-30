@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Desafío: Añadir nuevos objetos
+## Challenge: Add new items
 
-Agrega un objeto a algunas de las habitaciones de tu juego. ¡Puedes agregar cualquier cosa que pienses que va a ayudarte a escapar de la casa! Por ejemplo, un escudo o una poción mágica.
+Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
 
 \--- /challenge \---
