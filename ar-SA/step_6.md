@@ -54,7 +54,7 @@ language: python
             print('لايمكن الحصول على' + move[1] + '!')
     
     #يخسر اللاعب اذا دخل غرفة بها وحش
-    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+    if 'item' in rooms[currentRoom] and 'وحش' in rooms[currentRoom]['عنصر']:
         print('قضى عليك الوحش... إنتهت اللعبة!')
         break
     
