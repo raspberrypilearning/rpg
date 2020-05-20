@@ -1,10 +1,10 @@
-## Adding enemies
+## 增加敵人
 
-This game is too easy! Let’s add enemies to some rooms that the player must avoid.
+這個遊戲太簡單了！ 讓我們在一些房間增加敵人, 而玩家必須避開這些敵人。
 
 \--- task \---
 
-Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+增加一個敵人到一個房間就和新增物品一樣簡單。 讓我們在廚房裡增加一隻飢餓的怪物：
 
 ## \--- code \---
 
@@ -12,23 +12,23 @@ language: python
 
 ## line_highlights: 11-12
 
-# a dictionary linking a room to other rooms
+# 將一個房間連接到其他房間的字典
 
-rooms = {
+房間 = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            '大廳' : {
+                '南' : '廚房',
+                '東' : '餐廳',
+                '項目' : '鑰匙'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            '廚房' : {
+                '北' : '大廳',
+                '項目' : '怪獸'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            '飯廳' : {
+                '西' : '大廳'
             }
     
         }
@@ -40,7 +40,7 @@ rooms = {
 
 \--- task \---
 
-You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+還得確保玩家進入有怪物的房間時，遊戲結束。 你應該要將下列程式碼增加到遊戲的最後面，以執行這個條件：
 
 ## \--- code \---
 
@@ -48,27 +48,27 @@ language: python
 
 ## line_highlights: 6-9
 
-        #otherwise, if the item isn't there to get
+        ＃反之，如果想取得的物品不在那
         else:
-            #tell them they can't get it
-            print('Can\'t get' + move[1] + '!')
+            #告訴他們無法取得
+            print(''無法取得' + move[1] + '!')
     
-    #player loses if they enter a room with a monster
-    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-        print('A monster has got you... GAME OVER!')
+    #玩家若進入到一個有怪物的房間就輸了
+    if '物品' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['物品']:
+        print('怪物抓到你了… 遊戲結束!')
         break
     
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
+此程式碼檢查房間中是否有項目，如果有，則檢查該項目是否是怪物。 請注意，這個程式碼是縮排的，讓它與上面的程式碼一致。 這代表著每次玩家進入新房間時，遊戲都會檢查有沒有怪物。
 
 \--- /task \---
 
 \--- task \---
 
-Test out your code by going into the kitchen, which now contains a monster.
+透過進入有怪物的廚房來測試你的程式碼。
 
-![screenshot](images/rpg-monster-test.png)
+![截圖](images/rpg-monster-test.png)
 
 \--- /task \---
