@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Adding more monsters
+## चुनौती: और दैत्य जोड़ना
 
-Add more monsters to your game, to make it harder to escape the house!
+घर से भागने को कठिन बनाने के लिए, अपने गेम में और दैत्यों को जोड़ें!
 
 \--- /challenge \---
