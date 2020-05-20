@@ -6,9 +6,9 @@
 
 \--- no-print \---
 
-أطبع` أذهب` ثم الإتجاة (شمال, شرق, جنوب أو غرب) للتجول حول العالم (مثلاً `أذهب شمالاً`).
+أدخل` أذهب` ثم الإتجاة (شمال, شرق, جنوب أو غرب) للتجول حول العالم (مثلاً `أذهب شمالاً`).
 
-اطبع `أحصل` لتأخذ أي غرض تراه (مثلاً `احصل علي المفتاح`).
+أدخل `خذ` لتأخذ أي غرض تراه (مثلاً `خذ المفتاح`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,7 +20,7 @@
 
 \--- print-only \---
 
-![المشروع كامل](images/rpg-finished.png)
+![المشروع كاملاً](images/rpg-finished.png)
 
 \--- /print-only \---
 
@@ -46,9 +46,9 @@
 
 ## title: ما الذي ستتعلمه
 
-+ تصميم الألعاب؛
++ تصميم الألعاب.
 + التحرير: 
-    + القوائم;
+    + القوائم.
     + القواميس.
 + التعبيرات المنطقية.
 
@@ -62,7 +62,7 @@
 
 ## title: معلومات إضافية للمعلمين
 
-إذا كنت بحاجة إلى طباعة هذا المشروع ، فيُرجى استخدام [النسخة القابلة للطباعة](https://projects.raspberrypi.org/en/projects/rpg/print).
+إذا احتجت طباعة هذا المشروع ، فيُرجى استخدام [النسخة القابلة للطباعة](https://projects.raspberrypi.org/en/projects/rpg/print).
 
 يمكنك [الحصول على المشروع كاملاً من هنا](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
