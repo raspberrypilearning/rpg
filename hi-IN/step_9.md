@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Develop your own game
+## चुनौती: अपना स्वयं का गेम बनाएँ
 
-Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
+अपने गेम को बनाने के लिए आपने जो सीखा है उसका उपयोग करें। बहुत सारे कमरे, दैत्य जिनसे बचना हो और आइटम्स जिन्हे इकठा करना हो, उनको जोड़ें| कोड को बदलना याद रखें ताकि खिलाड़ी तब जीते जब वो अपनी सूची में कुछ वस्तुओं के साथ एक निश्चित कमरे में पहुंचता है। पहले से नक्शे का स्केच कर लेने पर कोडिंग आपके लिए आसान हो जाएगी|
 
-You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+आप अपने नक्शे में सीढ़ियों को जोड़ के, एक से अधिक स्तर पर कमरे जोड़ सकते हैं| इनमे `go up` और `go down` टाइप करके जाया जा सकता है।
 
 \--- /challenge \---
