@@ -1,44 +1,44 @@
-## Adding new rooms
+## नए कमरे जोड़ना
 
 \--- task \---
 
-Open the Python starter project.
+Python स्टार्टर प्रोजेक्ट खोलें।
 
-**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**ऑनलाइन**: स्टार्टर प्रोजेक्ट को [rpf.io/rpgon](http://rpf.io/rpgon){: target = "_ blank"} पर खोलें।
 
-**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+**ऑफलाइन**:[ स्टार्टर प्रोजेक्ट](http://rpf.io/p/en/rpg-go){:target="_blank"} को ऑफलाइन एडिटर में खोलिये।
 
 \--- /task \---
 
 \--- task \---
 
-This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
+यह एक बहुत ही मूल आरपीजी खेल है जिसमें केवल 2 कमरे हैं। यह खेल का एक नक्शा है:
 
-![screenshot](images/rpg-map1.png)
+![स्क्रीनशॉट](images/rpg-map1.png)
 
-You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+आप `go south` टाइप करके hall से kitchen में जा सकते हैं, और फिर `go north` टाइप करके वापस hall में आ सकते हैं!
 
-![screenshot](images/rpg-controls.png)
-
-\--- /task \---
-
-\--- task \---
-
-What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
-
-![screenshot](images/rpg-error.png)
+![स्क्रीनशॉट](images/rpg-controls.png)
 
 \--- /task \---
 
 \--- task \---
 
-If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+क्या होगा जब आप एक ऐसी दिशा टाइप करते है जहाँ आप नही जा सकते? टाइप `go west` जब आप hall में हो और आपको एक एरर संदेश मिलेगा।
+
+![स्क्रीनशॉट](images/rpg-error.png)
+
+\--- /task \---
+
+\--- task \---
+
+अगर आप `rooms` variable को ढूंढे, तो आप देख सकते हैं की नक्शे को rooms की dictionary की तरह कोड किया गया है|
 
 ## \--- code \---
 
 ## language: python
 
-# a dictionary linking a room to other rooms
+# एक कमरा दूसरे कमरे से जोड़ने वाला शब्दकोश
 
 rooms = {
 
@@ -49,25 +49,24 @@ rooms = {
             'Kitchen' : {
                 'north' : 'Hall'
             }
-    
-        }
+    }
     
 
 \--- /code \---
 
-Each room is a dictionary, and rooms are linked together using directions.
+प्रत्येक कमरा एक dictionary है और एक दूसरे से दिशाओं के द्वारा जुड़े हुए हैं|
 
 \--- /task \---
 
 \--- task \---
 
-Let’s add a dining room to your map, to the east of the hall.
+hall के east में एक dining room को जोड़ते हैं|
 
-![screenshot](images/rpg-dining.png)
+![स्क्रीनशॉट](images/rpg-dining.png)
 
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
+आपको एक तीसरा कमरा, जिसे `dining room` कहा जायेगा, hall से जोड़ना होगा (west दिशा में)। आपको hall में डेटा डालने की भी आवश्यकता है, ताकि आप dining room से east दिशा की तरफ जा सकें।
 
-**Don't forget that you'll also need to add commas to lines before your new code.**
+**मत भूलो कि आपको अपने नए कोड से पहले लाइनों में कॉमा(,) जोड़ना होगा।**
 
 ## \--- code \---
 
@@ -75,7 +74,7 @@ language: python
 
 ## line_highlights: 5-6,11-15
 
-# a dictionary linking a room to other rooms
+# एक कमरा दूसरे कमरे से जोड़ने वाला शब्दकोश
 
 rooms = {
 
@@ -101,10 +100,10 @@ rooms = {
 
 \--- task \---
 
-Try out the game with your new dining room:
+अपने नए dining room के साथ खेल को आज़माएं:
 
-![screenshot](images/rpg-dining-test.png)
+![स्क्रीनशॉट](images/rpg-dining-test.png)
 
-If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+यदि आप dining room से अंदर और बाहर नहीं जा सकते हैं, तो बस चेक करें कि आपने ऊपर दिए गए सभी कोड जोड़े हैं (अतिरिक्त कॉमा को लाइनों के लिए सहित)।
 
 \--- /task \---
