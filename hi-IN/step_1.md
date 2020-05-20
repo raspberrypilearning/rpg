@@ -1,14 +1,14 @@
-## Introduction:
+## परिचय:
 
-In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
+इस प्रोजेक्ट में, आप अपने खुद के आरपीजी भूलभुलैया खेल को डिजाइन और कोड करेंगे। खेल का उद्देश्य वस्तुओं को इकट्ठा करना और सभी राक्षसों से बच के, एक घर से भागना होगा!
 
-## What you will make
+## आप क्या बनाएँगे
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+टाइप करें `go` और फिर एक दिशा (north, east, south या west) दुनिया भर में स्थानांतरित करने के लिए (उदाहरण `go north`) ।
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+टाइप `get` आपके द्वारा देखे जाने वाले किसी भी वस्तु को लेने के लिए (उदाहरण `get key`)।
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,50 +20,50 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![पूर्ण प्रोजेक्ट](images/rpg-finished.png)
 
 \--- /print-only \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: आपको किन चीज़ों की आवश्यकता होगी
 
-### Hardware
+### हार्डवेयर
 
-+ A computer capable of running Python
++ Python चलाने में सक्षम कंप्यूटर
 
-### Software
+### सॉफ्टवेयर
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 (या तो [ऑनलाइन](https://trinket.io/){:target="_blank"} या [ऑफलाइन](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### डाउनलोड
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
-
-\--- /collapse \---
-
-## \--- collapse \---
-
-## title: What you will learn
-
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+स्टार्टर प्रोजेक्ट [यहाँ पाया जा सकता है](http://rpf.io/p/en/rpg-go){:target="_blank"}|
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: आप क्या सीखेंगे
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
++ गेम डिजाइन
++ संपादन: 
+    + सूचियाँ
+    + शब्दकोश
++ बूलियन एक्सप्रेशन
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+इस प्रोजेक्ट में [Raspberry Pi डिजिटल निर्माण पाठ्यक्रम](http://rpf.io/curriculum) के निम्नलिखित पहलुओं के तत्व सम्मिलित हैं:
+
++ [समस्या को हल करने के लिए प्रोग्रामिंग संरचनाओं को जोड़े।](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: शिक्षकों के लिए अतिरिक्त जानकारी
+
+यदि आप इस प्रोजेक्ट को प्रिंट करना चाहते हैं, तो कृपया [प्रिंटर अनुकूल संस्करण](https://projects.raspberrypi.org/en/projects/rpg/print) का उपयोग करें।
+
+आप [इस प्रोजेक्ट के लिए समाधान यहाँ खोज सकते हैं](http://rpf.io/p/en/rpg-get){:target="_blank"}।
 
 \--- /collapse \---
