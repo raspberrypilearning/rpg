@@ -1,41 +1,41 @@
 ---
 hero_image: images/rpg.png
-theme: navy
+theme: गहरा नीला
 duration: 2
 listed: true
 ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
-description: Design and code your own RPG maze game.
+description: अपनी स्वयं की RPG भूल-भूलैया गेम को डिज़ाइन और कोड करें।
 original_url: https://codeclubprojects.org/en-GB/python/rpg
-interests: games
-technologies: python
-site_areas: projects
+interests: गेम्स
+technologies: python (पायथन)
+site_areas: प्रोजेक्ट
 hardware: ''
-software: python
+software: python (पायथन)
 version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introduction'
+    title: 'परिचय'
   - 
-    title: Adding new rooms
+    title: नए कमरे जोड़ना
   - 
-    title: 'Challenge: Add new rooms'
+    title: 'चुनौती: नए कमरे जोड़ें'
     challenge: true
   - 
-    title: Adding items to collect
+    title: एकत्र करने के लिए आइटम्स जोड़ना
   - 
-    title: 'Challenge: Add new items'
+    title: 'चुनौती: नए आइटम्स जोड़ें'
     challenge: true
   - 
-    title: Adding enemies
+    title: दुश्मन जोड़ना
   - 
-    title: 'Challenge: Adding more monsters'
+    title: 'चुनौती: और दैत्य जोड़ना'
     challenge: true
   - 
-    title: Winning the game
+    title: गेम जीतना
   - 
-    title: 'Challenge: Develop your own game'
+    title: 'चुनौती: अपनी स्वयं की गेम बनाएँ'
     challenge: true
