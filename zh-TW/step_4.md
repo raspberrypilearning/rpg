@@ -1,12 +1,12 @@
-## Adding items to collect
+## 增加要收集的項目
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+讓我們把項目留在房間裡供玩家在迷宮中移動時收集。
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+新增一個物品到房間是很簡單的，你可以將它增加到房間字典。 讓我們在大廳裡放一把鑰匙。
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+記得在新物品的前一行最後面加上逗號，否則你的程式將無法運行！
 
 ## \--- code \---
 
@@ -14,22 +14,22 @@ language: python
 
 ## line_highlights: 6-7
 
-# a dictionary linking a room to other rooms
+# 將一個房間連接到其他房間的字典
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            '大廳' : {
+                '南' : '廚房',
+                '東' : '飯廳',
+                '項目' : '鑰匙'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            '廚房' : {
+                '北' : '大廳'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            '飯廳' : {
+                '西' : '大廳'
             }
     
         }
@@ -41,8 +41,8 @@ rooms = {
 
 \--- task \---
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+如果你在增加上面的程式碼後執行遊戲，現在你可以在大廳看到一把鑰匙，甚至你可以撿起它（透過輸入`拿 鑰匙`），就會把它增加到你的物品欄中。
 
-![screenshot](images/rpg-key-test.png)
+![截圖](images/rpg-key-test.png)
 
 \--- /task \---
