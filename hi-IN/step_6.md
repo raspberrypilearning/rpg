@@ -1,10 +1,10 @@
-## Adding enemies
+## दुश्मन जोड़ना
 
-This game is too easy! Let’s add enemies to some rooms that the player must avoid.
+यह खेल बहुत आसान है! चलो कुछ कमरों में दुश्मनों को जोड़ते हैं जिनसे खिलाड़ी को बचना है।
 
 \--- task \---
 
-Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+एक कमरे में किसी शत्रु को जोड़ना किसी भी अन्य आइटम को जोड़ने जितना आसान है। आइए रसोई में एक भूखा दैत्य(monster) जोड़ें:
 
 ## \--- code \---
 
@@ -30,7 +30,6 @@ rooms = {
             'Dining Room' : {
                 'west' : 'Hall'
             }
-    
         }
     
 
@@ -40,7 +39,7 @@ rooms = {
 
 \--- task \---
 
-You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+आपको यह भी निश्चित करना है कि अगर खिलाड़ी एक ऐसे कमरे में प्रवेश करता है जिसमें दैत्य है तो गेम समाप्त हो जाये| आप इसे निम्नलिखित कोड के साथ कर सकते हैं, जिसे आपको गेम के अंत में जोड़ना चाहिए:
 
 ## \--- code \---
 
@@ -61,14 +60,14 @@ language: python
 
 \--- /code \---
 
-This code checks whether there is an item in the room, and if so, whether that item is a monster. Notice that this code is indented, putting it in line with the code above it. This means that the game will check for a monster every time the player moves into a new room.
+यह कोड इस बात की जाँच करता है कि क्या कमरे में कोई आइटम है, और यदि हां, तो क्या वह वस्तु दैत्य है। ध्यान दें कि यह कोड इंडेंट है, इसे ऊपर दिए गए कोड के अनुरूप रखें। इसका मतलब यह है कि गेम हर बार एक दैत्य के लिए जाँच करेगा जब खिलाड़ी एक नए कमरे में जाता है।
 
 \--- /task \---
 
 \--- task \---
 
-Test out your code by going into the kitchen, which now contains a monster.
+kitchen में जाकर अपने कोड का परीक्षण करें, जिसमें अब एक राक्षस है।
 
-![screenshot](images/rpg-monster-test.png)
+![स्क्रीनशॉट](images/rpg-monster-test.png)
 
 \--- /task \---
