@@ -1,18 +1,18 @@
-## Winning the game
+## 遊戲獲勝
 
-Let’s give your player a mission, which needs to completed to win the game.
+讓我們給你的玩家一個任務，需要完成才能獲勝。
 
 \--- task \---
 
-In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+在遊戲中，玩家得先逃離房屋且進入花園才能獲勝。 還需要擁有鑰匙和魔法藥水。 這是遊戲的地圖。
 
-![screenshot](images/rpg-final-map.png)
+![截圖](images/rpg-final-map.png)
 
 \--- /task \---
 
 \--- task \---
 
-First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+首先，你需要在飯廳的南端增加一個花園。 記住要添加門，以連接到房屋中的其他房間。
 
 ## \--- code \---
 
@@ -20,28 +20,23 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# a dictionary linking a room to other rooms
+# 將一個房間連接到其他房間的字典
 
 rooms = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            '大廳' : {
+                '南' : '廚房',
+                '東' : '餐廳',
+                '項目' : '鑰匙'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
+            '廚房' : {
+                '北' : '大廳',
+                '項目' : '怪獸'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden'
-            },
-    
-            'Garden' : {
-                'north' : 'Dining Room'
+            '飯廳' : {
+                '西' : '大廳'
             }
     
         }
@@ -53,7 +48,7 @@ rooms = {
 
 \--- task \---
 
-Add a potion to the dining room (or another room in your house).
+在飯廳（或是房屋裡的任何一個房間）中新增藥水。
 
 ## \--- code \---
 
@@ -61,11 +56,11 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden',
-                'item' : 'potion'
-            },
+            '飯廳' : {
+                      '西' : '大廳',
+                      '南' : '花園',
+                      '物品' : '藥水'
+                    },
     
 
 \--- /code \---
@@ -74,7 +69,7 @@ language: python
 
 \--- task \---
 
-Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+增加以下程式碼，以使玩家在拿著鑰匙和藥水到達花園時贏得比賽：
 
 ## \--- code \---
 
@@ -82,33 +77,33 @@ language: python
 
 ## line_highlights: 6-9
 
-# player loses if they enter a room with a monster
+# 如果玩家進入有怪物的房間就輸了
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if '物品' in rooms\[currentRoom] and '怪物' in rooms[currentRoom\]\['物品'\]: print('怪物抓到你了… 遊戲結束!') break
 
-# player wins is they get to the garden with the key and potion
+# 玩家帶著鑰匙和藥水抵達花園就贏了
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
+if currentRoom =='花園' and '鑰匙' and '藥水' in inventory: print('成功逃離房屋… 你贏了!') break
 
 \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+請注意，這個程式碼是縮排的，讓它與上面的程式碼一致。 這段程式碼代表如果玩家在房間4（花園）中，並且鑰匙和藥水都在物品欄裡，會顯示`成功逃離房屋...你贏了！`。
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
-
-\--- /task \---
-
-\--- task \---
-
-Test your game to make sure the player can win!
-
-![screenshot](images/rpg-win-test.png)
+如果你有4個以上的房間，你需要在上面的程式碼中為花園加上不同的房間號碼。
 
 \--- /task \---
 
 \--- task \---
 
-Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+測試你的遊戲，確保玩家可以獲勝！
+
+![截圖](images/rpg-win-test.png)
+
+\--- /task \---
+
+\--- task \---
+
+最後，讓我們在你的遊戲中增加一些說明，以便玩家知道他們必須做什麼。 在`showInstructions()`函式加上更多說明。
 
 ## \--- code \---
 
@@ -116,24 +111,24 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def showInstructions(): #印出主選單與指令 print('''
 
-# RPG Game
+# 角色扮演遊戲
 
-Get to the Garden with a key and a potion Avoid the monsters!
+帶著鑰匙和藥水抵達花園 躲避怪物！
 
-Commands: go [direction] get [item] ''')
+指令: 往 [方向] 拿 [物品] ''')
 
 \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+你將需要增加的說明以告訴使用者他們需要收集哪些物品以及需要避免什麼！
 
 \--- /task \---
 
 \--- task \---
 
-Test your game and you should see your new instructions.
+測試你的遊戲，你應該會看到你的新說明。
 
-![screenshot](images/rpg-instructions-test.png)
+![截圖](images/rpg-instructions-test.png)
 
 \--- /task \---
