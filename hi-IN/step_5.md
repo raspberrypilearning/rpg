@@ -1,7 +1,7 @@
 \--- challenge \---
 
-## Challenge: Add new items
+## चुनौती: नए आइटम्स जोड़ें
 
-Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
+अपने गेम के कुछ कमरों में एक आइटम जोड़ें। आप कुछ भी जोड़ सकते हैं जो आपको लगता है कि घर से भागने की कोशिश में मददगार होगा! उदाहरण के लिए, एक ढाल या एक जादुई औषधि।
 
 \--- /challenge \---
