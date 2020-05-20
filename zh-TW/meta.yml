@@ -6,8 +6,8 @@ listed: true
 ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
-title: RPG
-description: Design and code your own RPG maze game.
+title: 角色扮演遊戲
+description: 編寫和設計自己的迷宮冒險遊戲程式。
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -18,24 +18,24 @@ version: 3
 last_tested: 2017-01-01
 steps:
   - 
-    title: 'Introduction'
+    title: '介紹'
   - 
-    title: Adding new rooms
+    title: 增加新房間
   - 
-    title: 'Challenge: Add new rooms'
+    title: '挑戰：增加新房間'
     challenge: true
   - 
-    title: Adding items to collect
+    title: 增加要收集的項目
   - 
-    title: 'Challenge: Add new items'
+    title: '挑戰：增加新物品'
     challenge: true
   - 
-    title: Adding enemies
+    title: 增加敵人
   - 
-    title: 'Challenge: Adding more monsters'
+    title: '挑戰：增加更多怪物'
     challenge: true
   - 
-    title: Winning the game
+    title: 贏得比賽
   - 
-    title: 'Challenge: Develop your own game'
+    title: '挑戰：開發自己的遊戲'
     challenge: true
