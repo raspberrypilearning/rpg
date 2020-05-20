@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Develop your own game
+## 挑戰：開發自己的遊戲
 
-Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
+利用已經學會的內容來開發你自己的遊戲。 增加多個房間，躲避怪物和收集物品。 請記得修改程式碼，以便玩家帶著某些物品抵達某個房間時能夠獲勝。 在開始編寫程式碼之前，先畫出地圖草稿或許能幫助你！
 
-You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+你甚至可以在你的地圖上新增樓梯，透過輸入`往 上`和`往 下`前往不同樓層的房間。
 
 \--- /challenge \---
