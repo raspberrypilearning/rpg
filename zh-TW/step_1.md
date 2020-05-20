@@ -1,14 +1,14 @@
-## Introduction:
+## 介紹：
 
-In this project, you’ll design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
+在這個專案中，你將編寫和設計自己的迷宮冒險遊戲程式。 遊戲目標是收集物品、避開所有的怪物並成功逃離房屋！
 
-## What you will make
+## 你將會做出
 
 \--- no-print \---
 
-Type `go` and then a direction (north, east, south or west) to move around the world (e.g. `go north`).
+輸入`往`加上要移動的方位(東，南，西或北)，例如：`往 北`。
 
-Type `get` to pick up any items that you see (e.g. `get key`).
+輸入`拿`拾取你看到的物品，例如：`拿 鑰匙`。
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
@@ -20,50 +20,50 @@ Type `get` to pick up any items that you see (e.g. `get key`).
 
 \--- print-only \---
 
-![complete project](images/rpg-finished.png)
+![完成專案](images/rpg-finished.png)
 
 \--- /print-only \---
 
 ## \--- collapse \---
 
-## title: What you will need
+## title: 你會用到
 
-### Hardware
+### 硬體
 
-+ A computer capable of running Python
++ 可運行Python的電腦
 
-### Software
+### 軟體
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ Python 3 ([線上版本](https://trinket.io/){:target="_blank"} 或 [離線版本](https://www.python.org/downloads/){:target="_blank"})
 
-### Downloads
+### 下載
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
-
-\--- /collapse \---
-
-## \--- collapse \---
-
-## title: What you will learn
-
-+ Game design;
-+ Editing: 
-    + Lists;
-    + Dictionaries.
-+ Boolean expressions.
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
+入門專案[由此下載](http://rpf.io/p/en/rpg-go){:target="_blank"}。
 
 \--- /collapse \---
 
 ## \--- collapse \---
 
-## title: Additional information for educators
+## title: 你會學到
 
-If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
++ 遊戲設計
++ 編輯： 
+    + 列表;
+    + 字典。
++ 布林運算式
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+本專案涵蓋[Raspberry Pi 樹莓派數位課程](http://rpf.io/curriculum)的內容如下：
+
++ [結合程式設計結構來解決問題。](https://www.raspberrypi.org/curriculum/programming/builder)
+
+\--- /collapse \---
+
+## \--- collapse \---
+
+## title: 給教師的其它資訊
+
+如果你需要列印這個專案，可以先切換成[列印友好模式](https://projects.raspberrypi.org/en/projects/rpg/print)。
+
+你可以[在這裡找到專案解決方案](http://rpf.io/p/en/rpg-get){:target="_blank"}。
 
 \--- /collapse \---
