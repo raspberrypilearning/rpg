@@ -1,12 +1,12 @@
-## Adding items to collect
+## एकत्र करने के लिए आइटम्स जोड़ना
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+अब कुछ आइटम्स(item) को कमरे में छोड़ देते हैं, जिन्हे खिलाड़ी इक्कठा करेगा जब वो भूलभुलैया में जायेगा|
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+एक कमरे में एक आइटम जोड़ना आसान है, आप इसे कमरे की dictionary में जोड़ सकते हैं। अब हॉल में चाबी रखते हैं।
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+नए आइटम के ऊपर लाइन के बाद कॉमा लगाना याद रखें, अथवा आपका प्रोग्राम नहीं चलेगा!
 
 ## \--- code \---
 
@@ -23,15 +23,12 @@ rooms = {
                 'east' : 'Dining Room',
                 'item' : 'key'
             },
-    
             'Kitchen' : {
                 'north' : 'Hall'
             },
-    
             'Dining Room' : {
                 'west' : 'Hall'
             }
-    
         }
     
 
@@ -41,8 +38,8 @@ rooms = {
 
 \--- task \---
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+यदि आप ऊपर दिए गए कोड को जोड़ने के बाद अपना गेम चलाते हैं, तो आप अब hall में एक key देख सकते हैं, और आप इसे उठा भी सकते हैं (टाइप करके `get key`) जो इसे आपकी सूची में जोड़ता है!
 
-![screenshot](images/rpg-key-test.png)
+![स्क्रीनशॉट](images/rpg-key-test.png)
 
 \--- /task \---
