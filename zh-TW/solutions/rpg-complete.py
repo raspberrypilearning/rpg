@@ -1,122 +1,122 @@
 #!/bin/python3
 
 def showInstructions():
-    #print a main menu and the commands
+    #印出主選單和指令
     print('''
-RPG Game
+角色扮演遊戲
 ========
 
-Get to the Garden with a key and a potion
-Avoid the monsters!
+帶著鑰匙和藥水抵達花園
+避開怪物！
 
-You are getting tired, each time you move you loose 1 health point. 
+你會感到疲倦，每次移動都會失去1個健康點數。 
 
-Commands:
-  go [direction]
-  get [item]
+指令：
+  往 [方向]
+  拿 [物品]
 ''')
 
 def showStatus():
-  #print the player's current status
+  ＃印出玩家的目前狀態
   print('---------------------------')
-  print(name + ' is in the ' + currentRoom)
-  print("Health : " + str(health))
-  #print the current inventory
-  print("Inventory : " + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
-  print("---------------------------")
+  print(name +'正在'+ currentRoom)
+  print("健康 : " + str(health))
+  ＃印出物品欄
+  print("物品欄：” + str(inventory))
+  ＃如果物品欄中有物品就印出
+  if "物品" in rooms[currentRoom]:
+    print('你看到一個' + rooms[currentRoom]['物品'])
+  print('---------------------------')
 
-# setup the game
+＃設置遊戲
 name = None
 health = 5
-currentRoom = 'Hall'
+currentRoom = '大廳'
 inventory = []
 
-#-# YOUR CODE GOES HERE #-#
-# Load data from the file
+＃-＃你的程式碼從這裡開始＃-＃
+＃從檔案讀取資料
 
-#a dictionary linking a room to other room positions
+#將一個房間連接到其他房間的字典
 rooms = {
 
-            'Hall' : { 'south' : 'Kitchen',
-                  'east'  : 'Dining Room',
-                  'item'  : 'key'
+            '大廳 ': { '南' : '廚房',
+                  '東'  : '飯廳',
+                  '物品' : '鑰匙'
                 },
 
-            'Kitchen' : { 'north' : 'Hall',
-                  'item'  : 'monster'
+            '廚房' : {'北' : '大廳',
+                  '物品' : '怪物'
                 },
 
-            'Dining Room' : { 'west'  : 'Hall',
-                  'south' : 'Garden',
-                  'item'  : 'potion'
+            '飯廳' : {'西' : '大廳',
+                  '南' : '花園',
+                  '物品' : '藥水'
 
                 },
 
-            'Garden' : { 'north' : 'Dining Room' }
+            '花園'： { '北' : '飯廳' }
 
          }
 
-# ask the player their name
+＃詢問玩家名稱
 if name is None:
-  name = input("What is your name Adventurer? ")
+  name = input("冒險家，你的名字是？ ")
   showInstructions()
 
-#loop forever
+＃重複無限次。
 while True:
 
   showStatus()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
+  ＃獲取玩家的下一個「行動」
+  ＃使用字串分割 .split() 將字串分解放入串列（list）
+  #例如 輸入'往 東'將列出：
+  #['往','東']
   move = ''
   while move == '':
     move = input('>')
 
   move = move.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
+  #假設先輸入'往'
+  if move[0] == '往':
     health = health - 1
-    #check that they are allowed wherever they want to go
+    ＃檢查他們想去的地方是否被允許
     if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
+      ＃將目前房間設置為新房間
       currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+    ＃沒有門(連結)通往新房間
     else:
-      print('You can\'t go that way!')
+      print('你不能往那走!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if 'item' in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
+  ＃假設先輸入“拿”
+  if move[0] == '拿' :
+    ＃如果房間中有他們想要得到的物品
+    if '物品' in rooms[currentRoom] and move[1] in rooms[currentRoom]['物品']:
+      ＃新增物品至物品欄
       inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+      ＃顯示訊息
+      print(move[1] + ' 取得!')
+      ＃把取得的物品從房間中刪除
+      del rooms[currentRoom]['物品']
+    ＃反之，如果想取得的物品不在那
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      ＃告訴他們無法取得物品
+      print('無法取得' + move[1] + '!')
 
-  #player loses if they enter a room with a monster
-  if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-    print('A monster has got you... GAME OVER!')
+  #如果玩家進入有怪物的房間就輸了
+  if '物品’ in rooms[currentRoom] and '怪物' in rooms[currentRoom]['物品']:
+    print('怪物抓到你了… 遊戲結束!')
     break
 
   if health == 0:
-    print('You collapse from exhaustion... GAME OVER!')
+    print('你已經精疲力盡了… 遊戲結束!')
 
-  #player wins if they get to the garden with a key and a potion
-  if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-    print('You escaped the house... YOU WIN!')
+  #如果玩家帶著鑰匙和藥水進入花園則獲勝
+  if currentRoom == '花園' and '鑰匙' in inventory and '藥水' in inventory:
+    print('成功逃離房屋… 你贏了!')
     break
 
-  #-# YOUR CODE GOES HERE #-#
-  # Save game data to the file
+  ＃-＃你的程式碼到這裡結束＃-＃
+  ＃將遊戲記錄存檔
