@@ -1,18 +1,18 @@
-## Winning the game
+## Ganar el juego
 
-Let’s give your player a mission, which needs to completed to win the game.
+Demos a tu jugador una misión que necesite completar para ganar el juego.
 
 \--- task \---
 
-In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+En este juego, el jugador gana al llegar al jardín y escapar de la casa. También van a necesitar tener una llave y una poción mágica con ellos. Aquí hay un mapa del juego.
 
-![screenshot](images/rpg-final-map.png)
+![captura de pantalla](images/rpg-final-map.png)
 
 \--- /task \---
 
 \--- task \---
 
-First, you need to add a garden to the south of the dining room. Remember to add doors, to link to other rooms in the house.
+Primero, necesitas agregar un jardín al sur del comedor. Recuerda añadir puertas, para conectarlo a otras habitaciones de la casa.
 
 ## \--- code \---
 
@@ -20,7 +20,7 @@ language: python
 
 ## line_highlights: 16-17,18-22
 
-# a dictionary linking a room to other rooms
+# un diccionario que conecte una habitación con las otras habitaciones
 
 rooms = {
 
@@ -53,7 +53,7 @@ rooms = {
 
 \--- task \---
 
-Add a potion to the dining room (or another room in your house).
+Agrega una poción al comedor (u otra habitación de tu casa).
 
 ## \--- code \---
 
@@ -74,7 +74,7 @@ language: python
 
 \--- task \---
 
-Add this code to allow the player to win the game when they get to the garden with the key and the potion:
+Agrega este código para dejar que el jugador gane cuando llegue al jardín con la llave y la poción:
 
 ## \--- code \---
 
@@ -82,33 +82,33 @@ language: python
 
 ## line_highlights: 6-9
 
-# player loses if they enter a room with a monster
+# el jugador pierde si entra a una habitación con un monstruo
 
 if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
 
-# player wins is they get to the garden with the key and potion
+# el jugador gana si llega al jardín con una llave y una poción
 
 if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
 
 \--- /code \---
 
-Make sure this code is indented, in line with the code above it. This code means that the message `You escaped the house...YOU WIN!` is displayed if the player is in room 4 (the garden) and if the key and the potion are in the inventory.
+Asegúrate de que el código tiene sangría, al estar en línea con el código anterior. Este código significa que el mensaje `You escaped the house...YOU WIN!` (Has escapado de la casa... HAS GANADO!) si el jugador está en la habitación 4 (el jardín) y si la llave y la poción están en su inventario.
 
-If you have more than 4 rooms, you may have to use a different room number for your garden in the code above.
-
-\--- /task \---
-
-\--- task \---
-
-Test your game to make sure the player can win!
-
-![screenshot](images/rpg-win-test.png)
+Si tienes más de 4 habitaciones, puedes utilizar un número diferente para tu jardín en el código anterior.
 
 \--- /task \---
 
 \--- task \---
 
-Finally, let’s add some instructions to your game, so that the player knows what they have to do. Edit the `showInstructions()` function to include more information.
+¡Prueba tu juego para asegurarte de que el jugador puede ganar!
+
+![captura de pantalla](images/rpg-win-test.png)
+
+\--- /task \---
+
+\--- task \---
+
+Finalmente, agreguemos instrucciones al juego, de ese modo el jugador sabe qué tiene que hacer. Edita la función `showInstructions()` para incluir más información.
 
 ## \--- code \---
 
@@ -118,22 +118,22 @@ language: python
 
 def showInstructions(): #print a main menu and the commands print('''
 
-# RPG Game
+# Juego RPG
 
-Get to the Garden with a key and a potion Avoid the monsters!
+Llega al jardín con una llave y una poción. ¡Evita a los monstruos!
 
 Commands: go [direction] get [item] ''')
 
 \--- /code \---
 
-You will need to add instructions to tell the user what items they need to collect, and what they need to avoid!
+¡Vas a necesitar añadir instrucciones para decirle al usuario qué objetos necesitan recoger y qué necesitan evitar!
 
 \--- /task \---
 
 \--- task \---
 
-Test your game and you should see your new instructions.
+Prueba tu juego y ve tus nuevas instrucciones.
 
-![screenshot](images/rpg-instructions-test.png)
+![captura de pantalla](images/rpg-instructions-test.png)
 
 \--- /task \---
