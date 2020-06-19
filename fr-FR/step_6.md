@@ -48,7 +48,7 @@ language: python
 
 ## line_highlights: 6-9
 
-        #sinon, si l'objet n'est pas là à obtenir
+        #sinon, si l'objet n'est pas là
         else:
             #dis leur qu'ils ne peuvent pas l'obtenir
             print('Tu ne peux pas l avoir' + move[1] + '!')
