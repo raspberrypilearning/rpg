@@ -1,9 +1,9 @@
 \--- challenge \---
 
-## Challenge: Develop your own game
+## Desafío: Crea tu propio juego
 
-Use what you’ve learnt to create your own game. Add lots of rooms, monsters to avoid and items to collect. Remember to modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. It may help you to sketch a map before you start coding!
+Usa lo que has aprendido para crear tu propio juego. Agrega muchas habitaciones, monstruos para evitarlos y objetos para recoger. Recuerda modificar el código para que el jugador gane cuando llegue a cierta habitación con determinados objetos en su inventario. ¡Te será útil diseñar un mapa antes de comenzar a programar!
 
-You could even add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+Incluso puedes agregar escaleras a tu mapa y tener más de un nivel de habitaciones, escribiendo `go up` (ir arriba) y `go down` (ir abajo).
 
 \--- /challenge \---
