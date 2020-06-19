@@ -1,12 +1,12 @@
-## Adding items to collect
+## Agregar objetos para recoger
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+Dejemos objetos en las habitaciones para que el jugador los recoja a medida que se mueve por el laberinto.
 
 \--- task \---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
+Agregar un objeto a una habitación es fácil, simplemente agrégalo al diccionario de la habitación. Pongamos una llave en la sala.
 
-Remember to put a comma after the line above the new item, or your program won’t run!
+Recuerda poner una coma después de la línea de objeto nuevo, ¡o tu programa no va a funcionar!
 
 ## \--- code \---
 
@@ -14,7 +14,7 @@ language: python
 
 ## line_highlights: 6-7
 
-# a dictionary linking a room to other rooms
+# un diccionario que conecte una habitación con las otras habitaciones
 
 rooms = {
 
@@ -41,8 +41,8 @@ rooms = {
 
 \--- task \---
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+Si ejecutas tu programa después de añadir el código de arriba, vas a poder ver una llave en la sala, e incluso podrás cogerla (al escribir `get key`) (coger la llave) lo que la añadirá a tu inventario!
 
-![screenshot](images/rpg-key-test.png)
+![captura de pantalla](images/rpg-key-test.png)
 
 \--- /task \---
