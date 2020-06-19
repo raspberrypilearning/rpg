@@ -1,6 +1,6 @@
 ## Introduction :
 
-Dans ce projet, tu vas concevoir et coder ton propre jeu de labyrinthe RPG. Le but du jeu sera de collecter des objets et de s'échapper d'une maison, en s'assurant d'éviter tout les montres!
+Dans ce projet, tu vas concevoir et coder ton propre jeu de labyrinthe RPG. Le but du jeu sera de collecter des objets et de s'échapper d'une maison, en s'assurant d'éviter tout les monstres!
 
 ## Ce que tu feras
 
