@@ -1,0 +1,32 @@
+---
+hero_image: images/rpg.png
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
+title: 角色扮演遊戲
+description: 編寫和設計自己的迷宮冒險遊戲程式。
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: games
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: '介紹'
+  - title: 增加新房間
+  - title: '挑戰：增加新房間'
+    challenge: true
+  - title: 增加要收集的項目
+  - title: '挑戰：增加新物品'
+    challenge: true
+  - title: 增加敵人
+  - title: '挑戰：增加更多怪物'
+    challenge: true
+  - title: 贏得比賽
+  - title: '挑戰：開發自己的遊戲'
+    challenge: true
