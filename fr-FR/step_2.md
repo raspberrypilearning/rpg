@@ -24,7 +24,7 @@ Tu peux taper `aller sud` pour te déplacer du hall à la cuisine, et ensuite `a
 
 \--- task \---
 
-Que ce passe t-il lorsque tu tapes dans une direction que tu ne peux pas aller ? Tape `aller ouest` dans le hall et tu auras un joli message d'erreur.
+Que ce passe t-il lorsque tu tapes une direction que tu ne peux pas emprunter ? Tape `aller ouest` dans le hall et tu auras un joli message d'erreur.
 
 ![capture d'écran](images/rpg-error.png)
 
