@@ -1,42 +1,139 @@
 ## गेम जीतना
 
-चलिए अपने खिलाड़ी को मिशन दें, जिसे गेम जीतने के लिए पूरा करना होगा।
+आइए अपने खिलाड़ी को एक मिशन दें, जिसे गेम जीतने के लिए पूरा करना जरुरी है।
 
+--- task ---
 
+इस गेम में, खिलाड़ी घर से भागकर, बगीचे में पहुंचने पर जीतता है। उनके पास key और जादुई औषधि(potion) भी होनी चाहिए। यह खेल का एक नक्शा है:
 
-+ इस गेम में, गार्डन में आने और घर से भागने पर खिलाड़ी जीत जाता है। उन्हें अपने साथ कुंजी और जादुई शरबत भी रखना होता है। गेम का मानचित्र इस प्रकार है।
+![स्क्रीनशॉट](images/rpg-final-map.png)
 
-  ![screenshot](images/rpg-final-map.png)
+--- /task ---
 
-+ सबसे पहले, आपको डाइनिंग रूम के दक्षिण में गार्डन जोड़ना होगा। घर में अन्य कमरों से जोड़ने के लिए दरवाज़े जोड़ना याद रखें।
-  
-  ![screenshot](images/rpg-garden.png)
+--- task ---
 
-+ डाइनिंग रूम (या घर के अन्य कमरे) में शरबत जोड़ें।
+सबसे पहले, आपको dining room के south में एक garden को जोड़ना है। याद रहे की कमरे में दूसरे कमरे में आने जाने के लिए दरवाज़ा हो|
 
-  ![screenshot](images/rpg-potion.png)
-  
-+ खिलाड़ी द्वारा गार्डन में कुंजी और शरबत ले जाने पर उसे जीनते देने के लिए यह कोड जोड़ें:
+--- code ---
+---
+language: python
+line_highlights: 16-17,18-22
+---
+#a dictionary linking a room to other rooms
+rooms = {
 
-  ![screenshot](images/rpg-win-code.png)
+            'Hall' : {
+                'south' : 'Kitchen',
+                'east' : 'Dining Room',
+                'item' : 'key'
+            },
 
-  यह सुनिश्चित करें कि इस कोड में इसके ऊपर के कोड के साथ पंक्ति में हाशिया छोड़ा जाए। इस कोड का अर्थ है कि यदि खिलाड़ी कमरा 4 (गार्डन) में पहुँचता है तो `You escaped the house...YOU WIN!` (आप घर से बच निकले...आप जीत गए हैं!) संदेश दिखाई देता है, और यदि कुंजी और शरबत इनवेंटरी में शामिल हैं।
-  
-  यदि 4 से अधिक कमरे हों, तो आपको उपर्युक्त कोड में गार्डन के लिए अन्य संख्या उपयोग करनी चाहिए।
+            'Kitchen' : {
+                'north' : 'Hall',
+                'item' : 'monster'
+            },
 
-+ खिलाड़ी का जीत पाना सुनिश्चित करने के लिए अपनी गेम का परीक्षण करें!
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden'
+            },
 
-  ![screenshot](images/rpg-win-test.png)
+            'Garden' : {
+                'north' : 'Dining Room'
+            }
 
-+ अंत में, अपनी गेम में कुछ निर्देश जोड़ें, ताकि खिलाड़ी जान सके कि उसे क्या करना है। अधिक जानकारी शामिल करने के लिए `showInstructions()` फंक्शन को संपादित करें।
+        }
+        
+--- /code ---
 
-  ![screenshot](images/rpg-instructions-code.png)
+--- /task ---
 
-  आपको उपयोगकर्ता को यह बताने के लिए निर्देश शामिल करने चाहिए कि उन्हें कौन से आइटम्स एकत्र करने हैं, और कौन से नहीं!
+--- task ---
 
-+ अपनी गेम का परीक्षण करें और आपको अपने नए निर्देश दिखने चाहिए
-  
-  ![screenshot](images/rpg-instructions-test.png)
+dining room (या अपने घर के किसी और कमरे में) में एक potion जोड़ें।
 
+--- code ---
+---
+language: python
+line_highlights: 3-4
+---
+            'Dining Room' : {
+                'west' : 'Hall',
+                'south' : 'Garden',
+                'item' : 'potion'
+            },
+--- /code ---
 
+--- /task ---
 
+--- task ---
+
+इस कोड को जोड़ने पर खिलाड़ी को गेम जीत सकता है जब वो key और potion के साथ garden में आता है:
+
+--- code ---
+---
+language: python
+line_highlights: 6-9
+---
+#player loses if they enter a room with a monster
+if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+    print('A monster has got you... GAME OVER!')
+    break
+
+#player wins is they get to the garden with the key and potion
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
+    print('You escaped the house... YOU WIN!')
+    break
+
+--- /code ---
+
+सुनिश्चित करें कि यह कोड इंडेंटेड है, इसके ऊपर के कोड की तरह। इस कोड का अर्थ है कि संदेश `You escaped the house...YOU WIN!` दिखाया जाता है जब खिलाड़ी कमरे 4 (garden) में है और यदि सूची में key और potion हैं।
+
+यदि आपके पास 4 से अधिक कमरे हैं, तो आपको ऊपर दिए गए कोड में अपने garden के लिए एक अलग कमरे की संख्या का उपयोग करना पड़ सकता है।
+
+--- /task ---
+
+--- task ---
+
+खिलाड़ी जीत सकते हैं यह सुनिश्चित करने के लिए अपने गेम का परीक्षण करें!
+
+![स्क्रीनशॉट](images/rpg-win-test.png)
+
+--- /task ---
+
+--- task ---
+
+अंत में, अपने गेम में कुछ निर्देश जोड़ें, ताकि खिलाड़ी को पता हो कि उन्हें क्या करना है। संपादित करके `showInstructions()` में और जानकारी जोड़े।
+
+--- code ---
+---
+language: python
+line_highlights: 7-8
+---
+def showInstructions():
+    #print a main menu and the commands
+    print('''
+RPG Game
+========
+
+Get to the Garden with a key and a potion
+Avoid the monsters!
+
+Commands:
+go [direction]
+get [item]
+''')
+
+--- /code ---
+
+आपको खिलाड़ी को यह बताने के लिए निर्देश जोड़ना आवश्यक है कि उन्हें किन वस्तुओं को इकट्ठा करना जरुरी है, और उन्हें किन चीज़ों से बचना है!
+
+--- /task ---
+
+--- task ---
+
+अपने गेम का परीक्षण करने पर, आपको अपने नए निर्देश दिखने चाहिए।
+
+![स्क्रीनशॉट](images/rpg-instructions-test.png)
+
+--- /task ---
