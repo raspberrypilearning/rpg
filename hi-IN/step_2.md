@@ -32,7 +32,7 @@ Python स्टार्टर प्रोजेक्ट खोलें।
 
 --- task ---
 
-अगर आप `rooms` variable को ढूंढे, तो आप देख सकते हैं की नक्शे को rooms की dictionary की तरह कोड किया गया है|
+अगर आप `rooms` variable को ढूंढे, तो आप देख सकते हैं की नक्शे को rooms की dictionary की तरह कोड किया गया है।
 
 --- code ---
 ---
@@ -52,13 +52,13 @@ rooms = {
         }
 --- /code ---
 
-प्रत्येक कमरा एक dictionary है और एक दूसरे से दिशाओं के द्वारा जुड़े हुए हैं|
+प्रत्येक कमरा एक dictionary है और एक दूसरे से दिशाओं के द्वारा जुड़े हुए हैं।
 
 --- /task ---
 
 --- task ---
 
-hall के east में एक dining room को जोड़ते हैं|
+hall के east में एक dining room को जोड़ते हैं।
 
 ![स्क्रीनशॉट](images/rpg-dining.png)
 
