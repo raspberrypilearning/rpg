@@ -19,9 +19,7 @@
 language: python
 line_highlights: 16-17,18-22
 ---
-
-# 连接房间与房间的数据字典
-
+#连接房间与房间的数据字典
 rooms = {
 
             '大厅' : {
@@ -81,14 +79,15 @@ line_highlights: 3-4
 language: python
 line_highlights: 6-9
 ---
+#玩家如果进入一个有怪物的房间，则游戏失败
+if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']: 
+    print('一个怪物抓住你了... 游戏结束!') 
+    break
 
-# 玩家如果进入一个有怪物的房间，则游戏失败
-
-if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']: print('一个怪物抓住你了... 游戏结束!') break
-
-# 如果玩家得到钥匙和魔法药水并到达花园，就赢了
-
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('你成功逃离房子... 你赢了！') break
+#如果玩家得到钥匙和魔法药水并到达花园，就赢了
+if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: 
+    print('你成功逃离房子... 你赢了！') 
+    break
 
 --- /code ---
 
@@ -115,14 +114,14 @@ if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: pri
 language: python
 line_highlights: 7-8
 ---
-
 def showInstructions(): 
     #输出主菜单和命令 
     print('''
+RPG游戏
+========
 
-# RPG游戏
-
-找到一把钥匙和一瓶魔法药水并到达花园 同时躲避怪物!
+找到一把钥匙和一瓶魔法药水并到达花园 
+同时躲避怪物!
 
 命令：
 go [方向] 

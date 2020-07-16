@@ -11,9 +11,7 @@
 language: python
 line_highlights: 11-12
 ---
-
-# 连接房间与房间的数据字典
-
+#连接房间与房间的数据字典
 rooms = {
 
             '大厅' : {
