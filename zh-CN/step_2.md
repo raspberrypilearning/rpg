@@ -36,7 +36,7 @@
 
 --- code ---
 ---
-## language: python
+language: python
 ---
 # 连接房间与房间的数据字典
 
