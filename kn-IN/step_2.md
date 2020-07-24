@@ -6,7 +6,7 @@
 
 **Online**: ಸ್ಟಾರ್ಟರ್ ಯೋಜನೆಯನ್ನು [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"} ನಲ್ಲಿ ತೆರೆಯಿರಿ.
 
-**Offline**: ಸ್ಟಾರ್ಟರ್ ಯೋಜನೆಯನ್ನು[starter project](http://rpf.io/p/en/rpg-go) {:target="_blank"} ಆಫ್‌ಲೈನ್ ಸಂಪಾದಕದಲ್ಲಿ ತೆರೆಯಿರಿ.
+**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
 
 \--- /task \---
 
