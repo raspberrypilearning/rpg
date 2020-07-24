@@ -55,6 +55,7 @@ Dining room ಇಗೆ ಒಂದು potion ಸೇರಿಸಿ (ಅಥವಾ ನ�
 --- code ---
 ---
 language: python
+---
 line_highlights: 3-4
             'Dining Room' : {
                 'west' : 'Hall',
