@@ -12,8 +12,8 @@ key와 potion을 가지고 Garden으로 탈출하십시오!
 You are getting tired, each time you move you loose 1 health point. 
 
 명령어:
-  go [direction]
-  get [item]
+  go [방향]
+  get [아이템]
 ''')
 
 def showStatus():
