@@ -1,0 +1,32 @@
+---
+hero_image: images/rpg.png
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
+title: RPG
+description: तुमचा स्वतःचा RPG चक्रव्यूह खेळाची रचना करा आणि कोड बनवा.
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: games
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: 'प्रस्तावना'
+  - title: नवीन खोल्या जोडा
+  - title: 'आव्हान: नवीन खोल्या जोडा'
+    challenge: true
+  - title: संग्रह करण्यासाठी साहित्य जोडा
+  - title: 'आव्हान: नवीन साहित्य जोडा'
+    challenge: true
+  - title: शत्रू जोडा
+  - title: 'आव्हान: आणखी राक्षस जोडा'
+    challenge: true
+  - title: खेळ जिंकणे
+  - title: 'आव्हान: तुमचा स्वतःचा खेळ विकसित करा'
+    challenge: true
