@@ -14,15 +14,17 @@ language: python
 
 # un dizionario collega una stanza alle altre
 
-rooms = {
+stanze = {
 
             'Ingresso' : {
                 'sud' : 'Cucina',
                 'est' : 'Sala da Pranzo'
+                'oggetto' : 'chiave'
             },
     
             'Cucina' : {
                 'nord' : 'Ingresso'
+                'oggetto' : 'mostro'
             },
     
             'Sala da Pranzo' : {
@@ -52,7 +54,7 @@ language: python
             print('Impossibile prendere ' + istruzione[1] + '!')
     
     #il giocatore perde se entra in una stanza con un mostro
-    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+    if 'oggetto' in stanze[stanzaCorrente] and 'mostro' in stanze[stanzaCorrente]['oggetto']:
         print('Un mostro ti ha catturato... HAI PERSO!')
         break
     
