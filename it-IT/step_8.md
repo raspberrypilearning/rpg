@@ -1,37 +1,142 @@
 ## Vincere il gioco
 
-Diamo al tuo giocatore una missione che deve essere completata per vincere il gioco.
+Diamo al tuo giocatore una missione che deve essere completata per vincere la partita.
 
-+ In questo gioco, il giocatore vince raggiungendo il giardino e scappando dalla casa. Avrà bisogno di avere anche la chiave e la pozione magica. Ecco una mappa del gioco.
+--- task ---
 
-  ![screenshot](images/rpg-final-map.png)
+In questo gioco il giocatore vince arrivando in giardino e fuggendo dalla casa. Deve anche avere con sè la chiave e la pozione magica. Ecco la mappa del gioco.
 
-+ Per prima cosa, dovrai aggiungere un giardino al sud della stanza da pranzo. Ricordati di aggiungere porte che colleghino alle altre stanze della casa.
+![schermata](images/rpg-final-map.png)
 
-  ![screenshot](images/rpg-garden.png)
+--- /task ---
 
-+ Aggiungi una pozione alla stanza da pranzo (o in un'altra stanza della casa).
+--- task ---
 
-  ![screenshot](images/rpg-potion.png)
+Per cominciare aggiungi un giardino a sud della sala da pranzo. Ricorda di aggiungere porte per collegarti ad altre stanze della casa.
 
-+ Aggiungi questo codice per fare in modo che il giocatore possa vincere il gioco quando arriva al giardino con la chiave e la pozione:
+--- code ---
+---
+language: python
+line_highlights: 16-17,18-22
+---
 
-  ![screenshot](images/rpg-win-code.png)
+# un dizionario collega una stanza alle altre
 
-  Assicurati che questo codice sia indentato, in linea con il codice di sopra. Questo codice significa che il messaggio 'Sei scappato dalla casa...HAI VINTO!' sia visualizzato se il giocatore si trova nella stanza 4 (il giardino) e se la chiave e la pozione sono nell'inventario.
+stanze = {
 
-  Se hai più di 4 stanze, potresti aver bisogno di usare un numero di stanza diverso per il tuo giardino nel codice sopra.
+            'Ingresso' : {
+                'sud' : 'Cucina',
+                'est' : 'Sala da Pranzo'
+            },
+    
+            'Cucina' : {
+                'nord' : 'Ingresso'
+            },
+    
+            'Sala da Pranzo' : {
+                'ovest' : 'Ingresso'
+                'sud' : 'Giardino'
+            },
+    
+            'Giardino' : {
+                'nord' : 'Sala da Pranzo'
+            }
+    
+        }
+    
 
-+ Prova il tuo gioco per assicurarti che il giocatore possa vincere!
+--- /code ---
 
-  ![screenshot](images/rpg-win-test.png)
+--- /task ---
 
-+ Per finire, aggiungiamo delle istruzioni al gioco, così che il giocatore sappia quello che deve fare. Modifica la funzione `showInstructions()` per includere altre informazioni.
+--- task ---
 
-  ![screenshot](images/rpg-instructions-code.png)
+Aggiungi una pozione in sala da pranzo (o in un'altra stanza della tua casa).
 
-  Dovrai aggiungere istruzioni per indicare all'utente quali oggetti deve raccogliere, e cosa deve evitare!
+--- code ---
+---
+language: python
+line_highlights: 3-4
+---
 
-+ Prova il tuo gioco e vedrai le tue nuove istruzioni!
+            'Sala da Pranzo' : {
+                'ovest' : 'Ingresso',
+                'sud' : 'Giardino',
+                'oggetto' : 'pozione'
+            },
+    
 
-  ![screenshot](images/rpg-instructions-test.png)
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Aggiungi questo codice per consentire al giocatore di vincere la partita quando arriva in giardino con la chiave e la pozione:
+
+--- code ---
+---
+language: python
+line_highlights: 6-9
+---
+
+# il giocatore perde se nella stanza c'è un mostro
+
+if 'oggetto' in stanze[stanzaCorrente] and 'monster' in stanze[stanzaCorrente]['oggetto']: 
+    print('Un mostro ti ha catturato... HAI PERSO!') 
+    break
+
+# il giocatore vince se raggiunge il giardino con una chiave e un pozione
+
+if stanzaCorrente == 'Giardino' and 'chiave' in inventario and 'pozione' in inventario: 
+    print('Sei fuggito dalla casa... HAI VINTO!') 
+    break
+
+--- /code ---
+
+Assicurati che il codice sia indentato, allineato col codice che lo precede. Questo codice significa che il messaggio `Sei fuggito dalla casa... HAI VINTO!` VERRÀ visualizzato se il giocatore si trova nella stanza 4 (il giardino) e se la chiave e la pozione sono nell'inventario.
+
+Se hai più di 4 camere, potresti dover utilizzare un numero di stanza diverso per il tuo giardino nel codice qui sopra.
+
+--- /task ---
+
+--- task ---
+
+Prova il tuo gioco per assicurarti che il giocatore possa vincere!
+
+![schermata](images/rpg-win-test.png)
+
+--- /task ---
+
+--- task ---
+
+Infine aggiungi alcune istruzioni al gioco, in modo che il giocatore sappia cosa deve fare. Modifica la funzione `mostraIstruzioni()` per includere più informazioni.
+
+--- code ---
+---
+language: python
+line_highlights: 7-8
+---
+
+def mostraIstruzioni(): #mostra un meni e i comandi 
+print('''
+
+# Gioco RPG
+
+Raggiungi il giardino con una chiave e una pozione Evita i mostri!
+
+Comandi: vai [direzione] prendi [oggetto] ''')
+
+--- /code ---
+
+Dovrai aggiungere istruzioni per dire all'utente quali oggetti devono raccogliere e cosa devono evitare!
+
+--- /task ---
+
+--- task ---
+
+Prova il tuo gioco e dovresti vedere le tue nuove istruzioni.
+
+![schermata](images/rpg-instructions-test.png)
+
+--- /task ---

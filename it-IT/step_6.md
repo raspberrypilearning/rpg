@@ -1,19 +1,71 @@
 ## Aggiungere nemici
 
-Questo gioco è troppo facile! Aggiungiamo ad alcune stanze dei nemici che il giocatore deve evitare.
+Il gioco è troppo semplice! Aggiungiamo in alcune stanze nemici da evitare.
 
-+ Aggiungere un nemico a una stanza è facile come gli altri oggetti. Aggiungiamo alla cucina un mostro affamato:
+--- task ---
 
-  ![screenshot](images/rpg-monster-dict.png)
+Aggiungere un nemico a una stanza è facile come aggiungere qualsiasi altro oggetto. Aggiungi un mostro affamato in cucina:
 
-+ Assicurati anche che il gioco finisca se il giocatore entra in una delle stanze dove si trova il mostro. Puoi fare ciò con il seguente codice, che dovresti aggiungere alla fine del gioco:
+--- code ---
+---
+language: python
+line_highlights: 11-12
+---
 
-  ![screenshot](images/rpg-monster-code.png)
+# un dizionario collega una stanza alle altre
 
-  Questo codice controlla se c'è un oggetto nella stanza, e se c'è, se quell'oggetto è un mostro. Nota che questo codice è indentato, collocandolo in linea con il codice di sopra. Questo significa che il gioco controllerà la presenza di un mostro ogni volta che il giocatore si sposta in una nuova stanza.
+rooms = {
 
-+ Prova il tuo codice andando in cucina, dove adesso si trova un mostro.
+            'Ingresso' : {
+                'sud' : 'Cucina',
+                'est' : 'Sala da Pranzo'
+            },
+    
+            'Cucina' : {
+                'nord' : 'Ingresso'
+            },
+    
+            'Sala da Pranzo' : {
+                'ovest' : 'Ingresso'
+            }
+    
+        }
+    
 
-  ![screenshot](images/rpg-monster-test.png)
+--- /code ---
 
+--- /task ---
 
+--- task ---
+
+Devi anche assicurarti che il gioco finisca se il giocatore entra in una stanza con un mostro. Puoi farlo con il seguente codice, che dovresti aggiungere alla fine del gioco:
+
+--- code ---
+---
+language: python
+line_highlights: 6-9
+---
+        #altrimenti, se l'oggetto non c'è
+        else:
+            #informa che non possono prenderlo
+            print('Impossibile prendere ' + istruzione[1] + '!')
+    
+    #il giocatore perde se entra in una stanza con un mostro
+    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+        print('Un mostro ti ha catturato... HAI PERSO!')
+        break
+    
+
+--- /code ---
+
+Questo codice controlla se c'è un oggetto nella stanza, e in tal caso, se quell'oggetto è un mostro. Nota che questo codice è indentato in modo da allinearlo con la linea di codice precedente. Di conseguenza il gioco controllerà la presenza di un mostro ogni volta che il giocatore si trasferisce in una nuova stanza.
+
+--- /task ---
+
+--- task ---
+
+Prova il tuo codice andando in cucina, che ora contiene un mostro.
+
+![schermata](images/rpg-monster-test.png)
+
+--- /task ---

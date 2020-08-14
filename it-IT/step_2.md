@@ -1,36 +1,111 @@
 ## Aggiungere nuove stanze
 
-+ Alcuni codici di questo gioco sono stati forniti. Scrivi questo trinket: <a href="http://jumpto.cc/rpg-go" target="_blank">jumpto.cc/rpg-go</a>.
+--- task ---
 
-+ Questo è un gioco RPG molto basico, dove ci sono solo 2 stanze. Ecco una mappa del gioco:
+Apri il progetto iniziale.
 
-  ![screenshot](images/rpg-map1.png)
+**Online:** apri il progetto iniziale su [trinket.io/python/e2f074a88f](https://trinket.io/python/e2f074a88f){:target="_blank"}.
 
-  Puoi digitare 'go south' per muoverti dall'ingresso alla cucina, e poi 'go north' per tornare di nuovo all'ingresso!
+**Offline:** apri il [progetto iniziale](http://rpf.io/p/it-IT/rpg-go){:target="_blank"} nell'editor offline.
 
-  ![screenshot](images/rpg-controls.png)
+--- /task ---
 
-+ Cosa succede quando digiti una direzione verso la quale non puoi andare? Digita 'go west' nell'ingresso e otterrai un amichevole messaggio di errore.
+--- task ---
 
-  ![screenshot](images/rpg-error.png)
+Questo è un gioco RPG molto semplice che ha solo 2 stanze. Ecco la mappa del gioco:
 
-+ Se trovi la variabile 'rooms', puoi vedere che la mappa è codificata come un dizionario di stanze:
+![schermata](images/rpg-map1.png)
 
-  ![screenshot](images/rpg-rooms.png)
+Puoi digitare `vai sud` per spostarti dalla sala alla cucina, e poi `vai nord` per tornare di nuovo all'ingresso!
 
-  Ogni stanza è un dizionario e le stanze sono collegate tra di loro usando le direzioni.  
+![schermata](images/rpg-controls.png)
 
+--- /task ---
 
-+ Aggiungiamo alla tua mappa una stanza da pranzo, a est dell'ingresso.
+--- task ---
 
-  ![screenshot](images/rpg-dining.png)
+Cosa succede quando digiti una direzione che non puoi seguire? Digita `vai ovest` nell'ingresso e riceverai un messaggio di errore.
 
-  Hai bisogno di una terza stanza, denominata 'dining room'. Dovrai anche collegarla all'ingresso a ovest. Avrai anche bisogno di aggiungere dati all'ingresso, in modo che tu possa muoverti verso la stanza da pranzo a est.
+![schermata](images/rpg-error.png)
 
-  ![screenshot](images/rpg-dining-code.png)
+--- /task ---
 
-+ Prova il gioco con la tua nuova stanza da pranzo.
+--- task ---
 
-  ![screenshot](images/rpg-dining-test.png)
+Se cerchi la variabile `camere`, puoi vedere che la mappa è codificata come un dizionario di stanze:
 
-  Non puoi entrare ed uscire dalla stanza da pranzo, semplicemente controlla di aver aggiunto tutti i codici qui sopra (incluse le virgole aggiuntive alle linee di sopra).
+--- code ---
+---
+language: python
+---
+
+# un dizionario collega una stanza alle altre
+
+stanze = {
+
+            'Ingresso' : {
+                'sud' : 'Cucina'
+            },
+    
+            'Cucina' : {
+                'nord' : 'Ingresso'
+            }
+    
+        }
+    
+
+--- /code ---
+
+Ogni stanza è un dizionario e le stanze sono collegate tra loro usando le direzioni.
+
+--- /task ---
+
+--- task ---
+
+Aggiungiamo una sala da pranzo alla tua mappa, ad est dell'ingresso.
+
+![schermata](images/rpg-dining.png)
+
+Devi aggiungere una terza stanza, chiamata `sala da pranzo`, e collegarla alla sala (ovest). Devi anche aggiungere dati all'ingresso, in modo da poterti spostare nella sala da pranzo ad est.
+
+**Non dimenticare che dovrai anche aggiungere delle virgole prima del tuo nuovo codice.**
+
+--- code ---
+---
+language: python
+line_highlights: 5-6,11-15
+---
+
+# un dizionario collega una stanza alle altre
+
+stanze = {
+
+            'Hall' : {
+                'sud' : 'Cucina',
+                'est' : 'Sala da Pranzo'
+            },
+    
+            'Cucina' : {
+                'nord' : 'Ingresso'
+            },
+    
+            'Sala da Pranzo' : {
+                'ovest' : 'Ingresso'
+            }
+    
+        }
+    
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Prova il gioco con la tua nuova sala da pranzo:
+
+![schermata](images/rpg-dining-test.png)
+
+Se non riesci ad entrare e uscire dalla sala da pranzo, controlla di aver aggiunto tutto il codice sopra riportato (comprese le virgole extra alle righe sopra).
+
+--- /task ---

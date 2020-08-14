@@ -1,3 +1,4 @@
+---
 hero_image: images/rpg.png
 theme: navy
 duration: 2
@@ -5,8 +6,8 @@ listed: true
 ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
-title: RPG
-description: Disegna e codifica il tuo gioco di labirinto RPG.
+title: 'RPG: un gioco di ruolo'
+description: Disegna e codifica il tuo RPG (gioco di ruolo) a labirinti.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
 technologies: python
@@ -15,13 +16,17 @@ hardware: ''
 software: python
 version: 3
 last_tested: 2017-01-01
-steps: 
-- title: Introduzione
-- title: Aggiungere nuove stanze
-- title: 'Sfida: Aggiungere nuove stanze'
-- title: Aggiungere oggetti da raccogliere
-- title: 'Sfida: Aggiungere nuovi oggetti'
-- title: Aggiungere nemici
-- title: 'Sfida: Aggiungi altri mostri'
-- title: Vincere il gioco
-- title: 'Sfida: Migliora il tuo gioco'
+steps:
+  - title: 'Introduzione'
+  - title: Aggiungere nuove stanze
+  - title: 'Sfida: Aggiungi nuove stanze'
+    challenge: true
+  - title: Aggiungere oggetti da raccogliere
+  - title: 'Sfida: Aggiungi nuovi oggetti'
+    challenge: true
+  - title: Aggiungere nemici
+  - title: 'Sfida: Aggiungi più mostri'
+    challenge: true
+  - title: Vincere il gioco
+  - title: 'Sfida: Sviluppa il tuo gioco personalizzato'
+    challenge: true

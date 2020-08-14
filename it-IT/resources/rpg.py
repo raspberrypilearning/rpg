@@ -7,7 +7,7 @@ def mostraIstruzioni():
   print('''
 Gioco RPG
 ========
-Comandi:
+Commandi:
   vai [direzione]
   prendi [oggetto]
 ''')
@@ -79,7 +79,7 @@ while True:
       print('Ho raccolto: ' + istruzione[1])
       #cancella l'oggetto dalla stanza
       del stanze[stanzaCorrente]['oggetto']
-    #altrimenti, se non c'è nessun oggetto da prendere
+    #altrimenti se non c'è nessun oggetto da prendere
     else:
       #informa che non si può prendere
       print('Impossibile prendere ' + istruzione[1] + '!')

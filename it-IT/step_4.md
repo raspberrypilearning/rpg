@@ -1,13 +1,47 @@
 ## Aggiungere oggetti da raccogliere
 
-Ora lasciamo degli oggetti nelle stanze così che il giocatore possa raccoglierli mentre si muove attraverso il labirinto.
+Lascia degli oggetti nelle stanze in modo che il giocatore possa raccoglierli mentre si sposta attraverso il labirinto.
 
-+ Aggiungere un oggetto in una stanza è facile, puoi semplicemente aggiungerlo al dizionario di una stanza. Mettiamo una chiave all'ingresso.
+--- task ---
 
-  ![screenshot](images/rpg-key.png)
+Aggiungere un oggetto in una stanza è facile, basta aggiungerlo al dizionario di una stanza. Mettiamo una chiave nell'ingresso.
 
-  Ricordati di inserire una virgola dopo la linea sopra il nuovo oggetto, o il tuo programma non funzionerà!
+Ricorda di mettere una virgola dopo la riga sopra il nuovo oggetto, altrimenti il tuo programma non funzionerà!
 
-+ Se esegui il tuo gioco aggiungendo il codice sopra, potrai vedere ora una chiave nell'ingresso, e puoi perfino prenderla (digitando 'get key') che la aggiunge al tuo inventario!
+--- code ---
+---
+language: python
+line_highlights: 6-7
+---
 
-  ![screenshot](images/rpg-key-test.png)  
+# un dizionario collega una stanza alle altre
+
+stanze = {
+
+            'Ingresso' : {
+                'sud' : 'Cucina',
+                'est' : 'Sala da Pranzo'
+            },
+    
+            'Cucina' : {
+                'nord' : 'Ingresso'
+            },
+    
+            'Sala da Pranzo' : {
+                'ovest' : 'Ingresso'
+            }
+    
+        }
+    
+
+--- /code ---
+
+--- /task ---
+
+--- task ---
+
+Se esegui il gioco dopo aver aggiunto il codice sopra, ora puoi vedere una chiave nell'ingresso e puoi persino raccoglierla (digitando `prendi chiave`), aggiungendola al tuo inventario!
+
+![schermata](images/rpg-key-test.png)
+
+--- /task ---
