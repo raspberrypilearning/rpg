@@ -117,8 +117,9 @@ language: python
 line_highlights: 7-8
 ---
 
-def mostraIstruzioni(): #mostra un meni e i comandi 
-print('''
+def mostraIstruzioni(): 
+    #mostra un meni e i comandi 
+    print('''
 Gioco RPG
 ========
 
