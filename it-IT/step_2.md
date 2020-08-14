@@ -79,7 +79,7 @@ language: python
 
 stanze = {
 
-            'Hall' : {
+            'Ingresso' : {
                 'sud' : 'Cucina',
                 'est' : 'Sala da Pranzo'
             },
