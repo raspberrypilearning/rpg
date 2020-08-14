@@ -15,12 +15,12 @@ line_highlights: 6-7
 ---
 
 # un dizionario collega una stanza alle altre
-
 stanze = {
 
             'Ingresso' : {
                 'sud' : 'Cucina',
                 'est' : 'Sala da Pranzo'
+                'oggetto' : 'chiave'
             },
     
             'Cucina' : {

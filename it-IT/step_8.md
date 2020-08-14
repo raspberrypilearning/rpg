@@ -21,16 +21,17 @@ line_highlights: 16-17,18-22
 ---
 
 # un dizionario collega una stanza alle altre
-
 stanze = {
 
             'Ingresso' : {
                 'sud' : 'Cucina',
                 'est' : 'Sala da Pranzo'
+                'oggetto' : 'chiave'
             },
     
             'Cucina' : {
                 'nord' : 'Ingresso'
+                'oggetto' : 'mostro'
             },
     
             'Sala da Pranzo' : {
@@ -81,13 +82,11 @@ line_highlights: 6-9
 ---
 
 # il giocatore perde se nella stanza c'è un mostro
-
-if 'oggetto' in stanze[stanzaCorrente] and 'monster' in stanze[stanzaCorrente]['oggetto']: 
+if 'oggetto' in stanze[stanzaCorrente] and 'mostro' in stanze[stanzaCorrente]['oggetto']: 
     print('Un mostro ti ha catturato... HAI PERSO!') 
     break
 
 # il giocatore vince se raggiunge il giardino con una chiave e un pozione
-
 if stanzaCorrente == 'Giardino' and 'chiave' in inventario and 'pozione' in inventario: 
     print('Sei fuggito dalla casa... HAI VINTO!') 
     break
@@ -120,12 +119,16 @@ line_highlights: 7-8
 
 def mostraIstruzioni(): #mostra un meni e i comandi 
 print('''
+Gioco RPG
+========
 
-# Gioco RPG
+Raggiungi il giardino con una chiave e una pozione 
+Evita i mostri!
 
-Raggiungi il giardino con una chiave e una pozione Evita i mostri!
-
-Comandi: vai [direzione] prendi [oggetto] ''')
+Comandi: 
+vai [direzione] 
+prendi [oggetto] 
+''')
 
 --- /code ---
 
