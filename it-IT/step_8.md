@@ -22,15 +22,17 @@ language: python
 
 # un dizionario collega una stanza alle altre
 
-rooms = {
+stanze = {
 
             'Ingresso' : {
                 'sud' : 'Cucina',
                 'est' : 'Sala da Pranzo'
+                'oggetto' : 'chiave'
             },
     
             'Cucina' : {
                 'nord' : 'Ingresso'
+                'oggetto' : 'mostro'
             },
     
             'Sala da Pranzo' : {
@@ -82,11 +84,11 @@ language: python
 
 # il giocatore perde se nella stanza c'è un mostro
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('Un mostro ti ha catturato... HAI PERSO!') break
+if 'oggetto' in stanze\[stanzaCorrente] and 'mostro' in stanze[stanzaCorrente\]\['oggetto'\]: print('Un mostro ti ha catturato... HAI PERSO!') break
 
 # il giocatore vince se raggiunge il giardino con una chiave e un pozione
 
-if currentRoom == 'Giardino' and 'chiave' in inventory and 'pozione' in inventory: print('Sei fuggito dalla casa... YOU WIN!') break
+if stanzaCorrente== 'Giardino' and 'chiave' in inventario and 'pozione' in inventario: print('Sei fuggito dalla casa... HAI VINTO!') break
 
 \--- /code \---
 
@@ -120,7 +122,7 @@ def showInstructions(): #mostra un meni e i comandi print('''
 
 Raggiungi il giardino con una chiave e una pozione Evita i mostri!
 
-Comandi: vai [direction] prendi [item] ''')
+Comandi: vai [direzione] prendi [oggetto] ''')
 
 \--- /code \---
 
