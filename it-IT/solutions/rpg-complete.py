@@ -107,11 +107,11 @@ while True:
 
   #il giocatore perde se nella stanza c'è un mostro
   if 'oggetto' in stanze[stanzaCorrente] and 'mostro' in stanze[stanzaCorrente]['oggetto']:
-    print('Una creatura mostruosa ti ha catturato... GAME OVER!')
+    print('Una creatura mostruosa ti ha catturato... HAI PERSO!')
     break
 
   if salute == 0:
-    print('Sei svenuto per sfinimento... GIOCO TERMINATO!')
+    print('Sei svenuto per sfinimento... HAI PERSO!')
 
   #il giocatore vince se raggiunge il giardino con una chiave e un pozione
   if stanzaCorrente == 'Giardino' and 'chiave' in inventario and 'pozione' in inventario:
