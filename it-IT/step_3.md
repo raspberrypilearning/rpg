@@ -1,9 +1,7 @@
 --- challenge ---
-## Sfida: Aggiungere nuove stanze
 
-Puoi aggiungere altre stanze al tuo gioco? Per esempio, potresti creare un soggiorno a sud della stanza da pranzo. Ricordati di aggiungere una porta a/da una delle altre stanze!
+## Sfida: Aggiungi nuove stanze
 
-
-
+Riesci ad aggiungere altre stanze al tuo gioco? Ad esempio, potresti creare un soggiorno a sud della sala da pranzo. Ricorda di aggiungere una porta verso/da una delle altre stanze!
 
 --- /challenge ---

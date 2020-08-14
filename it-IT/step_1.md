@@ -1,65 +1,72 @@
 ## Introduzione
 
-Disegna e codifica il tuo gioco di labirinto RPG. Lo scopo del gioco sarà di raccogliere oggetti e scappare da una casa, assicurandosi di evitare tutti i mostri!
+In quest'attività, progetterai e programmerai il tuo RPG (gioco di ruolo) a labirinti. Lo scopo del gioco sarà quello di raccogliere oggetti e fuggire da una casa, assicurandosi di evitare tutti i mostri!
+
+## Che cosa creerai
+
+--- no-print ---
+
+Digita `vai` e quindi una direzione (nord, esst, sud o ovest) per spostarti nel mondo (ad es. `vai nord`).
+
+Digita `prendi` per raccogliere tutti gli elementi che vedi (esempio `prendi chiave`).
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/9fae42c59b?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
 
+--- /no-print ---
+
+--- print-only ---
+
+![progetto completo](images/rpg-finished.png)
+
+--- /print-only ---
 
 --- collapse ---
 ---
-title: Note per i leader del club
+title: Di cosa avrai bisogno
 ---
 
+### Hardware
 
-## Introduzione:
-Questo progetto insegna il design di gioco attraverso lo sviluppo di un gioco di labirinto RPG. In questo gioco, il giocatore deve raccogliere degli oggetti all'interno di una casa e raggiungere una stanza specifica mentre evita i mostri presenti in alcune stanze. Questo gioco verrà realizzato manipolando dizionari e liste.
++ Un computer in grado di eseguire Python
 
-## Risorse online
+### Software
 
-__Questo progetto utilizza Python 3.__ È consigliabile utilizzare [trinket](https://trinket.io/) per scrivere in linguaggio Python online. Questo progetto contiene i seguenti Trinket:
++ Python 3 ([online](https://trinket.io/){:target="_blank"} o [offline](https://www.python.org/downloads/){:target="_blank"})
 
-+ [punto d'inizio 'RPG' -- jumpto.cc/rpg-go](http://jumpto.cc/rpg-go)
+### Downloads
 
-È presente anche un trinket che contiene il progetto completato:
+Il progetto iniziale può essere trovato [qui](http://rpf.io/p/it-IT/rpg-go){:target="_blank"}.
 
-+ [RPG - Finito -- trinket.io/python/d06adeb527](https://trinket.io/python/d06adeb527)
+--- /collapse ---
 
-## Risorse offline
-Questo progetto può essere completato [offline](https://www.codeclubprojects.org/en-GB/resources/python-working-offline/) se preferito. È possibile accedere alle risorse del progetto facendo clic sul link "Materiali per il progetto". Il link apre la sezione "Risorse del progetto" che contiene le risorse necessarie ai bambini per completare il progetto offline. È bene assicurarsi che tutti i bambini abbiano accesso a una copia di queste risorse. Questa sezione contiene i seguenti file:
+--- collapse ---
+---
+title: Cosa imparerai
+---
 
-+ rpg/rpg.py
-
-Una versione completa di questo progetto è presente anche nella sezione "Risorse per i volontari", che contiene:
-
-+ rpg-finished/rpg.py
-
-(Tutte le risorse sopra indicate possono essere scaricate anche come file ".zip" di progetto e di volontario)
-
-## Obiettivi di apprendimento
-+ Game design;
-+ Modifica:
-	+ Liste;
-	+ Dizionari.
++ Progettazione di un gioco;
++ Sviluppo: 
+    + Liste;
+    + Dizionari.
 + Espressioni booleane.
 
-Questo progetto copre elementi contenuti nei seguenti filoni di [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Questo progetto riguarda elementi trattati in queste sezioni del [Digital Making Curriculum di Raspberry Pi](http://rpf.io/curriculum):
 
-+ [Combinazione di costrutti di programmazione per la soluzione di problemi.](https://www.raspberrypi.org/curriculum/programming/builder)
++ [Combinare i costrutti base di un linguaggio di programmazione per risolvere un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
-## Sfide
-+ Aggiungere nuove stanze;
-+ Aggiungere oggetti da raccogliere;
-+ Aggiungere nemici da evitare;
-+ Sviluppa il tuo gioco.
+--- /collapse ---
 
-## Domande frequenti
-+ Può essere necessario ricordare ai bambini che gli elementi di un dizionario o di un elenco devono essere separati da una virgola. Per esempio, quando si aggiunge una nuova stanza al dizionario 'rooms', si deve aggiungere una virgola tra la nuova stanza e la precedente.
-+ Quando si aggiunge una nuova stanza, i bambini potrebbero dimenticare di aggiungere un link per la stanza esistente alla stanza appena creata. Questo significa che i bambini possono lasciare una stanza ma non possono accedervi!
-+ Il codice per controllare se il giocatore ha vinto o ha perso deve essere indentato, per assicurarsi che questo controllo venga effettuato entrando ogni nuova stanza. Se il codice non è indentato, allora risiede all'esterno del loop principale del gioco e non viene mai eseguito.
+--- collapse ---
+---
+title: Informazioni aggiuntive per gli educatori
+---
 
+Se intendete stampare questo progetto, cliccate su [Versione stampabile](https://projects.raspberrypi.org/it-IT/projects/rpg/print).
+
+Potete trovare qui la [soluzione per questo progetto](http://rpf.io/p/it-IT/rpg-get){:target="_blank"}.
 
 --- /collapse ---
