@@ -21,6 +21,7 @@ stanze = {
             'Ingresso' : {
                 'sud' : 'Cucina',
                 'est' : 'Sala da Pranzo'
+                'oggetto' : 'chiave'
             },
     
             'Cucina' : {
