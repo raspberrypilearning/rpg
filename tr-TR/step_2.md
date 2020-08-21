@@ -39,7 +39,6 @@ Eğer `odalar` değişkenini bulursan, haritanın, odalar sözlüğü olarak kod
 language: python
 ---
 # bir odayı başka odalara bağlayan bir sözlük
-
 odalar = {
 
             'Koridor' : {
@@ -75,7 +74,6 @@ language: python
 line_highlights: 5-6,11-15
 ---
 # bir odayı başka odalara bağlayan bir sözlük
-
 odalar = {
 
             'Koridor' : {

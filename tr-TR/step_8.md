@@ -20,7 +20,6 @@ language: python
 line_highlights: 16-17,18-22
 ---
 # bir odayı başka odalara bağlayan bir sözlük
-
 odalar = {
 
             'Koridor' : {
@@ -80,13 +79,11 @@ language: python
 line_highlights: 6-9
 ---
 # oyuncu canavar olan bir odaya girerse kaybeder
-
 if 'eşya' in odalar [suankiOda] and 'canavar' in odalar[suankiOda\]['eşya']: 
     print('Bir canavar seni yakaladı... KAYBETTİN!') 
     break
 
 # oyuncu bahçeye bir anahtar ve iksirle ulaşırsa kazanır
-
 if suankiOda == 'Bahçe' and 'anahtar' in envanter and 'iksir' in envanter: 
     print('Evden kaçtın... KAZANDIN!') 
     break

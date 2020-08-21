@@ -12,7 +12,6 @@ language: python
 line_highlights: 11-12
 ---
 # bir odayı başka odalara bağlayan bir sözlük
-
 odalar = {
 
             'Koridor' : {
