@@ -14,24 +14,25 @@ language: python
 
 # un diccionario que conecte una habitación con las otras habitaciones
 
-rooms = {
+habitaciones = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
-            },
+            'Sala': {
+            'sur': 'Cocina',
+            'este': 'Comedor',
+            'objeto': 'llave'
+        },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
-            },
+        'Cocina': {
+            'norte': 'Sala',
+            'objeto': 'monstruo'
+        },
     
-            'Dining Room' : {
-                'west' : 'Hall'
-            }
-    
+        'Comedor': {
+            'oeste': 'Sala'
         }
+    
+    
+    }
     
 
 \--- /code \---
