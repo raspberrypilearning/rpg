@@ -1,0 +1,32 @@
+---
+hero_image: images/rpg.png
+theme: navy
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
+title: RPG
+description: Diseña y programa tu propio juego de laberintos RPG.
+original_url: https://codeclubprojects.org/en-GB/python/rpg
+interests: games
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2017-01-01
+steps:
+  - title: 'Introducción'
+  - title: Añadir nuevas habitaciones
+  - title: 'Desafío: Añadir nuevas habitaciones'
+    challenge: true
+  - title: Agregar objetos para recoger
+  - title: 'Desafío: Añadir nuevos objetos'
+    challenge: true
+  - title: Añadir enemigos
+  - title: 'Desafío: Añadir más monstruos'
+    challenge: true
+  - title: Ganar el juego
+  - title: 'Desafío: Crea tu propio juego'
+    challenge: true
