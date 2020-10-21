@@ -79,7 +79,7 @@ language: python
 line_highlights: 6-9
 ---
 # el jugador pierde si entra a una habitación con un monstruo
-if 'objeto' in habitaciones [habitacionActual] and 'monstruo' in habitaciones[habitacionActual]['objeto']: 
+if 'objeto' in habitaciones[habitacionActual] and 'monstruo' in habitaciones[habitacionActual]['objeto']: 
     print('Un monstruo te atrapó... ¡PERDISTE!) 
     break
 
