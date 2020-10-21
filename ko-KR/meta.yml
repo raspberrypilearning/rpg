@@ -1,19 +1,19 @@
 ---
 hero_image: images/rpg.png
-theme: 해군
+theme: navy
 duration: 2
 listed: true
 ingredient: false
 copyedit: false
-curriculum: 1, 디자인 -0, 프로그래밍 -1, phys-comp-0, 제조 -0, 커뮤니티 -0
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
 title: RPG
 description: RPG 미로 게임을 프로그래밍하고 디자인하십시오.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
-interests: 게임
+interests: games
 technologies: python
 site_areas: projects
 hardware: ''
-software: 파이썬 (Python)
+software: python
 version: 3
 last_tested: 2017-01-01
 steps:
