@@ -1,86 +1,86 @@
 #!/bin/python3
 
-# Replace RPG starter project with this code when new instructions are live
+# Reemplaza el proyecto de inicio RPG con este código cuando aparezcan nuevas instrucciones
 
-def showInstructions():
-  #print a main menu and the commands
+def mostrarInstrucciones():
+  # imprime un menu principal y los comandos
   print('''
-RPG Game
+Juego RPG
 ========
-Commands:
-  go [direction]
-  get [item]
+Comandos:
+  ir [dirección]
+  tomar [objeto]
 ''')
 
-def showStatus():
-  #print the player's current status
+def mostrarEstado():
+  #Imprime el estado actual del jugador
   print('---------------------------')
-  print('You are in the ' + currentRoom)
-  #print the current inventory
-  print('Inventory : ' + str(inventory))
-  #print an item if there is one
-  if "item" in rooms[currentRoom]:
-    print('You see a ' + rooms[currentRoom]['item'])
+  print("Estás en:  " + habitacionActual)
+  #Imprime el inventario actual
+  print("Inventario: " + str(inventario))
+  #imprime un objeto si hay uno
+  if "objeto" in habitaciones[habitacionActual]:
+    print('Puedes ver:  ' + habitaciones[habitacionActual]['objeto'])
   print("---------------------------")
 
-#an inventory, which is initially empty
-inventory = []
+#un inventario, que está vacío al principio
+inventario = []
 
-#a dictionary linking a room to other rooms
-rooms = {
+#un diccionario que une una habitación a las posiciones de las otras habitaciones
+habitaciones = {
 
-            'Hall' : { 
-                  'south' : 'Kitchen'
+            'Sala' : { 
+                  'sur' : 'Cocina'
                 },
 
-            'Kitchen' : {
-                  'north' : 'Hall'
+            'Cocina' : {
+                  'norte' : 'Sala'
                 }
 
          }
 
-#start the player in the Hall
-currentRoom = 'Hall'
+#comienza con el jugador en la Sala
+habitacionActual = 'Sala'
 
-showInstructions()
+mostrarInstrucciones()
 
-#loop forever
+#Repetir indefinidamente
 while True:
 
-  showStatus()
+  mostrarEstado()
 
-  #get the player's next 'move'
-  #.split() breaks it up into an list array
-  #eg typing 'go east' would give the list:
-  #['go','east']
-  move = ''
-  while move == '':  
-    move = input('>')
+  #obtener el próximo 'movimiento' del jugador
+  #.split() lo separa en una lista
+  #por ejemplo escribir 'ir este' va a dar la lista:
+  #['ir','este']
+  movimiento = ''
+  while movimiento == '':  
+    movimiento = input('>')
     
-  move = move.lower().split()
+  movimiento = movimiento.lower().split()
 
-  #if they type 'go' first
-  if move[0] == 'go':
-    #check that they are allowed wherever they want to go
-    if move[1] in rooms[currentRoom]:
-      #set the current room to the new room
-      currentRoom = rooms[currentRoom][move[1]]
-    #there is no door (link) to the new room
+  #si escriben 'ir' primero
+  if movimiento[0] == 'ir':
+    #verifica que esta permitido ir a donde quieren ir
+    if movimiento[1] in habitaciones[habitacionActual]:
+      # establecer la habitación actual en la nueva habitación
+      habitacionActual = habitaciones[habitacionActual][movimiento[1]]
+    #no hay puerta (enlace) a la nueva habitación
     else:
-        print('You can\'t go that way!')
+        print('¡No puedes ir en esa dirección!')
 
-  #if they type 'get' first
-  if move[0] == 'get' :
-    #if the room contains an item, and the item is the one they want to get
-    if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-      #add the item to their inventory
-      inventory += [move[1]]
-      #display a helpful message
-      print(move[1] + ' got!')
-      #delete the item from the room
-      del rooms[currentRoom]['item']
-    #otherwise, if the item isn't there to get
+  #si se escribe 'tomar' primero
+  if movimiento[0]=='tomar' :
+    #Si la habitación contiene un objeto, y el objeto es el que se quiere tomar
+    if 'objeto' in habitaciones[habitacionActual] and movimiento[1] in habitaciones[habitacionActual]['objeto']:
+      #añade el objeto al inventario
+      inventario += [movimiento[1]]
+      #mostrar un mensaje útil
+      print('¡Ahora tienes en tus manos! ' + movimiento[1])
+      #elimina el objeto de la habitación
+      del habitaciones[habitacionActual]['objeto']
+    #Por el contrario, si el objeto que se quiere no esta en la habitación
     else:
-      #tell them they can't get it
-      print('Can\'t get ' + move[1] + '!')
+      #diles que no pueden tomarlo
+      print('¡No puedes tomarlo! ' + movimiento[1])
 
