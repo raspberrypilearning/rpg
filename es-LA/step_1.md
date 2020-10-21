@@ -62,7 +62,7 @@ Este proyecto incluye elementos de los siguientes aspectos del [Raspberry Pi Dig
 
 ## title: Información adicional para educadores
 
-Si necesitas imprimir este proyecto, usa la [Print friednly version](https://projects.raspberrypi.org/en/projects/rpg/print).
+Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/rpg/print).
 
 Puedes [encontrar la solución para este proyecto aquí](http://rpf.io/p/en/rpg-get){:target="_blank"}.
 
