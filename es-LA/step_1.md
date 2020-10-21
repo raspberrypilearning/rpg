@@ -8,7 +8,7 @@ En este proyecto, vas a diseñar y programar tu propio juego de laberintos RPG. 
 
 Escribe `ir` y después una dirección (norte, este, sur, oeste) para moverte en el mundo (por ejemplo `ir norte`).
 
-Escribe `coger` para coger los objetos que ves (por ejemplo `coger llave`).
+Escribe `tomar` para coger los objetos que ves (por ejemplo `tomar llave`).
 
 <div class="trinket">
   <iframe src="https://trinket.io/embed/python/39530f7566?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
