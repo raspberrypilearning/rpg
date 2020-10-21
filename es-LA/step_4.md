@@ -16,20 +16,20 @@ language: python
 
 # un diccionario que conecte una habitación con las otras habitaciones
 
-rooms = {
+habitaciones = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
+            'Sala' : {
+                'sur' : 'Cocina',
+                'este' : 'Comedor',
+                'objeto' : 'llave'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Cocina' : {
+                'norte' : 'Sala'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Comedor' : {
+                'oeste' : 'Sala'
             }
     
         }
