@@ -22,29 +22,29 @@ language: python
 
 # un diccionario que conecte una habitación con las otras habitaciones
 
-rooms = {
+habitaciones = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
-            },
+            'Sala': {
+            'sur': 'Cocina',
+            'este': 'Comedor',
+            'objeto': 'llave'
+        },
     
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
-            },
+        'Cocina': {
+            'norte': 'Sala',
+            'objeto': 'monstruo'
+        },
     
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden'
-            },
+        'Comedor': {
+            'oeste': 'Sala',
+            'sur': 'Jardín'
+        },
     
-            'Garden' : {
-                'north' : 'Dining Room'
-            }
-    
+        'Jardín':{
+            'norte': 'Comedor'
         }
+    
+    }
     
 
 \--- /code \---
@@ -61,10 +61,10 @@ language: python
 
 ## line_highlights: 3-4
 
-            'Dining Room' : {
-                'west' : 'Hall',
-                'south' : 'Garden',
-                'item' : 'potion'
+            'Comedor' : {
+                'oeste' : 'Sala',
+                'sur' : 'Jardín',
+                'objeto' : 'poción'
             },
     
 
@@ -84,11 +84,11 @@ language: python
 
 # el jugador pierde si entra a una habitación con un monstruo
 
-if 'item' in rooms\[currentRoom] and 'monster' in rooms[currentRoom\]\['item'\]: print('A monster has got you... GAME OVER!') break
+if 'objeto' in habitaciones\[habitacionActual] and 'monstruo' in habitaciones[habitacionActual\]\['objeto'\]: print('Un monstruo te atrapó... ¡PERDISTE!) break
 
 # el jugador gana si llega al jardín con una llave y una poción
 
-if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory: print('You escaped the house... YOU WIN!') break
+if habitacionActual == 'Jardín' and 'llave' in inventario and 'poción' in inventario: print('Te escapaste de la casa... ¡GANASTE!') break
 
 \--- /code \---
 
@@ -116,13 +116,13 @@ language: python
 
 ## line_highlights: 7-8
 
-def showInstructions(): #print a main menu and the commands print('''
+def mostrarInstrucciones(): #imprime un menu principal y los comandos print('''
 
 # Juego RPG
 
 Llega al jardín con una llave y una poción. ¡Evita a los monstruos!
 
-Commands: go [direction] get [item] ''')
+Comandos: ir [dirección] tomar [objeto] ''')
 
 \--- /code \---
 
