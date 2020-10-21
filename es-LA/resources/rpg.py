@@ -76,11 +76,11 @@ while True:
       #añade el objeto al inventario
       inventario += [movimiento[1]]
       #mostrar un mensaje útil
-      print('¡Ahora tienes en tus manos! ' + movimiento[1])
+      print('¡Ahora tienes en tus manos ' + movimiento[1] +'!')
       #elimina el objeto de la habitación
       del habitaciones[habitacionActual]['objeto']
     #Por el contrario, si el objeto que se quiere no esta en la habitación
     else:
       #diles que no pueden tomarlo
-      print('¡No puedes tomarlo! ' + movimiento[1])
+      print('¡No puedes tomarlo ' + movimiento[1])
 

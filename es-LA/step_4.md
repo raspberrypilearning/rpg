@@ -39,7 +39,7 @@ habitaciones = {
 
 --- task ---
 
-Si ejecutas tu programa después de añadir el código de arriba, vas a poder ver una llave en la sala, e incluso podrás cogerla (al escribir `get key`) (coger la llave) lo que la añadirá a tu inventario!
+Si ejecutas tu programa después de añadir el código de arriba, vas a poder ver una llave en la sala, e incluso podrás cogerla (al escribir `coger llave`) lo que la añadirá a tu inventario!
 
 ![captura de pantalla](images/rpg-key-test.png)
 

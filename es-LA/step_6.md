@@ -49,10 +49,10 @@ line_highlights: 6-9
     #Por el contrario, si el objeto que se quiere no esta en la habitación
     else:
         #diles que no pueden cogerlo
-        print('¡No puedes tomarlo' + move[1] + '!')
+        print('¡No puedes tomarlo' + movimiento[1] + '!')
     
     #el jugador pierde si entra en una habitación con un monstruo
-    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+    if 'objeto' in habitaciones[habitacionActual] and 'monstruo' in habitaciones[habitacionActual]['objeto']:
         print('Un monstruo te atrapó... ¡PERDISTE!')
         break
     

@@ -19,7 +19,7 @@ last_tested: 2017-01-01
 steps:
   - title: 'Introducción'
   - title: Añadir nuevas habitaciones
-  - title: 'Desafío: Añadir nuevas habitaciones'
+  - title: 'Desafío: Añadir más habitaciones'
     challenge: true
   - title: Agregar objetos para recoger
   - title: 'Desafío: Añadir nuevos objetos'
