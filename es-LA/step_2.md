@@ -40,14 +40,14 @@ Si te fijas en la variable `habitaciones`, verás que el mapa está codificado c
 
 # un diccionario que conecta una habitación con las otras habitaciones
 
-rooms = {
+habitaciones = {
 
-            'Hall' : {
-                'south' : 'Kitchen'
+            'Sala' : {
+                'sur' : 'Cocina'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Cocina' : {
+                'norte' : 'Sala'
             }
     
         }
@@ -77,19 +77,19 @@ language: python
 
 # un diccionario que conecta una habitación con las otras habitaciones
 
-rooms = {
+habitaciones = {
 
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room'
+            'Sala' : {
+                'sur' : 'Cocina',
+                'este' : 'Comedor'
             },
     
-            'Kitchen' : {
-                'north' : 'Hall'
+            'Cocina' : {
+                'norte' : 'Sala'
             },
     
-            'Dining Room' : {
-                'west' : 'Hall'
+            'Comedor' : {
+                'oeste' : 'Sala'
             }
     
         }
