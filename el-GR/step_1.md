@@ -38,7 +38,7 @@ title: Τι θα χρειαστείς
 
 ### Λήψεις
 
-Το αρχικό project μπορεί να βρεθεί [εδώ](http://rpf.io/p/el-GR/rpg-go){:target="_blank"}.
+Το αρχικό project μπορεί να βρεθεί [εδώ](https://rpf.io/p/el-GR/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -52,7 +52,7 @@ title: Τι θα μάθεις
     + Λεξικά.
 + Εκφράσεις τύπου Boolean.
 
-Αυτό το έργο καλύπτει στοιχεία από τις ακόλουθες πτυχές του [Raspberry Pi Digital Curriculum Making](http://rpf.io/curriculum):
+Αυτό το έργο καλύπτει στοιχεία από τις ακόλουθες πτυχές του [Raspberry Pi Digital Curriculum Making](https://rpf.io/curriculum):
 
 + [Συνδύασε δομές προγραμματισμού για να λύσεις ένα πρόβλημα.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@ title: Πρόσθετες πληροφορίες για εκπαιδευτικο
 ---
 Αν χρειαστεί να εκτυπώσεις αυτό το έργο, χρησιμοποίησε την [εκτυπώσιμη έκδοση](https://projects.raspberrypi.org/el-GR/projects/rpg/print).
 
-Μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](http://rpf.io/p/el-GR/rpg-get){:target="_blank"}.
+Μπορείς να βρεις [το ολοκληρωμένο έργο εδώ](https://rpf.io/p/el-GR/rpg-get){:target="_blank"}.
 
 --- /collapse ---

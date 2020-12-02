@@ -39,7 +39,7 @@ title: Was du brauchen wirst
 
 ### Downloads
 
-Das Start-Projekt findest du [hier](http://rpf.io/p/de-DE/rpg-go){:target="_blank"}.
+Das Start-Projekt findest du [hier](https://rpf.io/p/de-DE/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -54,7 +54,7 @@ title: Was du lernen wirst
     + Wörterbücher (dictionaries).
 + Booleschen Ausdrücken.
 
-Dieses Projekt deckt die folgenden Kernbereiche des [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) ab:
+Dieses Projekt deckt die folgenden Kernbereiche des [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum) ab:
 
 + [Problemlösung durch Kombination von Programmierstrukturen.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -67,6 +67,6 @@ title: Zusätzliche Informationen für Pädagogen
 
 Falls du dieses Projekt ausdrucken musst, verwende bitte die [druckfreundliche Version](https://projects.raspberrypi.org/de-DE/projects/rpg/print).
 
-Hier findest du die [Lösung für dieses Projekt](http://rpf.io/p/de-DE/rpg-get){:target="_blank"}.
+Hier findest du die [Lösung für dieses Projekt](https://rpf.io/p/de-DE/rpg-get){:target="_blank"}.
 
 --- /collapse ---

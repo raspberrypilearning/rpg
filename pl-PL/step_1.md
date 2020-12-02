@@ -39,7 +39,7 @@ title: Czego będziesz potrzebować
 
 ### Pliki do pobrania
 
-Projekt początkowy można znaleźć [tutaj](http://rpf.io/p/pl-PL/rpg-go){:target="_blank"}.
+Projekt początkowy można znaleźć [tutaj](https://rpf.io/p/pl-PL/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -54,7 +54,7 @@ title: Czego się nauczysz
     + Słowniki.
 + Wyrażenia logiczne.
 
-Ten projekt obejmuje elementy z następujących wątków [Programu nauczania Raspberry Pi Digital Making](http://rpf.io/curriculum):
+Ten projekt obejmuje elementy z następujących wątków [Programu nauczania Raspberry Pi Digital Making](https://rpf.io/curriculum):
 
 + [Połącz konstrukcje programistyczne, aby rozwiązać problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -67,6 +67,6 @@ title: Dodatkowe informacje dla nauczycieli
 
 Jeśli chcesz wydrukować ten projekt, skorzystaj z [wersji do druku](https://projects.raspberrypi.org/pl-PL/projects/rpg/print).
 
-Możesz znaleźć [kompletną wersję projektu tutaj](http://rpf.io/p/pl-PL/rpg-get){:target="_blank"}.
+Możesz znaleźć [kompletną wersję projektu tutaj](https://rpf.io/p/pl-PL/rpg-get){:target="_blank"}.
 
 --- /collapse ---

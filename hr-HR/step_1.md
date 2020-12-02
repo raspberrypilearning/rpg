@@ -37,7 +37,7 @@ title: Trebat ćeš
 
 ### Preuzimanja
 
-Početni projekt možete pronaći [ovdje](http://rpf.io/p/hr-HR/rpg-go){:target="_blank"}.
+Početni projekt možete pronaći [ovdje](https://rpf.io/p/hr-HR/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -51,7 +51,7 @@ title: Naučit ćeš
     + Rječnici.
 + Boolean izrazi.
 
-Ovaj projekt obuhvaća elemente iz sljedećih dijelova [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) nastavnog plana i programa:
+Ovaj projekt obuhvaća elemente iz sljedećih dijelova [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum) nastavnog plana i programa:
 
 + [Koristi različite programske strukture za rješavanje problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -63,6 +63,6 @@ title: Dodatne informacije za edukatore
 ---
 Ako želite ispisati ovaj projekt, molimo Vas da koristite [verziju koja je prilagođena za ispis](https://projects.raspberrypi.org/hr-HR/projects/rpg/print).
 
-Dovršen projekt možete pronaći [ovdje](http://rpf.io/p/hr-HR/rpg-get){:target="_blank"}.
+Dovršen projekt možete pronaći [ovdje](https://rpf.io/p/hr-HR/rpg-get){:target="_blank"}.
 
 --- /collapse ---
