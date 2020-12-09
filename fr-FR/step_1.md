@@ -38,7 +38,7 @@ title: Ce que tu auras besoin
 
 ### Téléchargements
 
-Le projet de démarrage peut être trouvé [ici](http://rpf.io/p/fr-FR/rpg-go){:target="_blank"}.
+Le projet de démarrage peut être trouvé [ici](https://rpf.io/p/fr-FR/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -52,7 +52,7 @@ title: Ce que tu vas apprendre
     + Dictionnaires.
 + Expressions booléennes.
 
-Ce projet couvre les éléments suivants du [Programme Raspberry Pi de Créativité Numérique](http://rpf.io/curriculum) :
+Ce projet couvre les éléments suivants du [Programme Raspberry Pi de Créativité Numérique](https://rpf.io/curriculum) :
 
 + [Combine des constructions de programmation pour résoudre un problème.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@ title: Informations supplémentaires pour les éducateurs
 ---
 Si vous avez besoin d'imprimer ce projet, merci d'utiliser la [Version imprimable](https://projects.raspberrypi.org/fr-FR/projects/rpg/print).
 
-Vous pouvez [trouver la solution pour ce projet ici](http://rpf.io/p/fr-FR/rpg-get){:target="_blank"}.
+Vous pouvez [trouver la solution pour ce projet ici](https://rpf.io/p/fr-FR/rpg-get){:target="_blank"}.
 
 --- /collapse ---

@@ -39,7 +39,7 @@ title: ما ستحتاج إليه
 
 ### للتحميل
 
-برنامج البداية ستجدة [هنا ](http://rpf.io/p/ar-SA/rpg-go){:target="_blank"}.
+برنامج البداية ستجدة [هنا ](https://rpf.io/p/ar-SA/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -54,7 +54,7 @@ title: ما الذي ستتعلمه
     + القواميس.
 + التعبيرات المنطقية.
 
-يتناول هذا المشروع عناصر من الصفوف التالية من المناهج الرقمية الخاصة بـ [Raspberry Pi](http://rpf.io/curriculum):
+يتناول هذا المشروع عناصر من الصفوف التالية من المناهج الرقمية الخاصة بـ [Raspberry Pi](https://rpf.io/curriculum):
 
 + [دمج الإنشاءات البرمجية لحل مشكلة.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -67,6 +67,6 @@ title: معلومات إضافية للمعلمين
 
 إذا كنت بحاجة إلى طباعة هذا المشروع ، فيُرجى استخدام [النسخة القابلة للطباعة](https://projects.raspberrypi.org/ar-SA/projects/rpg/print).
 
-يمكنك [الحصول على المشروع كاملاً من هنا](http://rpf.io/p/ar-SA/rpg-get){:target="_blank"}.
+يمكنك [الحصول على المشروع كاملاً من هنا](https://rpf.io/p/ar-SA/rpg-get){:target="_blank"}.
 
 --- /collapse ---

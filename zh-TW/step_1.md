@@ -39,7 +39,7 @@ title: 你會用到
 
 ### 下載
 
-入門專案[由此下載](http://rpf.io/p/zh-TW/rpg-go){:target="_blank"}。
+入門專案[由此下載](https://rpf.io/p/zh-TW/rpg-go){:target="_blank"}。
 
 --- /collapse ---
 
@@ -54,7 +54,7 @@ title: 你會學到
     + 字典。
 + 布林運算式
 
-本專案涵蓋[Raspberry Pi 樹莓派數位課程](http://rpf.io/curriculum)的內容如下：
+本專案涵蓋[Raspberry Pi 樹莓派數位課程](https://rpf.io/curriculum)的內容如下：
 
 + [結合程式設計結構來解決問題。](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -67,6 +67,6 @@ title: 給教師的其它資訊
 
 如果你需要列印這個專案，可以先切換成[列印友好模式](https://projects.raspberrypi.org/zh-TW/projects/rpg/print)。
 
-你可以[在這裡找到專案解決方案](http://rpf.io/p/zh-TW/rpg-get){:target="_blank"}。
+你可以[在這裡找到專案解決方案](https://rpf.io/p/zh-TW/rpg-get){:target="_blank"}。
 
 --- /collapse ---

@@ -39,7 +39,7 @@ title: Lo que vas a necesitar
 
 ### Descargas
 
-Puedes encontrar el proyecto de inicio [aquí](http://rpf.io/p/es-LA/rpg-go){:target="_blank"}.
+Puedes encontrar el proyecto de inicio [aquí](https://rpf.io/p/es-LA/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -54,7 +54,7 @@ title: Lo que vas a aprender
     + Diccionarios.
 + Expresiones booleanas.
 
-Este proyecto incluye elementos de los siguientes aspectos del [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+Este proyecto incluye elementos de los siguientes aspectos del [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [Combina estructuras de programación para resolver un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -67,6 +67,6 @@ title: Información adicional para educadores
 
 Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/es-LA/projects/rpg/print).
 
-Puedes [encontrar la solución para este proyecto aquí](http://rpf.io/p/es-LA/rpg-get){:target="_blank"}.
+Puedes [encontrar la solución para este proyecto aquí](https://rpf.io/p/es-LA/rpg-get){:target="_blank"}.
 
 --- /collapse ---

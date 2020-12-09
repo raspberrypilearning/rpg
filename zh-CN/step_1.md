@@ -39,7 +39,7 @@ title: 你需要准备什么
 
 ### 下载
 
-初始项目在[这里](http://rpf.io/p/zh-CN/rpg-go){:target="_blank"}.
+初始项目在[这里](https://rpf.io/p/zh-CN/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -54,7 +54,7 @@ title: 你将学到什么
     + 字典
 + 布尔表达式。
 
-本项目涵盖[树莓派数字制作课程](http://rpf.io/curriculum)如下几方面内容：
+本项目涵盖[树莓派数字制作课程](https://rpf.io/curriculum)如下几方面内容：
 
 + [综合利用编程结构解决问题。](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -67,6 +67,6 @@ title: 教师附加信息
 
 如果您需要打印此项目，请使用[适合打印版本](https://projects.raspberrypi.org/zh-CN/projects/rpg/print) 。
 
-你可以 [在这里找到已完成的项目](http://rpf.io/p/zh-CN/rpg-get){:target="_blank"}
+你可以 [在这里找到已完成的项目](https://rpf.io/p/zh-CN/rpg-get){:target="_blank"}
 
 --- /collapse ---

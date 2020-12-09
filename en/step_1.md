@@ -39,7 +39,7 @@ title: What you will need
 
 ### Downloads
 
-The starter project can be found [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 --- /collapse ---
 
@@ -54,7 +54,7 @@ title: What you will learn
 	+ Dictionaries.
 + Boolean expressions.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -67,6 +67,6 @@ title: Additional information for educators
 
 If you need to print this project, please use the [Printer friendly version](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 --- /collapse ---
