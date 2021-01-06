@@ -90,7 +90,7 @@ if habitacionActual == 'Jardín' and 'llave' in inventario and 'poción' in inve
 
 --- /code ---
 
-Asegúrate de que el código tiene sangría, al estar en línea con el código anterior. Este código significa que el mensaje `Te escapaste de la casa... ¡GANASTE!` si el jugador está en la habitación 4 (el jardín) y si la llave y la poción están en su inventario.
+Asegúrate de que el código tiene sangría, al estar en línea con el código anterior. Este código quiere decir que el mensaje `Te escapaste de la casa... ¡GANASTE!` es mostrado si el jugador está en la habitación 4 (el jardín) y si la llave y la poción están en su inventario.
 
 Si tienes más de 4 habitaciones, puedes utilizar un número diferente para tu jardín en el código anterior.
 
