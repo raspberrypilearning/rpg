@@ -38,7 +38,7 @@ Digita `prendi` per raccogliere tutti gli elementi che vedi (esempio `prendi chi
 
 ### Downloads
 
-Il progetto iniziale può essere trovato [ qui ](http://rpf.io/p/en/rpg-go) {:target="_blank"}.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@ Il progetto iniziale può essere trovato [ qui ](http://rpf.io/p/en/rpg-go) {:ta
     + Dizionari.
 + Espressioni booleane.
 
-Questo progetto riguarda elementi trattati in queste sezioni del [Digital Making Curriculum di Raspberry Pi](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [Combinare i costrutti base di un linguaggio di programmazione per risolvere un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@ Questo progetto riguarda elementi trattati in queste sezioni del [Digital Making
 
 Se intendete stampare questo progetto, cliccate su [Versione stampabile](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Potete trovare qui la [soluzione per questo progetto](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
