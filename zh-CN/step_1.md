@@ -38,7 +38,7 @@
 
 ### 下载
 
-初始项目在[这里](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@
     + 字典
 + 布尔表达式。
 
-本项目涵盖[树莓派数字制作课程](http://rpf.io/curriculum)如下几方面内容：
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [综合利用编程结构解决问题。](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@
 
 如果您需要打印此项目，请使用[适合打印版本](https://projects.raspberrypi.org/en/projects/rpg/print) 。
 
-你可以 [在这里找到已完成的项目](http://rpf.io/p/en/rpg-get){:target="_blank"}
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
