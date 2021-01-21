@@ -38,7 +38,7 @@
 
 ### डाउनलोड
 
-स्टार्टर प्रोजेक्ट [यहाँ पाया जा सकता है](http://rpf.io/p/en/rpg-go){:target="_blank"}|
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@
     + शब्दकोश
 + बूलियन एक्सप्रेशन
 
-इस प्रोजेक्ट में [Raspberry Pi डिजिटल निर्माण पाठ्यक्रम](http://rpf.io/curriculum) के निम्नलिखित पहलुओं के तत्व सम्मिलित हैं:
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [समस्या को हल करने के लिए प्रोग्रामिंग संरचनाओं को जोड़े।](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@
 
 यदि आप इस प्रोजेक्ट को प्रिंट करना चाहते हैं, तो कृपया [प्रिंटर अनुकूल संस्करण](https://projects.raspberrypi.org/en/projects/rpg/print) का उपयोग करें।
 
-आप [इस प्रोजेक्ट के लिए समाधान यहाँ खोज सकते हैं](http://rpf.io/p/en/rpg-get){:target="_blank"}।
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
