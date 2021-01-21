@@ -38,7 +38,7 @@ Wpisz `bierz` i nazwę przedmiotu, który widzisz (np. `bierz klucz`).
 
 ### Pliki do pobrania
 
-Projekt początkowy można znaleźć [tutaj](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@ Projekt początkowy można znaleźć [tutaj](http://rpf.io/p/en/rpg-go){:target=
     + Słowniki.
 + Wyrażenia logiczne.
 
-Ten projekt obejmuje elementy z następujących wątków [Programu nauczania Raspberry Pi Digital Making](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [Połącz konstrukcje programistyczne, aby rozwiązać problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@ Ten projekt obejmuje elementy z następujących wątków [Programu nauczania Ras
 
 Jeśli chcesz wydrukować ten projekt, skorzystaj z [wersji do druku](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Możesz znaleźć [kompletną wersję projektu tutaj](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
