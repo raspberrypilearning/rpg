@@ -38,7 +38,7 @@ Gördüğünüz eşyaları toplamak için `al` yazın. (ör: `al anahtar`).
 
 ### İndirilenler
 
-Başlangıç projesini [burada](http://rpf.io/p/en/rpg-go){:target="_blank"} bulabilirsiniz.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@ Başlangıç projesini [burada](http://rpf.io/p/en/rpg-go){:target="_blank"} bul
     + Sözlükler.
 + Boolean ifadeleri.
 
-Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un aşağıdaki bölümlerinden unsurları kapsamaktadır:
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [Bir problemi çözmek için programlama yapılarını birleştirme.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@ Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un
 
 Bu projeyi yazdırmanız gerekiyorsa, lütfen [Yazıcı dostu sürüm](https://projects.raspberrypi.org/en/projects/rpg/print)ü kullanın.
 
-[Bu proje için çözümlere şuradan{:target="_blank"} ulaşabilirsiniz.](http://rpf.io/p/en/rpg-get).
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
