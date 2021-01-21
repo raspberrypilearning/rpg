@@ -38,7 +38,7 @@ Escreve `apanha` para apanhar qualquer item que estejas a ver (e.g. `apanha chav
 
 ### Downloads
 
-O projeto inicial pode ser encontrado [aqui](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@ O projeto inicial pode ser encontrado [aqui](http://rpf.io/p/en/rpg-go){:target=
     + Dicionários.
 + Expressões booleanas.
 
-Este projeto abrange elementos das seguintes áreas do [ Currículo Raspberry Pi Digital Making ](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [Combinar construções de programação para resolver um problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@ Este projeto abrange elementos das seguintes áreas do [ Currículo Raspberry Pi
 
 Se precisar imprimir este projeto, por favor, use a [versão para impressão](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Pode encontrar o [projeto concluído aqui](http://rpf.io/p/en/rpg-get){:target="_ blank"}.
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
