@@ -38,7 +38,7 @@
 
 ### 다운로드
 
-스타터 프로젝트는 [여기](http://rpf.io/p/en/rpg-go){:target="_blank"}를 클릭하면 열 수 있습니다.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@
     + 딕셔너리.
 + 부울 식.
 
-이 프로젝트는 [라즈베리파이 디지털 메이킹 커리큘럼](http://rpf.io/curriculum) 중 아래의 과정에 있는 요소들을 다룹니다.
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [프로그래밍 구조를 결합하여 문제 해결하기](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@
 
 이 프로젝트를 인쇄하려면 [프린트용 문서](https://projects.raspberrypi.org/en/projects/rpg/print)를 사용하십시오.
 
-프로젝트의 완성본은 [여기](http://rpf.io/p/en/rpg-get){:target="_blank"}를 클릭하면 됩니다.
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
