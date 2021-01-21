@@ -38,7 +38,7 @@
 
 ### ಡೌನ್‌ಲೋಡ್‌ಗಳು
 
-ಸ್ಟಾರ್ಟರ್ ಯೋಜನೆಯನ್ನು ಇಲ್ಲಿ ಕಾಣಬಹುದು [here](http://rpf.io/p/en/rpg-go) {:target="_blank"}.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@
     + ನಿಘಂಟುಗಳು.
 + ಬೂಲಿಯನ್ ಅಭಿವ್ಯಕ್ತಿಗಳು.
 
-ಈ ಯೋಜನೆಯು ಕೆಳಗಿನ [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) ಎಳೆಗಳಿಂದ ಅಂಶಗಳನ್ನು ಒಳಗೊಂಡಿದೆ:
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [ಸಮಸ್ಯೆಯನ್ನು ಪರಿಹರಿಸಲು ಪ್ರೋಗ್ರಾಮಿಂಗ್ ರಚನೆಗಳನ್ನು ಸಂಯೋಜಿಸಿ.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@
 
 ನೀವು ಈ ಯೋಜನೆಯನ್ನು ಮುದ್ರಿಸಬೇಕಾದರೆ, ದಯವಿಟ್ಟು [ಮುದ್ರಕ-ಸ್ನೇಹಿ ಆವೃತ್ತಿಯನ್ನು ಬಳಸಿ](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-ನೀವು ಯೋಜನೆಯ ಪರಿಹಾರವನ್ನು ಇಲ್ಲಿ ಪಡೆಯ ಬಹುದು [find the solution for this project here](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
