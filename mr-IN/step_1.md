@@ -38,7 +38,7 @@
 
 ### डाउनलोड्स
 
-प्रारंभिक प्रकल्प येथे मिळू शकतो [here](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@
     + शब्दकोष.
 + बुलियन एक्स्प्रेशन.
 
-या प्रकल्पात [​​Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) चे खालील घटक समाविष्ट आहेत:
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [समस्या सोडवण्यासाठी प्रोग्रामिंग कंस्ट्रक्ट एकत्र करा.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@
 
 तुम्हाला हा प्रकल्प प्रिंट करण्याची आवश्यकता असल्यास, कृपया [प्रिंट अनुकूल आवृत्ती](https://projects.raspberrypi.org/en/projects/rpg/print) वापरा.
 
-तुम्हाला [येथे प्रकल्पाचे उत्तर मिळतील](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
