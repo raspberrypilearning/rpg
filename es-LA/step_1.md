@@ -38,7 +38,7 @@ Escribe `coger` para coger los objetos que ves (por ejemplo `coger la llave`).
 
 ### Descargas
 
-Puedes encontrar el proyecto de inicio [aquí](http://rpf.io/p/en/rpg-go){:target="_blank"}.
+The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@ Puedes encontrar el proyecto de inicio [aquí](http://rpf.io/p/en/rpg-go){:targe
     + Diccionarios.
 + Expresiones booleanas.
 
-Este proyecto incluye elementos de los siguientes aspectos del [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
+This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
 
 + [Combina estructuras de programación para resolver un problema.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@ Este proyecto incluye elementos de los siguientes aspectos del [Raspberry Pi Dig
 
 Si necesitas imprimir este proyecto, usa la [versión para imprimir](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-Puedes [encontrar la solución para este proyecto aquí](http://rpf.io/p/en/rpg-get){:target="_blank"}.
+You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
