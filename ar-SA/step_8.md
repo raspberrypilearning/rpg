@@ -86,7 +86,6 @@ if 'عنصر' in rooms[currentRoom] and 'وحش' in rooms[currentRoom]['عنصر
     print('الوحش قضي عليك... إنتهت اللعبة!')
     break
 
-
 # يربح اللاعب إذا وصل إلى الحديقة مع المفتاح وجرعة
 if currentRoom == 'الحديقة' and 'مفتاح' in inventory and 'جرعة' in inventory:
     print('لقد تمكنت من الهروب من المنزل... لقد ربحت!')
