@@ -11,7 +11,7 @@
 أدخل `خذ` لتأخذ أي غرض تراه (مثلاً `خذ المفتاح`).
 
 <div class="trinket">
-  <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
+  <iframe src="https://trinket.io/embed/python/8cf3d320d9?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
   </iframe>
   <img src="images/rpg-finished.png">
 </div>
@@ -38,7 +38,7 @@
 
 ### للتحميل
 
-The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_blank"}.
+برنامج البداية ستجدة [هنا ](https://rpf.io/p/ar-SA/rpg-go){:target="_blank"}.
 
 \--- /collapse \---
 
@@ -52,7 +52,7 @@ The starter project can be found [here](https://rpf.io/p/en/rpg-go){:target="_bl
     + القواميس.
 + التعبيرات المنطقية.
 
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
+يتناول هذا المشروع عناصر من الصفوف التالية من المناهج الرقمية الخاصة بـ [Raspberry Pi](https://rpf.io/curriculum):
 
 + [دمج الإنشاءات البرمجية لحل مشكلة.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -64,6 +64,6 @@ This project covers elements from the following strands of the [Raspberry Pi Dig
 
 إذا احتجت طباعة هذا المشروع ، فيُرجى استخدام [النسخة القابلة للطباعة](https://projects.raspberrypi.org/en/projects/rpg/print).
 
-You can [find the solution for this project here](https://rpf.io/p/en/rpg-get){:target="_blank"}.
+يمكنك [الحصول على المشروع كاملاً من هنا](https://rpf.io/p/ar-SA/rpg-get){:target="_blank"}.
 
 \--- /collapse \---
