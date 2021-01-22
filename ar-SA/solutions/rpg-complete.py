@@ -16,7 +16,7 @@ Commands:
   get [item]
 ''')
 
-def showStatus():
+showStatus():
   # اطبع حالة اللاعب الحالية
   print('---------------------------')
   print(name + ' موجود في ' + currentRoom)
