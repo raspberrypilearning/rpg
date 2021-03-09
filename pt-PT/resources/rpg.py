@@ -62,9 +62,9 @@ while True:
   #se digitarem 'vai' primeiro
   if jogada[0] == 'vai':
     #verifica que o jogador pode ir na direção que está a pedir
-    se jogada[1] in divisoes[divAtual]:
+    if jogada[1] in divisoes[divAtual]:
       #altera a divisão actual para a nova divisāo
-      divAtual = divisoes[divActua][jogada[1]]
+      divAtual = divisoes[divAtual][jogada[1]]
     #nāo há porta (ligaçāo) para a nova divisão
     else:
         print('Nāo podes ir nessa direçāo!')
