@@ -17,16 +17,18 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: 'परिचय'
-  - title: नए कमरे जोड़ना
-  - title: 'चुनौती: नए कमरे जोड़ें'
-    challenge: true
-  - title: एकत्र करने के लिए आइटम्स जोड़ना
-  - title: 'चुनौती: नए आइटम्स जोड़ें'
-    challenge: true
-  - title: दुश्मन जोड़ना
-  - title: 'चुनौती: और दैत्य जोड़ना'
-    challenge: true
-  - title: गेम जीतना
-  - title: 'चुनौती: अपनी स्वयं की गेम बनाएँ'
-    challenge: true
+- title: परिचय
+  completion: engaged
+- title: नए कमरे जोड़ना
+- title: 'चुनौती: नए कमरे जोड़ें'
+  challenge: true
+- title: एकत्र करने के लिए आइटम्स जोड़ना
+- title: 'चुनौती: नए आइटम्स जोड़ें'
+  challenge: true
+- title: दुश्मन जोड़ना
+- title: 'चुनौती: और दैत्य जोड़ना'
+  challenge: true
+  completion: internal
+- title: गेम जीतना
+- title: 'चुनौती: अपनी स्वयं की गेम बनाएँ'
+  challenge: true

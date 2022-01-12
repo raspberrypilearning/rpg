@@ -17,16 +17,18 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: 'Wprowadzenie'
-  - title: Dodawanie nowych pokoi
-  - title: 'Wyzwanie: dodaj nowe pokoje'
-    challenge: true
-  - title: Dodawanie przedmiotów do zebrania
-  - title: 'Wyzwanie: dodaj nowe przedmioty'
-    challenge: true
-  - title: Dodawanie wrogów
-  - title: 'Wyzwanie: dodawanie kolejnych potworów'
-    challenge: true
-  - title: Wygranie gry
-  - title: 'Wyzwanie: stwórz własną grę'
-    challenge: true
+- title: Wprowadzenie
+  completion: engaged
+- title: Dodawanie nowych pokoi
+- title: 'Wyzwanie: dodaj nowe pokoje'
+  challenge: true
+- title: Dodawanie przedmiotów do zebrania
+- title: 'Wyzwanie: dodaj nowe przedmioty'
+  challenge: true
+- title: Dodawanie wrogów
+- title: 'Wyzwanie: dodawanie kolejnych potworów'
+  challenge: true
+  completion: internal
+- title: Wygranie gry
+- title: 'Wyzwanie: stwórz własną grę'
+  challenge: true

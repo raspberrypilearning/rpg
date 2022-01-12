@@ -17,16 +17,18 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: 'Introducción'
-  - title: Añadir nuevas habitaciones
-  - title: 'Desafío: Añadir más habitaciones'
-    challenge: true
-  - title: Agregar objetos para recoger
-  - title: 'Desafío: Añadir nuevos objetos'
-    challenge: true
-  - title: Añadir enemigos
-  - title: 'Desafío: Añadir más monstruos'
-    challenge: true
-  - title: Ganar el juego
-  - title: 'Desafío: Crea tu propio juego'
-    challenge: true
+- title: Introducción
+  completion: engaged
+- title: Añadir nuevas habitaciones
+- title: 'Desafío: Añadir más habitaciones'
+  challenge: true
+- title: Agregar objetos para recoger
+- title: 'Desafío: Añadir nuevos objetos'
+  challenge: true
+- title: Añadir enemigos
+- title: 'Desafío: Añadir más monstruos'
+  challenge: true
+  completion: internal
+- title: Ganar el juego
+- title: 'Desafío: Crea tu propio juego'
+  challenge: true

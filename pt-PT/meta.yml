@@ -17,16 +17,18 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: 'Introdução'
-  - title: Adicionar novas divisões
-  - title: 'Desafio: adicionar novas divisões'
-    challenge: true
-  - title: Adicionar itens para apanhar
-  - title: 'Desafio: adicionar novos itens'
-    challenge: true
-  - title: Adicionar inimigos
-  - title: 'Desafio: adicionar mais monstros'
-    challenge: true
-  - title: Ganhar o jogo
-  - title: 'Desafio: desenvolve o teu próprio jogo'
-    challenge: true
+- title: Introdução
+  completion: engaged
+- title: Adicionar novas divisões
+- title: 'Desafio: adicionar novas divisões'
+  challenge: true
+- title: Adicionar itens para apanhar
+- title: 'Desafio: adicionar novos itens'
+  challenge: true
+- title: Adicionar inimigos
+- title: 'Desafio: adicionar mais monstros'
+  challenge: true
+  completion: internal
+- title: Ganhar o jogo
+- title: 'Desafio: desenvolve o teu próprio jogo'
+  challenge: true

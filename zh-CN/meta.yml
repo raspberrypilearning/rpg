@@ -17,16 +17,18 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: '介绍'
-  - title: 添加新的房间
-  - title: '挑战：添加新房间'
-    challenge: true
-  - title: 添加可收集的物品
-  - title: '挑战：添加新的物品'
-    challenge: true
-  - title: 添加敌人
-  - title: '挑战：添加更多怪物'
-    challenge: true
-  - title: 赢得游戏
-  - title: '挑战：开发你自己的游戏'
-    challenge: true
+- title: 介绍
+  completion: engaged
+- title: 添加新的房间
+- title: 挑战：添加新房间
+  challenge: true
+- title: 添加可收集的物品
+- title: 挑战：添加新的物品
+  challenge: true
+- title: 添加敌人
+- title: 挑战：添加更多怪物
+  challenge: true
+  completion: internal
+- title: 赢得游戏
+- title: 挑战：开发你自己的游戏
+  challenge: true
