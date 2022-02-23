@@ -6,7 +6,7 @@
 
 **Online:** άνοιξε το αρχικό έργο στο [trinket.io/python/b7db521b11](https://trinket.io/python/b7db521b11){:target="_blank"}.
 
-**Offline**: άνοιξε το [αρχικό έργο](http://rpf.io/p/el-GR/rpg-go){:target="_blank"} στον επεξεργαστή εκτός σύνδεσης.
+**Offline**: άνοιξε το [αρχικό έργο](https://rpf.io/p/el-GR/rpg-go){:target="_blank"} στον επεξεργαστή εκτός σύνδεσης.
 
 --- /task ---
 

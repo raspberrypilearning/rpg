@@ -6,7 +6,7 @@
 
 **متصل بالانترنت**: افتح مشروع البدء من هنا [trinket.io/python/7e01738c21](https://trinket.io/python/7e01738c21){:target="_blank"}.
 
-**دون اتصال بالانترنت**: افتح [مشروع البدء](http://rpf.io/p/ar-SA/rpg-go){:target="_blank"} عبر المحرر الموجود على جهازك.
+**دون اتصال بالانترنت**: افتح [مشروع البدء](https://rpf.io/p/ar-SA/rpg-go){:target="_blank"} عبر المحرر الموجود على جهازك.
 
 --- /task ---
 

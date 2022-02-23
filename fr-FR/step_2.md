@@ -6,7 +6,7 @@ Ouvre le projet de démarrage Python.
 
 **En ligne**: ouvre le projet de démarrage à [trinket.io/python/0a0b684a31](https://trinket.io/python/0a0b684a31){:target="_blank"}.
 
-**Hors ligne**: ouvre le [projet de démarrage](http://rpf.io/p/fr-FR/rpg-go){:target="_blank"} dans l'éditeur hors ligne.
+**Hors ligne**: ouvre le [projet de démarrage](https://rpf.io/p/fr-FR/rpg-go){:target="_blank"} dans l'éditeur hors ligne.
 
 --- /task ---
 

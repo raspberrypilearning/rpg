@@ -6,7 +6,7 @@ Python başlangıç projesini açın.
 
 **Çevrimiçi**: başlangıç projesini [trinket.io/python/dcf6dace3e](https://trinket.io/python/dcf6dace3e){:target="_blank"} linkinden açın.
 
-**Çevrimdışı**: [başlangıç projesini](http://rpf.io/p/tr-TR/rpg-go){:target="_blank"} Çevrimdışı düzenleyicide açın.
+**Çevrimdışı**: [başlangıç projesini](https://rpf.io/p/tr-TR/rpg-go){:target="_blank"} Çevrimdışı düzenleyicide açın.
 
 --- /task ---
 

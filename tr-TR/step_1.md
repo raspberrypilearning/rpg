@@ -39,7 +39,7 @@ title: Nelere ihtiyacınız var
 
 ### İndirilenler
 
-Başlangıç projesini [burada](http://rpf.io/p/tr-TR/rpg-go){:target="_blank"} bulabilirsiniz.
+Başlangıç projesini [burada](https://rpf.io/p/tr-TR/rpg-go){:target="_blank"} bulabilirsiniz.
 
 --- /collapse ---
 
@@ -54,7 +54,7 @@ title: Ne öğreneceksiniz
     + Sözlükler.
 + Boolean ifadeleri.
 
-Bu proje, [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum) 'un aşağıdaki bölümlerinden unsurları kapsamaktadır:
+Bu proje, [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum) 'un aşağıdaki bölümlerinden unsurları kapsamaktadır:
 
 + [Bir problemi çözmek için programlama yapılarını birleştirme.](https://www.raspberrypi.org/curriculum/programming/builder)
 
@@ -67,6 +67,6 @@ title: Eğitimciler için ek bilgiler
 
 Bu projeyi yazdırmanız gerekiyorsa, lütfen [Yazıcı dostu sürüm](https://projects.raspberrypi.org/tr-TR/projects/rpg/print)ü kullanın.
 
-[Bu proje için çözümlere şuradan ulaşabilirsiniz.](http://rpf.io/p/tr-TR/rpg-get).
+[Bu proje için çözümlere şuradan ulaşabilirsiniz.](https://rpf.io/p/tr-TR/rpg-get).
 
 --- /collapse ---

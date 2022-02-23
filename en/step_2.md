@@ -4,9 +4,9 @@
 
 Open the Python starter project.
 
-**Online**: open the starter project at [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**Online**: open the starter project at [rpf.io/rpgon](https://rpf.io/rpgon){:target="_blank"}.
 
-**Offline**: open the [starter project](http://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+**Offline**: open the [starter project](https://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
 
 --- /task ---
 

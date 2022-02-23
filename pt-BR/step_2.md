@@ -6,7 +6,7 @@ Abre o projeto inicial em Python.
 
 **Online**: Abra o projeto inicial em [trinket.io/python/9c7f41cf75](https://trinket.io/python/9c7f41cf75){:target="_blank"}.
 
-**Off-line**: Abra o [projeto inicial](http://rpf.io/p/pt-BR/rpg-go){:target="_blank"} no editor offline.
+**Off-line**: Abra o [projeto inicial](https://rpf.io/p/pt-BR/rpg-go){:target="_blank"} no editor offline.
 
 --- /task ---
 
