@@ -4,7 +4,7 @@
 
 **Online:** otvori početni projekt s [https://trinket.io/python/24b61dcd85](https://trinket.io/python/24b61dcd85){:target="_blank"}.
 
-**Offline**: open the [početni projekt](http://rpf.io/p/hr-HR/rpg-go){:target="_blank"} u offline editoru. --- /task ---
+**Offline**: open the [početni projekt](https://rpf.io/p/hr-HR/rpg-go){:target="_blank"} u offline editoru. --- /task ---
 
 --- task --- Ovo je vrlo jednostavna RPG igra koja se sastoji od samo dvije prostorije. Ispod se nalazi nacrt igre:
 

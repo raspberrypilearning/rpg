@@ -4,9 +4,9 @@
 
 Python स्टार्टर प्रोजेक्ट खोलें।
 
-**ऑनलाइन**: स्टार्टर प्रोजेक्ट को [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"} पर खोलें।
+**ऑनलाइन**: स्टार्टर प्रोजेक्ट को [rpf.io/rpgon](https://rpf.io/rpgon){:target="_blank"} पर खोलें।
 
-**ऑफलाइन**:[ स्टार्टर प्रोजेक्ट](http://rpf.io/p/hi-IN/rpg-go){:target="_blank"} को ऑफलाइन एडिटर में खोलिये।
+**ऑफलाइन**:[ स्टार्टर प्रोजेक्ट](https://rpf.io/p/hi-IN/rpg-go){:target="_blank"} को ऑफलाइन एडिटर में खोलिये।
 
 --- /task ---
 

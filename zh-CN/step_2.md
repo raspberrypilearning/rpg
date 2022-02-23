@@ -6,7 +6,7 @@
 
 **在线：** 在 [trinket.io/python/df2fab53e8](https://trinket.io/python/df2fab53e8){:target="_blank"}打开初始项目。
 
-在离线编辑器中**离线**: 打开 [初始项目](http://rpf.io/p/zh-CN/rpg-go){:target="_blank"}.
+在离线编辑器中**离线**: 打开 [初始项目](https://rpf.io/p/zh-CN/rpg-go){:target="_blank"}.
 
 --- /task ---
 

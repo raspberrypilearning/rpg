@@ -6,7 +6,7 @@
 
 **Online**: Öffne das Basisprojekt: [trinket.io/python/cb40c456c0](https://trinket.io/python/cb40c456c0){:target="_blank"}.
 
-**Offline**: Öffne das [Basisprojekt](http://rpf.io/p/de-DE/rpg-go){:target="_blank"} im Offline-Editor.
+**Offline**: Öffne das [Basisprojekt](https://rpf.io/p/de-DE/rpg-go){:target="_blank"} im Offline-Editor.
 
 --- /task ---
 

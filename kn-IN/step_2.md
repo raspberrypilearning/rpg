@@ -4,9 +4,9 @@
 
 ಪೈಥಾನ್ ಸ್ಟಾರ್ಟರ್ ಯೋಜನೆಯನ್ನು ತೆರೆಯಿರಿ.
 
-**Online**: ಸ್ಟಾರ್ಟರ್ ಯೋಜನೆಯನ್ನು [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"} ನಲ್ಲಿ ತೆರೆಯಿರಿ.
+**Online**: ಸ್ಟಾರ್ಟರ್ ಯೋಜನೆಯನ್ನು [rpf.io/rpgon](https://rpf.io/rpgon){:target="_blank"} ನಲ್ಲಿ ತೆರೆಯಿರಿ.
 
-**Offline**: ಸ್ಟಾರ್ಟರ್ ಯೋಜನೆಯನ್ನು[starter project](http://rpf.io/p/kn-IN/rpg-go) {:target="_blank"} ಆಫ್‌ಲೈನ್ ಸಂಪಾದಕದಲ್ಲಿ ತೆರೆಯಿರಿ.
+**Offline**: ಸ್ಟಾರ್ಟರ್ ಯೋಜನೆಯನ್ನು[starter project](https://rpf.io/p/kn-IN/rpg-go) {:target="_blank"} ಆಫ್‌ಲೈನ್ ಸಂಪಾದಕದಲ್ಲಿ ತೆರೆಯಿರಿ.
 
 --- /task ---
 

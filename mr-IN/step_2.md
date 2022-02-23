@@ -4,9 +4,9 @@
 
 Python प्रारंभिक प्रकल्प उघडा.
 
-**Online:** इथे प्रारंभिक प्रकल्प उघडा [rpf.io/rpgon](http://rpf.io/rpgon){:target="_blank"}.
+**Online:** इथे प्रारंभिक प्रकल्प उघडा [rpf.io/rpgon](https://rpf.io/rpgon){:target="_blank"}.
 
-**Offline**: [प्रारंभिक प्रकल्प](http://rpf.io/p/mr-IN/rpg-go){:target="_blank"} ऑफलाइन संपादकात उघडा.
+**Offline**: [प्रारंभिक प्रकल्प](https://rpf.io/p/mr-IN/rpg-go){:target="_blank"} ऑफलाइन संपादकात उघडा.
 
 --- /task ---
 

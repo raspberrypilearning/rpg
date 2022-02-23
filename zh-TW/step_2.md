@@ -6,7 +6,7 @@
 
 **線上版**：通過[trinket.io/python/5ebc1065a3](https://trinket.io/python/5ebc1065a3){:target="_blank"}打開入門專案。
 
-**離線版**：在離線編輯器裡開啟[入門專案](http://rpf.io/p/zh-TW/rpg-go){:target="_blank"}。
+**離線版**：在離線編輯器裡開啟[入門專案](https://rpf.io/p/zh-TW/rpg-go){:target="_blank"}。
 
 --- /task ---
 
