@@ -6,7 +6,7 @@ listed: true
 ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
-title: (لعبة تقمُّص الأدوار Role-Play Game)
+title: "(لعبة تقمُّص الأدوار Role-Play Game)"
 description: صمم وبرمج لعبة متاهة الـ RPG الخاصة بك.
 original_url: https://codeclubprojects.org/en-GB/python/rpg
 interests: games
@@ -17,16 +17,20 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: 'المقدمة'
-  - title: إضافة غرف جديدة
-  - title: 'التحدي: أضف غرف جديدة'
-    challenge: true
-  - title: إضافة عناصر لجمعها
-  - title: 'التحدي: أضف عناصر جديدة'
-    challenge: true
-  - title: إضافة أعداء
-  - title: 'التحدي: إضافة المزيد من الوحوش'
-    challenge: true
-  - title: الفوز في اللعبة
-  - title: 'التحدي: طوِّر لعبتك الخاصة'
-    challenge: true
+- title: المقدمة
+- title: إضافة غرف جديدة
+- title: 'التحدي: أضف غرف جديدة'
+  challenge: true
+- title: إضافة عناصر لجمعها
+  completion:
+  - engaged
+- title: 'التحدي: أضف عناصر جديدة'
+  challenge: true
+- title: إضافة أعداء
+- title: 'التحدي: إضافة المزيد من الوحوش'
+  challenge: true
+- title: الفوز في اللعبة
+  completion:
+  - internal
+- title: 'التحدي: طوِّر لعبتك الخاصة'
+  challenge: true

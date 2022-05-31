@@ -1,3 +1,4 @@
+---
 hero_image: images/rpg.png
 theme: navy
 duration: 2
@@ -16,16 +17,20 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-- title: 'Introduction'
+- title: Introduction
 - title: Adding new rooms
 - title: 'Challenge: Add new rooms'
   challenge: true
 - title: Adding items to collect
+  completion:
+  - engaged
 - title: 'Challenge: Add new items'
   challenge: true
 - title: Adding enemies
 - title: 'Challenge: Adding more monsters'
   challenge: true
 - title: Winning the game
+  completion:
+  - internal
 - title: 'Challenge: Develop your own game'
   challenge: true

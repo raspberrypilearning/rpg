@@ -15,18 +15,24 @@ site_areas: projects
 hardware: ''
 software: python
 version: 3
-last_tested: "2017-01-01\n"
+last_tested: '2017-01-01
+
+  '
 steps:
-  - title: 'Giriş'
-  - title: Yeni oda ekleme
-  - title: 'Meydan okuma: Yeni odalar ekle'
-    challenge: true
-  - title: Toplamak için eşyalar ekleme
-  - title: 'Meydan okuma: Yeni eşyalar ekle'
-    challenge: true
-  - title: Düşman ekleme
-  - title: 'Meydan okuma: Daha fazla canavar ekle'
-    challenge: true
-  - title: Oyunu kazanma
-  - title: 'Meydan Okuma: Kendi oyununu geliştir'
-    challenge: true
+- title: Giriş
+- title: Yeni oda ekleme
+- title: 'Meydan okuma: Yeni odalar ekle'
+  challenge: true
+- title: Toplamak için eşyalar ekleme
+  completion:
+  - engaged
+- title: 'Meydan okuma: Yeni eşyalar ekle'
+  challenge: true
+- title: Düşman ekleme
+- title: 'Meydan okuma: Daha fazla canavar ekle'
+  challenge: true
+- title: Oyunu kazanma
+  completion:
+  - internal
+- title: 'Meydan Okuma: Kendi oyununu geliştir'
+  challenge: true

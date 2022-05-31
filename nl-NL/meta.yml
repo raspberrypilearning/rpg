@@ -17,12 +17,16 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: 'Inleiding'
-  - title: Voeg nieuwe kamers toe
-  - title: 'Uitdaging: voeg meer kamers toe'
-  - title: Voorwerpen toevoegen om te verzamelen
-  - title: 'Uitdaging: voeg nieuwe voorwerpen toe'
-  - title: Vijanden toevoegen
-  - title: 'Uitdaging: meer monsters toevoegen'
-  - title: Het spel winnen
-  - title: 'Uitdaging: ontwikkel je eigen spel'
+- title: Inleiding
+- title: Voeg nieuwe kamers toe
+- title: 'Uitdaging: voeg meer kamers toe'
+- title: Voorwerpen toevoegen om te verzamelen
+  completion:
+  - engaged
+- title: 'Uitdaging: voeg nieuwe voorwerpen toe'
+- title: Vijanden toevoegen
+- title: 'Uitdaging: meer monsters toevoegen'
+- title: Het spel winnen
+  completion:
+  - internal
+- title: 'Uitdaging: ontwikkel je eigen spel'

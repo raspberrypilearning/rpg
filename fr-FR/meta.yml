@@ -17,16 +17,20 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: 'Introduction'
-  - title: Ajouter de nouvelles pièces
-  - title: 'Défi : Ajoute de nouvelles pièces'
-    challenge: true
-  - title: Ajoute des objets à collecter
-  - title: 'Défi : Ajoute de nouveaux objets'
-    challenge: true
-  - title: Ajoute des adversaires
-  - title: 'Défi : Ajoute plus de monstres'
-    challenge: true
-  - title: Pour gagner le jeu
-  - title: 'Défi : Développe ton propre jeu'
-    challenge: true
+- title: Introduction
+- title: Ajouter de nouvelles pièces
+- title: 'Défi : Ajoute de nouvelles pièces'
+  challenge: true
+- title: Ajoute des objets à collecter
+  completion:
+  - engaged
+- title: 'Défi : Ajoute de nouveaux objets'
+  challenge: true
+- title: Ajoute des adversaires
+- title: 'Défi : Ajoute plus de monstres'
+  challenge: true
+- title: Pour gagner le jeu
+  completion:
+  - internal
+- title: 'Défi : Développe ton propre jeu'
+  challenge: true

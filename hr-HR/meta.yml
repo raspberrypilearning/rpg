@@ -17,16 +17,20 @@ software: python
 version: 3
 last_tested: 2017-01-01
 steps:
-  - title: Uvod
-  - title: Dodavanje novih prostorija
-  - title: 'Izazov: Dodaj nove prostorije'
-    challenge: true
-  - title: Dodavanje predmeta za sakupljanje
-  - title: 'Izazov: Dodaj nove predmete'
-    challenge: true
-  - title: Dodavanje neprijatelja
-  - title: 'Izazov: Dodaj još čudovišta'
-    challenge: true
-  - title: Pobjeda u igri
-  - title: 'Izazov: Osmisli vlastitu igru'
-    challenge: true
+- title: Uvod
+- title: Dodavanje novih prostorija
+- title: 'Izazov: Dodaj nove prostorije'
+  challenge: true
+- title: Dodavanje predmeta za sakupljanje
+  completion:
+  - engaged
+- title: 'Izazov: Dodaj nove predmete'
+  challenge: true
+- title: Dodavanje neprijatelja
+- title: 'Izazov: Dodaj još čudovišta'
+  challenge: true
+- title: Pobjeda u igri
+  completion:
+  - internal
+- title: 'Izazov: Osmisli vlastitu igru'
+  challenge: true
