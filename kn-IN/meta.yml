@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: ಪರಿಚಯ
-  completion: engaged
 - title: ಹೊಸ ಕೊಠಡಿಗಳನ್ನು ಸೇರಿಸಲಾಗುತ್ತಿದೆ
 - title: 'ಸವಾಲು: ಹೊಸ ಕೊಠಡಿಗಳನ್ನು ಸೇರಿಸಿ'
   challenge: true
 - title: ಸಂಗ್ರಹಿಸಲು ವಸ್ತುಗಳನ್ನು ಸೇರಿಸಲಾಗುತ್ತಿದೆ
+  completion:
+  - engaged
 - title: 'ಸವಾಲು: ಹೊಸ ವಸ್ತುಗಳನ್ನು ಸೇರಿಸಿ'
   challenge: true
 - title: ಶತ್ರುಗಳನ್ನು ಸೇರಿಸುವುದು
 - title: 'ಸವಾಲು: ಹೆಚ್ಚು ಆಟಗಾರರನ್ನು ಸೇರಿಸುವುದು'
   challenge: true
-  completion: internal
 - title: ಆಟವನ್ನು ಗೆಲ್ಲುವುದು
+  completion:
+  - internal
 - title: 'ಸವಾಲು: ನಿಮ್ಮ ಸ್ವಂತ ಆಟವನ್ನು ಅಭಿವೃದ್ಧಿಪಡಿಸಿ'
   challenge: true

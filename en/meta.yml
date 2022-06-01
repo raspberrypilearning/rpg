@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introduction
-  completion: engaged
 - title: Adding new rooms
 - title: 'Challenge: Add new rooms'
   challenge: true
 - title: Adding items to collect
+  completion:
+  - engaged
 - title: 'Challenge: Add new items'
   challenge: true
 - title: Adding enemies
 - title: 'Challenge: Adding more monsters'
   challenge: true
-  completion: internal
 - title: Winning the game
+  completion:
+  - internal
 - title: 'Challenge: Develop your own game'
   challenge: true

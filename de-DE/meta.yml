@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Einleitung
-  completion: engaged
 - title: Neue Zimmer hinzufügen
 - title: 'Herausforderung: Neue Zimmer hinzufügen'
   challenge: true
 - title: Gegenstände zum Einsammeln hinzufügen
+  completion:
+  - engaged
 - title: 'Herausforderung: Neue Gegenstände hinzufügen'
   challenge: true
 - title: Feinde (Monster) hinzufügen
 - title: 'Herausforderung: Noch mehr Monster hinzufügen'
   challenge: true
-  completion: internal
 - title: Das Spiel gewinnen
+  completion:
+  - internal
 - title: 'Herausforderung: Entwickle dein eigenes Spiel'
   challenge: true

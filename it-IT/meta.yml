@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introduzione
-  completion: engaged
 - title: Aggiungere nuove stanze
 - title: 'Sfida: Aggiungi nuove stanze'
   challenge: true
 - title: Aggiungere oggetti da raccogliere
+  completion:
+  - engaged
 - title: 'Sfida: Aggiungi nuovi oggetti'
   challenge: true
 - title: Aggiungere nemici
 - title: 'Sfida: Aggiungi più mostri'
   challenge: true
-  completion: internal
 - title: Vincere il gioco
+  completion:
+  - internal
 - title: 'Sfida: Sviluppa il tuo gioco personalizzato'
   challenge: true

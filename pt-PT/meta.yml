@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introdução
-  completion: engaged
 - title: Adicionar novas divisões
 - title: 'Desafio: adicionar novas divisões'
   challenge: true
 - title: Adicionar itens para apanhar
+  completion:
+  - engaged
 - title: 'Desafio: adicionar novos itens'
   challenge: true
 - title: Adicionar inimigos
 - title: 'Desafio: adicionar mais monstros'
   challenge: true
-  completion: internal
 - title: Ganhar o jogo
+  completion:
+  - internal
 - title: 'Desafio: desenvolve o teu próprio jogo'
   challenge: true

@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introduction
-  completion: engaged
 - title: Ajouter de nouvelles pièces
 - title: 'Défi : Ajoute de nouvelles pièces'
   challenge: true
 - title: Ajoute des objets à collecter
+  completion:
+  - engaged
 - title: 'Défi : Ajoute de nouveaux objets'
   challenge: true
 - title: Ajoute des adversaires
 - title: 'Défi : Ajoute plus de monstres'
   challenge: true
-  completion: internal
 - title: Pour gagner le jeu
+  completion:
+  - internal
 - title: 'Défi : Développe ton propre jeu'
   challenge: true

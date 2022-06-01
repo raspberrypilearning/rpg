@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Εισαγωγή
-  completion: engaged
 - title: Προσθήκη νέων δωματίων
 - title: 'Πρόκληση: Πρόσθεσε νέα δωμάτια'
   challenge: true
 - title: Προσθήκη αντικειμένων για συλλογή
+  completion:
+  - engaged
 - title: 'Πρόκληση: Πρόσθεσε νέα αντικείμενα'
   challenge: true
 - title: Προσθήκη εχθρών
 - title: 'Πρόκληση: Πρόσθεσε περισσότερα τέρατα'
   challenge: true
-  completion: internal
 - title: Κερδίζοντας το παιχνίδι
+  completion:
+  - internal
 - title: 'Πρόκληση: Ανάπτυξε το δικό σου παιχνίδι'
   challenge: true

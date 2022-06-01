@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: المقدمة
-  completion: engaged
 - title: إضافة غرف جديدة
 - title: 'التحدي: أضف غرف جديدة'
   challenge: true
 - title: إضافة عناصر لجمعها
+  completion:
+  - engaged
 - title: 'التحدي: أضف عناصر جديدة'
   challenge: true
 - title: إضافة أعداء
 - title: 'التحدي: إضافة المزيد من الوحوش'
   challenge: true
-  completion: internal
 - title: الفوز في اللعبة
+  completion:
+  - internal
 - title: 'التحدي: طوِّر لعبتك الخاصة'
   challenge: true

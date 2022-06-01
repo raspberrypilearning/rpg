@@ -17,20 +17,22 @@ software: python
 version: 3
 last_tested: '2017-01-01
 
-  '
+'
 steps:
 - title: Giriş
-  completion: engaged
 - title: Yeni oda ekleme
 - title: 'Meydan okuma: Yeni odalar ekle'
   challenge: true
 - title: Toplamak için eşyalar ekleme
+  completion:
+  - engaged
 - title: 'Meydan okuma: Yeni eşyalar ekle'
   challenge: true
 - title: Düşman ekleme
 - title: 'Meydan okuma: Daha fazla canavar ekle'
   challenge: true
-  completion: internal
 - title: Oyunu kazanma
+  completion:
+  - internal
 - title: 'Meydan Okuma: Kendi oyununu geliştir'
   challenge: true

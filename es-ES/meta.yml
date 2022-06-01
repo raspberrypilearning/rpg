@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: Introducción
-  completion: engaged
 - title: Añadir nuevas habitaciones
 - title: 'Desafío: añadir más habitaciones'
   challenge: true
 - title: Agregar elementos para recoger
+  completion:
+  - engaged
 - title: 'Desafío: añadir nuevos objetos'
   challenge: true
 - title: Añadir enemigos
 - title: 'Desafío: añadir más monstruos'
   challenge: true
-  completion: internal
 - title: Ganar el juego
+  completion:
+  - internal
 - title: 'Desafío: crea tu propio juego'
   challenge: true

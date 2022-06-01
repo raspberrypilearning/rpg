@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: प्रस्तावना
-  completion: engaged
 - title: नवीन खोल्या जोडा
 - title: 'आव्हान: नवीन खोल्या जोडा'
   challenge: true
 - title: संग्रह करण्यासाठी साहित्य जोडा
+  completion:
+  - engaged
 - title: 'आव्हान: नवीन साहित्य जोडा'
   challenge: true
 - title: शत्रू जोडा
 - title: 'आव्हान: आणखी राक्षस जोडा'
   challenge: true
-  completion: internal
 - title: खेळ जिंकणे
+  completion:
+  - internal
 - title: 'आव्हान: तुमचा स्वतःचा खेळ विकसित करा'
   challenge: true

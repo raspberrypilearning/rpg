@@ -18,17 +18,19 @@ version: 3
 last_tested: 2017-01-01
 steps:
 - title: 介紹
-  completion: engaged
 - title: 增加新房間
 - title: 挑戰：增加新房間
   challenge: true
 - title: 增加要收集的項目
+  completion:
+  - engaged
 - title: 挑戰：增加新物品
   challenge: true
 - title: 增加敵人
 - title: 挑戰：增加更多怪物
   challenge: true
-  completion: internal
 - title: 贏得比賽
+  completion:
+  - internal
 - title: 挑戰：開發自己的遊戲
   challenge: true
