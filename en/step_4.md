@@ -11,26 +11,18 @@ Remember to put a comma after the line above the new item, or your program wonâ€
 --- code ---
 ---
 language: python
-line_highlights: 6-7
+filename: main.py
+line_numbers: true
+line_number_start: 26
+line_highlights: 31
 ---
 #a dictionary linking a room to other rooms
 rooms = {
-
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
-            },
-
-            'Kitchen' : {
-                'north' : 'Hall'
-            },
-
-            'Dining Room' : {
-                'west' : 'Hall'
-            }
-
-        }
+    'Hall' : {
+        'south' : 'Kitchen',
+        'east' : 'Dining Room',
+        'item' : 'key'
+    },
 --- /code ---
 
 --- /task ---
@@ -39,6 +31,33 @@ rooms = {
 
 If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
 
-![screenshot](images/rpg-key-test.png)
+--- code ---
+---
+language: text
+filename: main.py
+line_numbers: false
+line_number_start: 
+line_highlights: 
+---
+
+          RPG Game
+          ========
+          Commands:
+          go [direction]
+          get [item]
+          
+---------------------------
+You are in the Hall
+Inventory : []
+You see a key
+---------------------------
+>get key
+key got!
+---------------------------
+You are in the Hall
+Inventory : ['key']
+---------------------------
+>
+--- /code ---
 
 --- /task ---

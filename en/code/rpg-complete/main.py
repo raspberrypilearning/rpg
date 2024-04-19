@@ -88,13 +88,13 @@ while True:
             #tell them they can't get it
             print('Can\'t get ' + move[1] + '!')
 
-        # player loses if they enter a room with a monster
-        if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
-            print('A monster has got you... GAME OVER!')
-            break
+    # player loses if they enter a room with a monster
+    if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
+        print('A monster has got you... GAME OVER!')
+        break
 
-        # player wins if they get to the garden with a key and a shield
-        if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
-            print('You escaped the house... YOU WIN!')
-            break
+    # player wins if they get to the garden with a key and a shield
+    if currentRoom == 'Garden' and 'key' in inventory and 'potion' in inventory:
+        print('You escaped the house... YOU WIN!')
+        break
     
