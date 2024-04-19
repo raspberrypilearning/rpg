@@ -10,11 +10,7 @@ Type `go` and then a direction (north, east, south or west) to move around the w
 
 Type `get` to pick up any items that you see (e.g. `get key`).
 
-<div class="trinket">
-  <iframe src="https://trinket.io/embed/python/d06adeb527?outputOnly=true&start=result" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-  </iframe>
-  <img src="images/rpg-finished.png">
-</div>
+<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/rpg-complete" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 --- /no-print ---
 
@@ -35,7 +31,7 @@ title: What you will need
 
 ### Software
 
-+ Python 3 (either [online](https://trinket.io/){:target="_blank"} of [offline](https://www.python.org/downloads/){:target="_blank"})
++ [The Code Editor](https://editor.raspberrypi.org)
 
 ### Downloads
 
@@ -53,10 +49,6 @@ title: What you will learn
 	+ Lists;
 	+ Dictionaries.
 + Boolean expressions.
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](https://rpf.io/curriculum):
-
-+ [Combine programming constructs to solve a problem.](https://www.raspberrypi.org/curriculum/programming/builder)
 
 --- /collapse ---
 
