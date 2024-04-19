@@ -24,13 +24,13 @@ inventory = []
 
 #a dictionary linking a room to other rooms
 rooms = {
-   'Hall' : {
-      'south' : 'Kitchen'
-      },
-   'Kitchen' : {
-      'north' : 'Hall'
-      }
-      }
+    'Hall' : {
+        'south' : 'Kitchen'
+    },
+    'Kitchen' : {
+        'north' : 'Hall'
+    }
+}
 
 #start the player in the Hall
 currentRoom = 'Hall'
@@ -52,7 +52,7 @@ while True:
 
     move = move.lower().split()
 
-  #if they type 'go' first
+    #if they type 'go' first
     if move[0] == 'go':
         #check that they are allowed wherever they want to go
         if move[1] in rooms[currentRoom]:
@@ -63,17 +63,17 @@ while True:
             print('You can\'t go that way!')
 
     #if they type 'get' first
-  if move[0] == 'get' :
-      #if the room contains an item, and the item is the one they want to get
-      if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
-          #add the item to their inventory
-          inventory += [move[1]]
-          #display a helpful message
-          print(move[1] + ' got!')
-          #delete the item from the room
-          del rooms[currentRoom]['item']
-      #otherwise, if the item isn't there to get
-      else:
-          #tell them they can't get it
-          print('Can\'t get ' + move[1] + '!')
+    if move[0] == 'get' :
+        #if the room contains an item, and the item is the one they want to get
+        if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]['item']:
+            #add the item to their inventory
+            inventory += [move[1]]
+            #display a helpful message
+            print(move[1] + ' got!')
+            #delete the item from the room
+            del rooms[currentRoom]['item']
+        #otherwise, if the item isn't there to get
+        else:
+            #tell them they can't get it
+            print('Can\'t get ' + move[1] + '!')
 
