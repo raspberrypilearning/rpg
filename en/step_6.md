@@ -44,7 +44,7 @@ line_highlights: 86-89
         else:
             #tell them they can't get it
             print('Can\'t get ' + move[1] + '!')
-        #player loses if they enter a room with a monster
+    #player loses if they enter a room with a monster
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
         print('A monster has got you... GAME OVER!')
         break
