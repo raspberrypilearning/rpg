@@ -98,7 +98,7 @@ If you have more than 4 rooms, you may have to use a different room number for y
 
 Test your game to make sure the player can win!
 
----- code ---
+--- code ---
 ---
 language: text
 filename: main.py
