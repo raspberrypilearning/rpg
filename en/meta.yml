@@ -18,19 +18,15 @@ version: 3
 last_tested: 2025-01-02
 steps:
 - title: What you will make
-- title: Adding new rooms
-- title: 'Challenge: Add new rooms'
-  challenge: true
-- title: Adding items to collect
+- title: Add a new room
   completion:
   - engaged
-- title: 'Challenge: Add new items'
-  challenge: true
-- title: Adding enemies
-- title: 'Challenge: Adding more monsters'
-  challenge: true
+- title: Add items to collect
+- title: Add enemies
 - title: Winning the game
   completion:
   - internal
-- title: 'Challenge: Develop your own game'
+  - external
+- title: Challenge
   challenge: true
+- title: What can I do now?

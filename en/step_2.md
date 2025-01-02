@@ -1,4 +1,4 @@
-## Adding new rooms
+## Add a new room
 
 --- task ---
 Open the [starter project](https://editor.raspberrypi.org/en/projects/rpg-starter){:target="_blank"}.
@@ -43,13 +43,11 @@ Inventory : []
 --- /task ---
 
 
-
-Find the `rooms` variable, and you can see that the map is coded as a dictionary of rooms:
+Find the `rooms` variable, and you will see that the map is coded as a dictionary of rooms:
 
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
 line_number_start: 26
 line_highlights: 
@@ -70,19 +68,18 @@ Each room is a dictionary, and rooms are linked together using directions.
 
 --- task ---
 
-Add a dining room to your map, to the east of the hall.
+Add a dining room to your map, to the east of the hall. **Don't forget to add a comma to the end of the previous line when you add a new direction.**
 
 ![A map with two rooms - hall is in the North and kitchen is below it. There is a door between them. A dining room has been added to the right of the hall.](images/rpg-dining.png)
 
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
 line_number_start: 26
-line_highlights: 30, 34-37
+line_highlights: 29-30, 34-37
 ---
-#a dictionary linking a room to other rooms
+# A dictionary linking a room to other rooms
 rooms = {
     'Hall' : {
         'south' : 'Kitchen',
@@ -101,40 +98,12 @@ rooms = {
 
 --- task ---
 
-Try out the game with your new dining room:
+Click **Stop**, then click **Run** to try out the game with your new dining room code. 
 
---- code ---
----
-language: text
-filename: main.py
-line_numbers: false
-line_number_start: 
-line_highlights: 
----
+Type `go east` from the hall to move into to the dining room, and `go west` to move back to the hall.
 
-          RPG Game
-          ========
-          Commands:
-          go [direction]
-          get [item]
-          
----------------------------
-You are in the Hall
-Inventory : []
----------------------------
->go east
----------------------------
-You are in the Dining Room
-Inventory : []
----------------------------
->go west
----------------------------
-You are in the Hall
-Inventory : []
----------------------------
->
---- /code ---
+--- /task ---
 
-If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
-
+--- task ---
+Add another room to your game. For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
 --- /task ---
