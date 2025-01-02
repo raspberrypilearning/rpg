@@ -1,20 +1,19 @@
 ## Add enemies
 
-This game is too easy! Let’s add enemies to some rooms that the player must avoid.
+Add enemies to some rooms that the player must avoid.
 
 --- task ---
 
-Adding an enemy to a room is as easy as adding any other item. Let’s add a hungry monster to the kitchen:
+Adding an enemy to a room is the same as adding an item. Add a hungry monster to the kitchen:
 
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
 line_number_start: 26
 line_highlights: 35
 ---
-#a dictionary linking a room to other rooms
+# A dictionary linking a room to other rooms
 rooms = {
     'Hall' : {
         'south' : 'Kitchen',
@@ -31,20 +30,19 @@ rooms = {
 
 --- task ---
 
-You also want to make sure that the game ends if the player enters a room with a monster in. You can do this with the following code, which you should add to the end of the game:
+If the player enters a room with a monster in, the game ends. Add this code to the end of the game:
 
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
 line_number_start: 83
 line_highlights: 86-89
 ---
         else:
-            #tell them they can't get it
+            # Tell them they can't get it
             print('Can\'t get ' + move[1] + '!')
-    #player loses if they enter a room with a monster
+    # Player loses if they enter a room with a monster
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
         print('A monster has got you... GAME OVER!')
         break

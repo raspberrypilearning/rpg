@@ -1,15 +1,25 @@
 --- challenge ---
 
-## Challenge: Adding more monsters
+## Challenge
 
+Use what you’ve learnt to create your own game. Here are some ideas:
+
+
+--- task ---
+Add your own rooms and items to collect. 
+--- /task ---
+
+--- task ---
 Add more monsters to your game, to make it harder to escape the house!
+--- /task ---
 
---- /challenge ---
+--- task ---
+Modify the code so that the player wins when they get to a certain room with some of the objects in their inventory. 
+--- /task ---
 
---- challenge ---
+--- task ---
+Add stairs to your map and have more than one level of rooms, by typing `go up` and `go down`.
+--- /task ---
 
-## Challenge: Add new items
-
-Add an item to some of the rooms in your game. You can add anything that you think would be helpful in trying to escape the house! For example, a shield or a magic potion.
 
 --- /challenge ---
