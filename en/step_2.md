@@ -5,7 +5,6 @@ Open the [starter project](https://editor.raspberrypi.org/en/projects/rpg-starte
 --- /task ---
 
 
-
 This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
 
 ![A map with two rooms - hall is in the North and kitchen is below it. There is a door between them.](images/rpg-map1.png)
@@ -23,6 +22,7 @@ What happens when you type in a direction that you cannot go? Type `go west` in 
 title: Answer
 ---
 You'll see a friendly error message.
+
 --- code ---
 ---
 language: text
@@ -38,6 +38,7 @@ Inventory : []
 ---------------------------
 >
 --- /code ---
+
 --- /collapse ---
 --- /task ---
 
