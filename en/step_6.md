@@ -9,27 +9,22 @@ Adding an enemy to a room is as easy as adding any other item. Let’s add a hun
 --- code ---
 ---
 language: python
-line_highlights: 11-12
+filename: main.py
+line_numbers: true
+line_number_start: 26
+line_highlights: 35
 ---
 #a dictionary linking a room to other rooms
 rooms = {
-
-            'Hall' : {
-                'south' : 'Kitchen',
-                'east' : 'Dining Room',
-                'item' : 'key'
-            },
-
-            'Kitchen' : {
-                'north' : 'Hall',
-                'item' : 'monster'
-            },
-
-            'Dining Room' : {
-                'west' : 'Hall'
-            }
-
-        }
+    'Hall' : {
+        'south' : 'Kitchen',
+        'east' : 'Dining Room',
+        'item' : 'key'
+    },
+    'Kitchen' : {
+        'north' : 'Hall',
+        'item' : 'monster'
+    },
 --- /code ---
 
 --- /task ---
@@ -41,13 +36,14 @@ You also want to make sure that the game ends if the player enters a room with a
 --- code ---
 ---
 language: python
-line_highlights: 6-9
+filename: main.py
+line_numbers: true
+line_number_start: 83
+line_highlights: 86-89
 ---
-        #otherwise, if the item isn't there to get
         else:
             #tell them they can't get it
-            print('Can\'t get' + move[1] + '!')
-
+            print('Can\'t get ' + move[1] + '!')
     #player loses if they enter a room with a monster
     if 'item' in rooms[currentRoom] and 'monster' in rooms[currentRoom]['item']:
         print('A monster has got you... GAME OVER!')
@@ -62,6 +58,22 @@ This code checks whether there is an item in the room, and if so, whether that i
 
 Test out your code by going into the kitchen, which now contains a monster.
 
-![screenshot](images/rpg-monster-test.png)
+--- code ---
+---
+language: text
+filename: main.py
+line_numbers: false
+line_number_start: 
+line_highlights: 
+---
+---------------------------
+You are in the Hall
+Inventory : []
+You see a key
+---------------------------
+>go south
+
+A monster has got you... GAME OVER!
+--- /code ---
 
 --- /task ---
