@@ -52,7 +52,7 @@ while True:
     # ['go','east']
     move = ""
     while move == "":
-        move = input(">", end="")
+        move = input(">")
 
     move = move.lower().split()
 
