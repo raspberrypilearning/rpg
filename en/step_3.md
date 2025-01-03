@@ -10,8 +10,8 @@ To put an item in a room, you add it to a room's dictionary. Add a key in the ha
 ---
 language: python
 line_numbers: true
-line_number_start: 26
-line_highlights: 31
+line_number_start: 25
+line_highlights: 29-30
 ---
 # A dictionary linking a room to other rooms
 rooms = {

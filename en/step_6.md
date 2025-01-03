@@ -4,9 +4,12 @@
 
 Use what you’ve learnt to create your own game. Here are some ideas:
 
+--- task ---
+Add another room to your game. For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
+--- /task ---
 
 --- task ---
-Add your own rooms and items to collect. 
+Add your own items to collect. 
 --- /task ---
 
 --- task ---

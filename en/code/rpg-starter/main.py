@@ -55,7 +55,6 @@ while True:
         if move[1] in rooms[currentRoom]:
             # Set the current room to the new room
             currentRoom = rooms[currentRoom][move[1]]
-        # There is no door (link) to the new room
         else:
             print("You can't go that way!")
 
@@ -65,11 +64,15 @@ while True:
         if "item" in rooms[currentRoom] and move[1] in rooms[currentRoom]["item"]:
             # Add the item to their inventory
             inventory += [move[1]]
-            # Display a helpful message
-            print(move[1] + " got!")
+            print("You picked up the " + move[1])
             # Delete the item from the room
             del rooms[currentRoom]["item"]
-        # Otherwise, if the item isn't there to get
+        # Otherwise, the item isn't there
         else:
             # Tell them they can't get it
-            print("Can't get " + move[1] + "!")
+            print("There is no " + move[1] + "here!")
+
+    # Player loses if they enter a room with a monster
+    if "item" in rooms[currentRoom] and "monster" in rooms[currentRoom]["item"]:
+        print("A monster has got you... GAME OVER!")
+        break

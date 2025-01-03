@@ -43,7 +43,7 @@ Inventory : []
 --- /task ---
 
 
-Find the `rooms` variable, and you will see that the map is coded as a dictionary of rooms:
+Look at the code and find the `rooms` variable. The map is coded as a **dictionary** of rooms:
 
 --- code ---
 ---
@@ -104,6 +104,3 @@ Type `go east` from the hall to move into to the dining room, and `go west` to m
 
 --- /task ---
 
---- task ---
-Add another room to your game. For example, you could create a living room to the south of the dining room. Remember to add a door to/from one of the other rooms!
---- /task ---
