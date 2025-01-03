@@ -10,7 +10,7 @@ Adding an enemy to a room is the same as adding an item. Add a hungry monster to
 ---
 language: python
 line_numbers: true
-line_number_start: 25
+line_number_start: 29
 line_highlights: 33-34
 ---
 # A dictionary linking a room to other rooms

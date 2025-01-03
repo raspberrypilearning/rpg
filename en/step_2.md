@@ -49,7 +49,7 @@ Look at the code and find the `rooms` variable. The map is coded as a **dictiona
 ---
 language: python
 line_numbers: true
-line_number_start: 26
+line_number_start: 29
 line_highlights: 
 ---
 # A dictionary linking a room to other rooms
