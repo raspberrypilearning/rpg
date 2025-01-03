@@ -76,8 +76,8 @@ Add a dining room to your map, to the east of the hall. **Don't forget to add a 
 ---
 language: python
 line_numbers: true
-line_number_start: 26
-line_highlights: 29-30, 34-37
+line_number_start: 29
+line_highlights: 32-33, 37-40
 ---
 # A dictionary linking a room to other rooms
 rooms = {
