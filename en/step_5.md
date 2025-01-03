@@ -98,7 +98,7 @@ Inventory : []
 You see a key
 ---------------------------
 >get key
-you picked up the key
+You picked up the key
 ---------------------------
 You are in the Hall
 Inventory : ['key']
@@ -110,7 +110,7 @@ Inventory : ['key']
 You see a potion
 ---------------------------
 >get potion
-potion got!
+You picked up the potion
 ---------------------------
 You are in the Dining Room
 Inventory : ['key', 'potion']
@@ -130,21 +130,23 @@ Finally, let’s add some instructions to your game, so that the player knows wh
 language: python
 line_numbers: true
 line_number_start: 1
-line_highlights: 7-8
+line_highlights: 8-9
 ---
 def showInstructions():
-    #print a main menu and the commands
-    print('''
+    # Print a main menu and the commands
+    print(
+        """
           RPG Game
           ========
-          
+
           Get to the Garden with a key and a potion
           Avoid the monsters!
-          
+
           Commands:
           go [direction]
           get [item]
-          ''')
+          """
+    )
 --- /code ---
 
 --- /task ---
@@ -153,6 +155,5 @@ def showInstructions():
 
 Test your game and you should see your new instructions.
 
---- /code ---
 
 --- /task ---
