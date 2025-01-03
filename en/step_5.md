@@ -98,7 +98,7 @@ Inventory : []
 You see a key
 ---------------------------
 >get key
-key got!
+you picked up the key
 ---------------------------
 You are in the Hall
 Inventory : ['key']

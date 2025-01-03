@@ -52,7 +52,7 @@ while True:
     # ['go','east']
     move = ""
     while move == "":
-        move = input(">")
+        move = input(">", end="")
 
     move = move.lower().split()
 
@@ -77,7 +77,7 @@ while True:
         # Otherwise, the item isn't there
         else:
             # Tell them they can't get it
-            print("There is no " + move[1] + "here!")
+            print("There is no " + move[1] + " here!")
 
     # Player loses if they enter a room with a monster
     if "item" in rooms[currentRoom] and "monster" in rooms[currentRoom]["item"]:
