@@ -4,7 +4,7 @@ Add enemies to some rooms that the player must avoid.
 
 --- task ---
 
-Adding an enemy to a room is the same as adding an item. Add a hungry monster to the kitchen:
+Adding an enemy to a room is the same as adding an item. Add a monster to the Kitchen:
 
 --- code ---
 ---
@@ -28,7 +28,7 @@ rooms = {
 
 --- /task ---
 
-If the player enters a room with a monster in, the game ends. Test out your code by going into the kitchen, which now contains a monster.
+If the player enters a room with a monster in, the game ends. Test out your code by going into the Kitchen, which now contains a monster.
 
 --- task ---
 Click **Stop** then click **Run** and type `go south`.
@@ -36,7 +36,6 @@ Click **Stop** then click **Run** and type `go south`.
 --- code ---
 ---
 language: text
-filename: main.py
 line_numbers: false
 line_number_start: 
 line_highlights: 

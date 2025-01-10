@@ -5,23 +5,23 @@ Open the [starter project](https://editor.raspberrypi.org/en/projects/rpg-starte
 --- /task ---
 
 
-This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
+Here is a basic maze that represents a house with two rooms. The rooms are both empty for now. Here’s a map of the game:
 
 ![A map with two rooms - hall is in the North and kitchen is below it. There is a door between them.](images/rpg-map1.png)
 
 --- task ---
-Press **Run** to start the game. Type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again.
+Press **Run** to start the game. Type `go south` to move from the Hall to the Kitchen, and then `go north` to go back to the Hall again.
 --- /task ---
 
 --- task ---
 
-What happens when you type in a direction that you cannot go? Type `go west` in the hall.
+What happens when you type in a direction that you cannot go? Type `go west` in the Hall.
 
 --- collapse ---
 ---
 title: Answer
 ---
-You'll see a friendly error message.
+You'll see a friendly error message, and a reminder of where you are plus any items in your inventory.
 
 --- code ---
 ---
@@ -68,7 +68,7 @@ Each room is a dictionary, and rooms are linked together using directions.
 
 --- task ---
 
-Add a dining room to your map, to the east of the hall. **Don't forget to add a comma to the end of the previous line when you add a new direction.**
+Add a Dining Room to your map, to the east of the Hall. **Don't forget to add a comma to the end of the previous line when you add a new direction.**
 
 ![A map with two rooms - hall is in the North and kitchen is below it. There is a door between them. A dining room has been added to the right of the hall.](images/rpg-dining.png)
 
@@ -98,9 +98,9 @@ rooms = {
 
 --- task ---
 
-Click **Stop**, then click **Run** to try out the game with your new dining room code. 
+Click **Stop**, then click **Run** to try out the game with your new Dining Room code. 
 
-Type `go east` from the hall to move into to the dining room, and `go west` to move back to the hall.
+Type `go east` from the Hall to move into to the Dining Room, and `go west` to move back to the Hall.
 
 --- /task ---
 

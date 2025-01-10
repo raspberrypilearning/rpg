@@ -1,18 +1,15 @@
 ## Winning the game
 
-Let’s give your player a mission, which needs to be completed to win the game.
+Give your player a mission which needs to be completed to win the game.
 
-
-
-In this game, the player wins by getting to the garden and escaping the house. They also need to have the key with them, and the magic potion. Here’s a map of the game.
+The player wins by getting to the garden with the key and the magic potion. Here’s a map of the game.
 
 ![A map showing the hall containing a key, witih the dining room to the East containing a potion. The kitchen is South of the hall and contains a monster. The garden is East of the kitchen and South of the dining room.](images/rpg-final-map.png)
 
 
-
 --- task ---
 
-Add a garden to the south of the dining room. Remember to add a door to the garden from the dining room.
+Add a garden to the south of the dining room. Remember to link the garden to the dining room.
 
 --- code ---
 ---
@@ -66,7 +63,7 @@ line_highlights: 41-42
 
 --- task ---
 
-Add this code right at the end of the Python file to allow the player to win the game when they get to the garden with the key and the potion. Make sure the code is indented, in line with the code above it. 
+Add this code at the end of the Python file so that the player wins the game when they get to the garden with the key and the potion. Make sure the code is indented, in line with the code above it. 
 
 --- code ---
 ---

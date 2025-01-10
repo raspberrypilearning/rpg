@@ -1,10 +1,10 @@
 ## What you will make
 
-Design and code your own RPG maze game. The aim of the game will be to collect objects and escape from a house, making sure to avoid all the monsters!
+Design and code a game where the player must collect objects and escape from a house, making sure to avoid all the monsters!
 
 --- print-only ---
 
-![A text RPG game. The player is in the hall and types 'go east' to get to the dining room.](images/rpg-finished.png)
+![The player is in the hall and types 'go east' to get to the dining room.](images/rpg-finished.png)
 
 --- /print-only ---
 
