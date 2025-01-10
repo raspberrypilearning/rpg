@@ -1,54 +1,31 @@
-## Adding new rooms
+## Add a new room
 
 --- task ---
+Open the [starter project](https://editor.raspberrypi.org/en/projects/rpg-starter){:target="_blank"}.
+--- /task ---
 
-Open the Python starter project.
 
-**Online**: open the [starter project](https://editor.raspberrypi.org/en/projects/rpg-starter){:target="_blank"}.
+Here is a basic maze that represents a house with two rooms. The rooms are both empty for now. Here’s a map of the game:
 
-**Offline**: open the [starter project](https://rpf.io/p/en/rpg-go){:target="_blank"} in the offline editor.
+![A map with two rooms - hall is in the North and kitchen is below it. There is a door between them.](images/rpg-map1.png)
 
+--- task ---
+Press **Run** to start the game. Type `go south` to move from the Hall to the Kitchen, and then `go north` to go back to the Hall again.
 --- /task ---
 
 --- task ---
 
-This is a very basic RPG game that only has 2 rooms. Here’s a map of the game:
+What happens when you type in a direction that you cannot go? Type `go west` in the Hall.
 
-![screenshot](images/rpg-map1.png)
-
-You can type `go south` to move from the hall to the kitchen, and then `go north` to go back to the hall again!
+--- collapse ---
+---
+title: Answer
+---
+You'll see a friendly error message, and a reminder of where you are plus any items in your inventory.
 
 --- code ---
 ---
 language: text
-filename: main.py
-line_numbers: false
-line_number_start: 
-line_highlights: 
----
-          RPG Game
-          ========
-          Commands:
-          go [direction]
-          get [item]
-          
----------------------------
-You are in the Hall
-Inventory : []
----------------------------
->
---- /code ---
-
---- /task ---
-
---- task ---
-
-What happens when you type in a direction that you cannot go? Type `go west` in the hall and you’ll get a friendly error message.
-
---- code ---
----
-language: text
-filename: main.py
 line_numbers: false
 line_number_start: 
 line_highlights: 
@@ -62,21 +39,20 @@ Inventory : []
 >
 --- /code ---
 
+--- /collapse ---
 --- /task ---
 
---- task ---
 
-If you find the `rooms` variable, you can see that the map is coded as a dictionary of rooms:
+Look at the code and find the `rooms` variable. The map is coded as a **dictionary** of rooms:
 
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
-line_number_start: 26
+line_number_start: 29
 line_highlights: 
 ---
-#a dictionary linking a room to other rooms
+# A dictionary linking a room to other rooms
 rooms = {
     'Hall' : {
         'south' : 'Kitchen'
@@ -89,27 +65,21 @@ rooms = {
 
 Each room is a dictionary, and rooms are linked together using directions.  
 
---- /task ---
 
 --- task ---
 
-Let’s add a dining room to your map, to the east of the hall.
+Add a Dining Room to your map, to the east of the Hall. **Don't forget to add a comma to the end of the previous line when you add a new direction.**
 
-![screenshot](images/rpg-dining.png)
-
-You need to add a 3rd room, called the `dining room`, and link it to the hall (to the west). You also need to add data to the hall, so that you can move to the dining room to the east.
-
-**Don't forget that you'll also need to add commas to lines before your new code.**
+![A map with two rooms - hall is in the North and kitchen is below it. There is a door between them. A dining room has been added to the right of the hall.](images/rpg-dining.png)
 
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
-line_number_start: 26
-line_highlights: 30, 34-37
+line_number_start: 29
+line_highlights: 32-33, 37-40
 ---
-#a dictionary linking a room to other rooms
+# A dictionary linking a room to other rooms
 rooms = {
     'Hall' : {
         'south' : 'Kitchen',
@@ -128,40 +98,9 @@ rooms = {
 
 --- task ---
 
-Try out the game with your new dining room:
+Click **Stop**, then click **Run** to try out the game with your new Dining Room code. 
 
---- code ---
----
-language: text
-filename: main.py
-line_numbers: false
-line_number_start: 
-line_highlights: 
----
-
-          RPG Game
-          ========
-          Commands:
-          go [direction]
-          get [item]
-          
----------------------------
-You are in the Hall
-Inventory : []
----------------------------
->go east
----------------------------
-You are in the Dining Room
-Inventory : []
----------------------------
->go west
----------------------------
-You are in the Hall
-Inventory : []
----------------------------
->
---- /code ---
-
-If you can’t move in and out of the dining room, just check that you added all of the code above (including the extra commas to the lines above).
+Type `go east` from the Hall to move into to the Dining Room, and `go west` to move back to the Hall.
 
 --- /task ---
+

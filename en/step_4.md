@@ -1,63 +1,53 @@
-## Adding items to collect
+## Add enemies
 
-Let’s leave items in the rooms for the player to collect as they move through the maze.
+Add enemies to some rooms that the player must avoid.
 
 --- task ---
 
-Adding an item into a room is easy, you can just add it to a room's dictionary. Let’s put a key in the hall.
-
-Remember to put a comma after the line above the new item, or your program won’t run!
+Adding an enemy to a room is the same as adding an item. Add a monster to the Kitchen:
 
 --- code ---
 ---
 language: python
-filename: main.py
 line_numbers: true
-line_number_start: 26
-line_highlights: 31
+line_number_start: 29
+line_highlights: 33-34
 ---
-#a dictionary linking a room to other rooms
+# A dictionary linking a room to other rooms
 rooms = {
     'Hall' : {
         'south' : 'Kitchen',
         'east' : 'Dining Room',
         'item' : 'key'
     },
+    'Kitchen' : {
+        'north' : 'Hall',
+        'item' : 'monster'
+    },
 --- /code ---
 
 --- /task ---
 
---- task ---
+If the player enters a room with a monster in, the game ends. Test out your code by going into the Kitchen, which now contains a monster.
 
-If you run your game after adding the code above, you can now see a key in the hall, and you can even pick it up (by typing `get key`) which adds it to your inventory!
+--- task ---
+Click **Stop** then click **Run** and type `go south`.
 
 --- code ---
 ---
 language: text
-filename: main.py
 line_numbers: false
 line_number_start: 
 line_highlights: 
 ---
-
-          RPG Game
-          ========
-          Commands:
-          go [direction]
-          get [item]
-          
 ---------------------------
 You are in the Hall
 Inventory : []
 You see a key
 ---------------------------
->get key
-key got!
----------------------------
-You are in the Hall
-Inventory : ['key']
----------------------------
->
+>go south
+
+A monster has got you... GAME OVER!
 --- /code ---
 
 --- /task ---
