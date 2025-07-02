@@ -32,5 +32,4 @@ steps:
 - title: Pobjeda u igri
   completion:
   - internal
-- title: 'Izazov: Osmisli vlastitu igru'
   challenge: true

@@ -32,5 +32,4 @@ steps:
 - title: Κερδίζοντας το παιχνίδι
   completion:
   - internal
-- title: 'Πρόκληση: Ανάπτυξε το δικό σου παιχνίδι'
   challenge: true

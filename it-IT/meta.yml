@@ -32,5 +32,4 @@ steps:
 - title: Vincere il gioco
   completion:
   - internal
-- title: 'Sfida: Sviluppa il tuo gioco personalizzato'
   challenge: true

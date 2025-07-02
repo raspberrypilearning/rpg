@@ -32,5 +32,4 @@ steps:
 - title: الفوز في اللعبة
   completion:
   - internal
-- title: 'التحدي: طوِّر لعبتك الخاصة'
   challenge: true

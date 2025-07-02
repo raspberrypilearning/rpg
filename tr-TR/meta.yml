@@ -32,5 +32,4 @@ steps:
 - title: Oyunu kazanma
   completion:
   - internal
-- title: 'Meydan Okuma: Kendi oyununu geliştir'
   challenge: true

@@ -33,5 +33,4 @@ steps:
 - title: Ganhando o jogo
   completion:
   - internal
-- title: 'Desafio: desenvolva seu próprio jogo'
   challenge: true
