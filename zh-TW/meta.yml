@@ -32,5 +32,4 @@ steps:
 - title: 贏得比賽
   completion:
   - internal
-- title: 挑戰：開發自己的遊戲
   challenge: true

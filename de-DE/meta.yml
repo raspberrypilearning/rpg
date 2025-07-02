@@ -32,5 +32,4 @@ steps:
 - title: Das Spiel gewinnen
   completion:
   - internal
-- title: 'Herausforderung: Entwickle dein eigenes Spiel'
   challenge: true

@@ -32,5 +32,4 @@ steps:
 - title: खेळ जिंकणे
   completion:
   - internal
-- title: 'आव्हान: तुमचा स्वतःचा खेळ विकसित करा'
   challenge: true

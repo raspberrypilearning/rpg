@@ -32,5 +32,4 @@ steps:
 - title: Pour gagner le jeu
   completion:
   - internal
-- title: 'Défi : Développe ton propre jeu'
   challenge: true

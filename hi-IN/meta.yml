@@ -32,5 +32,4 @@ steps:
 - title: गेम जीतना
   completion:
   - internal
-- title: 'चुनौती: अपनी स्वयं की गेम बनाएँ'
   challenge: true
