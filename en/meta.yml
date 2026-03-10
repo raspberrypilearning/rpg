@@ -2,7 +2,7 @@
 hero_image: images/rpg.png
 theme: navy
 duration: 2
-listed: true
+listed: false
 ingredient: false
 copyedit: false
 curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
