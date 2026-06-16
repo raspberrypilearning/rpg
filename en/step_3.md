@@ -11,7 +11,7 @@ To put an item in a room, you add it to a room's dictionary. Add a key in the Ha
 language: python
 line_numbers: true
 line_number_start: 29
-line_highlights: 34
+line_highlights: 33-34
 ---
 # A dictionary linking a room to other rooms
 rooms = {
