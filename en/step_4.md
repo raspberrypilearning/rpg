@@ -11,7 +11,7 @@ Adding an enemy to a room is the same as adding an item. Add a monster to the Ki
 language: python
 line_numbers: true
 line_number_start: 29
-line_highlights: 33-34
+line_highlights: 37-38
 ---
 # A dictionary linking a room to other rooms
 rooms = {
